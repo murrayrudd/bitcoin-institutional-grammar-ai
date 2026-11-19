@@ -1,0 +1,90 @@
+[
+  {
+    "claim_id": "E05-C1",
+    "episode_id": "E05",
+    "claim": "The contemporaneous guide specifies ACK with the top topic-branch commit followed by an account of the review.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E05:doc_before",
+        "span": {
+          "start": 11762,
+          "end": 11926,
+          "quote": "starting with `ACK BRANCH_COMMIT`, where `BRANCH_COMMIT` is the top of the\ntopic branch. The review is followed by a description of how the reviewer did\nthe review."
+        }
+      }
+    ],
+    "assessment_available_at": "D",
+    "limits_and_alternatives": "A documented convention does not establish its enforcement in every review."
+  },
+  {
+    "claim_id": "E05-C2",
+    "episode_id": "E05",
+    "claim": "practicalswift asks paymog to identify the reviewed version by adding its hash after ACK.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E05:comments:1",
+        "span": {
+          "start": 30,
+          "end": 135,
+          "quote": "Don't forget to include the commit hash after your ACK to specify which version of the PR you are ACK:ing"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Local review coordination is explicit; no sanction is stated."
+  },
+  {
+    "claim_id": "E05-C3",
+    "episode_id": "E05",
+    "claim": "paymog acknowledges the reminder and supplies a hash-specific ACK in a later comment.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E05:comments:2",
+        "span": {
+          "start": 0,
+          "end": 48,
+          "quote": "@practicalswift got it. Thanks for the patience."
+        }
+      },
+      {
+        "source_id": "E05:comments:2",
+        "span": {
+          "start": 53,
+          "end": 97,
+          "quote": "ACK 6338c0203416a5f86e9422b6cd479da8af277f2f"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "The separate response supports local uptake. No population compliance rate or durable internalized belief follows."
+  },
+  {
+    "claim_id": "E05-C4",
+    "episode_id": "E05",
+    "claim": "The body describes a software precondition, which supplies no institutional duty by itself.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E05:body",
+        "span": {
+          "start": 404,
+          "end": 455,
+          "quote": "requires an initialized `secp256k1_context_verify`."
+        }
+      },
+      {
+        "source_id": "E05:body",
+        "span": {
+          "start": 459,
+          "end": 533,
+          "quote": "The fuzzing harness did not fulfil that pre-condition prior to this commit"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Technical requires should not be converted to an institutional obligation without a separate governance claim."
+  }
+]

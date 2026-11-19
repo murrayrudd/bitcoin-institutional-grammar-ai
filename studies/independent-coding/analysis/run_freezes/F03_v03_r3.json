@@ -1,0 +1,82 @@
+{
+  "run_id": "F03_v03_r3",
+  "frozen_at_utc": "2026-11-07T19:23:57.821085+00:00",
+  "input_integrity": "pass",
+  "files": {
+    "annotation.first_complete.json": "639aaa881fd1297fe62152ba75f80618b4ff9aff1f19e68311e2a935b22a9d02",
+    "annotation.final.json": "cf21238484369a96c31dd4c856bd970b55a299978400f8c911c3ef329155b53c",
+    "checks.first.json": "182caea9ca1883ae2e1243ec8f25bac9c3680e128ec34e8cfa2e1259b007f8db",
+    "checks.json": "5793fca1adb6481e78f9f53469676f630b09307f43ba186d2c99740b423e9023",
+    "repair_log.json": "098895915431148b948bb6dd5c03f6c53dd4414bc59637301cb3a85838305a47",
+    "review_notes.json": "f6aea4bac6440e9bc2103b4b7de26ddd611a140c2ee131fc289d6b6e66c587bd",
+    "access_record.json": "054e3ebe1146cf5e5056692fe746975871173c2f96600776cb1a8ab89f65dc2d"
+  },
+  "independent_mechanical_checks": {
+    "first_complete": {
+      "status": "pass",
+      "screened_entries": 19,
+      "units": 23,
+      "statement_units": 16,
+      "exact_anchor_references": 184,
+      "errors": [],
+      "review_flags": [
+        {
+          "unit_id": "F03-U07",
+          "source_id": "pr7819:comments:1",
+          "kind": "outside_unit",
+          "symbol": "Bdir",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 47,
+              "end": 55,
+              "quote": "red text"
+            }
+          },
+          "note": "The literal object of get becomes the target of the inferred apply action; its transformed role is recorded as inferred."
+        },
+        {
+          "unit_id": "F03-U11",
+          "source_id": "pr7819:comments:2",
+          "kind": "outside_unit",
+          "symbol": "Bdir",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 36,
+              "end": 40,
+              "quote": "this"
+            }
+          },
+          "note": "This is the literal passive grammatical subject, interpreted as the target of review. Its Bdir role is semantically reconstructed, even though the word is explicit."
+        },
+        {
+          "unit_id": "F03-U04",
+          "kind": "pragmatic_explicit_argument",
+          "symbol": "Bdir",
+          "note": "This remains the explicit object of expose in the pragmatic parse. The preceding PR body resolves it to the proposed checkbox; no actor role is inferred for the author."
+        }
+      ],
+      "semantic_validity": "Requires source review; not certified by this checker"
+    },
+    "final": {
+      "status": "pass",
+      "screened_entries": 19,
+      "units": 23,
+      "statement_units": 16,
+      "exact_anchor_references": 185,
+      "errors": [],
+      "review_flags": [
+        {
+          "unit_id": "F03-U04",
+          "kind": "pragmatic_explicit_argument",
+          "symbol": "Bdir",
+          "note": "This remains the explicit object of expose in the pragmatic parse. The preceding PR body resolves it to the proposed checkbox; no actor role is inferred for the author."
+        }
+      ],
+      "semantic_validity": "Requires source review; not certified by this checker"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "run_id": "F01_v04_r2",
+  "configuration": "inherited primary configuration",
+  "configuration_override": false,
+  "model": {
+    "exposed_role_description": "Codex, an agent based on GPT-6",
+    "exact_model_identity": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling": null,
+    "reasoning_effort": null,
+    "token_use": null,
+    "cost": null,
+    "note": "No model identity inferred from protocol, packet, or filenames. Exact provider/runtime model controls were not exposed."
+  },
+  "runtime": {
+    "tool": "functions.exec invoking exec_command",
+    "shell": "bash",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_implementation": "CPython",
+    "working_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r2",
+    "libraries": "Python standard library plus checker-owned jsonschema dependency",
+    "network_requests": 0,
+    "agents_spawned": 0
+  },
+  "research_access_boundary": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r2",
+  "original_inputs": [
+    {
+      "path": "INSTRUCTIONS.txt",
+      "access": "read only",
+      "sha256": "931057a666750228b97087ce15e2eccea64cf33403c9f7a7c335856c7f6486e6"
+    },
+    {
+      "path": "protocol/codebook.txt",
+      "access": "read only",
+      "sha256": "6c7679852ebaa621c7dc6861c5a2400a5f0fbb9f8f987771b565e339e8650e7b"
+    },
+    {
+      "path": "protocol/annotation_schema.json",
+      "access": "read only",
+      "sha256": "71f223a9bfb78960d5c10f3566d9f005a5bcbe3a38be09c77d70608ea75c2523"
+    },
+    {
+      "path": "packet.json",
+      "access": "read only",
+      "sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d"
+    },
+    {
+      "path": "tools/check_annotation.py",
+      "access": "read only; checker additionally executed for three recorded results",
+      "sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+    }
+  ],
+  "output_files": [
+    {
+      "path": "build_annotation.py",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "repair_mechanical.py",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "source_self_review.py",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "finalize_logs.py",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "annotation.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "annotation.first_complete.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "first_complete_manifest.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "checks.first.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "annotation.mechanical.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "checks.mechanical.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "repair_log.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "annotation.final.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "checks.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "review_notes.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "completion_record.json",
+      "access": "created and, where required for checking/review, read or executed"
+    },
+    {
+      "path": "access_record.json",
+      "access": "created and, where required for checking/review, read or executed"
+    }
+  ],
+  "names_only_observed": [
+    "input_manifest.json",
+    "calibration/cases.json",
+    "calibration/packet.json",
+    "calibration/annotation.json"
+  ],
+  "not_accessed": "No contents of input_manifest or calibration files, no parent directories, no other runs, no Library, no web, no external research, and no other-agent research output.",
+  "generation_notes": [
+    "Initial multi-file read was truncated by tool output; the complete protocol, schema, and packet were subsequently read in bounded nontruncated chunks.",
+    "One initial construction run failed before writing annotation.json because the local helper duplicated a keyword; the helper was repaired before first-complete output.",
+    "First-complete output was copied before any checker execution or source self-review.",
+    "One mechanical feedback repair phase and one complete source-based self-review were conducted; all assigned checker results are preserved."
+  ]
+}

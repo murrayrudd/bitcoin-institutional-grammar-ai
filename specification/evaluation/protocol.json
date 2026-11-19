@@ -1,0 +1,40 @@
+{
+  "protocol_id": "IG2_0.4_prospective_overlap_v1",
+  "status": "design_prepared_no_fresh_sample_selected_or_run",
+  "purpose": "Evaluate whether version 0.4 reduces consequential interpretation and evidence-basis failures while retaining extraction coverage and defensible alternatives.",
+  "comparison": "Whole frozen 0.3 and 0.4 coding workflows on identical fresh source packets within each episode; no claim that prose changes alone cause any difference.",
+  "selection": {
+    "unit": "Complete contribution episode with prespecified available contextual and dated sources",
+    "main_sample": "Three episodes, one from each metadata stratum: merged contribution, closed unmerged contribution, and procedure-related title. Candidate size range 1000 to 12000 source-text characters before common supplements.",
+    "ranking": "SHA256 of the literal protocol_id, a vertical bar, and canonical repository PR identifier; ascending lexical digest within each stratum. Assign procedure-title stratum first, then remaining merged or closed-unmerged strata. One record cannot occupy two strata.",
+    "procedure_title_pattern": "(?i)contribut|review|maintain|moder|govern|release|procedure|guideline",
+    "supplement_rule": "Preserve complete corpus-supplied bodies, comments, reviews, and inline comments; add only directly referenced guidance pinned to a recorded revision, outcome metadata, and patches relevant to selected proposition identity. Freeze all supplements before dispatch and give identical content to both conditions.",
+    "exclusion": "Exclude every previously examined episode and any episode whose content was inspected to develop 0.4, including all Round 12 sources and worked examples. Build and verify a complete exposure inventory before selection.",
+    "known_inventory_status": "The package supplies a partial known-exposure list. The complete earlier project inventory and candidate corpus are not included in this development release. Do not claim unseen selection until the inventory is completed and hashed.",
+    "higher_level_challenge_set": "If the three metadata-selected cases provide no substantive higher-level claims, report that gap. A separate, explicitly purposive challenge set may then be designed and frozen under a separately versioned addendum. Do not silently add favorable cases or pool them with the main sample."
+  },
+  "execution": {
+    "coders_per_version_per_episode": 3,
+    "planned_total_annotations": 18,
+    "context": "Fresh context for every annotation; no parent history, earlier annotations, or other coder output.",
+    "model": "Same actually available primary configuration across the paired comparison; record exact configuration and limits exposed at dispatch. Any cross-model extension is a separate condition.",
+    "order": "Interleave 0.3 and 0.4 within each episode and rotate which condition goes first across episodes. Freeze the explicit schedule before dispatch.",
+    "stages": ["first complete annotation", "mechanical feedback", "one source-based self-review", "final annotation freeze", "masked proposition alignment", "independent source review", "reconciliation"],
+    "source_review": "Use two fresh review contexts with the same source-review instructions; no agreement scores or condition names. Review all records, including unanimous claims. Resolve differences against sources and preserve unresolved findings.",
+    "unavailable_metadata": "Provider snapshot, seed, sampling parameters, token use, and cost remain null when not exposed. Do not infer speed or cost superiority."
+  },
+  "outcomes": {
+    "primary": ["Source-supported interpretation-changing error groups by episode and condition", "Evidence-basis error groups by episode and condition", "Material extraction and qualifier-scope losses"],
+    "secondary": ["Screening agreement", "Exact-span and semantic alignment coverage", "Within-condition field agreement", "Convention deviations", "Defensible alternatives and unresolved cases", "Repair burden from first to final output"],
+    "comparison_fields": ["grammar", "deontic_force", "institutional_type", "target_level", "observed_action_level", "dispute_scope", "meaning_preservation"],
+    "standing_crosswalk": "Analyze documentary coverage, recognition, application, and challenge against sources in both versions. Do not treat the former single standing label as numerically equivalent to the new profile.",
+    "denominators": "Field agreement uses one-to-one matches and reports excluded groups and source clustering. Error groups are descriptive judgments, not independent accuracy observations.",
+    "no_posthoc_rewrite": "Preserve pre-reconciliation agreement, original annotations, and frozen test criteria. A criterion revised after observing fresh results requires another version."
+  },
+  "readiness": {
+    "mechanical": "All final outputs satisfy their assigned schema and exact-source checks, or failures are explicitly counted.",
+    "substantive": "No unresolved source-supported overclaim may remain in an adopted downstream conclusion concerning proposition identity, authority, recognition, time, application, or governance level. Resolve the evidence, narrow the claim, or retain it as unresolved.",
+    "coverage": "Check all source entries and material qualifiers; abstention or stricter classification must not conceal lost relevant propositions.",
+    "interpretation": "A higher agreement score alone is not a pass. Report condition-specific strengths, failures, and alternatives. The small sample supports bounded comparison, not full-corpus validation."
+  }
+}

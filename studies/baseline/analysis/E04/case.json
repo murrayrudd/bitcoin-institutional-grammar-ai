@@ -1,0 +1,77 @@
+{
+  "episode_id": "E04",
+  "pr_number": 26399,
+  "label": "Attributed procedural closure",
+  "mechanism": "conditional_integration",
+  "initiation": "The guide states response expectations and a conditional closure permission.",
+  "outcome": "maflcko names alleged procedural failures and explicitly connects closure to the guide; the author contests technical criticism.",
+  "alternative_explanation": "Technical disagreement remains a concurrent explanation. The allegations are not independently adjudicated.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Application of existing contribution arrangements; no new constitutional power is observed.",
+  "claim_ids": [
+    "E04-C1",
+    "E04-C2",
+    "E04-C3",
+    "E04-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E04:doc_before",
+      "span": {
+        "start": 8953,
+        "end": 9257,
+        "quote": "You are expected to reply to any review comments before your pull request is\nmerged. You may update the code or reject the feedback if you do not agree with\nit, but you should express so in a reply. If there is outstanding feedback and\nyou are not actively working on it, your pull request may be closed."
+      }
+    },
+    {
+      "source_id": "E04:comments:5",
+      "span": {
+        "start": 85,
+        "end": 309,
+        "quote": "You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines."
+      }
+    },
+    {
+      "source_id": "E04:outcome",
+      "span": {
+        "start": 105,
+        "end": 129,
+        "quote": "\"recorded_merged\": false"
+      }
+    },
+    {
+      "source_id": "E04:doc_before",
+      "span": {
+        "start": 9225,
+        "end": 9257,
+        "quote": "your pull request may be closed."
+      }
+    },
+    {
+      "source_id": "E04:comments:4",
+      "span": {
+        "start": 294,
+        "end": 420,
+        "quote": "The first sentence in your comment only makes sense in a vacuum. The standard is a thing. I agree with the second part. Let's."
+      }
+    },
+    {
+      "source_id": "E04:comments:4",
+      "span": {
+        "start": 118,
+        "end": 158,
+        "quote": "It doesn't \"seem[sic]\" to fix the issue?"
+      }
+    },
+    {
+      "source_id": "E04:comments:5",
+      "span": {
+        "start": 231,
+        "end": 309,
+        "quote": "I closed this for now, because it can't be merged according to the guidelines."
+      }
+    }
+  ]
+}

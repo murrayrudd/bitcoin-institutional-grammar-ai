@@ -1,0 +1,98 @@
+[
+  {
+    "claim_id": "E08-C1",
+    "episode_id": "E08",
+    "claim": "After merge, maflcko states a sufficiency threshold for relatively simple test PRs.",
+    "assessment": "attributed",
+    "evidence": [
+      {
+        "source_id": "E08:comments:4",
+        "span": {
+          "start": 742,
+          "end": 862,
+          "quote": "And for rather simple pulls, such as this one, I try to merge quickly. Two utACK or one tested ACK should be sufficient."
+        }
+      },
+      {
+        "source_id": "E08:outcome",
+        "span": {
+          "start": 86,
+          "end": 126,
+          "quote": "\"merged_at\": \"2017-11-22T16:34:02+00:00\""
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "This is a scoped justification, not a universal mandatory threshold. The statement follows the recorded merge."
+  },
+  {
+    "claim_id": "E08-C2",
+    "episode_id": "E08",
+    "claim": "promag challenges both review sufficiency and the handling of feedback.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E08:comments:3",
+        "span": {
+          "start": 97,
+          "end": 190,
+          "quote": "Beside it only had one ACK. Test code should follow the same review rules as the other right?"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "A question can pragmatically challenge a decision; it does not establish the content of a settled general rule."
+  },
+  {
+    "claim_id": "E08-C3",
+    "episode_id": "E08",
+    "claim": "A later reviewer proposes adding the missing explanation in a follow-up and receives acknowledgment.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E08:comments:8",
+        "span": {
+          "start": 0,
+          "end": 92,
+          "quote": "Oops, didn't realize this was already merged. Guess I will add the comment myself in #11687."
+        }
+      },
+      {
+        "source_id": "E08:comments:9",
+        "span": {
+          "start": 11,
+          "end": 74,
+          "quote": "Jup, thanks for doing that. I should have done it in this pull."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Proposed follow-up is not verified implementation of that follow-up."
+  },
+  {
+    "claim_id": "E08-C4",
+    "episode_id": "E08",
+    "claim": "Two untested ACKs or one tested ACK is an uncontested, project-wide merge requirement.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E08:comments:4",
+        "span": {
+          "start": 813,
+          "end": 862,
+          "quote": "Two utACK or one tested ACK should be sufficient."
+        }
+      },
+      {
+        "source_id": "E08:comments:3",
+        "span": {
+          "start": 125,
+          "end": 190,
+          "quote": "Test code should follow the same review rules as the other right?"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "The assertion is conditional on simple test changes and contested locally. Courtesy afterward does not prove acceptance of the threshold."
+  }
+]

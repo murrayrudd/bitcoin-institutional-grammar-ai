@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-31T02:57:27.149219+00:00",
+  "round": "evidence-expansion-1",
+  "research_question": "Under what evidentiary conditions can IG 2.0 reconstruct institutional arrangements from public records of decentralized coordination?",
+  "design": "Purposive comparative episode study with evidence availability modeling; not a randomized benchmark or a population estimate.",
+  "target_new_episodes": 12,
+  "selection_families": [
+    "review expectations and guidance",
+    "review recognition and technical mediation",
+    "role authority and recurring procedures"
+  ],
+  "selection_rules": [
+    "Exclude all 24 previous focal episodes and bridge 15626.",
+    "Screen titles and source lengths first; select historical and outcome variation with manageable full discussions.",
+    "Retain thin records and contrary cases; disclose any content-informed selection.",
+    "Group linked episodes rather than claiming independent observations."
+  ],
+  "evidence_layers": {
+    "D": "Contemporaneous dated standing guidance only. Proposed documents separately labeled and not treated as standing.",
+    "T": "D plus complete available frozen discussion and recorded outcome.",
+    "I": "T plus relevant commit-pinned files, patches, and implementation evidence."
+  },
+  "execution": "One continuing assistant analysis, with deterministic exact-evidence checks and a separate within-session source review. No independent or blind model runs are claimed. Evidence-layer comparisons are source-availability assessments, not performance estimates.",
+  "coding_scope": "Focal institutional propositions and case mechanisms, applying v0.3 distinctions. Complete packets retained and read; not exhaustive v0.3 component annotation of every candidate statement.",
+  "narrative_comparison": "Within-session structured versus narrative representation on selected contrasts; a diagnostic of information preservation, not a blind efficacy benchmark.",
+  "primary_outputs": [
+    "Focal claim ledger with source anchors and counterevidence",
+    "D/T/I claim support and uncertainty",
+    "Mechanism maps and bounded level conclusions",
+    "Negative and contrary cases",
+    "Readiness assessment for paper"
+  ],
+  "frozen_codebook_sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+  "excluded_prs": [
+    6718,
+    15617,
+    15626,
+    16149,
+    16665,
+    18283,
+    18619,
+    19494,
+    19827,
+    20086,
+    22966,
+    25012,
+    25078,
+    25123,
+    25590,
+    26868,
+    27035,
+    27058,
+    27081,
+    28205,
+    28398,
+    28775,
+    28806,
+    30655,
+    31464
+  ],
+  "known_limits": [
+    "Public corpus may omit patch histories, comment edits, thread links, and off-platform activity.",
+    "No model accuracy, superiority, cost or scalability estimates.",
+    "Recorded merges do not establish recognition of each provision or network adoption.",
+    "Source sufficiency remains revisable; richer evidence is not a gold standard."
+  ]
+}

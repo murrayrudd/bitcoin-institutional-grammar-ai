@@ -1,0 +1,22 @@
+{
+  "run_id": "F02_v03_r1",
+  "checks": [
+    {
+      "sequence": 1,
+      "command": "python3 tools/check_annotation.py packet.json annotation.json",
+      "stage": "first_complete_before_self_review",
+      "saved_result": "checks.first.json",
+      "status": "pass",
+      "sha256": "d367e7d1d59d259ecd197ce05430b7a0f41116754bc7d94a57d3ff7f786cfa11"
+    },
+    {
+      "sequence": 2,
+      "command": "python3 tools/check_annotation.py packet.json annotation.final.json",
+      "stage": "after_single_source_self_review",
+      "saved_result": "checks.json",
+      "status": "pass",
+      "sha256": "cce0347994461a564a9522f7fa7087e087f75019b3f80c9ec2ccffae8c984fc3"
+    }
+  ],
+  "no_unpreserved_checker_results": true
+}

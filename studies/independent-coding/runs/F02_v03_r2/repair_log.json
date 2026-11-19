@@ -1,0 +1,80 @@
+{
+  "run_id": "F02_v03_r2",
+  "first_complete_sha256": "fe5becab92afa39f8dae9bc0c94999ae0f8521588cce76b736a47406665d2b2b",
+  "final_sha256": "c09b955852ec052c5860304a2778c3a6fbabcfdbdd58f18e617a3550d571b30b",
+  "mechanical_repairs": [],
+  "changes": [
+    {
+      "change_id": "R01",
+      "stage": "source_self_review",
+      "unit_id": "S04",
+      "paths": [
+        "components[symbol=Cex].basis",
+        "components[symbol=Cex].occurrence_role",
+        "components[symbol=Cex].inference_note"
+      ],
+      "before": {
+        "basis": "explicit",
+        "occurrence_role": "local",
+        "inference_note": "Maybe introduces optional proposed wording for the documentation. It preserves the accounts-mode condition, the empty string label, the unlabeled-transactions result, the error without the setting, and the usefulness/confusion rationale. Those are technical content of the edit, not conditions on whether contributors may document it."
+      },
+      "after": {
+        "basis": "context_inferred",
+        "occurrence_role": "semantic_inference",
+        "inference_note": "Maybe introduces optional proposed wording, but the grammatical link making this draft an execution specification of document is elliptical. Its Cex role is therefore inferred rather than explicit. The source wording and all its material content remain explicit: the accounts-mode condition, empty string label, unlabeled-transactions result, error without the setting, and usefulness/confusion rationale. These qualify the suggested documentation content; they are not conditions on whether contributors may document it. Representing the same draft as an inferred object-content property would preserve the recommendation if its tentativeness and all technical qualifications remain intact."
+      },
+      "category": "epistemic_labeling_correction",
+      "meaning_changed": false,
+      "evidence_status_changed": true,
+      "institutional_conclusion_changed": false,
+      "rationale": "The words of the draft are present, but the execution-constraint role under the documentation request is inferred through the elliptical Maybe introduction. This corrects evidence status without changing the recommendation, its qualifications, its scope, or its standing.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "R02",
+      "stage": "source_self_review",
+      "unit_id": "S02",
+      "paths": [
+        "components[symbol=A].inference_note"
+      ],
+      "before": {
+        "inference_note": "The review proposes an edit for the person updating this PR. The addressee is not named in the suggestion. jnewbery's later update report supports identifying the PR updater as a likely performer, but neither an occupational role nor a duty is inferred."
+      },
+      "after": {
+        "inference_note": "The explicit I in I'd maybe belongs to ryanofsky's hypothetical phrasing; it is not an explicit name for the actor in the selected recommendation-to-the-contributor parse. The pragmatic actor is the person updating this PR. jnewbery's later attribution of the update to ryanofsky's changes supports that addressee only as a contextual inference. No occupational status, actual commitment by ryanofsky to perform the edit, or duty to comply is inferred. The literal reviewer-as-hypothetical-actor alternative remains in alternative_interpretation."
+      },
+      "category": "explanation_clarification",
+      "meaning_changed": false,
+      "evidence_status_changed": false,
+      "institutional_conclusion_changed": false,
+      "rationale": "Explicitly distinguish the literal first-person hypothetical subject from the inferred addressee of the editing recommendation. The existing inferred actor label and retained alternative are unchanged.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 117,
+            "quote": "I'd maybe change it to:"
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ]
+    }
+  ]
+}

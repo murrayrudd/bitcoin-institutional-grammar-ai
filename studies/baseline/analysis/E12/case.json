@@ -1,0 +1,101 @@
+{
+  "episode_id": "E12",
+  "pr_number": 27054,
+  "label": "Signer list removal and verification",
+  "mechanism": "authority_allocation",
+  "initiation": "The signer proposes his own removal from the verification trust list.",
+  "outcome": "Reviewers discuss technical consequences; the merged list omits the key. The controlled wrapper test confirms a membership gate.",
+  "alternative_explanation": "A verification membership change does not describe every institutional privilege or establish involuntary removal.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Routine role transition and verification maintenance; a constitutional interpretation needs evidence of changed collective-choice powers.",
+  "claim_ids": [
+    "E12-C1",
+    "E12-C2",
+    "E12-C3",
+    "E12-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E12:merge_diff",
+      "span": {
+        "start": 7555,
+        "end": 7596,
+        "quote": "-71A3B16735405025D447E8F274810B012346C9A6"
+      }
+    },
+    {
+      "source_id": "E12:merge_message",
+      "span": {
+        "start": 29,
+        "end": 60,
+        "quote": "Remove laanwj from trusted-keys"
+      }
+    },
+    {
+      "source_id": "E12:body",
+      "span": {
+        "start": 0,
+        "end": 42,
+        "quote": "allow-revsig-commits list generated using:"
+      }
+    },
+    {
+      "source_id": "E12:comments:2",
+      "span": {
+        "start": 0,
+        "end": 86,
+        "quote": "I don't think adding your merged commits to allow-revsig-commits actually allows them."
+      }
+    },
+    {
+      "source_id": "E12:comments:5",
+      "span": {
+        "start": 283,
+        "end": 402,
+        "quote": "But trying with `--clean-merge 0` makes sense. And then indeed it seems to ignore the hashes in `allow-revsig-commits`."
+      }
+    },
+    {
+      "source_id": "E12:comments:7",
+      "span": {
+        "start": 84,
+        "end": 171,
+        "quote": "any bug fixes or behaviour changes of the script are better handled in a separate pull."
+      }
+    },
+    {
+      "source_id": "E12:doc_verify_gpg",
+      "span": {
+        "start": 1813,
+        "end": 1857,
+        "quote": "done < ./contrib/verify-commits/trusted-keys"
+      }
+    },
+    {
+      "source_id": "E12:doc_verify_gpg",
+      "span": {
+        "start": 2174,
+        "end": 2202,
+        "quote": "if ! $VALID; then\n\texit 1\nfi"
+      }
+    },
+    {
+      "source_id": "E12:body",
+      "span": {
+        "start": 0,
+        "end": 42,
+        "quote": "allow-revsig-commits list generated using:"
+      }
+    },
+    {
+      "source_id": "E12:merge_message",
+      "span": {
+        "start": 29,
+        "end": 60,
+        "quote": "Remove laanwj from trusted-keys"
+      }
+    }
+  ]
+}

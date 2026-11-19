@@ -1,0 +1,37 @@
+{
+  "run_id": "F01_v03_r3",
+  "episode_id": "F01",
+  "complete": true,
+  "counts": {
+    "entries_screened": 42,
+    "focal_entries": 23,
+    "supplemental_entries": 19,
+    "units": 63,
+    "statement_units": 33,
+    "context_units": 18,
+    "quotation_units": 12,
+    "relations": 37,
+    "mechanisms": 3,
+    "outcomes": 3,
+    "final_checker_flags": 18,
+    "repair_log_entries": 51
+  },
+  "checker_status": "pass",
+  "complete_source_self_reviews": 1,
+  "packet_sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+  "first_complete_sha256": "aa278cb010b96d8cfcaacd327f6b86ed7fc2b0da78303c9a3c00c937458104d8",
+  "final_sha256": "41244bea7b6ebdfca853cf8783f12017a62c2def70912852fa1886145f71e93d",
+  "unresolved_limits": [
+    "Bot ignored-object referent; technical capability versus permission; tentative expectation recognition versus technical assent; authority/enforcement; exact contribution causation; general policy adoption."
+  ],
+  "output_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v03_r3",
+  "primary_outputs": [
+    "annotation.first_complete.json",
+    "annotation.final.json",
+    "checks.first.json",
+    "checks.json",
+    "repair_log.json",
+    "review_notes.json",
+    "access_record.json"
+  ]
+}

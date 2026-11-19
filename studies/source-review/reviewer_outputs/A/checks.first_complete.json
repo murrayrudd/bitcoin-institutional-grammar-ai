@@ -1,0 +1,170 @@
+{
+  "status": "fail",
+  "screened_entries": 45,
+  "units": 35,
+  "statement_units": 15,
+  "exact_anchor_references": 220,
+  "errors": [
+    {
+      "unit_id": "A017",
+      "symbol": "I",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "A017",
+      "symbol": "I",
+      "message": "outside-unit component lacks a scope/reference explanation"
+    },
+    {
+      "unit_id": "A017",
+      "symbol": "I",
+      "message": "component anchor is a token fragment without an exception"
+    }
+  ],
+  "review_flags": [
+    {
+      "unit_id": "A010",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 624,
+          "end": 925,
+          "quote": "In general Bitcoin Core provides very limited catering to forks, whether that's altcoins, modified implementations or even just experimental features. We do have e.g. `CLIENT_NAME \"Bitcoin Core\"` that's easy to override, and a CI flag `SKIP_BRANCH_PUSH` which replaced a hardcoded gui repository name."
+        }
+      },
+      "note": "Those refers to the preceding examples of fork accommodations, not to arbitrary contributions. To include is interpreted as the situation activating the persuasion burden."
+    },
+    {
+      "unit_id": "A012",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 1187,
+          "end": 1227,
+          "quote": "the closed PR that removes it completely"
+        }
+      },
+      "note": "Back refers to the preceding quoted alternative, not to an independently named patch. Exact PR number and scope of it remain unverified."
+    },
+    {
+      "unit_id": "A013",
+      "source_id": "33453-018",
+      "kind": "outside_unit",
+      "symbol": "E",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33453-014",
+        "span": {
+          "start": 0,
+          "end": 130,
+          "quote": "@bitschmidty to be clear are you considering this as something to backport (30 et al), or just for following releases from master."
+        }
+      },
+      "note": "The referent of that is recovered from the preceding exchange about backporting to 30 rather than following releases; the subject role is reconstructed for the resolved entity."
+    },
+    {
+      "unit_id": "A013",
+      "source_id": "33453-018",
+      "kind": "outside_unit",
+      "symbol": "E",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33453-017",
+        "span": {
+          "start": 66,
+          "end": 204,
+          "quote": "That is preferred IMHO. But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+        }
+      },
+      "note": "The referent of that is recovered from the preceding exchange about backporting to 30 rather than following releases; the subject role is reconstructed for the resolved entity."
+    },
+    {
+      "unit_id": "A016",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 253,
+          "end": 321,
+          "quote": "the restriction on the number of `OP_RETURN` outputs per transaction"
+        }
+      },
+      "note": "Resolves this restriction from the immediately preceding explanation without expanding the unit or treating an output type as an institution."
+    },
+    {
+      "unit_id": "A016",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 642,
+          "end": 763,
+          "quote": "Notably this does not remove any command line option and keeps the limit in place on the size of each `OP_RETURN` output."
+        }
+      },
+      "note": "The later description bounds the same current proposal. It is retained as a scope qualification on the requested lift, not a second independent prescription."
+    },
+    {
+      "unit_id": "A017",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 131,
+          "end": 133,
+          "quote": "do"
+        }
+      },
+      "note": ""
+    },
+    {
+      "unit_id": "A017",
+      "source_id": "32381-body",
+      "kind": "token_fragment",
+      "symbol": "I",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 131,
+          "end": 133,
+          "quote": "do"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A020",
+      "source_id": "32406-148",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-148",
+        "span": {
+          "start": 192,
+          "end": 252,
+          "quote": "Unless this is already tested in some other way I'm missing?"
+        }
+      },
+      "note": "The later unless question qualifies the need for the preceding assertion, allowing existing test coverage to make the edit unnecessary. Its interrogative uncertainty is preserved; it is not an unconditional demand."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "W01",
+    "url": "https://community.umbrel.com/t/umbrelos-not-working-properly-after-migrating-from-core-to-knots/22554",
+    "retrieval_ref": "turn80view0",
+    "type": "operator support post",
+    "author": "PARAPLUTUS",
+    "date": "2025-05-04",
+    "locator": "post 1, displayed 12:05pm; timezone unspecified",
+    "excerpt": "I tried migrating from Bitcoin Core to Bitcoin Knots",
+    "observation": "The account reports an attempted migration followed by startup and storage problems. No completed repair, configuration value, or reason tied to the focal governance decisions is established.",
+    "source_scope": "First-person report only. Responses containing proposed diagnoses are not treated as observed causes."
+  },
+  {
+    "source_id": "W02",
+    "url": "https://community.umbrel.com/t/knots-starts-running-and-stops/23276",
+    "retrieval_ref": "turn80view1",
+    "type": "operator supplied startup log",
+    "author": "Tdf1230",
+    "date": "2025-07-14",
+    "locator": "post 3; log timestamps 12:41:51–12:42:05 UTC",
+    "excerpt": "Bitcoin Knots version v28.1.knots20250305 (release build)\nConfig file arg: datacarriersize=“83”",
+    "observation": "The supplied startup log identifies Knots and an 83 setting, then records failure; deliberate selection and sustained operation remain unknown.",
+    "source_scope": "Only relevant log fields retained."
+  },
+  {
+    "source_id": "W03",
+    "url": "https://community.umbrel.com/t/bitcoin-knots-issues-on-umbrel/24108",
+    "retrieval_ref": "turn79view0",
+    "type": "operator support exchange",
+    "author": "vnt; Tdf1230",
+    "date": "2025-10-29/2025-10-31",
+    "locator": "posts 7 and 12",
+    "excerpt": "I had similar issues, moved to core 29.2.\nI will keep it in mind , I prefer to use knots",
+    "observation": "vnt reports a return after operational problems; Tdf1230 retains a preference. Neither identifies an undeprecation effect.",
+    "source_scope": "One support exchange; no reliability comparison or verified recovery."
+  },
+  {
+    "source_id": "W04",
+    "url": "https://github.com/bitcoin-core/meta/discussions/18",
+    "retrieval_ref": "turn75view0",
+    "type": "moderator and participant statements",
+    "author": "pinheadmz; Turtlecute33; sonoranai",
+    "date": "2025-04-29",
+    "locator": "discussion entries addressing Turtlecute33 and sonoranai; retrieved lines 158–196 and 273–333",
+    "excerpt": "I'll review your comment again\nblocked for 24 hours\nI’d reply in kind, but I’ve been blocked for dissenting opinions lol.",
+    "observation": "Moderator records reconsideration and a temporary block; the blocked participant disputes the rationale.",
+    "source_scope": "Individual entries establish attributed actions; edited header and unobserved restorations excluded."
+  }
+]

@@ -1,0 +1,486 @@
+{
+  "status": "fail",
+  "screened_entries": 98,
+  "units": 104,
+  "statement_units": 70,
+  "exact_anchor_references": 671,
+  "errors": [
+    {
+      "unit_id": "C178_lower",
+      "symbol": "D",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "C178_lower",
+      "symbol": "D",
+      "message": "outside-unit component lacks a scope/reference explanation"
+    }
+  ],
+  "review_flags": [
+    {
+      "unit_id": "C213_increase",
+      "source_id": "32359-213",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32359-213",
+        "span": {
+          "start": 430,
+          "end": 458,
+          "quote": "let the defaults be as it is"
+        }
+      },
+      "note": "The pronoun is resolved from the immediately preceding defaults proposal, with the configuration discussion as context."
+    },
+    {
+      "unit_id": "C227_capitulate",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 192,
+          "end": 244,
+          "quote": "the absence of a technically perfect solutions means"
+        }
+      },
+      "note": "The preceding means clause supplies the attributed reasoning for this action, not an if-condition or the coder’s factual assessment. It is shared with the coordinated action."
+    },
+    {
+      "unit_id": "C227_remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 245,
+          "end": 277,
+          "quote": "we should capitulate to spammers"
+        }
+      },
+      "note": "Shared actor from the coordinated quoted clause."
+    },
+    {
+      "unit_id": "C227_remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 245,
+          "end": 277,
+          "quote": "we should capitulate to spammers"
+        }
+      },
+      "note": "Shared modal from the quoted coordination."
+    },
+    {
+      "unit_id": "C227_remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 192,
+          "end": 244,
+          "quote": "the absence of a technically perfect solutions means"
+        }
+      },
+      "note": "The preceding means clause supplies the attributed reasoning for this action, not an if-condition or the coder’s factual assessment. It is shared with the coordinated action."
+    },
+    {
+      "unit_id": "C381_lift",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 253,
+          "end": 321,
+          "quote": "the restriction on the number of `OP_RETURN` outputs per transaction"
+        }
+      },
+      "note": "The immediately preceding explanation identifies this restriction."
+    },
+    {
+      "unit_id": "C148_assert",
+      "source_id": "32406-148",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-148",
+        "span": {
+          "start": 192,
+          "end": 252,
+          "quote": "Unless this is already tested in some other way I'm missing?"
+        }
+      },
+      "note": "The subsequent unless-question explicitly qualifies the requested test addition, so it is shared-scope evidence outside the smallest action unit."
+    },
+    {
+      "unit_id": "C148_doc",
+      "source_id": "32406-148",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-148",
+        "span": {
+          "start": 104,
+          "end": 191,
+          "quote": "Adding a docstring that is not actually enforced in tests is confusing and fragile imo."
+        }
+      },
+      "note": "The preceding docstring description resolves the topical referent without assuming a missing patch."
+    },
+    {
+      "unit_id": "C149_convincing",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 791,
+          "end": 819,
+          "quote": "`CLIENT_NAME \"Bitcoin Core\"`"
+        }
+      },
+      "note": "Those is the grammatical subject of require, but becomes the object of inferred justify inclusion; exact contextual examples identify the referent."
+    },
+    {
+      "unit_id": "C149_convincing",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 859,
+          "end": 877,
+          "quote": "`SKIP_BRANCH_PUSH`"
+        }
+      },
+      "note": "Those is the grammatical subject of require, but becomes the object of inferred justify inclusion; exact contextual examples identify the referent."
+    },
+    {
+      "unit_id": "C178_lower",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 627,
+          "end": 640,
+          "quote": "recommend not"
+        }
+      },
+      "note": ""
+    },
+    {
+      "unit_id": "C178_mark",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1138,
+          "end": 1195,
+          "quote": "not setting this option to a lower value than the default"
+        }
+      },
+      "note": "The pronoun refers to the immediately preceding option; no exact option identifier is invented."
+    },
+    {
+      "unit_id": "C178_patch",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1802,
+          "end": 1866,
+          "quote": "even if it does get removed from core, if users actually want it"
+        }
+      },
+      "note": "The immediately preceding conditional scopes both alternatives."
+    },
+    {
+      "unit_id": "C178_patch",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "A,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1841,
+          "end": 1866,
+          "quote": "if users actually want it"
+        }
+      },
+      "note": "They refers to the explicitly named users in the preceding condition."
+    },
+    {
+      "unit_id": "C178_derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1841,
+          "end": 1866,
+          "quote": "if users actually want it"
+        }
+      },
+      "note": "Actor shared with the preceding patch alternative."
+    },
+    {
+      "unit_id": "C178_derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1895,
+          "end": 1920,
+          "quote": "they can patch it back in"
+        }
+      },
+      "note": "Actor shared with the preceding patch alternative."
+    },
+    {
+      "unit_id": "C178_derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1802,
+          "end": 1866,
+          "quote": "even if it does get removed from core, if users actually want it"
+        }
+      },
+      "note": "The same conditional scopes both alternatives."
+    },
+    {
+      "unit_id": "C252_meta",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 81,
+          "end": 187,
+          "quote": "Comments about maintainers, other specific individuals, \"drama\" etc. are not on topic here in this thread."
+        }
+      },
+      "note": "That refers to the immediately preceding topic classification."
+    },
+    {
+      "unit_id": "C252_ban",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "@1440000bytes"
+        }
+      },
+      "note": "The threatened recipient is inferred from the explicit addressee of the immediately preceding warning; the enforcer is unexpressed."
+    },
+    {
+      "unit_id": "C252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 453,
+          "quote": "If you want to debate this comment please also do so"
+        }
+      },
+      "note": "The action is shared with do so/debate in the preceding clause."
+    },
+    {
+      "unit_id": "C252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 416,
+          "end": 435,
+          "quote": "debate this comment"
+        }
+      },
+      "note": "Shared object of the coordinated negative duty."
+    },
+    {
+      "unit_id": "C252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 435,
+          "quote": "If you want to debate this comment"
+        }
+      },
+      "note": "The conditional scopes both positive and negative channel duties."
+    },
+    {
+      "unit_id": "C224_ignore",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "unresolved",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1470,
+          "end": 1543,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The review is the likely antecedent, while the bot comment is also a nearby noun. The ambiguity is retained."
+    },
+    {
+      "unit_id": "C224_ignore",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1470,
+          "end": 1547,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment and"
+        }
+      },
+      "note": "The conjunction joins the correction action to its announced consequence."
+    },
+    {
+      "unit_id": "C453_call",
+      "source_id": "33453-018",
+      "kind": "outside_unit",
+      "symbol": "E",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33453-017",
+        "span": {
+          "start": 0,
+          "end": 204,
+          "quote": "> are you considering this as something to backport (30 et al)\r\n\r\nThat is preferred IMHO. But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+        }
+      },
+      "note": "The demonstrative is resolved from the immediately preceding backport preference and responsibility statement."
+    },
+    {
+      "unit_id": "C453_schedule",
+      "source_id": "33453-body",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1206,
+          "end": 1242,
+          "quote": "Deprecating the option in the future"
+        }
+      },
+      "note": "The preceding hypothetical future course scopes the schedule preference."
+    },
+    {
+      "unit_id": "C115_unsubstantiated",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Unsubstantiated or repeat acks/nacks is already the overt object of leave; inferring negative advice does not transform its grammatical role."
+    },
+    {
+      "unit_id": "C213_defaults",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The defaults is the overt object of let in the proposed approach; the advisory reading changes utterance force, not that object role."
+    },
+    {
+      "unit_id": "C213_high",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "A default high limit is already the overt object of setting; the elliptical proposal requires no object-role reconstruction."
+    },
+    {
+      "unit_id": "C012_no_args",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "More args is the overt object of adding inside the evaluative sentence; only the negative recommendation force is inferred."
+    },
+    {
+      "unit_id": "C178_mark",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "It is the overt object of marking in the evaluation; the editorial recommendation preserves that role while its referent needs contextual resolution."
+    },
+    {
+      "unit_id": "C178_retain",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The option is the overt object of leaving; interpreting the judgment as advice does not transform that object role."
+    },
+    {
+      "unit_id": "C252_debate_meta",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bind",
+      "note": "The explicitly supplied meta URL is the destination of do so; resolving do so as debate preserves the overt destination role."
+    },
+    {
+      "unit_id": "C714_delay",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "A PR to remove the options is the overt object of open inside the negative prudential evaluation; only the directive force is inferred."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

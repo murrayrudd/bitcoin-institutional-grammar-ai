@@ -1,0 +1,1626 @@
+{
+  "run_id": "R12_C",
+  "first_complete_preserved": true,
+  "first_complete_sha256": "6e5485bb1932ff0f3d871c7f353219e2d7884dccea13925b0f7d57c6369b6629",
+  "source_based_self_review_passes": 1,
+  "outside_semantic_feedback": false,
+  "changes": [
+    {
+      "change_id": "C-repair-01",
+      "unit_id": "C115_arena",
+      "field": "components.1.evidence",
+      "category": "mechanical",
+      "changes_meaning": false,
+      "rationale": "The earlier is anchor was inside this; anchor the actual copula.",
+      "before": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 16,
+            "end": 18,
+            "quote": "is"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 19,
+            "end": 36,
+            "quote": "is a pull request"
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-02",
+      "unit_id": "C178_retain",
+      "field": "components.2.evidence",
+      "category": "mechanical",
+      "changes_meaning": false,
+      "rationale": "The earlier in anchor was inside maintaining; anchor the retained-in complement.",
+      "before": [
+        {
+          "source_id": "32406-178",
+          "span": {
+            "start": 1683,
+            "end": 1685,
+            "quote": "in"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32406-178",
+          "span": {
+            "start": 1735,
+            "end": 1762,
+            "quote": "in seems obviously sensible"
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-03",
+      "unit_id": "C714_discouragement",
+      "field": "components.1.evidence",
+      "category": "mechanical",
+      "changes_meaning": false,
+      "rationale": "The earlier is anchor was inside discouragement; anchor the emphasized copula.",
+      "before": [
+        {
+          "source_id": "32714-014",
+          "span": {
+            "start": 142,
+            "end": 144,
+            "quote": "is"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32714-014",
+          "span": {
+            "start": 156,
+            "end": 160,
+            "quote": "*is*"
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-04",
+      "unit_id": "C115_weight",
+      "field": "institution.standing",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "The June 9 document authorizes discretionary merit weighting but does not establish the exact exclusive criterion as documented on April 29.",
+      "before": "documented",
+      "after": "text_only"
+    },
+    {
+      "change_id": "C-repair-05",
+      "unit_id": "C115_weight",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "The asserted review-weighting arrangement is corroborated by the supplied dated CONTRIBUTING document, which attributes discretion to project maintainers. The June 9 snapshot does not independently prove that identical documentation existed on April 29.",
+      "after": "The comment asserts argument-based rather than frequency-based weighting. The supplied June 9 CONTRIBUTING snapshot attributes discretion to maintainers to weigh reviews by merit, meeting the rule-candidate authorization threshold for weighting. It neither dates that authorization to April 29 nor documents the exact exclusive criterion; standing therefore remains text_only. A norm interpretation remains defensible."
+    },
+    {
+      "change_id": "C-repair-06",
+      "unit_id": "C213_increase",
+      "field": "components.3.symbol",
+      "category": "epistemic_role",
+      "changes_meaning": true,
+      "rationale": "For those who chose identifies beneficiaries, not necessarily actors performing the passive increase. The first output incorrectly labeled that role explicit A.",
+      "before": "A",
+      "after": "Bind"
+    },
+    {
+      "change_id": "C-repair-07",
+      "unit_id": "C213_increase",
+      "field": "alternative_interpretation",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "",
+      "after": "The increase may be performed by the choosing user or enabled by someone else on that user’s behalf; the source supplies a beneficiary rather than an explicit acting subject."
+    },
+    {
+      "change_id": "C-repair-08",
+      "unit_id": "C213_configure",
+      "field": "alternative_interpretation",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "This may be a political autonomy claim or desired software capability rather than an institutional permission.",
+      "after": "This may be a political autonomy claim or desired software capability rather than an institutional permission. The not-have-filled clause is retained as a coupled limit on the desired control; a separate immunity proposition is defensible, but no actor who must refrain from filling the mempool is identified."
+    },
+    {
+      "change_id": "C-repair-09",
+      "unit_id": "C227_capitulate",
+      "field": "components.4.symbol",
+      "category": "scope_role",
+      "changes_meaning": true,
+      "rationale": "The absence-of-perfect-solution means clause is an attributed justificatory premise, not a stated conditional activation rule.",
+      "before": "Cac",
+      "after": "Cex"
+    },
+    {
+      "change_id": "C-repair-10",
+      "unit_id": "C227_capitulate",
+      "field": "components.4.inference_note",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "The preceding means clause supplies the attributed rationale/activation premise; it is not the coder’s factual assessment.",
+      "after": "The preceding means clause supplies the attributed reasoning for this action, not an if-condition or the coder’s factual assessment. It is shared with the coordinated action."
+    },
+    {
+      "change_id": "C-repair-11",
+      "unit_id": "C227_remove",
+      "field": "components.4.symbol",
+      "category": "scope_role",
+      "changes_meaning": true,
+      "rationale": "The absence-of-perfect-solution means clause is an attributed justificatory premise, not a stated conditional activation rule.",
+      "before": "Cac",
+      "after": "Cex"
+    },
+    {
+      "change_id": "C-repair-12",
+      "unit_id": "C227_remove",
+      "field": "components.4.inference_note",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "The same preceding means clause scopes the paired attributed actions.",
+      "after": "The preceding means clause supplies the attributed reasoning for this action, not an if-condition or the coder’s factual assessment. It is shared with the coordinated action."
+    },
+    {
+      "change_id": "C-repair-13",
+      "unit_id": "C149_convincing",
+      "field": "components.1.text",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Preserve the source example’s full string as well as the identifier.",
+      "before": "fork accommodations such as CLIENT_NAME and SKIP_BRANCH_PUSH",
+      "after": "fork accommodations such as CLIENT_NAME \"Bitcoin Core\" and SKIP_BRANCH_PUSH"
+    },
+    {
+      "change_id": "C-repair-14",
+      "unit_id": "C149_convincing",
+      "field": "components",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "The overt requirement operator belongs to the reconstructed justificatory-burden parse; practical-necessity uncertainty is retained.",
+      "before": [
+        {
+          "symbol": "I",
+          "text": "justify inclusion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 936,
+                "end": 970,
+                "quote": "require some convincing to include"
+              }
+            }
+          ],
+          "inference_note": "The inclusion-burden assertion is reconstructed as a requirement to justify inclusion.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "fork accommodations such as CLIENT_NAME \"Bitcoin Core\" and SKIP_BRANCH_PUSH",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 930,
+                "end": 935,
+                "quote": "those"
+              }
+            },
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 791,
+                "end": 819,
+                "quote": "`CLIENT_NAME \"Bitcoin Core\"`"
+              }
+            },
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 859,
+                "end": 877,
+                "quote": "`SKIP_BRANCH_PUSH`"
+              }
+            }
+          ],
+          "inference_note": "Those is the grammatical subject of require, but becomes the object of inferred justify inclusion; exact contextual examples identify the referent.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "justify inclusion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 936,
+                "end": 970,
+                "quote": "require some convincing to include"
+              }
+            }
+          ],
+          "inference_note": "The inclusion-burden assertion is reconstructed as a requirement to justify inclusion.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "fork accommodations such as CLIENT_NAME \"Bitcoin Core\" and SKIP_BRANCH_PUSH",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 930,
+                "end": 935,
+                "quote": "those"
+              }
+            },
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 791,
+                "end": 819,
+                "quote": "`CLIENT_NAME \"Bitcoin Core\"`"
+              }
+            },
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 859,
+                "end": 877,
+                "quote": "`SKIP_BRANCH_PUSH`"
+              }
+            }
+          ],
+          "inference_note": "Those is the grammatical subject of require, but becomes the object of inferred justify inclusion; exact contextual examples identify the referent.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "D",
+          "text": "require",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 936,
+                "end": 943,
+                "quote": "require"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-15",
+      "unit_id": "C149_followups",
+      "field": "components",
+      "category": "scope_role",
+      "changes_meaning": true,
+      "rationale": "The as-clause explains the permission; it does not make deferral conditional on a new trigger. Its complete reason remains in the unit and institutional rationale.",
+      "before": [
+        {
+          "symbol": "D",
+          "text": "can",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 77,
+                "end": 80,
+                "quote": "can"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "left",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 84,
+                "end": 88,
+                "quote": "left"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "Smaller code code changes",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 51,
+                "end": 76,
+                "quote": "Smaller code code changes"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "to followups",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 89,
+                "end": 101,
+                "quote": "to followups"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "as it's tedious to keep track of actual code review comments in this PR due to continued brigading",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 103,
+                "end": 201,
+                "quote": "as it's tedious to keep track of actual code review comments in this PR due to continued brigading"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "D",
+          "text": "can",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 77,
+                "end": 80,
+                "quote": "can"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "left",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 84,
+                "end": 88,
+                "quote": "left"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "Smaller code code changes",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 51,
+                "end": 76,
+                "quote": "Smaller code code changes"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "to followups",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 89,
+                "end": 101,
+                "quote": "to followups"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-16",
+      "unit_id": "C149_followups",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "A case-specific permission to defer smaller changes is expressly recognized by another reviewer’s Agreed and nonblocking-nits statement; it is not a general immunity from review.",
+      "after": "A case-specific permission to defer smaller changes is expressly recognized by another reviewer’s Agreed and nonblocking-nits statement; it is not a general immunity from review. The stated reason is the difficulty of tracking actual review comments amid what the author calls continued brigading."
+    },
+    {
+      "change_id": "C-repair-17",
+      "unit_id": "C149_no_switch",
+      "field": "components.3",
+      "category": "scope_role",
+      "changes_meaning": true,
+      "rationale": "Retain the temporal scope without converting the following reason-giving clause into an activation condition.",
+      "before": {
+        "symbol": "Cac",
+        "text": "at this point this PR has had more code review and some subsequent improvements",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-149",
+            "span": {
+              "start": 1259,
+              "end": 1338,
+              "quote": "at this point this PR has had more code review and some subsequent improvements"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      "after": {
+        "symbol": "Cac",
+        "text": "at this point",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-149",
+            "span": {
+              "start": 1259,
+              "end": 1272,
+              "quote": "at this point"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      }
+    },
+    {
+      "change_id": "C-repair-18",
+      "unit_id": "C178_lower",
+      "field": "components",
+      "category": "epistemic_role",
+      "changes_meaning": true,
+      "rationale": "Use the embedded nonuse expectation as the focal action, omitting the unexpressed setting actor. The majority of developers remains an attributed recommender in the unit, not the actor setting the option.",
+      "before": [
+        {
+          "symbol": "A",
+          "text": "the vast majority of developers contributing to core",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1069,
+                "end": 1121,
+                "quote": "the vast majority of developers contributing to core"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "recommend",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1128,
+                "end": 1137,
+                "quote": "recommend"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "not setting this option to a lower value than the default",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1138,
+                "end": 1195,
+                "quote": "not setting this option to a lower value than the default"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "would",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1122,
+                "end": 1127,
+                "quote": "would"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "D",
+          "text": "recommend not",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 627,
+                "end": 640,
+                "quote": "recommend not"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "setting",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1142,
+                "end": 1149,
+                "quote": "setting"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1150,
+                "end": 1161,
+                "quote": "this option"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "to a lower value than the default",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1162,
+                "end": 1195,
+                "quote": "to a lower value than the default"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-19",
+      "unit_id": "C178_lower",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "The author attributes an anticipated nonuse recommendation to a majority of developers. This attribution is evidence only of the speaker’s claim, not a count of developers or shared acceptance. The literal focal action is recommend, with the negatively specified setting action as its informational object; the setting actor remains unexpressed.",
+      "after": "The author anticipates that a vast majority of developers would recommend against setting the option below its default. The embedded setting action is focal; its actor is unexpressed and omitted. The majority claim is only the author’s attribution and does not establish shared acceptance or authorized discretion."
+    },
+    {
+      "change_id": "C-repair-20",
+      "unit_id": "C178_mark",
+      "field": "components.3.symbol",
+      "category": "scope_role",
+      "changes_meaning": true,
+      "rationale": "Even if a few developers disagree is a concessive qualification, not the activating condition for deprecation.",
+      "before": "Cac",
+      "after": "Cex"
+    },
+    {
+      "change_id": "C-repair-21",
+      "unit_id": "C178_tradeoff",
+      "field": "components",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "The original parse could imply a removal recommendation activated by an unspecified trade-off. The revised parse preserves the source’s undecided whether/when and all assessment criteria.",
+      "before": [
+        {
+          "symbol": "I",
+          "text": "removed",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1355,
+                "end": 1362,
+                "quote": "removed"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1329,
+                "end": 1339,
+                "quote": "the option"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1340,
+                "end": 1346,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "rather than just deprecated",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1363,
+                "end": 1390,
+                "quote": "rather than just deprecated"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1402,
+                "end": 1627,
+                "quote": "the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "assess",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1311,
+                "end": 1401,
+                "quote": "Whether (or when) the option should also be removed rather than just deprecated depends on"
+              }
+            }
+          ],
+          "inference_note": "The depends-on assertion is reconstructed as an assessment method; it does not recommend removal regardless of the assessment.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "whether or when the option should also be removed rather than just deprecated",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1311,
+                "end": 1390,
+                "quote": "Whether (or when) the option should also be removed rather than just deprecated"
+              }
+            }
+          ],
+          "inference_note": "The embedded whether/when question becomes the informational object of inferred assess, preserving removal versus mere deprecation.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1402,
+                "end": 1627,
+                "quote": "the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-22",
+      "unit_id": "C178_tradeoff",
+      "field": "parse_mode",
+      "category": "epistemic_role",
+      "changes_meaning": true,
+      "rationale": "The focal assess action is reconstructed from the depends-on assertion.",
+      "before": "literal",
+      "after": "pragmatic"
+    },
+    {
+      "change_id": "C-repair-23",
+      "unit_id": "C178_tradeoff",
+      "field": "institution.type",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "An articulated decision method is better supported than a socially expected obligation to remove.",
+      "before": "norm_candidate",
+      "after": "strategy_candidate"
+    },
+    {
+      "change_id": "C-repair-24",
+      "unit_id": "C178_tradeoff",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "The assertion makes removal contingent on a multi-factor evaluation, preserving users, maintenance effort and possible network effects. It does not prescribe a threshold.",
+      "after": "The author articulates a method for assessing whether and when to remove the option, considering user appreciation, maintenance effort, and possibly harmful network effects. No threshold or direction of the decision is supplied."
+    },
+    {
+      "change_id": "C-repair-25",
+      "unit_id": null,
+      "field": "relations.12",
+      "category": "convention",
+      "changes_meaning": false,
+      "rationale": "The fixed report clarifies the earlier known-issue description, so the relation direction must run from fixed to known.",
+      "before": {
+        "from_unit_id": "C165_known",
+        "to_unit_id": "C165_fixed",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The added fixed report updates the known-issue description; edit timing and exact repair are not available.",
+        "evidence": [
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 94,
+              "quote": "This is a known issue."
+            }
+          },
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 146,
+              "end": 157,
+              "quote": "edit: fixed"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "C165_fixed",
+        "to_unit_id": "C165_known",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The added fixed report updates the known-issue description; edit timing and exact repair are not available.",
+        "evidence": [
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 94,
+              "quote": "This is a known issue."
+            }
+          },
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 146,
+              "end": 157,
+              "quote": "edit: fixed"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      }
+    },
+    {
+      "change_id": "C-repair-26",
+      "unit_id": "C714_warning",
+      "field": "institution.dispute_present",
+      "category": "source_review",
+      "changes_meaning": true,
+      "rationale": "The supplied reply challenges the no-near-term-removal premise. The warning norm itself is not conclusively rejected.",
+      "before": false,
+      "after": true
+    },
+    {
+      "change_id": "C-repair-27",
+      "unit_id": "C714_warning",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "An advisory negative expectation ties removal warnings to an actual current plan. Neither the speaker’s no-plan premise nor a binding project rule is established by should.",
+      "after": "An advisory negative expectation ties removal warnings to an actual current plan. Neither the speaker’s no-plan premise nor a binding project rule is established by should. The reply contests the no-removal-intention premise, but wanting removal is not proof of a scheduled plan; text_only standing and the distinction are retained."
+    },
+    {
+      "change_id": "C-repair-28",
+      "unit_id": "C714_after_phrase",
+      "field": "components.0.text",
+      "category": "convention",
+      "changes_meaning": false,
+      "rationale": "Use one reconstructed editorial action; avoidance remains a possible form of revision, not a second prescribed activity.",
+      "before": "revise or avoid",
+      "after": "revise"
+    },
+    {
+      "change_id": "C-repair-29",
+      "unit_id": "C714_after_phrase",
+      "field": "alternative_interpretation",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "A rhetorical observation without a requested edit.",
+      "after": "A rhetorical observation without a requested edit, or a request to avoid that phrase altogether rather than substitute a particular wording."
+    },
+    {
+      "change_id": "C-repair-30",
+      "unit_id": "C453_call",
+      "field": "components",
+      "category": "convention",
+      "changes_meaning": false,
+      "rationale": "The workload parenthesis explains the allocation; it is not a constituting property. Preserve maintainer ownership as P and the copula as F.",
+      "before": [
+        {
+          "symbol": "E",
+          "text": "the decision whether to backport this change to 30.x",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 11,
+                "end": 17,
+                "quote": "that's"
+              }
+            },
+            {
+              "source_id": "33453-017",
+              "span": {
+                "start": 0,
+                "end": 204,
+                "quote": "> are you considering this as something to backport (30 et al)\r\n\r\nThat is preferred IMHO. But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+              }
+            }
+          ],
+          "inference_note": "The demonstrative is resolved from the immediately preceding backport preference and responsibility statement.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "F",
+          "text": "a maintainer's call",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 18,
+                "end": 37,
+                "quote": "a maintainer's call"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "P",
+          "text": "burden of backporting, badgering for review, and cutting RCs",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 39,
+                "end": 99,
+                "quote": "burden of backporting, badgering for review, and cutting RCs"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "E",
+          "text": "the decision whether to backport this change to 30.x",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 11,
+                "end": 17,
+                "quote": "that's"
+              }
+            },
+            {
+              "source_id": "33453-017",
+              "span": {
+                "start": 0,
+                "end": 204,
+                "quote": "> are you considering this as something to backport (30 et al)\r\n\r\nThat is preferred IMHO. But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+              }
+            }
+          ],
+          "inference_note": "The demonstrative is resolved from the immediately preceding backport preference and responsibility statement.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "F",
+          "text": "is",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 11,
+                "end": 17,
+                "quote": "that's"
+              }
+            }
+          ],
+          "inference_note": "The contraction supplies the copula; the whole contraction is anchored to avoid a token-fragment span.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "P",
+          "text": "a maintainer's call",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 18,
+                "end": 37,
+                "quote": "a maintainer's call"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-31",
+      "unit_id": "C453_call",
+      "field": "institution.rationale",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Source-based review clarification explained in replacement text.",
+      "before": "An existing responsibility for the backport/release choice is attributed to a maintainer. The supplied dated contribution document assigns release and backport work to maintainers, but no individual role is inferred.",
+      "after": "An existing responsibility for the backport/release choice is attributed to a maintainer. The supplied dated contribution document assigns release and backport work to maintainers, but no individual role is inferred. The workload rationale specifically names backporting, obtaining review, and cutting RCs."
+    },
+    {
+      "change_id": "C-repair-32",
+      "unit_id": "C453_usecase",
+      "field": "confidence",
+      "category": "source_review",
+      "changes_meaning": false,
+      "rationale": "Institutional classification is plausible but a mere evaluative judgment is equally compatible with the supplied reply.",
+      "before": "plausible",
+      "after": "unresolved"
+    },
+    {
+      "change_id": "C-repair-33",
+      "unit_id": "C453_future",
+      "field": "components",
+      "category": "segmentation",
+      "changes_meaning": false,
+      "rationale": "The schedule preference is retained in a linked embedded expectation rather than presented as a constraint on the nondeontic availability claim.",
+      "before": [
+        {
+          "symbol": "I",
+          "text": "Deprecating",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1206,
+                "end": 1217,
+                "quote": "Deprecating"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1218,
+                "end": 1228,
+                "quote": "the option"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "in the future",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1229,
+                "end": 1242,
+                "quote": "in the future"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "preferably with a removal schedule to better inform users",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1244,
+                "end": 1301,
+                "quote": "preferably with a removal schedule to better inform users"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "Deprecating",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1206,
+                "end": 1217,
+                "quote": "Deprecating"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1218,
+                "end": 1228,
+                "quote": "the option"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "in the future",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1229,
+                "end": 1242,
+                "quote": "in the future"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-34",
+      "unit_id": "C453_schedule",
+      "field": "unit",
+      "category": "segmentation",
+      "changes_meaning": false,
+      "rationale": "Separate the already preserved material schedule preference as an executable embedded action; no new evidence or adoption claim is added.",
+      "before": null,
+      "after": {
+        "unit_id": "C453_schedule",
+        "source_id": "33453-body",
+        "span": {
+          "start": 1244,
+          "end": 1301,
+          "quote": "preferably with a removal schedule to better inform users"
+        },
+        "parent_unit_id": "C453_future",
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "general",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "include",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 1244,
+                  "end": 1259,
+                  "quote": "preferably with"
+                }
+              }
+            ],
+            "inference_note": "The with-phrase becomes an inferred include action under the preference.",
+            "occurrence_role": "semantic_inference"
+          },
+          {
+            "symbol": "Bdir",
+            "text": "a removal schedule",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 1260,
+                  "end": 1278,
+                  "quote": "a removal schedule"
+                }
+              }
+            ],
+            "inference_note": "The prepositional complement is assigned the object role of inferred include.",
+            "occurrence_role": "semantic_inference"
+          },
+          {
+            "symbol": "Cex",
+            "text": "to better inform users",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 1279,
+                  "end": 1301,
+                  "quote": "to better inform users"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local"
+          },
+          {
+            "symbol": "Cac",
+            "text": "if the option is deprecated in the future",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 1206,
+                  "end": 1242,
+                  "quote": "Deprecating the option in the future"
+                }
+              }
+            ],
+            "inference_note": "The preceding hypothetical future course scopes the schedule preference.",
+            "occurrence_role": "shared_scope"
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "A distinct advisory expectation asks that future deprecation include a schedule to inform users. It is not a claim that a removal date already exists.",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1206,
+                "end": 1327,
+                "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_rationale": "The focal action concerns this contribution or review under existing repository arrangements. The visible communication is operational.",
+        "complexity_flags": [
+          "none"
+        ],
+        "alternative_interpretation": "This could remain a material qualification of the future-deprecation course; separate coding preserves the advisory schedule action without treating it as adopted.",
+        "confidence": "plausible",
+        "uncertainty_reason": "No time interval or binding removal commitment is specified.",
+        "record_role": "statement",
+        "parse_mode": "pragmatic",
+        "deontic_force": "recommendation",
+        "level_alternatives": [],
+        "template_note": "",
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "Presentation is coded from the supplied occurrence; no edit history is assumed."
+        },
+        "disposition_events": []
+      }
+    },
+    {
+      "change_id": "C-repair-35",
+      "unit_id": null,
+      "field": "episode_summary.observed_outcomes.2.evidence",
+      "category": "evidence_completeness",
+      "changes_meaning": false,
+      "rationale": "Add exact label-change lines to support the claim that both options were marked deprecated, in addition to the existing warning anchor.",
+      "before": [
+        {
+          "source_id": "X32406",
+          "span": {
+            "start": 2320,
+            "end": 2558,
+            "quote": "+    if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+    }"
+          }
+        },
+        {
+          "source_id": "X33224",
+          "span": {
+            "start": 0,
+            "end": 631,
+            "quote": "@@ -904,7 +904,7 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n     }\n \n     if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n     }\n \n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config."
+          }
+        },
+        {
+          "source_id": "M33224",
+          "span": {
+            "start": 114,
+            "end": 128,
+            "quote": "\"merged\": true"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "X32406",
+          "span": {
+            "start": 2320,
+            "end": 2558,
+            "quote": "+    if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+    }"
+          }
+        },
+        {
+          "source_id": "X33224",
+          "span": {
+            "start": 0,
+            "end": 631,
+            "quote": "@@ -904,7 +904,7 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n     }\n \n     if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n     }\n \n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config."
+          }
+        },
+        {
+          "source_id": "M33224",
+          "span": {
+            "start": 114,
+            "end": 128,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "X32406",
+          "span": {
+            "start": 1181,
+            "end": 1380,
+            "quote": "+    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);"
+          }
+        },
+        {
+          "source_id": "X32406",
+          "span": {
+            "start": 1590,
+            "end": 1714,
+            "quote": "+                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \""
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-36",
+      "unit_id": "C115_unsubstantiated",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "Unsubstantiated or repeat acks/nacks is already the overt object of leave; inferring negative advice does not transform its grammatical role."
+    },
+    {
+      "change_id": "C-repair-37",
+      "unit_id": "C213_defaults",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "The defaults is the overt object of let in the proposed approach; the advisory reading changes utterance force, not that object role."
+    },
+    {
+      "change_id": "C-repair-38",
+      "unit_id": "C213_high",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "A default high limit is already the overt object of setting; the elliptical proposal requires no object-role reconstruction."
+    },
+    {
+      "change_id": "C-repair-39",
+      "unit_id": "C012_no_args",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "More args is the overt object of adding inside the evaluative sentence; only the negative recommendation force is inferred."
+    },
+    {
+      "change_id": "C-repair-40",
+      "unit_id": "C178_mark",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "It is the overt object of marking in the evaluation; the editorial recommendation preserves that role while its referent needs contextual resolution."
+    },
+    {
+      "change_id": "C-repair-41",
+      "unit_id": "C178_retain",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "The option is the overt object of leaving; interpreting the judgment as advice does not transform that object role."
+    },
+    {
+      "change_id": "C-repair-42",
+      "unit_id": "C252_debate_meta",
+      "field": "components.3.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "The explicitly supplied meta URL is the destination of do so; resolving do so as debate preserves the overt destination role."
+    },
+    {
+      "change_id": "C-repair-43",
+      "unit_id": "C714_delay",
+      "field": "components.1.inference_note",
+      "category": "epistemic_explanation",
+      "changes_meaning": false,
+      "rationale": "Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.",
+      "before": "The pragmatic force changes the utterance into a recommendation, but this referent retains its overt actor/object role in the stated action.",
+      "after": "A PR to remove the options is the overt object of open inside the negative prudential evaluation; only the directive force is inferred."
+    },
+    {
+      "change_id": "C-repair-44",
+      "unit_id": "C178_lower",
+      "field": "components.D.evidence",
+      "category": "mechanical",
+      "changes_meaning": false,
+      "rationale": "The checker identified the earlier occurrence of recommend not elsewhere in the same source. Use the identical lexical phrase within this unit. No semantic judgment changed.",
+      "before": [
+        {
+          "source_id": "32406-178",
+          "span": {
+            "start": 627,
+            "end": 640,
+            "quote": "recommend not"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32406-178",
+          "span": {
+            "start": 1128,
+            "end": 1141,
+            "quote": "recommend not"
+          }
+        }
+      ]
+    },
+    {
+      "change_id": "C-repair-45",
+      "unit_id": "C453_schedule",
+      "field": "relations",
+      "category": "segmentation_bookkeeping",
+      "changes_meaning": false,
+      "rationale": "Explicitly retain the relation created during the one source-review pass when separating the schedule preference.",
+      "before": null,
+      "after": {
+        "from_unit_id": "C453_schedule",
+        "to_unit_id": "C453_future",
+        "type": "clarifies",
+        "basis": "explicit",
+        "rationale": "The preferably phrase qualifies the hypothetical future deprecation course with an advisory schedule. This is not evidence of adoption.",
+        "evidence": [
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1206,
+              "end": 1327,
+              "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      }
+    },
+    {
+      "change_id": "C-repair-46",
+      "unit_id": "C453_schedule",
+      "field": "entry_screening.33453-body.unit_ids",
+      "category": "segmentation_bookkeeping",
+      "changes_meaning": false,
+      "rationale": "Add the separated embedded unit to its source screening references.",
+      "before": null,
+      "after": "C453_schedule"
+    }
+  ],
+  "counts": {
+    "logged_changes": 46,
+    "changes_marked_meaning_changing": 16
+  },
+  "note": "Pre-completion construction is preserved in build_annotation.py; this log records every first-complete-to-final repair. The extra schedule unit/clarifies relation and refreshed screening/notes are explicitly recorded. No input packet, codebook, schema, or checker was changed.",
+  "execution_notes": [
+    "The source-review helper initially failed in memory on a missing explanation argument before writing any annotation changes; fixing the helper did not constitute an additional source-review pass.",
+    "A post-review checker found one ambiguous same-source lexical occurrence. That mechanical anchor correction is logged and its checker output preserved in checks.after_self_review.json."
+  ]
+}

@@ -1,0 +1,2095 @@
+{
+  "episode_id": "F03",
+  "groups": [
+    {
+      "group_id": "F03-G001",
+      "episode_id": "F03",
+      "proposition": "The author offers a checkbox beside Add Recipient in the Send-Coins-Pannel to signal BIP125 RBF by setting nSequence.",
+      "status": "one_to_one",
+      "members": {
+        "R07": [
+          "F03-U01"
+        ],
+        "R13": [
+          "U01"
+        ],
+        "R15": [
+          "F03-U01"
+        ],
+        "R16": [
+          "F03-U01"
+        ]
+      },
+      "rationale": "The four units share the same contributed edit, location, and technical purpose. Literal patch summary and pragmatic offered-edit parses correspond. R13/R15/R16 explicitly attach the absent GUI-replacement capability; R07 retains the checkbox properties but does not attach that limitation to this focal unit. That difference requires source review, not exclusion from correspondence. R02/R18 do not supply this as a focal statement; their acceptance-reservation units have a different governed activity and are not substitutes for the add-checkbox proposal.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U01",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U01",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U01",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U01",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G002",
+      "episode_id": "F03",
+      "proposition": "The author is uncertain whether the group wants the checkbox contribution without a GUI replacement workflow.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U02"
+        ],
+        "R07": [
+          "F03-U02"
+        ],
+        "R15": [
+          "F03-U02"
+        ],
+        "R16": [
+          "F03-U02"
+        ],
+        "R18": [
+          "U02"
+        ]
+      },
+      "rationale": "All five target the same uncertain acceptance/inclusion question with the same absent-workflow qualification. Withhold/defer accepting, proceed with, consider accepting, and consider deferring are alternative representations of that reservation, not different resolved decisions. R15 uses a narrower span and explicitly links ongoing work and non-delay of review. R02/R07/R18 mention the ongoing-work parenthetical in their interpretation, and R16 explicitly attaches it. R13 mentions this concern as a qualifier of its checkbox proposal but supplies no corresponding focal uncertainty statement; its proposal remains in the separate add-checkbox group.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U02",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U02",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U02",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 280,
+            "quote": "So not sure if we want this without a GUI based replacement workflow"
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U02",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U02",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G003",
+      "episode_id": "F03",
+      "proposition": "In the retained PR body, the author reports ongoing work on a GUI replacement workflow, described as a bigger chunk.",
+      "status": "unmatched",
+      "members": {
+        "R15": [
+          "F03-U03"
+        ]
+      },
+      "rationale": "Only R15 supplies this personal progress report as a focal statement. Other annotations retain the parenthetical within or attached to the acceptance reservation, but the actor/action here is I working on a workflow, not we deciding whether to accept a checkbox. The report is therefore kept as a separate analytical layer rather than manufacturing a split/combined acceptance group. Unmatched focal coverage does not mean the other representations lose the contextual fact. It is also a different textual occurrence from the later comment report.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 282,
+            "end": 327,
+            "quote": "which I'm working on but it is a bigger chunk"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 282,
+            "end": 327,
+            "quote": "which I'm working on but it is a bigger chunk"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": true
+      }
+    },
+    {
+      "group_id": "F03-G004",
+      "episode_id": "F03",
+      "proposition": "The author does not want to hold back review of this PR.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U03"
+        ],
+        "R07": [
+          "F03-U03"
+        ],
+        "R13": [
+          "U03"
+        ],
+        "R15": [
+          "F03-U04"
+        ],
+        "R16": [
+          "F03-U03"
+        ],
+        "R18": [
+          "U03"
+        ]
+      },
+      "rationale": "All six preserve the author, negation, review target, and body occurrence. Literal negative preference versus a reconstructed non-delay intention is a representation difference of the same utterance. It is not equivalent to accepting or exposing the feature, and it is not collapsed with the later already-reviewable comment. Interpretive strength and degree of attached unfinished-work context remain matters for source review.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 248,
+            "end": 328,
+            "quote": "a GUI based replacement workflow (which I'm working on but it is a bigger chunk)"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U04",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U03",
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G005",
+      "episode_id": "F03",
+      "proposition": "luke-jr tentatively questions exposing the checkbox feature until the wallet can actually perform replacement.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U04"
+        ],
+        "R07": [
+          "F03-U04"
+        ],
+        "R13": [
+          "U04"
+        ],
+        "R15": [
+          "F03-U05"
+        ],
+        "R16": [
+          "F03-U04"
+        ],
+        "R18": [
+          "U04"
+        ]
+      },
+      "rationale": "The source, exposure action, checkbox target, hesitation, and replacement-capability threshold correspond across all six. Deferral in I versus an inferred should-not-yet D plus expose, and Cac versus Cex for until, do not create separate propositions. Wallet capability is not automatically identical to completion of every GUI workflow feature. Differences in force and scope representation remain in this matched group for later evaluation.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U04",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U04",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U04",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U05",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U04",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U04",
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G006",
+      "episode_id": "F03",
+      "proposition": "gmaxwell criticizes the replaceable-transaction confirmation window having both red emphasis and an exclamation mark, plausibly requesting removal of both.",
+      "status": "split_combined",
+      "members": {
+        "R02": [
+          "F03-U06",
+          "F03-U07"
+        ],
+        "R07": [
+          "F03-U05"
+        ],
+        "R13": [
+          "U06",
+          "U07"
+        ],
+        "R15": [
+          "F03-U06"
+        ],
+        "R16": [
+          "F03-U05",
+          "F03-U06"
+        ],
+        "R18": [
+          "U06",
+          "U07"
+        ]
+      },
+      "rationale": "R07 and R15 retain one coupled removal/avoidance request; R02/R13/R16/R18 split red emphasis and bang into children joined by explicit AND links (respectively links[0], links[1], links[1], links[0]). Every representation preserves both targets. R18 selects only the noun phrases and recovers shared negative stance/location from outside-child evidence; this is not a different proposition merely because spans are shorter. The split and combined forms preserve the joint proposal at alignment level, while the degree of explicit replaceable-case restriction and action reconstruction remains available for source review.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 1042,
+            "end": 1238,
+            "quote": "+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 55,
+            "quote": "I don't think the confirmation window deserves red text"
+          }
+        },
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U07",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 56,
+            "end": 76,
+            "quote": "and the bang for it."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U05",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 55,
+            "quote": "I don't think the confirmation window deserves red text"
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U07",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 56,
+            "end": 76,
+            "quote": "and the bang for it."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U05",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 55,
+            "quote": "I don't think the confirmation window deserves red text"
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 56,
+            "end": 76,
+            "quote": "and the bang for it."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 47,
+            "end": 55,
+            "quote": "red text"
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U07",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 60,
+            "end": 75,
+            "quote": "the bang for it"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G007",
+      "episode_id": "F03",
+      "proposition": "The replaceable label there may overstate actual replaceability, plausibly calling for revision or clarification of that wording.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U08"
+        ],
+        "R07": [
+          "F03-U06"
+        ],
+        "R18": [
+          "U08"
+        ]
+      },
+      "rationale": "These three infer the same local wording edit from the same tentative user-misunderstanding concern. R02/R07 reconstruct avoidance of overstatement as a purpose; R18 retains the concern in its alternative interpretation and specifies the confirmation-window location. The other annotations may use this as contextual rationale but do not supply it as a focal statement. The later updatable/amendable proposal is a separate, later attributed wording occurrence and is not used to fill the absent units here.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U08",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U06",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U08",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G008",
+      "episode_id": "F03",
+      "proposition": "gmaxwell tentatively suggests red text for the non-replacable case because fees cannot be updated later.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U09"
+        ],
+        "R07": [
+          "F03-U07"
+        ],
+        "R13": [
+          "U09"
+        ],
+        "R15": [
+          "F03-U08"
+        ],
+        "R16": [
+          "F03-U07"
+        ],
+        "R18": [
+          "U09"
+        ]
+      },
+      "rationale": "All six encode the same proposed display state and reason, despite varying reconstructed verbs and allocation of non-replacable case to Bdir, Bind, Cac, or Cex. R13 marks the reconstructed modal role inferred; others retain the supplied should. These are field-representation differences within the correspondence. Some retain the because rationale only in interpretation text, others in explicit proposition qualifiers; no full meaning-agreement score is inferred from matching.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U09",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U07",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U09",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U08",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U07",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U09",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G009",
+      "episode_id": "F03",
+      "proposition": "gmaxwell explores an adaptive fee switch instead of a replaceable switch, with N future-locktime replacements, multiplicatively higher fees, and the stated fee-by-block display.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U10"
+        ],
+        "R07": [
+          "F03-U08"
+        ],
+        "R13": [
+          "U10"
+        ],
+        "R15": [
+          "F03-U09"
+        ],
+        "R16": [
+          "F03-U08"
+        ],
+        "R18": [
+          "U10"
+        ]
+      },
+      "rationale": "All six concern the same tentative alternative design. R13 reconstructs a substitution action and carries technical details in explicitly attached scope notes; the other five primarily retain have and the adaptive-switch object with its technical properties. The contrast with a replaceable switch is carried either in Cex or explicit scope qualifiers. A proposed edit versus a method-focused description is not used to discard this difficult correspondence: all identify the same complete alternative switch, not an independent instruction to compute transactions. Any classification-layer judgment must be made after freezing this mapping.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U10",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U08",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U10",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U09",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U08",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U10",
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G010",
+      "episode_id": "F03",
+      "proposition": "In comment 2, the author reports working on the replacement GUI process.",
+      "status": "unmatched",
+      "members": {
+        "R15": [
+          "F03-U12"
+        ]
+      },
+      "rationale": "Only R15 makes this personal work report a focal statement at this occurrence. The other annotations use it as background or an attached qualifier of review-now, including R16 whose span contains both clauses but whose focal predicate is review. Working on a GUI process is a distinct actor/action layer from inviting others to review a PR; those are not combined solely because they share a sentence. The separate retained-body report is not collapsed into this dated comment occurrence.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U12",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": true
+      }
+    },
+    {
+      "group_id": "F03-G011",
+      "episode_id": "F03",
+      "proposition": "The author says this PR can be reviewed already, while the replacement GUI process remains in progress.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U14"
+        ],
+        "R07": [
+          "F03-U11"
+        ],
+        "R13": [
+          "U13"
+        ],
+        "R15": [
+          "F03-U13"
+        ],
+        "R16": [
+          "F03-U09"
+        ],
+        "R18": [
+          "U14"
+        ]
+      },
+      "rationale": "All six concern review of the current PR at the already-possible time. R13/R15 include but; R16 includes the preceding work clause; the others select only this can be reviewed already. These span differences and literal readiness versus pragmatic invitation parses do not alter correspondence. R18 includes lexical can as D while others omit a D component; that difference remains in the one-to-one group. R16 explicitly attaches ongoing work and the difficult 0.13 timeline, whereas narrower representations retain context differently. Review is not exposure or integration.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 191,
+            "end": 235,
+            "quote": "The timeline to get this into 0.13 is tough."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U14",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U11",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U13",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 157,
+            "end": 190,
+            "quote": "but this can be reviewed already."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U13",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 157,
+            "end": 190,
+            "quote": "but this can be reviewed already."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U09",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U14",
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G012",
+      "episode_id": "F03",
+      "proposition": "The author reports trying to allow additional outputs by editing the transaction back in the sendcoins dialog.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U18"
+        ],
+        "R07": [
+          "F03-U14"
+        ],
+        "R13": [
+          "U16"
+        ],
+        "R15": [
+          "F03-U17"
+        ],
+        "R16": [
+          "F03-U10"
+        ],
+        "R18": [
+          "U17"
+        ]
+      },
+      "rationale": "The same first-person attempted workflow, additional-output target, and dialog method appear in every annotation. R13 selects allow as I but explicitly attaches attempted status; others retain trying in I. R18 embeds the dialog explanation in Bdir, while others use Cex. These are correspondence-preserving representations, not evidence that a completed implementation was reported. The unresolved identity of a broader workflow implementation versus the known discussion PR remains available for source review.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U18",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U14",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U16",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U17",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U10",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U17",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G013",
+      "episode_id": "F03",
+      "proposition": "The author tentatively asks whether the work should focus only on increasing fees.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U19"
+        ],
+        "R07": [
+          "F03-U15"
+        ],
+        "R13": [
+          "U17"
+        ],
+        "R15": [
+          "F03-U18"
+        ],
+        "R16": [
+          "F03-U11"
+        ],
+        "R18": [
+          "U18"
+        ]
+      },
+      "rationale": "All retain we, advisory should, fee-increase target, just restriction, and the same exploratory question. Focus versus focus on is component-boundary variation. Differing breadth of the linked additional-output context or decision-object identity does not justify excluding this direct correspondence. No adopted scope decision is inferred.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U19",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U15",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U17",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U18",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U11",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U18",
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G014",
+      "episode_id": "F03",
+      "proposition": "For an additional-output workflow, a developer needs to handle making a child of the original transaction for use if the original confirms.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U20"
+        ],
+        "R07": [
+          "F03-U16"
+        ],
+        "R13": [
+          "U18"
+        ],
+        "R15": [
+          "F03-U19"
+        ],
+        "R16": [
+          "F03-U12"
+        ],
+        "R18": [
+          "U19"
+        ]
+      },
+      "rationale": "All six focal units represent the same workflow-handling dependency and generic you, including the original-transaction identity and confirmation-contingent use. Some include the preceding complexity clause or exclude the trailing ellipsis; some place workflow scope in Cac and others in explicit attached notes. R02/R07/R18 preserve need to as D, while R13/R15/R16 describe technical necessity without a D component. These potential force/classification differences remain within a one-to-one correspondence; they are not separate propositions. The use-if-confirmed condition must not be read as a requirement to wait until confirmation to create the child.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 60,
+            "end": 179,
+            "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 139,
+            "end": 176,
+            "quote": "for use in case the original confirms"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U20",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 60,
+            "end": 179,
+            "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U16",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U18",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 176,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms"
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U19",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 60,
+            "end": 179,
+            "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U12",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 60,
+            "end": 176,
+            "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms"
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U19",
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 60,
+            "end": 179,
+            "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G015",
+      "episode_id": "F03",
+      "proposition": "gmaxwell tentatively suggests updatable or amendable instead of replacable to better describe the feature.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U22"
+        ],
+        "R07": [
+          "F03-U18"
+        ],
+        "R13": [
+          "U20"
+        ],
+        "R15": [
+          "F03-U21"
+        ],
+        "R16": [
+          "F03-U13"
+        ],
+        "R18": [
+          "U21"
+        ]
+      },
+      "rationale": "All six preserve the same old label and two alternative new labels in the same later comment. Replace/substitute the old word with alternatives versus use the new words instead of the old is an action/object re-expression. The explicit OR is not a requirement to use both. Purpose and tentativeness are represented in different components/notes; this group does not certify equal preservation of each qualifier.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U22",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U18",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U20",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U21",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U13",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U21",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G016",
+      "episode_id": "F03",
+      "proposition": "gmaxwell suggests a delayed-send option labeled [send immediately], avoiding extra contingency transactions if amended within the timeout and possibly allowing abort before it was initially set.",
+      "status": "split_combined",
+      "members": {
+        "R02": [
+          "F03-U24"
+        ],
+        "R07": [
+          "F03-U20"
+        ],
+        "R13": [
+          "U22"
+        ],
+        "R15": [
+          "F03-U23"
+        ],
+        "R16": [
+          "F03-U14",
+          "F03-U15"
+        ],
+        "R18": [
+          "U23"
+        ]
+      },
+      "rationale": "R16 separates the delay option and the added abort capability, attaches the latter to the same option, and supplies an AND relation at links[3]. The other five retain one option with the abort capability as an explicit component/property or proposition scope qualifier. This is a split of the same coupled proposed design, rather than an unrelated end-user abort instruction. Both the timeout-dependent benefit and tentative could-also capability remain recoverable across representations. The source says initially set and combines a send-immediately label with delay; neither ambiguity is silently repaired. R16 reconstructs an add action for the abort feature, which remains a source-review issue within this split correspondence.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 356,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 357,
+            "end": 416,
+            "quote": "(and could also let you abort before it was initially set)."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U24",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U20",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U22",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U23",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U14",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 356,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U15",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 357,
+            "end": 416,
+            "quote": "(and could also let you abort before it was initially set)."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U23",
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G017",
+      "episode_id": "F03",
+      "proposition": "kirkalx suggests the supplied replaceab... spelling fragment to Jonas if Greg's alternative is not chosen.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U25"
+        ],
+        "R07": [
+          "F03-U21"
+        ],
+        "R13": [
+          "U23"
+        ],
+        "R15": [
+          "F03-U24"
+        ],
+        "R16": [
+          "F03-U16"
+        ],
+        "R18": [
+          "U24"
+        ]
+      },
+      "rationale": "All six identify the same conditional spelling fallback, addressee, incomplete fragment, and negated condition. R18 uses correct the spelling plus an output specification while others use the fragment as the object of use; this is the same edit. Some wording resolves Greg's suggestion more strongly than others. That attribution ambiguity is not solved by the mapping and remains a source-review qualification, not an alignment failure.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U25",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U21",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U23",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U24",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U16",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U24",
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F03-G018",
+      "episode_id": "F03",
+      "proposition": "laanwj says the current PR needs a rebase, plausibly requesting that maintenance action.",
+      "status": "one_to_one",
+      "members": {
+        "R02": [
+          "F03-U26"
+        ],
+        "R07": [
+          "F03-U22"
+        ],
+        "R13": [
+          "U24"
+        ],
+        "R15": [
+          "F03-U25"
+        ],
+        "R16": [
+          "F03-U17"
+        ],
+        "R18": [
+          "U25"
+        ]
+      },
+      "rationale": "All six reconstruct rebase of PR #7819 from the same elliptical comment, leaving the responsible actor unspecified. Some retain Needs as D while others leave technical necessity in interpretation/scope notes. This difference belongs in field/source review and is not excluded by alignment. No rebase deadline, binding merge gate, or cause of later closure is supplied by the focal sentence.",
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R02",
+          "unit_id": "F03-U26",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "annotation_id": "R07",
+          "unit_id": "F03-U22",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "annotation_id": "R13",
+          "unit_id": "U24",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "annotation_id": "R15",
+          "unit_id": "F03-U25",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "annotation_id": "R16",
+          "unit_id": "F03-U17",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "annotation_id": "R18",
+          "unit_id": "U25",
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "annotation_id": "R02",
+      "checked_unit_ids": [
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U14",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U22",
+        "F03-U24",
+        "F03-U25",
+        "F03-U26"
+      ],
+      "assigned_count": 16,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R07",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U11",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U18",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22"
+      ],
+      "assigned_count": 16,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R13",
+      "checked_unit_ids": [
+        "U01",
+        "U03",
+        "U04",
+        "U06",
+        "U07",
+        "U09",
+        "U10",
+        "U13",
+        "U16",
+        "U17",
+        "U18",
+        "U20",
+        "U22",
+        "U23",
+        "U24"
+      ],
+      "assigned_count": 15,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R15",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U08",
+        "F03-U09",
+        "F03-U12",
+        "F03-U13",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U21",
+        "F03-U23",
+        "F03-U24",
+        "F03-U25"
+      ],
+      "assigned_count": 17,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R16",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17"
+      ],
+      "assigned_count": 17,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R18",
+      "checked_unit_ids": [
+        "U02",
+        "U03",
+        "U04",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U14",
+        "U17",
+        "U18",
+        "U19",
+        "U21",
+        "U23",
+        "U24",
+        "U25"
+      ],
+      "assigned_count": 16,
+      "checked_packet_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    }
+  ],
+  "notes": [
+    "Partial masking: anonymous annotations and withheld classification fields/condition identities; interpretive notes and components can reveal conventions or mention classification alternatives.",
+    "Fourteen one-to-one groups, including three with partial annotation coverage; eleven one-to-one groups cover all six annotations. Two split/combined groups and two unmatched focal progress reports account for the remainder.",
+    "Ongoing-work reports are kept apart from acceptance/review propositions despite their use as context or qualifiers there. The delayed-send/abort and red-text/bang alternatives are treated as split/combined because the same proposed feature/edit content is distributed across units.",
+    "All 19 packet entries, six annotations, components, alternatives, explicit proposition qualifiers, and links were read for alignment. No source-review correctness verdict or classification-label score is claimed."
+  ],
+  "counts": {
+    "groups": 18,
+    "units": 97,
+    "status_counts": {
+      "one_to_one": 14,
+      "unmatched": 2,
+      "split_combined": 2
+    }
+  },
+  "first_complete_case_saved_utc": "2026-11-07T19:39:15.338534+00:00"
+}

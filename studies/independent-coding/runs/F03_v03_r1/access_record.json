@@ -1,0 +1,143 @@
+{
+  "run_id": "F03_v03_r1",
+  "episode_id": "F03",
+  "recorded_at_utc": "2026-11-07T19:19:35.955627+00:00",
+  "authorized_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1",
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/INSTRUCTIONS.txt",
+      "access": "read completely; run scope and sequencing",
+      "sha256": "cc1e42ffa5d7b8e65c27241dfeeb7cd769213cd0c104d50150cf7d3fbbae4eda"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/protocol/codebook.txt",
+      "access": "read completely; assigned version 0.3 coding protocol",
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/protocol/annotation_schema.json",
+      "access": "read completely and used by supplied checker",
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/packet.json",
+      "access": "read completely; only research evidence; reread for single complete source self-review",
+      "sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/tools/check_annotation.py",
+      "access": "executed for all three preserved checks; import/file-read lines inspected for access accounting",
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/build_annotation.py",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "ae50669d0e92cb23057ac7ed38ba23639f1e5363c5f8fd3aaf4542900c5a5527"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/repair_mechanical.py",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "c669ac9638e6e4a2a65e394a8dbecaf6a664d50a079663a5a669e449dfe5942c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/source_self_review.py",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "439c6f195a4fdae1f8a0d5743376110faad335bf2c733aee454768905f497a3e"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/finalize_run.py",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "69ef4b0c2f36a0f3df85aa4f16e5a34671956b2e8a15875a6207dbab008af287"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "25ad402e153a9956b4a82f3013a32e498dfa4f863bfd15563f2eaa99304f2cc3"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.first_complete.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "9b521b6df2b3aacf1e3b75070bd4c03f9f2ce9d97451339b316d5d9e1e162c7c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.final.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "25ad402e153a9956b4a82f3013a32e498dfa4f863bfd15563f2eaa99304f2cc3"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.first.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "7f05efb0fb4e4fca7bb440e07a3f939f4b535b96cf958e0ffc5f2f2e89646695"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.mechanical.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "08488387791ea29e78bba937ec523115d10b689953463678e568f1c094fb5338"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "a9b2397c6f13ce7efd23b037627dd0b578683138b2bd9a13f49af21246dd12da"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/repair_log.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "1c921a4eb44053f862bb2648b9896ac6a5a7c53727c913ba7fbec6cf36d013ea"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/review_notes.json",
+      "access": "created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting",
+      "sha256": "7b3bf502d843b156c20d8f5bd30b195cc94299ec0687a4c1a66bb6f675bee221"
+    }
+  ],
+  "outputs_written_by_this_finalization": [
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/access_record.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/run_manifest.json"
+  ],
+  "access_scope": "Application-level file accesses explicitly performed for this run. Python and jsonschema runtime import internals are ordinary dependencies, not research inputs; individual import file reads were not traced.",
+  "ordinary_runtime_dependencies": [
+    "Python standard library json, hashlib, pathlib, sys, re, copy, collections, datetime, platform",
+    "jsonschema imported by the supplied checker"
+  ],
+  "model_runtime_configuration": {
+    "configuration_selection": "Inherited primary configuration; no model or reasoning override selected for this run.",
+    "inherited_primary_configuration": true,
+    "model_identifier": null,
+    "provider_snapshot": null,
+    "reasoning_effort": null,
+    "seed": null,
+    "sampling": null,
+    "temperature": null,
+    "top_p": null,
+    "token_use": null,
+    "cost": null,
+    "note": "Exact provider model/configuration values were not exposed to this run. Historical requested configurations appearing in the codebook were not treated as evidence of the actual runtime.",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_implementation": "CPython",
+    "shell": "bash",
+    "timezone": "Etc/UTC"
+  },
+  "isolation": {
+    "external_sources_used": false,
+    "web_used": false,
+    "library_used": false,
+    "other_run_outputs_accessed": false,
+    "parent_directories_read": false,
+    "parent_history_used_as_research": false,
+    "agents_spawned": false,
+    "frozen_inputs_modified": false,
+    "new_sources_added_after_dispatch": false,
+    "coordination_note": "Only progress/completion messages were sent to the coordinator; no other coder answer or semantic key was received."
+  },
+  "first_complete_freeze": {
+    "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.first_complete.json",
+    "sha256": "9b521b6df2b3aacf1e3b75070bd4c03f9f2ce9d97451339b316d5d9e1e162c7c",
+    "timing": "Written before the first checker run and before source self-review; preserved unchanged thereafter."
+  },
+  "checker_sequence": [
+    "checks.first.json",
+    "checks.mechanical.json",
+    "checks.json"
+  ],
+  "source_self_review_count": 1
+}

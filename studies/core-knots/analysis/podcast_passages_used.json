@@ -1,0 +1,167 @@
+[
+  {
+    "evidence_id": "PE07",
+    "episode_id": "P5378",
+    "date": "2025-10-07",
+    "speaker": "Antoine Poinsot",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed review norm",
+    "claim": "Poinsot states a review requirement and reports reviewing a Dashjr contribution despite public disagreement.",
+    "locator": "untimestamped",
+    "origin_span": {
+      "start": 39301,
+      "end": 39727,
+      "quote": "in Bitcoin core we have standards of review no review no code merged um but a lot of his code was merged because he was reviewed and it was good and it still happens today.\r\n Uh just the other month I was as Luke was insulting me on Twitter, he made a P request that made sense. So I just watched out the code and I was like code is good act. I acted the proquest was merged and it's it's actually being shipped in 30 I think."
+    },
+    "pr_links": [
+      32406,
+      33453
+    ],
+    "baseline_anchors": [
+      "E30",
+      "E31",
+      "E32"
+    ],
+    "link_basis": "General review norm and an unidentified illustrative PR; no link to a numbered focal PR is asserted by the speaker.",
+    "ig2_unit_ids": [
+      "PU02"
+    ]
+  },
+  {
+    "evidence_id": "PE10",
+    "episode_id": "P5305",
+    "date": "2025-09-25",
+    "speaker": "Murch",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed role configuration",
+    "claim": "Murch describes maintainers as facilitating releases, reviewing proposals, and merging work they consider sufficiently vetted.",
+    "locator": "untimestamped",
+    "origin_span": {
+      "start": 5757,
+      "end": 6160,
+      "quote": "So we have currently five maintainers. Their job is uh to facilitate releases and to go around the repository at their own review. And when they perceive pull requests to be ready for merge, they uh\r\neither well they usually add their own review and then merge the things that are uncontroversial and have been vetted sufficiently, have been reviewed, have sufficient tests, uh move the project forward."
+    },
+    "pr_links": [
+      32406,
+      33224,
+      33453
+    ],
+    "baseline_anchors": [
+      "E30",
+      "E31",
+      "E32"
+    ],
+    "link_basis": "Analytical correspondence; no demonstrated podcast influence on the PR.",
+    "ig2_unit_ids": [
+      "PU03"
+    ]
+  },
+  {
+    "evidence_id": "PE13",
+    "episode_id": "P4402",
+    "date": "2025-05-14",
+    "speaker": "Bitcoin Mechanic",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed norm and economic rationale",
+    "claim": "Mechanic denies an obligation to relay arbitrary material while recognizing incentives to relay financial transactions.",
+    "locator": "9:56",
+    "origin_span": {
+      "start": 12936,
+      "end": 13869,
+      "quote": "I don't have to relay anything, and that should\r\n10:0410 minutes, 4 secondsbe a principle that all Bitcoiners respect. I'm not obligated to do stuff for you for free. And most Bitcoiners will invoke free market arguments and\r\n10:1110 minutes, 11 secondsall that stuff to till the cows come home. And I agree, I'm not obligated to relay anything. But let's be honest,\r\n10:1810 minutes, 18 secondsit's a monetary network. We all run nodes. It's going to be pretty useless if none of us relay each other's financial transactions, isn't it? So, I'm pretty much incentivized to do that.\r\n10:2710 minutes, 27 secondsEven though it does my transactions are going to get crowded out by your transactions, I'm also going to have to pay a fee on that basis. But that's about the end of it. I'm definitely not\r\n10:3510 minutes, 35 secondsobligated to relay JPEGs around the network. So, we've had to invent a bunch of backwards rationalizations"
+    },
+    "pr_links": [
+      32406
+    ],
+    "baseline_anchors": [
+      "E44"
+    ],
+    "link_basis": "Analytical correspondence; no demonstrated podcast influence on the PR.",
+    "ig2_unit_ids": [
+      "PU04"
+    ]
+  },
+  {
+    "evidence_id": "PE14",
+    "episode_id": "P4402",
+    "date": "2025-05-14",
+    "speaker": "Bitcoin Mechanic",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed accountability norm",
+    "claim": "Mechanic accepts moderation in principle while requiring consistent enforcement and alleging inconsistency.",
+    "locator": "58:59",
+    "origin_span": {
+      "start": 73585,
+      "end": 74106,
+      "quote": "I think the moderation policy is reasonable but it\r\n59:0759 minutes, 7 secondshas to be consistently enforced and they never are. So it just becomes an Francis Polio killed this. He he smashed it because he doesn't agree with me filters\r\n59:1559 minutes, 15 secondsat all but he understood what happened with the GitHub. Right? If if you have any sort of community with any sort of set of rules, it just becomes politics\r\n59:2359 minutes, 23 secondsbecause some people are able to break the rules and other people aren't."
+    },
+    "pr_links": [
+      32359,
+      32406
+    ],
+    "baseline_anchors": [
+      "E31",
+      "E33",
+      "E34",
+      "E35"
+    ],
+    "link_basis": "Analytical correspondence; no demonstrated podcast influence on the PR.",
+    "ig2_unit_ids": [
+      "PU05"
+    ]
+  },
+  {
+    "evidence_id": "PE16",
+    "episode_id": "P4402",
+    "date": "2025-05-14",
+    "speaker": "Bitcoin Mechanic",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed community requirement",
+    "claim": "Mechanic argues that a consequential default policy change should follow the community, while explicitly acknowledging that it is not a consensus rule change.",
+    "locator": "1:00:47",
+    "origin_span": {
+      "start": 75969,
+      "end": 76421,
+      "quote": "people are coming up with all\r\n1:00:541 hour, 54 secondssorts of reasons like you don't need consensus to change default policies or remove configurability. And I'm like,\r\n1:01:001 hour, 1 minutewell, no, you actually do need to follow the community on this stuff because this is very significant. I know it's not technically consensus, but it matters.\r\n1:01:091 hour, 1 minute, 9 secondsand we have a strong opinion on it and you should just leave it."
+    },
+    "pr_links": [
+      32406
+    ],
+    "baseline_anchors": [
+      "E09",
+      "E10",
+      "E11"
+    ],
+    "link_basis": "Analytical correspondence; no demonstrated podcast influence on the PR.",
+    "ig2_unit_ids": [
+      "PU06"
+    ]
+  },
+  {
+    "evidence_id": "PE22",
+    "episode_id": "P5383",
+    "date": "2025-10-07",
+    "speaker": "Chris Guida with Laura Shin and Adam Back responses",
+    "attribution_basis": "Contextual inference from addressed questions and adjacent turns; not audio verified.",
+    "evidence_class": "claimed consent requirement",
+    "claim": "Guida asserts a collective permission requirement for expanding data use; the host challenges who can decide legitimacy. The asserted historical settlement is not independently established.",
+    "locator": "untimestamped",
+    "origin_span": {
+      "start": 52448,
+      "end": 53401,
+      "quote": "no, no one is forcing them to do anything. It like we all agreed in 2013\r\nthat 80 is the max. If you want to build something that uses more than that, you need to get everyone's permission. You can't just go do it or you're a jerk. >> Well, okay. I mean do it anyway, right? >> Yeah. Part part of what I'm hearing, Chris, too.\r\n It like makes me think, you know, who put you in charge of like what's a legitimate layer, too? And I like you. I hope you're you're not taking I'm just trying to imagine like what the critics are saying like who's to decide? Um but >> what I'm saying is Bitcoiners decided that we when we when we said 80 bytes is the amount of data that you can put in a transaction, that was the decision.\r\n And so if you if your protocol needs 144 bytes, then you can't build that on Bitcoin uh without making some people angry, you know, like and this has been here for 10 years. It's not some new thing, you know. Everybody knows this."
+    },
+    "pr_links": [
+      32406
+    ],
+    "baseline_anchors": [
+      "E09",
+      "E10",
+      "E22"
+    ],
+    "link_basis": "Analytical correspondence; no demonstrated podcast influence on the PR.",
+    "ig2_unit_ids": [
+      "PU07"
+    ]
+  }
+]

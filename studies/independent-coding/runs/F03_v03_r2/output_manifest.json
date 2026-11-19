@@ -1,0 +1,80 @@
+{
+  "run_id": "F03_v03_r2",
+  "packet_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+  "counts": {
+    "screened_entries": 19,
+    "focal_entries": 10,
+    "screening_dispositions": {
+      "candidate": 9,
+      "context_only": 10
+    },
+    "unit_roles": {
+      "context": 7,
+      "statement": 16,
+      "container": 1,
+      "quotation": 2
+    },
+    "total_units": 26,
+    "relations": 15,
+    "recognition_events": 8,
+    "disposition_events": 4,
+    "outcome_claims": 3,
+    "mechanisms": 3,
+    "self_review_passes": 1,
+    "repair_entries": 10,
+    "final_exact_anchor_references": 223,
+    "final_checker_flags": 18
+  },
+  "outputs": {
+    "annotation.json": {
+      "sha256": "e37bec0af2fd684df3639cdd67eb3470b2ae4a4f34f01ba7f295cba469da4639",
+      "bytes": 146861
+    },
+    "annotation.first_complete.json": {
+      "sha256": "1edf4053a8fd2d6c6e24e229a681d286a71ef80a6be8094e4c928525572ebe6d",
+      "bytes": 143258
+    },
+    "annotation.final.json": {
+      "sha256": "e37bec0af2fd684df3639cdd67eb3470b2ae4a4f34f01ba7f295cba469da4639",
+      "bytes": 146861
+    },
+    "checks.first.json": {
+      "sha256": "265b7fffe8033109d651793d4cc8b7983bf514759a0e7febfd6228bce7c27d9f",
+      "bytes": 7066
+    },
+    "checks.json": {
+      "sha256": "e35e14e92fff092bd0ddf3856bb683caa03233d0ba7be8922d6fffde1d99d27a",
+      "bytes": 10114
+    },
+    "repair_log.json": {
+      "sha256": "8d831cf4401fb76128e288969e42dd11a6b286b6ecf90447d927d4e66540499d",
+      "bytes": 49838
+    },
+    "review_notes.json": {
+      "sha256": "012bb7f14b395005fce0a195d37cd3423b484e4224d4b227470e9e150ae6a2d1",
+      "bytes": 123321
+    },
+    "access_record.json": {
+      "sha256": "86a50e4f74ed03801b18b06c985dbd3cf972348058fc4c59aa0391a5872ac0c6",
+      "bytes": 7124
+    },
+    "execution_log.json": {
+      "sha256": "36ddcf4e20d22bbb9cbe9c8e5abe5c42440f65a2fbcd28da03cbe1307bc197bf",
+      "bytes": 4282
+    },
+    "build_annotation.py": {
+      "sha256": "242cda42fe0658b40eba34c47ac58aacf272bd5f2002e827aa18d7f775907441",
+      "bytes": 49722
+    },
+    "self_review_finalize.py": {
+      "sha256": "e1343c59bd762e35a02189063963345b9fed3505bc344f1608359806c2ce2c0a",
+      "bytes": 21331
+    },
+    "finalize_records.py": {
+      "sha256": "93e58c3e023c0b6ffb1c293ba43a2e7ebe76a95cc6c3628cd7c227a8b176c845",
+      "bytes": 15161
+    }
+  },
+  "checks": "Both provided checker runs pass; all 14 first-check and 18 final-check flags have cited dispositions in review_notes.json. Semantic uncertainty remains explicit.",
+  "inputs_unchanged": true
+}

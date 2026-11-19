@@ -1,0 +1,259 @@
+{
+  "run_id": "F02_v04_r2",
+  "mechanical_repairs": [],
+  "source_review_changes": [
+    {
+      "change_id": "R01",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S01.components[0:3].governing_span"
+      ],
+      "description": "Narrowed the three governors from the complete body to its first clause. The inference labels and backport meaning are unchanged.",
+      "evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 31,
+            "quote": "Backport of PR #14411 to v0.17."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R02",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S01.proposition.qualifiers[0].rationale",
+        "S02.proposition.qualifiers[0].rationale",
+        "S03.proposition.qualifiers[1].rationale",
+        "S03.proposition.qualifiers[2].rationale",
+        "S05.proposition.qualifiers[0].rationale",
+        "S05.proposition.qualifiers[1].rationale"
+      ],
+      "description": "Replaced a generic scope-note rationale on component-attached qualifiers with an accurate component-attachment explanation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "convention_deviation",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R03",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S03.proposition.qualifiers[3]"
+      ],
+      "description": "Added an explicit qualifier record for I'd maybe, already retained in the source span and hypothetical-actor interpretation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 117,
+            "quote": "I'd maybe change it to:"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "convention_deviation",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R04",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S04.proposition.qualifiers[0].attachment",
+        "S04.proposition.qualifiers[0].rationale"
+      ],
+      "description": "Made the hedge's attachment a scope note because the Cac component carries the unless clause but no component carries Maybe.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "convention_deviation",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R05",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S04.institution.recognition[0].evidence"
+      ],
+      "description": "Extended the assent anchor to include the check reference that supports the stated proposition target, rather than relying on uncited surrounding text.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R06",
+      "phase": "one_source_self_review",
+      "paths": [
+        "episode_summary.observed_outcomes[1].claim_parts[3].evidence"
+      ],
+      "description": "Added the patch-source anchors to the patch/head/merge correspondence part; the source entry's supplied revision metadata connects these anchors to the hash evidence.",
+      "evidence": [
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 308,
+            "end": 701,
+            "quote": "+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n"
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R07",
+      "phase": "one_source_self_review",
+      "paths": [
+        "episode_summary.mechanisms[1].claim_parts[4].evidence"
+      ],
+      "description": "Added patch-source anchors to the mechanism's integration correspondence part so the part cites both artifact and matching metadata.",
+      "evidence": [
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 308,
+            "end": 701,
+            "quote": "+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n"
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 437,
+            "end": 499,
+            "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false
+    },
+    {
+      "change_id": "R08",
+      "phase": "one_source_self_review",
+      "paths": [
+        "S05.institution.application_evidence[0].rationale",
+        "S05.disposition_events[0].rationale",
+        "S05.uncertainty_reason",
+        "episode_summary.mechanisms[1].claim_parts[3]",
+        "episode_summary.mechanisms[1].claim",
+        "episode_summary.mechanisms[1].evidence"
+      ],
+      "description": "Narrowed the implementation description by naming the offered backward-compatibility phrase that the final paragraph omits. The code still describes observed documentation of the behavioral distinction, not verbatim wording adoption.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false
+    }
+  ],
+  "first_complete_preserved": true,
+  "changed_institutional_classifications": false
+}

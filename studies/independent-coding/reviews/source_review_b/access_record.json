@@ -1,0 +1,175 @@
+{
+  "reviewer": "source_review_b",
+  "completed_at_utc": "2026-11-07T20:12:22.672399+00:00",
+  "assigned_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/source_review_b",
+  "research_and_write_scope": "Only the assigned source_review_b directory; no parent directory, other review, external research source, aggregate metric, or condition-identity file was inspected.",
+  "input_files": [
+    {
+      "file": "F01_packet.json",
+      "sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "guide_2.txt",
+      "sha256": "103c475d794dbcc2b65d0663eb5dec452380f9bef42aee5c294cb0f78ded22d0",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "guide_1.txt",
+      "sha256": "f361264a33a2beae46ef2d46e88c85ea487b5cefd807b61eea79dfbab05dcae5",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "INSTRUCTIONS.txt",
+      "sha256": "98eebd26d7adb47313fb63a9714d34bd289eb297640d643b747309f0b7f5428b",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "dossier_index.json",
+      "sha256": "42c9442fe6febe275d6c9f78c7e08fda2cb466673bf1d963860f9f077386a978",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "F02_dossier.json",
+      "sha256": "43488d726ee231f485a1b1c3c069e94e64fe8766d7e07f794e6e8b2dc9300e3d",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "F03_packet.json",
+      "sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "annotations.json",
+      "sha256": "6a128586223b2166ef36074ac5d6c97b9600901c128978e65f584137d5b52745",
+      "matches_supplied_manifest": true,
+      "content_review": "hash verification only; substantive review used lossless per-case dossiers"
+    },
+    {
+      "file": "RUNTIME_NOTES.txt",
+      "sha256": "61fd8ece2977aab2d6fcfdc31748457249e863af78b9b17b1a13228e488a98c4",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "F01_dossier.json",
+      "sha256": "dbe2cab923928edc0918fa96f0061fb5933fdfd0b9baf39abd53685fc2ea2d53",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "output_format.json",
+      "sha256": "982fc3aa0147d6b5e12a1988daf04cccb3db761eed8762fd89568701a2aff2c5",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "F03_dossier.json",
+      "sha256": "63648769a741620d416ea6ba599e6d8bc49098297c2871d75d726603683e5938",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    },
+    {
+      "file": "F02_packet.json",
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+      "matches_supplied_manifest": true,
+      "content_review": "read in full"
+    }
+  ],
+  "additional_read_inputs": [
+    {
+      "file": "input_manifest.json",
+      "sha256": "503f94681899a6f8d5c4f00db361caa637b7bfecd1ea1548f90baab39a2ad209",
+      "purpose": "Input preservation checks"
+    }
+  ],
+  "original_annotations_access": "annotations.json was hashed for preservation. Substantive inspection used all three complete lossless dossiers, as authorized by RUNTIME_NOTES.txt; no claim of a second complete reading of annotations.json is made.",
+  "working_records_used": [
+    "review_work.json",
+    "mechanical_checks.json",
+    "F01_qualifier_projection.jsonl",
+    "F02_qualifier_projection.jsonl",
+    "F03_qualifier_projection.jsonl",
+    "F01_tail_mapping.json",
+    "F02_tail_mapping.json",
+    "F03_tail_mapping.json"
+  ],
+  "method": [
+    "All three frozen packets, including supplemental patches and metadata, were read fully in bounded source batches.",
+    "Every annotation was assessed under its own assigned guide; each retained unit and source entry was compared for meaning and coverage.",
+    "All relations and every outcome/mechanism entry and claim part were read and compared with the sources; unanimity was not a correctness criterion.",
+    "All institutional evidence, standing/profile fields, recognition/disposition records, documentary assessments, application claims, challenges, rationales, qualifications, alternatives, and remaining metadata fields were inspected.",
+    "Exact duplicate field values were displayed once with their complete affected path mapping; all annotation occurrences remained included. Truncated substantive batches were re-read in smaller bounded groups.",
+    "Coverage assembly enumerated every unit, source entry, relation, support record, and summary path; enumeration is recorded separately from the substantive judgment.",
+    "An interruption occurred after source comparison and most narrative checks. The remaining metadata pass and ledger assembly resumed from preserved working records; completed substantive comparison was not replaced with a spot check."
+  ],
+  "boundary_checks": {
+    "other_review_outputs_inspected": false,
+    "condition_identities_requested_or_inspected": false,
+    "agreement_statistics_inspected": false,
+    "external_sources_used": false,
+    "new_agents_or_model_calls_initiated": false,
+    "model_configuration_overridden": false,
+    "inputs_changed": false,
+    "existing_working_review_overwritten": false
+  },
+  "configuration": "Inherited runtime configuration; no model, reasoning, or service-tier override requested. Runtime model identity is not independently verified by this record.",
+  "version_masking_limit": "Incomplete: assigned guide/schema differences remain visible. No condition identities were sought.",
+  "judgment_limit": "Revisable AI review rather than a reference truth set. Unresolved historical and criterion questions are preserved.",
+  "coverage_counts": {
+    "packet_entries": 83,
+    "unique_dossier_anchors": 677,
+    "units": 587,
+    "no_error_identified_units": 576,
+    "components": 1170,
+    "disposition_records": 163,
+    "recognition_records": 152,
+    "documentary_support_records": 9,
+    "application_evidence_records": 41,
+    "authority_evidence_records": 0,
+    "challenges_records": 25,
+    "summary_entries": 311,
+    "observed_outcomes": 63,
+    "summary_claim_parts": 136,
+    "mechanisms": 50,
+    "annotations": 18,
+    "relations": 327,
+    "annotation_entry_reviews": 498
+  },
+  "finding_counts": {
+    "total": 12,
+    "diagnosis": {
+      "criterion_ambiguity": 3,
+      "defensible_alternative": 4,
+      "execution_failure": 5
+    },
+    "effect": {
+      "unresolved": 3,
+      "coverage_or_scope": 1,
+      "convention_only": 3,
+      "evidence_basis": 5
+    }
+  },
+  "mechanical_validation": {
+    "input_manifest_matches": true,
+    "all_dossier_source_anchors_exact": true,
+    "finding_source_anchors_exact": true,
+    "affected_annotation_and_unit_ids_valid": true,
+    "affected_relation_paths_valid": true,
+    "coverage_complete_for_all_submitted_units_and_packet_entries": true
+  },
+  "first_complete_preservation": {
+    "review": "first_complete_review.json",
+    "coverage": "first_complete_coverage_ledger.json",
+    "access": "first_complete_access_record.json",
+    "manifest": "first_complete_manifest.json",
+    "later_corrections": "None at first completion; original first-complete files are preserved separately."
+  }
+}

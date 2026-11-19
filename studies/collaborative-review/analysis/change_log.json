@@ -1,0 +1,2386 @@
+[
+  {
+    "change_id": "CH001",
+    "run_id": "F01_v04_r3",
+    "path": "/units/41/proposition/decision_object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "P01"
+    ],
+    "reason": "The unidentified future contribution is not the containing PR.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH002",
+    "run_id": "F01_v04_r3",
+    "path": "/units/41/proposition/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 4,
+          "end": 58,
+          "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "P01"
+    ],
+    "reason": "The containing discussion does not identify future work.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH003",
+    "run_id": "F01_v04_r2",
+    "path": "/units/39/proposition/decision_object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "P01"
+    ],
+    "reason": "The unidentified future contribution is not the containing PR.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH004",
+    "run_id": "F01_v04_r2",
+    "path": "/units/39/proposition/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 638,
+          "end": 693,
+          "quote": "In any case we can always prune versions in a followup."
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "P01"
+    ],
+    "reason": "The containing discussion does not identify future work.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH005",
+    "run_id": "F01_v04_r3",
+    "path": "/units/46/proposition/decision_object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "P02"
+    ],
+    "reason": "The unidentified future contribution is not the containing PR.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH006",
+    "run_id": "F01_v04_r3",
+    "path": "/units/46/proposition/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 4,
+          "end": 58,
+          "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "P02"
+    ],
+    "reason": "The containing discussion does not identify future work.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH007",
+    "run_id": "F01_v04_r3",
+    "path": "/units/46/institution/recognition/0/object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "P02"
+    ],
+    "reason": "The general cleanup principle has no applicable numbered decision object; its source episode remains recorded separately.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH008",
+    "run_id": "F01_v04_r3",
+    "path": "/units/46/institution/recognition/0/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 4,
+          "end": 58,
+          "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "P02"
+    ],
+    "reason": "No identifier for the general principle is established.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH009",
+    "run_id": "F01_v04_r3",
+    "path": "/units/46/institution/recognition/0/rationale",
+    "before": "ACK supports general cleanup, not every specific selection criterion or an implemented follow-up.",
+    "after": "ACK supports general cleanup, not every selection criterion or an implemented follow-up. The event concerns a general principle, so a numbered object is inapplicable; the independence key identifies only the discussion episode.",
+    "decision_ids": [
+      "P02"
+    ],
+    "reason": "Explain inapplicable object versus unknown future proposal.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH010",
+    "run_id": "F01_v04_r1",
+    "path": "/units/19/institution/recognition/0/target",
+    "before": "this_proposition",
+    "after": "broader_principle",
+    "decision_ids": [
+      "P03"
+    ],
+    "reason": "The later open-PR method does not repeat the until-another-PR-needs-it condition.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH011",
+    "run_id": "F01_v04_r1",
+    "path": "/units/19/institution/recognition/0/rationale",
+    "before": "Sjors repeats the open-PR method later. Same-actor commitment is not independent recognition.",
+    "after": "Sjors repeats the broader open-PR method with occasional rebasing. The later statement does not restate the condition that another PR needs it, so it cannot establish repetition of the complete conditional proposition. This is same-actor correspondence, not interpersonal recognition.",
+    "decision_ids": [
+      "P03"
+    ],
+    "reason": "Preserve the material timing qualification.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH012",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/24/from_unit_id",
+    "before": "U33",
+    "after": "U30",
+    "decision_ids": [
+      "P04"
+    ],
+    "reason": "Uptake runs from the initiating proposal to its response.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH013",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/24/to_unit_id",
+    "before": "U30",
+    "after": "U33",
+    "decision_ids": [
+      "P04"
+    ],
+    "reason": "Uptake runs from the initiating proposal to its response.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH014",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/24/rationale",
+    "before": "The author's scope boundary is consistent with the suggested separate pull for cleanup; no direct thread or causal link is asserted.",
+    "after": "The separate-cleanup suggestion precedes the author's corresponding scope response. This contextual relation does not establish a direct thread, causal influence, or implementation of the follow-up.",
+    "decision_ids": [
+      "P04"
+    ],
+    "reason": "Retain the contextual basis and limited response claim.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH015",
+    "run_id": "F02_v04_r1",
+    "path": "/units/2/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q003"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH016",
+    "run_id": "F03_v04_r3",
+    "path": "/units/12/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q009"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH017",
+    "run_id": "F03_v04_r2",
+    "path": "/units/13/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q009"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH018",
+    "run_id": "F03_v04_r2",
+    "path": "/units/0/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q010"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH019",
+    "run_id": "F03_v04_r3",
+    "path": "/units/4/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q011"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH020",
+    "run_id": "F01_v04_r1",
+    "path": "/units/12/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH021",
+    "run_id": "F01_v04_r2",
+    "path": "/units/11/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH022",
+    "run_id": "F01_v04_r1",
+    "path": "/units/41/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q025"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH023",
+    "run_id": "F01_v04_r1",
+    "path": "/units/51/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "Q028"
+    ],
+    "reason": "The source supplies the selected action; inferred recommendation force or an antecedent does not make that action reconstructed.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH024",
+    "run_id": "F01_v04_r2",
+    "path": "/units/11/components/0/basis",
+    "before": "context_inferred",
+    "after": "explicit",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "Separate explicit action from inferred recommendation force.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH025",
+    "run_id": "F01_v04_r2",
+    "path": "/units/11/components/0/occurrence_role",
+    "before": "semantic_inference",
+    "after": "local",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "Separate explicit action from inferred recommendation force.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH026",
+    "run_id": "F01_v04_r2",
+    "path": "/units/11/components/0/inference_note",
+    "before": "The recommendation is reconstructed from a claim that a reason justifies adding.",
+    "after": "The source explicitly supplies adding. The recommendation force is inferred from the justification claim; the action role is supplied.",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "Separate explicit action from inferred recommendation force.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH027",
+    "run_id": "F01_v04_r1",
+    "path": "/units/12/components/1/inference_note",
+    "before": "The source explicitly supplies this object under the stated adding/merging action; the pragmatic interpretation changes recommendation force, not this predicate role.",
+    "after": "The object belongs to the explicitly supplied adding action. The recommendation force is inferred, and the alternative downloadable version remains part of the target.",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "Keep explanation consistent with the literal action parse.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH028",
+    "run_id": "F01_v04_r2",
+    "path": "/units/11/components/1/inference_note",
+    "before": "The object of adding remains the target of the reconstructed add recommendation; the alternative downloadable version is retained.",
+    "after": "The object belongs to the explicitly supplied adding action. The recommendation force is inferred, and the alternative downloadable version remains part of the target.",
+    "decision_ids": [
+      "Q024"
+    ],
+    "reason": "Keep explanation consistent with the literal action parse.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH029",
+    "run_id": "F03_v04_r3",
+    "path": "/units/16/institution/recognition/0/target",
+    "before": "this_proposition",
+    "after": "unresolved",
+    "decision_ids": [
+      "Q012"
+    ],
+    "reason": "The response corresponds to the additional-output method, but the required separate workflow identity remains unknown.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH030",
+    "run_id": "F03_v04_r3",
+    "path": "/units/16/institution/recognition/0/basis",
+    "before": "context_inferred",
+    "after": "unresolved",
+    "decision_ids": [
+      "Q012"
+    ],
+    "reason": "The frozen checker requires unresolved basis for an unresolved event target; the textual response correspondence remains explained in the rationale.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH031",
+    "run_id": "F03_v04_r3",
+    "path": "/units/16/institution/recognition/0/rationale",
+    "before": "The response addresses the additional-output workflow with a technical complexity explanation; it is neither institutional expectation recognition nor proof that the attempt succeeded.",
+    "after": "The response addresses the additional-output workflow with a technical complexity explanation. The separate workflow object is unidentified, so the event target remains unresolved. The textual correspondence establishes neither expectation recognition nor success of the attempt.",
+    "decision_ids": [
+      "Q012"
+    ],
+    "reason": "Retain textual correspondence while exposing the identity limitation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH032",
+    "run_id": "F03_v04_r1",
+    "path": "/units/19/presentation/quotation",
+    "before": "none",
+    "after": "proposed_wording",
+    "decision_ids": [
+      "Q008a"
+    ],
+    "reason": "The source presents new replacement wording, not a quotation of a previously coded proposition.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH033",
+    "run_id": "F03_v04_r2",
+    "path": "/units/21/presentation/quotation",
+    "before": "none",
+    "after": "proposed_wording",
+    "decision_ids": [
+      "Q008a"
+    ],
+    "reason": "The source presents new replacement wording, not a quotation of a previously coded proposition.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH034",
+    "run_id": "F03_v04_r1",
+    "path": "/units/22/presentation/quotation",
+    "before": "none",
+    "after": "proposed_wording",
+    "decision_ids": [
+      "Q008b"
+    ],
+    "reason": "The source presents new replacement wording, not a quotation of a previously coded proposition.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH035",
+    "run_id": "F03_v04_r2",
+    "path": "/units/25/presentation/quotation",
+    "before": "none",
+    "after": "proposed_wording",
+    "decision_ids": [
+      "Q008b"
+    ],
+    "reason": "The source presents new replacement wording, not a quotation of a previously coded proposition.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH036",
+    "run_id": "F01_v04_r1",
+    "path": "/units/28/components/4/symbol",
+    "before": "Cac",
+    "after": "Cex",
+    "decision_ids": [
+      "Q029"
+    ],
+    "reason": "Use the project's preferred execution-purpose convention; the activation reading remains semantically defensible.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH037",
+    "run_id": "F01_v04_r1",
+    "path": "/units/18/speech_act",
+    "before": "asserted",
+    "after": "technical_description",
+    "decision_ids": [
+      "Q030a"
+    ],
+    "reason": "Retain the original technical-description function in the repeated occurrence.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH038",
+    "run_id": "F01_v04_r3",
+    "path": "/units/17/speech_act",
+    "before": "asserted",
+    "after": "technical_description",
+    "decision_ids": [
+      "Q030a"
+    ],
+    "reason": "Retain the original technical-description function in the repeated occurrence.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH039",
+    "run_id": "F01_v04_r1",
+    "path": "/units/46/speech_act",
+    "before": "proposed",
+    "after": "asserted",
+    "decision_ids": [
+      "Q030b"
+    ],
+    "reason": "Choose the declarative-claim convention for the source and its quotation; the claim advances a proposed selection criterion.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH040",
+    "run_id": "F01_v04_r1",
+    "path": "/units/46/alternative_interpretation",
+    "before": "A methodological preference rather than a social expectation.",
+    "after": "A methodological preference rather than a social expectation. The declarative assertion also advances a proposed criterion, so proposed remains a defensible speech-act alternative.",
+    "decision_ids": [
+      "Q030b"
+    ],
+    "reason": "Harmonization does not settle the assertion-versus-proposal boundary.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH041",
+    "run_id": "F01_v04_r1",
+    "path": "/units/55/speech_act",
+    "before": "asserted",
+    "after": "proposed",
+    "decision_ids": [
+      "Q030c"
+    ],
+    "reason": "The quotation retains the original navigation-request function.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH042",
+    "run_id": "F03_v03_r1",
+    "path": "/relations/3/rationale",
+    "before": "The later statement by the same author makes the earlier non-delay preference more concrete: review can occur while the GUI process is being worked on.",
+    "after": "The author's reviewability statement clarifies the retained body's non-delay intention by distinguishing review from completion of the companion GUI. The record does not establish the relative wording dates of those two passages; this semantic relation makes no earlier/later wording claim.",
+    "decision_ids": [
+      "P05"
+    ],
+    "reason": "The retained body lacks sentence-level edit history.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH043",
+    "run_id": "F03_v03_r3",
+    "path": "/relations/3/rationale",
+    "before": "Clarifies the author's earlier intention not to delay review by distinguishing reviewability from completion of the companion GUI.",
+    "after": "The author's reviewability statement clarifies the retained body's non-delay intention by distinguishing review from completion of the companion GUI. The record does not establish the relative wording dates of those two passages; this semantic relation makes no earlier/later wording claim.",
+    "decision_ids": [
+      "P05"
+    ],
+    "reason": "The retained body lacks sentence-level edit history.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH044",
+    "run_id": "F01_v04_r1",
+    "path": "/units/56/institution/recognition/0/object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH045",
+    "run_id": "F01_v04_r1",
+    "path": "/units/56/institution/recognition/0/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 12,
+          "end": 57,
+          "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH046",
+    "run_id": "F01_v04_r1",
+    "path": "/units/56/institution/recognition/0/rationale",
+    "before": "Sjors identifies the proposed recurring minimum through a quote and tentatively agrees. This may recognize the expectation, but ordinary technical assent cannot be ruled out.",
+    "after": "Sjors identifies the proposed recurring minimum through a quote and tentatively agrees. This may recognize the expectation, but ordinary technical assent cannot be ruled out. The numbered object is inapplicable to this general criterion; null does not mean its semantic referent is unknown.",
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "Separate semantic reference from a numbered proposal identifier.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH047",
+    "run_id": "F01_v04_r1",
+    "path": "/units/56/alternative_interpretation",
+    "before": "A methodological preference rather than a social expectation.",
+    "after": "A methodological preference rather than a social expectation. Deliberation retained ordinary tentative assent and unresolved expectation-recognition readings. Assent can refer to the complete criterion contextually or to its quoted recurring floor; neither establishes adoption or binding authority.",
+    "decision_ids": [
+      "D01",
+      "Q037"
+    ],
+    "reason": "Preserve the panel's unresolved scope and recognition alternatives.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH048",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/proposition/decision_object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH049",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/proposition/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH050",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/institution/recognition/0/object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH051",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/institution/recognition/0/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 12,
+          "end": 57,
+          "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH052",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/institution/recognition/0/rationale",
+    "before": "Sjors tentatively agrees with the quoted technical retention proposal. Agreement alone does not establish recognition as an institutional standard.",
+    "after": "Sjors tentatively agrees with the quoted technical retention proposal. Agreement alone does not establish recognition as an institutional standard. The numbered object is inapplicable to this general criterion; null does not mean its semantic referent is unknown.",
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "Separate semantic reference from a numbered proposal identifier.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH053",
+    "run_id": "F01_v04_r2",
+    "path": "/units/48/alternative_interpretation",
+    "before": "A methodological test-coverage recommendation, not an established shared rule; question form conveys a proposed standard without an explicit deontic.",
+    "after": "A methodological test-coverage recommendation, not an established shared rule; question form conveys a proposed standard without an explicit deontic. Deliberation retained ordinary tentative assent and unresolved expectation-recognition readings. Assent can refer to the complete criterion contextually or to its quoted recurring floor; neither establishes adoption or binding authority.",
+    "decision_ids": [
+      "D01",
+      "Q037"
+    ],
+    "reason": "Preserve the panel's unresolved scope and recognition alternatives.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH054",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/proposition/decision_object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH055",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/proposition/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 4,
+          "end": 58,
+          "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH056",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/institution/recognition/0/object_id",
+    "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+    "after": null,
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH057",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/institution/recognition/0/identity_evidence",
+    "before": [
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 4,
+          "end": 58,
+          "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+        }
+      }
+    ],
+    "after": [],
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "The general retention criterion has no applicable numbered object. The discussion episode remains in independence_key.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH058",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/institution/recognition/0/rationale",
+    "before": "Sjors quotes and tentatively agrees with the recent-non-EOL retention floor. The quote omits the full wallet-specific and no-substitution formulation; endorsement of every material clause is not established. This remains ordinary assent, with a possible expectation-recognition alternative.",
+    "after": "Sjors quotes and tentatively agrees with the recent-non-EOL retention floor. The quote omits the full wallet-specific and no-substitution formulation; endorsement of every material clause is not established. This remains ordinary assent, with a possible expectation-recognition alternative. The numbered object is inapplicable to this general criterion; null does not mean its semantic referent is unknown.",
+    "decision_ids": [
+      "D01",
+      "Q034"
+    ],
+    "reason": "Separate semantic reference from a numbered proposal identifier.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH059",
+    "run_id": "F01_v04_r3",
+    "path": "/units/48/alternative_interpretation",
+    "before": "Could be a technical coverage method; as a proposal to choose the recurring floor it can target collective choice.",
+    "after": "Could be a technical coverage method; as a proposal to choose the recurring floor it can target collective choice. Deliberation retained ordinary tentative assent and unresolved expectation-recognition readings. Assent can refer to the complete criterion contextually or to its quoted recurring floor; neither establishes adoption or binding authority.",
+    "decision_ids": [
+      "D01",
+      "Q037"
+    ],
+    "reason": "Preserve the panel's unresolved scope and recognition alternatives.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH060",
+    "run_id": "F01_v04_r1",
+    "path": "/units/19/uncertainty_reason",
+    "before": "",
+    "after": " The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+    "decision_ids": [
+      "D02",
+      "Q013",
+      "Q041"
+    ],
+    "reason": "Do not relabel personal continuity as expectation recognition to satisfy a preferred summary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH061",
+    "run_id": "F01_v04_r3",
+    "path": "/units/18/uncertainty_reason",
+    "before": "Can marks an available workflow, not authorized discretion or a commitment.",
+    "after": "Can marks an available workflow, not authorized discretion or a commitment. The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+    "decision_ids": [
+      "D02",
+      "Q013",
+      "Q041"
+    ],
+    "reason": "Do not relabel personal continuity as expectation recognition to satisfy a preferred summary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH062",
+    "run_id": "F03_v04_r1",
+    "path": "/units/2/uncertainty_reason",
+    "before": "Intention is expressed as not wanting to hold review back; the degree of commitment is uncertain.",
+    "after": "Intention is expressed as not wanting to hold review back; the degree of commitment is uncertain. The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+    "decision_ids": [
+      "D02",
+      "Q013",
+      "Q041"
+    ],
+    "reason": "Do not relabel personal continuity as expectation recognition to satisfy a preferred summary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH063",
+    "run_id": "F03_v04_r2",
+    "path": "/units/3/uncertainty_reason",
+    "before": "",
+    "after": " The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+    "decision_ids": [
+      "D02",
+      "Q013",
+      "Q041"
+    ],
+    "reason": "Do not relabel personal continuity as expectation recognition to satisfy a preferred summary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH064",
+    "run_id": "F03_v04_r3",
+    "path": "/units/3/uncertainty_reason",
+    "before": "Institutional interpretation is limited to this utterance; authority, adoption, and generality are not established.",
+    "after": "Institutional interpretation is limited to this utterance; authority, adoption, and generality are not established. The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+    "decision_ids": [
+      "D02",
+      "Q013",
+      "Q041"
+    ],
+    "reason": "Do not relabel personal continuity as expectation recognition to satisfy a preferred summary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH065",
+    "run_id": "F02_v04_r1",
+    "path": "/units/0/institution/application_evidence/1/status",
+    "before": "unresolved",
+    "after": "observed",
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH066",
+    "run_id": "F02_v04_r1",
+    "path": "/units/0/institution/application_evidence/1/rationale",
+    "before": "The retained release-note artifact contains the requested complete identifier and its head is the recorded merge commit. However, the supplied review has no line number or pre-update paragraph, so the exact typo occurrence and correction operation cannot be independently matched. This is artifact consistency with the request, while exact observed application remains unresolved; the separate aggregate participant report is retained.",
+    "after": "The integrated artifact contains the requested complete identifier. Observation concerns resulting spelling, not the unidentified earlier typo, transformation chronology, or causal response.",
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH067",
+    "run_id": "F02_v04_r1",
+    "path": "/units/0/institution/standing_profile/application",
+    "before": "reported",
+    "after": "both",
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH068",
+    "run_id": "F03_v04_r1",
+    "path": "/units/0/institution/application_evidence/0/rationale",
+    "before": "The retained head contains a checkbox artifact, but #7819 was not merged. The packet establishes a prepared feature, not integrated application of the offered proposal; an earlier-to-later implementation sequence is unavailable.",
+    "after": "The retained proposed artifact establishes a checkbox, but complete application, including the specified placement, remains unresolved. The unmerged status limits integration claims; it does not negate observation of the prepared artifact.",
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH069",
+    "run_id": "F03_v04_r2",
+    "path": "/units/0/institution/application_evidence",
+    "before": [],
+    "after": [
+      {
+        "status": "unresolved",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr7819:patch:0",
+            "span": {
+              "start": 87,
+              "end": 136,
+              "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+            }
+          },
+          {
+            "source_id": "pr7819:patch:0",
+            "span": {
+              "start": 168,
+              "end": 214,
+              "quote": "+        <string>Allow Replace-By-Fee</string>"
+            }
+          },
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 125,
+              "end": 142,
+              "quote": "\"state\": \"closed\""
+            }
+          },
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 146,
+              "end": 161,
+              "quote": "\"merged\": false"
+            }
+          },
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 529,
+              "end": 564,
+              "quote": "\"closed_at\": \"2016-06-09T09:21:57Z\""
+            }
+          }
+        ],
+        "rationale": "The retained proposed artifact establishes a checkbox, but complete application, including the specified placement, remains unresolved. The unmerged status limits integration claims; it does not negate observation of the prepared artifact."
+      }
+    ],
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH070",
+    "run_id": "F03_v04_r2",
+    "path": "/units/0/institution/standing_profile/application",
+    "before": "none",
+    "after": "unresolved",
+    "decision_ids": [
+      "D03"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH071",
+    "run_id": "F01_v04_r1",
+    "path": "/units/9/institution/application_evidence",
+    "before": [
+      {
+        "status": "reported",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 17,
+              "quote": "Rebased on master"
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master. The report does not name #26589, so the specific after-#26589 dependency is not verified."
+      }
+    ],
+    "after": [
+      {
+        "status": "reported",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 17,
+              "quote": "Rebased on master"
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master. The report does not name #26589, so the specific after-#26589 dependency is not verified."
+      },
+      {
+        "status": "unresolved",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+      }
+    ],
+    "decision_ids": [
+      "D04"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH072",
+    "run_id": "F01_v04_r1",
+    "path": "/units/9/institution/standing_profile/application",
+    "before": "none",
+    "after": "unresolved",
+    "decision_ids": [
+      "D04"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH073",
+    "run_id": "F01_v04_r3",
+    "path": "/units/8/institution/application_evidence",
+    "before": [
+      {
+        "status": "reported",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 40,
+              "quote": "Rebased on master and updated to v24.0.1"
+            }
+          }
+        ],
+        "rationale": "Rebase reported, but #26589 relation absent."
+      }
+    ],
+    "after": [
+      {
+        "status": "reported",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 40,
+              "quote": "Rebased on master and updated to v24.0.1"
+            }
+          }
+        ],
+        "rationale": "Rebase reported, but #26589 relation absent."
+      },
+      {
+        "status": "unresolved",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+      }
+    ],
+    "decision_ids": [
+      "D04"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH074",
+    "run_id": "F01_v04_r3",
+    "path": "/units/8/institution/standing_profile/application",
+    "before": "none",
+    "after": "unresolved",
+    "decision_ids": [
+      "D04"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH075",
+    "run_id": "F01_v04_r2",
+    "path": "/units/8/institution/application_evidence",
+    "before": [
+      {
+        "status": "unresolved",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+      }
+    ],
+    "after": [
+      {
+        "status": "unresolved",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+      },
+      {
+        "status": "reported",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 17,
+              "quote": "Rebased on master"
+            }
+          }
+        ],
+        "rationale": "The author reports a rebase on master. The report does not name #26589, so the specific after-#26589 dependency is not verified."
+      }
+    ],
+    "decision_ids": [
+      "D04"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH076",
+    "run_id": "F02_v04_r1",
+    "path": "/units/0/alternative_interpretation",
+    "before": "Literal technical reading: the correct RPC identifier is `listtransactions` with an s. The preferred parse reconstructs an editorial action, not an institutional definition or a binding naming rule.",
+    "after": "Literal technical reading: the correct RPC identifier is `listtransactions` with an s. The preferred parse reconstructs an editorial action, not an institutional definition or a binding naming rule. The aggregate update can instead be targeted to the broader proposal under a stricter itemization reading. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH077",
+    "run_id": "F02_v04_r1",
+    "path": "/units/1/alternative_interpretation",
+    "before": "A literal hypothetical first-person formulation describes what the reviewer would change. The preferred editorial-request reading infers the PR editor as the advised actor. The embedded RPC behavior is technical description, not a separate institutional permission.",
+    "after": "A literal hypothetical first-person formulation describes what the reviewer would change. The preferred editorial-request reading infers the PR editor as the advised actor. The embedded RPC behavior is technical description, not a separate institutional permission. The aggregate update can instead be targeted to the broader proposal under a stricter itemization reading. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH078",
+    "run_id": "F02_v04_r1",
+    "path": "/units/3/alternative_interpretation",
+    "before": "The opening is phrased as an evaluation of what would be good, but directly supplies document and its object. The subsequent possible-to-pass claim describes technical capability and does not independently authorize conduct.",
+    "after": "The opening is phrased as an evaluation of what would be good, but directly supplies document and its object. The subsequent possible-to-pass claim describes technical capability and does not independently authorize conduct. The aggregate update can instead be targeted to the broader proposal under a stricter itemization reading. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH079",
+    "run_id": "F02_v04_r2",
+    "path": "/units/6/alternative_interpretation",
+    "before": "Literally this is a predicate about the correct RPC spelling. The preferred editorial-request parse reconstructs use; no general naming rule or institutional definition is asserted.",
+    "after": "Literally this is a predicate about the correct RPC spelling. The preferred editorial-request parse reconstructs use; no general naming rule or institutional definition is asserted. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH080",
+    "run_id": "F02_v04_r2",
+    "path": "/units/7/alternative_interpretation",
+    "before": "The conditional I'd construction is a suggestion to the contribution author, not necessarily a promise by ryanofsky to edit. The explicit hypothetical speaker is retained in A; a pragmatic addressee-as-editor representation is possible. The replacement prose describes software behavior rather than constituting an institutional permission.",
+    "after": "The conditional I'd construction is a suggestion to the contribution author, not necessarily a promise by ryanofsky to edit. The explicit hypothetical speaker is retained in A; a pragmatic addressee-as-editor representation is possible. The replacement prose describes software behavior rather than constituting an institutional permission. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH081",
+    "run_id": "F02_v04_r2",
+    "path": "/units/11/alternative_interpretation",
+    "before": "This is a documentation request rather than a new permission or prohibition imposed on contributors. The embedded possible/error statements describe software capability and behavior. The suggested wording is tentative and need not be reproduced verbatim.",
+    "after": "This is a documentation request rather than a new permission or prohibition imposed on contributors. The embedded possible/error statements describe software capability and behavior. The suggested wording is tentative and need not be reproduced verbatim. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH082",
+    "run_id": "F02_v04_r3",
+    "path": "/units/0/alternative_interpretation",
+    "before": "Literally this is an evaluation of the correct technical name (\"Should be\"), rather than a named actor conducting a change. The preferred pragmatic parse reconstructs a correction request. It does not constitute an institutional definition of the RPC.",
+    "after": "Literally this is an evaluation of the correct technical name (\"Should be\"), rather than a named actor conducting a change. The preferred pragmatic parse reconstructs a correction request. It does not constitute an institutional definition of the RPC. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH083",
+    "run_id": "F02_v04_r3",
+    "path": "/units/1/alternative_interpretation",
+    "before": "The literal first-person conditional offers how ryanofsky would edit the paragraph; pragmatically it invites the PR author to make the edit. The explicit actor in this parse is the hypothetical proposer, not a falsely explicit addressee. A tentative offer is not a committed personal plan. The replacement text describes software behavior and is not a separate institutional prescription.",
+    "after": "The literal first-person conditional offers how ryanofsky would edit the paragraph; pragmatically it invites the PR author to make the edit. The explicit actor in this parse is the hypothetical proposer, not a falsely explicit addressee. A tentative offer is not a committed personal plan. The replacement text describes software behavior and is not a separate institutional prescription. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH084",
+    "run_id": "F02_v04_r3",
+    "path": "/units/3/alternative_interpretation",
+    "before": "The prefatory \"I think\" reports ryanofsky's judgment; its I is not the grammatical actor of document. The explicit infinitive provides the edit action while the executor remains contextual. Technical can/possible and error statements inside the draft describe software behavior rather than institutional permission or sanction.",
+    "after": "The prefatory \"I think\" reports ryanofsky's judgment; its I is not the grammatical actor of document. The explicit infinitive provides the edit action while the executor remains contextual. Technical can/possible and error statements inside the draft describe software behavior rather than institutional permission or sanction. The panel preferred contextual reported incorporation of the identified suggestion; this view retains the defensible broader-proposal report target. Neither report interpretation resolves isolated fixed/Both replies or verifies every tentative wording choice.",
+    "decision_ids": [
+      "D04",
+      "Q006"
+    ],
+    "reason": "Retain explicit report-scope alternatives after deliberation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH085",
+    "run_id": "F03_v04_r1",
+    "path": "/units/23/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "norm_candidate"
+    ],
+    "decision_ids": [
+      "D05",
+      "Q015",
+      "Q036"
+    ],
+    "reason": "The supplied evidence permits technical-maintenance and proposed-social-expectation readings.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH086",
+    "run_id": "F01_v04_r1",
+    "path": "/units/9/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "norm_candidate"
+    ],
+    "decision_ids": [
+      "D05",
+      "Q015",
+      "Q036"
+    ],
+    "reason": "The supplied evidence permits technical-maintenance and proposed-social-expectation readings.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH087",
+    "run_id": "F01_v04_r2",
+    "path": "/units/8/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "norm_candidate"
+    ],
+    "decision_ids": [
+      "D05",
+      "Q015",
+      "Q036"
+    ],
+    "reason": "The supplied evidence permits technical-maintenance and proposed-social-expectation readings.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH088",
+    "run_id": "F01_v04_r3",
+    "path": "/units/8/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "norm_candidate"
+    ],
+    "decision_ids": [
+      "D05",
+      "Q015",
+      "Q036"
+    ],
+    "reason": "The supplied evidence permits technical-maintenance and proposed-social-expectation readings.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH089",
+    "run_id": "F03_v04_r1",
+    "path": "/units/23/institution/rationale",
+    "before": "A case-specific technical design or review proposal is institutionally relevant to contribution activity, but supplies neither a governing authorization nor a recurring social expectation or committed method.",
+    "after": "The terse maintenance request may express expected contributor conduct or technical necessity. The source does not select between them. A proposed norm need not recur or already be shared; authority and institutional obligation remain unestablished.",
+    "decision_ids": [
+      "D05",
+      "Q015"
+    ],
+    "reason": "Recurrence and prior sharing are not v0.4 prerequisites for a norm candidate.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH090",
+    "run_id": "F01_v04_r1",
+    "path": "/units/11/target_level_alternatives",
+    "before": [],
+    "after": [
+      "operational"
+    ],
+    "decision_ids": [
+      "D06",
+      "Q045",
+      "Q051"
+    ],
+    "reason": "Operational conduct is a supported embedded layer within the proposed recurring arrangement.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH091",
+    "run_id": "F01_v04_r1",
+    "path": "/units/30/target_level_alternatives",
+    "before": [],
+    "after": [
+      "operational"
+    ],
+    "decision_ids": [
+      "D06",
+      "Q045",
+      "Q051"
+    ],
+    "reason": "Operational conduct is a supported embedded layer within the proposed recurring arrangement.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH092",
+    "run_id": "F01_v04_r1",
+    "path": "/units/30/observed_level_alternatives",
+    "before": [],
+    "after": [
+      "operational"
+    ],
+    "decision_ids": [
+      "D06",
+      "Q045",
+      "Q051"
+    ],
+    "reason": "Operational conduct is a supported embedded layer within the proposed recurring arrangement.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH093",
+    "run_id": "F01_v04_r1",
+    "path": "/units/30/level_rationale",
+    "before": "The focal action is Under the proposed available-version loop, the developer would choose which previous releases to test. It concerns a recurring arrangement for compatibility testing; the visible discussion deliberates over that arrangement.",
+    "after": "The focal analysis is a proposal to choose a recurring developer-selection arrangement, conditional on the availability-based loop. Its embedded act of selecting test versions is operational. The visible exchange can also be read as ordinary engineering review rather than institutional procedure selection.",
+    "decision_ids": [
+      "D06",
+      "Q045"
+    ],
+    "reason": "State which analytical layer receives the primary label.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH094",
+    "run_id": "F03_v04_r1",
+    "path": "/units/0/alternative_interpretation",
+    "before": "Treat the feature description solely as technical context. The retained candidate represents the contribution proposal, not a permission granted to users.",
+    "after": "Treat the feature description solely as technical context. The retained candidate represents the contribution proposal, not a permission granted to users. A readiness objection can target the premise of offering/exposing the feature; when the focal claim is limited to the prepared artifact, the objection concerns the broader proposal. These scope readings change dispute projection without changing the observed checkbox facts.",
+    "decision_ids": [
+      "D07",
+      "Q019"
+    ],
+    "reason": "Retain the offered-feature and artifact-description alternatives explicitly.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH095",
+    "run_id": "F03_v04_r2",
+    "path": "/units/0/alternative_interpretation",
+    "before": "The sentence can be retained solely as a technical description of the submitted patch, without an independently prescriptive request.",
+    "after": "The sentence can be retained solely as a technical description of the submitted patch, without an independently prescriptive request. A readiness objection can target the premise of offering/exposing the feature; when the focal claim is limited to the prepared artifact, the objection concerns the broader proposal. These scope readings change dispute projection without changing the observed checkbox facts.",
+    "decision_ids": [
+      "D07",
+      "Q019"
+    ],
+    "reason": "Retain the offered-feature and artifact-description alternatives explicitly.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH096",
+    "run_id": "F03_v04_r3",
+    "path": "/units/0/alternative_interpretation",
+    "before": "This can be retained solely as a technical report about the offered patch. The candidate parse captures the concrete implementation offered for review, not an institutional permission granted by the checkbox.",
+    "after": "This can be retained solely as a technical report about the offered patch. The candidate parse captures the concrete implementation offered for review, not an institutional permission granted by the checkbox. A readiness objection can target the premise of offering/exposing the feature; when the focal claim is limited to the prepared artifact, the objection concerns the broader proposal. These scope readings change dispute projection without changing the observed checkbox facts.",
+    "decision_ids": [
+      "D07",
+      "Q019"
+    ],
+    "reason": "Retain the offered-feature and artifact-description alternatives explicitly.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH097",
+    "run_id": "F01_v04_r3",
+    "path": "/units/25/alternative_interpretation",
+    "before": "Have to is most naturally technical necessity; institutional obligation remains unresolved.",
+    "after": "Have to is most naturally technical necessity; institutional obligation remains unresolved. A prospective redesign may challenge continued application of the built-copy requirement, but it does not refute the current fixed-list implementation's technical prerequisite.",
+    "decision_ids": [
+      "D07",
+      "Q040"
+    ],
+    "reason": "Distinguish current truth from prospective continued application.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH098",
+    "run_id": "F01_v04_r1",
+    "path": "/units/48/institution/challenges/0/aspect",
+    "before": "content",
+    "after": "premise",
+    "decision_ids": [
+      "D07"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH099",
+    "run_id": "F01_v04_r3",
+    "path": "/units/25/institution/challenges/0/target",
+    "before": "this_proposition",
+    "after": "broader_proposal",
+    "decision_ids": [
+      "D07"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH100",
+    "run_id": "F01_v04_r3",
+    "path": "/units/25/institution/dispute_present",
+    "before": true,
+    "after": false,
+    "decision_ids": [
+      "D07"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH101",
+    "run_id": "F01_v04_r3",
+    "path": "/units/25/institution/challenges/0/rationale",
+    "before": "Prospective workaround changes the practical fixed-list requirement without demonstrating that the current requirement is false.",
+    "after": "The prospective redesign addresses the burden of the broader test arrangement; it does not contest the stated requirement under the current fixed-list design.",
+    "decision_ids": [
+      "D07"
+    ],
+    "reason": "Source-grounded post-discussion representation; this does not revise independent reliability.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH102",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/11/type",
+    "before": "uptake",
+    "after": "clarifies",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH103",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/11/from_unit_id",
+    "before": "C12",
+    "after": "C13",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH104",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/11/to_unit_id",
+    "before": "C13",
+    "after": "C12",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH105",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/11/rationale",
+    "before": "Directly quoted cost concern receives a pruning option; no actual removal shown.",
+    "after": "The pruning option responds to and clarifies the quoted append-only cost concern. Uptake remains a defensible alternative if the question is interpreted as an implicit request for a removal plan; no removal, implementation, or causal effect is established.",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH106",
+    "run_id": "F01_v04_r1",
+    "path": "/relations/8/type",
+    "before": "uptake",
+    "after": "clarifies",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH107",
+    "run_id": "F01_v04_r1",
+    "path": "/relations/8/from_unit_id",
+    "before": "C07",
+    "after": "S14",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH108",
+    "run_id": "F01_v04_r1",
+    "path": "/relations/8/to_unit_id",
+    "before": "S14",
+    "after": "C07",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH109",
+    "run_id": "F01_v04_r1",
+    "path": "/relations/8/rationale",
+    "before": "The reply proposes removal as a response to the quoted cost concern; no removal is observed.",
+    "after": "The pruning option responds to and clarifies the quoted append-only cost concern. Uptake remains a defensible alternative if the question is interpreted as an implicit request for a removal plan; no removal, implementation, or causal effect is established.",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH110",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/18/type",
+    "before": "uptake",
+    "after": "clarifies",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH111",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/18/from_unit_id",
+    "before": "C05",
+    "after": "U13",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH112",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/18/to_unit_id",
+    "before": "U13",
+    "after": "C05",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH113",
+    "run_id": "F01_v04_r2",
+    "path": "/relations/18/rationale",
+    "before": "Sjors responds to a quoted cost concern with a possible future pruning measure; no implementation is demonstrated.",
+    "after": "The pruning option responds to and clarifies the quoted append-only cost concern. Uptake remains a defensible alternative if the question is interpreted as an implicit request for a removal plan; no removal, implementation, or causal effect is established.",
+    "decision_ids": [
+      "D08",
+      "Q042"
+    ],
+    "reason": "Prefer textual clarification while preserving the inferred-invitation alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH114",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/1/type",
+    "before": "uptake",
+    "after": "temporal",
+    "decision_ids": [
+      "D08",
+      "Q043"
+    ],
+    "reason": "All three final reviewers prefer temporal order for the weakly attributed response relation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH115",
+    "run_id": "F01_v04_r3",
+    "path": "/relations/1/rationale",
+    "before": "Delay assent follows release-risk speculation; reliable reply threading is absent.",
+    "after": "The frozen source creation timestamps place release-risk speculation at 2022-11-28T08:12:21+00:00 before the separate pause proposal at 2022-11-28T13:32:40+00:00. This ordering does not establish an initiating request, reliable reply attribution, a wording-edit sequence, or causal adoption. An implicit-invitation uptake reading remains an alternative.",
+    "decision_ids": [
+      "D08",
+      "Q043"
+    ],
+    "reason": "All three final reviewers prefer temporal order for the weakly attributed response relation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH116",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/proposition/summary",
+    "before": "The bot is said to ignore the incorrectly listed review on the next update after the requested 👎 reaction.",
+    "after": "The bot announces that it will ignore an unresolved review/comment/listing referent on the next update after the requested reaction.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "The source supplies a pronoun and condition, but does not identify its internal software referent uniquely.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH117",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/proposition/qualifiers/0/description",
+    "before": "The pronoun refers to the mislisted review; the consequence is conditional on the requested reaction.",
+    "after": "The consequence follows the requested reaction. It likely refers to the mislisted review, but the comment or displayed listing cannot be excluded.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "The source supplies a pronoun and condition, but does not identify its internal software referent uniquely.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH118",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/institution/rationale",
+    "before": "The bot is said to ignore the incorrectly listed review on the next update after the requested 👎 reaction. This is an articulated procedural method without evidenced social obligation, authority, use, or interpersonal expectation recognition.",
+    "after": "An announced conditional bot procedure with unresolved software referent; authority, use, and interpersonal recognition are not established.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "The source supplies a pronoun and condition, but does not identify its internal software referent uniquely.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH119",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/level_evidence/target_activity",
+    "before": "The bot is said to ignore the incorrectly listed review on the next update after the requested 👎 reaction.",
+    "after": "The bot announces that it will ignore an unresolved review/comment/listing referent on the next update after the requested reaction.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "The source supplies a pronoun and condition, but does not identify its internal software referent uniquely.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH120",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/uncertainty_reason",
+    "before": "",
+    "after": "The retained text does not distinguish the review, comment, or displayed listing as the software object ignored.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "The source supplies a pronoun and condition, but does not identify its internal software referent uniquely.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH121",
+    "run_id": "F01_v04_r2",
+    "path": "/units/5/alternative_interpretation",
+    "before": "An announced software response, not a sanction or observed application.",
+    "after": "The incorrectly listed review is the likely linguistic antecedent; the comment or displayed listing remain possible. The bot announces a conditional next-update response, with no observed execution.",
+    "decision_ids": [
+      "D09",
+      "Q022"
+    ],
+    "reason": "Preserve the plausible preferred referent without claiming certainty.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH122",
+    "run_id": "F01_v04_r3",
+    "path": "/units/14/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "strategy_candidate"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q047"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH123",
+    "run_id": "F01_v04_r3",
+    "path": "/units/30/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "strategy_candidate"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q048"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH124",
+    "run_id": "F01_v04_r3",
+    "path": "/units/31/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "strategy_candidate"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q048"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH125",
+    "run_id": "F01_v04_r1",
+    "path": "/units/31/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "undetermined"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q048"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH126",
+    "run_id": "F01_v04_r1",
+    "path": "/units/32/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "undetermined"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q048"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH127",
+    "run_id": "F01_v04_r3",
+    "path": "/units/39/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "norm_candidate"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q049"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH128",
+    "run_id": "F01_v04_r1",
+    "path": "/units/41/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "undetermined"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q049"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH129",
+    "run_id": "F01_v04_r2",
+    "path": "/units/38/institution/type_alternatives",
+    "before": [],
+    "after": [
+      "undetermined"
+    ],
+    "decision_ids": [
+      "D10",
+      "Q049"
+    ],
+    "reason": "Retain the articulated-method or proposed-restraint reading and the one-off technical-advice alternative.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH130",
+    "run_id": "F01_v04_r3",
+    "path": "/units/14/institution/rationale",
+    "before": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+    "after": "The primary view retains an engineering-preference interpretation. The utterance also supports an articulated testing method, retained as a type alternative. Absence of authority rules out a rule claim but does not itself rule out a strategy or norm candidate; shared acceptance and implementation remain unestablished.",
+    "decision_ids": [
+      "D10"
+    ],
+    "reason": "Replace an incomplete authority-based justification with the actual type boundary.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH131",
+    "run_id": "F01_v04_r3",
+    "path": "/units/30/institution/rationale",
+    "before": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+    "after": "The primary view retains an engineering-preference interpretation. The utterance also supports an articulated testing method, retained as a type alternative. Absence of authority rules out a rule claim but does not itself rule out a strategy or norm candidate; shared acceptance and implementation remain unestablished.",
+    "decision_ids": [
+      "D10"
+    ],
+    "reason": "Replace an incomplete authority-based justification with the actual type boundary.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH132",
+    "run_id": "F01_v04_r3",
+    "path": "/units/31/institution/rationale",
+    "before": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+    "after": "The primary view retains an engineering-preference interpretation. The utterance also supports an articulated testing method, retained as a type alternative. Absence of authority rules out a rule claim but does not itself rule out a strategy or norm candidate; shared acceptance and implementation remain unestablished.",
+    "decision_ids": [
+      "D10"
+    ],
+    "reason": "Replace an incomplete authority-based justification with the actual type boundary.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH133",
+    "run_id": "F01_v04_r3",
+    "path": "/units/39/institution/rationale",
+    "before": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+    "after": "The primary view retains an engineering-preference interpretation. The utterance also supports a proposed restraint on integration, retained as a type alternative. Absence of authority rules out a rule claim but does not itself rule out a strategy or norm candidate; shared acceptance and implementation remain unestablished.",
+    "decision_ids": [
+      "D10"
+    ],
+    "reason": "Replace an incomplete authority-based justification with the actual type boundary.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH134",
+    "run_id": "F01_v04_r2",
+    "path": "/units/38/parse_mode",
+    "before": "pragmatic",
+    "after": "literal",
+    "decision_ids": [
+      "D10",
+      "Q025a"
+    ],
+    "reason": "Adopt the panel-preferred literal action representation; the original reconstructed avoid-rushing parse remains a defensible alternative, not a retroactive error.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH135",
+    "run_id": "F01_v04_r2",
+    "path": "/units/38/components",
+    "before": [
+      {
+        "symbol": "I",
+        "text": "avoid rushing",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 399,
+              "end": 415,
+              "quote": "not rush merging"
+            }
+          }
+        ],
+        "inference_note": "A restraint recommendation is reconstructed from a claim about a possible reason; negation is retained.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      },
+      {
+        "symbol": "Bdir",
+        "text": "merging new releases",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 408,
+              "end": 428,
+              "quote": "merging new releases"
+            }
+          }
+        ],
+        "inference_note": "The merging act becomes the target of reconstructed avoid rushing.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      }
+    ],
+    "after": [
+      {
+        "symbol": "I",
+        "text": "not rush merging",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 399,
+              "end": 415,
+              "quote": "not rush merging"
+            }
+          }
+        ],
+        "inference_note": "The action not rush merging is directly supplied. Only the recommendation force is inferred from the stated reason; that does not make the action role inferred.",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      },
+      {
+        "symbol": "Bdir",
+        "text": "new releases",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 416,
+              "end": 428,
+              "quote": "new releases"
+            }
+          }
+        ],
+        "inference_note": "New releases remains the object of the explicitly mentioned merging action; only its recommendation force is indirect.",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      }
+    ],
+    "decision_ids": [
+      "D10",
+      "Q025a"
+    ],
+    "reason": "Adopt the panel-preferred literal action representation; the original reconstructed avoid-rushing parse remains a defensible alternative, not a retroactive error.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH136",
+    "run_id": "F01_v04_r2",
+    "path": "/units/38/alternative_interpretation",
+    "before": "A rationale about timing rather than a shared expected restraint; can expresses possible reasoning, not permission.",
+    "after": "A rationale about timing rather than a shared expected restraint; can expresses possible reasoning, not permission. A pragmatic avoid-rushing action with reconstructed roles remains semantically defensible. Deliberation selected the supplied not-rush-merging action for the adjusted view; this is a representation choice, not an error finding against the original parse.",
+    "decision_ids": [
+      "D10",
+      "Q025a"
+    ],
+    "reason": "Preserve the earlier source-reviewed alternative even after choosing another representation.",
+    "kind": "coding"
+  },
+  {
+    "change_id": "CH137",
+    "run_id": "F02_v04_r2",
+    "path": "/packet_sha256",
+    "before": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+    "after": "6bed20e56529ceec6798003c3d8dc543c295735ca9783d565df1262c745fa966",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH138",
+    "run_id": "F02_v04_r2",
+    "path": "/run_id",
+    "before": "F02_v04_r2",
+    "after": "F02_v04_r2__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH139",
+    "run_id": "F02_v04_r1",
+    "path": "/packet_sha256",
+    "before": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+    "after": "6bed20e56529ceec6798003c3d8dc543c295735ca9783d565df1262c745fa966",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH140",
+    "run_id": "F02_v04_r1",
+    "path": "/run_id",
+    "before": "F02_v04_r1",
+    "after": "F02_v04_r1__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH141",
+    "run_id": "F03_v04_r3",
+    "path": "/packet_sha256",
+    "before": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+    "after": "e1694a1baa54b737f3825c243535e3206d5d3e132aa22cdd3f28149828e184af",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH142",
+    "run_id": "F03_v04_r3",
+    "path": "/run_id",
+    "before": "F03_v04_r3",
+    "after": "F03_v04_r3__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH143",
+    "run_id": "F03_v04_r2",
+    "path": "/packet_sha256",
+    "before": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+    "after": "e1694a1baa54b737f3825c243535e3206d5d3e132aa22cdd3f28149828e184af",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH144",
+    "run_id": "F03_v04_r2",
+    "path": "/run_id",
+    "before": "F03_v04_r2",
+    "after": "F03_v04_r2__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH145",
+    "run_id": "F02_v04_r3",
+    "path": "/packet_sha256",
+    "before": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+    "after": "6bed20e56529ceec6798003c3d8dc543c295735ca9783d565df1262c745fa966",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH146",
+    "run_id": "F02_v04_r3",
+    "path": "/run_id",
+    "before": "F02_v04_r3",
+    "after": "F02_v04_r3__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH147",
+    "run_id": "F01_v04_r3",
+    "path": "/packet_sha256",
+    "before": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+    "after": "5b8fefe3d49f3bbc6782290e8a4112f587c753cecbafa357eb5edf119c71b1f3",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH148",
+    "run_id": "F01_v04_r3",
+    "path": "/run_id",
+    "before": "F01_v04_r3",
+    "after": "F01_v04_r3__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH149",
+    "run_id": "F03_v04_r1",
+    "path": "/packet_sha256",
+    "before": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+    "after": "e1694a1baa54b737f3825c243535e3206d5d3e132aa22cdd3f28149828e184af",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH150",
+    "run_id": "F03_v04_r1",
+    "path": "/run_id",
+    "before": "F03_v04_r1",
+    "after": "F03_v04_r1__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH151",
+    "run_id": "F01_v04_r1",
+    "path": "/packet_sha256",
+    "before": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+    "after": "5b8fefe3d49f3bbc6782290e8a4112f587c753cecbafa357eb5edf119c71b1f3",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH152",
+    "run_id": "F01_v04_r1",
+    "path": "/run_id",
+    "before": "F01_v04_r1",
+    "after": "F01_v04_r1__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH153",
+    "run_id": "F01_v04_r2",
+    "path": "/packet_sha256",
+    "before": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+    "after": "5b8fefe3d49f3bbc6782290e8a4112f587c753cecbafa357eb5edf119c71b1f3",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH154",
+    "run_id": "F01_v04_r2",
+    "path": "/run_id",
+    "before": "F01_v04_r2",
+    "after": "F01_v04_r2__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH155",
+    "run_id": "F03_v03_r3",
+    "path": "/packet_sha256",
+    "before": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+    "after": "e1694a1baa54b737f3825c243535e3206d5d3e132aa22cdd3f28149828e184af",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH156",
+    "run_id": "F03_v03_r3",
+    "path": "/run_id",
+    "before": "F03_v03_r3",
+    "after": "F03_v03_r3__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  },
+  {
+    "change_id": "CH157",
+    "run_id": "F03_v03_r1",
+    "path": "/packet_sha256",
+    "before": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+    "after": "e1694a1baa54b737f3825c243535e3206d5d3e132aa22cdd3f28149828e184af",
+    "decision_ids": [
+      "OP01"
+    ],
+    "reason": "Use the metadata-adapted packet with identical source text.",
+    "kind": "technical_metadata"
+  },
+  {
+    "change_id": "CH158",
+    "run_id": "F03_v03_r1",
+    "path": "/run_id",
+    "before": "F03_v03_r1",
+    "after": "F03_v03_r1__reconciled",
+    "decision_ids": [
+      "PROTOCOL"
+    ],
+    "reason": "Identify a post-evaluation adjusted view, not an independent coding run.",
+    "kind": "provenance"
+  }
+]

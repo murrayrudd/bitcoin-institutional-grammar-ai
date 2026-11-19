@@ -1,0 +1,180 @@
+{
+  "run_id": "F02_v03_r3",
+  "episode_id": "F02",
+  "authorized_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3",
+  "research_inputs": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/INSTRUCTIONS.txt",
+      "access_modes": [
+        "read"
+      ],
+      "sha256": "b562ad760f0dca9f3df167a29e5a5fba182e1cae64fdd12b719d0d074798cc03"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/protocol/codebook.txt",
+      "access_modes": [
+        "read"
+      ],
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/protocol/annotation_schema.json",
+      "access_modes": [
+        "read",
+        "checker_dependency"
+      ],
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/packet.json",
+      "access_modes": [
+        "read",
+        "checker_input"
+      ],
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/tools/check_annotation.py",
+      "access_modes": [
+        "execute"
+      ],
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/build_annotation.py",
+      "access_modes": [
+        "write",
+        "execute"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/finalize_review.py",
+      "access_modes": [
+        "write",
+        "execute"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/close_run.py",
+      "access_modes": [
+        "write",
+        "execute"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/annotation.json",
+      "access_modes": [
+        "write",
+        "read",
+        "checker_input"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/annotation.first_complete.json",
+      "access_modes": [
+        "write_once_before_checks",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/checks.first.json",
+      "access_modes": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/annotation.final.json",
+      "access_modes": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/checks.json",
+      "access_modes": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/repair_log.json",
+      "access_modes": [
+        "write"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/review_notes.json",
+      "access_modes": [
+        "write",
+        "read",
+        "update_final_checker_metadata"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/execution_log.json",
+      "access_modes": [
+        "write"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/access_record.json",
+      "access_modes": [
+        "write"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r3/output_manifest.json",
+      "access_modes": [
+        "write"
+      ]
+    }
+  ],
+  "access_limits": {
+    "all_research_access_within_authorized_directory": true,
+    "parent_directories_read": false,
+    "other_runs_read": false,
+    "library_accessed": false,
+    "web_accessed": false,
+    "outside_research_accessed": false,
+    "calibration_files_read": false,
+    "agents_spawned": false,
+    "post_dispatch_sources_added": false,
+    "frozen_inputs_modified": false
+  },
+  "configuration": {
+    "selection": "inherited_primary_configuration",
+    "override_requested": false,
+    "model_identity": null,
+    "reasoning_effort": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling_parameters": null,
+    "token_use": null,
+    "cost": null,
+    "exposure_note": "The task specifies inherited primary configuration with no override. Actual model identifier and reasoning setting are not independently exposed to this run. No model identity is inferred from historical configurations in the protocol."
+  },
+  "runtime": {
+    "shell": "bash",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "ordinary_libraries_used": [
+      "json",
+      "hashlib",
+      "pathlib",
+      "collections",
+      "datetime",
+      "sys"
+    ],
+    "runtime_library_source_files_individually_inspected": false
+  },
+  "source_integrity": {
+    "packet_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+    "annotation_packet_sha256_matches": true,
+    "first_complete_sha256": "7cda71bf24ac70f687c5b3e6b9b98828f071a494390764252d6e664985c711f0",
+    "final_sha256": "5323dd97c6280c14fba0b8e4973e8ba08703ac1b4e3f5524edfdd1aefcc66dae"
+  },
+  "access_log_note": "File accesses include direct reads/writes and execution of local scripts/checker. Standard Python runtime imports are ordinary runtime dependencies, not additional research inputs. Inline Python commands read only the listed assigned or generated files."
+}

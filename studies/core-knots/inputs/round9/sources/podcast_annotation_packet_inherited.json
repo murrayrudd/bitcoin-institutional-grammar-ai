@@ -1,0 +1,222 @@
+{
+  "episode_id": "CK-R8-PODCAST-ACTIVE-V02",
+  "selection_status": "Purposive development packet after the author-directed exclusion of P5158. Original packets remain in history; surviving excerpts are unchanged.",
+  "entries": [
+    {
+      "source_id": "PE01",
+      "kind": "podcast_transcript_excerpt",
+      "text": "my\r\n32:3032 minutes, 30 secondspersonal view is uh that the option isn't necessary and that if we are going to change the default then we need to we\r\n32:3932 minutes, 39 secondsthat we need we don't need to do anything but we should remove the option. uh it appears to not be\r\n32:4732 minutes, 47 secondsconsensual among contributors to the project which is another thing like Bitcoin core is not one mind thinking uh\r\n32:5532 minutes, 55 secondsalike on all issues people have different views uh I'm not going to die on this hill but I personally think we\r\n33:0133 minutes, 1 secondshould get rid of the option uh I before making the point of why I believe we should get rid of it let me state that\r\n33:0933 minutes, 9 secondsin any case it's an objection to the implementation of the change and it's not an objection to changing the default per se.",
+      "episode_id": "P4426",
+      "origin_start": 34609,
+      "origin_end": 35459
+    },
+    {
+      "source_id": "PE02",
+      "kind": "podcast_transcript_excerpt",
+      "text": "once\r\n33:2733 minutes, 27 secondsBitcoin core changes the default uh it's going to become the def facto policy on the network and uh if it becomes the def\r\n33:3633 minutes, 36 secondsfacto policy on the network one local node changing his own option is not\r\n33:4333 minutes, 43 secondsgoing to have any effect whatsoever globally. So the only reason one may want to change the option is for maybe\r\n33:5333 minutes, 53 secondssome sort of local use case.",
+      "episode_id": "P4426",
+      "origin_start": 35574,
+      "origin_end": 36027
+    },
+    {
+      "source_id": "PE03",
+      "kind": "podcast_transcript_excerpt",
+      "text": "having an option imposes a cost on the project and on users. Bitcoin core has 150 startup\r\n35:1535 minutes, 15 secondsoptions at this time. It's crazy. uh I don't think we should have an option that has no to mildly negative effect on\r\n35:2435 minutes, 24 secondsthe user and and it's something that we just do normally as well. We don't have use we don't have options that are going\r\n35:3235 minutes, 32 secondsto be to have a negative effect on the user and we do not have options that have are going to have no change whatsoever for the user. So I think we\r\n35:4135 minutes, 41 secondsshould remove it but it's also I'm not going to to die on this hill. Uh currently what Bitcoin core is going for well I did not open the p request\r\n35:4935 minutes, 49 secondssomeone else opened the new p request and it seems that most Bitcoin core contributors act this p request and this new pray request does not get rid of the\r\n35:5835 minutes, 58 secondsoption it does mark it as deprecated as you as you mentioned um we'll see it how it goes uh last time\r\n36:0736 minutes, 7 secondswe marked an option as duplicated we removed it it was for me for LBF but uh sometimes we mark stuff\r\n36:1536 minutes, 15 secondsduplicated and we never go come around to removing it. But it doesn't matter.\r\n36:1836 minutes, 18 secondsIt shouldn't matter because the option does effectively nothing for the user.",
+      "episode_id": "P4426",
+      "origin_start": 37197,
+      "origin_end": 38585
+    },
+    {
+      "source_id": "PE04",
+      "kind": "podcast_transcript_excerpt",
+      "text": "So, we we set it as deprecated initially. Um but in the face of in my opinion for wrong reasons of people wanting to use this setting we just said all right we mark it as deprecated but what does it mean even are we really going to get rid of this setting in in the near future is like are we going to get rid of it in the next version not really people are using it in one year in two year maybe people have it in the bitcoin.\r\ncom and and the default of sticky. And on the other hand, what does it get us to uh get rid of it? It's just like marginally less code to maintain which I'm all all for. I I wish we could get rid of the code. I'm just doing with now the new circumstances are there's no way that we are going to get rid of this option in the near future.\r\n Therefore, it was technically incorrect to say that it was deprecated. It was not. it was just going to linger as deprecated for five versions or six version or whatnot. We had we had one of those settings actually the RPC user and RPC password have been duplicated for 10 years and because so many people use them we just unduplicated them after 10 years and just gave up.",
+      "episode_id": "P5378",
+      "origin_start": 25432,
+      "origin_end": 26574
+    },
+    {
+      "source_id": "PE05",
+      "kind": "podcast_transcript_excerpt",
+      "text": "Yeah, at the end of the day, people have the agency of running whatever software they want. They have ultimate control on what transactions they are going to relay or not or not not have a mele at all.\r\n But it's I guess it's just an argument how how do you want to design the best Bitcoin software possible? Certainly, it's not going to be having every tweak possible on every post relay policy setting. I I can tell you there is hundreds of them, hundreds of configurations you could have. At the end of the day, you're you're you're using Bitcoin Core because you think that the Bitcoin Core developers outside of the consensus rules are making good decisions about what is good for uh end users, what is good for uh big relay nodes and big economical nodes and what is good for uh miners to be able to join the mining market. So that's why they're they're deferring their decision to Bitcoin developers that are expert on this tiny topic and they always have the choice to go elsewhere and use another software or use a previous version or use one version with tiny bit of code changed and\r\nwe cannot maintain a setting for everything. It's just insane. It's bad software development. So my take is that we we shouldn't have these settings in the first place. they they make no sense. But since we have it now, we need to to deal with it and people want to use it.",
+      "episode_id": "P5378",
+      "origin_start": 26693,
+      "origin_end": 28061
+    },
+    {
+      "source_id": "PE06",
+      "kind": "podcast_transcript_excerpt",
+      "text": "I don't have an idea. Uh but I don't want to minimize it either. Uh I I talked with the a lot of people that were concerned about the situation. A lot of people that were maybe not quite on board with Luke who is a character of his own uh to say the least but just wanted to switch implementation in practice to to Bitcoin core.\r\n I think it's due to a misunderstanding, but I I understand it and it's real. I think we shouldn't we shouldn't view it as like, oh, these people are not real or oh, it's all bots on Twitter. It's not all bus. There are real people that work on for sure.",
+      "episode_id": "P5378",
+      "origin_start": 28521,
+      "origin_end": 29105
+    },
+    {
+      "source_id": "PE07",
+      "kind": "podcast_transcript_excerpt",
+      "text": "in Bitcoin core we have standards of review no review no code merged um but a lot of his code was merged because he was reviewed and it was good and it still happens today.\r\n Uh just the other month I was as Luke was insulting me on Twitter, he made a P request that made sense. So I just watched out the code and I was like code is good act. I acted the proquest was merged and it's it's actually being shipped in 30 I think.",
+      "episode_id": "P5378",
+      "origin_start": 39301,
+      "origin_end": 39727
+    },
+    {
+      "source_id": "PE08",
+      "kind": "podcast_transcript_excerpt",
+      "text": "Maybe it's worth talking about how policy change is handled within core as opposed to sort of consensus changes because this is a really important distinction and something that on I I've seen misconstrued on Twitter. So like policy change does obvious obviously does not require broad consensus from Bitcoiners.\r\n Um this is something that's decided by the core team and core maintainers. Is that correct? Yeah, it's like any other thing in the software like what database are you going to use for your wallet? It's a local change. It's a local change which has implications networkwide. So, it's very important.\r\n I wouldn't say it's also only up to the um Bitcoin core developers. I think it's up to the larger group of Bitcoin developers. uh for instance a lot of the uh what you like everything is part of relay policy if you're going to have a new message on the protocol you need other implementation to be to interconnect you need people that are speaking the peerto-peer protocol that are not necessarily nodes to be able to be compatible so it's going to to happen on the mailing list it's going to happen in the BIP repository more so than on Bitcoin core of course it's a lot of Bitcoin core people uh in these discussions because that's the most active implementation is the reference implementation but it's not Bitcoin core specific.",
+      "episode_id": "P5378",
+      "origin_start": 39800,
+      "origin_end": 41148
+    },
+    {
+      "source_id": "PE09",
+      "kind": "podcast_transcript_excerpt",
+      "text": "You know, I want to say no, but it's also I always try to from being in the position of receiving a lot of criticism from people that it's easy to criticize.\r\nIt's it's very hard. So, I I I'm not a fan of the moderation guidelines personally, but I don't want to be criticizing it because I don't know what is better. It's just like are you going to let trolls come and derail thread in your workplace? Probably not. You don't want that.\r\n Are you going to have moderation guidelines? Well, guidelines can be weaponized. Are you going to have no guidelines, but then it's more arbitrary control from the maintainers? I think that would be the solution I favor but there is good arguments on all sides of so I think core could have handled it differently but I don't I don't know what could have been done better I think a few people it's also all the intervention was very mild it was dramatized on Twitter and everything I've got banned from Bitcoin some people were muted for 24 hours not the end of the world",
+      "episode_id": "P5378",
+      "origin_start": 41535,
+      "origin_end": 42546
+    },
+    {
+      "source_id": "PE10",
+      "kind": "podcast_transcript_excerpt",
+      "text": "So we have currently five maintainers. Their job is uh to facilitate releases and to go around the repository at their own review. And when they perceive pull requests to be ready for merge, they uh\r\neither well they usually add their own review and then merge the things that are uncontroversial and have been vetted sufficiently, have been reviewed, have sufficient tests, uh move the project forward.",
+      "episode_id": "P5305",
+      "origin_start": 5757,
+      "origin_end": 6160
+    },
+    {
+      "source_id": "PE11",
+      "kind": "podcast_transcript_excerpt",
+      "text": "The other big thing is everything gets reviewed by three to five other contributors at least and they tend to review it three to five\r\ntimes. So you write your code once, you update it a few times, probably rebase a couple times, but then there's also this review burden on a bunch of the other reviewers where you get 9 to 25 times uh reviews of of the code from other contributors, which is um you you've probably seen people say, \"Oh, review is the bottleneck.\r\n\" It's not that people aren't doing review. It's that the review burden is so much bigger than the writing the code burden. Sure, there might be a bunch of research going into, oh, what exactly do we want to do? How do we motivate it? Maybe measure whether it's better or uh other sort of research to to motivate the change in the first place.\r\n But then the prying away other people from their projects and getting them to review your stuff uh for a total of 10 to 25 times that can really take some time. So recently for example we merged a change to send all and I think that that had been open for over a year. It it can sometimes take a little time until things are considered ready and included, but other than that, it's just whatever gets merged to the master branch.\r\n It's not that we vote on, oh, we we'll do this or that in this release. Whatever is ready gets gets put in.",
+      "episode_id": "P5305",
+      "origin_start": 8758,
+      "origin_end": 10108
+    },
+    {
+      "source_id": "PE12",
+      "kind": "podcast_transcript_excerpt",
+      "text": "I believe in end of August we had a feature freeze uh where we do not accept new features to the master branch for a short period of time only bug fixes and then we branch off the release branch and the release branch then becomes the uh release uh later in the month. So, uh, feature freeze was, I think, end of August and the release branch was cut about a week later or two weeks. So, now\r\nwe're just doing bug fixes, testing, writing release notes, documenting, and so forth. Um, we have release candidate 2 out since yesterday. So, usually we go for the major releases through maybe up to four release candidates. So the first release candidate uh is just when the branch is cut and then after that for example we found I think there was an issue with windows and so forth.\r\n So as bug fixes get um put into that release branch, a new release candidate is cut and eventually when the release candidates are found to be solid that becomes the final version and is properly released.",
+      "episode_id": "P5305",
+      "origin_start": 3794,
+      "origin_end": 4780
+    },
+    {
+      "source_id": "PE13",
+      "kind": "podcast_transcript_excerpt",
+      "text": "I don't have to relay anything, and that should\r\n10:0410 minutes, 4 secondsbe a principle that all Bitcoiners respect. I'm not obligated to do stuff for you for free. And most Bitcoiners will invoke free market arguments and\r\n10:1110 minutes, 11 secondsall that stuff to till the cows come home. And I agree, I'm not obligated to relay anything. But let's be honest,\r\n10:1810 minutes, 18 secondsit's a monetary network. We all run nodes. It's going to be pretty useless if none of us relay each other's financial transactions, isn't it? So, I'm pretty much incentivized to do that.\r\n10:2710 minutes, 27 secondsEven though it does my transactions are going to get crowded out by your transactions, I'm also going to have to pay a fee on that basis. But that's about the end of it. I'm definitely not\r\n10:3510 minutes, 35 secondsobligated to relay JPEGs around the network. So, we've had to invent a bunch of backwards rationalizations",
+      "episode_id": "P4402",
+      "origin_start": 12936,
+      "origin_end": 13869
+    },
+    {
+      "source_id": "PE14",
+      "kind": "podcast_transcript_excerpt",
+      "text": "I think the moderation policy is reasonable but it\r\n59:0759 minutes, 7 secondshas to be consistently enforced and they never are. So it just becomes an Francis Polio killed this. He he smashed it because he doesn't agree with me filters\r\n59:1559 minutes, 15 secondsat all but he understood what happened with the GitHub. Right? If if you have any sort of community with any sort of set of rules, it just becomes politics\r\n59:2359 minutes, 23 secondsbecause some people are able to break the rules and other people aren't.",
+      "episode_id": "P4402",
+      "origin_start": 73585,
+      "origin_end": 74106
+    },
+    {
+      "source_id": "PE15",
+      "kind": "podcast_transcript_excerpt",
+      "text": "okay, the discussion didn't happen on the mailing list. That is the more appropriate venue for it than GitHub.\r\n1:00:081 hour, 8 secondsBut I didn't say anything wrong on GitHub. I said this is I'm not incentivized as a node to run this stuff.\r\n1:00:141 hour, 14 secondsum why are you forcing me to do so? That that feels like uh acquiescence to miners that are attacking the network\r\n1:00:231 hour, 23 secondsand completely unnecessary. I don't remember exactly how I put it. Something along those lines. And I I agree with you. Look, GitHub is not like I said,\r\n1:00:311 hour, 31 secondsI'm not super mad that I got banned off GitHub. I don't think it's appropriate uh for a lot of these discussions anyway.",
+      "episode_id": "P4402",
+      "origin_start": 74928,
+      "origin_end": 75637
+    },
+    {
+      "source_id": "PE16",
+      "kind": "podcast_transcript_excerpt",
+      "text": "people are coming up with all\r\n1:00:541 hour, 54 secondssorts of reasons like you don't need consensus to change default policies or remove configurability. And I'm like,\r\n1:01:001 hour, 1 minutewell, no, you actually do need to follow the community on this stuff because this is very significant. I know it's not technically consensus, but it matters.\r\n1:01:091 hour, 1 minute, 9 secondsand we have a strong opinion on it and you should just leave it.",
+      "episode_id": "P4402",
+      "origin_start": 75969,
+      "origin_end": 76421
+    },
+    {
+      "source_id": "PE17",
+      "kind": "podcast_transcript_excerpt",
+      "text": "it it marks configuration as depregated which means it will be gone soon but it won't be it won't be part of this particular um\r\n1:01:411 hour, 1 minute, 41 secondsmerge if that happens. So when core 30 gets released in like September, you'll have this mass you'll\r\n1:01:481 hour, 1 minute, 48 secondshave no limit on oper but it will you can configure it back down to where it is now if you want or wherever you want and but it's marked as deprecated and\r\n1:01:571 hour, 1 minute, 57 secondsand historically stuff that gets marked as deprecated in core means it's just going to be removed without any sort of ceremony at some future release and\r\n1:02:041 hour, 2 minutes, 4 secondstreated as we don't care about this thing. So they're telling us they're going to get rid of it. So it but they're telling us we're not doing it\r\n1:02:111 hour, 2 minutes, 11 secondsyet, but we're going to. So I don't know if that's a relevant detail in this or not.",
+      "episode_id": "P4402",
+      "origin_start": 76997,
+      "origin_end": 77945
+    },
+    {
+      "source_id": "PE18",
+      "kind": "podcast_transcript_excerpt",
+      "text": "the point I guess is that core this   group the current version of the group because (20:41) the group changes all the time too and   it's a lot of people and you know there's like the  main maintainers submaintainers that relationship   also changes all the time it does have a  monopoly on the distribution of the Bitcoin code,   right? Like the majority of the Bitcoin code is  core, especially when it comes to economic actors. \r\n(21:01) And you know, when they choose to deploy  a change, even if it's standard is so non hard   consensus rules, even if they don't push updates  as automatic updates, like it still causes the   network to probably adopt their version, right?",
+      "episode_id": "P4753",
+      "origin_start": 20548,
+      "origin_end": 21227
+    },
+    {
+      "source_id": "PE19",
+      "kind": "podcast_transcript_excerpt",
+      "text": "core is kind of  removing my understanding is that core is removing   that ability for me to filter transactions  that are over this 83 bit limit which is a   somewhat arbitrary limit but it's the in the  limit came in way back then because there were   issues with very unsavory things that could be (26:02) put into bitcoin blocks when Bitcoin   was very small and that could have been an  excuse to shut it down. And I think we know   where you're going with that. Yeah. Yeah.  So nowadays it doesn't really matter. I'm   sure people put stuff that shouldn't be there  anyways, but you can't turn it off anymore.  (26:19) It's like no, it's the blockchain of the  Bitcoin like a strategy on some. Yeah. You know,   like it's a different environment. I'm not a huge  fan of removing that limit. I'm not sure it's a   great use of time. Well, this is my point on it,  MVK, is why take that optionality away from me  \r\nas a person who's running a node. (26:38) If I want to limit it,   I should be able to. If I want to open it up  and and allow whatever to be put in there,   then you should have that option as a person  who's choosing to run the hardware and the   software that you paid for.",
+      "episode_id": "P4753",
+      "origin_start": 25590,
+      "origin_end": 26785
+    },
+    {
+      "source_id": "PE20",
+      "kind": "podcast_transcript_excerpt",
+      "text": "I think the issue and why this turned  into such a big deal is because of it was the  \r\nmethod that core used to roll it out. Would  you agree with that? It was the method in   which core to it was terrible. It was very  poorly managed that GitHub issue it all.   It's like I don't I kind of feel for them too  because managing that like managing GitHub and   seeing a bunch of people like posting AI like  a answers to fight on that thread was very very   I do stuff too on cold card we closed the  issues cuz we just don't have patience to   deal with like a lot of strolling but again it's (28:31) like the reason why Bitcoin core was so   sort of like respected and so above is because  they always managed to be above it all. Orion,   which was one of the main maintainers prior to  now, always managed to remain fully impartial,   try to just keep things open  and sort of just left people   like tired out on threads and things. (28:55) moderation again I was saying   GitHub has very poor moderation tools tools  for open source software but at the same time   like the way the like you almost feel like a  troll opening the PR too the way the DPR was  \r\nopen it was very poorly done like everything  around this issue was poor management poor   behavior by all sides just all overall garbage  so you know you end up at the place you're at   with people screaming at each other on Twitter.",
+      "episode_id": "P4753",
+      "origin_start": 27761,
+      "origin_end": 29158
+    },
+    {
+      "source_id": "PE21",
+      "kind": "podcast_transcript_excerpt",
+      "text": "No see like this is the thing I'm on the   other side of this people should like be even  more against each other. I just don't want to   see the discussion but like Bitcoin game theory  is amazing for that. Like the more people don't   like each other the more Bitcoin doesn't change.\r\n (30:09) you're going to get like flare ups on   the non consensus code like the operator  turn size filter something like that but   realistically speaking like this just makes  Bitcoin stronger because it can't be changed   is your point yeah because it's going  to be even harder to make any changes   right because now you have even more people who  disagree more people who don't trust each other   so there's more scrutiny is amazing like you  want Bitcoin to be as adversarial as possible   which is interesting, right? It's like  what other thing exists in the world  (30:42) that that would be the scenario  of more disagreement leads to stronger   entrenchment of the prototype, right? You know,  it's unpleasant and I hope that people can keep   the discourse to a more polite and gentleman like  discussion. They don't have to go tell people to   do something to a goat. But in all scrutiny,  adversarialness, these are all like parts of   the Bitcoin game theory. So it's okay.",
+      "episode_id": "P4753",
+      "origin_start": 29736,
+      "origin_end": 31013
+    },
+    {
+      "source_id": "PE22",
+      "kind": "podcast_transcript_excerpt",
+      "text": "no, no one is forcing them to do anything. It like we all agreed in 2013\r\nthat 80 is the max. If you want to build something that uses more than that, you need to get everyone's permission. You can't just go do it or you're a jerk. >> Well, okay. I mean do it anyway, right? >> Yeah. Part part of what I'm hearing, Chris, too.\r\n It like makes me think, you know, who put you in charge of like what's a legitimate layer, too? And I like you. I hope you're you're not taking I'm just trying to imagine like what the critics are saying like who's to decide? Um but >> what I'm saying is Bitcoiners decided that we when we when we said 80 bytes is the amount of data that you can put in a transaction, that was the decision.\r\n And so if you if your protocol needs 144 bytes, then you can't build that on Bitcoin uh without making some people angry, you know, like and this has been here for 10 years. It's not some new thing, you know. Everybody knows this.",
+      "episode_id": "P5383",
+      "origin_start": 52448,
+      "origin_end": 53401
+    },
+    {
+      "source_id": "PE23",
+      "kind": "podcast_transcript_excerpt",
+      "text": "no but the the default in in in the Bitcoin uh reference implementation they as I understand it the developers view is that they have a kind of hypocratic oath to keep the network operating reliably react cautiously to network condition changes fix bugs keep the network robust keep it secure keep it decentralized and there's an open development process whereby anyone can\r\nraise a valid technical objection and to my knowledge nobody's felt Nibbly succeeded to do that and I even you know repeated multiple times on Twitter that if anybody can develop >> Adam I I I responded to that on Twitter with some actual textual technical objections and you ignored them and I called you out for and you still ignored them.\r\n>> Okay. So I didn't see them. So, but my my genuine belief my genuine belief is that there are no valid technical objections and if somebody wants to raise in I'll go look at this thread and if I'm persuaded that they're valid and there are lots of other technical people looking at these threads then that would be enough to pause a release to cause a bug fix or what have you.\r\n But I simply don't think it's true. I think people have got wrapped up in some emotional logic.",
+      "episode_id": "P5383",
+      "origin_start": 56865,
+      "origin_end": 58060
+    },
+    {
+      "source_id": "PE24",
+      "kind": "podcast_transcript_excerpt",
+      "text": "But I simply don't think it's true. I think people have got wrapped up in some emotional logic. The only glimmer of truth in this whole thing is that maybe if we, you know, if we play whack-a-ole quickly enough, maybe we'll dishearten the spammers. But, you know, the internet's been around for a long time.\r\n There's still people spamming. And in Bitcoin, they have a much higher payoff from spamming. Email spam payoff is incredibly low. The only thing that's really reliably working in Bitcoin is the fee market, which comes down to uh a block size limit and a and a market for the fees and proof of work.",
+      "episode_id": "P5383",
+      "origin_start": 57965,
+      "origin_end": 58573
+    },
+    {
+      "source_id": "PE28",
+      "kind": "podcast_transcript_excerpt",
+      "text": "Just policy is enough and should be the\r\n\r\n\r\nway that we handle spam in general. Um, it may not be enough for the CCM problem. It's jury's still out on that one.",
+      "episode_id": "P5450",
+      "origin_start": 88051,
+      "origin_end": 88212
+    },
+    {
+      "source_id": "PE29",
+      "kind": "podcast_transcript_excerpt",
+      "text": "Um so if people want to start pushing towards the software to limit um harmful ways the blockchain could be abused that aren't being filtered, I I have absolutely no objection to them doing that. And I will probably >> What's your So what So what's your solution for fixing this? >> Uh Luke wrote something on the mailing list last week or probably two weeks ago now and I didn't see really any objection to it.\r\n\r\n\r\n I think Keegan uh was like, \"No, I want I want to have fun. This is undermining my ability as a developer to have lots of fun with new things we can add to >> I was going to reply to someone else proposed an additional rule on top of >> you got I didn't understand anything you said. You got to speak into the mic.\r\n\r\n\r\n\" That was kind of like a mumble. uh the the one that was objecting that MC was saying was objecting who's objecting to someone else's suggestion. Um as far as I have seen there have been no objections whatsoever to the rules I proposed. >> So we do go that route. >> I think we have basically consent on how to do it.\r\n\r\n\r\nUm, but yeah, I think you mentioned hard fork, too, but there's no reason to even think about a hard fork. It's completely useless for this kind of thing. >> Well, at most, >> but but you you don't you you wouldn't need to. But I mean, hard fork, soft fork, they're almost the same in this situation, right? I mean, if you're going to if if anyone is advocating, and I'm saying you guys are going to advocate for a consensus rule change, right? It could be a very enthusiastic knots uh believer would advocate for a consensus change and and putting the filters in as a consensus protocol not as a policy protocol and then the you know the the drum beat of soft or hard fork begin. Uh do you think it'll it can be successful? >> Uh soft fork. Yes, artwork know that soft forks do not require the strict consensus that hard forks do.\r\n\r\n\r\n>> I think it can be successful. Um there's the usual asymmetry that if you're like if there's like a 20 80% split, you know, 20% this is a hypothetical cuz I don't I don't have the delusion that 20% of the of miners are running knots. But uh if 20% of the network was mining the soft fork blocks and they their chain was moving at 20% of the speed of the main chain which dropped to 80%.\r\n\r\n\r\n The 80% gets very uncomfortable because if the 20% ever grows to 51% and overtakes them then they get wiped out. Uh, and that means the incumbent core chain would have to uh URSF, which is, you know, making themselves a hard fork off of our soft fork or just capitulate. And what are they capitulating to? Consensus limitation of a bunch of arbitrary data storage methods.\r\n\r\n\r\n I don't see anyone having a problem with that. There are some precedent things um that maybe they don't want. Some people just abhore change to Bitcoin in general. Leave it alone. uh I understand all these um you know heruristics but at the same time the nuts and bolts of it I think even the way you described it was um the way you wrote it uh or at least the way you proposed it in the mailing list I'm not going to say proposed cuz then I'm going to get an article written about how we're proposing a fork just the ideas you were spitballing on all they say is um limit these known data carrying methods for the next couple of years and then make them permitted again. So even if if it causes some unknown issue, it's going to roll back. It's not a permanent limitation on those things. So to me, it seems um I have no issue with it. I'll put it that way. I'm not going to start advocating for it strongly, but there are plenty of people that already are.",
+      "episode_id": "P5450",
+      "origin_start": 97270,
+      "origin_end": 100901
+    },
+    {
+      "source_id": "PE30",
+      "kind": "podcast_transcript_excerpt",
+      "text": "Luke, any comment\r\n\r\n\r\non that before I ask a follow-up? >> No. Um, but I do want to elaborate more that soft forks and hard forks are necessarily very different. And while a hard fork needs the strict consensus, a soft fork can succeed even if it has a strong minority as long as the strong minority is not outnumbered by people opposed to it.",
+      "episode_id": "P5450",
+      "origin_start": 100927,
+      "origin_end": 101271
+    }
+  ]
+}

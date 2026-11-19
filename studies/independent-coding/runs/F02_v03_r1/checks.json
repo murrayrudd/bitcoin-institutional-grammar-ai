@@ -1,0 +1,119 @@
+{
+  "status": "pass",
+  "screened_entries": 22,
+  "units": 13,
+  "statement_units": 4,
+  "exact_anchor_references": 137,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "F02-S01",
+      "source_id": "pr14441:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 0,
+          "end": 72,
+          "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+        }
+      },
+      "note": "The imperative-like correction supplies no named editing actor. The source attribution of the later report is jnewbery, who reports updating the PR with @ryanofsky's changes; this supports, but does not make explicit, the addressee. The outside-unit reference is used only to resolve the contribution participant, not maintainer status."
+    },
+    {
+      "unit_id": "F02-S02",
+      "source_id": "pr14441:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 0,
+          "end": 72,
+          "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+        }
+      },
+      "note": "The explicit I in I'd belongs to ryanofsky's hypothetical formulation, not literally to the contributor being advised. Reading this as an editorial recommendation to the PR contributor transforms the actor role. The later outside-unit update report, attributed to jnewbery, supports the addressee inference without turning it into an explicit actor."
+    },
+    {
+      "unit_id": "F02-S02",
+      "source_id": "pr14441:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 14,
+          "quote": "This paragraph"
+        }
+      },
+      "note": "The demonstrative phrase in the preceding sentence, outside the minimal edit-proposition span, resolves it as the paragraph being criticized. The statement about both behaviors being present in the same release is the reviewer's reason for the criticism; the absent original paragraph is not asserted to contain any particular wording. That rationale is retained separately as institutional evidence and is not an activation condition on the edit."
+    },
+    {
+      "unit_id": "F02-S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:6",
+        "span": {
+          "start": 107,
+          "end": 123,
+          "quote": "I've removed it."
+        }
+      },
+      "note": "The instruction has an implicit addressee. The matching later removal report is attributed to jnewbery; the outside-unit reference supports that addressee while leaving actor role inferred and status unspecified."
+    },
+    {
+      "unit_id": "F02-S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:2",
+        "span": {
+          "start": 16,
+          "end": 42,
+          "quote": "the new check for \"*\" here"
+        }
+      },
+      "note": "Drop omits its object in this clause. The preceding sentence outside the unit supplies the unique local antecedent, the new check for \"*\" here. The earlier subject is assigned an inferred object role under drop; its words being explicit does not make that role explicit."
+    },
+    {
+      "unit_id": "F02-S04",
+      "source_id": "pr14441:review_comments:3",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 0,
+          "end": 72,
+          "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+        }
+      },
+      "note": "I is the subject of think, not the explicit actor of document. The recommendation reading supplies an editing addressee; the outside-unit report attributed to jnewbery supports that inference without claiming the source explicitly names the documenting actor."
+    },
+    {
+      "unit_id": "F02-S02",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "It is already the direct object of change in the hypothetical source wording and remains the direct object of the same action in the pragmatic recommendation. Its referent is separately resolved from the preceding sentence."
+    },
+    {
+      "unit_id": "F02-S04",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "This phrase is the direct object of document in the literal appraisal and remains the direct object of that same verb under the pragmatic recommendation. Its object role has not been transformed."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

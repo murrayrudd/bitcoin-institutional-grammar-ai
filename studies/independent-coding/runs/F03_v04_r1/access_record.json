@@ -1,0 +1,128 @@
+{
+  "run_id": "F03_v04_r1",
+  "research_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1",
+  "access_boundary": "Only this assigned directory was used for research and outputs. No parent directory, other run, Library, network, or outside source was accessed. Standard Python modules and installed jsonschema were used for execution.",
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/INSTRUCTIONS.txt",
+      "access": "read_only_input",
+      "sha256": "495c7828512d9dfedbf382deb4a1cb714ab6618a1cb146bce54403d61a93e662"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/protocol/codebook.txt",
+      "access": "read_only_input",
+      "sha256": "6c7679852ebaa621c7dc6861c5a2400a5f0fbb9f8f987771b565e339e8650e7b"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/protocol/annotation_schema.json",
+      "access": "read_only_input",
+      "sha256": "71f223a9bfb78960d5c10f3566d9f005a5bcbe3a38be09c77d70608ea75c2523"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/packet.json",
+      "access": "read_only_input",
+      "sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/tools/check_annotation.py",
+      "access": "read_only_input",
+      "sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/build_annotation.py",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "cc16b5e05d626a63533f027826ae58e2cb483af5e01583f5123c973cafcdbefb"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/annotation.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "37376addb8994f159b8f09da0f9ab1a319c313dd352f251efe04f423e6beafb5"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/annotation.first_complete.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "e4d30343aa293c9fe14c7494b41a60aa5f688db74679e20b2a2c95ef1d5196fd"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/checks.first.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "cc3892b40623e6241f21a791f6775db09da1f04dc7d8476d67a98d34818b329f"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/repair_mechanical.py",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "9f022a77f4f583cc073a5e1047115a051ee9b7a15d2d156d414487b518d5d345"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/repair_log.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "3f09871c94d7855208f930e40adfe93950eabb0caaccba2029a737df951d9eca"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/checks.repaired.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "148366510527bd3c0be5fddd2bf7a5a72a4f03b7cb63fa0650b22b7d2c4682c1"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/self_review.py",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "f7dfe7bd2c4cfa85dd260518c4fb01a45866342880b282cb1776a01237df665c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/annotation.final.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "37376addb8994f159b8f09da0f9ab1a319c313dd352f251efe04f423e6beafb5"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/checks.post_review.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "5dc63e944fc6065c1ff5d8f27461b778968dd837d31fcfe48f36ea52b427ac23"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/checks.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "6c83e53dc569565210ba18c4ede935380aca6f505cfd7eaaef6664f5e229c7d7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/write_review_records.py",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "9ba2fd8d4e21d9424b3eaad9661e8977fc4f7f9f520a549f8e7b58fd145ab606"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/review_notes.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": "886cfbd167a4ce0cb2b784eaee8ef3d00f5d13746a39a68e837c4b830f65f4a4"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/access_record.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": null
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r1/completion_manifest.json",
+      "access": "generated_output_read_write_or_execute",
+      "sha256": null
+    }
+  ],
+  "model_runtime_configuration": {
+    "selection": "inherited primary configuration",
+    "model_override_requested": false,
+    "model_override_applied": false,
+    "model_identifier": null,
+    "provider_snapshot": null,
+    "reasoning_effort": null,
+    "seed": null,
+    "sampling": null,
+    "token_use": null,
+    "cost": null,
+    "configuration_note": "No exact provider model snapshot or sampling/accounting parameters are exposed. Protocol labels are not used to infer model identity.",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "shell": "bash",
+    "provided_current_date": "2026-11-07",
+    "provided_timezone": "Etc/UTC"
+  },
+  "external_sources_accessed": [],
+  "agents_spawned": false,
+  "frozen_inputs_modified": false,
+  "execution_note": "Initial combined input print was truncated; the full codebook, schema, and packet were then read in complete sequential chunks. All first-complete and checker outputs were retained."
+}

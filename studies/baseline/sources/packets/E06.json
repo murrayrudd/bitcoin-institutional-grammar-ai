@@ -1,0 +1,349 @@
+{
+  "episode_id": "E06",
+  "pr_number": 31904,
+  "url": "https://github.com/bitcoin/bitcoin/pull/31904",
+  "title": "refactor: modernize outdated trait patterns using helper aliases (C++14/C++17)",
+  "created_at": "2025-02-19T13:31:31+00:00",
+  "closed_at": "2025-03-17T05:10:31+00:00",
+  "merged_at": "2025-03-17T05:10:31+00:00",
+  "recorded_merged": true,
+  "recorded_merger": "fanquake",
+  "entries": [
+    {
+      "source_id": "E06:body",
+      "kind": "body",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T13:31:31+00:00",
+      "text": "The use of [`std::underlying_type_t<T>`](https://en.cppreference.com/w/cpp/types/underlying_type) or [`std::is_enum_v<T>`](https://en.cppreference.com/w/cpp/types/is_enum) (and similar ones, introduced in C++14) replace the `typename std::underlying_type<T>::type` and  `std::is_enum<T>::value` constructs (available in C++11).\r\n\r\nThe `_t` and `_v` helper alias templates offer a more concise way to extract the type and value directly.\r\n\r\nI've modified the instances I found in the codebase one-by-one (noticed them while investigating https://github.com/bitcoin/bitcoin/pull/31868), and afterwards extracted scripted diff commits to do the trivial ones automatically.\r\nThe last commit contains the values that were easier done manually.\r\n\r\nI've excluded changes from `src/bench/nanobench.h`, `src/leveldb`, `src/minisketch`, `src/span.h` and `src/sync.h` - let me know if you think they should be included instead.\r\n\r\nA few of the code changes can also be reproduced by clang-tidy (but not all of them):\r\n```bash\r\ncmake -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_BENCH=ON -DBUILD_FUZZ_BINARY=ON -DBUILD_FOR_FUZZING=ON && cmake --build build -j$(nproc)\r\nrun-clang-tidy -quiet -p build -j $(nproc) -checks='-*,modernize-type-traits' -fix $(git grep -lE '::(value|type)' ./src ':(exclude)src/bench/nanobench.h' ':(exclude)src/leveldb' ':(exclude)src/minisketch' ':(exclude)src/span.h' ':(exclude)src/sync.h')\r\n```",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:0",
+      "kind": "comments",
+      "author": "DrahtBot",
+      "timestamp": "2025-02-19T13:31:36+00:00",
+      "path": null,
+      "text": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--006a51241073e994b41acfe9ec718e94-->\n### Code Coverage & Benchmarks\nFor details see: https://corecheck.dev/bitcoin/bitcoin/pulls/31904.\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\n| Type | Reviewers |\n| ---- | --------- |\n| ACK | [laanwj](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2697629617) |\n| Stale ACK | [purpleKarrot](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2668914709) |\n\nIf your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update.\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:1",
+      "kind": "comments",
+      "author": "DrahtBot",
+      "timestamp": "2025-02-19T13:36:47+00:00",
+      "path": null,
+      "text": "<!--85328a0da195eb286784d51f73fa0af9-->\n🚧 At least one of the CI tasks failed.\n<sub>Debug: https://github.com/bitcoin/bitcoin/runs/37469627519</sub>\n\n<details><summary>Hints</summary>\n\nTry to run the tests locally, according to the documentation. However, a CI failure may still\nhappen due to a number of reasons, for example:\n\n* Possibly due to a silent merge conflict (the changes in this pull request being\nincompatible with the current code in the target branch). If so, make sure to rebase on the latest\ncommit of the target branch.\n\n* A sanitizer issue, which can only be found by compiling with the sanitizer and running the\n  affected test.\n\n* An intermittent issue.\n\nLeave a comment here, if you need help tracking down a confusing failure.\n\n</details>\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:2",
+      "kind": "comments",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:17:31+00:00",
+      "path": null,
+      "text": "This change could be automated with clang-tidy's [`modernize-type-traits`](https://clang.llvm.org/extra/clang-tidy/checks/modernize/type-traits.html) check. There are more places that can be modernized with this.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:3",
+      "kind": "comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:40:10+00:00",
+      "path": null,
+      "text": "@purpleKarrot, you can check the PR with clang-tidy if it helps, but it won't find all of the values changed here.\r\nAnd even if it does, we need to simplify the review, we can't just rely on clang-tidy blindly.\r\nAdded the command that I used to check the changes via `modernize-type-traits` - let me know if you find other ones that I haven't covered.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:4",
+      "kind": "comments",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:51:38+00:00",
+      "path": null,
+      "text": "ACK.\r\n\r\nChanges LGTM. You may want to drop the reference to C++14 from the title, as `std::is_same_v` is actually not available until C++17. I you want, you could go full C++20 by replacing `std::is_same_v` with `std::same_as`.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:5",
+      "kind": "comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:59:19+00:00",
+      "path": null,
+      "text": "Thanks for the review and the C++17 suggestion @purpleKarrot.\r\nIf you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack.\r\nEdit: the `std::same_as` change should probably be a different PR, that's not just cosmetics anymore.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:6",
+      "kind": "comments",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T15:02:28+00:00",
+      "path": null,
+      "text": "ACK 7abc6e1f4b4aca4c8c576ff0cc27d68f90e42d28",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:7",
+      "kind": "comments",
+      "author": "laanwj",
+      "timestamp": "2025-03-04T13:42:16+00:00",
+      "path": null,
+      "text": "Concept and code review ACK 4cd95a2921805f447a8bcecc6b448a365171eb93\r\n\r\nSeems low-risk. As this is compile-time logic, i don't think this should actually affect the compiled code? (haven't verified, though)\r\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:8",
+      "kind": "comments",
+      "author": "fanquake",
+      "timestamp": "2025-03-17T05:04:22+00:00",
+      "path": null,
+      "text": "> As this is compile-time logic, i don't think this should actually affect the compiled code?\r\n\r\nYea, comparing the two branches only differs in version info in the binary.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:comments:9",
+      "kind": "comments",
+      "author": "l0rinc",
+      "timestamp": "2025-03-17T12:32:10+00:00",
+      "path": null,
+      "text": "Thank you for the review and checking the binary!",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:0",
+      "kind": "reviews",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:11:47+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:1",
+      "kind": "reviews",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:16:29+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:2",
+      "kind": "reviews",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:36:38+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:3",
+      "kind": "reviews",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:39:40+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:4",
+      "kind": "reviews",
+      "author": "maflcko",
+      "timestamp": "2025-02-19T15:14:05+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:5",
+      "kind": "reviews",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T15:20:35+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:6",
+      "kind": "reviews",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T19:50:48+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:reviews:7",
+      "kind": "reviews",
+      "author": "l0rinc",
+      "timestamp": "2025-02-21T09:47:19+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:0",
+      "kind": "review_comments",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:11:47+00:00",
+      "path": "src/randomenv.cpp",
+      "text": "You can use `std::is_same_v` here!",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:1",
+      "kind": "review_comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:16:29+00:00",
+      "path": "src/randomenv.cpp",
+      "text": "I am, just doing it commit-by-commit: https://github.com/bitcoin/bitcoin/pull/31904/files#diff-4b1ae2ce314ef1f2d4cb4f2dbf7a87a0c299c942782fa734e9e80fed8324faa6R76",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:2",
+      "kind": "review_comments",
+      "author": "purpleKarrot",
+      "timestamp": "2025-02-19T14:36:37+00:00",
+      "path": "src/serialize.h",
+      "text": "check formatting.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:3",
+      "kind": "review_comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T14:39:39+00:00",
+      "path": "src/serialize.h",
+      "text": "Thanks, fixed",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:4",
+      "kind": "review_comments",
+      "author": "maflcko",
+      "timestamp": "2025-02-19T15:14:04+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "text": "pls submit those upstream",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:5",
+      "kind": "review_comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T15:20:35+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "text": "Haven't noticed the header, will push a PR to https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h#L206",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:6",
+      "kind": "review_comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-19T19:50:48+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "text": "Pushed https://github.com/llvm/llvm-project/pull/127811 and reverted the file here, thanks!",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:review_comments:7",
+      "kind": "review_comments",
+      "author": "l0rinc",
+      "timestamp": "2025-02-21T09:47:19+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "text": "Added back the merged https://github.com/llvm/llvm-project/pull/127811/files#diff-bf90ae5bcd280af8b1305512d76ab1b81d0521bbc5d251f60bc0d44e790f16c0 (last commit makes sure it's exactly the same as the upstream version)",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    }
+  ],
+  "supplemental_entries": [
+    {
+      "source_id": "E06:outcome",
+      "text": "{\"closed_at\": \"2025-03-17T05:10:31+00:00\", \"created_at\": \"2025-02-19T13:31:31+00:00\", \"merged_at\": \"2025-03-17T05:10:31+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"fanquake\"}",
+      "layer": "T",
+      "source_type": "frozen_metadata",
+      "url": "https://github.com/bitcoin/bitcoin/pull/31904"
+    },
+    {
+      "source_id": "E06:doc_before",
+      "text": "Contributing to Bitcoin Core\n============================\n\nThe Bitcoin Core project operates an open contributor model where anyone is\nwelcome to contribute towards development in the form of peer review, testing\nand patches. This document explains the practical process and guidelines for\ncontributing.\n\nFirst, in terms of structure, there is no particular concept of \"Bitcoin Core\ndevelopers\" in the sense of privileged people. Open source often naturally\nrevolves around a meritocracy where contributors earn trust from the developer\ncommunity over time. Nevertheless, some hierarchy is necessary for practical\npurposes. As such, there are repository maintainers who are responsible for\nmerging pull requests, the [release cycle](/doc/release-process.md), and\nmoderation.\n\nGetting Started\n---------------\n\nNew contributors are very welcome and needed.\n\nReviewing and testing is highly valued and the most effective way you can contribute\nas a new contributor. It also will teach you much more about the code and\nprocess than opening pull requests. Please refer to the [peer review](#peer-review)\nsection below.\n\nBefore you start contributing, familiarize yourself with the Bitcoin Core build\nsystem and tests. Refer to the documentation in the repository on how to build\nBitcoin Core and how to run the unit tests, functional tests, and fuzz tests.\n\nThere are many open issues of varying difficulty waiting to be fixed.\nIf you're looking for somewhere to start contributing, check out the\n[good first issue](https://github.com/bitcoin/bitcoin/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)\nlist or changes that are\n[up for grabs](https://github.com/bitcoin/bitcoin/issues?utf8=%E2%9C%93&q=label%3A%22Up+for+grabs%22).\nSome of them might no longer be applicable. So if you are interested, but\nunsure, you might want to leave a comment on the issue first.\n\nYou may also participate in the [Bitcoin Core PR Review Club](https://bitcoincore.reviews/).\n\n### Good First Issue Label\n\nThe purpose of the `good first issue` label is to highlight which issues are\nsuitable for a new contributor without a deep understanding of the codebase.\n\nHowever, good first issues can be solved by anyone. If they remain unsolved\nfor a longer time, a frequent contributor might address them.\n\nYou do not need to request permission to start working on an issue. However,\nyou are encouraged to leave a comment if you are planning to work on it. This\nwill help other contributors monitor which issues are actively being addressed\nand is also an effective way to request assistance if and when you need it.\n\nCommunication Channels\n----------------------\n\nMost communication about Bitcoin Core development happens on IRC, in the\n`#bitcoin-core-dev` channel on Libera Chat. The easiest way to participate on IRC is\nwith the web client, [web.libera.chat](https://web.libera.chat/#bitcoin-core-dev). Chat\nhistory logs can be found\non [https://www.erisian.com.au/bitcoin-core-dev/](https://www.erisian.com.au/bitcoin-core-dev/)\nand [https://gnusha.org/bitcoin-core-dev/](https://gnusha.org/bitcoin-core-dev/).\n\nDiscussion about codebase improvements happens in GitHub issues and pull\nrequests.\n\nThe developer\n[mailing list](https://groups.google.com/g/bitcoindev)\nshould be used to discuss complicated or controversial consensus or P2P protocol changes before working on\na patch set.\nArchives can be found on [https://gnusha.org/pi/bitcoindev/](https://gnusha.org/pi/bitcoindev/).\n\n\nContributor Workflow\n--------------------\n\nThe codebase is maintained using the \"contributor workflow\" where everyone\nwithout exception contributes patch proposals using \"pull requests\" (PRs). This\nfacilitates social contribution, easy testing and peer review.\n\nTo contribute a patch, the workflow is as follows:\n\n  1. Fork repository ([only for the first time](https://docs.github.com/en/get-started/quickstart/fork-a-repo))\n  1. Create topic branch\n  1. Commit patches\n\nFor GUI-related issues or pull requests, the https://github.com/bitcoin-core/gui repository should be used.\nFor all other issues and pull requests, the https://github.com/bitcoin/bitcoin node repository should be used.\n\nThe master branch for all monotree repositories is identical.\n\nAs a rule of thumb, everything that only modifies `src/qt` is a GUI-only pull\nrequest. However:\n\n* For global refactoring or other transversal changes the node repository\n  should be used.\n* For GUI-related build system changes, the node repository should be used\n  because the change needs review by the build systems reviewers.\n* Changes in `src/interfaces` need to go to the node repository because they\n  might affect other components like the wallet.\n\nFor large GUI changes that include build system and interface changes, it is\nrecommended to first open a pull request against the GUI repository. When there\nis agreement to proceed with the changes, a pull request with the build system\nand interfaces changes can be submitted to the node repository.\n\nThe project coding conventions in the [developer notes](doc/developer-notes.md)\nmust be followed.\n\n### Committing Patches\n\nIn general, [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)\nand diffs should be easy to read. For this reason, do not mix any formatting\nfixes or code moves with actual code changes.\n\nMake sure each individual commit is hygienic: that it builds successfully on its\nown without warnings, errors, regressions, or test failures.\n\nCommit messages should be verbose by default consisting of a short subject line\n(50 chars max), a blank line and detailed explanatory text as separate\nparagraph(s), unless the title alone is self-explanatory (like \"Correct typo\nin init.cpp\") in which case a single title line is sufficient. Commit messages should be\nhelpful to people reading your code in the future, so explain the reasoning for\nyour decisions. Further explanation [here](https://chris.beams.io/posts/git-commit/).\n\nIf a particular commit references another issue, please add the reference. For\nexample: `refs #1234` or `fixes #4321`. Using the `fixes` or `closes` keywords\nwill cause the corresponding issue to be closed when the pull request is merged.\n\nCommit messages should never contain any `@` mentions (usernames prefixed with \"@\").\n\nPlease refer to the [Git manual](https://git-scm.com/doc) for more information\nabout Git.\n\n  - Push changes to your fork\n  - Create pull request\n\n### Creating the Pull Request\n\nThe title of the pull request should be prefixed by the component or area that\nthe pull request affects. Valid areas as:\n\n  - `consensus` for changes to consensus critical code\n  - `doc` for changes to the documentation\n  - `qt` or `gui` for changes to bitcoin-qt\n  - `log` for changes to log messages\n  - `mining` for changes to the mining code\n  - `net` or `p2p` for changes to the peer-to-peer network code\n  - `refactor` for structural changes that do not change behavior\n  - `rpc`, `rest` or `zmq` for changes to the RPC, REST or ZMQ APIs\n  - `contrib` or `cli` for changes to the scripts and tools\n  - `test`, `qa` or `ci` for changes to the unit tests, QA tests or CI code\n  - `util` or `lib` for changes to the utils or libraries\n  - `wallet` for changes to the wallet code\n  - `build` for changes to CMake\n  - `guix` for changes to the GUIX reproducible builds\n\nExamples:\n\n    consensus: Add new opcode for BIP-XXXX OP_CHECKAWESOMESIG\n    net: Automatically create onion service, listen on Tor\n    qt: Add feed bump button\n    log: Fix typo in log message\n\nThe body of the pull request should contain sufficient description of *what* the\npatch does, and even more importantly, *why*, with justification and reasoning.\nYou should include references to any discussions (for example, other issues or\nmailing list discussions).\n\nThe description for a new pull request should not contain any `@` mentions. The\nPR description will be included in the commit message when the PR is merged and\nany users mentioned in the description will be annoyingly notified each time a\nfork of Bitcoin Core copies the merge. Instead, make any username mentions in a\nsubsequent comment to the PR.\n\n### Translation changes\n\nNote that translations should not be submitted as pull requests. Please see\n[Translation Process](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md)\nfor more information on helping with translations.\n\n### Work in Progress Changes and Requests for Comments\n\nIf a pull request is not to be considered for merging (yet), please\nprefix the title with [WIP] or use [Tasks Lists](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#task-lists)\nin the body of the pull request to indicate tasks are pending.\n\n### Address Feedback\n\nAt this stage, one should expect comments and review from other contributors. You\ncan add more commits to your pull request by committing them locally and pushing\nto your fork.\n\nYou are expected to reply to any review comments before your pull request is\nmerged. You may update the code or reject the feedback if you do not agree with\nit, but you should express so in a reply. If there is outstanding feedback and\nyou are not actively working on it, your pull request may be closed.\n\nPlease refer to the [peer review](#peer-review) section below for more details.\n\n### Squashing Commits\n\nIf your pull request contains fixup commits (commits that change the same line of code repeatedly) or too fine-grained\ncommits, you may be asked to [squash](https://git-scm.com/docs/git-rebase#_interactive_mode) your commits\nbefore it will be reviewed. The basic squashing workflow is shown below.\n\n    git checkout your_branch_name\n    git rebase -i HEAD~n\n    # n is normally the number of commits in the pull request.\n    # Set commits (except the one in the first line) from 'pick' to 'squash', save and quit.\n    # On the next screen, edit/refine commit messages.\n    # Save and quit.\n    git push -f # (force push to GitHub)\n\nPlease update the resulting commit message, if needed. It should read as a\ncoherent message. In most cases, this means not just listing the interim\ncommits.\n\nIf your change contains a merge commit, the above workflow may not work and you\nwill need to remove the merge commit first. See the next section for details on\nhow to rebase.\n\nPlease refrain from creating several pull requests for the same change.\nUse the pull request that is already open (or was created earlier) to amend\nchanges. This preserves the discussion and review that happened earlier for\nthe respective change set.\n\nThe length of time required for peer review is unpredictable and will vary from\npull request to pull request.\n\n### Rebasing Changes\n\nWhen a pull request conflicts with the target branch, you may be asked to rebase it on top of the current target branch.\n\n    git fetch https://github.com/bitcoin/bitcoin  # Fetch the latest upstream commit\n    git rebase FETCH_HEAD  # Rebuild commits on top of the new base\n\nThis project aims to have a clean git history, where code changes are only made in non-merge commits. This simplifies\nauditability because merge commits can be assumed to not contain arbitrary code changes. Merge commits should be signed,\nand the resulting git tree hash must be deterministic and reproducible. The script in\n[/contrib/verify-commits](/contrib/verify-commits) checks that.\n\nAfter a rebase, reviewers are encouraged to sign off on the force push. This should be relatively straightforward with\nthe `git range-diff` tool explained in the [productivity\nnotes](/doc/productivity.md#diff-the-diffs-with-git-range-diff). To avoid needless review churn, maintainers will\ngenerally merge pull requests that received the most review attention first.\n\nPull Request Philosophy\n-----------------------\n\nPatchsets should always be focused. For example, a pull request could add a\nfeature, fix a bug, or refactor code; but not a mixture. Please also avoid super\npull requests which attempt to do too much, are overly large, or overly complex\nas this makes review difficult.\n\n\n### Features\n\nWhen adding a new feature, thought must be given to the long term technical debt\nand maintenance that feature may require after inclusion. Before proposing a new\nfeature that will require maintenance, please consider if you are willing to\nmaintain it (including bug fixing). If features get orphaned with no maintainer\nin the future, they may be removed by the Repository Maintainer.\n\n\n### Refactoring\n\nRefactoring is a necessary part of any software project's evolution. The\nfollowing guidelines cover refactoring pull requests for the project.\n\nThere are three categories of refactoring: code-only moves, code style fixes, and\ncode refactoring. In general, refactoring pull requests should not mix these\nthree kinds of activities in order to make refactoring pull requests easy to\nreview and uncontroversial. In all cases, refactoring PRs must not change the\nbehaviour of code within the pull request (bugs must be preserved as is).\n\nProject maintainers aim for a quick turnaround on refactoring pull requests, so\nwhere possible keep them short, uncomplex and easy to verify.\n\nPull requests that refactor the code should not be made by new contributors. It\nrequires a certain level of experience to know where the code belongs to and to\nunderstand the full ramification (including rebase effort of open pull requests).\n\nTrivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing.\n\n\n\"Decision Making\" Process\n-------------------------\n\nThe following applies to code changes to the Bitcoin Core project (and related\nprojects such as libsecp256k1), and is not to be confused with overall Bitcoin\nNetwork Protocol consensus changes.\n\nWhether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers.\n\nMaintainers will take into consideration if a patch is in line with the general\nprinciples of the project; meets the minimum standards for inclusion; and will\njudge the general consensus of contributors.\n\nIn general, all pull requests must:\n\n  - Have a clear use case, fix a demonstrable bug or serve the greater good of\n    the project (for example refactoring for modularisation);\n  - Be well peer-reviewed;\n  - Have unit tests, functional tests, and fuzz tests, where appropriate;\n  - Follow code style guidelines ([C++](doc/developer-notes.md), [functional tests](test/functional/README.md));\n  - Not break the existing test suite;\n  - Where bugs are fixed, where possible, there should be unit tests\n    demonstrating the bug and also proving the fix. This helps prevent regression.\n  - Change relevant comments and documentation when behaviour of code changes.\n\nPatches that change Bitcoin consensus rules are considerably more involved than\nnormal because they affect the entire ecosystem and so must be preceded by\nextensive mailing list discussions and have a numbered BIP. While each case will\nbe different, one should be prepared to expend more time and effort than for\nother kinds of patches because of increased peer review and consensus building\nrequirements.\n\n\n### Peer Review\n\nAnyone may participate in peer review which is expressed by comments in the pull\nrequest. Typically reviewers will review the code for obvious errors, as well as\ntest out the patch set and opine on the technical merits of the patch. Project\nmaintainers take into account the peer review when determining if there is\nconsensus to merge a pull request (remember that discussions may have been\nspread out over GitHub, mailing list and IRC discussions).\n\nCode review is a burdensome but important part of the development process, and\nas such, certain types of pull requests are rejected. In general, if the\n**improvements** do not warrant the **review effort** required, the PR has a\nhigh chance of being rejected. It is up to the PR author to convince the\nreviewers that the changes warrant the review effort, and if reviewers are\n\"Concept NACK'ing\" the PR, the author may need to present arguments and/or do\nresearch backing their suggested changes.\n\n#### Conceptual Review\n\nA review can be a conceptual review, where the reviewer leaves a comment\n * `Concept (N)ACK`, meaning \"I do (not) agree with the general goal of this pull\n   request\",\n * `Approach (N)ACK`, meaning `Concept ACK`, but \"I do (not) agree with the\n   approach of this change\".\n\nA `NACK` needs to include a rationale why the change is not worthwhile.\nNACKs without accompanying reasoning may be disregarded.\n\n#### Code Review\n\nAfter conceptual agreement on the change, code review can be provided. A review\nbegins with `ACK BRANCH_COMMIT`, where `BRANCH_COMMIT` is the top of the PR\nbranch, followed by a description of how the reviewer did the review. The\nfollowing language is used within pull request comments:\n\n  - \"I have tested the code\", involving change-specific manual testing in\n    addition to running the unit, functional, or fuzz tests, and in case it is\n    not obvious how the manual testing was done, it should be described;\n  - \"I have not tested the code, but I have reviewed it and it looks\n    OK, I agree it can be merged\";\n  - A \"nit\" refers to a trivial, often non-blocking issue.\n\nProject maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit. Reviewers that\nhave demonstrated a deeper commitment and understanding of the project over time\nor who have clear domain expertise may naturally have more weight, as one would\nexpect in all walks of life.\n\nWhere a patch set affects consensus-critical code, the bar will be much\nhigher in terms of discussion and peer review requirements, keeping in mind that\nmistakes could be very costly to the wider community. This includes refactoring\nof consensus-critical code.\n\nWhere a patch set proposes to change the Bitcoin consensus, it must have been\ndiscussed extensively on the mailing list and IRC, be accompanied by a widely\ndiscussed BIP and have a generally widely perceived technical consensus of being\na worthwhile change based on the judgement of the maintainers.\n\n### Finding Reviewers\n\nAs most reviewers are themselves developers with their own projects, the review\nprocess can be quite lengthy, and some amount of patience is required. If you find\nthat you've been waiting for a pull request to be given attention for several\nmonths, there may be a number of reasons for this, some of which you can do something\nabout:\n\n  - It may be because of a feature freeze due to an upcoming release. During this time,\n    only bug fixes are taken into consideration. If your pull request is a new feature,\n    it will not be prioritized until after the release. Wait for the release.\n  - It may be because the changes you are suggesting do not appeal to people. Rather than\n    nits and critique, which require effort and means they care enough to spend time on your\n    contribution, thundering silence is a good sign of widespread (mild) dislike of a given change\n    (because people don't assume *others* won't actually like the proposal). Don't take\n    that personally, though! Instead, take another critical look at what you are suggesting\n    and see if it: changes too much, is too broad, doesn't adhere to the\n    [developer notes](doc/developer-notes.md), is dangerous or insecure, is messily written, etc.\n    Identify and address any of the issues you find. Then ask e.g. on IRC if someone could give\n    their opinion on the concept itself.\n  - It may be because your code is too complex for all but a few people, and those people\n    may not have realized your pull request even exists. A great way to find people who\n    are qualified and care about the code you are touching is the\n    [Git Blame feature](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/tracking-changes-in-a-file). Simply\n    look up who last modified the code you are changing and see if you can find\n    them and give them a nudge. Don't be incessant about the nudging, though.\n  - Finally, if all else fails, ask on IRC or elsewhere for someone to give your pull request\n    a look. If you think you've been waiting for an unreasonably long time (say,\n    more than a month) for no particular reason (a few lines changed, etc.),\n    this is totally fine. Try to return the favor when someone else is asking\n    for feedback on their code, and the universe balances out.\n  - Remember that the best thing you can do while waiting is give review to others!\n\n\nBackporting\n-----------\n\nSecurity and bug fixes can be backported from `master` to release\nbranches.\nMaintainers will do backports in batches and\nuse the proper `Needs backport (...)` labels\nwhen needed (the original author does not need to worry about it).\n\nA backport should contain the following metadata in the commit body:\n\n```\nGithub-Pull: #<PR number>\nRebased-From: <commit hash of the original commit>\n```\n\nHave a look at [an example backport PR](\nhttps://github.com/bitcoin/bitcoin/pull/16189).\n\nAlso see the [backport.py script](\nhttps://github.com/bitcoin-core/bitcoin-maintainer-tools#backport).\n\nCopyright\n---------\n\nBy contributing to this repository, you agree to license your work under the\nMIT license unless specified otherwise in `contrib/debian/copyright` or at\nthe top of the file itself. Any work contributed where you are not the original\nauthor must contain its license header with the original author(s) and source.\n",
+      "layer": "D",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/5b8fd7c3a6b8c9c6a9481d340c3bcc67e74993c3/CONTRIBUTING.md",
+      "git_blob_sha": "25637b40aa9bc40ee0ebf5d423aa46dbbac21363",
+      "raw_file": "sources/supplements/doc_31904_before.json"
+    },
+    {
+      "source_id": "E06:merge_message",
+      "text": "Merge bitcoin/bitcoin#31904: refactor: modernize outdated trait patterns using helper aliases (C++14/C++17)\n\n4cd95a2921805f447a8bcecc6b448a365171eb93 refactor: modernize remaining outdated trait patterns (Lőrinc)\nab2b67fce20fd7d8017f8a26425cab99e91f420d scripted-diff: modernize outdated trait patterns - values (Lőrinc)\n8327889f358289f918d04ddb9469fb5562720bf4 scripted-diff: modernize outdated trait patterns - types (Lőrinc)\n\nPull request description:\n\n  The use of [`std::underlying_type_t<T>`](https://en.cppreference.com/w/cpp/types/underlying_type) or [`std::is_enum_v<T>`](https://en.cppreference.com/w/cpp/types/is_enum) (and similar ones, introduced in C++14) replace the `typename std::underlying_type<T>::type` and  `std::is_enum<T>::value` constructs (available in C++11).\n\n  The `_t` and `_v` helper alias templates offer a more concise way to extract the type and value directly.\n\n  I've modified the instances I found in the codebase one-by-one (noticed them while investigating https://github.com/bitcoin/bitcoin/pull/31868), and afterwards extracted scripted diff commits to do the trivial ones automatically.\n  The last commit contains the values that were easier done manually.\n\n  I've excluded changes from `src/bench/nanobench.h`, `src/leveldb`, `src/minisketch`, `src/span.h` and `src/sync.h` - let me know if you think they should be included instead.\n\n  A few of the code changes can also be reproduced by clang-tidy (but not all of them):\n  ```bash\n  cmake -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_BENCH=ON -DBUILD_FUZZ_BINARY=ON -DBUILD_FOR_FUZZING=ON && cmake --build build -j$(nproc)\n  run-clang-tidy -quiet -p build -j $(nproc) -checks='-*,modernize-type-traits' -fix $(git grep -lE '::(value|type)' ./src ':(exclude)src/bench/nanobench.h' ':(exclude)src/leveldb' ':(exclude)src/minisketch' ':(exclude)src/span.h' ':(exclude)src/sync.h')\n  ```\n\nACKs for top commit:\n  laanwj:\n    Concept and code review ACK 4cd95a2921805f447a8bcecc6b448a365171eb93\n\nTree-SHA512: a4bcf0f267c0f4e02983b4d548ed6f58d464ec379ac5cd1f998b9ec0cf698b53a9f2557a05a342b661f1d94adefc9a0ce2dc8f764d49453aaea95451e2c4c581",
+      "layer": "I",
+      "source_type": "git_commit",
+      "url": "https://github.com/bitcoin/bitcoin/commit/a799415d84d392c0f877d3619583b9a16f940c54",
+      "commit_sha": "a799415d84d392c0f877d3619583b9a16f940c54"
+    },
+    {
+      "source_id": "E06:merge_diff",
+      "text": "@@ -16,11 +16,11 @@ struct nontrivial_t {\n     nontrivial_t() = default;\n     SERIALIZE_METHODS(nontrivial_t, obj) { READWRITE(obj.x); }\n };\n-static_assert(!std::is_trivially_default_constructible<nontrivial_t>::value,\n+static_assert(!std::is_trivially_default_constructible_v<nontrivial_t>,\n               \"expected nontrivial_t to not be trivially constructible\");\n \n typedef unsigned char trivial_t;\n-static_assert(std::is_trivially_default_constructible<trivial_t>::value,\n+static_assert(std::is_trivially_default_constructible_v<trivial_t>,\n               \"expected trivial_t to be trivially constructible\");\n \n template <typename T>\n@@ -24,7 +24,7 @@ static_assert(!ValidDeployment(static_cast<Consensus::BuriedDeployment>(Consensu\n template<typename T, T x>\n static constexpr bool is_minimum()\n {\n-    using U = typename std::underlying_type<T>::type;\n+    using U = std::underlying_type_t<T>;\n     return x == std::numeric_limits<U>::min();\n }\n \n@@ -45,7 +45,7 @@ enum class AddressPurpose;\n enum isminetype : unsigned int;\n struct CRecipient;\n struct WalletContext;\n-using isminefilter = std::underlying_type<isminetype>::type;\n+using isminefilter = std::underlying_type_t<isminetype>;\n } // namespace wallet\n \n namespace interfaces {\n@@ -67,11 +67,11 @@ class Timer\n         }\n         const auto duration{end_time - *m_start_t};\n \n-        if constexpr (std::is_same<TimeType, std::chrono::microseconds>::value) {\n+        if constexpr (std::is_same_v<TimeType, std::chrono::microseconds>) {\n             return strprintf(\"%s: %s (%iμs)\", m_prefix, msg, Ticks<std::chrono::microseconds>(duration));\n-        } else if constexpr (std::is_same<TimeType, std::chrono::milliseconds>::value) {\n+        } else if constexpr (std::is_same_v<TimeType, std::chrono::milliseconds>) {\n             return strprintf(\"%s: %s (%.2fms)\", m_prefix, msg, Ticks<MillisecondsDouble>(duration));\n-        } else if constexpr (std::is_same<TimeType, std::chrono::seconds>::value) {\n+        } else if constexpr (std::is_same_v<TimeType, std::chrono::seconds>) {\n             return strprintf(\"%s: %s (%.2fs)\", m_prefix, msg, Ticks<SecondsDouble>(duration));\n         } else {\n             static_assert(ALWAYS_FALSE<TimeType>, \"Error: unexpected time type\");\n@@ -48,7 +48,7 @@ enum class NetPermissionFlags : uint32_t {\n };\n static inline constexpr NetPermissionFlags operator|(NetPermissionFlags a, NetPermissionFlags b)\n {\n-    using t = typename std::underlying_type<NetPermissionFlags>::type;\n+    using t = std::underlying_type_t<NetPermissionFlags>;\n     return static_cast<NetPermissionFlags>(static_cast<t>(a) | static_cast<t>(b));\n }\n \n@@ -59,7 +59,7 @@ class NetPermissions\n     static std::vector<std::string> ToStrings(NetPermissionFlags flags);\n     static inline bool HasFlag(NetPermissionFlags flags, NetPermissionFlags f)\n     {\n-        using t = typename std::underlying_type<NetPermissionFlags>::type;\n+        using t = std::underlying_type_t<NetPermissionFlags>;\n         return (static_cast<t>(flags) & static_cast<t>(f)) == static_cast<t>(f);\n     }\n     static inline void AddFlag(NetPermissionFlags& flags, NetPermissionFlags f)\n@@ -74,7 +74,7 @@ class NetPermissions\n     static inline void ClearFlag(NetPermissionFlags& flags, NetPermissionFlags f)\n     {\n         assert(f == NetPermissionFlags::Implicit);\n-        using t = typename std::underlying_type<NetPermissionFlags>::type;\n+        using t = std::underlying_type_t<NetPermissionFlags>;\n         flags = static_cast<NetPermissionFlags>(static_cast<t>(flags) & ~static_cast<t>(f));\n     }\n };\n@@ -37,12 +37,12 @@ enum class ConnectionDirection {\n     Both = (In | Out),\n };\n static inline ConnectionDirection& operator|=(ConnectionDirection& a, ConnectionDirection b) {\n-    using underlying = typename std::underlying_type<ConnectionDirection>::type;\n+    using underlying = std::underlying_type_t<ConnectionDirection>;\n     a = ConnectionDirection(underlying(a) | underlying(b));\n     return a;\n }\n static inline bool operator&(ConnectionDirection a, ConnectionDirection b) {\n-    using underlying = typename std::underlying_type<ConnectionDirection>::type;\n+    using underlying = std::underlying_type_t<ConnectionDirection>;\n     return (underlying(a) & underlying(b));\n }\n \n@@ -334,7 +334,7 @@ class RandomMixin\n \n     /** Generate a uniform random duration in the range [0..max). Precondition: max.count() > 0 */\n     template <StdChronoDuration Dur>\n-    Dur randrange(typename std::common_type_t<Dur> range) noexcept\n+    Dur randrange(std::common_type_t<Dur> range) noexcept\n     // Having the compiler infer the template argument from the function argument\n     // is dangerous, because the desired return value generally has a different\n     // type than the function argument. So std::common_type is used to force the\n@@ -70,10 +70,10 @@ namespace {\n  */\n template<typename T>\n CSHA512& operator<<(CSHA512& hasher, const T& data) {\n-    static_assert(!std::is_same<typename std::decay<T>::type, char*>::value, \"Calling operator<<(CSHA512, char*) is probably not what you want\");\n-    static_assert(!std::is_same<typename std::decay<T>::type, unsigned char*>::value, \"Calling operator<<(CSHA512, unsigned char*) is probably not what you want\");\n-    static_assert(!std::is_same<typename std::decay<T>::type, const char*>::value, \"Calling operator<<(CSHA512, const char*) is probably not what you want\");\n-    static_assert(!std::is_same<typename std::decay<T>::type, const unsigned char*>::value, \"Calling operator<<(CSHA512, const unsigned char*) is probably not what you want\");\n+    static_assert(!std::is_same_v<std::decay_t<T>, char*>, \"Calling operator<<(CSHA512, char*) is probably not what you want\");\n+    static_assert(!std::is_same_v<std::decay_t<T>, unsigned char*>, \"Calling operator<<(CSHA512, unsigned char*) is probably not what you want\");\n+    static_assert(!std::is_same_v<std::decay_t<T>, const char*>, \"Calling operator<<(CSHA512, const char*) is probably not what you want\");\n+    static_assert(!std::is_same_v<std::decay_t<T>, const unsigned char*>, \"Calling operator<<(CSHA512, const unsigned char*) is probably not what you want\");\n     hasher.Write((const unsigned char*)&data, sizeof(data));\n     return hasher;\n }\n@@ -49,7 +49,7 @@ const std::string EXAMPLE_ADDRESS[2] = {\"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hu\n std::string GetAllOutputTypes()\n {\n     std::vector<std::string> ret;\n-    using U = std::underlying_type<TxoutType>::type;\n+    using U = std::underlying_type_t<TxoutType>;\n     for (U i = (U)TxoutType::NONSTANDARD; i <= (U)TxoutType::WITNESS_UNKNOWN; ++i) {\n         ret.emplace_back(GetTxnOutputType(static_cast<TxoutType>(i)));\n     }\n@@ -154,7 +154,7 @@ const Out& AsBase(const In& x)\n }\n \n #define READWRITE(...) (ser_action.SerReadWriteMany(s, __VA_ARGS__))\n-#define SER_READ(obj, code) ser_action.SerRead(s, obj, [&](Stream& s, typename std::remove_const<Type>::type& obj) { code; })\n+#define SER_READ(obj, code) ser_action.SerRead(s, obj, [&](Stream& s, std::remove_const_t<Type>& obj) { code; })\n #define SER_WRITE(obj, code) ser_action.SerWrite(s, obj, [&](Stream& s, const Type& obj) { code; })\n \n /**\n@@ -220,13 +220,13 @@ const Out& AsBase(const In& x)\n     template <typename Stream>                                                                      \\\n     void Serialize(Stream& s) const                                                                 \\\n     {                                                                                               \\\n-        static_assert(std::is_same<const cls&, decltype(*this)>::value, \"Serialize type mismatch\"); \\\n+        static_assert(std::is_same_v<const cls&, decltype(*this)>, \"Serialize type mismatch\");      \\\n         Ser(s, *this);                                                                              \\\n     }                                                                                               \\\n     template <typename Stream>                                                                      \\\n     void Unserialize(Stream& s)                                                                     \\\n     {                                                                                               \\\n-        static_assert(std::is_same<cls&, decltype(*this)>::value, \"Unserialize type mismatch\");     \\\n+        static_assert(std::is_same_v<cls&, decltype(*this)>, \"Unserialize type mismatch\");          \\\n         Unser(s, *this);                                                                            \\\n     }\n \n@@ -408,8 +408,8 @@ template <VarIntMode Mode, typename I>\n struct CheckVarIntMode {\n     constexpr CheckVarIntMode()\n     {\n-        static_assert(Mode != VarIntMode::DEFAULT || std::is_unsigned<I>::value, \"Unsigned type required with mode DEFAULT.\");\n-        static_assert(Mode != VarIntMode::NONNEGATIVE_SIGNED || std::is_signed<I>::value, \"Signed type required with mode NONNEGATIVE_SIGNED.\");\n+        static_assert(Mode != VarIntMode::DEFAULT || std::is_unsigned_v<I>, \"Unsigned type required with mode DEFAULT.\");\n+        static_assert(Mode != VarIntMode::NONNEGATIVE_SIGNED || std::is_signed_v<I>, \"Signed type required with mode NONNEGATIVE_SIGNED.\");\n     }\n };\n \n@@ -474,7 +474,7 @@ I ReadVarInt(Stream& is)\n template<typename Formatter, typename T>\n class Wrapper\n {\n-    static_assert(std::is_lvalue_reference<T>::value, \"Wrapper needs an lvalue reference type T\");\n+    static_assert(std::is_lvalue_reference_v<T>, \"Wrapper needs an lvalue reference type T\");\n protected:\n     T m_object;\n public:\n@@ -507,12 +507,12 @@ struct VarIntFormatter\n {\n     template<typename Stream, typename I> void Ser(Stream &s, I v)\n     {\n-        WriteVarInt<Stream,Mode,typename std::remove_cv<I>::type>(s, v);\n+        WriteVarInt<Stream,Mode, std::remove_cv_t<I>>(s, v);\n     }\n \n     template<typename Stream, typename I> void Unser(Stream& s, I& v)\n     {\n-        v = ReadVarInt<Stream,Mode,typename std::remove_cv<I>::type>(s);\n+        v = ReadVarInt<Stream,Mode, std::remove_cv_t<I>>(s);\n     }\n };\n \n@@ -545,7 +545,7 @@ struct CustomUintFormatter\n \n     template <typename Stream, typename I> void Unser(Stream& s, I& v)\n     {\n-        using U = typename std::conditional<std::is_enum<I>::value, std::underlying_type<I>, std::common_type<I>>::type::type;\n+        using U = typename std::conditional_t<std::is_enum_v<I>, std::underlying_type<I>, std::common_type<I>>::type;\n         static_assert(std::numeric_limits<U>::max() >= MAX && std::numeric_limits<U>::min() <= 0, \"Assigned type too small\");\n         uint64_t raw = 0;\n         if (BigEndian) {\n@@ -577,7 +577,7 @@ struct CompactSizeFormatter\n     template<typename Stream, typename I>\n     void Ser(Stream& s, I v)\n     {\n-        static_assert(std::is_unsigned<I>::value, \"CompactSize only supported for unsigned integers\");\n+        static_assert(std::is_unsigned_v<I>, \"CompactSize only supported for unsigned integers\");\n         static_assert(std::numeric_limits<I>::max() <= std::numeric_limits<uint64_t>::max(), \"CompactSize only supports 64-bit integers and below\");\n \n         WriteCompactSize<Stream>(s, v);\n@@ -148,8 +148,8 @@ template <typename MutexType>\n static void push_lock(MutexType* c, const CLockLocation& locklocation)\n {\n     constexpr bool is_recursive_mutex =\n-        std::is_base_of<RecursiveMutex, MutexType>::value ||\n-        std::is_base_of<std::recursive_mutex, MutexType>::value;\n+        std::is_base_of_v<RecursiveMutex, MutexType> ||\n+        std::is_base_of_v<std::recursive_mutex, MutexType>;\n \n     LockData& lockdata = GetLockData();\n     std::lock_guard<std::mutex> lock(lockdata.dd_mutex);\n@@ -203,7 +203,7 @@ template <typename T> T FuzzedDataProvider::ConsumeIntegral() {\n // be less than or equal to |max|.\n template <typename T>\n T FuzzedDataProvider::ConsumeIntegralInRange(T min, T max) {\n-  static_assert(std::is_integral<T>::value, \"An integral type is required.\");\n+  static_assert(std::is_integral_v<T>, \"An integral type is required.\");\n   static_assert(sizeof(T) <= sizeof(uint64_t), \"Unsupported integral type.\");\n \n   if (min > max)\n@@ -271,14 +271,14 @@ T FuzzedDataProvider::ConsumeFloatingPointInRange(T min, T max) {\n // Returns a floating point number in the range [0.0, 1.0]. If there's no\n // input data left, always returns 0.\n template <typename T> T FuzzedDataProvider::ConsumeProbability() {\n-  static_assert(std::is_floating_point<T>::value,\n+  static_assert(std::is_floating_point_v<T>,\n                 \"A floating point type is required.\");\n \n   // Use different integral types for different floating point types in order\n   // to provide better density of the resulting values.\n   using IntegralType =\n-      typename std::conditional<(sizeof(T) <= sizeof(uint32_t)), uint32_t,\n-                                uint64_t>::type;\n+      typename std::conditional_t<(sizeof(T) <= sizeof(uint32_t)), uint32_t,\n+                                  uint64_t>;\n \n   T result = static_cast<T>(ConsumeIntegral<IntegralType>());\n   result /= static_cast<T>(std::numeric_limits<IntegralType>::max());\n@@ -294,7 +294,7 @@ inline bool FuzzedDataProvider::ConsumeBool() {\n // also contain |kMaxValue| aliased to its largest (inclusive) value. Such as:\n // enum class Foo { SomeValue, OtherValue, kMaxValue = OtherValue };\n template <typename T> T FuzzedDataProvider::ConsumeEnum() {\n-  static_assert(std::is_enum<T>::value, \"|T| must be an enum type.\");\n+  static_assert(std::is_enum_v<T>, \"|T| must be an enum type.\");\n   return static_cast<T>(\n       ConsumeIntegralInRange<uint32_t>(0, static_cast<uint32_t>(T::kMaxValue)));\n }\n@@ -63,7 +63,7 @@ FUZZ_TARGET(integer, .init = initialize_integer)\n     const int16_t i16 = fuzzed_data_provider.ConsumeIntegral<int16_t>();\n     const uint8_t u8 = fuzzed_data_provider.ConsumeIntegral<uint8_t>();\n     const int8_t i8 = fuzzed_data_provider.ConsumeIntegral<int8_t>();\n-    // We cannot assume a specific value of std::is_signed<char>::value:\n+    // We cannot assume a specific value of std::is_signed_v<char>:\n     // ConsumeIntegral<char>() instead of casting from {u,}int8_t.\n     const char ch = fuzzed_data_provider.ConsumeIntegral<char>();\n     const bool b = fuzzed_data_provider.ConsumeBool();\n@@ -134,7 +134,7 @@ template <typename WeakEnumType, size_t size>\n {\n     return fuzzed_data_provider.ConsumeBool() ?\n                fuzzed_data_provider.PickValueInArray<WeakEnumType>(all_types) :\n-               WeakEnumType(fuzzed_data_provider.ConsumeIntegral<typename std::underlying_type<WeakEnumType>::type>());\n+               WeakEnumType(fuzzed_data_provider.ConsumeIntegral<std::underlying_type_t<WeakEnumType>>());\n }\n \n [[nodiscard]] inline opcodetype ConsumeOpcodeType(FuzzedDataProvider& fuzzed_data_provider) noexcept\n@@ -207,7 +207,7 @@ template <typename WeakEnumType, size_t size>\n template <typename T>\n [[nodiscard]] bool MultiplicationOverflow(const T i, const T j) noexcept\n {\n-    static_assert(std::is_integral<T>::value, \"Integral required.\");\n+    static_assert(std::is_integral_v<T>, \"Integral required.\");\n     if (std::numeric_limits<T>::is_signed) {\n         if (i > 0) {\n             if (j > 0) {\n@@ -137,7 +137,7 @@ void UniValue::push_backV(It first, It last)\n template <typename Int>\n Int UniValue::getInt() const\n {\n-    static_assert(std::is_integral<Int>::value);\n+    static_assert(std::is_integral_v<Int>);\n     checkType(VNUM);\n     Int result;\n     const auto [first_nonmatching, error_condition] = std::from_chars(val.data(), val.data() + val.size(), result);\n@@ -163,7 +163,7 @@ static inline std::string PathToString(const path& path)\n #ifdef WIN32\n     return path.utf8string();\n #else\n-    static_assert(std::is_same<path::string_type, std::string>::value, \"PathToString not implemented on this platform\");\n+    static_assert(std::is_same_v<path::string_type, std::string>, \"PathToString not implemented on this platform\");\n     return path.std::filesystem::path::string();\n #endif\n }\n@@ -14,7 +14,7 @@\n template <class T>\n [[nodiscard]] bool AdditionOverflow(const T i, const T j) noexcept\n {\n-    static_assert(std::is_integral<T>::value, \"Integral required.\");\n+    static_assert(std::is_integral_v<T>, \"Integral required.\");\n     if constexpr (std::numeric_limits<T>::is_signed) {\n         return (i > 0 && j > std::numeric_limits<T>::max() - i) ||\n                (i < 0 && j < std::numeric_limits<T>::min() - i);\n@@ -204,7 +204,7 @@ namespace {\n template <typename T>\n bool ParseIntegral(std::string_view str, T* out)\n {\n-    static_assert(std::is_integral<T>::value);\n+    static_assert(std::is_integral_v<T>);\n     // Replicate the exact behavior of strtol/strtoll/strtoul/strtoull when\n     // handling leading +/- for backwards compatibility.\n     if (str.length() >= 2 && str[0] == '+' && str[1] == '-') {\n@@ -117,7 +117,7 @@ bool SplitHostPort(std::string_view in, uint16_t& portOut, std::string& hostOut)\n template <typename T>\n T LocaleIndependentAtoi(std::string_view str)\n {\n-    static_assert(std::is_integral<T>::value);\n+    static_assert(std::is_integral_v<T>);\n     T result;\n     // Emulate atoi(...) handling of white space and leading +/-.\n     std::string_view s = util::TrimStringView(str);\n@@ -178,7 +178,7 @@ constexpr inline bool IsSpace(char c) noexcept {\n template <typename T>\n std::optional<T> ToIntegral(std::string_view str)\n {\n-    static_assert(std::is_integral<T>::value);\n+    static_assert(std::is_integral_v<T>);\n     T result;\n     const auto [first_nonmatching, error_condition] = std::from_chars(str.data(), str.data() + str.size(), result);\n     if (first_nonmatching != str.data() + str.size() || error_condition != std::errc{}) {\n@@ -20,9 +20,9 @@\n  *   (list initialization always copies).\n  */\n template<typename... Args>\n-inline std::vector<typename std::common_type<Args...>::type> Vector(Args&&... args)\n+inline std::vector<std::common_type_t<Args...>> Vector(Args&&... args)\n {\n-    std::vector<typename std::common_type<Args...>::type> ret;\n+    std::vector<std::common_type_t<Args...>> ret;\n     ret.reserve(sizeof...(args));\n     // The line below uses the trick from https://www.experts-exchange.com/articles/32502/None-recursive-variadic-templates-with-std-initializer-list.html\n     (void)std::initializer_list<int>{(ret.emplace_back(std::forward<Args>(args)), 0)...};\n@@ -48,7 +48,7 @@ enum isminetype : unsigned int {\n     ISMINE_ENUM_ELEMENTS,\n };\n /** used for bitflags of isminetype */\n-using isminefilter = std::underlying_type<isminetype>::type;\n+using isminefilter = std::underlying_type_t<isminetype>;\n \n /**\n  * Address purpose field that has been been stored with wallet sending and",
+      "layer": "I",
+      "source_type": "git_patch",
+      "url": "https://github.com/bitcoin/bitcoin/commit/a799415d84d392c0f877d3619583b9a16f940c54",
+      "commit_sha": "a799415d84d392c0f877d3619583b9a16f940c54"
+    }
+  ],
+  "limits": [
+    "Public corpus may omit patch histories, comment edits, thread links, and off-platform activity.",
+    "No model accuracy, superiority, cost or scalability estimates.",
+    "Recorded merges do not establish recognition of each provision or network adoption.",
+    "Source sufficiency remains revisable; richer evidence is not a gold standard."
+  ]
+}

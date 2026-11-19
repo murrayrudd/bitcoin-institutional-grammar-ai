@@ -1,0 +1,149 @@
+{
+  "run_id": "F02_v04_r3",
+  "authorized_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3",
+  "configuration": {
+    "selection": "inherited primary configuration",
+    "model_override_used": false,
+    "exact_model_identifier": null,
+    "provider_snapshot": null,
+    "reasoning_effort": null,
+    "seed": null,
+    "sampling": null,
+    "token_use": null,
+    "cost": null,
+    "configuration_basis": "The dispatch specifies inherited primary configuration without override. No provider snapshot, exact runtime model identifier, seed, sampling parameters, token accounting, or cost was exposed to this run; no identity is inferred from protocol files."
+  },
+  "runtime": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_implementation": "CPython",
+    "platform": "Linux",
+    "shell": "bash",
+    "working_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3",
+    "ordinary_runtime_dependencies": [
+      "Python standard library: json, pathlib, hashlib, copy, collections, datetime, platform, sys",
+      "jsonschema, imported by the supplied checker"
+    ],
+    "runtime_documentation_read": []
+  },
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/INSTRUCTIONS.txt",
+      "access": "read only",
+      "purpose": "assigned run instructions, coding specification, schema, or checker",
+      "sha256": "2d2f326f40d5169138cff3dc2ad0b0e80b30ebd4e43c7d2d66ab766f4063dff2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/protocol/codebook.txt",
+      "access": "read only",
+      "purpose": "assigned run instructions, coding specification, schema, or checker",
+      "sha256": "6c7679852ebaa621c7dc6861c5a2400a5f0fbb9f8f987771b565e339e8650e7b"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/protocol/annotation_schema.json",
+      "access": "read only",
+      "purpose": "assigned run instructions, coding specification, schema, or checker",
+      "sha256": "71f223a9bfb78960d5c10f3566d9f005a5bcbe3a38be09c77d70608ea75c2523"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/packet.json",
+      "access": "read only",
+      "purpose": "assigned source packet; read completely and used for exact Unicode anchors",
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/tools/check_annotation.py",
+      "access": "read only",
+      "purpose": "assigned run instructions, coding specification, schema, or checker",
+      "sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/build_annotation.py",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/annotation.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/annotation.first_complete.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/first_complete_record.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/checks.first.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/source_review.py",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/annotation.final.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/repair_log.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/review_notes.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/checks.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/finalize_run.py",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/access_record.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/run_summary.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/run_log.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r3/output_manifest.json",
+      "access": "created within run; read where needed for checking, review, and audit bookkeeping",
+      "purpose": "generated run output or reproducible local script"
+    }
+  ],
+  "directory_inventory_only": [
+    "input_manifest.json",
+    "calibration/annotation.json",
+    "calibration/packet.json",
+    "calibration/cases.json"
+  ],
+  "calibration_contents_accessed": false,
+  "input_manifest_contents_accessed": false,
+  "external_research_sources_accessed": [],
+  "other_run_or_parent_directory_accesses": [],
+  "agents_spawned": false,
+  "post_dispatch_new_sources_added": false,
+  "source_preservation": "Original files were accessed only for reads. The packet hash still matches the first-complete record. Generated files reside only in the authorized run directory.",
+  "access_limits": "This record enumerates directly accessed task files. Ordinary implicit Python interpreter and installed-library reads are runtime dependencies, not additional research inputs; their individual transitive files were not inventoried."
+}

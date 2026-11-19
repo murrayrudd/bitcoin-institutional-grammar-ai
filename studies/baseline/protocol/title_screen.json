@@ -1,0 +1,760 @@
+[
+  {
+    "number": 35264,
+    "title": "doc: add LLM section to CONTRIBUTING.md",
+    "year": "2026",
+    "merged": false,
+    "chars": 6177,
+    "entries": 12,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 35235,
+    "title": "contrib: mv verify-commits/pre-push-hook.sh to maintainer tools repo",
+    "year": "2026",
+    "merged": true,
+    "chars": 2145,
+    "entries": 6,
+    "files": [
+      "contrib/verify-commits/pre-push-hook.sh"
+    ]
+  },
+  {
+    "number": 34517,
+    "title": "drop my key from trusted-keys",
+    "year": "2026",
+    "merged": true,
+    "chars": 5206,
+    "entries": 17,
+    "files": [
+      "contrib/verify-commits/trusted-git-root",
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 34402,
+    "title": "doc: Fix grammar in CONTRIBUTING.md",
+    "year": "2026",
+    "merged": false,
+    "chars": 1143,
+    "entries": 3,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 34236,
+    "title": "Add sedited to trusted-keys",
+    "year": "2026",
+    "merged": true,
+    "chars": 5398,
+    "entries": 17,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 32166,
+    "title": "torcontrol: Define tor reply code as const to improve our maintainability",
+    "year": "2025",
+    "merged": true,
+    "chars": 6852,
+    "entries": 43,
+    "files": [
+      "src/torcontrol.cpp"
+    ]
+  },
+  {
+    "number": 31872,
+    "title": "Update CONTRIBUTING.md",
+    "year": "2025",
+    "merged": false,
+    "chars": 3074,
+    "entries": 5,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 30925,
+    "title": "Optimize: convert trusted keys list to a set for better performance",
+    "year": "2024",
+    "merged": false,
+    "chars": 1967,
+    "entries": 10,
+    "files": [
+      "contrib/verify-commits/verify-commits.py"
+    ]
+  },
+  {
+    "number": 29490,
+    "title": "[DO NOT MERGE] Replace Boost.Process with cpp-subprocess",
+    "year": "2024",
+    "merged": false,
+    "chars": 2825,
+    "entries": 6,
+    "files": [
+      "configure.ac",
+      "src/Makefile.am",
+      "src/common/run_command.cpp",
+      "src/external_signer.cpp",
+      "src/test/system_tests.cpp",
+      "src/util/subprocess.hpp",
+      "test/lint/lint-includes.py",
+      "test/lint/lint-spelling.py"
+    ]
+  },
+  {
+    "number": 28175,
+    "title": "CONTRIBUTING: Caution against using AI/LLMs (ChatGPT, Copilot, etc)",
+    "year": "2023",
+    "merged": false,
+    "chars": 10710,
+    "entries": 24,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 27604,
+    "title": "add ryanofsky to trusted-keys",
+    "year": "2023",
+    "merged": true,
+    "chars": 8280,
+    "entries": 22,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 27082,
+    "title": "Minor edits - punctuation, spelling to make the contributing instructions more readable for all.",
+    "year": "2023",
+    "merged": false,
+    "chars": 4122,
+    "entries": 11,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 27054,
+    "title": "Remove laanwj from trusted-keys",
+    "year": "2023",
+    "merged": true,
+    "chars": 5740,
+    "entries": 15,
+    "files": [
+      "contrib/verify-commits/allow-revsig-commits",
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 26893,
+    "title": "Update CONTRIBUTING.md",
+    "year": "2023",
+    "merged": false,
+    "chars": 2501,
+    "entries": 2,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 26846,
+    "title": "Update CONTRIBUTING.md to improve grammar",
+    "year": "2023",
+    "merged": false,
+    "chars": 375,
+    "entries": 2,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 25839,
+    "title": "[WIP] Minimal MAINTAINERS.md file",
+    "year": "2022",
+    "merged": false,
+    "chars": 6456,
+    "entries": 43,
+    "files": [
+      "CONTRIBUTING.md",
+      "MAINTAINERS.md"
+    ]
+  },
+  {
+    "number": 25568,
+    "title": "Remove my key from trusted-keys",
+    "year": "2022",
+    "merged": true,
+    "chars": 1694,
+    "entries": 11,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 24806,
+    "title": "RPC: Switch getblockfrompeer back to standard param name blockhash",
+    "year": "2022",
+    "merged": true,
+    "chars": 674,
+    "entries": 5,
+    "files": [
+      "src/rpc/blockchain.cpp"
+    ]
+  },
+  {
+    "number": 24440,
+    "title": "doc: update maintainer list in REVIEWERS",
+    "year": "2022",
+    "merged": true,
+    "chars": 862,
+    "entries": 8,
+    "files": [
+      "REVIEWERS"
+    ]
+  },
+  {
+    "number": 24294,
+    "title": "RPC: Switch getblockfrompeer back to standard param names blockhash and nodeid",
+    "year": "2022",
+    "merged": false,
+    "chars": 4500,
+    "entries": 13,
+    "files": [
+      "src/rpc/blockchain.cpp",
+      "src/rpc/client.cpp"
+    ]
+  },
+  {
+    "number": 23798,
+    "title": "contrib: add achow101 to trusted keys",
+    "year": "2021",
+    "merged": true,
+    "chars": 3215,
+    "entries": 23,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 23585,
+    "title": "scripted-diff: Drop Darwin version for better maintainability",
+    "year": "2021",
+    "merged": true,
+    "chars": 19386,
+    "entries": 14,
+    "files": [
+      "ci/test/00_setup_env_mac.sh",
+      "ci/test/00_setup_env_mac_host.sh",
+      "contrib/guix/README.md",
+      "contrib/guix/guix-build",
+      "contrib/guix/guix-codesign",
+      "contrib/guix/libexec/build.sh",
+      "depends/README.md"
+    ]
+  },
+  {
+    "number": 21615,
+    "title": "script: Add trusted key for hebasto",
+    "year": "2021",
+    "merged": true,
+    "chars": 3515,
+    "entries": 8,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 21068,
+    "title": "Add GitHub Codespaces integration to allow for easy onboarding of future generations of contributors",
+    "year": "2021",
+    "merged": false,
+    "chars": 11419,
+    "entries": 19,
+    "files": [
+      ".devcontainer/Dockerfile",
+      ".devcontainer/devcontainer.json",
+      ".vscode/c_cpp_properties.json",
+      ".vscode/settings.json"
+    ]
+  },
+  {
+    "number": 18885,
+    "title": "contrib: Move optimize-pngs.py script to the maintainer repo",
+    "year": "2020",
+    "merged": true,
+    "chars": 1037,
+    "entries": 6,
+    "files": [
+      "contrib/devtools/README.md",
+      "contrib/devtools/optimize-pngs.py"
+    ]
+  },
+  {
+    "number": 18588,
+    "title": "Revert \"Merge #16367: Multiprocess build support\"",
+    "year": "2020",
+    "merged": true,
+    "chars": 11149,
+    "entries": 7,
+    "files": [
+      ".gitignore",
+      ".travis.yml",
+      "ci/test/00_setup_env_native_multiprocess.sh",
+      "ci/test/06_script_b.sh",
+      "configure.ac",
+      "depends/Makefile",
+      "depends/README.md",
+      "depends/builders/darwin.mk",
+      "depends/config.site.in",
+      "depends/funcs.mk",
+      "depends/packages/boost.mk",
+      "depends/packages/capnp.mk",
+      "depends/packages/libmultiprocess.mk",
+      "depends/packages/native_boost.mk",
+      "depends/packages/native_capnp.mk",
+      "depends/packages/native_libmultiprocess.mk",
+      "depends/packages/packages.mk",
+      "doc/multiprocess.md",
+      "src/Makefile.am",
+      "src/Makefile.qt.include"
+    ]
+  },
+  {
+    "number": 18169,
+    "title": "Update CONTRIBUTING.md",
+    "year": "2020",
+    "merged": false,
+    "chars": 414,
+    "entries": 2,
+    "files": [
+      "src/leveldb/CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 17772,
+    "title": "doc: Mention PR Club in CONTRIBUTING.md",
+    "year": "2019",
+    "merged": true,
+    "chars": 596,
+    "entries": 9,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 17688,
+    "title": "doc: Add \"ci\" prefix to CONTRIBUTING.md",
+    "year": "2019",
+    "merged": true,
+    "chars": 1035,
+    "entries": 6,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 17152,
+    "title": "doc: Added instructions in CONTRIBUTE.MD for adding an upstream to forked repo",
+    "year": "2019",
+    "merged": false,
+    "chars": 2439,
+    "entries": 5,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 16853,
+    "title": "Rename CONTRIBUTING.md to ZENNITTITTHZ/CONTRIBUTING.md",
+    "year": "2019",
+    "merged": false,
+    "chars": 1896,
+    "entries": 4,
+    "files": [
+      "ZENNITTITTHZ/CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 16818,
+    "title": "doc: Update CONTRIBUTING.md",
+    "year": "2019",
+    "merged": false,
+    "chars": 962,
+    "entries": 9,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 16723,
+    "title": "doc: Update labels in CONTRIBUTING.md",
+    "year": "2019",
+    "merged": true,
+    "chars": 757,
+    "entries": 18,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 16605,
+    "title": "Add missing contributor to 0.18.1 release notes ",
+    "year": "2019",
+    "merged": true,
+    "chars": 310,
+    "entries": 2,
+    "files": [
+      "doc/release-notes/release-notes-0.18.1.md"
+    ]
+  },
+  {
+    "number": 16604,
+    "title": "[0.18] Add missing contributor to 0.18.1 release notes",
+    "year": "2019",
+    "merged": false,
+    "chars": 509,
+    "entries": 3,
+    "files": [
+      "doc/release-notes.md"
+    ]
+  },
+  {
+    "number": 16484,
+    "title": "doc: update labels in CONTRIBUTING.md",
+    "year": "2019",
+    "merged": true,
+    "chars": 1813,
+    "entries": 20,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 16162,
+    "title": "scripts: add key for Michael Ford (fanquake) to trusted keys list",
+    "year": "2019",
+    "merged": true,
+    "chars": 3674,
+    "entries": 9,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 15946,
+    "title": "Allow maintaining the blockfilterindex when using prune",
+    "year": "2019",
+    "merged": true,
+    "chars": 12049,
+    "entries": 94,
+    "files": [
+      "src/chainparams.cpp",
+      "src/index/base.cpp",
+      "src/init.cpp",
+      "src/validation.cpp",
+      "src/validation.h",
+      "test/functional/feature_blockfilterindex_prune.py",
+      "test/functional/test_runner.py",
+      "test/lint/lint-circular-dependencies.sh"
+    ]
+  },
+  {
+    "number": 14869,
+    "title": "scripts: Add trusted key for Samuel Dobson",
+    "year": "2018",
+    "merged": true,
+    "chars": 3518,
+    "entries": 9,
+    "files": [
+      "contrib/verify-commits/trusted-keys"
+    ]
+  },
+  {
+    "number": 14562,
+    "title": "Update CONTRIBUTING.md",
+    "year": "2018",
+    "merged": false,
+    "chars": 1842,
+    "entries": 1,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 13698,
+    "title": "doc: Document contributing a scripted diff",
+    "year": "2018",
+    "merged": false,
+    "chars": 431,
+    "entries": 4,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 13165,
+    "title": "doc: Mention good first issue list in CONTRIBUTING.md",
+    "year": "2018",
+    "merged": true,
+    "chars": 333,
+    "entries": 7,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 12912,
+    "title": "Minor readability/maintainability changes to warnings.cpp",
+    "year": "2018",
+    "merged": false,
+    "chars": 555,
+    "entries": 9,
+    "files": [
+      "src/warnings.cpp"
+    ]
+  },
+  {
+    "number": 12410,
+    "title": "[Docs] Updated examples in CONTRIBUTING.md",
+    "year": "2018",
+    "merged": false,
+    "chars": 1311,
+    "entries": 8,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 11276,
+    "title": "[Docs] Update CONTRIBUTING.md to reduce unnecessary review workload",
+    "year": "2017",
+    "merged": true,
+    "chars": 1105,
+    "entries": 12,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 11236,
+    "title": "Add note on translations to CONTRIBUTING.md",
+    "year": "2017",
+    "merged": true,
+    "chars": 202,
+    "entries": 2,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 11090,
+    "title": "Update contributor names in release-notes.md",
+    "year": "2017",
+    "merged": true,
+    "chars": 342,
+    "entries": 4,
+    "files": [
+      "doc/release-notes.md"
+    ]
+  },
+  {
+    "number": 11003,
+    "title": "Docs: Capitalize bullet points in CONTRIBUTING guide",
+    "year": "2017",
+    "merged": true,
+    "chars": 559,
+    "entries": 8,
+    "files": [
+      "CONTRIBUTING.md",
+      "test/functional/README.md"
+    ]
+  },
+  {
+    "number": 10513,
+    "title": "Trivial: grammar fix to CONTRIBUTING.md",
+    "year": "2017",
+    "merged": false,
+    "chars": 2829,
+    "entries": 8,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 10338,
+    "title": "Maintain state across GetStrongRandBytes calls",
+    "year": "2017",
+    "merged": true,
+    "chars": 776,
+    "entries": 5,
+    "files": [
+      "src/random.cpp"
+    ]
+  },
+  {
+    "number": 10211,
+    "title": "[doc] Contributor fixes & new \"finding reviewers\" section",
+    "year": "2017",
+    "merged": true,
+    "chars": 1368,
+    "entries": 16,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 9675,
+    "title": "Fix typo and spelling inconsistency in CONTRIBUTING.md",
+    "year": "2017",
+    "merged": true,
+    "chars": 1357,
+    "entries": 18,
+    "files": [
+      "CONTRIBUTING.md",
+      "contrib/README.md",
+      "contrib/devtools/README.md",
+      "doc/developer-notes.md",
+      "doc/translation_process.md",
+      "doc/zmq.md"
+    ]
+  },
+  {
+    "number": 9542,
+    "title": "Docs: Update CONTRIBUTING.md",
+    "year": "2017",
+    "merged": true,
+    "chars": 3943,
+    "entries": 20,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 8771,
+    "title": "CONTRIBUTING: Mention not to open several pulls",
+    "year": "2016",
+    "merged": true,
+    "chars": 510,
+    "entries": 12,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 8648,
+    "title": "[0.13 backport] Precompute sighashes",
+    "year": "2016",
+    "merged": false,
+    "chars": 218,
+    "entries": 5,
+    "files": [
+      "src/main.cpp",
+      "src/main.h",
+      "src/script/bitcoinconsensus.cpp",
+      "src/script/interpreter.cpp",
+      "src/script/interpreter.h",
+      "src/script/sigcache.h",
+      "src/test/script_P2SH_tests.cpp",
+      "src/test/transaction_tests.cpp"
+    ]
+  },
+  {
+    "number": 8226,
+    "title": "contributing.md: Fix formatting (line lengths and smart quotes)",
+    "year": "2016",
+    "merged": true,
+    "chars": 2237,
+    "entries": 10,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 7843,
+    "title": "Delete CONTRIBUTING.md",
+    "year": "2016",
+    "merged": false,
+    "chars": 9231,
+    "entries": 4,
+    "files": [
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 7243,
+    "title": "This community NEEDS to adopt a code of conduct. Recent events make t\u2026",
+    "year": "2015",
+    "merged": false,
+    "chars": 8584,
+    "entries": 30,
+    "files": [
+      "CONDUCT.md",
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "number": 7029,
+    "title": "Remove unmaintained example test script_test.py",
+    "year": "2015",
+    "merged": true,
+    "chars": 1777,
+    "entries": 10,
+    "files": [
+      "qa/pull-tester/rpc-tests.py",
+      "qa/rpc-tests/script_test.py"
+    ]
+  },
+  {
+    "number": 7005,
+    "title": "Add MAINTAINERS file, a user guide to code subsystems",
+    "year": "2015",
+    "merged": false,
+    "chars": 3130,
+    "entries": 15,
+    "files": [
+      "MAINTAINERS"
+    ]
+  },
+  {
+    "number": 5384,
+    "title": "Fix python usage for arch's broken maintainers",
+    "year": "2014",
+    "merged": true,
+    "chars": 654,
+    "entries": 5,
+    "files": [
+      "qa/rpc-tests/forknotify.py",
+      "qa/rpc-tests/getblocktemplate_longpoll.py",
+      "qa/rpc-tests/getblocktemplate_proposals.py",
+      "qa/rpc-tests/getchaintips.py",
+      "qa/rpc-tests/keypool.py",
+      "qa/rpc-tests/listtransactions.py",
+      "qa/rpc-tests/netutil.py",
+      "qa/rpc-tests/python-bitcoinrpc/setup.py",
+      "qa/rpc-tests/receivedby.py",
+      "qa/rpc-tests/rpcbind_test.py",
+      "qa/rpc-tests/smartfees.py",
+      "qa/rpc-tests/test_framework.py",
+      "qa/rpc-tests/txn_doublespend.py",
+      "qa/rpc-tests/wallet.py"
+    ]
+  },
+  {
+    "number": 4483,
+    "title": "Fix memory leak, refactor to be more pythonic maintainable, possibly faster.",
+    "year": "2014",
+    "merged": false,
+    "chars": 3201,
+    "entries": 9,
+    "files": [
+      "contrib/pyminer/pyminer.py",
+      "src/test/bloom_tests.cpp"
+    ]
+  }
+]

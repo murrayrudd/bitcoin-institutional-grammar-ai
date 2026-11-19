@@ -1,0 +1,1825 @@
+{
+  "created_at_utc": "2026-11-07T18:39:00.967159+00:00",
+  "scope": "All retained earlier development, validation, substantive pilot, expansion and Core/Knots packages. Includes title screens and referenced episodes conservatively. Unrecorded historical inspection and model pretraining exposure cannot be ruled out.",
+  "sources": [
+    {
+      "path": "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json",
+      "sha256": "8713e3289199793457950235d0e91cae1d8f2984aec4cfbe8f09c3b22e779062"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json",
+      "sha256": "35c9740944920d1bb52ecfdc2820e6a3bd9132fb9197204136f9d7172e3f21ec"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json",
+      "sha256": "7e9cdca9a68d6802a5d018e6b2f439415d38f9b51ec003eb9c44ea99c50ef543"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json",
+      "sha256": "5632523edf1f15dd64ad7ec1440be2ef77f90cc67fd787b22a9e07907951257f"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json",
+      "sha256": "fe7eae7b201f1dcf00e17784e34919f03b92baddf05db608704e5cf5b4436216"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json",
+      "sha256": "0d875cb5bfeff6baa84fa25de5677f9831d2849aaa47ae59a7cf7bc3a91499c8"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json",
+      "sha256": "df7fc9d16351cbfe0812b2f8dbce6ddd51b46886e1d180baf116fd5d3181a013"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/source_manifest.json",
+      "sha256": "00a3d16e132a282529a2cc0eedbb09c2f87f127980b731ddc8d8857d0861945e"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json",
+      "sha256": "6abf7a71ad1fce84cdd8cbbd60012bf5e63ab7743697784414d42b1fa037dea1"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json",
+      "sha256": "df7fc9d16351cbfe0812b2f8dbce6ddd51b46886e1d180baf116fd5d3181a013"
+    },
+    {
+      "path": "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/source_manifest.json",
+      "sha256": "00a3d16e132a282529a2cc0eedbb09c2f87f127980b731ddc8d8857d0861945e"
+    }
+  ],
+  "selection_allowed": true,
+  "excluded_prs": [
+    177,
+    1054,
+    2618,
+    2763,
+    4069,
+    4483,
+    4577,
+    5384,
+    5777,
+    6654,
+    6715,
+    6718,
+    7005,
+    7029,
+    7243,
+    7843,
+    8173,
+    8226,
+    8648,
+    8717,
+    8771,
+    9144,
+    9260,
+    9276,
+    9343,
+    9366,
+    9390,
+    9542,
+    9675,
+    9720,
+    10211,
+    10338,
+    10502,
+    10513,
+    10546,
+    10781,
+    10849,
+    10880,
+    11003,
+    11090,
+    11236,
+    11276,
+    11708,
+    11743,
+    12204,
+    12410,
+    12691,
+    12912,
+    13165,
+    13686,
+    13698,
+    14074,
+    14562,
+    14583,
+    14869,
+    14900,
+    15452,
+    15617,
+    15626,
+    15750,
+    15758,
+    15777,
+    15946,
+    16124,
+    16149,
+    16162,
+    16189,
+    16484,
+    16532,
+    16545,
+    16604,
+    16605,
+    16644,
+    16665,
+    16723,
+    16730,
+    16753,
+    16757,
+    16818,
+    16853,
+    16887,
+    17152,
+    17685,
+    17688,
+    17743,
+    17762,
+    17772,
+    17940,
+    18071,
+    18169,
+    18173,
+    18283,
+    18446,
+    18588,
+    18619,
+    18885,
+    18901,
+    19110,
+    19189,
+    19208,
+    19250,
+    19494,
+    19646,
+    19779,
+    19827,
+    19879,
+    20017,
+    20086,
+    21068,
+    21575,
+    21615,
+    21778,
+    21811,
+    22966,
+    23536,
+    23585,
+    23798,
+    24090,
+    24294,
+    24440,
+    24653,
+    24806,
+    24851,
+    24951,
+    24977,
+    25012,
+    25031,
+    25078,
+    25123,
+    25197,
+    25390,
+    25560,
+    25568,
+    25590,
+    25625,
+    25839,
+    25959,
+    26399,
+    26751,
+    26846,
+    26868,
+    26879,
+    26893,
+    26969,
+    27035,
+    27054,
+    27058,
+    27076,
+    27081,
+    27082,
+    27404,
+    27488,
+    27570,
+    27577,
+    27604,
+    27621,
+    27626,
+    27686,
+    27837,
+    28052,
+    28130,
+    28175,
+    28205,
+    28207,
+    28336,
+    28392,
+    28398,
+    28408,
+    28591,
+    28622,
+    28644,
+    28732,
+    28775,
+    28806,
+    28851,
+    29039,
+    29183,
+    29240,
+    29269,
+    29270,
+    29280,
+    29347,
+    29490,
+    29745,
+    29954,
+    30207,
+    30592,
+    30655,
+    30925,
+    30984,
+    31278,
+    31371,
+    31464,
+    31868,
+    31872,
+    31904,
+    31916,
+    32133,
+    32166,
+    32275,
+    32359,
+    32381,
+    32406,
+    32417,
+    32451,
+    32589,
+    32714,
+    33193,
+    33224,
+    33270,
+    33415,
+    33424,
+    33453,
+    33473,
+    34236,
+    34402,
+    34517,
+    34918,
+    35235,
+    35264,
+    35450,
+    35699,
+    36127,
+    36228,
+    36235,
+    36297
+  ],
+  "exclusions": [
+    {
+      "number": 177,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 1054,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 2618,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 2763,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 4069,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 4483,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 4577,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 5384,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 5777,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 6654,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 6715,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 6718,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_6718.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 7005,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E09_pr7005.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 7029,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 7243,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 7843,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 8173,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 8226,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 8648,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 8717,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 8771,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E01_pr8771.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 9144,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 9260,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 9276,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 9343,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 9366,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 9390,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 9542,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 9675,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 9720,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 10211,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 10338,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 10502,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 10513,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 10546,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 10781,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 10849,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 10880,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 11003,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 11090,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 11236,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 11276,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E02_pr11276.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 11708,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 11743,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E08_pr11743.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 12204,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 12410,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 12691,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 12912,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 13165,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 13686,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 13698,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 14074,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 14562,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 14583,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 14869,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 14900,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 15452,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 15617,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_15617.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 15626,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/bridge_pr15626_frozen.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 15750,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 15758,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 15777,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 15946,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16124,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16149,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_16149.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16162,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16189,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16484,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16532,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 16545,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16604,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16605,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16644,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16665,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_16665.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16723,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16730,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16753,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 16757,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 16818,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16853,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 16887,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 17152,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 17685,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E05_pr17685.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 17688,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 17743,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 17762,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 17772,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 17940,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E03_pr17940.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 18071,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 18169,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 18173,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 18283,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/sources/pr_18283.json saved source record",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/sources/pr_18283.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 18446,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 18588,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 18619,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/records/pr_18619.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 18885,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 18901,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19110,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19189,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19208,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19250,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19494,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_19494.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 19646,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19779,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 19827,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/records/pr_19827.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 19879,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 20017,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 20086,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/records/pr_20086.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 21068,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 21575,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 21615,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 21778,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 21811,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 22966,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_22966.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 23536,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 23585,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 23798,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E11_pr23798.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 24090,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 24294,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 24440,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 24653,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 24806,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 24851,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 24951,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 24977,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25012,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_25012.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25031,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25078,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_25078.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_25078.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25123,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_25123.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25197,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25390,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25560,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25568,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 25590,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_25590.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_25590.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25625,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25839,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E10_pr25839.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 25959,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 26399,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E04_pr26399.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 26751,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 26846,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 26868,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_26868.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 26879,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 26893,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 26969,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27035,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_27035.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_27035.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27054,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E12_pr27054.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27058,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_27058.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_27058.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27076,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27081,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json cases",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/sources/records/pr_27081.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27082,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 27404,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27488,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27570,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27577,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27604,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 27621,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27626,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27686,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 27837,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28052,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28130,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28175,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 28205,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/sources/pr_28205.json saved source record",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/sources/pr_28205.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28207,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28336,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28392,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 28398,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_28398.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_28398.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28408,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28591,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28622,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28644,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 28732,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28775,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/records/pr_28775.json saved source record",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/records/pr_28775.json saved source record",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json selected",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28806,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_28806.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 28851,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29039,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29183,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29240,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29269,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29270,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29280,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29347,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29490,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 29745,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 29954,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 30207,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 30592,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 30655,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/records/pr_30655.json saved source record",
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json selected",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 30925,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 30984,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 31278,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 31371,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 31464,
+      "reasons": [
+        "archives/Bitcoin_IG2_Codebook_Validation_v02/Bitcoin_IG2_Codebook_Validation_v02/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Codebook_Validation_v03/Bitcoin_IG2_Codebook_Validation_v03/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/round_plan.json excluded_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Materials_v01/Bitcoin_IG2_Materials_v01/sources/pr_31464.json saved source record",
+        "archives/Bitcoin_IG2_Substantive_Pilot_v01/Bitcoin_IG2_Substantive_Pilot_v01/protocol/pilot_plan.json excluded_prior_cases",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/reserved/selection_manifest.json development_exclusions",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/source_manifest.json original_development_prs",
+        "archives/Bitcoin_IG2_Validation_Run01/Bitcoin_IG2_Validation_Run01/source/Bitcoin_IG2_Materials_v01/sources/pr_31464.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 31868,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 31872,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 31904,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E06_pr31904.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 31916,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32133,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32166,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 32275,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32359,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32381,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32406,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32417,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 32451,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 32589,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 32714,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33193,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33224,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33270,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33415,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 33424,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33453,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 33473,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 34236,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 34402,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 34517,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 34918,
+      "reasons": [
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 35235,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 35264,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/title_screen.json conservative metadata screen"
+      ]
+    },
+    {
+      "number": 35450,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 35699,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 36127,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/selection.json cases",
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/sources/records/E07_pr36127.json saved source record",
+        "conservative referenced episode in prior retained materials"
+      ]
+    },
+    {
+      "number": 36228,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 36235,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    },
+    {
+      "number": 36297,
+      "reasons": [
+        "archives/Bitcoin_IG2_Expansion_v01/Bitcoin_IG2_Expansion_v01/protocol/content_screen.json content screen"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "run_id": "F03_v03_r1",
+  "episode_id": "F03",
+  "packet_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+  "counts": {
+    "screened_entries": 19,
+    "focal_entries": 10,
+    "supplemental_entries": 9,
+    "screening_dispositions": {
+      "candidate": 9,
+      "context_only": 10
+    },
+    "units": 27,
+    "record_roles": {
+      "context": 8,
+      "statement": 16,
+      "container": 1,
+      "quotation": 2
+    },
+    "relations": 10,
+    "observed_outcomes": 4,
+    "mechanisms": 3,
+    "repair_log_changes": 6,
+    "source_self_reviews": 1,
+    "checker_errors": 0,
+    "retained_review_flags": 6
+  },
+  "validation_status": "pass",
+  "outputs": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.json",
+      "sha256": "25ad402e153a9956b4a82f3013a32e498dfa4f863bfd15563f2eaa99304f2cc3",
+      "bytes": 152348
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.first_complete.json",
+      "sha256": "9b521b6df2b3aacf1e3b75070bd4c03f9f2ce9d97451339b316d5d9e1e162c7c",
+      "bytes": 152030
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/annotation.final.json",
+      "sha256": "25ad402e153a9956b4a82f3013a32e498dfa4f863bfd15563f2eaa99304f2cc3",
+      "bytes": 152348
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.first.json",
+      "sha256": "7f05efb0fb4e4fca7bb440e07a3f939f4b535b96cf958e0ffc5f2f2e89646695",
+      "bytes": 3502
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.mechanical.json",
+      "sha256": "08488387791ea29e78bba937ec523115d10b689953463678e568f1c094fb5338",
+      "bytes": 3026
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/checks.json",
+      "sha256": "a9b2397c6f13ce7efd23b037627dd0b578683138b2bd9a13f49af21246dd12da",
+      "bytes": 3026
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/repair_log.json",
+      "sha256": "1c921a4eb44053f862bb2648b9896ac6a5a7c53727c913ba7fbec6cf36d013ea",
+      "bytes": 12721
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/review_notes.json",
+      "sha256": "7b3bf502d843b156c20d8f5bd30b195cc94299ec0687a4c1a66bb6f675bee221",
+      "bytes": 86530
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r1/access_record.json",
+      "sha256": "fa32841be733f84ad900436448abf75a11ba1da1195bd9b844081dcebcb3a853",
+      "bytes": 8688
+    }
+  ],
+  "unresolved_limits": [
+    "No full comment/body edit history or reliable reply threading is supplied; source timestamps cannot date every retained wording state.",
+    "Images referenced by the body are not rendered in the packet. Visual claims are limited to supplied prose and retained patches.",
+    "The retained #7819 patch is a head snapshot, not a sequence of revisions demonstrating responses to review.",
+    "No #8182 patch or discussion verifies the claimed inclusion, adoption of individual recommendations, or eventual integration elsewhere.",
+    "No supplied institutional authorization, enforcement chain, recognized obligation, or allocation of collective-choice powers supports a rule, sanction, constitutional, or epistemic claim.",
+    "The source does not explicitly map Greg to a particular supplied participant, complete the replaceab spelling fragment, or verify the requested rebase.",
+    "No repository integration is recorded for #7819 or #8182; network adoption is outside the supplied evidence.",
+    "Do readiness and reviewability statements express only technical judgments, or also case-specific expectations guiding contribution timing?",
+    "Is the child-transaction claim purely technical necessity or an indirect implementation requirement? The packet does not decide.",
+    "Did any recommendation affect another revision, the successor PR, or later work? Snapshot evidence does not resolve causal uptake or exact implementation.",
+    "Does Greg's suggestion refer to the preceding naming alternatives, and what exact spelling was intended beyond the supplied fragment?",
+    "Was moving to #8182 related to the rebase request, or did it reflect a separately planned continuation?"
+  ]
+}

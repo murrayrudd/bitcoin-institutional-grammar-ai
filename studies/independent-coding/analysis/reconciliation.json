@@ -1,0 +1,5219 @@
+{
+  "completed_at_utc": "2026-11-07T20:31:46.950510+00:00",
+  "independent_reviews": [
+    "source_review_a",
+    "source_review_b"
+  ],
+  "review_counts": {
+    "A": 50,
+    "B": 12
+  },
+  "grouping_rule": "Distinct focal proposition or relationship / error issue / case. Repeated runs do not create new error groups. Findings can map to multiple groups when they combine distinct propositions or effects.",
+  "scope": "Coordinator reconciliation after frozen independent submissions, not original-coder deliberation; no annotation changed.",
+  "coordinator_access": "Coordinator read all focal source entries, the assigned-rule passages, all 62 review findings, and targeted full records/projections for primary and convention findings. Reviewers supplied the complete all-record audits; coordinator did not claim a third blind full-corpus coding pass.",
+  "reconciliation_is_reference_truth": false,
+  "groups": [
+    {
+      "group_id": "P01",
+      "episode_id": "F01",
+      "title": "Unidentified pruning follow-up assigned the containing PR ID",
+      "review_finding_refs": [
+        "A033",
+        "B007"
+      ],
+      "category": "primary_error",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The follow-up pruning option explicitly concerns unidentified later work. The current discussion identifier cannot identify that future contribution, even though the prose correctly disclaims implementation.",
+      "resolution": "Use a null decision_object_id for the unidentified follow-up. Preserve #26586 solely as the discussion episode and do not transfer its merge outcome.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C30"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 105,
+            "quote": "The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 10,
+            "quote": "Unrelated:"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 87,
+            "end": 105,
+            "quote": "in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19 and 50: identify the actual decision object; use null for unresolved or inapplicable objects, never a guessed containing-PR ID.",
+        "guide_1, Focal proposition and event identity: identify the specific decision object when established, leave null when unresolved/inapplicable, and do not substitute the containing discussion’s identifier for a different proposal."
+      ]
+    },
+    {
+      "group_id": "P02",
+      "episode_id": "F01",
+      "title": "Separate cleanup proposal assigned the containing PR ID",
+      "review_finding_refs": [
+        "A033",
+        "B007"
+      ],
+      "category": "primary_error",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Applying the selection criterion to other versions in a separate pull is a second, differently qualified proposition. R03 assigns #26586 to it and its general-cleanup endorsement. The source expressly separates that work from the current PR.",
+      "resolution": "Leave the separate cleanup object unidentified. Preserve general-cleanup assent without treating the episode identifier as a known future proposal.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "R05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 105,
+            "quote": "The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 10,
+            "quote": "Unrelated:"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 87,
+            "end": 105,
+            "quote": "in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19 and 50: identify the actual decision object; use null for unresolved or inapplicable objects, never a guessed containing-PR ID.",
+        "guide_1, Focal proposition and event identity: identify the specific decision object when established, leave null when unresolved/inapplicable, and do not substitute the containing discussion’s identifier for a different proposal."
+      ]
+    },
+    {
+      "group_id": "P03",
+      "episode_id": "F01",
+      "title": "Partial method repetition targeted at the complete conditional proposition",
+      "review_finding_refs": [
+        "A041",
+        "B006"
+      ],
+      "category": "primary_error",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The later open-and-rebase suggestion does not reproduce the dependent-PR stopping condition. The same-actor-restatement event therefore overstates full-proposition correspondence. R04 itself notes the different timing qualification; this supports narrowing the event, not any claim of interpersonal recognition.",
+      "resolution": "Retain a same-actor response about the broader open-PR method. Do not claim repetition of the full until-another-PR-needs-it condition.",
+      "qualification": "Reviewer A emphasizes criterion ambiguity; reviewer B treats the target scope as an execution error. The coordinator counts only the unsupported full-proposition restatement, leaving the profile convention in Q041.",
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S13"
+          ],
+          "relation_ids": [
+            "relations[32]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 302,
+            "end": 375,
+            "quote": "But we can also keep this PR open until there's another PR that needs it."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 158,
+            "end": 239,
+            "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 106-112: preserve recognition target and material scope; same-actor maintained commitment is not interpersonal recognition; ordinary assent alone gives none.",
+        "guide_1 requires preserving material conditions and distinguishes this_proposition from broader_principle; recognition of a shared general principle does not endorse every clause of a particular formulation."
+      ]
+    },
+    {
+      "group_id": "P04",
+      "episode_id": "F01",
+      "title": "Uptake relation reverses the proposal-response direction",
+      "review_finding_refs": [
+        "A031",
+        "B004"
+      ],
+      "category": "primary_error",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The stored uptake direction reverses initiating proposal and response under the assigned relation definition. The prose preserves their scope correspondence, so this changes evidence linkage rather than the broad institutional conclusion.",
+      "resolution": "For uptake, reverse endpoints to R10 U30 -> U33 and retain contextual basis. Alternatively use clarifies U33 -> U30 with a bounded rationale.",
+      "qualification": "Reviewer A calls this convention-only; reviewer B calls it evidence-basis. The coordinator uses evidence-basis because a consumer of the directed relation receives the wrong initiating/response order. Sensitivity counts also show the convention-only treatment.",
+      "affected": [
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U30",
+            "U33"
+          ],
+          "relation_ids": [
+            "relations[24]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt line 143: uptake points initiating request or proposal to its attributable response.",
+        "guide_1, Relations: uptake points from the initiating request or proposal to its attributable response or reported implementation; clarifies runs from clarifying to clarified content."
+      ]
+    },
+    {
+      "group_id": "P05",
+      "episode_id": "F03",
+      "title": "Wording chronology inferred without sentence-level history",
+      "review_finding_refs": [
+        "B011"
+      ],
+      "category": "primary_error",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The packet dates PR creation and supplies a later record updated_at, but supplies no sentence-level edit history. R02/R07 describe the body wording as earlier than the comment. Preserve the supported semantic relation while withholding that specific wording chronology. The later updated_at does not prove that this body sentence changed.",
+      "resolution": "Remove earlier/later wording claims between the retained body sentence and comment; retain semantic clarification and independently dated comment events.",
+      "qualification": "Accepted with correction to reviewer B’s description: a later PR-record update is not proof of a body-text edit. The error is unsupported certainty about wording order, not proof that the opposite order occurred.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U14"
+          ],
+          "relation_ids": [
+            "relations[3]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U11"
+          ],
+          "relation_ids": [
+            "relations[3]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 134,
+            "end": 175,
+            "quote": "\"updated_at\": \"2021-09-08T11:40:59+00:00\""
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2 requires bounded source-grounded relations and forbids reconstructing missing history. The frozen body entry explicitly warns that its creation timestamp does not date retained later-edited wording."
+      ]
+    },
+    {
+      "group_id": "Q001",
+      "episode_id": "F02",
+      "title": "The nominal backport body is retained as a pragmatic contribution proposal in R08 S01 and as technical context in the other annotations.",
+      "review_finding_refs": [
+        "A001",
+        "B002"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve both readings in alignment as a candidate/context boundary alternative. Do not count the backport candidate as an independent recognized rule, and do not score context-only readings as an omission without a new prospective boundary criterion.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "run_id": "F02_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "C00"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "run_id": "F02_v04_r3",
+          "condition": "v04",
+          "unit_ids": [],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "run_id": "F02_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "run_id": "F02_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F02-C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "run_id": "F02_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "run_id": "F02_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "F02_C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Records and proposition boundaries: retain independently interpretable candidates and relevant technical context; retain technical alternatives and do not reconstruct unexpressed authority.",
+        "Both assigned guides: extract plausible candidates with technical alternatives; context inventory is not a substantive quality score; preserve attribution, object and qualification."
+      ]
+    },
+    {
+      "group_id": "Q002",
+      "episode_id": "F02",
+      "title": "The paragraph-replacement suggestion supports a literal hypothetical reviewer-as-editor parse and a pragmatic addressee-as-editor parse.",
+      "review_finding_refs": [
+        "A002",
+        "B003"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "convention_only",
+      "coordinator_assessment": "The two actor parses preserve the same tentative edit. The difference in parse_mode when only the performer changes remains a codebook convention ambiguity; no forced actor choice follows.",
+      "resolution": "Preserve both actor analyses as explicit alternatives. For a later version, specify whether performer substitution with an unchanged explicit predicate is a pragmatic parse trigger. Do not retrospectively recode either as a changed institutional conclusion.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "run_id": "F02_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "run_id": "F02_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "run_id": "F02_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "S03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "run_id": "F02_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "run_id": "F02_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "run_id": "F02_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "F02_S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 95,
+            "quote": "I"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 104,
+            "end": 110,
+            "quote": "change"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 111,
+            "end": 113,
+            "quote": "it"
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 117,
+            "quote": "I'd maybe change it to:"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Grammar and argument roles: literal where action is supplied, pragmatic when an indirect request requires reconstructed action; assess role basis in the selected parse and preserve alternatives.",
+        "Both guides: distinguish literal and pragmatic parses; preserve explicit action/object roles where retained and explain reconstructed actor roles; preserve defensible alternative decompositions."
+      ]
+    },
+    {
+      "group_id": "Q003",
+      "episode_id": "F02",
+      "title": "R14 F02_S03 labels the directly supplied imperative drop as pragmatic even though its own rationale identifies an omitted actor and antecedent-resolved object, not a reconstructed action.",
+      "review_finding_refs": [
+        "A003"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for this focal drop clause while retaining the contextual actor, inferred object, and all qualifiers. This is a parse convention correction, not an altered recommendation or implementation claim.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R14",
+          "run_id": "F02_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "F02_S03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 16,
+            "end": 42,
+            "quote": "the new check for \"*\" here"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Grammar and argument roles: parse_mode is literal when the source directly supplies the action; inferred components do not by themselves replace the action."
+      ]
+    },
+    {
+      "group_id": "Q004",
+      "episode_id": "F02",
+      "title": "R11 F02-S04 and R12 S04 label the document-the-empty-string-change proposition pragmatic even though document and its object are explicitly supplied and no editing predicate is reconstructed.",
+      "review_finding_refs": [
+        "A004"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for the supplied document action; retain inferred addressee and the optional wording. No institutional-type or standing correction follows.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R11",
+          "run_id": "F02_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F02-S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "run_id": "F02_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 57,
+            "quote": "I think it'd be good to document the empty string change."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 24,
+            "end": 32,
+            "quote": "document"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 33,
+            "end": 56,
+            "quote": "the empty string change"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 58,
+            "end": 414,
+            "quote": "Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2.txt, Grammar and argument roles: literal when the source directly supplies the action; inferred utterance force does not automatically make an explicitly stated action inferred."
+      ]
+    },
+    {
+      "group_id": "Q005",
+      "episode_id": "F02",
+      "title": "For the spelling correction, R06 and R08 classify application as observed from the resulting integrated spelling, while R14 classifies exact observed correction as unresolved because the earlier typo and its location are absent.",
+      "review_finding_refs": [
+        "A005",
+        "B001"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The guide permits observation of an act or artifact. The resulting spelling is visible, while a historically located typo-correction operation is not. This supports two bounded observation objects, not a proven false implementation claim.",
+      "resolution": "Retain the observed requested spelling and unresolved correction chronology as separate claims. A later specification should distinguish observed resulting state from observed transformation. Do not impose an unavailable before/after-history requirement retrospectively on an explicitly artifact-limited claim.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R06",
+          "run_id": "F02_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F02-S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "run_id": "F02_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "run_id": "F02_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "F02_S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 80,
+            "end": 113,
+            "quote": "+`listtransactions` label support"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 437,
+            "end": 499,
+            "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 196,
+            "end": 210,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 622,
+            "end": 657,
+            "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Application and challenge and Presentation and later disposition: observed application requires evidence of the relevant act or artifact; particular implementation requires claimed patch changes and integration evidence.",
+        "guide_1: application requires evidence of the relevant act or artifact with trigger/provision connected; a particular implemented edit requires the claimed patch change and integration evidence."
+      ]
+    },
+    {
+      "group_id": "Q006",
+      "episode_id": "F02",
+      "title": "R14 maps the author's aggregate update report, corroborated by the reviewer's release-note-update report, to each release-note suggestion as context-inferred reported application.",
+      "review_finding_refs": [
+        "A006"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep the qualification visible: reported incorporation of the set of changes can contextually include the edit, but cannot verify the exact formulation or resolve fixed/Both. Do not treat reported and observed as interchangeable, or upgrade ordinary assent to expectation recognition.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R06",
+          "run_id": "F02_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F02-S01",
+            "F02-S02",
+            "F02-S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "run_id": "F02_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "S02",
+            "S03",
+            "S05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "run_id": "F02_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "F02_S01",
+            "F02_S02",
+            "F02_S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:4",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Both are good changes. Thanks!"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:5",
+          "span": {
+            "start": 0,
+            "end": 5,
+            "quote": "fixed"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Recognition and Application: independently assess target, basis, and application; no new mandatory aggregate-report targeting convention is supplied in this guide."
+      ]
+    },
+    {
+      "group_id": "Q007",
+      "episode_id": "F03",
+      "title": "R02 treats we as explicit in a reconstructed withhold-accepting action, explaining that the source already attributes the deliberative choice to the group.",
+      "review_finding_refs": [
+        "A007"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The older guide permits explained explicit roles in pragmatic parses and does not contain the later governing-span test. Keep the inferred-acceptance-role preference and explicit-deliberative-agent alternative; do not retrospectively import the newer rule.",
+      "resolution": "Prefer inferred agency of acceptance where the acceptance predicate is reconstructed, but retain the explicit-deliberative-agent alternative under guide_2. A later rule should decide whether preserving agency across a changed predicate is enough for explicit basis. Do not import guide_1's narrower governing-span test into R02.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 227,
+            "end": 229,
+            "quote": "we"
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 215,
+            "end": 234,
+            "quote": "not sure if we want"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2.txt, Grammar and argument roles: evaluate the role in the chosen parse; explain pragmatic actor assignments even when retaining explicit basis."
+      ]
+    },
+    {
+      "group_id": "Q009",
+      "episode_id": "F03",
+      "title": "R15 and R16 use pragmatic parse_mode for this can be reviewed already while explicitly retaining the supplied review predicate and patient.",
+      "review_finding_refs": [
+        "A009"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal with explicit review and patient, while retaining the pragmatic invitation alternative and recommendation-versus-capability uncertainty.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Grammar and argument roles: literal when the action is directly supplied; inferred utterance force does not itself reconstruct the action."
+      ]
+    },
+    {
+      "group_id": "Q010",
+      "episode_id": "F03",
+      "title": "R16 codes Adds a checkbox as pragmatic although its own action note says the action is supplied and only offered-edit force is reconstructed.",
+      "review_finding_refs": [
+        "A010"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for the supplied Adds predicate. Retain the offered-contribution versus technical-context alternative; no new requirement or implementation inference follows.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Grammar and argument roles: directly supplied action calls for literal parse_mode; source-role and force decisions remain separate."
+      ]
+    },
+    {
+      "group_id": "Q011",
+      "episode_id": "F03",
+      "title": "R15 uses pragmatic parse_mode for the exposure concern while coding expose and this as explicit and reconstructing only the negative advisory modal should not yet.",
+      "review_finding_refs": [
+        "A011"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "With the current expose predicate, use literal and retain the inferred negative recommendation. Alternatively explicitly choose the reconstructed deferral predicate and explain its inferred role. This changes representation, not the bounded sequencing concern.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 33,
+            "quote": "Not sure it makes sense to expose"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 34,
+            "end": 38,
+            "quote": "this"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 39,
+            "end": 85,
+            "quote": "until the wallet actually _can_ do replacement"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Grammar and argument roles: infer force separately from whether an action is supplied; pragmatic mode is for a reconstructed action."
+      ]
+    },
+    {
+      "group_id": "Q012",
+      "episode_id": "F03",
+      "title": "R15 records the technical response to additional-output work as recognition targeting this_proposition with object_id null, even though the proposition and uncertainty notes say the required separate workflow identity is unknown.",
+      "review_finding_refs": [
+        "A012",
+        "B010"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "The record explicitly leaves the workflow object unknown and makes no implementation or expectation-recognition claim. Its semantically identifiable response nevertheless violates the guide’s unresolved-target convention. This is a convention correction, not an invented object or authority claim.",
+      "resolution": "Retain the textual response and its contextual basis, but use unresolved event target and explain unknown workflow identity. The event remains other, not expectation recognition; do not change the none recognition profile to interpersonal.",
+      "qualification": "Reviewer A assigns evidence-basis; reviewer B assigns convention-only. The coordinator retains the latter bounded effect.",
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 179,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Recognition/disposition identity: null distinguishes unknown/inapplicable objects; an unknown required object also makes the target unresolved.",
+        "guide_1, event identity: every recognition event declares object_id and identity_evidence; explain whether null is unknown or inapplicable; an unknown required object also makes target unresolved."
+      ]
+    },
+    {
+      "group_id": "Q013",
+      "episode_id": "F03",
+      "title": "R13, R15 and R16 retain a same-actor restatement of the author's review-now strategy as maintained commitment, but summarize recognition as none.",
+      "review_finding_refs": [
+        "A013"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Prefer same_actor_only to expose the already recorded maintained-commitment evidence, while stating that no expectation or interpersonal recognition is established. Clarify prospectively whether the same-actor category requires an expectation-recognition event; do not reclassify this as interpersonal support.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Recognition: distinguish maintained personal commitment from interpersonal recognition; same-actor events alone give same_actor_only, ordinary assent alone gives none."
+      ]
+    },
+    {
+      "group_id": "Q014",
+      "episode_id": "F03",
+      "title": "R13 and R15 retain unresolved application of the complete checkbox proposition despite a supplied checkbox artifact; R16 uses none while still describing that artifact in its outcome.",
+      "review_finding_refs": [
+        "A014"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the narrower observed checkbox artifact and the unresolved full-placement/application question. A future convention could specify partial observed artifact support; no stronger full-proposition implementation conclusion is justified here.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[2]"
+          ]
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 68,
+            "end": 85,
+            "quote": "\"state\": \"closed\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Application and challenge: observed application requires relevant act or artifact with provision connected; assessments concern the focal proposition and do not equate a retained patch with integration."
+      ]
+    },
+    {
+      "group_id": "Q015",
+      "episode_id": "F03",
+      "title": "Needs rebase receives norm_candidate in R07, R18 and R16, and undetermined in R02, R13 and R15.",
+      "review_finding_refs": [
+        "A015"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain norm-versus-undetermined as a genuine source/criterion boundary. Do not require repetition or project-wide adoption to permit norm_candidate, and do not treat the bare need as proof of an authorized merge gate.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U26"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U22"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Force and institutional classification: norm_candidate requires socially expected conduct or accountability, but need not already be shared; technical necessity does not itself establish institutional obligation."
+      ]
+    },
+    {
+      "group_id": "Q016",
+      "episode_id": "F03",
+      "title": "The adaptive-fee suggestion is strategy_candidate in R15 because it explicitly articulates a technical method, while the other annotations emphasize the one-off tentative request to have that option and select undetermined.",
+      "review_finding_refs": [
+        "A016"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve both bounded readings, identifying the explicit algorithm versus the proposed UI edit. Do not infer a personal implementation promise or an adopted strategy from either candidate classification.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Institutional classification and analytical layers: strategy_candidate can describe an articulated method; a one-off technical suggestion without such commitment normally remains undetermined; do not silently substitute embedded and focal layers."
+      ]
+    },
+    {
+      "group_id": "Q017",
+      "episode_id": "F03",
+      "title": "The child-transaction contingency is strategy_candidate in R15/R16 and undetermined in R02/R07/R18/R13.",
+      "review_finding_refs": [
+        "A017"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the method/technical-context alternatives. Do not turn need or must compute into an institutional duty, or exponential version growth into an O sanction.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U20"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 179,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 139,
+            "end": 176,
+            "quote": "for use in case the original confirms"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Force/type and boundaries: an articulated method may be a strategy candidate; engineering necessity and workload consequences do not establish institutional obligation or enforcement."
+      ]
+    },
+    {
+      "group_id": "Q018",
+      "episode_id": "F03",
+      "title": "R07 relations[6] links the fee-only focus question to the adaptive-fee suggestion as clarifies; other annotations chiefly connect it to the author's preceding additional-output attempt.",
+      "review_finding_refs": [
+        "A018"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the contextual relation with its limited sense, or prefer the nearer additional-output endpoint for the scope contrast. The source does not establish an accepted fee-only decision.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U08",
+            "F03-U15"
+          ],
+          "relation_ids": [
+            "relations[6]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Relations: clarifier points to clarified; contextual links must be supported by wording and not mistaken for explicit decision or causal evidence."
+      ]
+    },
+    {
+      "group_id": "Q019",
+      "episode_id": "F03",
+      "title": "R07 and R15 attach the exposure objection to the offered checkbox proposition as a dispute; R13 and R16 classify it as a broader-proposal premise challenge and leave the focal dispute flag false.",
+      "review_finding_refs": [
+        "A019"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep the layer distinction visible rather than scoring the Boolean in isolation. None of these analyses supports treating assent to exposure concerns as a rejection of review or proof that the checkbox did not exist.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U01",
+            "U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U01",
+            "U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Candidate boundaries/dispute and guide_1 challenge scope: compare the same focal proposition and object; a challenge to a proposal premise need not deny an artifact description."
+      ]
+    },
+    {
+      "group_id": "Q020",
+      "episode_id": "F03",
+      "title": "R15 extracts the two explicit ongoing replacement-GUI work reports as personal strategy candidates; other annotations retain them as progress context or attached qualifications.",
+      "review_finding_refs": [
+        "A020"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve candidate/context alternatives. Do not use a larger count of work-report candidates as more institutional evidence; do not silently identify this workflow with #8182.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U02",
+            "U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U02",
+            "U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Records and institutional classification: retain relevant context and attributable plans/methods, without turning all reports into independent institutional propositions."
+      ]
+    },
+    {
+      "group_id": "Q021",
+      "episode_id": "F01",
+      "title": "The body fragment supports an attributed recurring-method reading, a description of this particular addition, or contextual analogy.",
+      "review_finding_refs": [
+        "A021"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the layer distinction and the technical-context alternative. Do not equate NACK of this addition with rejection of the recurring procedure, or infer universal release-by-release practice from the two predecessor examples.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "b_method"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "B01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S01"
+          ],
+          "relation_ids": [
+            "relations[23]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "B01",
+            "P01"
+          ],
+          "relation_ids": [
+            "relations[2]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 35,
+            "quote": "The same procedure as every release"
+          }
+        },
+        {
+          "source_id": "pr26586:metadata",
+          "span": {
+            "start": 23,
+            "end": 70,
+            "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+          }
+        },
+        {
+          "source_id": "pr26586:comments:3",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+          }
+        },
+        {
+          "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+          "span": {
+            "start": 69,
+            "end": 103,
+            "quote": "test: previous releases: add v23.0"
+          }
+        },
+        {
+          "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+          "span": {
+            "start": 69,
+            "end": 103,
+            "quote": "test: previous releases: add v22.0"
+          }
+        },
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 145,
+            "end": 364,
+            "quote": "only a little simpler now: thanks to #25650, the previous release fetch script defaults to downloading/building the necessary tags, i.e. we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, record roles, pragmatic parsing, type and challenge: context may preserve rationale; an elliptical method can be reconstructed; challenge must identify the focal content or application."
+      ]
+    },
+    {
+      "group_id": "Q022",
+      "episode_id": "F01",
+      "title": "R10 U06 resolves it categorically as the incorrectly listed review in its summary and qualifier.",
+      "review_finding_refs": [
+        "A022"
+      ],
+      "category": "unresolved",
+      "diagnosis": "unresolved",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "The review/listing antecedent is plausible, but the exact ignored software object is not uniquely supplied. Keep the inference and the comment/listing alternative; do not count a demonstrated semantic error or observed bot execution.",
+      "resolution": "Retain the likely review interpretation as an inference and preserve the comment/listing alternative. Keep the conditional next-update effect and lack of observed use. The packet cannot decide the software implementation referent.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U06"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 641,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 646,
+            "end": 688,
+            "quote": "the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, proposition identity, qualifications and component role basis: preserve unresolved references and distinguish grammatical role from resolved object identity."
+      ]
+    },
+    {
+      "group_id": "Q023",
+      "episode_id": "F01",
+      "title": "R09 u07 selects pragmatic although hold off is directly supplied and coded explicit.",
+      "review_finding_refs": [
+        "A023"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for the supplied hold-off action; keep the inferred progress/integration target and recommendation interpretation. No institutional conclusion changes.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u07"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Sounds good to hold off a bit."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q024",
+      "episode_id": "F01",
+      "title": "R04 S11 and R09 u10 label the adding-v24 recommendation pragmatic while retaining its supplied action as explicit.",
+      "review_finding_refs": [
+        "A024"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "The supplied adding action does not disappear when recommendation force is inferred. Use the literal action under the preferred convention. R10 understates its lexical basis but does not invent an action or stronger evidentiary support. It remains a convention-level finding here; a stricter basis-error treatment is included in sensitivity results.",
+      "resolution": "Use literal with the supplied adding action and explicit target. Preserve recommendation force as interpretation; should modifies justify and must not become a duty to add. Retain the download-availability fallback.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 220,
+            "end": 330,
+            "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 265,
+            "end": 271,
+            "quote": "adding"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 272,
+            "end": 329,
+            "quote": "v24.0 (or whatever ends up widely available for download)"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q025",
+      "episode_id": "F01",
+      "title": "R04 S24 and R09 u23 use pragmatic despite explicitly coding not rush merging.",
+      "review_finding_refs": [
+        "A025"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "R04 and R09 retain an explicit supplied predicate while choosing pragmatic mode; that is a convention mismatch. R10 actually reconstructs an avoid-rushing predicate and marks its roles inferred, so its meaning-preserving alternative is separated below.",
+      "resolution": "Use a literal not-rush action with merging new releases as its target, or equivalent nonoverlapping decomposition. Preserve the possible-reason formulation, negation, and limited test-update context. This correction does not decide norm versus undetermined.",
+      "qualification": "Qualified relative to reviewer A: do not require a literal rewrite of R10 solely to impose the preferred surface form.",
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 399,
+            "end": 407,
+            "quote": "not rush"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 408,
+            "end": 428,
+            "quote": "merging new releases"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q026",
+      "episode_id": "F01",
+      "title": "R09 u25 labels the latest-per-missing-feature recommendation pragmatic while its own notes state that add and its object are explicit and only recommendation force is inferred.",
+      "review_finding_refs": [
+        "A026"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for the supplied add action; retain the inferred force and the only/latest/per-missing-feature restriction without introducing a lexical deontic or authority.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 11,
+            "end": 15,
+            "quote": "only"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q027",
+      "episode_id": "F01",
+      "title": "R09 u30 labels the minimum-retention question pragmatic although keep and its object are directly supplied.",
+      "review_finding_refs": [
+        "A027"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal while retaining question speech act, inferred recommendation force, wallet-test domain, always, non-EOL minimum, and rejection of sacrificing one version for another. This does not settle recognition standing.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u30"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q028",
+      "episode_id": "F01",
+      "title": "R04 S31 uses pragmatic while every selected component, including the action do and object that, is explicit.",
+      "review_finding_refs": [
+        "A028"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use literal for do that with the antecedent explained separately. A different parse that actually reconstructs apply or clean up may remain pragmatic; retain separate-pull scope and no identified future PR.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S31"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 60,
+            "quote": "Unrelated: The same goes for the other versions in this file"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q029",
+      "episode_id": "F01",
+      "title": "R04 S15 assigns To run the test at all to Cac.",
+      "review_finding_refs": [
+        "A029"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "The guide prefers Cex for purpose wording. Cac preserves the same technical prerequisite here, so this is a nonpreferred convention and not a lost condition or false institutional duty. The preference does not establish one uniquely valid grammar.",
+      "resolution": "Represent the supplied purpose as Cex, preserving technical-necessity uncertainty, every listed built copy, and the attributed guix-binary objection. Do not infer sanction or formal testing duty.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S15"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 64,
+            "end": 207,
+            "quote": "To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 64,
+            "end": 86,
+            "quote": "To run the test at all"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt line 66: prefer Cex for an explicitly stated purpose that qualifies action; Cac establishes activation."
+      ]
+    },
+    {
+      "group_id": "Q032",
+      "episode_id": "F01",
+      "title": "R09 relations[23] labels the technical limitation c05b -> the Probably not/low-cost counterreason c06a as uptake.",
+      "review_finding_refs": [
+        "A032"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "The initiating endpoint is a technical assessment, not an extracted request/proposal. The reply direction and actual concession survive in the rationale. Correct the defined uptake label as a convention; do not turn this bounded response into acceptance of a governance prescription.",
+      "resolution": "Retain the response as context and, if a relation is needed, use context-inferred clarifies from c06a to c05b or an appropriately explained relation. Do not silently expand uptake to all conversational responses.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "c05b",
+            "c06a"
+          ],
+          "relation_ids": [
+            "relations[23]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 175,
+            "end": 230,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 2,
+            "end": 57,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 61,
+            "end": 101,
+            "quote": "Probably not, but it's a low cost check."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2.txt lines 106 and 112: uptake requires an initiating request/proposal; relation type and direction must follow the represented meaning."
+      ]
+    },
+    {
+      "group_id": "Q034",
+      "episode_id": "F01",
+      "title": "For the recurring non-EOL minimum, R04 S32 explicitly treats the general criterion as having no canonical decision object, yet assigns #26586 to its this_proposition recognition event.",
+      "review_finding_refs": [
+        "A034"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep episode identity separate from criterion identity. Clarify in a later specification when a general criterion has an inapplicable object ID and can still receive semantically identified recognition. If the event requires a specific unknown proposal ID, use null and unresolved target. Do not infer an unidentified numbered proposal or adoption.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "R06"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S32"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U31"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 515,
+            "end": 616,
+            "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 621,
+            "end": 637,
+            "quote": "I tend to agree."
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 12,
+            "end": 57,
+            "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19, 50 and 106-112: proposition/event object identity and episode independence are distinct; unknown required objects entail unresolved target."
+      ]
+    },
+    {
+      "group_id": "Q035",
+      "episode_id": "F01",
+      "title": "The rebase report names master but not #26589.",
+      "review_finding_refs": [
+        "A035",
+        "B005"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "unresolved",
+      "coordinator_assessment": "Both reviewers preserve the reported rebase and the unverified #26589 condition. A report can correspond to the action without verifying the complete qualified request. The target convention is unresolved; an unqualified fulfillment claim is not adopted.",
+      "resolution": "Retain a reported rebase of this PR and unresolved fulfillment of after #26589 as separate claims. Prefer broader/unresolved target for the complete conditional proposition, or explicitly mark partial action correspondence. Do not turn the report into verified dependency satisfaction.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "need_rebase"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C02b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 17,
+            "quote": "Rebased on master"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 153,
+            "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 40,
+            "quote": "Rebased on master and updated to v24.0.1"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Assigned guides, recognition/disposition scope and preservation of material conditions; guide_1.txt line 116 requires trigger/provision connection for observed application. guide_2.txt lines 80-84 distinguish reported action from verified implementation.",
+        "guide_2 requires material qualifications to survive, distinguishes reported implementation from verification, and requires event target scope. It does not specify a separate partial-implementation target or exactly how incomplete reported fulfillment maps to this_proposition."
+      ]
+    },
+    {
+      "group_id": "Q036",
+      "episode_id": "F01",
+      "title": "For it needs a rebase, R01/R09 keep needs as an inferred D under the reconstructed rebase action; R17 retains an explicit D, while the guide_1 annotations omit D and keep force uncertain.",
+      "review_finding_refs": [
+        "A036"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the technical-necessity alternative and do not infer obligation or authority. A later criterion should specify how nominal needs constructions transfer lexical necessity into D under a pragmatic action and how an unspecified after-event is classified; no retrospective mandatory label is imposed.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "need_rebase"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C02b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 44,
+            "end": 49,
+            "quote": "needs"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 59,
+            "end": 71,
+            "quote": "after #26589"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, role-specific explicit/inferred basis, technical necessity versus deontic force, and Cac/Cex definitions."
+      ]
+    },
+    {
+      "group_id": "Q037",
+      "episode_id": "F01",
+      "title": "The three guide_2 annotations R01/R09/R17 infer local expectation recognition from Sjors quoting the recurring non-EOL minimum and saying I tend to agree.",
+      "review_finding_refs": [
+        "A037",
+        "B008"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain both bounded readings: tentative recognition of the core recurring minimum, or ordinary technical assent. Keep complete-proposition scope qualified and avoid binding, general, repeated or causal adoption claims. A future criterion should define what contextual evidence makes agreement treat an arrangement as a standard.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "minimum_recent"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "R06"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S32"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u30"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U31"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "R02a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 515,
+            "end": 616,
+            "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 621,
+            "end": 637,
+            "quote": "I tend to agree."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 513,
+            "end": 637,
+            "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2.txt lines 78-84: locally_supported requires expectation/arrangement recognition of this_proposition; guide_1.txt lines 106-112: quoting and assent alone are not sufficient, and broader-principle recognition does not endorse every clause.",
+        "guide_2 permits locally_supported only for attributable recognition of an expectation or arrangement, not mere technical assent. guide_1 further requires treatment as a reason, standard, status, or governing consideration and distinguishes broader-principle from full-proposition recognition. Neither guide resolves this specific qualified-assent threshold by a mandatory linguistic cue."
+      ]
+    },
+    {
+      "group_id": "Q038",
+      "episode_id": "F01",
+      "title": "The explanation branch is marked disputed in R03/R04/R10 and not disputed in R01/R09/R17.",
+      "review_finding_refs": [
+        "A038"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the premise-challenge interpretation alongside the response interpretation. A Boolean dispute projection cannot adjudicate this substantive distinction; no reviewer acceptance is supplied.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "explain24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "R03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S28"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u27"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U27"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "R00c"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 80,
+            "end": 174,
+            "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 147,
+            "end": 174,
+            "quote": "explain why 24.x is special"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 491,
+            "end": 735,
+            "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, proposition/premise/application challenge scope and recognition: identify the common object; a response is not proof of satisfied or accepted obligation."
+      ]
+    },
+    {
+      "group_id": "Q039",
+      "episode_id": "F01",
+      "title": "R03/R04/R10 attach the miniscript reason to the qualified v24 addition and mark its premise disputed.",
+      "review_finding_refs": [
+        "A039"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the technical premise challenge at its represented layer. Do not infer an NACK of all v24 inclusion reasons from the miniscript objection, or treat the Boolean difference alone as an error.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "add_v24",
+            "wallet_support_reason"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C06",
+            "C07"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "C03",
+            "S11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "c04b",
+            "c05a",
+            "u10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "C03",
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C04b",
+            "C04c",
+            "C05a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 220,
+            "end": 330,
+            "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, segmentation and material qualifiers; challenge concerns the focal proposition or its premise, with correctly scoped endpoints."
+      ]
+    },
+    {
+      "group_id": "Q040",
+      "episode_id": "F01",
+      "title": "R03 C15 treats the proposed directory-loop workaround as challenging application of the all-built-copies prerequisite.",
+      "review_finding_refs": [
+        "A040"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep current-implementation necessity separate from a proposed future workaround. Neither reading establishes obligation, implemented relief, or falsification of the present technical claim.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "built_copies",
+            "loop_available"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C15",
+            "C16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S15",
+            "S16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u14",
+            "u15"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U14",
+            "U15"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C09b",
+            "C10a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 64,
+            "end": 207,
+            "quote": "To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 233,
+            "end": 318,
+            "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt line 118 permits a workaround to challenge application while accepting purpose; both guides require identified content/application rather than unrelated opposing themes."
+      ]
+    },
+    {
+      "group_id": "Q042",
+      "episode_id": "F01",
+      "title": "R03/R04/R09/R10 use uptake from the cost-growth question to the pruning option, although the question is retained as context; R01/R17 use a clarifying-response treatment.",
+      "review_finding_refs": [
+        "A042"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Explain the implicit invitation if retaining uptake; otherwise use context-inferred clarifies from the pruning response to the concern. No implemented pruning, obligatory response, or direct causation follows.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C12",
+            "C13"
+          ],
+          "relation_ids": [
+            "relations[11]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "C07",
+            "S14"
+          ],
+          "relation_ids": [
+            "relations[8]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "c07",
+            "u13"
+          ],
+          "relation_ids": [
+            "relations[25]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "C05",
+            "U13"
+          ],
+          "relation_ids": [
+            "relations[18]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C07a",
+            "C08a"
+          ],
+          "relation_ids": [
+            "relations[12]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:7",
+          "span": {
+            "start": 46,
+            "end": 171,
+            "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 181,
+            "end": 231,
+            "quote": "We can remove intermediate releases at some point."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 0,
+            "end": 231,
+            "quote": "> > Probably not, but it's a low cost check.\r\n> \r\n> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?\r\n\r\nWe can remove intermediate releases at some point."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, bare questions/contextual invitations and uptake/clarifies conventions."
+      ]
+    },
+    {
+      "group_id": "Q043",
+      "episode_id": "F01",
+      "title": "R03 relations[1] and R09 relations[1] treat Sounds good to hold off as uptake of the earlier concern about withdrawing a buggy release.",
+      "review_finding_refs": [
+        "A043"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the implicit-invitation alternative if using uptake. A temporal relation with a separate pause proposal is also defensible. Do not treat withdrawal or a formal hold as observed.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C01",
+            "C02"
+          ],
+          "relation_ids": [
+            "relations[1]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "c01",
+            "u07"
+          ],
+          "relation_ids": [
+            "relations[1]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C01",
+            "C02a"
+          ],
+          "relation_ids": [
+            "relations[1]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:1",
+          "span": {
+            "start": 0,
+            "end": 142,
+            "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Sounds good to hold off a bit."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, context versus pragmatic invitation and uptake versus temporal conventions; temporal ordering alone implies no causation."
+      ]
+    },
+    {
+      "group_id": "Q044",
+      "episode_id": "F01",
+      "title": "The uncertainty-plus-@Sjors occurrence is context in R01/R03 and an inferred invitation to advise in R04/R09/R10/R17.",
+      "review_finding_refs": [
+        "A044"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the invitation as a plausible candidate or retain contextual coordination with the alternative explicit. No material omission is established, and the subsequent tested ACK does not prove the prompt caused review.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "status_ping"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S21"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u20"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U20"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C14"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:14",
+          "span": {
+            "start": 0,
+            "end": 33,
+            "quote": "Not sure what to do here. @Sjors?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 0,
+            "end": 693,
+            "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master. That said, there's no pressing reason to merge this. As we've done before, we could just leave the PR open and occasionally rebase it.\r\n\r\n\r\n> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here\r\n\r\nThis can also be a reason to not rush merging new releases. This PR itself is where most of the thorough checking happens, at every rebase.\r\n\r\n> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree. In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, unit-boundary rule for pure pings and context beyond an isolated name."
+      ]
+    },
+    {
+      "group_id": "Q045",
+      "episode_id": "F01",
+      "title": "The conditional developer-choice sentence receives a constitutive allocation parse in R01/R03/R04/R17 and a pragmatic regulative choose parse with undetermined type in R09/R10.",
+      "review_finding_refs": [
+        "A045"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve conditional test-selection allocation and the technical-flexibility alternative. Do not elevate it into constitutional authority, a permission to merge, or an adopted procedure. Alternative decompositions are acceptable when allocation and condition survive.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "developer_choice",
+            "loop_available"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C16",
+            "C17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S16",
+            "S17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u15",
+            "u16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U15",
+            "U16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C10a",
+            "C10b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 152,
+            "end": 232,
+            "quote": "In that case it's up to the developer which previous releases they want to test."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 233,
+            "end": 318,
+            "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Assigned guides, constitutive versus regulative candidates, technical configurability limits, preservation of alternative E/F/P allocations, and separate target/observed governance levels."
+      ]
+    },
+    {
+      "group_id": "Q046",
+      "episode_id": "F01",
+      "title": "R09 u33 reconstructs a priority to test ancient wallets with modern software from the importance comparison.",
+      "review_finding_refs": [
+        "A046"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep the priority candidate explicitly inferred with the descriptive-value alternative. Contextual treatment is not a material omission when the direction and comparison remain recoverable; do not convert lower importance into a prohibition.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "drop_eol",
+            "host_regtest"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C19",
+            "C20",
+            "C21"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S18",
+            "S19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u17",
+            "u18",
+            "u33"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U17",
+            "U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C11a",
+            "C11b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 0,
+            "end": 181,
+            "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 281,
+            "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, pragmatic reconstruction, context roles and preservation of material directional qualifications."
+      ]
+    },
+    {
+      "group_id": "Q047",
+      "episode_id": "F01",
+      "title": "The specific-test preference is strategy_candidate in R04/R10 and undetermined in R01/R03/R09/R17.",
+      "review_finding_refs": [
+        "A047"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain articulated-method and engineering-preference readings. This is not evidence that a shared testing norm was adopted. Avoid imposing a new commitment threshold on every identifiable method.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "specific_tests"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C05c"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 231,
+            "end": 327,
+            "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 250,
+            "end": 327,
+            "quote": "specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, strategy_candidate for an explicit method/personal plan, undetermined for a one-off technical suggestion without sufficient institutional type evidence."
+      ]
+    },
+    {
+      "group_id": "Q048",
+      "episode_id": "F01",
+      "title": "The coupled EOL-drop/regtest-wallet alternative is strategy_candidate in R04/R10 and undetermined in the other annotations.",
+      "review_finding_refs": [
+        "A048"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve both proposals, their substitution relation, and exploratory force. The store parse must retain inferred destination and no invented human actor. Do not infer implementation or a duty to abandon all EOL tests.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "drop_eol",
+            "host_regtest"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C20",
+            "C21"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S18",
+            "S19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u17",
+            "u18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U17",
+            "U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C11a",
+            "C11b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 281,
+            "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 0,
+            "end": 181,
+            "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, method versus one-off design suggestion, role-specific basis under reconstructed actions, and semantically equivalent coupled actions."
+      ]
+    },
+    {
+      "group_id": "Q049",
+      "episode_id": "F01",
+      "title": "The not-rush-merging formulation is norm_candidate in R04/R10/R17 and undetermined in R01/R03/R09.",
+      "review_finding_refs": [
+        "A049"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the proposed-restraint and case-specific-rationale alternatives. Resolve the separate parse-mode convention without treating it as evidence that the norm interpretation is true or false.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "not_rush"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C28"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C15d"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 285,
+            "end": 460,
+            "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 245,
+            "end": 366,
+            "quote": "> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 430,
+            "end": 509,
+            "quote": "This PR itself is where most of the thorough checking happens, at every rebase."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, norm_candidate as proposed expected conduct without shared acceptance; undetermined when institutional relevance does not select a type."
+      ]
+    },
+    {
+      "group_id": "Q050",
+      "episode_id": "F01",
+      "title": "For the bot correction request, R09 uses norm_candidate, R01/R03/R10/R17 use strategy_candidate, and R04 uses undetermined.",
+      "review_finding_refs": [
+        "A050"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the method and usability-instruction alternative; norm_candidate may describe a proposed expectation but cannot imply shared obligation, actual use, or enforcement.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "bot_react"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "D02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S06"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "D02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 641,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 688,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, norm/strategy/undetermined distinctions and case-specific bot-template treatment; please is not lexical D or authority evidence."
+      ]
+    },
+    {
+      "group_id": "Q008a",
+      "episode_id": "F03",
+      "title": "Replacement-word proposal presentation",
+      "review_finding_refs": [
+        "A008"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use proposed_wording for these two occurrences, leaving speech acts, incomplete spelling, conditional scope and institutional assessments unchanged.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U20"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Presentation and later disposition: newly drafted replacement wording is proposed_wording; presentation is separate from statement role and communicative function."
+      ]
+    },
+    {
+      "group_id": "Q008b",
+      "episode_id": "F03",
+      "title": "Conditional spelling proposal presentation",
+      "review_finding_refs": [
+        "A008"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Use proposed_wording for these two occurrences, leaving speech acts, incomplete spelling, conditional scope and institutional assessments unchanged.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Presentation and later disposition: newly drafted replacement wording is proposed_wording; presentation is separate from statement role and communicative function."
+      ]
+    },
+    {
+      "group_id": "Q025a",
+      "episode_id": "F01",
+      "title": "Reconstructed avoid-rushing alternative",
+      "review_finding_refs": [
+        "A025"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "convention_only",
+      "coordinator_assessment": "R10 chooses a synonymous reconstructed restraint predicate and consistently marks its action/object roles inferred. The negative recommendation, tentative reason, and release-test scope survive. A preferred literal representation does not make this alternative a source error.",
+      "resolution": "Preserve the reconstructed alternative or adopt the simpler literal form without treating either as a different institutional conclusion.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 399,
+            "end": 407,
+            "quote": "not rush"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 408,
+            "end": 428,
+            "quote": "merging new releases"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 58-60 and guide_2.txt lines 50-52: literal applies when the source directly supplies the action; inferred recommendation force alone does not make that action reconstructed. Component roles are assessed separately."
+      ]
+    },
+    {
+      "group_id": "Q030a",
+      "episode_id": "F01",
+      "title": "Repeated technical-description speech-act consistency",
+      "review_finding_refs": [
+        "A030"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the original function for each quoted proposition. Compound quotations with several preserved original functions can retain an explained mixed/other treatment; do not count them as new endorsements.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "Q02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "Q02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 107,
+            "end": 149,
+            "quote": "doesn't test watch-only miniscript support"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 2,
+            "end": 81,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 178,
+            "end": 280,
+            "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 176,
+            "end": 225,
+            "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 39-47: repeated quotations retain the original communicative function in speech_act; presentation and record role are separate."
+      ]
+    },
+    {
+      "group_id": "Q030b",
+      "episode_id": "F01",
+      "title": "Repeated selection-criterion speech-act consistency",
+      "review_finding_refs": [
+        "A030"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "R04 assigns different speech-act categories to the original criterion and its repeat. Treat this as a cross-occurrence consistency issue. The original record is not automatically the correct one: the source uses an assertion to advance a recommendation.",
+      "resolution": "Harmonize the original and quoted occurrence under the chosen source-based speech-act convention, retaining the asserted-versus-proposed boundary if unresolved. Do not infer a new endorsement from quotation.",
+      "qualification": "Repair may concern the original S26 as well as the repeated Q09; do not mechanically copy a potentially debatable original label.",
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "Q09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 107,
+            "end": 149,
+            "quote": "doesn't test watch-only miniscript support"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 2,
+            "end": 81,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 178,
+            "end": 280,
+            "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 176,
+            "end": 225,
+            "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 39-47: repeated quotations retain the original communicative function in speech_act; presentation and record role are separate."
+      ]
+    },
+    {
+      "group_id": "Q030c",
+      "episode_id": "F01",
+      "title": "Repeated navigation-proposal speech-act consistency",
+      "review_finding_refs": [
+        "A030"
+      ],
+      "category": "convention_deviation",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the original function for each quoted proposition. Compound quotations with several preserved original functions can retain an explained mixed/other treatment; do not count them as new endorsements.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "Q12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 107,
+            "end": 149,
+            "quote": "doesn't test watch-only miniscript support"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 2,
+            "end": 81,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 178,
+            "end": 280,
+            "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 176,
+            "end": 225,
+            "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 39-47: repeated quotations retain the original communicative function in speech_act; presentation and record role are separate."
+      ]
+    },
+    {
+      "group_id": "Q041",
+      "episode_id": "F01",
+      "title": "Same-actor profile convention for partial method repetition",
+      "review_finding_refs": [
+        "A041"
+      ],
+      "category": "criterion_ambiguity",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "unresolved",
+      "coordinator_assessment": "Whether same_actor_only summarizes any maintained personal method or only an expectation-related event remains unclear. This profile ambiguity is distinct from P03’s overly narrow full-proposition restatement target.",
+      "resolution": "Record the same-actor method response explicitly, retain the none/same_actor_only profile alternative as needed, and do not infer interpersonal support.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S13"
+          ],
+          "relation_ids": [
+            "relations[32]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 302,
+            "end": 375,
+            "quote": "But we can also keep this PR open until there's another PR that needs it."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 158,
+            "end": 239,
+            "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 106-112: preserve recognition target and material scope; same-actor maintained commitment is not interpersonal recognition; ordinary assent alone gives none."
+      ]
+    },
+    {
+      "group_id": "Q051",
+      "episode_id": "F01",
+      "title": "Operational versus collective-choice focal layer",
+      "review_finding_refs": [
+        "B009"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "convention_only",
+      "coordinator_assessment": "An operational instruction and a proposal to select a recurring testing arrangement occupy different analytical layers. Retain the layer and uncertainty about adoption; the label difference alone does not reverse the historical account.",
+      "resolution": "Preserve the layer stated in each rationale. Compare the operational inclusion expectation and the proposal to choose that recurring standard separately; none of these labels alone establishes adoption, authorization, constitutional authority, or network governance.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "run_id": "F01_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "every_major"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "run_id": "F01_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "C05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "run_id": "F01_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "S10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "run_id": "F01_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "u09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "run_id": "F01_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "run_id": "F01_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "C04a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides separate statement target from observed action and classify governed activity rather than a modal word; operational conduct and deliberation over a recurring arrangement are distinct analytical layers, with justified alternatives retained."
+      ]
+    },
+    {
+      "group_id": "Q052",
+      "episode_id": "F03",
+      "title": "Prospective self-questioning versus dispute of a historical work report",
+      "review_finding_refs": [
+        "B012"
+      ],
+      "category": "defensible_alternative",
+      "diagnosis": "defensible_alternative",
+      "effect": "unresolved",
+      "coordinator_assessment": "The fee-only question can challenge continuation of a design without contradicting the past attempt. Preserve that prospective alternative and the uncontested historical report, without inferring withdrawal or adoption.",
+      "resolution": "Keep the historical attempt uncontested. Retain prospective self-questioning as a bounded alternative challenge to continuation or scope, without counting it as interpersonal disagreement, rejection, withdrawal, or an adopted fee-only decision. The Boolean should not be treated as a complete measure of dispute meaning.",
+      "qualification": null,
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "run_id": "F03_v03_r1",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U18",
+            "F03-U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "run_id": "F03_v03_r3",
+          "condition": "v03",
+          "unit_ids": [
+            "F03-U14",
+            "F03-U15"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "run_id": "F03_v04_r1",
+          "condition": "v04",
+          "unit_ids": [
+            "U16",
+            "U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "run_id": "F03_v04_r3",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U17",
+            "F03-U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "run_id": "F03_v04_r2",
+          "condition": "v04",
+          "unit_ids": [
+            "F03-U10",
+            "F03-U11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "run_id": "F03_v03_r2",
+          "condition": "v03",
+          "unit_ids": [
+            "U17",
+            "U18"
+          ],
+          "relation_ids": [
+            "relations[9]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides require any dispute to target the same proposition or its application/premise and preserve uncertainty. A historical work report and the prospective continuation of its method are distinguishable focal meanings; opposing themes alone do not establish interpersonal conflict."
+      ]
+    }
+  ],
+  "finding_to_groups": {
+    "A001": [
+      "Q001"
+    ],
+    "A002": [
+      "Q002"
+    ],
+    "A003": [
+      "Q003"
+    ],
+    "A004": [
+      "Q004"
+    ],
+    "A005": [
+      "Q005"
+    ],
+    "A006": [
+      "Q006"
+    ],
+    "A007": [
+      "Q007"
+    ],
+    "A008": [
+      "Q008a",
+      "Q008b"
+    ],
+    "A009": [
+      "Q009"
+    ],
+    "A010": [
+      "Q010"
+    ],
+    "A011": [
+      "Q011"
+    ],
+    "A012": [
+      "Q012"
+    ],
+    "A013": [
+      "Q013"
+    ],
+    "A014": [
+      "Q014"
+    ],
+    "A015": [
+      "Q015"
+    ],
+    "A016": [
+      "Q016"
+    ],
+    "A017": [
+      "Q017"
+    ],
+    "A018": [
+      "Q018"
+    ],
+    "A019": [
+      "Q019"
+    ],
+    "A020": [
+      "Q020"
+    ],
+    "A021": [
+      "Q021"
+    ],
+    "A022": [
+      "Q022"
+    ],
+    "A023": [
+      "Q023"
+    ],
+    "A024": [
+      "Q024"
+    ],
+    "A025": [
+      "Q025",
+      "Q025a"
+    ],
+    "A026": [
+      "Q026"
+    ],
+    "A027": [
+      "Q027"
+    ],
+    "A028": [
+      "Q028"
+    ],
+    "A029": [
+      "Q029"
+    ],
+    "A030": [
+      "Q030a",
+      "Q030b",
+      "Q030c"
+    ],
+    "A031": [
+      "P04"
+    ],
+    "A032": [
+      "Q032"
+    ],
+    "A033": [
+      "P01",
+      "P02"
+    ],
+    "A034": [
+      "Q034"
+    ],
+    "A035": [
+      "Q035"
+    ],
+    "A036": [
+      "Q036"
+    ],
+    "A037": [
+      "Q037"
+    ],
+    "A038": [
+      "Q038"
+    ],
+    "A039": [
+      "Q039"
+    ],
+    "A040": [
+      "Q040"
+    ],
+    "A041": [
+      "P03",
+      "Q041"
+    ],
+    "A042": [
+      "Q042"
+    ],
+    "A043": [
+      "Q043"
+    ],
+    "A044": [
+      "Q044"
+    ],
+    "A045": [
+      "Q045"
+    ],
+    "A046": [
+      "Q046"
+    ],
+    "A047": [
+      "Q047"
+    ],
+    "A048": [
+      "Q048"
+    ],
+    "A049": [
+      "Q049"
+    ],
+    "A050": [
+      "Q050"
+    ],
+    "B001": [
+      "Q005"
+    ],
+    "B002": [
+      "Q001"
+    ],
+    "B003": [
+      "Q002"
+    ],
+    "B004": [
+      "P04"
+    ],
+    "B005": [
+      "Q035"
+    ],
+    "B006": [
+      "P03"
+    ],
+    "B007": [
+      "P01",
+      "P02"
+    ],
+    "B008": [
+      "Q037"
+    ],
+    "B009": [
+      "Q051"
+    ],
+    "B010": [
+      "Q012"
+    ],
+    "B011": [
+      "P05"
+    ],
+    "B012": [
+      "Q052"
+    ]
+  },
+  "category_counts": {
+    "primary_error": 5,
+    "defensible_alternative": 24,
+    "criterion_ambiguity": 10,
+    "convention_deviation": 19,
+    "unresolved": 1
+  },
+  "primary_by_case_and_condition": {
+    "F01": {
+      "v03": {
+        "primary_error_groups": 0,
+        "interpretation_changing": 0,
+        "evidence_basis": 0,
+        "coverage_or_scope": 0,
+        "group_ids": [],
+        "run_group_incidences": 0,
+        "affected_runs": []
+      },
+      "v04": {
+        "primary_error_groups": 4,
+        "interpretation_changing": 0,
+        "evidence_basis": 4,
+        "coverage_or_scope": 0,
+        "group_ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04"
+        ],
+        "run_group_incidences": 5,
+        "affected_runs": [
+          "F01_v04_r1",
+          "F01_v04_r2",
+          "F01_v04_r3"
+        ]
+      }
+    },
+    "F02": {
+      "v03": {
+        "primary_error_groups": 0,
+        "interpretation_changing": 0,
+        "evidence_basis": 0,
+        "coverage_or_scope": 0,
+        "group_ids": [],
+        "run_group_incidences": 0,
+        "affected_runs": []
+      },
+      "v04": {
+        "primary_error_groups": 0,
+        "interpretation_changing": 0,
+        "evidence_basis": 0,
+        "coverage_or_scope": 0,
+        "group_ids": [],
+        "run_group_incidences": 0,
+        "affected_runs": []
+      }
+    },
+    "F03": {
+      "v03": {
+        "primary_error_groups": 1,
+        "interpretation_changing": 0,
+        "evidence_basis": 1,
+        "coverage_or_scope": 0,
+        "group_ids": [
+          "P05"
+        ],
+        "run_group_incidences": 2,
+        "affected_runs": [
+          "F03_v03_r1",
+          "F03_v03_r3"
+        ]
+      },
+      "v04": {
+        "primary_error_groups": 0,
+        "interpretation_changing": 0,
+        "evidence_basis": 0,
+        "coverage_or_scope": 0,
+        "group_ids": [],
+        "run_group_incidences": 0,
+        "affected_runs": []
+      }
+    }
+  },
+  "sensitivity": {
+    "base": {
+      "v03_evidence_groups": 1,
+      "v04_evidence_groups": 4
+    },
+    "classify_P03_and_P04_as_convention_instead": {
+      "v03_evidence_groups": 1,
+      "v04_evidence_groups": 2
+    },
+    "add_Q024_R10_action_basis_as_evidence_error": {
+      "v03_evidence_groups": 1,
+      "v04_evidence_groups": 5
+    },
+    "interpretation": "These reasonable effect-boundary alternatives do not yield evidence of fewer evidence-basis groups under 0.4 in this sample. They do not justify a population ranking or accuracy rate."
+  },
+  "limits": [
+    "All judgments remain revisable and share an AI provider context.",
+    "Different schemas create different opportunities to expose or commit errors; this is a whole-workflow comparison.",
+    "No identified interpretation-changing error or material extraction/qualifier omission is not proof that none exists.",
+    "No raw annotation, alignment, agreement score, or tested criterion was repaired or redefined through reconciliation."
+  ]
+}

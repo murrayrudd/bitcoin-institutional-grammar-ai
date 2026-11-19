@@ -1,0 +1,1 @@
+Original execution scripts retained as provenance. They reference the original working layout and prior pilot inputs and are not standalone package entry points. Use tools/ scripts for package reproduction. The content_screen.json receipt preserves additional phrase screening; final choice was purposive and content-informed.

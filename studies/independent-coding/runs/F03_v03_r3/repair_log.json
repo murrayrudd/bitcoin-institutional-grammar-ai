@@ -1,0 +1,475 @@
+[
+  {
+    "change_id": "M01",
+    "phase": "mechanical_checker",
+    "unit_id": "F03-U07",
+    "field": "components.Bdir.evidence",
+    "trigger": "checks.first.json outside_unit flag",
+    "before": [
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 47,
+          "end": 55,
+          "quote": "red text"
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 232,
+          "end": 240,
+          "quote": "red text"
+        }
+      }
+    ],
+    "meaning_changes": false,
+    "classification": "evidence_occurrence_error",
+    "rationale": "Retargets the same surface words to their occurrence in the focal proposition. The selected actor/action/object interpretation is unchanged, but the former evidence occurrence did not establish this predicate role."
+  },
+  {
+    "change_id": "M02",
+    "phase": "mechanical_checker",
+    "unit_id": "F03-U11",
+    "field": "components.Bdir.evidence",
+    "trigger": "checks.first.json outside_unit flag",
+    "before": [
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 36,
+          "end": 40,
+          "quote": "this"
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 161,
+          "end": 165,
+          "quote": "this"
+        }
+      }
+    ],
+    "meaning_changes": false,
+    "classification": "evidence_occurrence_error",
+    "rationale": "Retargets the same surface words to their occurrence in the focal proposition. The selected actor/action/object interpretation is unchanged, but the former evidence occurrence did not establish this predicate role."
+  },
+  {
+    "change_id": "S01",
+    "phase": "single_source_self_review",
+    "target": "F03-U02",
+    "field": "components.Cac",
+    "before": {
+      "symbol": "Cac",
+      "text": "without a GUI based replacement workflow",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 240,
+            "end": 280,
+            "quote": "without a GUI based replacement workflow"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "Cac",
+      "text": "without a GUI based replacement workflow",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 240,
+            "end": 280,
+            "quote": "without a GUI based replacement workflow"
+          }
+        }
+      ],
+      "inference_note": "Without explicitly qualifies the author's tentative desire. Its role as the activating absence condition for the reconstructed defer-accepting action is inferred, rather than an explicitly stated if-condition.",
+      "occurrence_role": "semantic_inference"
+    },
+    "meaning_changes": false,
+    "classification": "epistemic_role_label",
+    "rationale": "The source contains the qualifier, but the activation role depends on the pragmatic action reconstruction.",
+    "evidence": [
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 212,
+          "end": 329,
+          "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S02",
+    "phase": "single_source_self_review",
+    "target": "F03-U06",
+    "field": "components.Bdir",
+    "before": {
+      "symbol": "Bdir",
+      "text": "\"replaceable\"",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 82,
+            "end": 95,
+            "quote": "\"replaceable\""
+          }
+        }
+      ],
+      "inference_note": "The literal subject of may have becomes the target of the reconstructed revision, so its role is inferred.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "\"replaceable\" there",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 82,
+            "end": 101,
+            "quote": "\"replaceable\" there"
+          }
+        }
+      ],
+      "inference_note": "The literal subject plus its locative there becomes the target of the reconstructed revision, so its role is inferred. There preserves the particular interface occurrence, referring back to the confirmation window rather than every use of this word.",
+      "occurrence_role": "semantic_inference"
+    },
+    "meaning_changes": true,
+    "classification": "material_qualification",
+    "rationale": "Retains the local display location in the reconstructed target instead of representing the word alone. The source span had already preserved the qualifier, but the component target was underspecified.",
+    "evidence": [
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 0,
+          "end": 76,
+          "quote": "I don't think the confirmation window deserves red text and the bang for it."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 77,
+          "end": 169,
+          "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S03",
+    "phase": "single_source_self_review",
+    "target": "F03-U11",
+    "field": "components.Bdir",
+    "before": {
+      "symbol": "Bdir",
+      "text": "this",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 165,
+            "quote": "this"
+          }
+        }
+      ],
+      "inference_note": "This is the literal passive grammatical subject, interpreted as the target of review. Its Bdir role is semantically reconstructed, even though the word is explicit.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "this",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 165,
+            "quote": "this"
+          }
+        }
+      ],
+      "inference_note": "In the literal passive be reviewed, this is explicitly the patient or target of the stated action, so its IG Bdir role is supplied even though its grammatical position is the subject. Resolving this to the current contribution is contextual; no new action is reconstructed.",
+      "occurrence_role": "local"
+    },
+    "meaning_changes": false,
+    "classification": "epistemic_role_label",
+    "rationale": "A literal passive directly supplies the review target. This differs from transforming the subject of an evaluative claim into the object of a newly invented action.",
+    "evidence": [
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 161,
+          "end": 190,
+          "quote": "this can be reviewed already."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S04",
+    "phase": "single_source_self_review",
+    "target": "F03-U16 -> F03-U14",
+    "field": "relation",
+    "before": {
+      "from_unit_id": "F03-U16",
+      "to_unit_id": "F03-U14",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "Explains complexity of the additional-output approach. This is a challenge to implementation simplicity, not a prohibition or sanction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "F03-U16",
+      "to_unit_id": "F03-U14",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "Specifies technical requirements of the reported additional-output approach. It does not contradict that the author tried it, nor expressly reject the proposal; complexity is not by itself institutional dispute.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "meaning_changes": true,
+    "classification": "relation_overstatement",
+    "rationale": "The first-complete challenges label implied opposition to a proposition that was only a report of an attempted method. The source supports clarification of technical requirements.",
+    "evidence": [
+      {
+        "source_id": "pr7819:comments:3",
+        "span": {
+          "start": 316,
+          "end": 429,
+          "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:4",
+        "span": {
+          "start": 4,
+          "end": 179,
+          "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S05",
+    "phase": "single_source_self_review",
+    "target": "episode_summary.mechanisms[2]",
+    "field": "evidence",
+    "before": [
+      {
+        "source_id": "pr7819:comments:8",
+        "span": {
+          "start": 0,
+          "end": 43,
+          "quote": "Closing in favor of #8182 (included there)."
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 179,
+          "end": 219,
+          "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 223,
+          "end": 240,
+          "quote": "\"merged_at\": null"
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 296,
+          "end": 311,
+          "quote": "\"merged\": false"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 61,
+          "end": 75,
+          "quote": "\"number\": 8182"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 536,
+          "end": 571,
+          "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 149,
+          "end": 164,
+          "quote": "\"merged\": false"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 575,
+          "end": 592,
+          "quote": "\"merged_at\": null"
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr7819:comments:8",
+        "span": {
+          "start": 0,
+          "end": 43,
+          "quote": "Closing in favor of #8182 (included there)."
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 179,
+          "end": 219,
+          "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 223,
+          "end": 240,
+          "quote": "\"merged_at\": null"
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 296,
+          "end": 311,
+          "quote": "\"merged\": false"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 61,
+          "end": 75,
+          "quote": "\"number\": 8182"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 536,
+          "end": 571,
+          "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 149,
+          "end": 164,
+          "quote": "\"merged\": false"
+        }
+      },
+      {
+        "source_id": "pr8182:supplement_metadata",
+        "span": {
+          "start": 575,
+          "end": 592,
+          "quote": "\"merged_at\": null"
+        }
+      },
+      {
+        "source_id": "pr7819:comments:7",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "Needs rebase."
+        }
+      }
+    ],
+    "meaning_changes": false,
+    "classification": "claim_evidence_coverage",
+    "rationale": "The claim explicitly mentions the earlier rebase request when limiting causal interpretation; that request must be included in the evidence array.",
+    "evidence": [
+      {
+        "source_id": "pr7819:comments:7",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "Needs rebase."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:8",
+        "span": {
+          "start": 0,
+          "end": 43,
+          "quote": "Closing in favor of #8182 (included there)."
+        }
+      }
+    ]
+  }
+]

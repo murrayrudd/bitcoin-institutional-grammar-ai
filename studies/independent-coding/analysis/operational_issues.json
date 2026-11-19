@@ -1,0 +1,25 @@
+{
+  "issues": [
+    {
+      "id": "OP01",
+      "recorded_at_utc": "2026-11-07T18:51:22.901446+00:00",
+      "stage": "first coding batch before external review",
+      "description": "Packet assembler supplies pinned source identities under revision and git_blob_sha. The frozen v0.4 checker recognizes revision_id or blob_sha for pinned_revision documentary claims. Source identities and dates remain available to coders but this check can fail mechanically.",
+      "origin": "Coordinator packet/checker integration mismatch, not a new substantive criterion.",
+      "response": "Do not modify frozen packets, checker, or outputs during coding. Retain original failure. After freeze, a separately labeled metadata-alias diagnostic may test whether the failure is solely field naming. Never report that diagnostic as an original workflow pass.",
+      "source": "specifications/v04/tools/check_annotation.py line129; tools/assemble.py pinned source metadata",
+      "criterion_change": false,
+      "post_freeze_diagnostic": {
+        "checked_at_utc": "2026-11-07T19:35:38.428134+00:00",
+        "original_revision_errors": 9,
+        "alias_only_resolved": 8,
+        "remaining_alias_only_error": "F01_v04_r2 U25 cites pinned commit metadata with exact SHA in serialized source text, but no top-level revision field.",
+        "extended_diagnostic": "Promoting the existing serialized commit /sha to revision_id, after checking object_id and html_url, removes the final mechanical error. No source text or coding fields changed.",
+        "original_final_passes": 15,
+        "alias_only_diagnostic_passes": 17,
+        "identity_diagnostic_passes": 18,
+        "original_annotation_count": 18
+      }
+    }
+  ]
+}

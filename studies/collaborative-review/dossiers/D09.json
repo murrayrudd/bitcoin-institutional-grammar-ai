@@ -1,0 +1,73 @@
+{
+  "topic_id": "D09",
+  "title": "Ambiguous bot referent",
+  "question": "Resolve only what the retained bot text establishes about it. Keep the software object unresolved if the evidence does not distinguish the review, comment, or displayed listing. No execution is observed.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q022",
+      "title": "R10 U06 resolves it categorically as the incorrectly listed review in its summary and qualifier.",
+      "category": "unresolved",
+      "coordinator_assessment": "The review/listing antecedent is plausible, but the exact ignored software object is not uniquely supplied. Keep the inference and the comment/listing alternative; do not count a demonstrated semantic error or observed bot execution.",
+      "resolution": "Retain the likely review interpretation as an inference and preserve the comment/listing alternative. Keep the conditional next-update effect and lack of observed use. The packet cannot decide the software implementation referent.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 641,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 646,
+            "end": 688,
+            "quote": "the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, proposition identity, qualifications and component role basis: preserve unresolved references and distinguish grammatical role from resolved object identity."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U06",
+              "source_id": "pr26586:comments:0",
+              "span": {
+                "start": 646,
+                "end": 688,
+                "quote": "the bot will ignore it on the next update."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The bot is said to ignore the incorrectly listed review on the next update after the requested 👎 reaction.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The pronoun refers to the mislisted review; the consequence is conditional on the requested reaction."
+              ],
+              "uncertainty_reason": ""
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:0",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\n| Type | Reviewers |\n| ---- | --------- |\n| ACK | [Sjors](https://github.com/bitcoin/bitcoin/pull/26586#issuecomment-1433037012) |\n| Concept NACK | [luke-jr](https://github.com/bitcoin/bitcoin/pull/26586#issuecomment-1329886886) |\n\nIf your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update.\n<!--174a7506f384e20aa4161008e828411d-->\n### Conflicts\nNo conflicts as of last run.\n"
+    }
+  ]
+}

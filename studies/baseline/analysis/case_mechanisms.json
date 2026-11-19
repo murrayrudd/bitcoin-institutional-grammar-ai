@@ -1,0 +1,1046 @@
+[
+  {
+    "episode_id": "E01",
+    "pr_number": 8771,
+    "label": "Duplicate contribution guidance",
+    "mechanism": "procedural_revision",
+    "initiation": "Proposed guidance addresses duplicated discussion and assistance with Git workflows.",
+    "outcome": "The merged text retains the same-change qualifier and the optional assistance route.",
+    "alternative_explanation": "A general contribution barrier is an overreading; the help option may reduce barriers.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "collective_choice",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Guidance is amended; the embedded instruction governs contribution practice.",
+    "claim_ids": [
+      "E01-C1",
+      "E01-C2",
+      "E01-C3",
+      "E01-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 4193,
+          "end": 4264,
+          "quote": "Please refrain from creating several pull requests for the same change."
+        }
+      },
+      {
+        "source_id": "E01:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      },
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 3997,
+          "end": 4191,
+          "quote": "If you have problems with squashing (or other workflows with `git`), you can\nalternatively enable \"Allow edits from maintainers\" in the right GitHub\nsidebar and ask for help in the pull request."
+        }
+      },
+      {
+        "source_id": "E01:review_comments:2",
+        "span": {
+          "start": 0,
+          "end": 92,
+          "quote": "Well, not in general, but we want to encourage it for people that don't know how to use git."
+        }
+      },
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 4244,
+          "end": 4264,
+          "quote": "for the same change."
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E02",
+    "pr_number": 11276,
+    "label": "Discretionary closure guidance",
+    "mechanism": "procedural_revision",
+    "initiation": "Review workload motivates a proposed change to the contribution guide.",
+    "outcome": "Two specific provisions enter the guide; an additional no-review suggestion does not appear in the final text.",
+    "alternative_explanation": "Workload rationale is asserted, and no actual closure under the new permission is observed here.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "collective_choice",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Revision of recurring review arrangements, with operational conduct as the embedded target.",
+    "claim_ids": [
+      "E02-C1",
+      "E02-C2",
+      "E02-C3",
+      "E02-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7352,
+          "end": 7526,
+          "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      },
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7109,
+          "end": 7185,
+          "quote": "Pull requests that refactor the code should not be made by new contributors."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      },
+      {
+        "source_id": "E02:review_comments:2",
+        "span": {
+          "start": 18,
+          "end": 110,
+          "quote": "Any refactoring pull request may be closed when it doesn't attract anyone willing to review."
+        }
+      },
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7352,
+          "end": 7481,
+          "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers"
+        }
+      },
+      {
+        "source_id": "E02:body",
+        "span": {
+          "start": 276,
+          "end": 329,
+          "quote": "This PR would prepare for possible direct PR closing."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E03",
+    "pr_number": 17940,
+    "label": "Unmerged rebasing proposal",
+    "mechanism": "procedural_revision",
+    "initiation": "A contributor proposes conditions for rebasing and preserving reviewer effort.",
+    "outcome": "Support, unresolved nits and a bot-scope objection coexist with closure without merge.",
+    "alternative_explanation": "Inactivity, review costs or other unseen factors could explain nonintegration; a comprehensive rejection is not established.",
+    "mechanism_status": "consistent_with",
+    "observed_action_level": "collective_choice",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Proposed revision of recurring guidance; the proposal can be analyzed without calling it adopted.",
+    "claim_ids": [
+      "E03-C1",
+      "E03-C2",
+      "E03-C3",
+      "E03-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E03:doc_developer_head",
+        "span": {
+          "start": 31650,
+          "end": 31750,
+          "quote": "When the master development branch develops conflicts with your pull request,\nyou need to rebase it."
+        }
+      },
+      {
+        "source_id": "E03:doc_developer_head",
+        "span": {
+          "start": 32082,
+          "end": 32325,
+          "quote": "Note that when there are no conflicts at all, however, rebasing should be\navoided, as it can be disruptive to reviewers. (The `git rebase` command may\nstill be useful for fixups or reorganization *within* your branch; that's\nusually ok to do.)"
+        }
+      },
+      {
+        "source_id": "E03:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E03:comments:0",
+        "span": {
+          "start": 14,
+          "end": 105,
+          "quote": "Maybe it's worth pointing it out that drahtbot will give a warning if a rebase is required."
+        }
+      },
+      {
+        "source_id": "E03:comments:3",
+        "span": {
+          "start": 16,
+          "end": 123,
+          "quote": "I don't agree with your suggestion because @DrahtBot is not part of the project and integrates with GitHub."
+        }
+      },
+      {
+        "source_id": "E03:comments:8",
+        "span": {
+          "start": 123,
+          "end": 169,
+          "quote": "author doesn't want to address nits so ACKing."
+        }
+      },
+      {
+        "source_id": "E03:comments:7",
+        "span": {
+          "start": 95,
+          "end": 177,
+          "quote": "it still would be nice if you replied to the feedback to say why it doesn't apply."
+        }
+      },
+      {
+        "source_id": "E03:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E03:comments:8",
+        "span": {
+          "start": 170,
+          "end": 226,
+          "quote": "Willing to review a follow up PR that picks up the nits."
+        }
+      },
+      {
+        "source_id": "E03:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E04",
+    "pr_number": 26399,
+    "label": "Attributed procedural closure",
+    "mechanism": "conditional_integration",
+    "initiation": "The guide states response expectations and a conditional closure permission.",
+    "outcome": "maflcko names alleged procedural failures and explicitly connects closure to the guide; the author contests technical criticism.",
+    "alternative_explanation": "Technical disagreement remains a concurrent explanation. The allegations are not independently adjudicated.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Application of existing contribution arrangements; no new constitutional power is observed.",
+    "claim_ids": [
+      "E04-C1",
+      "E04-C2",
+      "E04-C3",
+      "E04-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E04:doc_before",
+        "span": {
+          "start": 8953,
+          "end": 9257,
+          "quote": "You are expected to reply to any review comments before your pull request is\nmerged. You may update the code or reject the feedback if you do not agree with\nit, but you should express so in a reply. If there is outstanding feedback and\nyou are not actively working on it, your pull request may be closed."
+        }
+      },
+      {
+        "source_id": "E04:comments:5",
+        "span": {
+          "start": 85,
+          "end": 309,
+          "quote": "You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines."
+        }
+      },
+      {
+        "source_id": "E04:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E04:doc_before",
+        "span": {
+          "start": 9225,
+          "end": 9257,
+          "quote": "your pull request may be closed."
+        }
+      },
+      {
+        "source_id": "E04:comments:4",
+        "span": {
+          "start": 294,
+          "end": 420,
+          "quote": "The first sentence in your comment only makes sense in a vacuum. The standard is a thing. I agree with the second part. Let's."
+        }
+      },
+      {
+        "source_id": "E04:comments:4",
+        "span": {
+          "start": 118,
+          "end": 158,
+          "quote": "It doesn't \"seem[sic]\" to fix the issue?"
+        }
+      },
+      {
+        "source_id": "E04:comments:5",
+        "span": {
+          "start": 231,
+          "end": 309,
+          "quote": "I closed this for now, because it can't be merged according to the guidelines."
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E05",
+    "pr_number": 17685,
+    "label": "Hash reminder and response",
+    "mechanism": "review_coordination",
+    "initiation": "A reviewer posts a bare ACK.",
+    "outcome": "A request to identify the reviewed version receives acknowledgment and a separate hash-specific ACK.",
+    "alternative_explanation": "The author may be accommodating a helpful request; universal recognition or enforcement is not measured.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Review attribution under an existing documented convention.",
+    "claim_ids": [
+      "E05-C1",
+      "E05-C2",
+      "E05-C3",
+      "E05-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E05:doc_before",
+        "span": {
+          "start": 11762,
+          "end": 11926,
+          "quote": "starting with `ACK BRANCH_COMMIT`, where `BRANCH_COMMIT` is the top of the\ntopic branch. The review is followed by a description of how the reviewer did\nthe review."
+        }
+      },
+      {
+        "source_id": "E05:comments:1",
+        "span": {
+          "start": 30,
+          "end": 135,
+          "quote": "Don't forget to include the commit hash after your ACK to specify which version of the PR you are ACK:ing"
+        }
+      },
+      {
+        "source_id": "E05:comments:2",
+        "span": {
+          "start": 0,
+          "end": 48,
+          "quote": "@practicalswift got it. Thanks for the patience."
+        }
+      },
+      {
+        "source_id": "E05:comments:2",
+        "span": {
+          "start": 53,
+          "end": 97,
+          "quote": "ACK 6338c0203416a5f86e9422b6cd479da8af277f2f"
+        }
+      },
+      {
+        "source_id": "E05:body",
+        "span": {
+          "start": 404,
+          "end": 455,
+          "quote": "requires an initialized `secp256k1_context_verify`."
+        }
+      },
+      {
+        "source_id": "E05:body",
+        "span": {
+          "start": 459,
+          "end": 533,
+          "quote": "The fuzzing harness did not fulfil that pre-condition prior to this commit"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E06",
+    "pr_number": 31904,
+    "label": "Version specific review attribution",
+    "mechanism": "review_coordination",
+    "initiation": "A bare ACK prompts a distinction between conceptual approval and review of a particular revision.",
+    "outcome": "A hash-specific response appears, but the final table labels that review stale and the merge message credits another top-commit ACK.",
+    "alternative_explanation": "Earlier review can influence the patch even without final top-commit credit.",
+    "mechanism_status": "consistent_with",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Constitutive classification of a review event is not constitutional authority.",
+    "claim_ids": [
+      "E06-C1",
+      "E06-C2",
+      "E06-C3",
+      "E06-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E06:comments:5",
+        "span": {
+          "start": 63,
+          "end": 171,
+          "quote": "If you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack."
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 517,
+          "end": 533,
+          "quote": "| ACK | [laanwj]"
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      },
+      {
+        "source_id": "E06:merge_message",
+        "span": {
+          "start": 1940,
+          "end": 1960,
+          "quote": "ACKs for top commit:"
+        }
+      },
+      {
+        "source_id": "E06:merge_message",
+        "span": {
+          "start": 1963,
+          "end": 1970,
+          "quote": "laanwj:"
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      },
+      {
+        "source_id": "E06:comments:5",
+        "span": {
+          "start": 0,
+          "end": 61,
+          "quote": "Thanks for the review and the C++17 suggestion @purpleKarrot."
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E07",
+    "pr_number": 36127,
+    "label": "Mutable review evidence",
+    "mechanism": "review_coordination",
+    "initiation": "A participant quotes a table that appears to misclassify a review.",
+    "outcome": "A hash explanation and thanks appear; final stored review and merge credit include the reviewer. Exact intervening edits are unavailable.",
+    "alternative_explanation": "The sequence may reflect an edit, a bot refresh or both; creation timestamps cannot decide.",
+    "mechanism_status": "consistent_with",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Review recognition is observable at the final state, while causal chronology is unresolved.",
+    "claim_ids": [
+      "E07-C1",
+      "E07-C2",
+      "E07-C3",
+      "E07-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E07:comments:3",
+        "span": {
+          "start": 18,
+          "end": 81,
+          "quote": "I think the @DrahtBot hasn't properly counted @vicjuma's ACK..."
+        }
+      },
+      {
+        "source_id": "E07:comments:3",
+        "span": {
+          "start": 248,
+          "end": 275,
+          "quote": "| Concept ACK   | [vicjuma]"
+        }
+      },
+      {
+        "source_id": "E07:reviews:3",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK 9f0543d69a1357371017c8289d9addc457b6f132"
+        }
+      },
+      {
+        "source_id": "E07:comments:4",
+        "span": {
+          "start": 196,
+          "end": 262,
+          "quote": "(Without a hash, no one can know what the comment is referring to)"
+        }
+      },
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1588,
+          "end": 1608,
+          "quote": "ACKs for top commit:"
+        }
+      },
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1679,
+          "end": 1687,
+          "quote": "vicjuma:"
+        }
+      },
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1611,
+          "end": 1627,
+          "quote": "pablomartin4btc:"
+        }
+      },
+      {
+        "source_id": "E07:comments:4",
+        "span": {
+          "start": 196,
+          "end": 262,
+          "quote": "(Without a hash, no one can know what the comment is referring to)"
+        }
+      },
+      {
+        "source_id": "E07:reviews:3",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK 9f0543d69a1357371017c8289d9addc457b6f132"
+        }
+      },
+      {
+        "source_id": "E07:comments:0",
+        "span": {
+          "start": 701,
+          "end": 786,
+          "quote": "[vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594)"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E08",
+    "pr_number": 11743,
+    "label": "Contested review sufficiency",
+    "mechanism": "reason_giving",
+    "initiation": "A merge prompts a challenge to feedback handling and the number of ACKs.",
+    "outcome": "The author gives a scoped sufficiency rationale; later discussion proposes a follow-up explanation.",
+    "alternative_explanation": "An individual justification may coexist with broader flexible practice, not a fixed shared threshold.",
+    "mechanism_status": "consistent_with",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Explanation of this application; collective-choice clarification is an alternative, not an established new rule.",
+    "claim_ids": [
+      "E08-C1",
+      "E08-C2",
+      "E08-C3",
+      "E08-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E08:comments:4",
+        "span": {
+          "start": 742,
+          "end": 862,
+          "quote": "And for rather simple pulls, such as this one, I try to merge quickly. Two utACK or one tested ACK should be sufficient."
+        }
+      },
+      {
+        "source_id": "E08:outcome",
+        "span": {
+          "start": 86,
+          "end": 126,
+          "quote": "\"merged_at\": \"2017-11-22T16:34:02+00:00\""
+        }
+      },
+      {
+        "source_id": "E08:comments:3",
+        "span": {
+          "start": 97,
+          "end": 190,
+          "quote": "Beside it only had one ACK. Test code should follow the same review rules as the other right?"
+        }
+      },
+      {
+        "source_id": "E08:comments:8",
+        "span": {
+          "start": 0,
+          "end": 92,
+          "quote": "Oops, didn't realize this was already merged. Guess I will add the comment myself in #11687."
+        }
+      },
+      {
+        "source_id": "E08:comments:9",
+        "span": {
+          "start": 11,
+          "end": 74,
+          "quote": "Jup, thanks for doing that. I should have done it in this pull."
+        }
+      },
+      {
+        "source_id": "E08:comments:4",
+        "span": {
+          "start": 813,
+          "end": 862,
+          "quote": "Two utACK or one tested ACK should be sufficient."
+        }
+      },
+      {
+        "source_id": "E08:comments:3",
+        "span": {
+          "start": 125,
+          "end": 190,
+          "quote": "Test code should follow the same review rules as the other right?"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E09",
+    "pr_number": 7005,
+    "label": "Roles without merged codification",
+    "mechanism": "authority_allocation",
+    "initiation": "A maintainer document is proposed to direct contributions.",
+    "outcome": "A mining role is asserted and acknowledged, but the document closes unmerged for stated workflow mismatch and inactivity.",
+    "alternative_explanation": "Role recognition can exist independently of this particular document; the discussion does not map all powers.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Role description and recognition; collective-choice codification is a bounded alternative for the document proposal.",
+    "claim_ids": [
+      "E09-C1",
+      "E09-C2",
+      "E09-C3",
+      "E09-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E09:body",
+        "span": {
+          "start": 0,
+          "end": 87,
+          "quote": "This is a guide to steering contributions to specific maintained areas of the codebase."
+        }
+      },
+      {
+        "source_id": "E09:doc_head",
+        "span": {
+          "start": 3,
+          "end": 61,
+          "quote": "List of maintainers and how to submit Bitcoin Core changes"
+        }
+      },
+      {
+        "source_id": "E09:comments:4",
+        "span": {
+          "start": 27,
+          "end": 54,
+          "quote": "I maintain the Mining area."
+        }
+      },
+      {
+        "source_id": "E09:comments:6",
+        "span": {
+          "start": 243,
+          "end": 291,
+          "quote": "ACK on mentioning @luke-jr as mining maintainer."
+        }
+      },
+      {
+        "source_id": "E09:comments:9",
+        "span": {
+          "start": 0,
+          "end": 38,
+          "quote": "I like the idea of listing maintainers"
+        }
+      },
+      {
+        "source_id": "E09:comments:9",
+        "span": {
+          "start": 168,
+          "end": 252,
+          "quote": "Closing this due to inactivity. Please reopen if you're going to work on this again."
+        }
+      },
+      {
+        "source_id": "E09:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E09:comments:6",
+        "span": {
+          "start": 243,
+          "end": 291,
+          "quote": "ACK on mentioning @luke-jr as mining maintainer."
+        }
+      },
+      {
+        "source_id": "E09:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E10",
+    "pr_number": 25839,
+    "label": "Limits of descriptive role tables",
+    "mechanism": "reason_giving",
+    "initiation": "A proposal attempts to document the maintainer role and focus areas.",
+    "outcome": "Participants dispute the value and currency of the table, and the author calls the areas unenforced; the proposal is closed.",
+    "alternative_explanation": "Descriptive clarification may affect future expectations, but no binding jurisdiction or adoption is established.",
+    "mechanism_status": "consistent_with",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Operational description with a collective-choice codification alternative; constitutional allocation is not demonstrated.",
+    "claim_ids": [
+      "E10-C1",
+      "E10-C2",
+      "E10-C3",
+      "E10-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E10:body",
+        "span": {
+          "start": 130,
+          "end": 186,
+          "quote": "purely descriptive of the current role of maintainership"
+        }
+      },
+      {
+        "source_id": "E10:review_comments:4",
+        "span": {
+          "start": 121,
+          "end": 210,
+          "quote": "The focus area is something that is entrusted to the maintainer to decide for themselves."
+        }
+      },
+      {
+        "source_id": "E10:review_comments:5",
+        "span": {
+          "start": 599,
+          "end": 648,
+          "quote": "these are not enforced rules, just documentation."
+        }
+      },
+      {
+        "source_id": "E10:comments:2",
+        "span": {
+          "start": 0,
+          "end": 88,
+          "quote": "doesn't seem like there is desire to improve documentation here, closing / up for grabs."
+        }
+      },
+      {
+        "source_id": "E10:comments:3",
+        "span": {
+          "start": 0,
+          "end": 32,
+          "quote": "Please mark up for grabs, thanks"
+        }
+      },
+      {
+        "source_id": "E10:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E10:review_comments:5",
+        "span": {
+          "start": 599,
+          "end": 648,
+          "quote": "these are not enforced rules, just documentation."
+        }
+      },
+      {
+        "source_id": "E10:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E11",
+    "pr_number": 23798,
+    "label": "Endorsement and signer registration",
+    "mechanism": "authority_allocation",
+    "initiation": "A volunteer receives wallet-role endorsements through linked meeting and PR discussion.",
+    "outcome": "The key is added to the merged trusted list; the recorded process preserves opportunities for comment.",
+    "alternative_explanation": "The technical marker can accompany recognition without itself observing the full appointment procedure or access grant.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Filling an existing role is the conservative reading. Collective-choice selection is an alternative; no changed rule-making powers are established.",
+    "claim_ids": [
+      "E11-C1",
+      "E11-C2",
+      "E11-C3",
+      "E11-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E11:comments:2",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK on having achow101 as wallet maintainer."
+        }
+      },
+      {
+        "source_id": "E11:comments:4",
+        "span": {
+          "start": 0,
+          "end": 39,
+          "quote": "ACK on achow101 being wallet maintainer"
+        }
+      },
+      {
+        "source_id": "E11:reviews:1",
+        "span": {
+          "start": 107,
+          "end": 185,
+          "quote": "achow101 is a very logical replacement in the role, now I no longer have time."
+        }
+      },
+      {
+        "source_id": "E11:merge_diff",
+        "span": {
+          "start": 183,
+          "end": 224,
+          "quote": "+152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:doc_keys_merged",
+        "span": {
+          "start": 287,
+          "end": 327,
+          "quote": "152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:merge_message",
+        "span": {
+          "start": 0,
+          "end": 27,
+          "quote": "Merge bitcoin/bitcoin#23798"
+        }
+      },
+      {
+        "source_id": "E11:irc_decision",
+        "span": {
+          "start": 0,
+          "end": 85,
+          "quote": "it's not an actual decision in the meeting just an oppertunity to bring up objections"
+        }
+      },
+      {
+        "source_id": "E11:irc_wait",
+        "span": {
+          "start": 0,
+          "end": 24,
+          "quote": "open for a week at least"
+        }
+      },
+      {
+        "source_id": "E11:outcome",
+        "span": {
+          "start": 0,
+          "end": 183,
+          "quote": "{\"closed_at\": \"2021-12-20T06:58:55+00:00\", \"created_at\": \"2021-12-16T19:53:51+00:00\", \"merged_at\": \"2021-12-20T06:58:55+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"fanquake\"}"
+        }
+      },
+      {
+        "source_id": "E11:doc_keys_merged",
+        "span": {
+          "start": 287,
+          "end": 327,
+          "quote": "152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "For maintaining the wallet and psbt things"
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": "E12",
+    "pr_number": 27054,
+    "label": "Signer list removal and verification",
+    "mechanism": "authority_allocation",
+    "initiation": "The signer proposes his own removal from the verification trust list.",
+    "outcome": "Reviewers discuss technical consequences; the merged list omits the key. The controlled wrapper test confirms a membership gate.",
+    "alternative_explanation": "A verification membership change does not describe every institutional privilege or establish involuntary removal.",
+    "mechanism_status": "supported_sequence",
+    "observed_action_level": "operational",
+    "embedded_statement_target_level": "operational",
+    "level_rationale": "Routine role transition and verification maintenance; a constitutional interpretation needs evidence of changed collective-choice powers.",
+    "claim_ids": [
+      "E12-C1",
+      "E12-C2",
+      "E12-C3",
+      "E12-C4"
+    ],
+    "evidence": [
+      {
+        "source_id": "E12:merge_diff",
+        "span": {
+          "start": 7555,
+          "end": 7596,
+          "quote": "-71A3B16735405025D447E8F274810B012346C9A6"
+        }
+      },
+      {
+        "source_id": "E12:merge_message",
+        "span": {
+          "start": 29,
+          "end": 60,
+          "quote": "Remove laanwj from trusted-keys"
+        }
+      },
+      {
+        "source_id": "E12:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "allow-revsig-commits list generated using:"
+        }
+      },
+      {
+        "source_id": "E12:comments:2",
+        "span": {
+          "start": 0,
+          "end": 86,
+          "quote": "I don't think adding your merged commits to allow-revsig-commits actually allows them."
+        }
+      },
+      {
+        "source_id": "E12:comments:5",
+        "span": {
+          "start": 283,
+          "end": 402,
+          "quote": "But trying with `--clean-merge 0` makes sense. And then indeed it seems to ignore the hashes in `allow-revsig-commits`."
+        }
+      },
+      {
+        "source_id": "E12:comments:7",
+        "span": {
+          "start": 84,
+          "end": 171,
+          "quote": "any bug fixes or behaviour changes of the script are better handled in a separate pull."
+        }
+      },
+      {
+        "source_id": "E12:doc_verify_gpg",
+        "span": {
+          "start": 1813,
+          "end": 1857,
+          "quote": "done < ./contrib/verify-commits/trusted-keys"
+        }
+      },
+      {
+        "source_id": "E12:doc_verify_gpg",
+        "span": {
+          "start": 2174,
+          "end": 2202,
+          "quote": "if ! $VALID; then\n\texit 1\nfi"
+        }
+      },
+      {
+        "source_id": "E12:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "allow-revsig-commits list generated using:"
+        }
+      },
+      {
+        "source_id": "E12:merge_message",
+        "span": {
+          "start": 29,
+          "end": 60,
+          "quote": "Remove laanwj from trusted-keys"
+        }
+      }
+    ]
+  }
+]

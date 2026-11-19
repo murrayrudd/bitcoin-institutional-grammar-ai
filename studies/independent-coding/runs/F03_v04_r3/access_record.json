@@ -1,0 +1,155 @@
+{
+  "run_id": "F03_v04_r3",
+  "recorded_at_utc": "2026-11-07T19:33:34.040339+00:00",
+  "research_and_write_root": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3",
+  "configuration": {
+    "mode": "Inherited primary configuration; no override requested or applied.",
+    "environment_self_description": "Codex, an agent based on GPT-6. This is an inherited instruction description, not an exact provider model identifier.",
+    "model_id": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling": null,
+    "reasoning_effort": null,
+    "token_use": null,
+    "cost": null,
+    "note": "Exact provider snapshot, seed, sampling, token use, and cost were not exposed. None is inferred from protocol, files, or model menu labels."
+  },
+  "runtime": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "jsonschema_version": "4.26.0",
+    "ordinary_libraries_used": [
+      "json",
+      "hashlib",
+      "copy",
+      "pathlib",
+      "datetime",
+      "collections",
+      "sys",
+      "platform",
+      "importlib.metadata",
+      "jsonschema"
+    ],
+    "ordinary_runtime_access": "Python executable, standard library, jsonschema and its normal dependencies; no runtime documents or research sources outside the assigned directory were consulted."
+  },
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/INSTRUCTIONS.txt",
+      "role": "frozen_input",
+      "sha256": "3aa97659ee9fd01a0dcc900d0ef2ed8497b5fa15dd785cbe46808e6c13f32232"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/protocol/codebook.txt",
+      "role": "frozen_input",
+      "sha256": "6c7679852ebaa621c7dc6861c5a2400a5f0fbb9f8f987771b565e339e8650e7b"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/protocol/annotation_schema.json",
+      "role": "frozen_input",
+      "sha256": "71f223a9bfb78960d5c10f3566d9f005a5bcbe3a38be09c77d70608ea75c2523"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/packet.json",
+      "role": "frozen_input",
+      "sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/tools/check_annotation.py",
+      "role": "frozen_input",
+      "sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/build_annotation.py",
+      "role": "own_run_output",
+      "sha256": "21b0d62f5fcc291e643d6b53eb950a91979012ee51066c0cd93323cc896427a1"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.json",
+      "role": "own_run_output",
+      "sha256": "407f733c573b0358e78847bf4beac5b0042ec1490eb2a81bf31056fb58d2ec32"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.first_complete.json",
+      "role": "own_run_output",
+      "sha256": "5043cb90e5983925c3644add20427eb9aff030855739509dbde0db35dc61253d"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/checks.first.json",
+      "role": "own_run_output",
+      "sha256": "0fcbe676c9e0a53aef0bf0fed9f4710658536e6df294fef607c0746aad24176c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/self_review.py",
+      "role": "own_run_output",
+      "sha256": "691198d6142abc7317f096a4f55af775a79ebc7479bffbf03535960e6135b924"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.final.json",
+      "role": "own_run_output",
+      "sha256": "407f733c573b0358e78847bf4beac5b0042ec1490eb2a81bf31056fb58d2ec32"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/checks.json",
+      "role": "own_run_output",
+      "sha256": "08305023d6e6f4449cf9fcfb20ebc5f5cba19c85b115c518ba3f10d03e5950fa"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/repair_log.json",
+      "role": "own_run_output",
+      "sha256": "d7bbc1b1c86f040d5ebcda39b930e5b55914c2b18161ebb3af5b979bc67686bd"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/finalize_records.py",
+      "role": "own_run_output",
+      "sha256": "7e58fac43201d1d745a8562be1dc65d8fb1b26b5f678ac8a9b4eb68fe579e14a"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/freeze.first_complete.json",
+      "role": "own_run_output",
+      "sha256": "9c013677602ac3f2e3902172c92522211748a0d35e2883f92594cc03bd35ff45"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/review_notes.json",
+      "role": "own_run_output",
+      "sha256": "17801f6822bf52befd48c87b01c3582b1470297aea361ef3058171386b40fd2c"
+    }
+  ],
+  "files_written": [
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/build_annotation.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.first_complete.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/freeze.first_complete.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/checks.first.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/self_review.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/annotation.final.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/repair_log.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/checks.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/finalize_records.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/review_notes.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/access_record.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/completion_manifest.json"
+  ],
+  "self_record_access": {
+    "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3/access_record.json",
+    "operation": "Written here and subsequently read to hash the completion manifest; the manifest contains its exact hash."
+  },
+  "access_record_scope": "Explicit task-file reads and writes; not an operating-system trace of Python dependency loading.",
+  "directory_inventory": {
+    "command": "rg --files .",
+    "root": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v04_r3",
+    "effect": "Enumerated filenames only. input_manifest.json and calibration file contents were not accessed."
+  },
+  "calibration_contents_accessed": false,
+  "outside_research_sources_accessed": false,
+  "parent_or_other_run_files_accessed": false,
+  "library_accessed": false,
+  "web_accessed": false,
+  "subagents_spawned": false,
+  "source_packet_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+  "originals_modified": false,
+  "limitations": [
+    "Runtime model identifier and provider details were not exposed.",
+    "The agent inherited task/system context but did not consult any parent research history, other annotation, or external semantic answer."
+  ]
+}

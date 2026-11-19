@@ -1,0 +1,268 @@
+[
+  {
+    "evidence_id": "R10E01",
+    "source_id": "32406-247",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2951144895",
+    "author": "BitcoinMechanic",
+    "source_timestamp": "2025-06-06T23:00:16+00:00",
+    "span": {
+      "start": 460,
+      "end": 543,
+      "quote": "If it gets merged, there will be a massive increase in OP RETURNs larger than that."
+    },
+    "role": "Mechanic’s predicted consequence, not a measured effect.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E02",
+    "source_id": "32406-248",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2952304160",
+    "author": "petertodd",
+    "source_timestamp": "2025-06-07T10:31:58+00:00",
+    "span": {
+      "start": 219,
+      "end": 361,
+      "quote": "Obviously we are _hoping_ for an increase in the number of >80 byte OP_Returns, as projects switch to OP_Return instead of undependable UTXOs."
+    },
+    "role": "Todd directly replies with a different criterion of improvement.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E03",
+    "source_id": "32406-251",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2952877909",
+    "author": "BitcoinMechanic",
+    "source_timestamp": "2025-06-07T18:56:39+00:00",
+    "span": {
+      "start": 1290,
+      "end": 1338,
+      "quote": "Yes, I'm well aware of the rationalization here."
+    },
+    "role": "Mechanic acknowledges receiving the response while rejecting its adequacy.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E04",
+    "source_id": "32406-254",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2953042281",
+    "author": "petertodd",
+    "source_timestamp": "2025-06-07T21:12:11+00:00",
+    "span": {
+      "start": 20,
+      "end": 253,
+      "quote": "There is a big difference between a filter being annoying enough that you choose to use unspendable outputs instead of OP_Return, and a filter annoying enough that you just give up on your project with millions of dollars of funding."
+    },
+    "role": "Todd distinguishes substitution from abandonment; empirical merits not tested here.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E05",
+    "source_id": "32406-255",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2953097803",
+    "author": "BitcoinMechanic",
+    "source_timestamp": "2025-06-07T21:27:49+00:00",
+    "span": {
+      "start": 1471,
+      "end": 1523,
+      "quote": "Thanks for the advice. I'd rather Core change course"
+    },
+    "role": "Mechanic continues to seek change in Core after the exchange.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E06",
+    "source_id": "32359-068",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#pullrequestreview-2801335235",
+    "author": "Turtlecute33",
+    "source_timestamp": "2025-04-28T23:45:31+00:00",
+    "span": {
+      "start": 8,
+      "end": 115,
+      "quote": "Removing the limits on OP_RETURN does not mean that people minting ordinals will stop using Taproot outputs"
+    },
+    "role": "Named objection later challenged as duplicative; not an endorsed technical claim.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E07",
+    "source_id": "32359-080",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2837901444",
+    "author": "Turtlecute33",
+    "source_timestamp": "2025-04-29T08:18:19+00:00",
+    "span": {
+      "start": 119,
+      "end": 145,
+      "quote": "was marked as a duplicate."
+    },
+    "role": "Participant identifies the contested moderation classification.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E08",
+    "source_id": "32359-131",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2839963236",
+    "author": "sonoranai",
+    "source_timestamp": "2025-04-29T19:17:15+00:00",
+    "span": {
+      "start": 552,
+      "end": 666,
+      "quote": "Bandwidth and storage costs aren’t theoretical—they directly influence the network’s accessibility and resilience."
+    },
+    "role": "Original text matches the concern quoted in the moderator’s block notice.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E09",
+    "source_id": "32406-178",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2090119662",
+    "author": "ajtowns",
+    "source_timestamp": "2025-05-15T03:10:55+00:00",
+    "span": {
+      "start": 607,
+      "end": 745,
+      "quote": "Here, the reason to recommend not using it is because it will likely harm the efficiency of block reconstruction, slowing down block relay"
+    },
+    "role": "May 15 argument later explicitly reconsidered by its author.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E10",
+    "source_id": "32406-178",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2090119662",
+    "author": "ajtowns",
+    "source_timestamp": "2025-05-15T03:10:55+00:00",
+    "span": {
+      "start": 1629,
+      "end": 1769,
+      "quote": "Given currently lots of people seem to want it, and maintaining it is very low effort, leaving the option in seems obviously sensible to me."
+    },
+    "role": "Demand and low maintenance cost already appear in May.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E11",
+    "source_id": "32714-011",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2959520626",
+    "author": "ajtowns",
+    "source_timestamp": "2025-06-10T14:39:48+00:00",
+    "span": {
+      "start": 768,
+      "end": 957,
+      "quote": "> My understanding is that there is currently no plan to remove these options in the near future, and I don't think it would be wise to open a PR to remove the options for a few more years."
+    },
+    "role": "June 10 reply preserves a contemporaneous quotation from the proposal.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E12",
+    "source_id": "32714-011",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2959520626",
+    "author": "ajtowns",
+    "source_timestamp": "2025-06-10T14:39:48+00:00",
+    "span": {
+      "start": 2694,
+      "end": 2823,
+      "quote": "Taking that approach would mean not deprecating the option until after a release with the new default has been out for some time."
+    },
+    "role": "June timing argument, without treating the illustrative hashpower thresholds as an adopted rule.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E13",
+    "source_id": "33453-012",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-22T12:42:23+00:00",
+    "span": {
+      "start": 2220,
+      "end": 2282,
+      "quote": "but I don't think the effect there is particularly significant"
+    },
+    "role": "September 22 revision in the weight attached to the earlier relay concern.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E14",
+    "source_id": "33453-012",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-22T12:42:23+00:00",
+    "span": {
+      "start": 1183,
+      "end": 1372,
+      "quote": "if the new default policy causes unforseen problems, then reducing the datacarriersize may allow you to avoid/mitigate those problems without needing to deploy a new release of the software"
+    },
+    "role": "Contingency rationale stated before disposition.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E15",
+    "source_id": "33453-025",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319944425",
+    "author": "Kruwed",
+    "source_timestamp": "2025-09-22T16:08:07+00:00",
+    "span": {
+      "start": 73,
+      "end": 169,
+      "quote": "This statement is based on public postings from many Bitcoin Core users and not a formal survey."
+    },
+    "role": "September 22 quotation dates this part of the edited body; demand remains informal.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E16",
+    "source_id": "33453-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319149396",
+    "author": "darosior",
+    "source_timestamp": "2025-09-22T13:46:55+00:00",
+    "span": {
+      "start": 459,
+      "end": 545,
+      "quote": "Therefore i think it's technically incorrect (and confusing) to mark it as deprecated."
+    },
+    "role": "Poinsot supports undeprecation without reversing his removal preference.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E17",
+    "source_id": "33453-036",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321194786",
+    "author": "BitcoinMechanic",
+    "source_timestamp": "2025-09-22T19:50:08+00:00",
+    "span": {
+      "start": 110,
+      "end": 158,
+      "quote": "which this fixes and is strictly an improvement."
+    },
+    "role": "Mechanic recognizes a narrower improvement; this is not coded as an ACK or endorsement.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E18",
+    "source_id": "33453-036",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321194786",
+    "author": "BitcoinMechanic",
+    "source_timestamp": "2025-09-22T19:50:08+00:00",
+    "span": {
+      "start": 596,
+      "end": 663,
+      "quote": "32406 needs to be reverted entirely for Core to regain credibility."
+    },
+    "role": "Mechanic maintains his broader objection in the same comment.",
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "R10E19",
+    "source_id": "33453-066",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325790255",
+    "author": "fanquake",
+    "source_timestamp": "2025-09-23T22:45:43+00:00",
+    "span": {
+      "start": 261,
+      "end": 329,
+      "quote": "when it's decided what to do here, it could be incorported into rc3."
+    },
+    "role": "Release opportunity stated before the main-branch merge.",
+    "new_ig2_parse": false
+  }
+]

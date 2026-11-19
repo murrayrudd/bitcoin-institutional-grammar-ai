@@ -1,0 +1,592 @@
+[
+  {
+    "change_id": "M01",
+    "phase": "mechanical_repair",
+    "unit_id": "U03",
+    "path": "components/0/evidence/0",
+    "before": {
+      "source_id": "pr7819:body",
+      "span": {
+        "start": 121,
+        "end": 122,
+        "quote": "I"
+      }
+    },
+    "after": {
+      "source_id": "pr7819:body",
+      "span": {
+        "start": 334,
+        "end": 335,
+        "quote": "I"
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "First-occurrence string matching selected a matching token outside the focal predicate. Corrected to the exact local occurrence within the unchanged unit and governing clause."
+  },
+  {
+    "change_id": "M02",
+    "phase": "mechanical_repair",
+    "unit_id": "U13",
+    "path": "components/1/evidence/0",
+    "before": {
+      "source_id": "pr7819:comments:2",
+      "span": {
+        "start": 36,
+        "end": 40,
+        "quote": "this"
+      }
+    },
+    "after": {
+      "source_id": "pr7819:comments:2",
+      "span": {
+        "start": 161,
+        "end": 165,
+        "quote": "this"
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "First-occurrence string matching selected a matching token outside the focal predicate. Corrected to the exact local occurrence within the unchanged unit and governing clause."
+  },
+  {
+    "change_id": "M03",
+    "phase": "mechanical_repair",
+    "unit_id": "U16",
+    "path": "components/0/evidence/0",
+    "before": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 2,
+        "end": 3,
+        "quote": "I"
+      }
+    },
+    "after": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 316,
+        "end": 317,
+        "quote": "I"
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "First-occurrence string matching selected a matching token outside the focal predicate. Corrected to the exact local occurrence within the unchanged unit and governing clause."
+  },
+  {
+    "change_id": "M04",
+    "phase": "mechanical_repair",
+    "unit_id": "U17",
+    "path": "components/0/evidence/0",
+    "before": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 19,
+        "end": 21,
+        "quote": "we"
+      }
+    },
+    "after": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 440,
+        "end": 442,
+        "quote": "we"
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "First-occurrence string matching selected a matching token outside the focal predicate. Corrected to the exact local occurrence within the unchanged unit and governing clause."
+  },
+  {
+    "change_id": "M05",
+    "phase": "mechanical_repair",
+    "unit_id": "U17",
+    "path": "components/1/evidence/0",
+    "before": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 22,
+        "end": 28,
+        "quote": "should"
+      }
+    },
+    "after": {
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 443,
+        "end": 449,
+        "quote": "should"
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "First-occurrence string matching selected a matching token outside the focal predicate. Corrected to the exact local occurrence within the unchanged unit and governing clause."
+  },
+  {
+    "change_id": "M06",
+    "phase": "mechanical_repair",
+    "unit_id": "U03",
+    "path": "institution/standing_profile/recognition",
+    "before": "same_actor_only",
+    "after": "none",
+    "meaning_changed": true,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "The recorded event is a same-author response/restatement, not expectation_recognition. No expectation-recognition profile follows from it. The event and personal-commitment interpretation remain preserved."
+  },
+  {
+    "change_id": "S01",
+    "phase": "source_self_review",
+    "unit_id": "U09",
+    "path": "components/1/evidence",
+    "before": [
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 47,
+          "end": 55,
+          "quote": "red text"
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 232,
+          "end": 240,
+          "quote": "red text"
+        }
+      }
+    ],
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "Source review found the semantic-inference anchor pointed to red text in the preceding negative assessment. The chosen apply-red-text predicate concerns the non-replacable case, so the anchor now uses red text in that clause."
+  },
+  {
+    "change_id": "S02",
+    "phase": "source_self_review",
+    "unit_id": "U04",
+    "path": "components/3",
+    "before": {
+      "symbol": "Cac",
+      "text": "until the wallet actually _can_ do replacement",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 39,
+            "end": 85,
+            "quote": "until the wallet actually _can_ do replacement"
+          }
+        }
+      ],
+      "inference_note": "The explicit until clause supplies the condition terminating the inferred deferral, not an obligation expressed by can.",
+      "occurrence_role": "local",
+      "governing_span": {
+        "source_id": "pr7819:comments:0",
+        "span": {
+          "start": 0,
+          "end": 88,
+          "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+        }
+      }
+    },
+    "after": {
+      "symbol": "Cex",
+      "text": "until the wallet actually _can_ do replacement",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 39,
+            "end": 85,
+            "quote": "until the wallet actually _can_ do replacement"
+          }
+        }
+      ],
+      "inference_note": "The explicit until clause bounds the duration of inferred withholding. It is an execution-time constraint, not a trigger to start withholding, and can still means technical capability.",
+      "occurrence_role": "local",
+      "governing_span": {
+        "source_id": "pr7819:comments:0",
+        "span": {
+          "start": 0,
+          "end": 88,
+          "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+        }
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": false,
+    "diagnosis": "defensible_alternative_representation",
+    "effect": "convention_deviation",
+    "reason": "Under the selected withhold-exposure action, until replacement is possible specifies the temporal bound of execution. The readiness condition and force remain unchanged."
+  },
+  {
+    "change_id": "S03",
+    "phase": "source_self_review",
+    "unit_id": "U09",
+    "path": "components/3",
+    "before": null,
+    "after": {
+      "symbol": "D",
+      "text": "should",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 221,
+            "end": 227,
+            "quote": "should"
+          }
+        }
+      ],
+      "inference_note": "Should is lexically supplied for the described UI state/action. Its role as the recommendation modal of the reconstructed editorial action is inferred; advisory force is unchanged.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 170,
+          "end": 279,
+          "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+        }
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": false,
+    "diagnosis": "execution_failure",
+    "effect": "convention_deviation",
+    "reason": "Represent the supplied should modal explicitly at the reconstructed editorial layer rather than leaving it only in force/qualification fields. Its changed-predicate role is labeled inferred."
+  },
+  {
+    "change_id": "S04",
+    "phase": "source_self_review",
+    "unit_id": "U10",
+    "path": "components/4",
+    "before": null,
+    "after": {
+      "symbol": "D",
+      "text": "should",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 301,
+            "end": 307,
+            "quote": "should"
+          }
+        }
+      ],
+      "inference_note": "Should is lexically supplied for the described UI state/action. Its role as the recommendation modal of the reconstructed editorial action is inferred; advisory force is unchanged.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 281,
+          "end": 562,
+          "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+        }
+      }
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": false,
+    "diagnosis": "execution_failure",
+    "effect": "convention_deviation",
+    "reason": "Represent the supplied should modal explicitly at the reconstructed editorial layer rather than leaving it only in force/qualification fields. Its changed-predicate role is labeled inferred."
+  },
+  {
+    "change_id": "S05",
+    "phase": "source_self_review",
+    "unit_id": "U16",
+    "path": "institution/recognition/0",
+    "before": {
+      "kind": "endorsement",
+      "target": "this_proposition",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        }
+      ],
+      "rationale": "gmaxwell expresses interest in the add-output idea, not an institutional expectation. The underlying replacement-workflow proposal lacks an established ID; the referent is nevertheless identifiable as the method, and object_id is inapplicable to a registered PR.",
+      "mode": "ordinary_assent",
+      "speaker_relation": "different_actor",
+      "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "object_id": null,
+      "identity_evidence": []
+    },
+    "after": {
+      "kind": "endorsement",
+      "target": "unresolved",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        }
+      ],
+      "rationale": "gmaxwell expresses ordinary interest in the add-output idea. The textual referent is plausible, but the distinct replacement-workflow decision object has no established canonical identifier. object_id is unknown, not inapplicable; target is therefore unresolved. This is not institutional expectation recognition.",
+      "mode": "ordinary_assent",
+      "speaker_relation": "different_actor",
+      "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "object_id": null,
+      "identity_evidence": []
+    },
+    "meaning_changed": true,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "An unidentified required decision object must retain unresolved target status, even when the conversational method referent is recognizable."
+  },
+  {
+    "change_id": "S06",
+    "phase": "source_self_review",
+    "unit_id": "U18",
+    "path": "proposition/qualifiers/0",
+    "before": {
+      "description": "The requirement is specific to the additional-output workflow.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 35,
+            "quote": "workflow for additional outputs"
+          }
+        }
+      ],
+      "attachment": "component",
+      "linked_unit_id": null,
+      "rationale": "This qualification is attached explicitly to the focal proposition and limits its interpretation."
+    },
+    "after": {
+      "description": "The requirement is specific to the additional-output workflow.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 35,
+            "quote": "workflow for additional outputs"
+          }
+        }
+      ],
+      "attachment": "scope_note",
+      "linked_unit_id": null,
+      "rationale": "The focal clause explicitly specifies the additional-output workflow. That scope is preserved as this visible note; no separate grammar component encodes it."
+    },
+    "meaning_changed": false,
+    "evidence_basis_changed": false,
+    "diagnosis": "execution_failure",
+    "effect": "convention_deviation",
+    "reason": "The workflow qualification is supported but was mislabeled as carried by a component. It is now accurately represented as an attached scope note."
+  },
+  {
+    "change_id": "S07",
+    "phase": "source_self_review",
+    "unit_id": "U22",
+    "path": "proposition/summary and level_evidence/target_activity",
+    "before": "gmaxwell suggests a [send immediately] option described as delaying sending, avoiding extra just-in-case transactions if amended within the timeout, and potentially allowing abort before initial sending.",
+    "after": "gmaxwell suggests a [send immediately] option described as delaying sending, avoiding extra just-in-case transactions if amended within the timeout, and potentially allowing abort before it was initially set, as worded in the source.",
+    "meaning_changed": true,
+    "evidence_basis_changed": false,
+    "diagnosis": "execution_failure",
+    "effect": "coverage_or_scope_loss",
+    "reason": "The prior summary normalized initially set to initial sending. The supplied wording is now retained because its exact referent cannot be verified."
+  },
+  {
+    "change_id": "S08",
+    "phase": "source_self_review",
+    "unit_id": "U22",
+    "path": "uncertainty_reason",
+    "before": "The separate replacement/add-output workflow has no canonical proposal ID, and the exact semantics of the option label are not explained.",
+    "after": "The separate replacement/add-output workflow has no canonical proposal ID, and the exact semantics of the option label are not explained. The phrase initially set is not silently corrected to initially sent; the timing referent remains uncertain.",
+    "meaning_changed": false,
+    "evidence_basis_changed": false,
+    "diagnosis": "execution_failure",
+    "effect": "coverage_or_scope_loss",
+    "reason": "Attach the ambiguity in initially set to the proposition explicitly."
+  },
+  {
+    "change_id": "S09",
+    "phase": "source_self_review",
+    "unit_id": null,
+    "path": "episode_summary/observed_outcomes/1",
+    "before": {
+      "claim": "The retained #7819 head shows an optInRBF checkbox labeled Allow Replace-By-Fee. Its confirmation branch still contains the red color markup and This transaction is replacable (optin-RBF)! wording.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 1042,
+            "end": 1238,
+            "quote": "+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+          }
+        }
+      ],
+      "claim_parts": [
+        {
+          "text": "The retained #7819 head shows an optInRBF checkbox labeled Allow Replace-By-Fee.",
+          "evidence": [
+            {
+              "source_id": "pr7819:patch:0",
+              "span": {
+                "start": 87,
+                "end": 136,
+                "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+              }
+            },
+            {
+              "source_id": "pr7819:patch:0",
+              "span": {
+                "start": 168,
+                "end": 214,
+                "quote": "+        <string>Allow Replace-By-Fee</string>"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Its confirmation branch still contains the red color markup and This transaction is replacable (optin-RBF)! wording.",
+          "evidence": [
+            {
+              "source_id": "pr7819:patch:1",
+              "span": {
+                "start": 1042,
+                "end": 1238,
+                "quote": "+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "after": {
+      "claim": "The retained #7819 head shows an optInRBF checkbox labeled Allow Replace-By-Fee. Its confirmation branch contains the red color markup and This transaction is replacable (optin-RBF)! wording.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 1042,
+            "end": 1238,
+            "quote": "+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+          }
+        }
+      ],
+      "claim_parts": [
+        {
+          "text": "The retained #7819 head shows an optInRBF checkbox labeled Allow Replace-By-Fee.",
+          "evidence": [
+            {
+              "source_id": "pr7819:patch:0",
+              "span": {
+                "start": 87,
+                "end": 136,
+                "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+              }
+            },
+            {
+              "source_id": "pr7819:patch:0",
+              "span": {
+                "start": 168,
+                "end": 214,
+                "quote": "+        <string>Allow Replace-By-Fee</string>"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Its confirmation branch contains the red color markup and This transaction is replacable (optin-RBF)! wording.",
+          "evidence": [
+            {
+              "source_id": "pr7819:patch:1",
+              "span": {
+                "start": 1042,
+                "end": 1238,
+                "quote": "+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "meaning_changed": true,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "evidence_basis_error",
+    "reason": "A retained head patch establishes its contents, not persistence through an unobserved revision sequence. Removed still to avoid implying a known before/after chronology."
+  },
+  {
+    "change_id": "M07",
+    "phase": "post_review_mechanical_repair",
+    "unit_id": "U16",
+    "path": "institution/recognition/0/basis",
+    "before": "context_inferred",
+    "after": "unresolved",
+    "meaning_changed": false,
+    "evidence_basis_changed": true,
+    "diagnosis": "execution_failure",
+    "effect": "convention_deviation",
+    "reason": "The source self-review changed the event target to unresolved because the required decision-object identity is unknown. The checker requires its event basis to be unresolved as well; the qualification and ordinary-interest interpretation remain unchanged."
+  }
+]

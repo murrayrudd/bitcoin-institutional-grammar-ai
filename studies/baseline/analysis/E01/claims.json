@@ -1,0 +1,82 @@
+[
+  {
+    "claim_id": "E01-C1",
+    "episode_id": "E01",
+    "claim": "Merged guidance asks contributors to reuse the existing PR for the same change.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 4193,
+          "end": 4264,
+          "quote": "Please refrain from creating several pull requests for the same change."
+        }
+      },
+      {
+        "source_id": "E01:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "The scope is duplicate PRs for one change, not several unrelated contributions. Integration is documented; universal compliance is not."
+  },
+  {
+    "claim_id": "E01-C2",
+    "episode_id": "E01",
+    "claim": "The added guidance offers allowing maintainer edits and asking for help as an alternative when Git workflows cause problems.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 3997,
+          "end": 4191,
+          "quote": "If you have problems with squashing (or other workflows with `git`), you can\nalternatively enable \"Allow edits from maintainers\" in the right GitHub\nsidebar and ask for help in the pull request."
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Optional workflow support does not impose a duty to grant access."
+  },
+  {
+    "claim_id": "E01-C3",
+    "episode_id": "E01",
+    "claim": "The discussion gives an assistance and workload rationale for the help option.",
+    "assessment": "attributed",
+    "evidence": [
+      {
+        "source_id": "E01:review_comments:2",
+        "span": {
+          "start": 0,
+          "end": 92,
+          "quote": "Well, not in general, but we want to encourage it for people that don't know how to use git."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Attributed rationale is not a measured reduction in tutoring costs."
+  },
+  {
+    "claim_id": "E01-C4",
+    "episode_id": "E01",
+    "claim": "This change prohibits a contributor from having several unrelated PRs open.",
+    "assessment": "contradicted",
+    "evidence": [
+      {
+        "source_id": "E01:doc_head",
+        "span": {
+          "start": 4244,
+          "end": 4264,
+          "quote": "for the same change."
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "The qualifier defeats this broad reading; no claim is made about other unseen rules."
+  }
+]

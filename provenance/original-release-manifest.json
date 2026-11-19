@@ -1,0 +1,413 @@
+{
+  "release_version": "0.4.1",
+  "annotation_schema_version": "0.4",
+  "release_date": "2026-11-07",
+  "scope": "Complete operational release, preserved historical evidence, and integrated working paper. File identities do not certify interpretation.",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 6704,
+      "sha256": "61c170e7f02cc9413633b671efe00b23da971f4fba4cb0846f02bd11ea4b7b9f"
+    },
+    {
+      "path": "baseline_v03/protocol/annotation_schema.json",
+      "bytes": 25717,
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "baseline_v03/protocol/codebook.txt",
+      "bytes": 27319,
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "baseline_v03/protocol/round12_coder_instructions.txt",
+      "bytes": 3516,
+      "sha256": "299f9ab4849f16ecba0973f740b1242d006f4c2f4bc61850b488b1ad52fd86e8"
+    },
+    {
+      "path": "baseline_v03/tools/check_annotation.py",
+      "bytes": 9013,
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    },
+    {
+      "path": "calibration/annotation.json",
+      "bytes": 88445,
+      "sha256": "b8d91badf4d7aa6e7680f31953f8cfe61579f168fee369c7c3f6e397f6574cb6"
+    },
+    {
+      "path": "calibration/cases.json",
+      "bytes": 13384,
+      "sha256": "d2431b4ca5f8f96d1b125638a540b2a337ec068123e35a868b900c5a0b6754d0"
+    },
+    {
+      "path": "calibration/packet.json",
+      "bytes": 162960,
+      "sha256": "ee25d801d29ccf5cd05602c04ec3a26bcf04dad9af7832a3e2342497ded93f30"
+    },
+    {
+      "path": "calibration/recognition_projection_examples.json",
+      "bytes": 23113,
+      "sha256": "3525382aba68aae8b71225c216d88f6167c5abf96990792011358880c039bed6"
+    },
+    {
+      "path": "development/calibration_check.json",
+      "bytes": 8293,
+      "sha256": "326056ccfd314f84c65339ef86119426ce91f94015290e7470dd11357ce27894"
+    },
+    {
+      "path": "development/change_ledger.json",
+      "bytes": 4885,
+      "sha256": "d86ea08d57977e28296d5c668d32da6db270481d80d73a099ae142222eef1ec5"
+    },
+    {
+      "path": "development/environment.json",
+      "bytes": 186,
+      "sha256": "8719e0b3040c116d0d6f42b8d813f8ab4f8d8ad9e086f2dc273f02d766c33ff6"
+    },
+    {
+      "path": "development/input_provenance.json",
+      "bytes": 3033,
+      "sha256": "9897cede0662ba20d6cae539e99a183e41c2a1609a2d5af79cbf7044657992bb"
+    },
+    {
+      "path": "development/migration_guide.json",
+      "bytes": 2098,
+      "sha256": "7afd4d4f5e8bd9275162fc82c8ee07fe5e22ddace52aeb6de6b03ae5c9dd9f69"
+    },
+    {
+      "path": "development/regression_results.json",
+      "bytes": 8016,
+      "sha256": "b69ce88eccc22456db134c12a4b7c992a54ebc10c82d1cbc0e6655a7612c5487"
+    },
+    {
+      "path": "development/release_summary.json",
+      "bytes": 596,
+      "sha256": "713cb6885b0b69310e50a89e9aa2d52401c55d8eb852bc1942af5f33dae71a63"
+    },
+    {
+      "path": "development/release_verification.json",
+      "bytes": 209,
+      "sha256": "095986cac9d982b75b84939066c8e9259011c2f0af79044f006c3ed70a9aaa55"
+    },
+    {
+      "path": "development/source_review.json",
+      "bytes": 24937,
+      "sha256": "2dc0a16e33942c2233a5c3c243580c6326acb8430bef8543ffaea72a4f030bba"
+    },
+    {
+      "path": "evaluation/known_exposure_inventory.json",
+      "bytes": 970,
+      "sha256": "cd804ffcb7b366c04faf693bfcdb60190db72e3922066600c366ee04a22d06b6"
+    },
+    {
+      "path": "evaluation/protocol.json",
+      "bytes": 5599,
+      "sha256": "b65dfdbbaad39d5e01df95e37aef0b909336b2ab41d2ded4b7f8d98ba1b44c55"
+    },
+    {
+      "path": "evidence/core_knots_comparison_v01.zip",
+      "bytes": 2869437,
+      "sha256": "b210462c6f8c88e978ecfd3ba0df5e1b062d2550b9198b5f275f0c34d2615588"
+    },
+    {
+      "path": "evidence/core_knots_source_review_v01.zip",
+      "bytes": 1388267,
+      "sha256": "8ceba370f891f478dd6af19dd8a8c9a0280b510abbce3dca9f94ac4d9e0a86f1"
+    },
+    {
+      "path": "evidence/fresh_coding_v01.zip",
+      "bytes": 9052383,
+      "sha256": "a170138fce0a2931ce83406548811268b61b8269b4f47a378e3114a125b2812c"
+    },
+    {
+      "path": "evidence/methodological_baseline_v01.zip",
+      "bytes": 652560,
+      "sha256": "5514b97a314d690bd526f4cb97ea4fdb8ab7a1da96c117805ddabf45753822bf"
+    },
+    {
+      "path": "evidence/overlap_validation_v01.zip",
+      "bytes": 5642127,
+      "sha256": "212544a1232b871234d697e165a574fc205c0ed9c018d2911913528fd1bd3e5d"
+    },
+    {
+      "path": "evidence/reconciliation_v01.zip",
+      "bytes": 886334,
+      "sha256": "f24c1d1c272eea32c9a6a5c44b0bfea3570960d03e5814b54d5095c4970c3e51"
+    },
+    {
+      "path": "evidence/specification_v0.4.zip",
+      "bytes": 294261,
+      "sha256": "03268e6c2b7b63c50be01c3a78bcc080cb69147b3ff41f06f525f9b400ca7256"
+    },
+    {
+      "path": "history/v04_RELEASE_MANIFEST.json",
+      "bytes": 7099,
+      "sha256": "042b3ce1d496b8c444a9b62eaf6d47adccdc7365b7c1d4a3d651c99a79af560e"
+    },
+    {
+      "path": "history/v04_build_calibration.py",
+      "bytes": 23069,
+      "sha256": "31eb824193f006b4b0fa8def6c4097249c7abda28a7829e72b00d7ed7c6988a0"
+    },
+    {
+      "path": "history/v04_build_development_records.py",
+      "bytes": 6181,
+      "sha256": "e11cd194eed52302cb76726b46952414df23113671859e936165534b43c80e39"
+    },
+    {
+      "path": "history/v04_build_document.py",
+      "bytes": 2997,
+      "sha256": "9d2b676b60ba7092563128c5193c56528100ecb3a302e5d0dae9a3bcd06e7280"
+    },
+    {
+      "path": "history/v04_report/Bitcoin_Core_IG2_Specification_v0.4.docx",
+      "bytes": 50516,
+      "sha256": "b97f64fa44b02bc97c30345a0aa0c8a2990b498f31bab7dd349005e626d15437"
+    },
+    {
+      "path": "history/v04_report/quality_check.json",
+      "bytes": 419,
+      "sha256": "3bab5a4097c616d1c663478f49b6770737859ad3424f3a54e56b3a02f9963903"
+    },
+    {
+      "path": "history/v04_review_calibration.py",
+      "bytes": 5790,
+      "sha256": "7dbc8f90609139571dafd7b68ee289edf07ffc2e9e9c0f4967850f9a83a6472b"
+    },
+    {
+      "path": "history/v04_verify_release.py",
+      "bytes": 3631,
+      "sha256": "87376fc1925da0e307e858269e86c9e2b3ae70c5acd260b2eaf5026afe0b90a5"
+    },
+    {
+      "path": "manuscript/Bitcoin_Governance_Integrated_Working_Paper_v01.docx",
+      "bytes": 71859,
+      "sha256": "622e5d813a9d39c7fec6b0a55a3b2eb298e9582c62fbcea5b38ab5b10c501c29"
+    },
+    {
+      "path": "manuscript/build_manuscript.py",
+      "bytes": 2035,
+      "sha256": "8d889d721770689b449e3e447401704750e7267df7fd751a71cc311d73c527da"
+    },
+    {
+      "path": "manuscript/followup/build_ledger.py",
+      "bytes": 4310,
+      "sha256": "75f705bc3cd51bf247001191b8c3cf7da921a0c58630b93ad71183a85bbf6422"
+    },
+    {
+      "path": "manuscript/followup/claim_ledger.json",
+      "bytes": 5058,
+      "sha256": "97e493a0c776e30ffad7342d6f2b43cfa00e04a7f0d41fbedf4c0326c9daf397"
+    },
+    {
+      "path": "manuscript/followup/source_register.json",
+      "bytes": 1954,
+      "sha256": "d3e23282ca4042ec3a1b3c190a583ffe8e19db22e94773e1b1b5f8606792ed31"
+    },
+    {
+      "path": "manuscript/followup/sources/github_0.json",
+      "bytes": 64548,
+      "sha256": "7a3d4abd8021614615527b6e3a20da8d0b5cfc7288a607f96a3696a3b6f7de91"
+    },
+    {
+      "path": "manuscript/followup/sources/github_1.json",
+      "bytes": 116941,
+      "sha256": "1366f521227cddeb9a5afe536e0f11e984f941fcc2ba1900c20c1be4acf31dec"
+    },
+    {
+      "path": "manuscript/followup/sources/github_2.json",
+      "bytes": 40093,
+      "sha256": "c716610346f1e92608fcaf9534beae9ffd425cb6159734b44e942a5d28650666"
+    },
+    {
+      "path": "manuscript/followup/sources/panel_passages.json",
+      "bytes": 6602,
+      "sha256": "c626adf722f7a16a9567cc58c3b3e1c80c7a5b920531a9ec5d7756e658128725"
+    },
+    {
+      "path": "manuscript/footnotes.json",
+      "bytes": 1603,
+      "sha256": "7432cebbbfd4bfa3d6ced005f2388276622c60837de17ee3bb69588f2f7e96c4"
+    },
+    {
+      "path": "manuscript/inputs/Bitcoin_IG2_Full_Manuscript_v01(2).docx",
+      "bytes": 72566,
+      "sha256": "4ba80e63bdaebbc83cd8babb26fbdd0d5a33ba7471d13063e58f6bb0c94cd749"
+    },
+    {
+      "path": "manuscript/inputs/Core_Knots_Methods_and_Appendices_v01.docx",
+      "bytes": 59412,
+      "sha256": "645de2de5d155ad4ff065d20c081f302a9faae39f9b9f2b4410fe854d09c25b8"
+    },
+    {
+      "path": "manuscript/references.json",
+      "bytes": 2798,
+      "sha256": "90fb556cc458dc9cacffae4f991d0beb807e86d4dfbc92f68b442934df754f62"
+    },
+    {
+      "path": "manuscript/source.txt",
+      "bytes": 60951,
+      "sha256": "284821f9654845cc7f7c8f2726a15d97ef9b1a0732a38c120c86cad884a89d4f"
+    },
+    {
+      "path": "manuscript/tables.json",
+      "bytes": 16838,
+      "sha256": "106fa5a8fa9c7457f19e301db395d19b229aa35ae69d63803cd415a565975f6d"
+    },
+    {
+      "path": "protocol/alignment_instructions.txt",
+      "bytes": 1828,
+      "sha256": "26401b17f91006b75b28f12d254389cadd7c94cd8b6b22afd86c515336aa8f51"
+    },
+    {
+      "path": "protocol/annotation_schema.json",
+      "bytes": 54100,
+      "sha256": "7c825882fca07071af864de6268f362bb58bcfb703df5c1bcf318655135faeb8"
+    },
+    {
+      "path": "protocol/codebook.txt",
+      "bytes": 39139,
+      "sha256": "c3f87f93a05d5562e30a962aa7c2451fa3b7c1da21ef8d370027e5696ebbc38f"
+    },
+    {
+      "path": "protocol/coder_instructions.txt",
+      "bytes": 2538,
+      "sha256": "8e126d942c8419aca0cd9f1c8700cffcdfad68233a55b81243cfff413113b70a"
+    },
+    {
+      "path": "protocol/packet_preparation.txt",
+      "bytes": 1301,
+      "sha256": "731a1502f401af9f12510bb93cf0fb40981becdc0423ed6b14ceb1a992d900f7"
+    },
+    {
+      "path": "protocol/reconciliation_instructions.txt",
+      "bytes": 3351,
+      "sha256": "ce4092d762ddd1d04963b2876751aef937bde857f7296f79c64d6605809a72b0"
+    },
+    {
+      "path": "protocol/source_review_instructions.txt",
+      "bytes": 2827,
+      "sha256": "2bcb7d4f69e5928fe94a4cd37cb85c57da4b42645b09b2c5230c762c1de7c778"
+    },
+    {
+      "path": "release/compatibility_results.json",
+      "bytes": 7379,
+      "sha256": "1bbae09f7df24d20e9d16f338ff1ac4bfd2e2340c25e02e2827c2d500ea712bc"
+    },
+    {
+      "path": "release/correction_record.json",
+      "bytes": 4864,
+      "sha256": "f2992423a6645c73600dd6791f6521359da5f7758ea9cd493e6e471691a17ee0"
+    },
+    {
+      "path": "release/document_quality_check.json",
+      "bytes": 6208,
+      "sha256": "0bd395821830e524c4ef59d0423c75d0db98befed371968421f10137c5a6ee92"
+    },
+    {
+      "path": "release/editorial_review.json",
+      "bytes": 2637,
+      "sha256": "c181ba2ac0b6d64eb6997f420e54efa06840e2c40642bff7129da18eea3bdc40"
+    },
+    {
+      "path": "release/manuscript_checks.json",
+      "bytes": 2528,
+      "sha256": "c1d72dde3a41404b828a68f5f6832c53ac2c81d2ed7cea4fde2d2c31556befdc"
+    },
+    {
+      "path": "release/regression_results.json",
+      "bytes": 8016,
+      "sha256": "b69ce88eccc22456db134c12a4b7c992a54ebc10c82d1cbc0e6655a7612c5487"
+    },
+    {
+      "path": "report/Bitcoin_Core_IG2_Codebook_v0.4.1.docx",
+      "bytes": 52888,
+      "sha256": "b985d5a429188382a3407a994bebd4ca878cddb174b500d55067fb7e6daee4e3"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 31,
+      "sha256": "a441ab2c041686b697f86676264537682f5923a1e40186a3326745144e02d98b"
+    },
+    {
+      "path": "sources/round12_baseline_impact.json",
+      "bytes": 12305,
+      "sha256": "574730c35292ed9e9585aa1865c84800d4ae4d0f8d55931d0564262b30b70dfd"
+    },
+    {
+      "path": "sources/round12_independent_source_audit.json",
+      "bytes": 106641,
+      "sha256": "910c9ec68676ee90db89c0f631916bd7f8e292e7f5bf287ebed30732845cc9a9"
+    },
+    {
+      "path": "sources/round12_overlap_metrics.json",
+      "bytes": 113961,
+      "sha256": "d26519dee3a861be59607bf40caa3815431850f124fd042ea932bc5c3d3f8646"
+    },
+    {
+      "path": "sources/round12_packet.original.json",
+      "bytes": 157025,
+      "sha256": "ae9c70f3442ee008516d34ce80d05bc4c1e53acd095bea5c7eb64e527b77e7a7"
+    },
+    {
+      "path": "sources/round12_source_reconciliation.json",
+      "bytes": 51070,
+      "sha256": "3391912446383c3b5b67ad924491ab140fc3a41964c249c0de3b3b0b3de0347e"
+    },
+    {
+      "path": "tools/build_codebook.py",
+      "bytes": 21487,
+      "sha256": "7294847242a4c59eca1b65e1e1777d6483180542f56fb4b22afe2736b45707ed"
+    },
+    {
+      "path": "tools/build_release_document.py",
+      "bytes": 3043,
+      "sha256": "6bcbe1a975e35f4d39e4857ff06bac6a5136d1bec4b6452d3a7ef58f25a077a5"
+    },
+    {
+      "path": "tools/build_release_manifest.py",
+      "bytes": 1334,
+      "sha256": "e6fe5cc496322bed2eb0544e593ce6a2207f96014a0aca6b06dd0f59d6b32b29"
+    },
+    {
+      "path": "tools/build_schema.py",
+      "bytes": 5500,
+      "sha256": "00d3d29a662acfd5d4734ebb00c0211d436623a931f7c90f9e7cd782dcfb5895"
+    },
+    {
+      "path": "tools/check_annotation.py",
+      "bytes": 17394,
+      "sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+    },
+    {
+      "path": "tools/check_manuscript.py",
+      "bytes": 4205,
+      "sha256": "2417a48d39320b6f8db0d6305af9a89a0b03439aa480d258d4f26f389bba9bc1"
+    },
+    {
+      "path": "tools/document_layout.py",
+      "bytes": 6671,
+      "sha256": "6cbe36c5c9e24ee434bf49d544f90f0cb899b10d479decc635246d0b07538c96"
+    },
+    {
+      "path": "tools/normalize_packet_metadata.py",
+      "bytes": 3755,
+      "sha256": "d7e9388beb2aaa2da9e5483f8c35e793ef24367608189adf800f578aa177d24b"
+    },
+    {
+      "path": "tools/test_release_correction.py",
+      "bytes": 6500,
+      "sha256": "64c6140dc919519f2edfaec53011006d5ce70fe795cd6ec941278708f42e45c1"
+    },
+    {
+      "path": "tools/test_specification.py",
+      "bytes": 6963,
+      "sha256": "201dbc56ed91ac0c552c0d78457c28222ff8f39b679263139db79faf33f4159c"
+    },
+    {
+      "path": "tools/verify_release.py",
+      "bytes": 1301,
+      "sha256": "b38ff5ab166daebdb3dfc76876c5f0f0e0771347908f6a1df2abf5dfa1d079ac"
+    }
+  ]
+}

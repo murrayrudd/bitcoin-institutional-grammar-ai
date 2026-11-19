@@ -1,0 +1,610 @@
+[
+  [
+    36297,
+    "2026",
+    true,
+    5937,
+    "rpc: Correct invalid OpenRPC defaults",
+    "`getopenrpcinfo` emits two defaults that do not satisfy their schemas.\r\n\r\nThis changes `getdeploymentinfo.blockhash` to a default hint, since its fallback describes the current chain tip, and makes `send.options.include_watching` default to boolean `false`.\r\n"
+  ],
+  [
+    36235,
+    "2026",
+    true,
+    8417,
+    "ci: fail iwyu job on compiler errors instead of silently logging them",
+    "> > https://github.com/bitcoin/bitcoin/actions/runs/35634651503/job/106763289406?pr=36235#step:11:10912\r\n> > ```\r\n> > include-what-you-use: /usr/lib/llvm-23/include/llvm/Support/Casting.h:656: decltype(auto) llvm::dyn_cast(From*) [with To = clang::UsingShadowDecl; From = const clang::NamedDecl]: Assertion `detail::isPresent(Val) && \"dyn_cast on a non-existent value\"' failed.\r\n> > ```\r\n> >   \r\n> > Maybe it should be minimized/bisected/reported/fixed upstream?\r\n> \r\n> See [include-what-you-use/include-what-you-use#2120](https://github.com/include-what-you-use/include-what-you-use/issues/2120).\r\n\r\nThe issue has been [fixed](https://github.com/include-what-you-use/include-what-you-use/commit/5a01881c02befc957eb7fe16bcc369ed3c56b60e) upstream and [backported](https://github.com/include-what-you-use/include-what-you-use/commit/889a219c6eaefede6c0dd9dbd8779cf5fa3519e3) to the `clang_23` branch.\r\n\r\nRe-running the \"iwyu\" CI job now."
+  ],
+  [
+    36228,
+    "2026",
+    true,
+    5444,
+    "ci, iwyu: generate embedded ASMap header explicitly",
+    "Concept and approach ACK cc464492a14f17f9b758536a8a1b354909702d76.\r\n\r\nPlease amend the last commit with the include fixes, so that the IWYU CI job passes."
+  ],
+  [
+    35699,
+    "2026",
+    true,
+    2397,
+    "[31.x] More Backports",
+    "ACK 859c9201c4de45e3b3ed548475b495963a062d99\n\nBackports all look good.\n\nAll commits are in the release notes, and partial backports are documented correctly. Cleanup commits from 35678 are not included along with the fuzz changes from 35406, as 31.x doesn't have that target."
+  ],
+  [
+    35450,
+    "2026",
+    true,
+    1083,
+    "[29.x] 29.4rc1",
+    "ACK 88cd3a771161177e9f558a49a1bcbd9b29af3e10\r\n\r\nNote that the commits include https://github.com/bitcoin/bitcoin/pull/34918"
+  ],
+  [
+    33415,
+    "2025",
+    true,
+    6730,
+    "[28.x] More backports",
+    "ACK a5e4fec4949f61ebbd7d6696f39da26df04515f9\r\n\r\nThis now only includes #33236, #33395 and #33340, with the other changes moving into #33476.\r\n\r\nBackports look fine, 966666de was the only commit that appears to have needed resolution.\r\n\r\nAll backports are credited in the release notes."
+  ],
+  [
+    32589,
+    "2025",
+    true,
+    3651,
+    "[29.x] More backports",
+    "ACK 0922f6bbc33ac2abe3f3d9dc98dade896718864f\r\n\r\nChecked all backports are clean and match their parent commits. All backports which include a `Github-Pull: #xxxxx` line in the commit message are mentioned in `release-notes.md`."
+  ],
+  [
+    32417,
+    "2025",
+    true,
+    1697,
+    "doc: Explain that .gitignore is not for IDE-specific excludes",
+    "ACK [fada115](https://github.com/bitcoin/bitcoin/commit/fada115cbeaa8c0ca3d19178499079b66ee5f499)\r\n\r\nWill reduce issues & PR's , good to include the extra comment. "
+  ],
+  [
+    31371,
+    "2024",
+    true,
+    7475,
+    "doc, test: more ephemeral dust follow-ups",
+    "> Noticed that `mempool_ephemeral_dust.py` takes a significant amount of time to run (around 50s on at least on two of my machines, i.e. greater than 30s), but is near the bottom of `BASE_SCRIPTS` in `test_runner.py`. Moving the test toward the front of the list significantly improved parallel test runtime on each of my machines (e.g. from 131s to 91s, jobs=32). ymmv. I'm happy to submit a separate PR ([tdb3@3c40aac](https://github.com/tdb3/bitcoin/commit/3c40aac84972e0887ecd41161231a08f87d1efa3)) to prevent ACK invalidation.\r\n\r\nGood idea, will include that if I have to retouch. In a follow-up PR, I think it could make sense to check the run-time of other functional tests as well and reorder them if necessary?"
+  ],
+  [
+    30984,
+    "2024",
+    false,
+    3555,
+    "p2p: rpc: add `tx_reconciliation` to `getpeerinfo`",
+    "> This looks similar to #26602 / #27797 - I don't think any Erlay PR has been merged since then, so the reasoning from back then should still apply?\n\nI was unaware of this. I'm happy to cherry-pick these two commits into one of the upcoming Erlay PRs, especially once the network messaging bits have been included."
+  ],
+  [
+    30207,
+    "2024",
+    false,
+    4969,
+    "validation: Improve, document and test logic for chains building on invalid blocks",
+    "I'll close this for now, large parts of this PR are contained in #30666 which actually fixes `m_best_header` tracking instead of just documenting its limitations.\r\nThe last two commits of this PR are not included in  #30666 and fix a separate issue - I might open a separate PR for this at a later time."
+  ],
+  [
+    28644,
+    "2023",
+    true,
+    1657,
+    "test: Fuzz merge with -use_value_profile=0 for now",
+    "> Not sure how to measure the net impact of this, but with some backups reverting this commit, it can be limited on the downside?\r\n\r\nI think oss-fuzz maintains an internal corpus that includes the `use_value_profile` feature inputs, so the downside (in terms of not finding bugs) should be pretty minimal."
+  ],
+  [
+    28392,
+    "2023",
+    true,
+    7998,
+    "test: Use pathlib over os path",
+    "@ns-xvrn when you rebase this, can you update the commit message to drop all the now-redundant messages from your previously squashed commits? i.e we don't things like \"reversions after PR review\" included in the commit message."
+  ],
+  [
+    28336,
+    "2023",
+    true,
+    6647,
+    "rpc: parse legacy pubkeys consistently with specific error messages",
+    "ACK [194b4e6](https://github.com/bitcoin/bitcoin/pull/28336/commits/194b4e6ab70d87199542cb023f7aea170a441bc5)\r\n\r\nadded one comment but feel free to ignore"
+  ],
+  [
+    27686,
+    "2023",
+    true,
+    1882,
+    "25.0 Final Changes",
+    "ACK https://github.com/bitcoin/bitcoin/pull/27686/commits/9ded442dffb827d8762c0becce9d10fa283d1a3a\r\n\r\nlooks good, although we probably don't need to credit `merge-script` as a contributor \r\n"
+  ],
+  [
+    27577,
+    "2023",
+    true,
+    6719,
+    "p2p: give seednodes time before falling back to fixed seeds",
+    "ACK [3077812](https://github.com/bitcoin/bitcoin/pull/27577/commits/30778124b82791abdc6e930373460ef1dd587cb2) with a tiny nit, feel free to ignore it"
+  ],
+  [
+    27404,
+    "2023",
+    true,
+    4718,
+    "ci: use clang-16 in tidy task",
+    "ACK https://github.com/bitcoin/bitcoin/pull/27404/commits/a56c96507a9e943bbcd7e126bc827de9495f0ebd\r\n\r\n> Included this. I think we could merge this as-is, but should also figure out why it's needed. It feels like there is another issue here.\r\n\r\ndid a little digging and found this: https://github.com/include-what-you-use/include-what-you-use/issues/679#issuecomment-482798379 , which seems to still be an issue based on the discussion in the linked solution. fwiw, the fix you have here seems to be one of the preferred ways of dealing with this"
+  ],
+  [
+    26969,
+    "2023",
+    true,
+    7574,
+    "net, refactor: net_processing, add `ProcessCompactBlockTxns`",
+    "Code review ACK https://github.com/bitcoin/bitcoin/pull/26969/commits/355bc6098a7373feb1d59f9651a79e1477d22243\r\n\r\nreviewed with `git diff master --color-moved-ws=ignore-all-space --color-moved=dimmed-zebra`. very straight forward set of changes.\r\n\r\n~~We have a small bug that you could do in a fixup commit as well perhaps: https://github.com/bitcoin/bitcoin/pull/27626#discussion_r1204491894~~\r\n"
+  ],
+  [
+    26879,
+    "2023",
+    true,
+    2201,
+    "[23.x] ci: replace Intel macOS CI job",
+    "> Backporting of https://github.com/bitcoin/bitcoin/commit/8e017f32889e9536a436f40c91f34f24bfd10525\r\n\r\nAdded.\r\n\r\n> Alternatively the task can be removed or ignored.\r\n\r\nYea. If this change doesn't work, happy to just remove it. The chance of some macOS only regression in this branch is basically nil, and I'd rather remove a consistently failing just than just leave it hanging around."
+  ],
+  [
+    26399,
+    "2022",
+    false,
+    2422,
+    "Fix #24049: signed integer overflow in `SeenLocal`",
+    "The burden to prepare, explain and motivate a change for reviewers is on the author. You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines. At a minimum for this simple one line change, you'll have to create at most one commit, with an explanation, and you'll have to reply to review comments. All of this is explained in https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md"
+  ],
+  [
+    25959,
+    "2022",
+    true,
+    582,
+    "doc: Fix link to MurmurHash3.cpp (moved from Google Code to Github)",
+    "crACK 2c05dc7811db4fe61d7f30fc9b46c374f75226c5\r\n\r\n**nit**: it'll be good to have the commit message title include a prefix for more context, e.g.:\r\n\r\n```\r\ndoc: Fix link to MurmurHash3.cpp from Austin Appleby\r\n```"
+  ],
+  [
+    24977,
+    "2022",
+    true,
+    687,
+    "rpc: Explain active and internal in listdescriptors",
+    "ACK https://github.com/bitcoin/bitcoin/pull/24977/commits/4637bbe448ae7370528f40092ce230c32602a6d6\r\n\r\nA short definition for \"ranged descriptors\" could be included."
+  ],
+  [
+    24851,
+    "2022",
+    true,
+    8798,
+    "init: ignore BIP-30 verification in DisconnectBlock for problematic blocks",
+    "(Biased) ACK e899d4ca6f44785b6e5481e200a6a9a8d2448612 ([`jamesob/ackr/24851.2.seejee.init_ignore_bip_30_verif`](https://github.com/jamesob/bitcoin/tree/ackr/24851.2.seejee.init_ignore_bip_30_verif))\r\n\r\nWell documented and symmetric with the equivalent `ConnectBlock` conditionals; \r\neven better in terms of specifically acting on coinbase transactions. Tested\r\nlocally per the PR description.\r\n\r\n\r\n<details><summary>Show signature data</summary>\r\n<p>\r\n\r\n```\r\n-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA512\r\n\r\nACK e899d4ca6f44785b6e5481e200a6a9a8d2448612 ([`jamesob/ackr/24851.2.seejee.init_ignore_bip_30_verif`](https://github.com/jamesob/bitcoin/tree/ackr/24851.2.seejee.init_ignore_bip_30_verif))\r\n\r\nWell documented and symmetric with the equivalent `ConnectBlock` conditionals; \r\neven better in terms of specifically acting on coinbase transactions. Tested\r\nlocally per the PR description.\r\n\r\n-----BEGIN PGP SIGNATURE-----\r\n\r\niQIzBAEBCgAdFiEEGNRVI1NPYuZCSIrGepNdrbLETwUFAmJYSjwACgkQepNdrbLE\r\nTwW"
+  ],
+  [
+    24653,
+    "2022",
+    true,
+    3668,
+    "test: use `MiniWallet` in `test/functional/interface_zmq`",
+    "While working on #24584 , `interface_zmq` started failing due to coin selection not running deterministically. The test doesn't actually need the wallet, so this PR migrates it to use MiniWallet\r\n\r\n_Note for reviewers:_ the second commit moves large chunks of code out of an if block, so it may be helpful to review with something that ignores whitespace, e.g `git diff -w master`"
+  ],
+  [
+    21811,
+    "2021",
+    true,
+    3222,
+    "doc: Remove Visual Studio 2017 reference from readme",
+    "Approach ACK 39656f3b689c513aa3c509682e07dece85002128\r\n\r\nI think you could squash the commits, and include that you are adding this warning in the commit message of 42cf3b3a65c20030b909c1dd6219aca7d5833299"
+  ],
+  [
+    21575,
+    "2021",
+    true,
+    7401,
+    "refactor: Create blockstorage module",
+    "Code review ACK fadcd3f78e, checked (almost) moved only changes. This is a nice tidy up change and doesn't change behavior. Easily reviewed commit by commit.\r\n\r\nnit, could update doc/productivity.md to mention `--color-moved-ws=ignore-all-space`."
+  ],
+  [
+    20017,
+    "2020",
+    false,
+    9595,
+    "rpc: Add RPCContext",
+    "Concept ACK with last commit included"
+  ],
+  [
+    19879,
+    "2020",
+    true,
+    1075,
+    "[p2p] miscellaneous wtxid followups",
+    "utACK a8a64acaf32ac21feeb885671772282b531ef9a2\r\n\r\nThanks for tidying up these loose ends! If you retouch, I suggest you update the commit log for the _[mempool] Revert unbroadcast set to tracking just txid_ commit to include the hash of the commit that this is reverting (c7eb6b4f1fe5bd76388a023529977674534334a7)."
+  ],
+  [
+    19779,
+    "2020",
+    true,
+    7010,
+    "Remove gArgs global from init",
+    "To keep the code move-only, as this commit is to be reviewed with `--color-moved=dimmed-zebra --color-moved-ws=ignore-all-space`"
+  ],
+  [
+    19646,
+    "2020",
+    true,
+    6275,
+    "doc: Updated outdated help command for getblocktemplate",
+    "@jakeleventhal for later, you can also try this as a nice way to credit a co-author in the commit message, if you like:\r\n\r\nhttps://stackoverflow.com/questions/7442112/how-to-attribute-a-single-commit-to-multiple-developers"
+  ],
+  [
+    19250,
+    "2020",
+    true,
+    2330,
+    "wallet: Make RPC help compile-time static",
+    "Currently calling `help` on a wallet RPC method will either return `help: unknown command: getnewaddress` or the actual help. This runtime dependency of the help is a bug that complicates any tool that relies on documentation. Also, the code that enables the bug is overly complicated and confusing.\r\n\r\nThe fix is split into two commits:\r\n\r\n* First, a commit that can be reviewed with the `--color-moved=dimmed-zebra` option and tested with the included test.\r\n* Second, a commit that removes the complicated and confusing code."
+  ],
+  [
+    19208,
+    "2020",
+    true,
+    9499,
+    "test: move sync_blocks and sync_mempool functions to test_framework.py",
+    "ACK cc84460c164bcb2a874d4f08b3a2624e5ee9ff0a , reviewed with --color-moved=dimmed-zebra --color-moved-ws=ignore-all-space \ud83d\udcab\r\n\r\n<details><summary>Show signature and timestamp</summary>\r\n\r\nSignature:\r\n\r\n```\r\n-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA512\r\n\r\nACK cc84460c164bcb2a874d4f08b3a2624e5ee9ff0a , reviewed with --color-moved=dimmed-zebra --color-moved-ws=ignore-all-space \ud83d\udcab\r\n-----BEGIN PGP SIGNATURE-----\r\n\r\niQGzBAEBCgAdFiEE+rVPoUahrI9sLGYTzit1aX5ppUgFAlwqrYAACgkQzit1aX5p\r\npUh0+gv+MXi8uR6BQOeLwvt+luY9+MDS6qKEVkd1x6tUrhNL4R/1/HzIbCPA0n0O\r\nFH/bMuzMk19Fn4qkH4vGEJHPQTeT+CNEf9omuWRSrNU8pqicaBpAN0cpWcHbJSxD\r\nA8TC5uecJ1vWLmYruW9mnSTyYFTL7maKas7yKv4JsmsLIRhMPhWnJ2VU7MrCq9Uv\r\nUyR5VTYjiqmw3Gz24RJ9QTtJWTDJjlkNXs01ZrO1ijVX5Gak9QLx47wz60lh8wtT\r\nXtRQKOxsBGbJfrFexpU3IdThhNTuLTx1zcULgE2S6IOBF1Lph/CrSuZLv69H3bhW\r\nS45h7iliCQR5njyC93TB1GB56BDFGcvbFqkjP0jgB0sVdh+pRP4lcgTNRGPD8O+t\r\np4TbuTKMo6P1JbqB1TAzZCmWUjVLmTjReSvGlMKegA3FHTm2XyXQEuOT7KHNk2Bm\r\n2BHyvABW/hlIB/79YlUQ59pTC8CIvjEl0JQxY5VXOARyESD9PAteaJ5a"
+  ],
+  [
+    19189,
+    "2020",
+    true,
+    4026,
+    "refactor: Replace RecursiveMutex with Mutex in timedata.cpp",
+    "\r\n\r\n\r\nACK cc5c0d2299b09c58cd9962ca5075ffa53f2633c0 , checked the second commit with  --word-diff-regex=. --ignore-all-space -U0 \ud83e\udd89\r\n\r\n<details><summary>Show signature and timestamp</summary>\r\n\r\nSignature:\r\n\r\n```\r\n-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA512\r\n\r\nACK cc5c0d2299b09c58cd9962ca5075ffa53f2633c0 , checked the second commit with  --word-diff-regex=. --ignore-all-space -U0 \ud83e\udd89\r\n-----BEGIN PGP SIGNATURE-----\r\n\r\niQGzBAEBCgAdFiEE+rVPoUahrI9sLGYTzit1aX5ppUgFAlwqrYAACgkQzit1aX5p\r\npUg9ywv/RuHDTDtPin6ga49t7Vslgym8iyJlbJNII/rcUL4iqxTbocvKoIpaJS4O\r\nURw7HGDe8sr5pBCEuwtM1lKgOxR9JQ2grVLisimxl99rQdLUd8ryCfS5KfAj4Ta+\r\nR5P1IMKO7/oSlovhcnWCoF7IXFcEDbSlYIz+OqYpDYBM6VtadUHTxvy37Tq/nLxO\r\nN+V2CZa2f09toH35OVv019BdSOQ/GiaiAAyMHY4Fwzjgyl7hLTa2DUKuGY/9Myt1\r\ngoCN/C+aqtk/O0eNmF87Tq9yARaoba70L9zhNafGNgDB7XFnPY72xrJueCaY/+lm\r\nG2m24ZUVmGbb8NolwXJ6/57J0nysNu/aDZFsDXTpweb3px/uIsOtuivD6zXkMo7f\r\ngvAJ274hCz6DJTXWkyDPJOEk99SFbn6aQaayIBLhdoo5HxihmNNUKhuBnQl0pSPw\r\n5ZsVLD8WQTIPhAeblnm3U6E3ytF2UrZK0yq0yuNWwf8C0Z5YJc"
+  ],
+  [
+    19110,
+    "2020",
+    true,
+    1876,
+    "test: Explain that a bug should be filed when the tests fail",
+    "ACK fad21a1a7aa8804f4699e5821f074f5d3845c78b\r\n```bash\r\n    assert_equal(self.nodes[0].getbestblockhash(), block.blahblah)\r\nAttributeError: 'CBlock' object has no attribute 'blahblah'\r\n2020-05-30T07:58:41.461000Z TestFramework (INFO): Stopping nodes\r\n2020-05-30T07:58:41.724000Z TestFramework (WARNING): Not cleaning up dir /var/folders/z2/cn877pxd3czdfh47mfkmbwgm0000gn/T/test_runner_\u20bf_\ud83c\udfc3_20200530_155836/feature_cltv_0\r\n2020-05-30T07:58:41.724000Z TestFramework (ERROR): Test failed. Test logging available at /var/folders/z2/cn877pxd3czdfh47mfkmbwgm0000gn/T/test_runner_\u20bf_\ud83c\udfc3_20200530_155836/feature_cltv_0/test_framework.log\r\n2020-05-30T07:58:41.725000Z TestFramework (ERROR): \r\n2020-05-30T07:58:41.725000Z TestFramework (ERROR): Hint: Call /bitcoin/test/functional/combine_logs.py '/var/folders/z2/cn877pxd3czdfh47mfkmbwgm0000gn/T/test_runner_\u20bf_\ud83c\udfc3_20200530_155836/feature_cltv_0' to consolidate all logs\r\n2020-05-30T07:58:41.725000Z TestFramework (ERROR): \r\n2020-05-30T07:58:41.725000Z TestFramework "
+  ],
+  [
+    18901,
+    "2020",
+    true,
+    4259,
+    "fuzz: use std::optional for sep_pos_opt variable",
+    "> glanced over the code on GitHub for 5 seconds ACK [4f0a6d7](https://github.com/bitcoin/bitcoin/commit/4f0a6d79c7efc950b263a91084fdef2354567f54)\r\n\r\nThanks. Pushed again because forgot to include you as co-author. "
+  ],
+  [
+    18446,
+    "2020",
+    false,
+    4013,
+    "test: Add test for wtxid transaction relay",
+    "Thanks @ajtowns ! I pulled in latest changes in #18044 and your suggestions. Then squashed and edited commit messages for easier reviewing. Also left your suggested change `ignore non-wtxidrelay compliant invs` in for now, pending discussion in #18044 ."
+  ],
+  [
+    18173,
+    "2020",
+    true,
+    5317,
+    "refactor: test/bench: deduplicate SetupDummyInputs()",
+    "\r\nre-ACK 7bf4ce4f64, only change is schuffling includes \ud83d\udeb6\r\n\r\n<details><summary>Show signature and timestamp</summary>\r\n\r\nSignature:\r\n\r\n```\r\n-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA512\r\n\r\nre-ACK 7bf4ce4f64, only change is schuffling includes \ud83d\udeb6\r\n-----BEGIN PGP SIGNATURE-----\r\n\r\niQGzBAEBCgAdFiEE+rVPoUahrI9sLGYTzit1aX5ppUgFAlwqrYAACgkQzit1aX5p\r\npUhnVAv+I6uvzOgqk8VYcqsJg/P0dsqI3fmxj1Xel1cIqyXGuU5xOmoMRmg2fFLw\r\nOEViwNDo7TZnDZZIlZetJ654Hp+Xi0fCL4X0b6xrsyPD53IVz3fHxURdYQV9Tmni\r\n38ENiTDxq9DwEnYO7Ax2HzKLCo5wPxZ6l/W06wVQ9QWdpZ0cqVVwUssUa4sV2/S6\r\niQqzZaLTmLSmuzy19TzOzkcjV+W/sTpNblc9FPLS2NFnSK9cLtyYiXXXoXdUHIEj\r\nwCyKwqFaWuMbbgCoiICaSu3vHu5DPyP+Yw1qI5dZebPH6UqZP+c84hWoqlyJg4HP\r\nCYyhe5uUes7J2wSQL8KDWMksV9GgShHt8Jnt3KmXEgecuIQtj4VE+F7sc7r8i8FC\r\nDfFSwEMQTC72kgaC+gvBSqAfTOBUydFJLpWZtnatO/PNWuMH1sb6nJOkKOLhQBLM\r\nfAiMxIcARfeUrzztlloN2a0BSGN+mdIv4k+1bzHGxFzGenQVxSgh1e4oD8ruC2y0\r\nzhZoLHAE\r\n=N1Iz\r\n-----END PGP SIGNATURE-----\r\n```\r\n\r\n[Timestamp of file with hash `c5d83acfb7421a6efb5ff5f150d39f0e718bb3e44"
+  ],
+  [
+    18071,
+    "2020",
+    false,
+    9504,
+    "Refactoring CHashWriter & Get{Prevouts,Sequence,Outputs}Hash to SHA256",
+    "I have a mild preference for this PR. Both seem correct.\r\n\r\ncode review ACK https://github.com/bitcoin/bitcoin/pull/18071/commits/b0ac6eb86f98258d14800a8f913f977902aed856\r\n\r\n\r\nNano nits can be ignored."
+  ],
+  [
+    17762,
+    "2019",
+    true,
+    7538,
+    "net: Log to net category for exceptions in ProcessMessages",
+    "re-ACK 4bdd68f301a9cee3360deafc7531c638e923226b (only change is adding includes) \ud83d\udd55\r\n\r\n<details><summary>Show signature and timestamp</summary>\r\n\r\nSignature:\r\n\r\n```\r\n-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA512\r\n\r\nre-ACK 4bdd68f301a9cee3360deafc7531c638e923226b (only change is adding includes) \ud83d\udd55\r\n-----BEGIN PGP SIGNATURE-----\r\n\r\niQGzBAEBCgAdFiEE+rVPoUahrI9sLGYTzit1aX5ppUgFAlwqrYAACgkQzit1aX5p\r\npUguNgwAoLtUwlt9Rl8Fd4Kkhw+iyyVzIoIfk+HL6LcG9BqfDfttfcijBiynEtNV\r\n29HzFgff3tiBWuYeN013IqeW1rE3MYxI4pDpGqeaWKkoj9YA6PW/jPWj8okAGzAC\r\naYsI/2cT/H6Ea/WL7foSeMejRryRLQfD8Jg241g4Rm8iPEm0U0Tqgk5s9oqzDfMi\r\nJ1R8Et1yDZo6+enk03ytF1WW3X+SN5PkI6M4CfShnf4ZxRyQ8atYUhRMOfOb8xFA\r\nvu2HKtYE+oWmFTfR1j6k5A9VO5ezOeL24nF8XP8FV+bcH7evzMOvudwdNMVuKag/\r\ngiW1i/ElaqHLZvTXxV1jGcu4/Vu1NfvylHQLuOft8H2BORe+OBrXAXT+qIpG5DtA\r\nq2xyhHCfkJwItwQAMGYhauHISq93NA77CNENxyxKPvupAMfwuViYYYG+gQ8cOXg9\r\n5YQ7GhkTFtCrTqU7abF/66XU62NKAEXvzJCjlF+/WzILoPncYAjTQcNO71pHMKYL\r\nlM2l3l5j\r\n=8t8Y\r\n-----END PGP SIGNATURE-----\r\n```\r\n\r\n[Timestamp of file "
+  ],
+  [
+    17743,
+    "2019",
+    true,
+    6455,
+    "doc: Add release note for RPC Whitelist",
+    "@instagibbs Sorry but could you re-ACK? The commit hash just changed as I included the PR reference :P"
+  ],
+  [
+    16887,
+    "2019",
+    true,
+    4837,
+    "Abstract out some of the descriptor Span-parsing helpers",
+    "@theStack You can post a commit, and I can include it in my PR. You can also open a PR against my branch."
+  ],
+  [
+    16757,
+    "2019",
+    true,
+    1593,
+    "doc: CChainState return values",
+    "Added a commit that can be reviewed with the git diff options `--color-moved=dimmed-zebra --color-moved-ws=ignore-all-space`."
+  ],
+  [
+    16753,
+    "2019",
+    true,
+    2165,
+    "wallet: extract PubKey from P2PK script with Solver",
+    "utACK https://github.com/bitcoin/bitcoin/pull/16753/commits/798a589aff64b83a0844688a661f4bd987c3340c\r\n\r\nStretch goal would be to include a unit test for this, since there are none, but not a requirement."
+  ],
+  [
+    16730,
+    "2019",
+    true,
+    3247,
+    "Support serialization of std::vector<bool>",
+    "ACK https://github.com/bitcoin/bitcoin/pull/16730/commits/92528c260e9bd5d36da4b017098a49fda5051154\r\n\r\n* diff looks correct\r\n* confirmed the included test doesn't build without the source change\r\n\r\n```\r\nIn file included from test/serialize_tests.cpp:5:\r\n./serialize.h:602:7: error: no member named 'Serialize' in 'std::__1::__bit_const_reference<std::__1::vector<bool, std::__1::allocator<bool> > >'\r\n    a.Serialize(os);\r\n    ~ ^\r\n./serialize.h:721:11: note: in instantiation of function template specialization 'Serialize<CHashWriter, std::__1::__bit_const_reference<std::__1::vector<bool, std::__1::allocator<bool> > > >' requested here\r\n        ::Serialize(os, (*vi));\r\n          ^\r\n./serialize.h:727:5: note: in instantiation of function template specialization 'Serialize_impl<CHashWriter, bool, std::__1::allocator<bool>, bool>' requested here\r\n    Serialize_impl(os, v, T());\r\n    ^\r\n./hash.h:154:11: note: in instantiation of function template specialization 'Serialize<CHashWriter, bool, std"
+  ],
+  [
+    16532,
+    "2019",
+    true,
+    1967,
+    "[0.18] Doc: remove old release notes about systemd and riscv changes",
+    "ACK. For the future, is there a procedure to follow for adding commits missing from the release notes and credits? I thought it happened automatically but seems not (minor example  194226f6798e59cfd871db0335e078101b165043 that dropped through the cracks in 0.18.0 and here)."
+  ],
+  [
+    16124,
+    "2019",
+    true,
+    2768,
+    "tests: Limit Python linting to files in the repo",
+    "tACK https://github.com/bitcoin/bitcoin/pull/16124/commits/3c5254a820c892b448dfb42991f6109a032a3730\r\n\r\nThis also means that we're no longer including any `.py` files from the `depends/` dir, which was generating hundreds of warnings, i.e: https://gist.github.com/fanquake/443b5fecaf59ed228310110157b49912."
+  ],
+  [
+    15777,
+    "2019",
+    true,
+    2386,
+    "[docs] Add doxygen comments for keypool classes",
+    "ACK https://github.com/bitcoin/bitcoin/pull/15777/commits/292f0ee148bbe3b305aa8c1623355cee08a05867\r\n\r\nFeel free to ignore the nits I mention. Very helpful documentation, particularly for someone new to the codebase and its history like myself. Kudos for the relevant commit hashes to dive in further."
+  ],
+  [
+    15758,
+    "2019",
+    true,
+    2683,
+    "qa: Add further tests to wallet_balance",
+    "Second commit can be reviewed with `--ignore-all-space`"
+  ],
+  [
+    15750,
+    "2019",
+    true,
+    6921,
+    "[rpc] Remove the addresses field from the getaddressinfo return object",
+    "If helpful, [here is a functional test for this change](https://github.com/jonatack/bitcoin/commit/237c60c303d7620a9461e83a3331185acd33d148). Feel free to use/adapt/ignore."
+  ],
+  [
+    15452,
+    "2019",
+    true,
+    4294,
+    "Replace CScriptID and CKeyID in CTxDestination with dedicated types",
+    "utACK https://github.com/bitcoin/bitcoin/pull/15452/commits/78e407ad0c26190a22de1bc8ed900164a44a36c3\r\n\r\nBy removal of the `// TODO: include scripts in GetKeyBirthTimes() output instead of separate` comment, I assume you think that shouldn't be done, rather than because you implemented it."
+  ],
+  [
+    14900,
+    "2018",
+    true,
+    651,
+    "[backport] #14679 importmulti: Don't add internal addresses to address book",
+    "utACK https://github.com/bitcoin/bitcoin/pull/14900/commits/ae1b6756c96f78985e88fa5b0c68ccad90f5e259\r\n\r\nTest no longer includes the `ischange` asserts because that field was only introduced in #14410"
+  ],
+  [
+    14583,
+    "2018",
+    true,
+    6717,
+    "docs: Textual improvements in build docs",
+    "utACK c68464f\r\n\r\nThe changes look fine, however, please update the commit description so that it doesn't include all the messages from the interim commits, and remove any `@` mentions (they just lead to spam mentions/emails when downstream projects pull our commits).\r\n\r\n> Was planning to squash right before merge.\r\n\r\nPlease don't open PRs with the intent to \"cleanup\" and squash after review/before merge, as that just means another round of review (less of an issue here, but will always be the case for code changes).\r\n\r\nPR's should either be clearly marked [wip] if there is technical and/or code feedback required (that couldn't be discussed in an issue), otherwise, if you open a PR it should be in a ready to merge state."
+  ],
+  [
+    14074,
+    "2018",
+    true,
+    4972,
+    "Use std::unordered_set instead of set in blockfilter interface",
+    "utACK cfabca8749a132220e649d4563fb876afc21ceec. Only changes are updating ByteVectorHash comment, adding `final` specifier, and tweaking includes."
+  ],
+  [
+    13686,
+    "2018",
+    true,
+    7966,
+    "ZMQ: Small cleanups in the ZMQ code",
+    "Thanks for the review, @hebasto, very appreciated!  I've addressed your suggestions now with fixup commits.  I will now rebase this onto current master, and then go clean up the commit history (including splitting out the refactor as suggested by @promag and you)."
+  ],
+  [
+    12204,
+    "2018",
+    true,
+    6655,
+    "Fix overly eager BIP30 bypass",
+    "Concept ACK. Though, I have never checked if any of the heights or hashes make sense. Wouldn't it help review if #6931 or this pull actually included the code that was used to determine those magic numbers?"
+  ],
+  [
+    11708,
+    "2017",
+    false,
+    9945,
+    "Add P2SH-P2WSH support to signrawtransaction and listunspent RPC",
+    "utACK 50074643f20cc36e6ffbbec22f1c850c6e9a3207. Only change since last review is the new cleanup commit. Feel free to ignore very minor review suggestions below."
+  ],
+  [
+    10880,
+    "2017",
+    false,
+    1406,
+    "Update .gitignore to ignore more test files",
+    "Without this change, after building bitcoin master and testing it, I see the following untracked files:\r\n\r\n```\r\n$ git status\r\nOn branch master\r\nYour branch is up-to-date with 'origin/master'.\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\r\n\tqa/\r\n\tsrc/test/buildenv.py\r\n\tsrc/wallet.backup\r\n```\r\n\r\nI've tried to keep the `.gitignore` lines in the appropriate sections of the file."
+  ],
+  [
+    10781,
+    "2017",
+    true,
+    3321,
+    "Python cleanups",
+    "Looks good. utACK. One question inline and another general question:\r\n\r\nIn commit *Use the variable name _ to show that we are intentionally ignoring a return value*, why not just ignore the return value?"
+  ],
+  [
+    10546,
+    "2017",
+    true,
+    1339,
+    "Remove 33 unused Boost includes",
+    "compiles ACK https://github.com/bitcoin/bitcoin/pull/10546/commits/d652c7515bbae6d51470cf5ee538b0d5cad9547f\r\n\r\n195 more `#include <boost/.*>` to go!"
+  ],
+  [
+    10502,
+    "2017",
+    true,
+    1174,
+    "scripted-diff: Remove BOOST_FOREACH, Q_FOREACH and PAIRTYPE",
+    "Concept ACK. Nit: you can add a commit that removes the `#include <boost/foreach.hpp>` directives."
+  ],
+  [
+    9720,
+    "2017",
+    true,
+    7370,
+    "net: fix banning and disallow sending messages before receiving verack",
+    "utACK 50ce6755e024bc849ef8681f9aaa81ff3f3bca57\r\n\r\nI'd also like the commit referred to in 0abd2ccfaa24fdd1e5d24271e2360c4d9d64b662 's commit message to include its commit hash for easier understanding."
+  ],
+  [
+    9390,
+    "2016",
+    true,
+    1278,
+    "travis: make distdir",
+    "@theuni This should be enough to get back the test, which was removed due to 142ffc7e?\r\n\r\nEdit: Also added an unrelated commit which removes a line in gitignore. (No longer needed, as the java comparision tool was removed)"
+  ],
+  [
+    9366,
+    "2016",
+    true,
+    2863,
+    "Fix: OSX QT compile: use built-in swap if available, or defer",
+    "utACK https://github.com/bitcoin/bitcoin/pull/9366/commits/815f4148b2eff6c64c764e910e79677d5a67adc7 for the sake of fixing the build.\r\n\r\nDropping the system includes (or alternatively autoconfing this) can come as a next step if it's agreed upon."
+  ],
+  [
+    9343,
+    "2016",
+    true,
+    3011,
+    "Don't create change at dust limit",
+    "utACK for wallet.cpp. I don't currently understand the coincontroldialog.cpp code well enough to ACK that.\r\n\r\nI wrote a test for the wallet.cpp change in https://github.com/ryanofsky/bitcoin/commit/7b4852ee1365004c875876e29453f08c88b7f221, which you could consider including."
+  ],
+  [
+    9276,
+    "2016",
+    true,
+    2392,
+    "Some minor testing cleanups",
+    "> third commit removes the obsolete file run-bitcoind-for-test.sh, but someone should check if I did this correctly, since now that I've removed it from .gitignore, everyones repos will complain that they have an extra file sitting around. i wasn't sure how to clean that up?\r\n\r\nEveryone who cares about a \"clean\" work dir can delete the file by themself. It will still be generated every time you switch back to a old enough commit, so one could argue to leave the `.gitignore` patch out of this pull and submit it some time later, but I don't think this is worth it."
+  ],
+  [
+    9260,
+    "2016",
+    true,
+    9698,
+    "Mrs Peacock in The Library with The Candlestick (killed main.{h,cpp})",
+    "Nevermind, git apparently doesnt track across this kind of move if they are both in a merge commit, so instead ran sed s/#include \"main.h\"/#include \"validation.h\"/"
+  ],
+  [
+    9144,
+    "2016",
+    true,
+    2252,
+    "[Trivial] Correct waitforblockheight example help text",
+    "tested ACK https://github.com/bitcoin/bitcoin/pull/9144/commits/9e7447e5a4f7363331e7ea21f700aac2d36ce70f. I've added a couple of nits to the review.\r\n\r\nNACK https://github.com/bitcoin/bitcoin/pull/9144/commits/123d158a4d01a04873ebfa150008188d31db7ccf. I don't think we should include definitions *best block* in any of the self-documenting help since it's difficult to succinctly summarise, it should be a well-understood term, and we shouldn't add the same definition in many places.\r\n\r\nIn fact, it's incorrectly defined in the `getbestblockhash` RPC as \"Returns the hash of the best (tip) block in the longest blockchain.\" That's wrong, since the best block is the tip of the chain with the most work, not the tip of the longest chain.\r\n\r\nIt'd be far better to make sure that *best block* is correctly defined at https://bitcoin.org/en/developer-documentation."
+  ],
+  [
+    8717,
+    "2016",
+    true,
+    874,
+    "[WALLET] Addition of ImmatureCreditCached to MarkDirty()",
+    "utACK https://github.com/bitcoin/bitcoin/pull/8717/commits/a56037805c68bf34331a6a05d487ae4872261538\n\nThis indeed does fix a possible issue with the immature credit cache.\nIt certain situations, the immature balance could show an old cache value even after calling `CWalletTx::MarkDirty()`).\n"
+  ],
+  [
+    8173,
+    "2016",
+    true,
+    963,
+    "Use SipHash for node eviction (cont'd)",
+    "tACK on the purely Siphash part (reimplemented this PR tests included into NBitcoin successfully on https://github.com/MetacoSA/NBitcoin/commit/c915829c0e4595d49c357525c9c51b4cb52f4b7f)\n"
+  ],
+  [
+    6715,
+    "2015",
+    true,
+    544,
+    "Fix mempool packages",
+    "This fixes an edge case (introduced by #6654 and reported by @sipa here: https://github.com/bitcoin/bitcoin/pull/6654#issuecomment-142345556) in removing an entry from the mempool during the middle of a reorg, where the entry has an in-block ancestor which has not yet had its descendant state updated for the transaction being removed.\n\nThe first commit updates the `mempool_packages.py` rpc-test to include a test that demonstrates the bug; the second commit provides a fix.\n"
+  ],
+  [
+    5777,
+    "2015",
+    false,
+    2835,
+    "Remove size and position saving in the about window",
+    "I tried for a few hours to fix the phantom commits, when I get back online I'll give it another try but in the meantime just ignore them. The two files that were actually changed were utilitydialog.cpp and utilitydialog.h, although one of those included an unrelated change involving the new logo in the about window.\n"
+  ],
+  [
+    4577,
+    "2014",
+    true,
+    1136,
+    "Added systemd .service file in order to help distributions integrate bitcoind",
+    "ACK after squash into one commit.\n(ignore the pulltester error, the build system or source code isn't even touched)\n"
+  ],
+  [
+    2763,
+    "2013",
+    true,
+    3789,
+    "Send tx relay flag with version message",
+    "ACK code change.  Administrivia:\n\n1) git commit message should include text such as \"fixes #2534\" or similar.  Your pull request text included information that should be archived permanently inside the commit message.  In general, commit messages should be more informative than this.\n\n2) We are currently deployed with a buggy BIP 37 interpretation.  We should consider whether it warrants bumping the protocol version, along with this patch.  Otherwise, you have two different behaviors in the field, with the same protocol version.\n"
+  ],
+  [
+    2618,
+    "2013",
+    true,
+    3788,
+    "Partial solaris support",
+    "Comments:\n- ACK current commits\n- Windows supports fcntl.h, so no need to guard with #ifdef.  Just make sure that file includes fcntl.h [unless we're all missing some detail RE sys/fcntl.h].\n- Test plan:  ideally, at a minimum an \"it builds\" test on our primary platforms (linux/win/osx)\n"
+  ],
+  [
+    1054,
+    "2012",
+    true,
+    5972,
+    "Build identification strings",
+    "Ok, fairly large rewrite: by using the export-subst git attribute in a somewhat hacky way, the commit id is now included statically in version.cpp in exported source trees (github tar/zip bundles, output of the git-archive command, gitian build src/ directories, ...). contrib/build.sh is only used for running a git-describe where possible anyway, and does not require cd'ing to a root anymore.\n\nThanks to @makomk and @luke-jr for the idea.\n"
+  ],
+  [
+    177,
+    "2011",
+    false,
+    4142,
+    "convert build system to autotools",
+    "One important practice for git...\n\nWhen everything is just a single commit, it is difficult to review, to see if the submittor has inserted a tiny bit of malicious code, in all that code movement. I'm **not** accusing you of this, just speaking generally.\n\nSo, this commit should really be two, either (a) convert to autotools then (b) move files around, or (a) move files around under old build system, verify that it builds and works under old build system, then (b) convert to autotools.  That enables the reviewers to easily review the \"move files around\" commit and verify that it truly includes -zero- code changes.\n\nAlso, in terms of marketing, I think it is a bit misleading to call it the \"GNUification of bitcoin\"  It might make people think bitcoin is changing its license from MIT to GPL, at first glance.\n\nThe more technically accurate description is \"convert bitcoin build system to autotools\" or similar.  If we imported your git commit as-is into bitcoin.git, the one-line summary of "
+  ]
+]

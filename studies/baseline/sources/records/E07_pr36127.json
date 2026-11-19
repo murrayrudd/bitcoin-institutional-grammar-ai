@@ -1,0 +1,166 @@
+{
+  "number": 36127,
+  "title": "wallet: remove unused code",
+  "body": "Six unused items in src/wallet, one per commit.\n\n`DescriptorScriptPubKeyMan::AddDescriptorKey`, a private wrapper that\nlost its caller in #28333.\n\n`COutput::ToString`, no callers. It was used by `COutput::print()`,\nwhich went away with the other `print()` methods in wallet.\n\nThe two `CHDChain` keypool index members, whose last uses went away with\n`LegacySPKM` in #28710.\n\n`WalletDatabase::m_refcount`. Only BDB ever maintained it, and BDB went\naway in #28710.\n\nThe `warnings` parameter of `CreateFromDump`, never written, along with\nthe loop that printed it in wallet-tool. The `push_back` went away with\nthe `-format` option in #31250.\n\nThe two BDB-only members of `DatabaseOptions`, `use_shared_memory` and\n`max_log_mb`. Their last readers went away with BDB in #28710, along\nwith the `-privdb` and `-dblogsize` options that set them.\n",
+  "state": "closed",
+  "created_at": "2026-08-31T13:04:07+00:00",
+  "updated_at": "2026-09-08T19:29:33+00:00",
+  "closed_at": "2026-09-07T13:12:24+00:00",
+  "merged_at": "2026-09-07T13:12:24+00:00",
+  "author": "jeanpablojp",
+  "author_id": 8968629,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Wallet"
+  ],
+  "milestone": null,
+  "merged_by": "fanquake",
+  "merged_by_id": 863730,
+  "comments": [
+    {
+      "body": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--006a51241073e994b41acfe9ec718e94-->\n### Code Coverage & Benchmarks\nFor details see: https://corecheck.dev/bitcoin/bitcoin/pulls/36127.\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) and [AI policy](https://github.com/bitcoin/bitcoin/blob/master/doc/AI_POLICY.md) for information on the review process.\n| Type | Reviewers |\n| ---- | --------- |\n| ACK | [pablomartin4btc](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078531967), [vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594) |\n| Stale ACK | [Eunovo](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5077647514) |\n\nIf your review is incorrectly listed, please copy-paste <code>&lt;!--meta-tag:bot-skip--&gt;</code> into the comment that the bot should ignore.\n<!--5faf32d7da4f0f540f40219e4f7537a3-->",
+      "author": "DrahtBot",
+      "created_at": "2026-08-31T13:04:16+00:00"
+    },
+    {
+      "body": "ACK bbed824a64f0a5335442261b3abd63db22453cd6",
+      "author": "vicjuma",
+      "created_at": "2026-09-01T11:26:02+00:00"
+    },
+    {
+      "body": "Pushed a sixth commit taking @pablomartin4btc's suggestion, `use_shared_memory` and `max_log_mb` in `DatabaseOptions`. Their last readers went with BDB in #28710, same as `m_refcount`, along with the `-privdb` and `-dblogsize` options that set them. Credited on the commit.",
+      "author": "jeanpablojp",
+      "created_at": "2026-09-01T12:51:12+00:00"
+    },
+    {
+      "body": "> reACK\r\n\r\nMmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...\r\n\r\n> | Type | Reviewers |\r\n> | ---------| ---------|\r\n> | ACK  | [pablomartin4btc](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078531967)   |\r\n> | Concept ACK   | [vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594)  | \r\n> | Stale ACK  | [Eunovo](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5077647514)  |\r\n\r\n",
+      "author": "pablomartin4btc",
+      "created_at": "2026-09-01T16:06:59+00:00"
+    },
+    {
+      "body": "> Mmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...\r\n\r\nYou can find more details on code review in https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review. (Without a hash, no one can know what the comment is referring to)",
+      "author": "maflcko",
+      "created_at": "2026-09-01T17:34:10+00:00"
+    },
+    {
+      "body": "> Mmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...\r\n\r\n> You can find more details on code\r\n\r\nthanks @maflcko and @pablomartin4btc ",
+      "author": "vicjuma",
+      "created_at": "2026-09-01T17:41:10+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "ACK bbed824a64f0a5335442261b3abd63db22453cd6\n\nClean removal, verified every symbol's references.\n\nFound one more piece of unused code that would make a natural 6th commit\nfor the PR — these 2 data members in `struct DatabaseOptions`:\n```c++\nbool use_shared_memory = false; //!< Let other processes access the database.\nint64_t max_log_mb = 100;       //!< Max log size to allow before consolidating.\n```\nBoth `use_shared_memory` and `max_log_mb` were last actually consumed in 04a7a7a28c — part of the merge for PR #28710, the same PR the existing commits already cite for the `m_next_*` and `m_refcount` removals.",
+      "author": "pablomartin4btc",
+      "submitted_at": "2026-08-31T18:10:21+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "ACK https://github.com/bitcoin/bitcoin/pull/36127/commits/bbed824a64f0a5335442261b3abd63db22453cd6",
+      "author": "Eunovo",
+      "submitted_at": "2026-09-01T11:50:54+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "ACK 9f0543d69a1357371017c8289d9addc457b6f132",
+      "author": "pablomartin4btc",
+      "submitted_at": "2026-09-01T13:21:10+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "ACK 9f0543d69a1357371017c8289d9addc457b6f132\r\n",
+      "author": "vicjuma",
+      "submitted_at": "2026-09-01T13:29:01+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "fanquake",
+      "submitted_at": "2026-09-07T13:08:17+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "Looks like the last use of `warnings` in `CreateFromDrump` was removed in 7a41c939f05f2208c33e8f09eecbbfd579fb4023.",
+      "author": "fanquake",
+      "created_at": "2026-09-07T13:08:18+00:00",
+      "path": "src/wallet/wallettool.cpp",
+      "line": 165
+    }
+  ],
+  "files": [
+    {
+      "filename": "src/wallet/coinselection.cpp",
+      "additions": 0,
+      "deletions": 5,
+      "changes": 5,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/coinselection.h",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/db.h",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/dump.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/dump.h",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/scriptpubkeyman.cpp",
+      "additions": 0,
+      "deletions": 9,
+      "changes": 9,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/scriptpubkeyman.h",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/walletdb.h",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/wallettool.cpp",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 7,
+  "total_comments": 6,
+  "total_reviews": 5,
+  "total_files_changed": 9,
+  "total_additions": 3,
+  "total_deletions": 33
+}

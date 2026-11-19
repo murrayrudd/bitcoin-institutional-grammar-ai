@@ -1,0 +1,3330 @@
+{
+  "schema_version": "0.3",
+  "run_id": "F03_v03_r3",
+  "episode_id": "F03",
+  "packet_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+  "entry_screening": [
+    {
+      "source_id": "pr7819:body",
+      "disposition": "candidate",
+      "reason": "Candidate: proposed checkbox edit, tentative scope condition, and author strategy not to delay review. Ongoing GUI work, refactoring provenance, and unrendered image links are context.",
+      "unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:0",
+      "disposition": "candidate",
+      "reason": "Candidate: hedged recommendation to defer exposure until replacement capability, with a literal technical-judgment alternative.",
+      "unit_ids": [
+        "F03-U04"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:1",
+      "disposition": "candidate",
+      "reason": "Candidate: coordinated removal of visual emphasis, indirect wording revision, alternative emphasis for the non-replacable case, and the qualified adaptive-fee-switch proposal.",
+      "unit_ids": [
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:2",
+      "disposition": "candidate",
+      "reason": "Candidate: review-now statement with unresolved capability/permission force. The repeated quotation and direct agreement are separately retained without creating extra prescriptions.",
+      "unit_ids": [
+        "F03-U09",
+        "F03-U10",
+        "F03-U11"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:3",
+      "disposition": "candidate",
+      "reason": "Candidate: reported development strategy for additional outputs and tentative fee-only focus. Repeated quotation and possible-solution assent are nonstatement records.",
+      "unit_ids": [
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:4",
+      "disposition": "candidate",
+      "reason": "Candidate: technical necessity concerning a child transaction, retained with an unresolved institutional reading. Repeated-use computational blowup is technical context, not an institutional sanction.",
+      "unit_ids": [
+        "F03-U16",
+        "F03-U17"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:5",
+      "disposition": "candidate",
+      "reason": "Candidate: alternative wording suggestion and delayed-send option with all conditional benefits retained. Interest in additional outputs is an evaluative response.",
+      "unit_ids": [
+        "F03-U18",
+        "F03-U19",
+        "F03-U20"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:6",
+      "disposition": "candidate",
+      "reason": "Candidate: indirect conditional spelling edit, preserving the incomplete quoted fragment and the alternative suggestion condition.",
+      "unit_ids": [
+        "F03-U21"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:7",
+      "disposition": "candidate",
+      "reason": "Candidate: terse rebase expectation with technical-diagnosis alternative and no inferred authority.",
+      "unit_ids": [
+        "F03-U22"
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:8",
+      "disposition": "context_only",
+      "reason": "Context only: author reports closure and inclusion in successor #8182; no independently prescribed recurring governance arrangement is asserted.",
+      "unit_ids": [
+        "F03-U23"
+      ]
+    },
+    {
+      "source_id": "pr7819:metadata",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: original PR state and file-change metadata provide bounded outcome evidence. This is not an exhaustive extraction claim or proof that metadata has no institutional relevance.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:supplement_metadata",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: archived #7819 metadata corroborates closure without merge. Its merge_commit_sha does not override merged=false or prove integration.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr8182:supplement_metadata",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: #8182 is a distinct successor object, also closed without merge. No successor body, discussion, or patch is supplied for exhaustive proposition extraction.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:0",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Proposed checkbox text and tooltip, including higher-fee and unconfirmed-transaction qualifiers. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:1",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Call-site changes and confirmation text; the retained head still shows red styling, replacable, and an exclamation mark, without a trustworthy review-to-patch chronology. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:2",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Wallet-model forwarding of the opt-in flag into transaction creation. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:3",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Wallet-model function signature and false default. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:4",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Transaction flags, sequence computation, and signing-related changes. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr7819:patch:5",
+      "disposition": "context_only",
+      "reason": "Supplement screened as context: Flag enum and transaction-creation signature; these technical definitions are not automatically institutional constitutions. The selection design does not require exhaustive extraction from supplemental patches.",
+      "unit_ids": []
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "F03-U01",
+      "source_id": "pr7819:body",
+      "span": {
+        "start": 0,
+        "end": 131,
+        "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "Adds",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 4,
+                "quote": "Adds"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "a checkbox",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 5,
+                "end": 15,
+                "quote": "a checkbox"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "to the Send-Coins-Pannel (next to \"Add Recipient\")",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 16,
+                "end": 66,
+                "quote": "to the Send-Coins-Pannel (next to \"Add Recipient\")"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "that allows to set the according nSequence to signal BIP125 RBF",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 67,
+                "end": 130,
+                "quote": "that allows to set the according nSequence to signal BIP125 RBF"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "disputed",
+        "dispute_present": true,
+        "rationale": "The stand-alone timing/scope of exposing this checkbox is questioned in comment 0. This contests immediate applicability, not the legitimacy of every possible checkbox implementation. It remains a technical contribution, with no supplied rule-making authority.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 0,
+              "end": 131,
+              "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 89,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement...\n"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 89,
+                  "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement...\n"
+                }
+              },
+              {
+                "source_id": "pr7819:body",
+                "span": {
+                  "start": 133,
+                  "end": 211,
+                  "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+                }
+              }
+            ],
+            "rationale": "The response questions exposing this feature before actual replacement is possible; the deictic target is recovered from the contribution."
+          },
+          {
+            "kind": "reported_implementation",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:8",
+                "span": {
+                  "start": 0,
+                  "end": 44,
+                  "quote": "Closing in favor of #8182 (included there).\n"
+                }
+              }
+            ],
+            "rationale": "The author reports that the contribution is included in #8182. This does not verify the precise patch there or integration into a repository."
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr7819:metadata",
+                "span": {
+                  "start": 179,
+                  "end": 219,
+                  "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+                }
+              },
+              {
+                "source_id": "pr7819:metadata",
+                "span": {
+                  "start": 223,
+                  "end": 240,
+                  "quote": "\"merged_at\": null"
+                }
+              },
+              {
+                "source_id": "pr7819:metadata",
+                "span": {
+                  "start": 296,
+                  "end": 311,
+                  "quote": "\"merged\": false"
+                }
+              }
+            ],
+            "rationale": "Metadata records #7819 closed without merge. It does not reject each design proposition."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action is adding this checkbox in a contribution. Feature semantics do not constitute repository authority or network adoption.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Literal summary of the contributed implementation, without an independent governance prescription. Retained as the focal proposed edit rather than an institutional definition of the checkbox.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The proposal is an engineering contribution; its institutional type and any generalized expectation remain unestablished.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": [
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:8",
+              "span": {
+                "start": 0,
+                "end": 44,
+                "quote": "Closing in favor of #8182 (included there).\n"
+              }
+            }
+          ],
+          "rationale": "Reported inclusion in a successor PR, not verified merge, exact implementation, or network adoption."
+        },
+        {
+          "kind": "recorded_closed_unmerged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 179,
+                "end": 219,
+                "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+              }
+            },
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 223,
+                "end": 240,
+                "quote": "\"merged_at\": null"
+              }
+            },
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 296,
+                "end": 311,
+                "quote": "\"merged\": false"
+              }
+            }
+          ],
+          "rationale": "The contribution was closed without recorded merge; no inference of sanction or substantive rejection follows."
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U02",
+      "source_id": "pr7819:body",
+      "span": {
+        "start": 212,
+        "end": 329,
+        "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 227,
+                "end": 229,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "We is the expressed subject of want; treating that group as the decision makers for accepting the feature is inferred. Its membership and powers are unspecified.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "I",
+          "text": "defer accepting",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 215,
+                "end": 247,
+                "quote": "not sure if we want this without"
+              }
+            }
+          ],
+          "inference_note": "Reconstructs the tentative preference against accepting the feature alone; the source does not explicitly say defer or merge.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this checkbox contribution",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 235,
+                "end": 239,
+                "quote": "this"
+              }
+            }
+          ],
+          "inference_note": "This is the object of want; its role as the target of accepting is reconstructed, and its referent is the contribution described in the preceding sentence.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cac",
+          "text": "without a GUI based replacement workflow",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 240,
+                "end": 280,
+                "quote": "without a GUI based replacement workflow"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author tentatively questions a contribution without the missing GUI workflow. This could be a proposed scope condition or only product-design uncertainty; no institutional type is established.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 212,
+              "end": 329,
+              "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "An expression of uncertainty about product usefulness, without a request to postpone acceptance. The source does not name merge or release as the requested action.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The negative scope preference is tentative. Accepting the checkbox as a stand-alone contribution is a pragmatic interpretation of want this without, not an explicit integration instruction.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "unresolved",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U03",
+      "source_id": "pr7819:body",
+      "span": {
+        "start": 330,
+        "end": 378,
+        "quote": "But I don't want to hold back review of this PR."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "I",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 334,
+                "end": 335,
+                "quote": "I"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "don't want to hold back",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 336,
+                "end": 359,
+                "quote": "don't want to hold back"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "review of this PR",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 360,
+                "end": 377,
+                "quote": "review of this PR"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author articulates a personal process strategy: avoid holding back review while the broader replacement workflow is unfinished. The negative intention is nondeontic and provides no authority or duty.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal intention is not delaying review of this PR while the complementary workflow is being developed; this is ordinary operational review sequencing.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A pragmatic invitation for others to review immediately is also plausible. The selected literal parse retains the author's own stated intention, without converting reviewers into the explicit actor.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The author states an intention, not a binding commitment or a duty on reviewers.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U04",
+      "source_id": "pr7819:comments:0",
+      "span": {
+        "start": 0,
+        "end": 88,
+        "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "defer exposing",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 0,
+                "end": 33,
+                "quote": "Not sure it makes sense to expose"
+              }
+            }
+          ],
+          "inference_note": "The recommendation to defer is reconstructed from the skeptical assertion. Expose itself is explicit; the negative timing force is inferred.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 34,
+                "end": 38,
+                "quote": "this"
+              }
+            }
+          ],
+          "inference_note": "This remains the explicit object of expose in the pragmatic parse. The preceding PR body resolves it to the proposed checkbox; no actor role is inferred for the author.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "until the wallet actually _can_ do replacement",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 39,
+                "end": 85,
+                "quote": "until the wallet actually _can_ do replacement"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "This is a hedged, case-specific readiness recommendation. The author later agrees with it, but agreement with the technical condition does not establish authority or a socially binding expectation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "endorsement",
+            "target": "this_proposition",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:2",
+                "span": {
+                  "start": 0,
+                  "end": 88,
+                  "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+                }
+              },
+              {
+                "source_id": "pr7819:comments:2",
+                "span": {
+                  "start": 90,
+                  "end": 113,
+                  "quote": "Right. I totally agree."
+                }
+              }
+            ],
+            "rationale": "An attributed repeat of the concern is followed by the author's direct agreement. This is endorsement, not expectation recognition."
+          },
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:2",
+                "span": {
+                  "start": 114,
+                  "end": 190,
+                  "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+                }
+              }
+            ],
+            "rationale": "The author distinguishes ongoing GUI work from the possibility of reviewing the contribution now."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal recommendation concerns when to expose this particular GUI feature, as part of operational review. The wallet capability condition is technical, not a new recurring review procedure.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A technical judgment about the usefulness of an incomplete user interface; the recommendation to defer exposure is inferred.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The reviewer hedges the judgment. Agreement later supports endorsement of the concern, not a recognized obligation.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U05",
+      "source_id": "pr7819:comments:1",
+      "span": {
+        "start": 0,
+        "end": 76,
+        "quote": "I don't think the confirmation window deserves red text and the bang for it."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "remove",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 2,
+                "end": 46,
+                "quote": "don't think the confirmation window deserves"
+              }
+            }
+          ],
+          "inference_note": "Negative evaluation of the current emphasis is interpreted as a recommendation to remove it.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "red text and the bang",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 68,
+                "quote": "red text and the bang"
+              }
+            }
+          ],
+          "inference_note": "The literal objects of deserves become the targets of the reconstructed remove action. Both coordinated display treatments are preserved as one coupled de-emphasis request.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "from the confirmation window",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 14,
+                "end": 37,
+                "quote": "the confirmation window"
+              }
+            }
+          ],
+          "inference_note": "The literal subject is reconstructed as the interface location from which emphasis should be removed; it is not an explicit actor or object of remove.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 0,
+              "end": 76,
+              "quote": "I don't think the confirmation window deserves red text and the bang for it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "compound"
+      ],
+      "alternative_interpretation": "An aesthetic evaluation of the interface, without a request to change it. Removal of the two forms of emphasis can also be represented as two coordinated edit children without changing the meaning.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The edit action is inferred from a negative evaluation; no implementation or acceptance of that edit is supplied.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U06",
+      "source_id": "pr7819:comments:1",
+      "span": {
+        "start": 77,
+        "end": 169,
+        "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "revise",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 102,
+                "end": 128,
+                "quote": "may have the user thinking"
+              }
+            }
+          ],
+          "inference_note": "The criticism of misleading wording is interpreted as a recommendation to revise it.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "\"replaceable\"",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 82,
+                "end": 95,
+                "quote": "\"replaceable\""
+              }
+            }
+          ],
+          "inference_note": "The literal subject of may have becomes the target of the reconstructed revision, so its role is inferred.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "avoid suggesting greater replaceability than is available",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 102,
+                "end": 166,
+                "quote": "may have the user thinking that it's more replaceable than it is"
+              }
+            }
+          ],
+          "inference_note": "Recasts the stated concern as the purpose of the inferred edit, preserving the relative degree limitation without inventing technical capabilities.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 77,
+              "end": 169,
+              "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A prediction of user misunderstanding offered as technical rationale, without a distinct wording-change request.",
+      "confidence": "plausible",
+      "uncertainty_reason": "No replacement wording is specified in this occurrence; the revision action is inferred. Comment 5 later proposes alternatives, but its provenance does not establish an earlier mandatory edit.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U07",
+      "source_id": "pr7819:comments:1",
+      "span": {
+        "start": 170,
+        "end": 279,
+        "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 221,
+                "end": 227,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "apply",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 228,
+                "end": 240,
+                "quote": "get red text"
+              }
+            }
+          ],
+          "inference_note": "Reconstructs a contributor-facing edit from the desired display behavior; get is not treated as an action performed by a human actor.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "red text",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 55,
+                "quote": "red text"
+              }
+            }
+          ],
+          "inference_note": "The literal object of get becomes the target of the inferred apply action; its transformed role is recorded as inferred.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bind",
+          "text": "the non-replacable case",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 192,
+                "end": 215,
+                "quote": "the non-replacable case"
+              }
+            }
+          ],
+          "inference_note": "The literal subject of get becomes the receiving display case to which red text would be applied; this is a distinct receiver of acting on the red text.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A hedged design recommendation shifts emphasis to the non-replacable case, with inability to update fees as its explicit technical reason. It does not select a rule or socially recognized norm.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 170,
+              "end": 279,
+              "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Literal technical design claim with non-replacable case as grammatical subject of get; it does not establish an institutional actor or obligation.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The implied editor and the strength of this hedged design recommendation are not specified.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U08",
+      "source_id": "pr7819:comments:1",
+      "span": {
+        "start": 281,
+        "end": 562,
+        "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 298,
+                "end": 300,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 301,
+                "end": 307,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 359,
+                "end": 363,
+                "quote": "have"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "an \"adaptive fee switch\"",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 364,
+                "end": 388,
+                "quote": "an \"adaptive fee switch\""
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "(that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 389,
+                "end": 562,
+                "quote": "(that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "instead of the replaceable switch",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 308,
+                "end": 363,
+                "quote": "even have a \"replaceable switch\" and not, instead, have"
+              }
+            }
+          ],
+          "inference_note": "Preserves the contrasted alternative, including not/instead. It is not a universal ban on a replaceable switch, and the text does not impose explicit XOR exclusivity.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "endorsement",
+            "target": "this_proposition",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 0,
+                  "end": 283,
+                  "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+                }
+              },
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 285,
+                  "end": 315,
+                  "quote": "Yes. This might be a solution."
+                }
+              }
+            ],
+            "rationale": "The exact proposal is quoted and tentatively endorsed as a possible solution; the endorsement does not verify implementation or recognized obligation."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "compound",
+        "nested_component"
+      ],
+      "alternative_interpretation": "Exploratory design speculation framed as wondering whether, rather than a settled recommendation. The adaptive switch includes a coupled computational and display specification, not independent duties to perform every user choice.",
+      "confidence": "plausible",
+      "uncertainty_reason": "We is an unspecified collaborative actor; no authorized collective-choice procedure or implementation commitment is shown.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U09",
+      "source_id": "pr7819:comments:2",
+      "span": {
+        "start": 0,
+        "end": 88,
+        "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as quotation rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The italic emphasis on can in the original is absent in the repeated quotation; the proposition is otherwise recoverable.",
+      "confidence": "clear",
+      "uncertainty_reason": "No edit history establishes why markup differs.",
+      "record_role": "quotation",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "repeated",
+        "markup": "plain",
+        "rationale": "A block quote repeats the earlier comment, with its italic delimiters omitted; no independent endorsement is attributed to the quotation itself."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U10",
+      "source_id": "pr7819:comments:2",
+      "span": {
+        "start": 90,
+        "end": 113,
+        "quote": "Right. I totally agree."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as context rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Assent to the immediately quoted technical concern; it does not by itself acknowledge a binding rule.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U11",
+      "source_id": "pr7819:comments:2",
+      "span": {
+        "start": 161,
+        "end": 190,
+        "quote": "this can be reviewed already."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "be reviewed",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:2",
+              "span": {
+                "start": 170,
+                "end": 181,
+                "quote": "be reviewed"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:2",
+              "span": {
+                "start": 36,
+                "end": 40,
+                "quote": "this"
+              }
+            }
+          ],
+          "inference_note": "This is the literal passive grammatical subject, interpreted as the target of review. Its Bdir role is semantically reconstructed, even though the word is explicit.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "already",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:2",
+              "span": {
+                "start": 182,
+                "end": 189,
+                "quote": "already"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author asserts current reviewability and pragmatically invites review. Technical possibility versus permission remains unresolved; no authority evidence supports a rule.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal activity is immediate review of the existing PR, distinct from exposing the complete replacement feature. That sequencing is operational.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A capability/readiness claim that review is possible now. In context it also invites review despite unfinished GUI work; can is not automatically institutional permission.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The source does not settle capability versus authorized discretion, nor identify who has authority to permit review.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "unresolved",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U12",
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 0,
+        "end": 283,
+        "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as quotation rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "quotation",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "repeated",
+        "markup": "plain",
+        "rationale": "The block quote repeats the adaptive-switch proposal already represented in unit F03-U08, without independent endorsement by mere repetition."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U13",
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 285,
+        "end": 315,
+        "quote": "Yes. This might be a solution."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as context rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Tentative approval of technical possibility rather than acceptance of an obligation or report of implementation.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U14",
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 316,
+        "end": 429,
+        "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "I",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 316,
+                "end": 317,
+                "quote": "I"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "was also trying to allow",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 326,
+                "end": 350,
+                "quote": "was also trying to allow"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "adding additional outputs",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 351,
+                "end": 376,
+                "quote": "adding additional outputs"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "(edit the transaction back in the sendcoins dialog)",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 377,
+                "end": 428,
+                "quote": "(edit the transaction back in the sendcoins dialog)"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author describes an attributable development approach: allow additional outputs by returning to the sendcoins dialog. This explicit attempted method is nondeontic, not an adopted contribution rule.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:4",
+                "span": {
+                  "start": 0,
+                  "end": 295,
+                  "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+                }
+              }
+            ],
+            "rationale": "The following comment explains technical complexity specifically associated with additional outputs; the correspondence is substantive, but reply threading is unavailable."
+          },
+          {
+            "kind": "endorsement",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:5",
+                "span": {
+                  "start": 119,
+                  "end": 176,
+                  "quote": "doing the add output thing would be pretty interesting..."
+                }
+              }
+            ],
+            "rationale": "The named add-output idea receives a favorable technical evaluation, without implementation or obligation."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "nested_component"
+      ],
+      "alternative_interpretation": "A report of a previous development attempt, which can be treated as technical context rather than an independent institutional strategy.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The report does not show completed behavior or a commitment to finish the attempt.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U15",
+      "source_id": "pr7819:comments:3",
+      "span": {
+        "start": 430,
+        "end": 484,
+        "quote": "But maybe we should just focus on increasing the fees?"
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "question",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 440,
+                "end": 442,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 443,
+                "end": 449,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "focus",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 455,
+                "end": 460,
+                "quote": "focus"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "increasing the fees",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 464,
+                "end": 483,
+                "quote": "increasing the fees"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "just",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 450,
+                "end": 454,
+                "quote": "just"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "An exploratory question about scope rather than a settled requirement. The exclusive focus is a tentative proposal, not evidence that additional outputs were actually removed.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The author uses maybe and a question; the packet does not record a final scope decision.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U16",
+      "source_id": "pr7819:comments:4",
+      "span": {
+        "start": 4,
+        "end": 179,
+        "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "you",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 60,
+                "end": 63,
+                "quote": "you"
+              }
+            }
+          ],
+          "inference_note": "The literal addressee of handle is supplied as you. It denotes the person implementing the discussed workflow; no named role, employment status, or maintainer authority is inferred.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "D",
+          "text": "need to",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 64,
+                "end": 71,
+                "quote": "need to"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "handle",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 72,
+                "end": 78,
+                "quote": "handle"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "making a child transaction of the original transaction",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 84,
+                "end": 138,
+                "quote": "making a child transaction of the original transaction"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "when pursuing the additional-output workflow",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 4,
+                "end": 35,
+                "quote": "workflow for additional outputs"
+              }
+            }
+          ],
+          "inference_note": "The technical topic is reconstructed as the activation condition for the implied implementation advice; it is not an unqualified duty for all transactions.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "for use in case the original confirms",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:4",
+              "span": {
+                "start": 139,
+                "end": 176,
+                "quote": "for use in case the original confirms"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A technical necessity can function as advice in review, so the candidate is retained. The explicit need is not sufficient evidence of an institutional duty, rule, or enforceable standard.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 4,
+              "end": 179,
+              "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "nested_component"
+      ],
+      "alternative_interpretation": "A technical necessity explanation, not an institutional obligation. It can pragmatically advise the developer to accommodate a fallback child transaction if pursuing additional outputs.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Need expresses an implementation dependency here; normative force and any institutional standing beyond the statement are unresolved.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "unresolved",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U17",
+      "source_id": "pr7819:comments:4",
+      "span": {
+        "start": 180,
+        "end": 294,
+        "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "technical_description",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as context rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Could contribute rationale for avoiding additional outputs. Must compute describes a technical computational burden, not a sanction or separately imposed duty.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U18",
+      "source_id": "pr7819:comments:5",
+      "span": {
+        "start": 0,
+        "end": 116,
+        "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "question",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "use",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 33,
+                "end": 97,
+                "quote": "perhaps the word \"updatable\" or \"amendable\" would better express"
+              }
+            }
+          ],
+          "inference_note": "The comparison of wording quality is reconstructed as a recommendation to use one of the offered alternatives.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "\"updatable\" or \"amendable\"",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 50,
+                "end": 76,
+                "quote": "\"updatable\" or \"amendable\""
+              }
+            }
+          ],
+          "inference_note": "The proposed words are the literal subject of would better express; their Bdir role under use is inferred. The OR is retained inside the complete alternative object.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "Instead of the word \"replacable\"",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 0,
+                "end": 32,
+                "quote": "Instead of the word \"replacable\""
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 0,
+              "end": 116,
+              "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:6",
+                "span": {
+                  "start": 0,
+                  "end": 127,
+                  "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion.\n"
+                }
+              }
+            ],
+            "rationale": "The spelling correction is conditional on not following Greg's suggestion. Matching alternative word content and adjacency support the reference, but the alias is not independently authenticated."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "An informational question about wording quality; the replacement request is pragmatic. Updatable and amendable are alternatives, not a requirement to use both.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The source offers two alternatives without selecting one; no acceptance or completed wording change is established.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "proposed_wording",
+        "markup": "plain",
+        "rationale": "The sentence explicitly offers new replacement wording, retaining the original misspelling as the target and both suggested alternatives."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U19",
+      "source_id": "pr7819:comments:5",
+      "span": {
+        "start": 119,
+        "end": 176,
+        "quote": "doing the add output thing would be pretty interesting..."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as context rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Positive technical evaluation of the add-output approach, without a new instruction to implement it.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U20",
+      "source_id": "pr7819:comments:5",
+      "span": {
+        "start": 177,
+        "end": 416,
+        "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 204,
+                "end": 208,
+                "quote": "have"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "a [send immediately] option which delays sending it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 209,
+                "end": 260,
+                "quote": "a [send immediately] option which delays sending it"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set).",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:5",
+              "span": {
+                "start": 262,
+                "end": 416,
+                "quote": "thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+              }
+            }
+          ],
+          "inference_note": "These adjuncts describe the option's stated conditional benefit and possible additional capability. They do not activate a duty to amend or abort, and are not an institutional consequence relation.",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 177,
+              "end": 416,
+              "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "nested_component"
+      ],
+      "alternative_interpretation": "Exploratory feature speculation. The bracketed option label and its stated delay behavior are preserved together; the packet does not establish the option's on/off semantics. The abort effect is a possibility, not an independent instruction to abort.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Conditional technical benefits and possible abort capability are proposed, not implemented or institutionally authorized.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U21",
+      "source_id": "pr7819:comments:6",
+      "span": {
+        "start": 0,
+        "end": 126,
+        "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "Jonas",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:6",
+              "span": {
+                "start": 20,
+                "end": 25,
+                "quote": "Jonas"
+              }
+            }
+          ],
+          "inference_note": "The vocative supplies an addressee, reconstructed as the actor of the inferred spelling edit; being named is not itself an explicit grammatical actor role.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "I",
+          "text": "use",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:6",
+              "span": {
+                "start": 56,
+                "end": 85,
+                "quote": "is the more accepted spelling"
+              }
+            }
+          ],
+          "inference_note": "The asserted spelling preference is interpreted as an editorial recommendation.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "\"replaceab\"...",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:6",
+              "span": {
+                "start": 41,
+                "end": 55,
+                "quote": "\"replaceab\"..."
+              }
+            }
+          ],
+          "inference_note": "The literal subject of is the more accepted spelling becomes the target of use. The exact incomplete spelling fragment and ellipsis are preserved.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cac",
+          "text": "if you don't go with Greg's suggestion",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:6",
+              "span": {
+                "start": 87,
+                "end": 125,
+                "quote": "if you don't go with Greg's suggestion"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A case-specific technical or review proposal is expressed. The packet does not establish authorized rule making, enforcement, or recognition of an ongoing obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:6",
+            "span": {
+              "start": 0,
+              "end": 126,
+              "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A statement about accepted spelling rather than a direct editorial instruction. The quoted fragment replaceab is deliberately incomplete in the supplied text and is not expanded to a guessed full word.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The request is indirect and conditional. Jonas and Greg are the names as supplied; their formal roles are not known.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "proposed_wording",
+        "markup": "plain",
+        "rationale": "The supplied proposed spelling is an explicitly quoted fragment followed by ellipsis; it is not silently completed."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U22",
+      "source_id": "pr7819:comments:7",
+      "span": {
+        "start": 0,
+        "end": 13,
+        "quote": "Needs rebase."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "Needs",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 0,
+                "end": 5,
+                "quote": "Needs"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "rebase",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 6,
+                "end": 12,
+                "quote": "rebase"
+              }
+            }
+          ],
+          "inference_note": "Rebase is a noun complement in the terse diagnosis; it is reconstructed as the requested action.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this PR (#7819)",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 0,
+                "end": 13,
+                "quote": "Needs rebase."
+              }
+            }
+          ],
+          "inference_note": "The action target is omitted in the utterance. The source object_id identifies PR #7819; no later successor PR is substituted.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "Needs rebase expresses a case-specific review expectation, retained as a text-only norm candidate. Its technical-diagnosis alternative remains open; no authority or actual rebase is evidenced.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:7",
+            "span": {
+              "start": 0,
+              "end": 13,
+              "quote": "Needs rebase."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns proposing, reviewing, or updating this contribution within ordinary repository work; it does not revise a recurring governance arrangement.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A technical diagnosis of stale contribution state, without a binding request. The terse form does not identify a responsible actor or a formally authorized condition of integration.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The review context supports an expectation to rebase this PR, but no response, implementation, enforcement, or authority is supplied.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "F03-U23",
+      "source_id": "pr7819:comments:8",
+      "span": {
+        "start": 0,
+        "end": 43,
+        "quote": "Closing in favor of #8182 (included there)."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Record retained as context rather than as an additional institutional proposition.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "This visible communicative act occurs in ordinary contribution review; it is not a separately coded institutional prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A report of replacement by another contribution, not a rejection of every comment or evidence of repository integration.",
+      "confidence": "clear",
+      "uncertainty_reason": "Included there is an author report; the packet has successor metadata but no successor patch.",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "template_note": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied prose; no visible strike-through or suggestion fence."
+      },
+      "disposition_events": [
+        {
+          "kind": "recorded_closed_unmerged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 179,
+                "end": 219,
+                "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+              }
+            },
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 223,
+                "end": 240,
+                "quote": "\"merged_at\": null"
+              }
+            },
+            {
+              "source_id": "pr7819:metadata",
+              "span": {
+                "start": 296,
+                "end": 311,
+                "quote": "\"merged\": false"
+              }
+            }
+          ],
+          "rationale": "Metadata verifies the closure status of #7819 reported in this context; it does not establish rejection or a sanction."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from_unit_id": "F03-U04",
+      "to_unit_id": "F03-U01",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "Challenges the timing of exposing the proposed feature without actual replacement capability; it does not challenge every possible checkbox implementation.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U09",
+      "to_unit_id": "F03-U04",
+      "type": "quotes",
+      "basis": "explicit",
+      "rationale": "Attributed block quote repeats the earlier concern; omission of italic delimiters does not change its referent.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U04",
+      "to_unit_id": "F03-U10",
+      "type": "uptake",
+      "basis": "explicit",
+      "rationale": "The request-like concern receives direct agreement after its quotation. Agreement is an endorsement, not expectation recognition.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U11",
+      "to_unit_id": "F03-U03",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "Clarifies the author's earlier intention not to delay review by distinguishing reviewability from completion of the companion GUI.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U12",
+      "to_unit_id": "F03-U08",
+      "type": "quotes",
+      "basis": "explicit",
+      "rationale": "The adaptive-switch proposition is repeated as a block quote.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U08",
+      "to_unit_id": "F03-U13",
+      "type": "uptake",
+      "basis": "explicit",
+      "rationale": "The exactly quoted proposal receives tentative endorsement as a possible solution, not a verified design decision.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U15",
+      "to_unit_id": "F03-U08",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "The response narrows the discussed direction toward fee increases while retaining question form; it does not prove that the alternative was adopted.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U16",
+      "to_unit_id": "F03-U14",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "Explains complexity of the additional-output approach. This is a challenge to implementation simplicity, not a prohibition or sanction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U17",
+      "to_unit_id": "F03-U16",
+      "type": "clarifies",
+      "basis": "explicit",
+      "rationale": "The coordinated continuation adds the repeated-use computational complication to the child-transaction requirement.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U14",
+      "to_unit_id": "F03-U19",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The later add-output evaluation corresponds to the author's attempted approach, but remains a favorable technical response.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U18",
+      "to_unit_id": "F03-U06",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "The same contributor later offers concrete wording alternatives for the earlier misleading-label concern; causation and edit history remain unobserved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U21",
+      "to_unit_id": "F03-U18",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "The spelling fallback is expressly conditional on not taking Greg's suggestion; matching wording content supports reference to the alternatives in comment 5, without assuming a formal actor identity.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "F03-U22",
+      "to_unit_id": "F03-U23",
+      "type": "temporal",
+      "basis": "context_inferred",
+      "rationale": "The supplied comment timestamps place the rebase request before the closure report on 2016-06-09. This is ordering only; closure is not evidence of rebase compliance or punishment.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    }
+  ],
+  "episode_summary": {
+    "observed_outcomes": [
+      {
+        "claim": "The author reports closing #7819 in favor of #8182 and says the contribution is included there. The #7819 metadata records closure on June 9, 2016 with merged=false and no merge timestamp. This establishes closure without recorded integration, not rejection of every proposed edit.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:8",
+            "span": {
+              "start": 0,
+              "end": 43,
+              "quote": "Closing in favor of #8182 (included there)."
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 179,
+              "end": 219,
+              "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 223,
+              "end": 240,
+              "quote": "\"merged_at\": null"
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 296,
+              "end": 311,
+              "quote": "\"merged\": false"
+            }
+          }
+        ]
+      },
+      {
+        "claim": "The separately supplied successor record #8182 is also closed without merge, with a December 6, 2016 closure timestamp. A merge_commit_sha string in the archived metadata is not evidence that this successor was merged.",
+        "evidence": [
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 61,
+              "end": 75,
+              "quote": "\"number\": 8182"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 536,
+              "end": 571,
+              "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 149,
+              "end": 164,
+              "quote": "\"merged\": false"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 575,
+              "end": 592,
+              "quote": "\"merged_at\": null"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 390,
+              "end": 452,
+              "quote": "\"merge_commit_sha\": \"1987a7a11a1a9513f2eca7a54c751178e2ef518c\""
+            }
+          }
+        ]
+      },
+      {
+        "claim": "The retained #7819 head patch contains red confirmation styling and the message \"This transaction is replacable (optin-RBF)!\". It therefore does not demonstrate implementation of the requested visual de-emphasis or the proposed replacement spellings; the snapshot supplies no causal edit chronology.",
+        "evidence": [
+          {
+            "source_id": "pr7819:patch:1",
+            "span": {
+              "start": 1085,
+              "end": 1238,
+              "quote": "+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 0,
+              "end": 76,
+              "quote": "I don't think the confirmation window deserves red text and the bang for it."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 0,
+              "end": 116,
+              "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:6",
+            "span": {
+              "start": 0,
+              "end": 126,
+              "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+            }
+          }
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "category": "review_coordination",
+        "claim": "The author states an intention not to delay review while the GUI replacement workflow is unfinished. A reviewer questions exposure before replacement is possible; the author quotes that concern, agrees, and says the existing contribution can already be reviewed. This supports a communicative distinction between reviewing an incomplete contribution and exposing its feature; it does not demonstrate authority or actual review completion.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 133,
+              "end": 211,
+              "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+            }
+          },
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 90,
+              "end": 113,
+              "quote": "Right. I totally agree."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 190,
+              "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+            }
+          }
+        ],
+        "unit_ids": [
+          "F03-U03",
+          "F03-U04",
+          "F03-U09",
+          "F03-U10",
+          "F03-U11"
+        ],
+        "alternative_explanation": "The exchange may merely describe product readiness and technical reviewability, without establishing a shared institutional expectation about staging review.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "reason_giving",
+        "claim": "The adaptive-fee-switch suggestion receives an attributed quotation and a tentative possible-solution response. The author reports trying additional outputs and asks whether to focus only on increasing fees. A subsequent comment explains child-transaction handling and repeated-use version growth for additional outputs. This is a source-supported exchange of design alternatives and reasons, without a demonstrated final design or causal implementation effect.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 0,
+              "end": 283,
+              "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 285,
+              "end": 315,
+              "quote": "Yes. This might be a solution."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 4,
+              "end": 179,
+              "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 180,
+              "end": 294,
+              "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+            }
+          }
+        ],
+        "unit_ids": [
+          "F03-U08",
+          "F03-U12",
+          "F03-U13",
+          "F03-U14",
+          "F03-U15",
+          "F03-U16",
+          "F03-U17"
+        ],
+        "alternative_explanation": "Participants may be exploring independent possibilities rather than negotiating a binding scope decision. The complexity explanation occurs after the fee-focus question and cannot be assumed to have caused it.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "scope_management",
+        "claim": "The author reports replacing this contribution with #8182, where it is said to be included. Metadata confirms #7819 closed without merge and separately records #8182 closed without merge. The report supports relocation of the proposal as the stated reason for closure; it does not verify code transfer, integration, or a response to the earlier rebase request.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:8",
+            "span": {
+              "start": 0,
+              "end": 43,
+              "quote": "Closing in favor of #8182 (included there)."
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 179,
+              "end": 219,
+              "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 223,
+              "end": 240,
+              "quote": "\"merged_at\": null"
+            }
+          },
+          {
+            "source_id": "pr7819:metadata",
+            "span": {
+              "start": 296,
+              "end": 311,
+              "quote": "\"merged\": false"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 61,
+              "end": 75,
+              "quote": "\"number\": 8182"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 536,
+              "end": 571,
+              "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 149,
+              "end": 164,
+              "quote": "\"merged\": false"
+            }
+          },
+          {
+            "source_id": "pr8182:supplement_metadata",
+            "span": {
+              "start": 575,
+              "end": 592,
+              "quote": "\"merged_at\": null"
+            }
+          }
+        ],
+        "unit_ids": [
+          "F03-U23"
+        ],
+        "alternative_explanation": "The closure statement may summarize a broader reworking not visible in this packet. Successor metadata does not establish preservation of the exact code or review suggestions.",
+        "status": "supported_sequence"
+      }
+    ],
+    "missing_evidence": [
+      "No complete edit history, reliable reply threading, or original comment IDs beyond corpus array positions.",
+      "Image links are not rendered; visual claims rely only on supplied prose and the retained #7819 patch.",
+      "No patches, full discussion, or verified incorporation details for #8182; #7159 is only referenced, without outcome evidence.",
+      "No evidence of recognized rule-making authority, enforcement, sanctions, or expectation recognition sufficient for locally_supported standing.",
+      "No supplied verification of a rebase, removal of display emphasis, chosen replacement wording, delayed-send option, adaptive-fee switch, or completed replacement GUI.",
+      "No evidence of repository integration or Bitcoin network adoption, nor of constitutional or epistemic governance activity."
+    ],
+    "unresolved_questions": [
+      "Do the hedged readiness and review-now statements prescribe contribution conduct or only express technical feasibility and product-design judgments?",
+      "Does Needs rebase impose an expected contribution step in this episode or merely diagnose stale code?",
+      "What is the precise meaning of the [send immediately] option label given the explicitly described delay behavior?",
+      "Which code and discussion points were included in #8182, and what happened beyond its separately recorded unmerged closure?",
+      "Were any of the wording, display, or scope suggestions implemented in another revision or contribution not supplied here?"
+    ]
+  }
+}

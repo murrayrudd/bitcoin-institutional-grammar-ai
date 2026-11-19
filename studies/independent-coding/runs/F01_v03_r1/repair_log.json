@@ -1,0 +1,1382 @@
+[
+  {
+    "change_id": "M01",
+    "stage": "mechanical_repair",
+    "unit_id": "D03",
+    "field": "components.Bdir.evidence",
+    "classification": "anchor_alignment_error",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "Bdir",
+      "text": "it",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 82,
+            "end": 84,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "Explicit object pronoun; its likely referent is the incorrectly listed review, not the contributor.",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "it",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 666,
+            "end": 668,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "Explicit object pronoun; its likely referent is the incorrectly listed review, not the contributor.",
+      "occurrence_role": "local"
+    },
+    "reason": "Relocated an unintended earlier matching substring or quoted occurrence to the correct predicate-local occurrence. Proposition and role interpretation are unchanged.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 666,
+          "end": 668,
+          "quote": "it"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M02",
+    "stage": "mechanical_repair",
+    "unit_id": "C02b",
+    "field": "components.Bdir.evidence",
+    "classification": "anchor_alignment_error",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 27,
+            "end": 29,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The literal subject becomes the target of the reconstructed rebase action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 41,
+            "end": 43,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The literal subject becomes the target of the reconstructed rebase action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "reason": "Relocated an unintended earlier matching substring or quoted occurrence to the correct predicate-local occurrence. Proposition and role interpretation are unchanged.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 41,
+          "end": 43,
+          "quote": "it"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M03",
+    "stage": "mechanical_repair",
+    "unit_id": "C04a",
+    "field": "components.A.evidence",
+    "classification": "anchor_alignment_error",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "A",
+      "text": "we",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 105,
+            "end": 107,
+            "quote": "we"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "A",
+      "text": "we",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 182,
+            "end": 184,
+            "quote": "we"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "reason": "Relocated an unintended earlier matching substring or quoted occurrence to the correct predicate-local occurrence. Proposition and role interpretation are unchanged.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 182,
+          "end": 184,
+          "quote": "we"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M04",
+    "stage": "mechanical_repair",
+    "unit_id": "C08a",
+    "field": "components.I.evidence",
+    "classification": "anchor_alignment_error",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "I",
+      "text": "remove",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 140,
+            "end": 146,
+            "quote": "remove"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "remove",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 188,
+            "end": 194,
+            "quote": "remove"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "reason": "Relocated an unintended earlier matching substring or quoted occurrence to the correct predicate-local occurrence. Proposition and role interpretation are unchanged.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 188,
+          "end": 194,
+          "quote": "remove"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M05",
+    "stage": "mechanical_repair",
+    "unit_id": "R02d",
+    "field": "components.Bdir.evidence",
+    "classification": "anchor_alignment_error",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "Bdir",
+      "text": "cleaning up the releases list in general",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 405,
+            "end": 409,
+            "quote": "that"
+          }
+        }
+      ],
+      "inference_note": "The literal subject that becomes the excluded object under the pragmatic action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "cleaning up the releases list in general",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 800,
+            "end": 804,
+            "quote": "that"
+          }
+        }
+      ],
+      "inference_note": "The literal subject that becomes the excluded object under the pragmatic action.",
+      "occurrence_role": "semantic_inference",
+      "token_exception": "That is the pronominal subject before the contracted copula in that's; the anchor is the grammatical pronoun, not an arbitrary substring."
+    },
+    "reason": "Relocated an unintended earlier matching substring or quoted occurrence to the correct predicate-local occurrence. Proposition and role interpretation are unchanged.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 800,
+          "end": 804,
+          "quote": "that"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S01",
+    "stage": "source_self_review",
+    "unit_id": "C03",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "technical_description",
+    "after": "reported_action",
+    "reason": "The source reports a Concept NACK; the convention classifies review votes as reported acts, even when their rationale is technical.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:3",
+        "span": {
+          "start": 0,
+          "end": 126,
+          "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S02",
+    "stage": "source_self_review",
+    "unit_id": "C13",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "technical_description",
+    "after": "reported_action",
+    "reason": "The author reports completed rebase and update actions rather than merely describing technical background.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 153,
+          "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S03",
+    "stage": "source_self_review",
+    "unit_id": "C04b",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "proposed",
+    "after": "asserted",
+    "reason": "The proposition is expressed as a declarative justification claim; its inferred recommendation force is recorded separately.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 220,
+          "end": 330,
+          "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S04",
+    "stage": "source_self_review",
+    "unit_id": "C05c",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "proposed",
+    "after": "asserted",
+    "reason": "A declarative personal preference retains asserted speech act under the pragmatic request reading.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S05",
+    "stage": "source_self_review",
+    "unit_id": "C11a",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "proposed",
+    "after": "question",
+    "reason": "Both children fall within the single literal So maybe ... ? question; splitting its actions does not remove question force.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 222,
+          "quote": "So maybe the EOL versions can be dropped"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S06",
+    "stage": "source_self_review",
+    "unit_id": "C06q1",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 0,
+          "end": 57,
+          "quote": "> It is likely so general that it can't catch any issues."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S07",
+    "stage": "source_self_review",
+    "unit_id": "C06q2",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 105,
+          "end": 149,
+          "quote": "> doesn't test watch-only miniscript support"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S08",
+    "stage": "source_self_review",
+    "unit_id": "C07q",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:7",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "> Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S09",
+    "stage": "source_self_review",
+    "unit_id": "C08q1",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "> > Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S10",
+    "stage": "source_self_review",
+    "unit_id": "C08q2",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "question",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 50,
+          "end": 177,
+          "quote": "> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S11",
+    "stage": "source_self_review",
+    "unit_id": "C09q",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 0,
+          "end": 41,
+          "quote": ">Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S12",
+    "stage": "source_self_review",
+    "unit_id": "C15q1",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "technical_description",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 245,
+          "end": 366,
+          "quote": "> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S13",
+    "stage": "source_self_review",
+    "unit_id": "C15q2",
+    "field": "speech_act",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "other",
+    "after": "question",
+    "reason": "Repeated quotation preserves the original question or technical-description act; record_role already marks repetition.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 513,
+          "end": 617,
+          "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet "
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S14",
+    "stage": "source_self_review",
+    "unit_id": "B03",
+    "field": "scope",
+    "classification": "substantive_scope_correction",
+    "meaning_changes": true,
+    "before": "case_specific",
+    "after": "general",
+    "reason": "Anymore and the same procedure as every release extend the negated maintenance need to the recurring release-update domain, not only this PR.",
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 364,
+          "quote": "The same procedure as every release (see dba123167236a172d2d33861d58aa94a19729671 [v23.0] and d8b705f1caeb3b4a6790cb26e4e5584ca791d965 [v22.0]), only a little simpler now: thanks to #25650, the previous release fetch script defaults to downloading/building the necessary tags, i.e. we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S15",
+    "stage": "source_self_review",
+    "unit_id": "B03",
+    "field": "alternative_interpretation",
+    "classification": "defensible_alternative",
+    "meaning_changes": false,
+    "before": "Pure technical lack of necessity, not a deontic exemption.",
+    "after": "Pure technical lack of necessity, not a deontic exemption. A narrower reading treats the claim as limited to the present update.",
+    "reason": "Retain the case-specific reading as a bounded alternative after correcting the primary scope.",
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 282,
+          "end": 364,
+          "quote": "we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S16",
+    "stage": "source_self_review",
+    "unit_id": "C09b",
+    "field": "scope",
+    "classification": "substantive_scope_correction",
+    "meaning_changes": true,
+    "before": "case_specific",
+    "after": "general",
+    "reason": "The generic you and to run the test at all describe a recurring prerequisite for this particular test, not only the present PR.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 64,
+          "end": 149,
+          "quote": "To run the test at all, you have to keep a built copy of every single release listed."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S17",
+    "stage": "source_self_review",
+    "unit_id": "R02b",
+    "field": "deontic_force",
+    "classification": "substantive_force_correction",
+    "meaning_changes": true,
+    "before": "recommendation",
+    "after": "nondeontic",
+    "reason": "An attributed preference to verify is a personal strategy, not a recommendation directed at another actor.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S18",
+    "stage": "source_self_review",
+    "unit_id": "C02b",
+    "field": "disposition_events",
+    "classification": "substantive_evidence_scope_correction",
+    "meaning_changes": true,
+    "before": [
+      {
+        "kind": "reported_implemented",
+        "target": "this_proposition",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 17,
+              "quote": "Rebased on master"
+            }
+          }
+        ],
+        "rationale": "Rebasing is reported; its precise relationship to #26589 remains unverified."
+      }
+    ],
+    "after": [
+      {
+        "kind": "reported_implemented",
+        "target": "unresolved",
+        "basis": "unresolved",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 17,
+              "quote": "Rebased on master"
+            }
+          }
+        ],
+        "rationale": "A rebase is reported, but whether this fulfills the qualified after-#26589 proposition cannot be established from the supplied sources."
+      }
+    ],
+    "reason": "The report individually identifies rebasing but does not verify the material after-#26589 qualifier; the disposition target must remain unresolved.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 31,
+          "end": 72,
+          "quote": "Meanwhile it needs a rebase after #26589."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 17,
+          "quote": "Rebased on master"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S19",
+    "stage": "source_self_review",
+    "unit_id": "C10a",
+    "field": "institution.evidence",
+    "classification": "evidence_completion",
+    "meaning_changes": false,
+    "before": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      }
+    ],
+    "reason": "The following default-behavior clause materially qualifies how developer selection would work; retain it as technical design context, not an additional prescription.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S20",
+    "stage": "source_self_review",
+    "unit_id": "C10a",
+    "field": "alternative_interpretation",
+    "classification": "evidence_completion",
+    "meaning_changes": false,
+    "before": "An exploratory software capability proposal, without institutional intent.",
+    "after": "An exploratory software capability proposal, without institutional intent. The source expressly retains fetching all binaries as the default; proposed discretion depends on the available releases, rather than a newly selective fetch default.",
+    "reason": "Make the unchanged all-binaries default recoverable alongside the implementation alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S21",
+    "stage": "source_self_review",
+    "unit_id": "C04c",
+    "field": "unit",
+    "classification": "substantive_relation_target_correction",
+    "meaning_changes": true,
+    "before": null,
+    "after": {
+      "unit_id": "C04c",
+      "source_id": "pr26586:comments:4",
+      "span": {
+        "start": 331,
+        "end": 460,
+        "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "technical_description",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Version-specific watch-only-miniscript rationale retained as the actual endpoint of the following coverage objection.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 331,
+              "end": 460,
+              "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Context for ordinary contribution review; no independently coded prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The statement reports past checking; the packet does not independently verify the feature effect or downgrade problem.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Attributable technical rationale rather than independently measured behavior.",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Retained supplied occurrence; no formatting history inferred."
+      },
+      "disposition_events": []
+    },
+    "reason": "Create the needed context endpoint for the distinct wallet-feature premise; do not silently attach its challenge to #25717.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S22",
+    "stage": "source_self_review",
+    "unit_id": "C04c",
+    "field": "relation.C05a.challenges",
+    "classification": "substantive_relation_target_correction",
+    "meaning_changes": true,
+    "before": {
+      "from_unit_id": "C05a",
+      "to_unit_id": "C04b",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The test-coverage objection limits the relevance of the watch-only-miniscript rationale; it does not deny that the feature exists.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 327,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues. I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "C05a",
+      "to_unit_id": "C04c",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The coverage objection limits the relevance of the separate watch-only-miniscript premise, without disputing #25717 or the existence of the feature.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 327,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues. I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "reason": "Correct the target of the test-coverage objection to the actual technical premise.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 0,
+          "end": 327,
+          "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues. I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S23",
+    "stage": "source_self_review",
+    "unit_id": "C15a",
+    "field": "relation.P01.uptake",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": {
+      "from_unit_id": "C15a",
+      "to_unit_id": "P01",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "The commit-specific test ACK evaluates the broader contribution; it does not prove acceptance of every intervening proposal.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 0,
+            "end": 45,
+            "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7"
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 283,
+            "end": 337,
+            "quote": "\"head_sha\": \"741908afc1f9ed2040c18667c75665b300c5dfe7\""
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "P01",
+      "to_unit_id": "C15a",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The commit-specific test ACK responds to the broader proposal identified by the metadata title and matching recorded head. It does not endorse each intervening recommendation.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 0,
+            "end": 45,
+            "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7"
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 283,
+            "end": 337,
+            "quote": "\"head_sha\": \"741908afc1f9ed2040c18667c75665b300c5dfe7\""
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "reason": "Use initiating proposal to attributable response direction for the broader-patch test ACK.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 0,
+          "end": 45,
+          "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7"
+        }
+      },
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 283,
+          "end": 337,
+          "quote": "\"head_sha\": \"741908afc1f9ed2040c18667c75665b300c5dfe7\""
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S24",
+    "stage": "source_self_review",
+    "unit_id": "C03",
+    "field": "relation.C03.challenges",
+    "classification": "evidence_scope_clarification",
+    "meaning_changes": false,
+    "before": {
+      "from_unit_id": "C03",
+      "to_unit_id": "P01",
+      "type": "challenges",
+      "basis": "explicit",
+      "rationale": "Concept NACK explicitly challenges the broader addition, citing a bug and doubtful version difference.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:3",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+          }
+        },
+        {
+          "source_id": "pr26586:metadata",
+          "span": {
+            "start": 23,
+            "end": 70,
+            "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "C03",
+      "to_unit_id": "P01",
+      "type": "challenges",
+      "basis": "explicit",
+      "rationale": "Concept NACK challenges the same broader PR at its then-discussed v24 version, citing a bug and doubtful difference. P01 is the retained title with later v24.0.1 wording, not evidence that the earlier NACK targeted the later fixed version.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:3",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+          }
+        },
+        {
+          "source_id": "pr26586:metadata",
+          "span": {
+            "start": 23,
+            "end": 70,
+            "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "reason": "Clarify version and temporal identity: the initial v24 criticism and the later retained v24.0.1 title concern the same PR at different states.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:3",
+        "span": {
+          "start": 0,
+          "end": 126,
+          "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 22,
+          "end": 40,
+          "quote": "updated to v24.0.1"
+        }
+      },
+      {
+        "source_id": "pr26586:metadata",
+        "span": {
+          "start": 23,
+          "end": 70,
+          "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S25",
+    "stage": "source_self_review",
+    "unit_id": "R02q",
+    "field": "presentation.rationale",
+    "classification": "convention_deviation",
+    "meaning_changes": false,
+    "before": "Retained supplied occurrence; no formatting history inferred.",
+    "after": "A repeated block containing an asserted criterion, conditional review demands, and navigation; other preserves their mixed communicative function rather than treating the compound quote as a new endorsement.",
+    "reason": "Explain other speech act for the heterogeneous full-comment quotation; homogeneous repeated questions and descriptions are separately classified.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 0,
+          "end": 280,
+          "quote": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S26",
+    "stage": "source_self_review",
+    "unit_id": "C11b",
+    "field": "components.Bdir",
+    "classification": "epistemic_component_basis_correction",
+    "meaning_changes": false,
+    "before": {
+      "symbol": "Bdir",
+      "text": "some regtest wallets",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 252,
+            "end": 272,
+            "quote": "some regtest wallets"
+          }
+        }
+      ],
+      "inference_note": "The literal object of hosts remains the stored object semantically, but its role under reconstructed store is inferred.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "some regtest wallets",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 252,
+            "end": 272,
+            "quote": "some regtest wallets"
+          }
+        }
+      ],
+      "inference_note": "Some regtest wallets is the explicit direct object of hosts and retains its patient/target role under reconstructed store. Unlike the repo, it is not transformed from subject to destination.",
+      "occurrence_role": "local"
+    },
+    "reason": "Separate predicate reconstruction from unchanged argument role: wallet objects remain explicitly supplied despite the pragmatic store action.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 252,
+          "end": 272,
+          "quote": "some regtest wallets"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S27",
+    "stage": "source_self_review",
+    "unit_id": "C04a",
+    "field": "institution",
+    "classification": "evidence_completion",
+    "meaning_changes": false,
+    "before": {
+      "type": "norm_candidate",
+      "standing": "disputed",
+      "dispute_present": true,
+      "rationale": "Explicit proposed recurring expectation to include every major release in compatibility tests. No attributed authorization makes it a rule. The later latest-per-feature proposal contests the breadth of this every-major-release expectation.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        }
+      ],
+      "recognition": [],
+      "authority_evidence": []
+    },
+    "after": {
+      "type": "norm_candidate",
+      "standing": "disputed",
+      "dispute_present": true,
+      "rationale": "Explicit proposed recurring expectation to include every major release in compatibility tests. No attributed authorization makes it a rule. The later latest-per-feature proposal contests the breadth of this every-major-release expectation. A supplied historical code comment states adding a new version after each release; this documents a compatible maintenance expectation, but neither resolves the current dispute nor establishes institutional authorization.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:patch:2",
+          "span": {
+            "start": 213,
+            "end": 250,
+            "quote": "# Add new version after each release:"
+          }
+        }
+      ],
+      "recognition": [],
+      "authority_evidence": []
+    },
+    "reason": "Use the supplied dated code comment as bounded documentary support while retaining disputed standing and abstaining from rule status.",
+    "evidence": [
+      {
+        "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:patch:2",
+        "span": {
+          "start": 213,
+          "end": 250,
+          "quote": "# Add new version after each release:"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S28",
+    "stage": "source_self_review",
+    "unit_id": "R00a",
+    "field": "institution",
+    "classification": "evidence_completion",
+    "meaning_changes": false,
+    "before": {
+      "type": "norm_candidate",
+      "standing": "disputed",
+      "dispute_present": true,
+      "rationale": "A proposed recurring release-selection expectation. The referenced commit provides a technical precedent, not institutional authorization for this file. Its application to these wallet tests is contested by the author minimum-retention counterproposal.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        }
+      ],
+      "recognition": [
+        {
+          "kind": "response",
+          "target": "this_proposition",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 0,
+                "end": 280,
+                "quote": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+              }
+            },
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              }
+            }
+          ],
+          "rationale": "The author quotes the criterion and supplies a wallet-specific counterproposal."
+        }
+      ],
+      "authority_evidence": []
+    },
+    "after": {
+      "type": "norm_candidate",
+      "standing": "disputed",
+      "dispute_present": true,
+      "rationale": "A proposed recurring release-selection expectation. The referenced commit provides a technical precedent, not institutional authorization for this file. Its application to these wallet tests is contested by the author minimum-retention counterproposal. The supplied commit describes a last-release-without-the-new-feature rationale; its accompanying patches concern txindex and mempool tests. Transfer to wallet tests is an argument in the focal review, not an already authorized universal requirement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+          "span": {
+            "start": 281,
+            "end": 440,
+            "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+          }
+        }
+      ],
+      "recognition": [
+        {
+          "kind": "response",
+          "target": "this_proposition",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 0,
+                "end": 280,
+                "quote": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+              }
+            },
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              }
+            }
+          ],
+          "rationale": "The author quotes the criterion and supplies a wallet-specific counterproposal."
+        }
+      ],
+      "authority_evidence": []
+    },
+    "reason": "Preserve the attributed precedent and its distinct test objects without conflating it with authority over this wallet-test selection dispute.",
+    "evidence": [
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+        "span": {
+          "start": 281,
+          "end": 440,
+          "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S29",
+    "stage": "source_self_review",
+    "unit_id": "C04c",
+    "field": "entry_screening.pr26586:comments:4.unit_ids",
+    "classification": "inventory_consistency_update",
+    "meaning_changes": false,
+    "before": [
+      "C04a",
+      "C04b"
+    ],
+    "after": [
+      "C04a",
+      "C04b",
+      "C04c"
+    ],
+    "reason": "Include the newly created context endpoint in the entry inventory; candidate screening disposition and statement count do not change.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,321 @@
+{
+  "status": "proposed alignment; not adjudicated ground truth",
+  "created_at_utc": "2026-11-07T17:36:41.481778+00:00",
+  "access_log": {
+    "task_and_permitted_inputs": [
+      {
+        "path": "protocol/alignment_task.txt",
+        "sha256": "0b86883fdf1902a5e26ff3a00a3bc0f1dc45e7e5ec2af26e3fdff1dedd97fa7e"
+      },
+      {
+        "path": "common_input/protocol/codebook.txt",
+        "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+      },
+      {
+        "path": "analysis/alignment_input.json",
+        "sha256": "2fbab8dc175fd77516cc473d463a5d9a16696faf25888d9bb71f407f0fd0da16"
+      },
+      {
+        "path": "common_input/packet.json",
+        "sha256": "ae9c70f3442ee008516d34ce80d05bc4c1e53acd095bea5c7eb64e527b77e7a7"
+      }
+    ],
+    "read_scope": [
+      "Read the alignment task and complete supplied codebook.",
+      "Read all 24 focal-source texts and all 203 masked statement records, including span, parse mode, component symbol/text, basis, and inference notes, using focused extracts. No institutional label field was requested or reconstructed from an unmasked output.",
+      "Parsed the supplied packet, inspected its selection and entry inventory, checked every focal text against it, and read supporting discussion/patch context listed below. Brief inventory previews of documentation and record metadata were visible; full dated documentation was not needed for proposition matching.",
+      "Read the thread-link metadata T32359_038_053 to confirm the comment-suggestion analytical layer; no new context IDs were added to the alignment.",
+      "One inventory command stopped because a patch entry lacked an author key. Subsequent focused extracts used optional author access. One batched contextual display was truncated; the affected 32406 suffix was re-read separately. The focal statement extracts used for grouping were not truncated.",
+      "Read only the newly written proposed alignment and notes for output validation. Wrote only the two requested analysis files."
+    ],
+    "supporting_packet_entries_displayed": [
+      "32359-037",
+      "32359-039",
+      "32359-053",
+      "32359-065",
+      "32359-067",
+      "32359-114",
+      "32359-116",
+      "32359-212",
+      "32359-214",
+      "32359-226",
+      "32359-228",
+      "32359-242",
+      "32359-body",
+      "32381-011",
+      "32381-013",
+      "32381-017",
+      "32381-019",
+      "32406-071",
+      "32406-078",
+      "32406-112",
+      "32406-147",
+      "32406-150",
+      "32406-151",
+      "32406-164",
+      "32406-166",
+      "32406-169",
+      "32406-170",
+      "32406-177",
+      "32406-179",
+      "32406-180",
+      "32406-225",
+      "32406-226",
+      "32406-227",
+      "32406-229",
+      "32406-251",
+      "32406-253",
+      "32406-body",
+      "32714-007",
+      "32714-009",
+      "32714-011",
+      "32714-012",
+      "32714-015",
+      "33224-001",
+      "33224-008",
+      "33224-009",
+      "33224-011",
+      "33224-015",
+      "33224-017",
+      "33224-019",
+      "33224-body",
+      "33453-003",
+      "33453-005",
+      "33453-014",
+      "33453-017",
+      "33453-019",
+      "33453-066",
+      "33453-067",
+      "33453-069",
+      "33453-086",
+      "X32406",
+      "X33224",
+      "X33453",
+      "T32359_038_053"
+    ],
+    "parent_information_used": "The task path and statement that the three annotations were frozen and passed the structural checker. No parent coding history, semantic key, baseline, labels, or agreement results were supplied or requested.",
+    "prohibited_access": {
+      "reviewers_folders": false,
+      "prior_inputs": false,
+      "agreement_scores_or_metrics": false,
+      "earlier_project_conclusions": false,
+      "unmasked_annotations": false,
+      "web": false,
+      "Library": false,
+      "other_chat_retrieval": false
+    },
+    "input_files_modified": false,
+    "additional_agents_spawned": false
+  },
+  "methodology": {
+    "unit_of_alignment": "An existing focal statement at its own analytical layer, within one source occurrence. Topic similarity, exact-span identity, and lexical overlap alone are insufficient.",
+    "procedure": [
+      "Enumerate the statement IDs supplied by each masked source record. Do not infer a statement ID from packet context and do not add context units.",
+      "Read the full focal source and identify each unit's focal act or definition from its span and components. Check actor or unresolved actor, action, object/referent, negation, material conditions, scope, and whether the unit is an immediate edit/navigation act, an embedded conduct expectation, a definition, or an asserted capability.",
+      "Use supplied context for antecedents and source meaning, while distinguishing context-recoverable interpretation from a qualification actually retained in the coded representation.",
+      "Match the same focal claim despite competing grammar, role decomposition, literal/pragmatic treatment, or explicit/inferred basis. These visible coding differences are not adjudicated or concealed by the mapping.",
+      "Allow wider/minimal spans where all material content is retained in the span or components. Do not count surrounding rationale as an independently extracted action merely because its words are included in a broader span.",
+      "Preserve distinct layers and unmatched extraction choices. Keep a compound-overlap knot unresolved when an all-coder equivalence would require silently adding or dropping a material qualification.",
+      "Validate all supplied IDs, their coder and source membership, exact once-only coverage, output shape, and alignment-type cardinality. Check the source text and visible spans against the permitted packet."
+    ],
+    "type_conventions": {
+      "one_to_one": "Exactly one unit for each of A, B, and C, with the same focal claim. This is a proposition correspondence, not a finding that every code or evidentiary claim agrees or is correct.",
+      "split_combined": "A combined focal statement and other coder children preserve the entire aligned proposition content; constituent actions, shared actor/modal scope, and qualifications are explained. The sole such group is 32359-213 configuration/non-spam content.",
+      "unpaired": "At least one coder lacks an independently extracted counterpart at this analytical layer. A two-coder match with the third absent is included in this type; this does not by itself diagnose an omission error.",
+      "unresolved": "The listed units form an overlap knot, not an equivalence class. Preserve the knot for further source review; do not automatically treat it as a successful alignment or expand it into arbitrary pairwise matches."
+    },
+    "no_agreement_optimization": "No institutional labels or agreement results were accessed, no agreement score was calculated, and grouping was not revised to improve an apparent agreement result.",
+    "scope_of_equivalence": "This masking permits proposition-level alignment and detection of visible coverage/layer issues. It cannot establish equality of the masked force, institutional evidence/standing/dispute, or governance-level judgments."
+  },
+  "masking": {
+    "reported_masked_fields": [
+      "grammar",
+      "deontic_force",
+      "institution",
+      "statement_target_level",
+      "observed_action_level"
+    ],
+    "complete": false,
+    "limitations": [
+      "Component symbols E/F/P versus A/I/Bdir and the parse mode can reveal or strongly suggest the grammar family even though the grammar field is removed.",
+      "Visible D components, negation, and reconstructed action text can reveal deontic interpretations even though deontic_force is removed.",
+      "Inference notes, source wording, unit identifiers, and contextual descriptions can suggest an institutional or governance interpretation. Those cues were used only to establish the focal action/layer or preserve a visible ambiguity, not to infer a hidden label for alignment.",
+      "The packet retains public participants and case context. Pseudonyms A/B/C conceal coder identities but do not make the aligner blind to the subject matter, source wording, or pattern of extraction choices."
+    ]
+  },
+  "ambiguities": [
+    {
+      "group_ids": [
+        "G_33453_068_usecase",
+        "G_33453_068_justify"
+      ],
+      "issue": "Negative use-case classification versus a separate justification request.",
+      "decision": "Match A's reconstructed inadmissibility advice to B/C's classification of the same use case. Keep B's justify action unpaired. A's wider span supplies rhetorical support but its components do not encode that independent request.",
+      "remaining_question": "A's assignment of Bitcoin Core as governed actor and directive force require later source review; the alignment does not certify them."
+    },
+    {
+      "group_ids": [
+        "G_32406_178_definition",
+        "G_32406_178_nonuse",
+        "G_32714_body_replace",
+        "G_32714_body_nonuse",
+        "G_32714_body_definition"
+      ],
+      "issue": "Definitions and wording edits contain an embedded nonuse expectation.",
+      "decision": "Keep C's separately extracted embedded expectations unpaired rather than reusing another coder's definition or editorial ID. Match the definitions or editorial actions at their own layers.",
+      "remaining_question": "Whether extracting both layers is necessary or redundant is a source-review question; absence of a separate focal unit is not assumed to mean loss of the words."
+    },
+    {
+      "group_ids": [
+        "G_32406_178_gets"
+      ],
+      "issue": "The shorter C referral omits dates and the glibc supporting example retained by A/B.",
+      "decision": "Match the same see-gets navigation action. The dates and continued-availability details characterize the example without changing the target, actor, action, or activation condition.",
+      "remaining_question": "A later review may assess how much evidentiary detail should have been retained. This match does not assert complete equality of example detail or an independent glibc referral."
+    },
+    {
+      "group_ids": [
+        "G_32406_148_assert",
+        "G_32406_148_docnorm"
+      ],
+      "issue": "A's broad test-addition span includes the sentence B separately interprets as documentation advice.",
+      "decision": "Match all test-addition units because they preserve the unless-already-tested exception; keep the B avoid-untested-docstring action unpaired.",
+      "remaining_question": "The advice may be rationale rather than an independent prescription. That extraction judgment is not resolved by span overlap."
+    },
+    {
+      "group_ids": [
+        "G_32359_227_capitulate_remove"
+      ],
+      "issue": "A combines two actions but does not retain the attributed absence-of-a-perfect-solution premise in its span/components. B/C preserve it and disagree on activation versus justificatory role.",
+      "decision": "Unresolved, not split_combined. The two-action correspondence is clear, but full qualified equivalence is not established.",
+      "permitted_alternatives": [
+        "After an explicit source adjudication that the omitted premise is only detachable rhetorical framing, a split_combined mapping might be defensible; that finding has not been made here.",
+        "A child-wise sensitivity comparison could examine capitulate and remove separately, but it would require controlled handling of the single A unit rather than counting it twice."
+      ],
+      "do_not": "Do not omit the premise, silently import it into A, or call the five-unit group an agreed proposition."
+    },
+    {
+      "group_ids": [
+        "G_32406_149_convince",
+        "G_32406_149_preference"
+      ],
+      "issue": "Alternative parses change focal verb form and role arrangement.",
+      "decision": "Include/convincing, provide/a convincing case, and justify inclusion retain the same requirement relation. Literal preference versus inferred choose/pursue retains the same quoted preference claim. These matches are not withheld because grammar or force interpretation could differ.",
+      "remaining_question": "Role-basis correctness, whether the weak preference licenses directive inference, and the governed actor remain for later review."
+    },
+    {
+      "group_ids": [
+        "G_33224_000_ignore"
+      ],
+      "issue": "The object it in the bot consequence is referentially uncertain.",
+      "decision": "Match the same unexpanded pronoun claim, trigger, and next-update timing. C's explicit uncertainty is preserved; A/B do not provide a contradictory resolved object.",
+      "remaining_question": "Whether it denotes the incorrectly listed review or the nearby comment is not resolved; neither execution nor enforcement is inferred."
+    },
+    {
+      "group_ids": [
+        "G_32381_012_knob"
+      ],
+      "issue": "The numerical 150-bytes-or-beyond question is combined with the setting proposal in A, split in B, and absent from C's retained focal representation.",
+      "decision": "Unresolved. No clean all-coder grouping preserves both the condition on changing the setting and the numerical qualification without adding or dropping content.",
+      "permitted_alternatives": [
+        "If the number is adjudicated as an independent proposal, the common conditional-setting claim and the number claim require a partial-alignment method able to represent one A unit spanning both; the requested one-use-ID schema cannot represent that without a knot.",
+        "If the number is adjudicated as a material qualification of the first sentence, C's retained representation lacks it and B's second child needs an explicit shared-scope assessment."
+      ],
+      "do_not": "Do not map A only to the first B/C sentence while discarding A's numerical constraint, or infer that C extracted the number solely because it remains in the source packet."
+    },
+    {
+      "group_ids": [
+        "G_32359_213_configure"
+      ],
+      "issue": "Configure and not-have-the-mempool-filled are a combined unit in A/C and two coordinated children in B.",
+      "decision": "split_combined because the whole negative clause is retained in A/C and B carries the shared node-runner actor and should-be-allowed modal. The B union and A/C text preserve the same content and subjective spam criterion.",
+      "remaining_question": "Whether the negative clause is a separate permission, an outcome, or an execution constraint remains a coding interpretation; coverage correspondence does not decide that institutional reading."
+    },
+    {
+      "group_ids": [
+        "G_33453_018_call"
+      ],
+      "issue": "Backport decision scope is paraphrased as 30.x in some components and backport versus later master releases or relevant branches in others.",
+      "decision": "Match the same demonstrative decision allocation, using 33453-014/017/019 to resolve the current-case referent. The parenthetical burden is retained in every unit span.",
+      "remaining_question": "The precise branch scope should remain a source-review caveat. Do not generalize this statement into an allocation of all future decision authority."
+    },
+    {
+      "group_ids": [
+        "G_33453_body_future",
+        "G_33453_body_schedule"
+      ],
+      "issue": "Shared full-sentence spans conceal different focal layers: future deprecation remains possible, and a removal schedule is preferred if deprecation occurs.",
+      "decision": "Match B-future with C-future, with A absent. Match A-schedule with C-schedule, with B absent. B carries the schedule words as a future-action qualification; A's full span contains possibility wording but its focal action is provide a schedule. Those observations do not create additional independent statement units.",
+      "remaining_question": "An alternative broad-coverage analysis might regard B as combined and C as split. It cannot simultaneously give A's schedule-only focal action full coverage of the future-possibility claim. The proposed mapping therefore preserves the two identifiable focal layers and records the extraction asymmetry instead of forcing a cross-layer split_combined group.",
+      "do_not": "Do not treat the empty B schedule array as proof that B omitted the schedule wording, or reuse B-future in both groups. Do not treat A's identical span as proof of a separately extracted future-possibility proposition."
+    }
+  ],
+  "alignment_limitations": [
+    "This is a proposed, revisable semantic alignment by one aligner. No independent alignment adjudication was performed and no additional agents were spawned.",
+    "Freeze/checker status was provided by the parent; the aligner did not inspect frozen reviewer folders to verify it. Structural validation of the alignment cannot certify semantic correctness.",
+    "Every supplied focal statement is covered, but the task does not search for new omissions in source text or recode statement/context decisions. Unpaired groups represent extraction differences at the visible focal layer, not established error counts.",
+    "The two unresolved groups intentionally hold heterogeneous partial representations. Any downstream calculation must keep their unresolved status explicit rather than assuming they are equivalent.",
+    "One-to-one and split_combined types identify proposition correspondence for later comparison. They do not certify equal hidden force, institutional type/standing/dispute, governance level, or authority evidence.",
+    "Sources 32381-018 and 32714-013 contain no focal statement IDs from any coder in the supplied alignment input. They are recorded below rather than populated with invented groups or context units.",
+    "Public source claims are treated as data. The alignment does not verify their factual assertions, attribute participant offices not supplied, or follow links beyond the permitted packet."
+  ],
+  "sources_without_focal_statement_units": [
+    "32381-018",
+    "32714-013"
+  ],
+  "integrity_verification": {
+    "status": "PASS",
+    "checks": [
+      "Proposed JSON has exactly the groups top-level key.",
+      "Each group has the required six fields and A/B/C arrays.",
+      "All group IDs are unique.",
+      "Every referenced ID exists under that coder in the supplied masked input.",
+      "Every referenced ID belongs to the group's source_id.",
+      "Every focal statement ID occurs exactly once across all groups.",
+      "No context IDs or invented IDs appear.",
+      "All one_to_one groups have exactly one ID per coder.",
+      "All unpaired groups have at least one empty coder array.",
+      "The split_combined group has complete coder coverage and an explicit child/combined correspondence.",
+      "Each unresolved group includes its material qualification/coverage issue.",
+      "All 24 focal source strings equal the corresponding packet entries.",
+      "Every visible unit span is an exact substring of its focal source."
+    ],
+    "focal_sources_in_input": 24,
+    "sources_represented_by_groups": 22,
+    "units_expected_by_coder": {
+      "A": 62,
+      "B": 71,
+      "C": 70
+    },
+    "units_covered_by_coder": {
+      "A": 62,
+      "B": 71,
+      "C": 70
+    },
+    "total_focal_units": 203,
+    "group_count": 74,
+    "alignment_type_counts": {
+      "one_to_one": 58,
+      "unpaired": 13,
+      "unresolved": 2,
+      "split_combined": 1
+    },
+    "counts_note": "These are inventory/integrity counts only, not agreement scores.",
+    "missing_ids": [],
+    "duplicate_ids": [],
+    "unknown_ids": [],
+    "source_mismatches": [],
+    "proposed_alignment_sha256": "1cc2b40979c0735ae651af22a6e85d0a8bf406acc2f4e4610fa0413a95704d6c"
+  },
+  "outputs": {
+    "proposed_alignment": "analysis/semantic_alignment.proposed.json",
+    "notes": "analysis/alignment_notes.json"
+  },
+  "freeze": {
+    "status": "frozen",
+    "frozen_at_utc": "2026-11-07T17:37:28.199571+00:00",
+    "scope": "The proposed mapping and these notes are complete and frozen for downstream handling. Proposed denotes a revisable alignment, not adjudicated ground truth.",
+    "proposed_alignment_sha256": "1cc2b40979c0735ae651af22a6e85d0a8bf406acc2f4e4610fa0413a95704d6c",
+    "verification": "Independent reread of both generated JSON files confirms all required fields, ID/source membership, unique complete coverage, cardinalities, source/span identity, note references, inventory counts, and recorded input/output hashes."
+  }
+}

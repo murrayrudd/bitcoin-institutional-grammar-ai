@@ -1,0 +1,337 @@
+{
+  "number": 31904,
+  "title": "refactor: modernize outdated trait patterns using helper aliases (C++14/C++17)",
+  "body": "The use of [`std::underlying_type_t<T>`](https://en.cppreference.com/w/cpp/types/underlying_type) or [`std::is_enum_v<T>`](https://en.cppreference.com/w/cpp/types/is_enum) (and similar ones, introduced in C++14) replace the `typename std::underlying_type<T>::type` and  `std::is_enum<T>::value` constructs (available in C++11).\r\n\r\nThe `_t` and `_v` helper alias templates offer a more concise way to extract the type and value directly.\r\n\r\nI've modified the instances I found in the codebase one-by-one (noticed them while investigating https://github.com/bitcoin/bitcoin/pull/31868), and afterwards extracted scripted diff commits to do the trivial ones automatically.\r\nThe last commit contains the values that were easier done manually.\r\n\r\nI've excluded changes from `src/bench/nanobench.h`, `src/leveldb`, `src/minisketch`, `src/span.h` and `src/sync.h` - let me know if you think they should be included instead.\r\n\r\nA few of the code changes can also be reproduced by clang-tidy (but not all of them):\r\n```bash\r\ncmake -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_BENCH=ON -DBUILD_FUZZ_BINARY=ON -DBUILD_FOR_FUZZING=ON && cmake --build build -j$(nproc)\r\nrun-clang-tidy -quiet -p build -j $(nproc) -checks='-*,modernize-type-traits' -fix $(git grep -lE '::(value|type)' ./src ':(exclude)src/bench/nanobench.h' ':(exclude)src/leveldb' ':(exclude)src/minisketch' ':(exclude)src/span.h' ':(exclude)src/sync.h')\r\n```",
+  "state": "closed",
+  "created_at": "2025-02-19T13:31:31+00:00",
+  "updated_at": "2026-07-30T13:24:20+00:00",
+  "closed_at": "2025-03-17T05:10:31+00:00",
+  "merged_at": "2025-03-17T05:10:31+00:00",
+  "author": "l0rinc",
+  "author_id": 1841944,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Refactoring"
+  ],
+  "milestone": null,
+  "merged_by": "fanquake",
+  "merged_by_id": 863730,
+  "comments": [
+    {
+      "body": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--006a51241073e994b41acfe9ec718e94-->\n### Code Coverage & Benchmarks\nFor details see: https://corecheck.dev/bitcoin/bitcoin/pulls/31904.\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\n| Type | Reviewers |\n| ---- | --------- |\n| ACK | [laanwj](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2697629617) |\n| Stale ACK | [purpleKarrot](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2668914709) |\n\nIf your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update.\n",
+      "author": "DrahtBot",
+      "created_at": "2025-02-19T13:31:36+00:00"
+    },
+    {
+      "body": "<!--85328a0da195eb286784d51f73fa0af9-->\n🚧 At least one of the CI tasks failed.\n<sub>Debug: https://github.com/bitcoin/bitcoin/runs/37469627519</sub>\n\n<details><summary>Hints</summary>\n\nTry to run the tests locally, according to the documentation. However, a CI failure may still\nhappen due to a number of reasons, for example:\n\n* Possibly due to a silent merge conflict (the changes in this pull request being\nincompatible with the current code in the target branch). If so, make sure to rebase on the latest\ncommit of the target branch.\n\n* A sanitizer issue, which can only be found by compiling with the sanitizer and running the\n  affected test.\n\n* An intermittent issue.\n\nLeave a comment here, if you need help tracking down a confusing failure.\n\n</details>\n",
+      "author": "DrahtBot",
+      "created_at": "2025-02-19T13:36:47+00:00"
+    },
+    {
+      "body": "This change could be automated with clang-tidy's [`modernize-type-traits`](https://clang.llvm.org/extra/clang-tidy/checks/modernize/type-traits.html) check. There are more places that can be modernized with this.",
+      "author": "purpleKarrot",
+      "created_at": "2025-02-19T14:17:31+00:00"
+    },
+    {
+      "body": "@purpleKarrot, you can check the PR with clang-tidy if it helps, but it won't find all of the values changed here.\r\nAnd even if it does, we need to simplify the review, we can't just rely on clang-tidy blindly.\r\nAdded the command that I used to check the changes via `modernize-type-traits` - let me know if you find other ones that I haven't covered.",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T14:40:10+00:00"
+    },
+    {
+      "body": "ACK.\r\n\r\nChanges LGTM. You may want to drop the reference to C++14 from the title, as `std::is_same_v` is actually not available until C++17. I you want, you could go full C++20 by replacing `std::is_same_v` with `std::same_as`.",
+      "author": "purpleKarrot",
+      "created_at": "2025-02-19T14:51:38+00:00"
+    },
+    {
+      "body": "Thanks for the review and the C++17 suggestion @purpleKarrot.\r\nIf you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack.\r\nEdit: the `std::same_as` change should probably be a different PR, that's not just cosmetics anymore.",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T14:59:19+00:00"
+    },
+    {
+      "body": "ACK 7abc6e1f4b4aca4c8c576ff0cc27d68f90e42d28",
+      "author": "purpleKarrot",
+      "created_at": "2025-02-19T15:02:28+00:00"
+    },
+    {
+      "body": "Concept and code review ACK 4cd95a2921805f447a8bcecc6b448a365171eb93\r\n\r\nSeems low-risk. As this is compile-time logic, i don't think this should actually affect the compiled code? (haven't verified, though)\r\n",
+      "author": "laanwj",
+      "created_at": "2025-03-04T13:42:16+00:00"
+    },
+    {
+      "body": "> As this is compile-time logic, i don't think this should actually affect the compiled code?\r\n\r\nYea, comparing the two branches only differs in version info in the binary.",
+      "author": "fanquake",
+      "created_at": "2025-03-17T05:04:22+00:00"
+    },
+    {
+      "body": "Thank you for the review and checking the binary!",
+      "author": "l0rinc",
+      "created_at": "2025-03-17T12:32:10+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "purpleKarrot",
+      "submitted_at": "2025-02-19T14:11:47+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "l0rinc",
+      "submitted_at": "2025-02-19T14:16:29+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "purpleKarrot",
+      "submitted_at": "2025-02-19T14:36:38+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "l0rinc",
+      "submitted_at": "2025-02-19T14:39:40+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "maflcko",
+      "submitted_at": "2025-02-19T15:14:05+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "l0rinc",
+      "submitted_at": "2025-02-19T15:20:35+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "l0rinc",
+      "submitted_at": "2025-02-19T19:50:48+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "l0rinc",
+      "submitted_at": "2025-02-21T09:47:19+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "You can use `std::is_same_v` here!",
+      "author": "purpleKarrot",
+      "created_at": "2025-02-19T14:11:47+00:00",
+      "path": "src/randomenv.cpp",
+      "line": null
+    },
+    {
+      "body": "I am, just doing it commit-by-commit: https://github.com/bitcoin/bitcoin/pull/31904/files#diff-4b1ae2ce314ef1f2d4cb4f2dbf7a87a0c299c942782fa734e9e80fed8324faa6R76",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T14:16:29+00:00",
+      "path": "src/randomenv.cpp",
+      "line": null
+    },
+    {
+      "body": "check formatting.",
+      "author": "purpleKarrot",
+      "created_at": "2025-02-19T14:36:37+00:00",
+      "path": "src/serialize.h",
+      "line": null
+    },
+    {
+      "body": "Thanks, fixed",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T14:39:39+00:00",
+      "path": "src/serialize.h",
+      "line": null
+    },
+    {
+      "body": "pls submit those upstream",
+      "author": "maflcko",
+      "created_at": "2025-02-19T15:14:04+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "line": 1
+    },
+    {
+      "body": "Haven't noticed the header, will push a PR to https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h#L206",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T15:20:35+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "line": 1
+    },
+    {
+      "body": "Pushed https://github.com/llvm/llvm-project/pull/127811 and reverted the file here, thanks!",
+      "author": "l0rinc",
+      "created_at": "2025-02-19T19:50:48+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "line": 1
+    },
+    {
+      "body": "Added back the merged https://github.com/llvm/llvm-project/pull/127811/files#diff-bf90ae5bcd280af8b1305512d76ab1b81d0521bbc5d251f60bc0d44e790f16c0 (last commit makes sure it's exactly the same as the upstream version)",
+      "author": "l0rinc",
+      "created_at": "2025-02-21T09:47:19+00:00",
+      "path": "src/test/fuzz/FuzzedDataProvider.h",
+      "line": 1
+    }
+  ],
+  "files": [
+    {
+      "filename": "src/bench/prevector.cpp",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/deploymentstatus.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/interfaces/wallet.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/logging/timer.h",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "status": "modified"
+    },
+    {
+      "filename": "src/net_permissions.h",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "status": "modified"
+    },
+    {
+      "filename": "src/netbase.h",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/random.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/randomenv.cpp",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "status": "modified"
+    },
+    {
+      "filename": "src/rpc/util.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/serialize.h",
+      "additions": 10,
+      "deletions": 10,
+      "changes": 20,
+      "status": "modified"
+    },
+    {
+      "filename": "src/sync.cpp",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/test/fuzz/FuzzedDataProvider.h",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "status": "modified"
+    },
+    {
+      "filename": "src/test/fuzz/integer.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/test/fuzz/util.h",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/univalue/include/univalue.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/util/fs.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/util/overflow.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/util/strencodings.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    },
+    {
+      "filename": "src/util/strencodings.h",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/util/vector.h",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "status": "modified"
+    },
+    {
+      "filename": "src/wallet/types.h",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 25,
+  "total_comments": 10,
+  "total_reviews": 8,
+  "total_files_changed": 21,
+  "total_additions": 47,
+  "total_deletions": 47
+}

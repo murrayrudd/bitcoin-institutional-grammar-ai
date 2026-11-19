@@ -1,0 +1,91 @@
+{
+  "status": "pass",
+  "screened_entries": 22,
+  "units": 13,
+  "statement_units": 4,
+  "exact_anchor_references": 111,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "S01",
+      "source_id": "pr14441:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "No actor is named in the elliptical recommendation. The later statement is attributed to jnewbery in packet metadata and identifies the speaker as the person updating the PR with this reviewer's changes; this supports an inferred addressee, not an institutional role."
+    },
+    {
+      "unit_id": "S02",
+      "source_id": "pr14441:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 14,
+          "quote": "This paragraph"
+        }
+      },
+      "note": "It remains the explicit object of change. The antecedent This paragraph lies outside the minimal proposal span and resolves the target to the criticized paragraph, not to the PR as a whole."
+    },
+    {
+      "unit_id": "S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:6",
+        "span": {
+          "start": 107,
+          "end": 123,
+          "quote": "I've removed it."
+        }
+      },
+      "note": "The recommendation omits its actor. The later response, attributed to jnewbery, reports removal of the same distinctive check, supporting this inferred addressee."
+    },
+    {
+      "unit_id": "S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:2",
+        "span": {
+          "start": 16,
+          "end": 42,
+          "quote": "the new check for \"*\" here"
+        }
+      },
+      "note": "The object of drop is elided. The preceding clause supplies the new check as subject of changes anything; its object role under drop is reconstructed. This evidence is outside the minimal suggestion span."
+    },
+    {
+      "unit_id": "S04",
+      "source_id": "pr14441:review_comments:3",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "The reviewer is the subject of I think, not an explicit actor of document. The later author report identifies jnewbery as the PR reviser and supports a contextual addressee for the request."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

@@ -1,0 +1,107 @@
+{
+  "number": 11276,
+  "title": "[Docs] Update CONTRIBUTING.md to reduce unnecessary review workload",
+  "body": "The current workload for reviewing pull requests is relatively high and trivial, non-beneficial pull requests tend to slow down the overall development process.\r\n\r\nWe may want to directly close trivial, non-beneficially pull requests during time of high pull request load.\r\n\r\nThis PR would prepare for possible direct PR closing.",
+  "state": "closed",
+  "created_at": "2017-09-07T21:22:10+00:00",
+  "updated_at": "2021-09-08T11:44:58+00:00",
+  "closed_at": "2017-09-10T16:44:11+00:00",
+  "merged_at": "2017-09-10T16:44:11+00:00",
+  "author": "jonasschnelli",
+  "author_id": 178464,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Docs"
+  ],
+  "milestone": null,
+  "merged_by": "maflcko",
+  "merged_by_id": 6399679,
+  "comments": [
+    {
+      "body": "Concept ACK",
+      "author": "laanwj",
+      "created_at": "2017-09-07T21:26:21+00:00"
+    },
+    {
+      "body": "utACK e27effaf8dfde49acfd6bea96eb0e4754ccaead1. Couldn't find a way to test this without merging.",
+      "author": "maflcko",
+      "created_at": "2017-09-07T21:32:47+00:00"
+    },
+    {
+      "body": "Updated.",
+      "author": "jonasschnelli",
+      "created_at": "2017-09-07T23:58:00+00:00"
+    },
+    {
+      "body": "Seems reasonable. There have also been a few cases recently where multiple PRs have been opened when the changes should have all been in a single PR.\r\n\r\nutACK https://github.com/bitcoin/bitcoin/pull/11276/commits/91c39e38d9f59331b77ec9017ea147725a32f2d1",
+      "author": "fanquake",
+      "created_at": "2017-09-08T05:41:54+00:00"
+    },
+    {
+      "body": "Typo in PR title and commit message `CONTRIBUTING.md`.\r\n\r\nMaybe add something along \"Instead new contributors should discuss refactors with other developers in the usual channels.\"\r\n\r\nConcept ACK.",
+      "author": "promag",
+      "created_at": "2017-09-08T07:53:17+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "laanwj",
+      "submitted_at": "2017-09-07T21:26:32+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "laanwj",
+      "submitted_at": "2017-09-07T21:27:57+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "maflcko",
+      "submitted_at": "2017-09-07T21:32:14+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "s/directly/immediately/ I'd say",
+      "author": "laanwj",
+      "created_at": "2017-09-07T21:26:31+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "\"Refactoring changes\" maybe, or \"Pull requests that refactor the code\"",
+      "author": "laanwj",
+      "created_at": "2017-09-07T21:27:57+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "Maybe add\r\n\r\n```\r\nAny refactoring pull request may be closed when it doesn't attract anyone willing to review.",
+      "author": "maflcko",
+      "created_at": "2017-09-07T21:32:14+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    }
+  ],
+  "files": [
+    {
+      "filename": "CONTRIBUTING.md",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 2,
+  "total_comments": 5,
+  "total_reviews": 3,
+  "total_files_changed": 1,
+  "total_additions": 8,
+  "total_deletions": 0
+}

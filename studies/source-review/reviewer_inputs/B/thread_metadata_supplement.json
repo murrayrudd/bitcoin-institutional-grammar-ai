@@ -1,0 +1,9 @@
+{
+  "source_id": "T32359_038_053",
+  "kind": "record_metadata",
+  "pr": 32359,
+  "author": null,
+  "timestamp": null,
+  "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495",
+  "text": "[\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2063718969,\n    \"author\": \"Sjors\",\n    \"created_at\": \"2025-04-28T13:56:26+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T14:00:56+00:00\",\n    \"body\": \"```cpp\\r\\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\\r\\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\\r\\n```\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": null,\n    \"fresh_index\": 38,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-038\"\n  },\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2064478495,\n    \"author\": \"petertodd\",\n    \"created_at\": \"2025-04-28T20:15:52+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T20:15:52+00:00\",\n    \"body\": \"Added comment.\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": 2063718969,\n    \"fresh_index\": 53,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-053\"\n  }\n]"
+}

@@ -1,0 +1,469 @@
+{
+  "run_id": "F02_v04_r1",
+  "initial_checker_errors": [],
+  "mechanical_repairs": [],
+  "changes": [
+    {
+      "change_id": "R01",
+      "phase": "single_source_self_review",
+      "path": "/units/0/institution/rationale",
+      "before": "This is a case-specific technical edit recommendation. It does not establish a socially expected recurring practice, personal committed method, constituted institutional status, or attributed authorization/enforcement. Technical merit and later uptake do not supply those missing grounds.",
+      "after": "This is a case-specific technical edit recommendation. The record supplies no attributed institutional authorization or enforcement claim, socially expected duty or accountability standard, committed personal method, or constituted institutional status. A norm need not be recurring or already shared, but the technical preference expressed here does not by itself select that classification. Later technical assent and implementation do not fill that gap.",
+      "reason": "The first rationale unnecessarily referred to a socially expected recurring practice. Recurrence is not a norm-candidate requirement. The type remains undetermined on the narrower, source-supported reason that these are technical suggestions without a separately identified social expectation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R02",
+      "phase": "single_source_self_review",
+      "path": "/units/1/institution/rationale",
+      "before": "This is a case-specific technical edit recommendation. It does not establish a socially expected recurring practice, personal committed method, constituted institutional status, or attributed authorization/enforcement. Technical merit and later uptake do not supply those missing grounds.",
+      "after": "This is a case-specific technical edit recommendation. The record supplies no attributed institutional authorization or enforcement claim, socially expected duty or accountability standard, committed personal method, or constituted institutional status. A norm need not be recurring or already shared, but the technical preference expressed here does not by itself select that classification. Later technical assent and implementation do not fill that gap.",
+      "reason": "The first rationale unnecessarily referred to a socially expected recurring practice. Recurrence is not a norm-candidate requirement. The type remains undetermined on the narrower, source-supported reason that these are technical suggestions without a separately identified social expectation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R03",
+      "phase": "single_source_self_review",
+      "path": "/units/2/institution/rationale",
+      "before": "This is a case-specific technical edit recommendation. It does not establish a socially expected recurring practice, personal committed method, constituted institutional status, or attributed authorization/enforcement. Technical merit and later uptake do not supply those missing grounds.",
+      "after": "This is a case-specific technical edit recommendation. The record supplies no attributed institutional authorization or enforcement claim, socially expected duty or accountability standard, committed personal method, or constituted institutional status. A norm need not be recurring or already shared, but the technical preference expressed here does not by itself select that classification. Later technical assent and implementation do not fill that gap.",
+      "reason": "The first rationale unnecessarily referred to a socially expected recurring practice. Recurrence is not a norm-candidate requirement. The type remains undetermined on the narrower, source-supported reason that these are technical suggestions without a separately identified social expectation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R04",
+      "phase": "single_source_self_review",
+      "path": "/units/3/institution/rationale",
+      "before": "This is a case-specific technical edit recommendation. It does not establish a socially expected recurring practice, personal committed method, constituted institutional status, or attributed authorization/enforcement. Technical merit and later uptake do not supply those missing grounds.",
+      "after": "This is a case-specific technical edit recommendation. The record supplies no attributed institutional authorization or enforcement claim, socially expected duty or accountability standard, committed personal method, or constituted institutional status. A norm need not be recurring or already shared, but the technical preference expressed here does not by itself select that classification. Later technical assent and implementation do not fill that gap.",
+      "reason": "The first rationale unnecessarily referred to a socially expected recurring practice. Recurrence is not a norm-candidate requirement. The type remains undetermined on the narrower, source-supported reason that these are technical suggestions without a separately identified social expectation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R05",
+      "phase": "single_source_self_review",
+      "path": "/units/0/institution/application_evidence/1/status",
+      "before": "observed",
+      "after": "unresolved",
+      "reason": "A retained heading with the requested spelling proves that spelling appears in the integrated artifact. With no inline line and no reviewed preimage, it does not independently locate and verify the particular correction action. Preserve the aggregate participant report but narrow artifact application.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 0,
+            "end": 1034,
+            "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R06",
+      "phase": "single_source_self_review",
+      "path": "/units/0/institution/application_evidence/1/rationale",
+      "before": "The retained release-note heading contains the exact complete RPC name. The same retained head and merge commit identify integration into this PR's repository target. This verifies the resulting edit, not the reason for adoption or network deployment.",
+      "after": "The retained release-note artifact contains the requested complete identifier and its head is the recorded merge commit. However, the supplied review has no line number or pre-update paragraph, so the exact typo occurrence and correction operation cannot be independently matched. This is artifact consistency with the request, while exact observed application remains unresolved; the separate aggregate participant report is retained.",
+      "reason": "Keep observed final spelling separate from proof of the particular requested edit.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 0,
+            "end": 1034,
+            "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R07",
+      "phase": "single_source_self_review",
+      "path": "/units/0/institution/standing_profile/application",
+      "before": "both",
+      "after": "reported",
+      "reason": "Recompute the profile after narrowing observed application to unresolved. A contextually mapped participant report remains.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R08",
+      "phase": "single_source_self_review",
+      "path": "/units/3/institution/application_evidence/1/rationale",
+      "before": "The retained release-note paragraph preserves the recommended empty-string behavior with and without the setting and the confusion rationale; wording is not verbatim. The same retained head and merge commit identify integration into this PR's repository target. This verifies the resulting edit, not the reason for adoption or network deployment.",
+      "after": "The retained release-note paragraph supplies the requested documentation of empty-string behavior with and without the setting and the usefulness/confusion explanation. The proposed phrase for backwards compatibility is not reproduced, so this is observed implementation of the focal documentation request, not verbatim adoption of every offered phrase or an independently established compatibility rationale. Matching retained-head and merge-commit metadata supports repository integration; no causal or network-adoption claim follows.",
+      "reason": "The tentative proposed wording included an explicit backward-compatibility rationale that the final paragraph does not repeat. Preserve that difference while retaining observed implementation of the focal request to document the change.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 0,
+            "end": 1034,
+            "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss"
+    },
+    {
+      "change_id": "R09",
+      "phase": "single_source_self_review",
+      "path": "/units/2/disposition_events/0/rationale",
+      "before": "The response accepts the same-check removal recommendation; the opening No answers the reviewer's caveat rather than rejecting the recommendation.",
+      "after": "The complete response says you're right and better without and explicitly refers to the check for \"*\". It supports acceptance of the removal recommendation. The isolated opening No is not coded as rejection; the precise clause it answers is not established.",
+      "reason": "The first rationale over-specified what No answers. The full response establishes acceptance without resolving that discourse detail.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error"
+    },
+    {
+      "change_id": "R10",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/observed_outcomes/0/claim_parts/1/text",
+      "before": "ryanofsky subsequently acknowledges revision 89306ab0df93bfdf5630910bc20b1eccb7379172 and describes code simplification and release-note updates as the only changes since the last review.",
+      "after": "ryanofsky also acknowledges revision 89306ab0df93bfdf5630910bc20b1eccb7379172 and describes code simplification and release-note updates as the only changes since the last review.",
+      "reason": "Remove unnecessary ordering relative to the author's update report. The source explicitly supports acknowledgement and the since-last-review comparison; the packet timestamp can support ordering but the claim does not need it.",
+      "evidence": [
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation"
+    },
+    {
+      "change_id": "R11",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/observed_outcomes/0/claim",
+      "before": "jnewbery reports updating PR #14441 with ryanofsky's changes. ryanofsky subsequently acknowledges revision 89306ab0df93bfdf5630910bc20b1eccb7379172 and describes code simplification and release-note updates as the only changes since the last review.",
+      "after": "jnewbery reports updating PR #14441 with ryanofsky's changes. ryanofsky also acknowledges revision 89306ab0df93bfdf5630910bc20b1eccb7379172 and describes code simplification and release-note updates as the only changes since the last review.",
+      "reason": "Keep the parent claim synchronized with the corrected claim part.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 4,
+            "end": 58,
+            "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/14441\""
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation"
+    },
+    {
+      "change_id": "R12",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/mechanisms/0/claim_parts/0/text",
+      "before": "ryanofsky questions the behavioral contribution of the new check for \"*\" and tentatively recommends removal for clarity, unless something was missed.",
+      "after": "ryanofsky says the new check for \"*\" appears not to change behavior and tentatively recommends removal for clarity, unless the reviewer is missing something.",
+      "reason": "Describe the declarative doubt directly instead of wording that might be mistaken for a literal question; retain attribution, purpose, and caveat.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation"
+    },
+    {
+      "change_id": "R13",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/mechanisms/0/claim",
+      "before": "ryanofsky questions the behavioral contribution of the new check for \"*\" and tentatively recommends removal for clarity, unless something was missed. jnewbery agrees that behavior would be identical without it and reports removal.",
+      "after": "ryanofsky says the new check for \"*\" appears not to change behavior and tentatively recommends removal for clarity, unless the reviewer is missing something. jnewbery agrees that behavior would be identical without it and reports removal.",
+      "reason": "Keep the parent mechanism claim synchronized with the corrected part.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation"
+    },
+    {
+      "change_id": "R14",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/mechanisms/1/claim_parts/0/text",
+      "before": "ryanofsky recommends a spelling correction, replacement behavior paragraph, removal of a check, and documentation of the empty-string change.",
+      "after": "ryanofsky recommends a spelling correction, a tentative replacement behavior paragraph, dropping the new check for \"*\" for clarity unless something was missed, and documentation of the empty-string change with tentative wording.",
+      "reason": "Carry the removal caveat, clarity purpose, and tentative wording into the aggregate mechanism claim instead of relying solely on its evidence citations.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss"
+    },
+    {
+      "change_id": "R15",
+      "phase": "single_source_self_review",
+      "path": "/episode_summary/mechanisms/1/claim",
+      "before": "ryanofsky recommends a spelling correction, replacement behavior paragraph, removal of a check, and documentation of the empty-string change. jnewbery reports updating the PR with that reviewer's changes. The reviewer names a later revision and reports that only code simplification and release-note updates had changed since the last review.",
+      "after": "ryanofsky recommends a spelling correction, a tentative replacement behavior paragraph, dropping the new check for \"*\" for clarity unless something was missed, and documentation of the empty-string change with tentative wording. jnewbery reports updating the PR with that reviewer's changes. The reviewer names a later revision and reports that only code simplification and release-note updates had changed since the last review.",
+      "reason": "Keep the parent mechanism claim synchronized with the qualified part.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss"
+    }
+  ],
+  "change_count": 15,
+  "meaning_change_count": 5,
+  "first_complete_sha256": "8e58d67da53d15490c5c54643965c4a7e57095cc74572921154abd9551405bc4"
+}

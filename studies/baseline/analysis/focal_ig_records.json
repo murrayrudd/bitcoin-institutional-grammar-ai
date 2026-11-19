@@ -1,0 +1,1279 @@
+{
+  "schema": "focal_ig_projection_1",
+  "codebook_version": "0.3 unchanged",
+  "scope": "Sixteen focal projections across twelve episodes. These use v0.3 distinctions but are not exhaustive annotations, schema-complete v0.3 output, or an independent coding run. Missing components are deliberately not filled. Inference explanations retain source versus analyst role assignments.",
+  "units": [
+    {
+      "unit_id": "E01-U1",
+      "episode_id": "E01",
+      "source_id": "E01:doc_head",
+      "span": {
+        "start": 4193,
+        "end": 4264,
+        "quote": "Please refrain from creating several pull requests for the same change."
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "contributors",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4193,
+              "end": 4207,
+              "quote": "Please refrain"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "refrain from",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4200,
+              "end": 4212,
+              "quote": "refrain from"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "creating several pull requests for the same change",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4213,
+              "end": 4263,
+              "quote": "creating several pull requests for the same change"
+            }
+          }
+        }
+      ],
+      "institutional_type": "norm_candidate",
+      "standing": "documented",
+      "statement_target_level": "operational",
+      "interpretation": "Please expresses politeness. The implied addressee is the contributor addressed by the guide. The same-change qualifier is part of the complete object.",
+      "alternatives_and_limits": "Stronger prohibition is possible in practice, but the imperative alone and this episode do not demonstrate enforcement.",
+      "linked_claim_ids": [
+        "E01-C1",
+        "E01-C4"
+      ]
+    },
+    {
+      "unit_id": "E01-U2",
+      "episode_id": "E01",
+      "source_id": "E01:doc_head",
+      "span": {
+        "start": 3997,
+        "end": 4191,
+        "quote": "If you have problems with squashing (or other workflows with `git`), you can\nalternatively enable \"Allow edits from maintainers\" in the right GitHub\nsidebar and ask for help in the pull request."
+      },
+      "grammar": "regulative",
+      "deontic_force": "permission",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "you",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4000,
+              "end": 4003,
+              "quote": "you"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "can",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4070,
+              "end": 4073,
+              "quote": "can"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "enable",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4088,
+              "end": 4094,
+              "quote": "enable"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "Allow edits from maintainers",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4095,
+              "end": 4125,
+              "quote": "\"Allow edits from maintainers\""
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "problems with squashing or other Git workflows",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 3997,
+              "end": 4064,
+              "quote": "If you have problems with squashing (or other workflows with `git`)"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "in the right GitHub sidebar",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E01:doc_head",
+            "span": {
+              "start": 4126,
+              "end": 4153,
+              "quote": "in the right GitHub\nsidebar"
+            }
+          }
+        }
+      ],
+      "institutional_type": "strategy_candidate",
+      "standing": "documented",
+      "statement_target_level": "operational",
+      "interpretation": "This focal projection represents the enabling action. The adjacent asking-for-help action remains in the full source; it is not claimed as a complete compound annotation.",
+      "alternatives_and_limits": "Can could also convey technical possibility. Optional guidance supports permission or offered strategy, not obligation.",
+      "linked_claim_ids": [
+        "E01-C2",
+        "E01-C3"
+      ]
+    },
+    {
+      "unit_id": "E02-U1",
+      "episode_id": "E02",
+      "source_id": "E02:doc_head",
+      "span": {
+        "start": 7352,
+        "end": 7526,
+        "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing."
+      },
+      "grammar": "regulative",
+      "deontic_force": "permission",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "the maintainers",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7466,
+              "end": 7481,
+              "quote": "the maintainers"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "may",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7437,
+              "end": 7440,
+              "quote": "may"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "be closed",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7456,
+              "end": 7462,
+              "quote": "closed"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "trivial PRs or refactoring PRs with no clear benefits",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7352,
+              "end": 7436,
+              "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "immediately",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7444,
+              "end": 7455,
+              "quote": "immediately"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "to reduce unnecessary review workload",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7482,
+              "end": 7525,
+              "quote": "to reduce unnecessary\nworkload on reviewing"
+            }
+          }
+        }
+      ],
+      "institutional_type": "rule_candidate",
+      "standing": "documented",
+      "statement_target_level": "operational",
+      "interpretation": "Passive syntax explicitly identifies the actor and complete eligible PR set. The merged guide attributes this permission to maintainers; head text and merge metadata support documentary authorization.",
+      "alternatives_and_limits": "Authorization in a merged guide is not evidence of application in this episode or uniform practice.",
+      "linked_claim_ids": [
+        "E02-C1",
+        "E02-C4"
+      ]
+    },
+    {
+      "unit_id": "E02-U2",
+      "episode_id": "E02",
+      "source_id": "E02:doc_head",
+      "span": {
+        "start": 7109,
+        "end": 7185,
+        "quote": "Pull requests that refactor the code should not be made by new contributors."
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "new contributors",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7168,
+              "end": 7184,
+              "quote": "new contributors"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "should not",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7146,
+              "end": 7156,
+              "quote": "should not"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "be made",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7157,
+              "end": 7164,
+              "quote": "be made"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "pull requests that refactor the code",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E02:doc_head",
+            "span": {
+              "start": 7109,
+              "end": 7145,
+              "quote": "Pull requests that refactor the code"
+            }
+          }
+        }
+      ],
+      "institutional_type": "norm_candidate",
+      "standing": "documented",
+      "statement_target_level": "operational",
+      "interpretation": "The lexical negative is preserved. Advisory should not follows the frozen project convention.",
+      "alternatives_and_limits": "A binding prohibition is an alternative requiring evidence beyond the lexical form.",
+      "linked_claim_ids": [
+        "E02-C2"
+      ]
+    },
+    {
+      "unit_id": "E03-U1",
+      "episode_id": "E03",
+      "source_id": "E03:doc_developer_head",
+      "span": {
+        "start": 32082,
+        "end": 32202,
+        "quote": "Note that when there are no conflicts at all, however, rebasing should be\navoided, as it can be disruptive to reviewers."
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "contributor rebasing the branch",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E03:doc_developer_head",
+            "span": {
+              "start": 32137,
+              "end": 32145,
+              "quote": "rebasing"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "should",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E03:doc_developer_head",
+            "span": {
+              "start": 32146,
+              "end": 32152,
+              "quote": "should"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "be avoided",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E03:doc_developer_head",
+            "span": {
+              "start": 32156,
+              "end": 32163,
+              "quote": "avoided"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "rebasing",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E03:doc_developer_head",
+            "span": {
+              "start": 32137,
+              "end": 32145,
+              "quote": "rebasing"
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "when there are no conflicts at all",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E03:doc_developer_head",
+            "span": {
+              "start": 32092,
+              "end": 32126,
+              "quote": "when there are no conflicts at all"
+            }
+          }
+        }
+      ],
+      "institutional_type": "norm_candidate",
+      "standing": "text_only",
+      "statement_target_level": "operational",
+      "interpretation": "The contributor role is inferred from the guide context. Disruption to reviewers supplies rationale, not an independent sanction.",
+      "alternatives_and_limits": "This is unmerged proposed wording. The neighboring within-branch fixup exception remains material to the overall proposal.",
+      "linked_claim_ids": [
+        "E03-C1",
+        "E03-C4"
+      ]
+    },
+    {
+      "unit_id": "E04-U1",
+      "episode_id": "E04",
+      "source_id": "E04:doc_before",
+      "span": {
+        "start": 8953,
+        "end": 9037,
+        "quote": "You are expected to reply to any review comments before your pull request is\nmerged."
+      },
+      "grammar": "regulative",
+      "deontic_force": "obligation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "You",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 8953,
+              "end": 8956,
+              "quote": "You"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "are expected to",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 8957,
+              "end": 8972,
+              "quote": "are expected to"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "reply",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 8973,
+              "end": 8978,
+              "quote": "reply"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "any review comments",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 8982,
+              "end": 9001,
+              "quote": "any review comments"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "before your pull request is merged",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9002,
+              "end": 9036,
+              "quote": "before your pull request is\nmerged"
+            }
+          }
+        }
+      ],
+      "institutional_type": "rule_candidate",
+      "standing": "locally_supported",
+      "statement_target_level": "operational",
+      "interpretation": "The guide and attributable closure explanation support a candidate rule under v0.3. Bdir denotes the single target of reply under the project convention.",
+      "alternatives_and_limits": "The linked application is attributed to the speaker; the author need not agree with the feedback and can explain disagreement.",
+      "linked_claim_ids": [
+        "E04-C1",
+        "E04-C2",
+        "E04-C3"
+      ]
+    },
+    {
+      "unit_id": "E04-U2",
+      "episode_id": "E04",
+      "source_id": "E04:doc_before",
+      "span": {
+        "start": 9152,
+        "end": 9257,
+        "quote": "If there is outstanding feedback and\nyou are not actively working on it, your pull request may be closed."
+      },
+      "grammar": "regulative",
+      "deontic_force": "permission",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "actor authorized to close the PR",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9243,
+              "end": 9256,
+              "quote": "may be closed"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "may",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9243,
+              "end": 9246,
+              "quote": "may"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "be closed",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9250,
+              "end": 9256,
+              "quote": "closed"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "your pull request",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9225,
+              "end": 9242,
+              "quote": "your pull request"
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "outstanding feedback and inactive response",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E04:doc_before",
+            "span": {
+              "start": 9152,
+              "end": 9223,
+              "quote": "If there is outstanding feedback and\nyou are not actively working on it"
+            }
+          }
+        }
+      ],
+      "institutional_type": "rule_candidate",
+      "standing": "locally_supported",
+      "statement_target_level": "operational",
+      "interpretation": "The actor is omitted locally and is not silently assigned to all reviewers. This permission is linked as a separately represented possible consequence of unmet response requirements.",
+      "alternatives_and_limits": "The conditional is conjunctive. Closure is procedural; punishment and sole causation are not inferred.",
+      "linked_claim_ids": [
+        "E04-C1",
+        "E04-C2",
+        "E04-C4"
+      ]
+    },
+    {
+      "unit_id": "E05-U1",
+      "episode_id": "E05",
+      "source_id": "E05:comments:1",
+      "span": {
+        "start": 30,
+        "end": 135,
+        "quote": "Don't forget to include the commit hash after your ACK to specify which version of the PR you are ACK:ing"
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "paymog",
+          "basis": "context_inferred",
+          "occurrence_role": "context_reference",
+          "evidence": {
+            "source_id": "E05:comments:1",
+            "span": {
+              "start": 0,
+              "end": 7,
+              "quote": "@paymog"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "include",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E05:comments:1",
+            "span": {
+              "start": 46,
+              "end": 53,
+              "quote": "include"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "the commit hash",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E05:comments:1",
+            "span": {
+              "start": 54,
+              "end": 69,
+              "quote": "the commit hash"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "after your ACK",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E05:comments:1",
+            "span": {
+              "start": 70,
+              "end": 84,
+              "quote": "after your ACK"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "to specify which version of the PR you are ACKing",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E05:comments:1",
+            "span": {
+              "start": 85,
+              "end": 135,
+              "quote": "to specify which version of the PR you are ACK:ing"
+            }
+          }
+        }
+      ],
+      "institutional_type": "norm_candidate",
+      "standing": "locally_supported",
+      "statement_target_level": "operational",
+      "interpretation": "The addressee comes from the explicit mention immediately before the chosen unit. It is nonlocal, not an explicit A in this span. The response supplies local uptake.",
+      "alternatives_and_limits": "The imperative does not supply a lexical D. This reminder supplies no sanction.",
+      "linked_claim_ids": [
+        "E05-C1",
+        "E05-C2",
+        "E05-C3"
+      ]
+    },
+    {
+      "unit_id": "E06-U1",
+      "episode_id": "E06",
+      "source_id": "E06:comments:5",
+      "span": {
+        "start": 63,
+        "end": 171,
+        "quote": "If you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack."
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "you",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 66,
+              "end": 69,
+              "quote": "you"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "add",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 101,
+              "end": 104,
+              "quote": "add"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "the latest hash",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 105,
+              "end": 120,
+              "quote": "the latest hash"
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "If you agree with the changes",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 63,
+              "end": 92,
+              "quote": "If you agree with the changes"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "after your ack",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 121,
+              "end": 135,
+              "quote": "after your ack"
+            }
+          }
+        }
+      ],
+      "institutional_type": "norm_candidate",
+      "standing": "locally_supported",
+      "statement_target_level": "operational",
+      "interpretation": "This projection isolates the requested action; the linked classification is represented separately. The complete conditional sentence preserves the contrast.",
+      "alternatives_and_limits": "It is not enough for a hash to exist somewhere: the review target must correspond to the relevant revision.",
+      "linked_claim_ids": [
+        "E06-C1",
+        "E06-C2",
+        "E06-C3"
+      ]
+    },
+    {
+      "unit_id": "E06-U2",
+      "episode_id": "E06",
+      "source_id": "E06:comments:5",
+      "span": {
+        "start": 137,
+        "end": 171,
+        "quote": "otherwise it's just a concept ack."
+      },
+      "grammar": "constitutive",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "E",
+          "value": "the ACK without the requested hash",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 147,
+              "end": 149,
+              "quote": "it"
+            }
+          }
+        },
+        {
+          "symbol": "F",
+          "value": "is",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 149,
+              "end": 151,
+              "quote": "'s"
+            }
+          }
+        },
+        {
+          "symbol": "P",
+          "value": "just a concept ack",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 152,
+              "end": 170,
+              "quote": "just a concept ack"
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "otherwise",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E06:comments:5",
+            "span": {
+              "start": 137,
+              "end": 146,
+              "quote": "otherwise"
+            }
+          }
+        }
+      ],
+      "institutional_type": "constitutive_specification",
+      "standing": "locally_supported",
+      "statement_target_level": "operational",
+      "interpretation": "The pronoun and otherwise condition refer to the preceding requested hash addition. This is a local classification claim about an ACK.",
+      "alternatives_and_limits": "Grammatical constitution of an event type does not allocate constitutional powers. Universal bot behavior is not established.",
+      "linked_claim_ids": [
+        "E06-C1",
+        "E06-C2"
+      ]
+    },
+    {
+      "unit_id": "E07-U1",
+      "episode_id": "E07",
+      "source_id": "E07:comments:4",
+      "span": {
+        "start": 196,
+        "end": 262,
+        "quote": "(Without a hash, no one can know what the comment is referring to)"
+      },
+      "grammar": "not_institutional",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institutional_type": "not_applicable",
+      "standing": "not_applicable",
+      "statement_target_level": "not_applicable",
+      "interpretation": "The focal sentence gives an identification rationale. Its local wording alone is not an obligation; the guide and exchange supply the institutional context.",
+      "alternatives_and_limits": "An implied request to add a hash is plausible pragmatically. Missing edit history prevents a causal correction claim.",
+      "linked_claim_ids": [
+        "E07-C1",
+        "E07-C2",
+        "E07-C4"
+      ]
+    },
+    {
+      "unit_id": "E08-U1",
+      "episode_id": "E08",
+      "source_id": "E08:comments:4",
+      "span": {
+        "start": 813,
+        "end": 862,
+        "quote": "Two utACK or one tested ACK should be sufficient."
+      },
+      "grammar": "undetermined",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "M",
+          "value": "should",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E08:comments:4",
+            "span": {
+              "start": 841,
+              "end": 847,
+              "quote": "should"
+            }
+          }
+        }
+      ],
+      "institutional_type": "undetermined",
+      "standing": "disputed",
+      "statement_target_level": "operational",
+      "interpretation": "The sentence asserts adequacy under the preceding simple-test-PR scope. A constitutive sufficiency condition and a pragmatic permission-to-merge reading are both plausible; full E/F/P or A/D/I decomposition is withheld.",
+      "alternatives_and_limits": "Do not convert predictive or adequacy should into a mandatory minimum. The condition is OR, and the speaker is giving a post-merge explanation.",
+      "linked_claim_ids": [
+        "E08-C1",
+        "E08-C2",
+        "E08-C4"
+      ]
+    },
+    {
+      "unit_id": "E09-U1",
+      "episode_id": "E09",
+      "source_id": "E09:comments:9",
+      "span": {
+        "start": 200,
+        "end": 252,
+        "quote": "Please reopen if you're going to work on this again."
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "the PR author",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E09:comments:9",
+            "span": {
+              "start": 200,
+              "end": 213,
+              "quote": "Please reopen"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "reopen",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E09:comments:9",
+            "span": {
+              "start": 207,
+              "end": 213,
+              "quote": "reopen"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "this PR",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E09:comments:9",
+            "span": {
+              "start": 241,
+              "end": 245,
+              "quote": "this"
+            }
+          }
+        },
+        {
+          "symbol": "Cac",
+          "value": "if you are going to work on this again",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E09:comments:9",
+            "span": {
+              "start": 214,
+              "end": 251,
+              "quote": "if you're going to work on this again"
+            }
+          }
+        }
+      ],
+      "institutional_type": "strategy_candidate",
+      "standing": "text_only",
+      "statement_target_level": "operational",
+      "interpretation": "The omitted reopening object is inferred from the closure explanation; the token this in the condition is evidence for reference, not an explicit local object of reopen.",
+      "alternatives_and_limits": "No observed reopening is claimed. The invitation is compatible with continued support for the document idea.",
+      "linked_claim_ids": [
+        "E09-C2",
+        "E09-C3",
+        "E09-C4"
+      ]
+    },
+    {
+      "unit_id": "E10-U1",
+      "episode_id": "E10",
+      "source_id": "E10:review_comments:4",
+      "span": {
+        "start": 121,
+        "end": 210,
+        "quote": "The focus area is something that is entrusted to the maintainer to decide for themselves."
+      },
+      "grammar": "regulative",
+      "deontic_force": "permission",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "the maintainer",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E10:review_comments:4",
+            "span": {
+              "start": 170,
+              "end": 184,
+              "quote": "the maintainer"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "decide",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E10:review_comments:4",
+            "span": {
+              "start": 188,
+              "end": 194,
+              "quote": "decide"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "the focus area",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E10:review_comments:4",
+            "span": {
+              "start": 121,
+              "end": 135,
+              "quote": "The focus area"
+            }
+          }
+        }
+      ],
+      "institutional_type": "undetermined",
+      "standing": "disputed",
+      "statement_target_level": "operational",
+      "interpretation": "The object role is reconstructed from a fronted subject in a paraphrased decision proposition. Entrusted suggests discretion, but no lexical D is supplied.",
+      "alternatives_and_limits": "Descriptive role autonomy or a prescriptive permission are alternatives. The author denies enforced jurisdictions, and the document never merges.",
+      "linked_claim_ids": [
+        "E10-C1",
+        "E10-C2",
+        "E10-C4"
+      ]
+    },
+    {
+      "unit_id": "E11-U1",
+      "episode_id": "E11",
+      "source_id": "E11:doc_before",
+      "span": {
+        "start": 633,
+        "end": 713,
+        "quote": "there are repository \"maintainers\" who are responsible for\nmerging pull requests"
+      },
+      "grammar": "constitutive",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "E",
+          "value": "repository maintainers",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E11:doc_before",
+            "span": {
+              "start": 643,
+              "end": 667,
+              "quote": "repository \"maintainers\""
+            }
+          }
+        },
+        {
+          "symbol": "F",
+          "value": "are responsible for",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E11:doc_before",
+            "span": {
+              "start": 672,
+              "end": 691,
+              "quote": "are responsible for"
+            }
+          }
+        },
+        {
+          "symbol": "P",
+          "value": "merging pull requests",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E11:doc_before",
+            "span": {
+              "start": 692,
+              "end": 713,
+              "quote": "merging pull requests"
+            }
+          }
+        }
+      ],
+      "institutional_type": "constitutive_specification",
+      "standing": "documented",
+      "statement_target_level": "operational",
+      "interpretation": "The guide describes an existing role. The nomination episode separately supports local recognition of one occupant; key checks are not counted as identical role endorsements.",
+      "alternatives_and_limits": "Constitutive grammar does not show new constitutional allocation. Access-grant timing and network-level authority remain outside the evidence.",
+      "linked_claim_ids": [
+        "E11-C1",
+        "E11-C2",
+        "E11-C4"
+      ]
+    },
+    {
+      "unit_id": "E12-U1",
+      "episode_id": "E12",
+      "source_id": "E12:comments:7",
+      "span": {
+        "start": 13,
+        "end": 45,
+        "quote": "I think this can be merged as is"
+      },
+      "grammar": "regulative",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "value": "actor able to merge the PR",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E12:comments:7",
+            "span": {
+              "start": 26,
+              "end": 39,
+              "quote": "can be merged"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "value": "can",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E12:comments:7",
+            "span": {
+              "start": 26,
+              "end": 29,
+              "quote": "can"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "value": "be merged",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E12:comments:7",
+            "span": {
+              "start": 33,
+              "end": 39,
+              "quote": "merged"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "value": "this PR",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "evidence": {
+            "source_id": "E12:comments:7",
+            "span": {
+              "start": 21,
+              "end": 25,
+              "quote": "this"
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "value": "as is",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "evidence": {
+            "source_id": "E12:comments:7",
+            "span": {
+              "start": 40,
+              "end": 45,
+              "quote": "as is"
+            }
+          }
+        }
+      ],
+      "institutional_type": "strategy_candidate",
+      "standing": "text_only",
+      "statement_target_level": "operational",
+      "interpretation": "A proposed workflow separates the key-list intent from fixes to the verification program. The passive actor is inferred and remains unnamed in the local proposition.",
+      "alternatives_and_limits": "Can may express feasibility as well as permission. The statement is a recommendation, not a binding authorization conferred by this speaker.",
+      "linked_claim_ids": [
+        "E12-C1",
+        "E12-C2",
+        "E12-C3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "corrections": [
+    {
+      "file": "F03_review.json",
+      "finding_id": "A014",
+      "path": "affected[0].summary_paths",
+      "before": [
+        "episode_summary.observed_outcomes"
+      ],
+      "after": [
+        "episode_summary.observed_outcomes[1]"
+      ],
+      "reason": "Precisely identify the already-reviewed checkbox artifact outcome; no substantive judgment changed.",
+      "preserved_first_complete": "F03_review.first_complete.json"
+    },
+    {
+      "file": "F03_review.json",
+      "reason": "Mechanical identifier validation detected an erroneous F03- prefix for R13 and R18 unit IDs. Canonical Uxx identifiers verified against the already-reviewed source spans; judgments unchanged. No-error coverage membership updated to exclude corrected execution-error IDs.",
+      "changes": [
+        {
+          "finding_id": "A007",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U02"
+          ],
+          "after": [
+            "U02"
+          ]
+        },
+        {
+          "finding_id": "A007",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U02"
+          ],
+          "after": [
+            "U02"
+          ]
+        },
+        {
+          "finding_id": "A008",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U20",
+            "F03-U23"
+          ],
+          "after": [
+            "U20",
+            "U23"
+          ]
+        },
+        {
+          "finding_id": "A013",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U03"
+          ],
+          "after": [
+            "U03"
+          ]
+        },
+        {
+          "finding_id": "A014",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U01"
+          ],
+          "after": [
+            "U01"
+          ]
+        },
+        {
+          "finding_id": "A015",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U25"
+          ],
+          "after": [
+            "U25"
+          ]
+        },
+        {
+          "finding_id": "A015",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U24"
+          ],
+          "after": [
+            "U24"
+          ]
+        },
+        {
+          "finding_id": "A016",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U10"
+          ],
+          "after": [
+            "U10"
+          ]
+        },
+        {
+          "finding_id": "A016",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U10"
+          ],
+          "after": [
+            "U10"
+          ]
+        },
+        {
+          "finding_id": "A017",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U19"
+          ],
+          "after": [
+            "U19"
+          ]
+        },
+        {
+          "finding_id": "A017",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U18"
+          ],
+          "after": [
+            "U18"
+          ]
+        },
+        {
+          "finding_id": "A019",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "after": [
+            "U01",
+            "U04"
+          ]
+        },
+        {
+          "finding_id": "A019",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "after": [
+            "U01",
+            "U04"
+          ]
+        },
+        {
+          "finding_id": "A020",
+          "annotation_id": "R18",
+          "before": [
+            "F03-U02",
+            "F03-U13"
+          ],
+          "after": [
+            "U02",
+            "U13"
+          ]
+        },
+        {
+          "finding_id": "A020",
+          "annotation_id": "R13",
+          "before": [
+            "F03-U02",
+            "F03-U13"
+          ],
+          "after": [
+            "U02",
+            "U13"
+          ]
+        }
+      ],
+      "preserved_first_complete": [
+        "F03_review.first_complete.json",
+        "review.first_complete.json",
+        "coverage_ledger.first_complete.json"
+      ],
+      "timestamp_utc": "2026-11-07T20:25:05.345084+00:00"
+    }
+  ]
+}

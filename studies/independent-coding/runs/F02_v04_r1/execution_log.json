@@ -1,0 +1,44 @@
+{
+  "run_id": "F02_v04_r1",
+  "steps": [
+    {
+      "step": 1,
+      "action": "Read assigned instructions, complete codebook and schema, complete packet and supplied checker."
+    },
+    {
+      "step": 2,
+      "action": "Construct full-schema annotation with exact Python Unicode offsets; freeze annotation.first_complete.json before any checks or self-review."
+    },
+    {
+      "step": 3,
+      "command": "python3 tools/check_annotation.py packet.json annotation.json > checks.first.json",
+      "result": "pass",
+      "mechanical_errors": 0
+    },
+    {
+      "step": 4,
+      "action": "Conduct one complete source-based self-review; preserve every semantic/rationale change and resolve all initial checker flags in review_notes.json."
+    },
+    {
+      "step": 5,
+      "action": "Write final annotation, repair log, review notes and access record."
+    },
+    {
+      "step": 6,
+      "command": "python3 tools/check_annotation.py packet.json annotation.final.json > checks.json",
+      "result": "pass",
+      "mechanical_errors": 0,
+      "review_flags": 33,
+      "new_review_flags": 0
+    },
+    {
+      "step": 7,
+      "action": "Verify that sequentially replaying every logged before/after change reproduces the final annotation exactly, that annotation.json equals annotation.final.json, and that every final checker flag maps to the single completed source review.",
+      "result": "pass"
+    }
+  ],
+  "packet_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+  "first_complete_sha256": "8e58d67da53d15490c5c54643965c4a7e57095cc74572921154abd9551405bc4",
+  "final_annotation_sha256": "a1bf604192d2157045c82edda907756a44a849c6981918f339fec44899b7f189",
+  "complete": true
+}

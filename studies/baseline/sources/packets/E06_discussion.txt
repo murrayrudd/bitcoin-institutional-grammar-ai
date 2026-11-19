@@ -1,0 +1,141 @@
+[E06:body] l0rinc 2025-02-19T13:31:31+00:00
+The use of [`std::underlying_type_t<T>`](https://en.cppreference.com/w/cpp/types/underlying_type) or [`std::is_enum_v<T>`](https://en.cppreference.com/w/cpp/types/is_enum) (and similar ones, introduced in C++14) replace the `typename std::underlying_type<T>::type` and  `std::is_enum<T>::value` constructs (available in C++11).
+
+The `_t` and `_v` helper alias templates offer a more concise way to extract the type and value directly.
+
+I've modified the instances I found in the codebase one-by-one (noticed them while investigating https://github.com/bitcoin/bitcoin/pull/31868), and afterwards extracted scripted diff commits to do the trivial ones automatically.
+The last commit contains the values that were easier done manually.
+
+I've excluded changes from `src/bench/nanobench.h`, `src/leveldb`, `src/minisketch`, `src/span.h` and `src/sync.h` - let me know if you think they should be included instead.
+
+A few of the code changes can also be reproduced by clang-tidy (but not all of them):
+```bash
+cmake -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_BENCH=ON -DBUILD_FUZZ_BINARY=ON -DBUILD_FOR_FUZZING=ON && cmake --build build -j$(nproc)
+run-clang-tidy -quiet -p build -j $(nproc) -checks='-*,modernize-type-traits' -fix $(git grep -lE '::(value|type)' ./src ':(exclude)src/bench/nanobench.h' ':(exclude)src/leveldb' ':(exclude)src/minisketch' ':(exclude)src/span.h' ':(exclude)src/sync.h')
+```
+
+[E06:comments:0] DrahtBot 2025-02-19T13:31:36+00:00
+<!--e57a25ab6845829454e8d69fc972939a-->
+
+The following sections might be updated with supplementary metadata relevant to reviewers and maintainers.
+
+<!--006a51241073e994b41acfe9ec718e94-->
+### Code Coverage & Benchmarks
+For details see: https://corecheck.dev/bitcoin/bitcoin/pulls/31904.
+<!--021abf342d371248e50ceaed478a90ca-->
+### Reviews
+See [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.
+| Type | Reviewers |
+| ---- | --------- |
+| ACK | [laanwj](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2697629617) |
+| Stale ACK | [purpleKarrot](https://github.com/bitcoin/bitcoin/pull/31904#issuecomment-2668914709) |
+
+If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update.
+
+
+[E06:comments:1] DrahtBot 2025-02-19T13:36:47+00:00
+<!--85328a0da195eb286784d51f73fa0af9-->
+🚧 At least one of the CI tasks failed.
+<sub>Debug: https://github.com/bitcoin/bitcoin/runs/37469627519</sub>
+
+<details><summary>Hints</summary>
+
+Try to run the tests locally, according to the documentation. However, a CI failure may still
+happen due to a number of reasons, for example:
+
+* Possibly due to a silent merge conflict (the changes in this pull request being
+incompatible with the current code in the target branch). If so, make sure to rebase on the latest
+commit of the target branch.
+
+* A sanitizer issue, which can only be found by compiling with the sanitizer and running the
+  affected test.
+
+* An intermittent issue.
+
+Leave a comment here, if you need help tracking down a confusing failure.
+
+</details>
+
+
+[E06:comments:2] purpleKarrot 2025-02-19T14:17:31+00:00
+This change could be automated with clang-tidy's [`modernize-type-traits`](https://clang.llvm.org/extra/clang-tidy/checks/modernize/type-traits.html) check. There are more places that can be modernized with this.
+
+[E06:comments:3] l0rinc 2025-02-19T14:40:10+00:00
+@purpleKarrot, you can check the PR with clang-tidy if it helps, but it won't find all of the values changed here.
+And even if it does, we need to simplify the review, we can't just rely on clang-tidy blindly.
+Added the command that I used to check the changes via `modernize-type-traits` - let me know if you find other ones that I haven't covered.
+
+[E06:comments:4] purpleKarrot 2025-02-19T14:51:38+00:00
+ACK.
+
+Changes LGTM. You may want to drop the reference to C++14 from the title, as `std::is_same_v` is actually not available until C++17. I you want, you could go full C++20 by replacing `std::is_same_v` with `std::same_as`.
+
+[E06:comments:5] l0rinc 2025-02-19T14:59:19+00:00
+Thanks for the review and the C++17 suggestion @purpleKarrot.
+If you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack.
+Edit: the `std::same_as` change should probably be a different PR, that's not just cosmetics anymore.
+
+[E06:comments:6] purpleKarrot 2025-02-19T15:02:28+00:00
+ACK 7abc6e1f4b4aca4c8c576ff0cc27d68f90e42d28
+
+[E06:comments:7] laanwj 2025-03-04T13:42:16+00:00
+Concept and code review ACK 4cd95a2921805f447a8bcecc6b448a365171eb93
+
+Seems low-risk. As this is compile-time logic, i don't think this should actually affect the compiled code? (haven't verified, though)
+
+
+[E06:comments:8] fanquake 2025-03-17T05:04:22+00:00
+> As this is compile-time logic, i don't think this should actually affect the compiled code?
+
+Yea, comparing the two branches only differs in version info in the binary.
+
+[E06:comments:9] l0rinc 2025-03-17T12:32:10+00:00
+Thank you for the review and checking the binary!
+
+[E06:reviews:0] purpleKarrot 2025-02-19T14:11:47+00:00
+
+
+[E06:reviews:1] l0rinc 2025-02-19T14:16:29+00:00
+
+
+[E06:reviews:2] purpleKarrot 2025-02-19T14:36:38+00:00
+
+
+[E06:reviews:3] l0rinc 2025-02-19T14:39:40+00:00
+
+
+[E06:reviews:4] maflcko 2025-02-19T15:14:05+00:00
+
+
+[E06:reviews:5] l0rinc 2025-02-19T15:20:35+00:00
+
+
+[E06:reviews:6] l0rinc 2025-02-19T19:50:48+00:00
+
+
+[E06:reviews:7] l0rinc 2025-02-21T09:47:19+00:00
+
+
+[E06:review_comments:0] purpleKarrot 2025-02-19T14:11:47+00:00
+You can use `std::is_same_v` here!
+
+[E06:review_comments:1] l0rinc 2025-02-19T14:16:29+00:00
+I am, just doing it commit-by-commit: https://github.com/bitcoin/bitcoin/pull/31904/files#diff-4b1ae2ce314ef1f2d4cb4f2dbf7a87a0c299c942782fa734e9e80fed8324faa6R76
+
+[E06:review_comments:2] purpleKarrot 2025-02-19T14:36:37+00:00
+check formatting.
+
+[E06:review_comments:3] l0rinc 2025-02-19T14:39:39+00:00
+Thanks, fixed
+
+[E06:review_comments:4] maflcko 2025-02-19T15:14:04+00:00
+pls submit those upstream
+
+[E06:review_comments:5] l0rinc 2025-02-19T15:20:35+00:00
+Haven't noticed the header, will push a PR to https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h#L206
+
+[E06:review_comments:6] l0rinc 2025-02-19T19:50:48+00:00
+Pushed https://github.com/llvm/llvm-project/pull/127811 and reverted the file here, thanks!
+
+[E06:review_comments:7] l0rinc 2025-02-21T09:47:19+00:00
+Added back the merged https://github.com/llvm/llvm-project/pull/127811/files#diff-bf90ae5bcd280af8b1305512d76ab1b81d0521bbc5d251f60bc0d44e790f16c0 (last commit makes sure it's exactly the same as the upstream version)

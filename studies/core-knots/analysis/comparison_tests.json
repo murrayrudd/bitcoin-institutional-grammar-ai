@@ -1,0 +1,119 @@
+[
+  {
+    "id": "CT1",
+    "cases": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "explanation_tested": "Smaller scope is sufficient for acceptance",
+    "observed_contrast": "C2 offered a smaller step and closed; C3 integrated a larger package with a different technical design and retained configuration.",
+    "assessment": "Contradicted as a sufficient explanation; scope reduction remains one possible contributor.",
+    "sources": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E07",
+      "E09",
+      "F32381",
+      "F32406"
+    ]
+  },
+  {
+    "id": "CT2",
+    "cases": [
+      "C1",
+      "C2",
+      "C4"
+    ],
+    "explanation_tested": "Every nonintegration records a maintainer veto",
+    "observed_contrast": "glozow closes C1; darosior and achow101 close their own C2 and C4 proposals.",
+    "assessment": "Contradicted as a single action category. Author withdrawal may respond to review without constituting a reviewer’s formal veto.",
+    "sources": [
+      "F32359",
+      "F32381",
+      "F32714",
+      "E01",
+      "E04",
+      "E14"
+    ]
+  },
+  {
+    "id": "CT3",
+    "cases": [
+      "C3",
+      "C6"
+    ],
+    "explanation_tested": "Integration requires convergence on all underlying preferences",
+    "observed_contrast": "C3 defers removal disagreement; C6 leaves opposed preferences and wider reversal demands intact.",
+    "assessment": "Inconsistent with the observed coexistence of integration and expressed disagreement.",
+    "sources": [
+      "E09",
+      "E10",
+      "E19",
+      "R10E17",
+      "R10E18",
+      "F32406",
+      "F33453"
+    ]
+  },
+  {
+    "id": "CT4",
+    "cases": [
+      "C4",
+      "C6"
+    ],
+    "explanation_tested": "September simply adopted the identical rejected June proposal",
+    "observed_contrast": "The commits differ; recurring reasons accompany revised technical judgments and a different release context.",
+    "assessment": "Contradicted by identified content and timing. The normative proposition can persist without identity of the proposal.",
+    "sources": [
+      "KJ",
+      "KS",
+      "R10E09",
+      "R10E10",
+      "R10E11",
+      "R10E13",
+      "R10E14",
+      "R10E19"
+    ]
+  },
+  {
+    "id": "CT5",
+    "cases": [
+      "C5",
+      "C6"
+    ],
+    "explanation_tested": "Support for wording automatically determines release execution",
+    "observed_contrast": "C5 includes translation constraints; C6 separates main integration and 30.x backport and contains conflicting views about release delay.",
+    "assessment": "The record requires a separate release decision. It does not identify every implementation step or publication.",
+    "sources": [
+      "E15",
+      "E17",
+      "E24",
+      "E25",
+      "E27",
+      "E28",
+      "F33453",
+      "F33473"
+    ]
+  },
+  {
+    "id": "CT6",
+    "cases": [
+      "C3",
+      "C6"
+    ],
+    "explanation_tested": "Retained local options establish effective network influence or restored confidence",
+    "observed_contrast": "Options remain while participants disagree about defaults and legitimacy; the bounded operator search identifies no focal effect.",
+    "assessment": "Not established. The model preserves downstream outcomes as unknown.",
+    "sources": [
+      "N903",
+      "N907",
+      "R10E18",
+      "W01",
+      "W02",
+      "W03"
+    ]
+  }
+]

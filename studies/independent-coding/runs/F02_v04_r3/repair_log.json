@@ -1,0 +1,730 @@
+{
+  "run_id": "F02_v04_r3",
+  "mechanical_repairs": [],
+  "source_review_rounds": 1,
+  "changes": [
+    {
+      "change_id": "R01",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "proposition",
+        "summary"
+      ],
+      "before": "ryanofsky recommends documenting the empty-string change in the release notes, tentatively offering wording that permits empty-string label queries for unlabeled transactions with `-deprecatedrpc=accounts` and describes an error without it, with backward compatibility and usefulness/confusion explanations.",
+      "after": "ryanofsky recommends documenting the empty-string change in the release notes, tentatively offering wording that describes empty-string label queries for unlabeled transactions as possible with `-deprecatedrpc=accounts` and describes an error without it, with backward compatibility and usefulness/confusion explanations.",
+      "reason": "Replace potentially permission-sounding summary wording with the source's technical capability meaning; the existing force and alternative already excluded institutional permission.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R02",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "disposition_events",
+        1,
+        "target"
+      ],
+      "before": "this_proposition",
+      "after": "broader_proposal",
+      "reason": "The proposed explicit backward-compatibility rationale is not in the retained paragraph. The merged status should therefore not encode adoption of the entire qualified wording proposition.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changes": true
+    },
+    {
+      "change_id": "R03",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "disposition_events",
+        1,
+        "rationale"
+      ],
+      "before": "The retained added paragraph describes empty-string behavior with and without the accounts setting and the usefulness/confusion rationale. It does not reproduce the explicit words \"for backwards compatibility\" from the offered wording. The observable application is partial with respect to that rationale; no exact verbatim implementation is claimed. The event concerns the particular documented content in PR #14441, not network adoption or adoption of a general rationale.",
+      "after": "PR #14441 and the retained head are recorded merged. The patch contains the requested empty-string behavior documentation and usefulness/confusion explanation, but omits the offered explicit backward-compatibility phrase. The merge disposition is therefore scoped to the broader contribution; adoption of every proposed qualification is not established.",
+      "reason": "Make the rationale agree with the narrowed disposition target and distinguish observed documentation from adoption of the complete suggested formulation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changes": true
+    },
+    {
+      "change_id": "R04",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "institution",
+        "application_evidence",
+        1,
+        "rationale"
+      ],
+      "before": "The retained added paragraph describes empty-string behavior with and without the accounts setting and the usefulness/confusion rationale. It does not reproduce the explicit words \"for backwards compatibility\" from the offered wording. The observable application is partial with respect to that rationale; no exact verbatim implementation is claimed.",
+      "after": "The retained, integrated paragraph demonstrates the focal action of documenting the empty-string change: both setting-dependent behaviors and the usefulness/confusion rationale are present. The offered wording was tentative (Maybe), and this observed-action classification does not claim verbatim implementation, adoption of the omitted explicit backward-compatibility rationale, or institutional recognition of that rationale. The separate unresolved record preserves the limit on the complete wording.",
+      "reason": "State exactly which focal action is observed rather than compressing partial wording correspondence into an unqualified implementation claim.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "evidence_basis_error",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R05",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "institution",
+        "application_evidence"
+      ],
+      "before": [
+        {
+          "status": "reported",
+          "target": "broader_proposal",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            },
+            {
+              "source_id": "pr14441:reviews:4",
+              "span": {
+                "start": 0,
+                "end": 146,
+                "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+              }
+            }
+          ],
+          "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+        },
+        {
+          "status": "observed",
+          "target": "this_proposition",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              }
+            },
+            {
+              "source_id": "pr14441:patch:0",
+              "span": {
+                "start": 703,
+                "end": 1014,
+                "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 196,
+                "end": 210,
+                "quote": "\"merged\": true"
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 622,
+                "end": 657,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 334,
+                "end": 388,
+                "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 437,
+                "end": 499,
+                "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 4,
+                "end": 58,
+                "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/14441\""
+              }
+            }
+          ],
+          "rationale": "The retained, integrated paragraph demonstrates the focal action of documenting the empty-string change: both setting-dependent behaviors and the usefulness/confusion rationale are present. The offered wording was tentative (Maybe), and this observed-action classification does not claim verbatim implementation, adoption of the omitted explicit backward-compatibility rationale, or institutional recognition of that rationale. The separate unresolved record preserves the limit on the complete wording."
+        }
+      ],
+      "after": [
+        {
+          "status": "reported",
+          "target": "broader_proposal",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            },
+            {
+              "source_id": "pr14441:reviews:4",
+              "span": {
+                "start": 0,
+                "end": 146,
+                "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+              }
+            }
+          ],
+          "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+        },
+        {
+          "status": "observed",
+          "target": "this_proposition",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              }
+            },
+            {
+              "source_id": "pr14441:patch:0",
+              "span": {
+                "start": 703,
+                "end": 1014,
+                "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 196,
+                "end": 210,
+                "quote": "\"merged\": true"
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 622,
+                "end": 657,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 334,
+                "end": 388,
+                "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 437,
+                "end": 499,
+                "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+              }
+            },
+            {
+              "source_id": "pr14441:supplement_metadata",
+              "span": {
+                "start": 4,
+                "end": 58,
+                "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/14441\""
+              }
+            }
+          ],
+          "rationale": "The retained, integrated paragraph demonstrates the focal action of documenting the empty-string change: both setting-dependent behaviors and the usefulness/confusion rationale are present. The offered wording was tentative (Maybe), and this observed-action classification does not claim verbatim implementation, adoption of the omitted explicit backward-compatibility rationale, or institutional recognition of that rationale. The separate unresolved record preserves the limit on the complete wording."
+        },
+        {
+          "status": "unresolved",
+          "target": "this_proposition",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              }
+            },
+            {
+              "source_id": "pr14441:patch:0",
+              "span": {
+                "start": 703,
+                "end": 1014,
+                "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+              }
+            }
+          ],
+          "rationale": "The proposed paragraph explicitly invokes backward compatibility; the retained paragraph does not state that phrase. It is unresolved whether contributors adopted that rationale implicitly or intentionally omitted it. This record concerns the full suggested formulation, while the separately observed application concerns the document-the-change action. No exact implementation of every qualifier is asserted."
+        }
+      ],
+      "reason": "Keep the uncertainty about the omitted qualification explicit in the application records, rather than relying only on prose surrounding an observed profile.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 703,
+            "end": 1014,
+            "quote": "+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "evidence_basis_error",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R06",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "components",
+        0,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 0,
+          "end": 57,
+          "quote": "I think it'd be good to document the empty string change."
+        }
+      },
+      "after": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 21,
+          "end": 56,
+          "quote": "to document the empty string change"
+        }
+      },
+      "reason": "The focal predicate is the documentation infinitive. Tightening its governing clause makes the distinction from the matrix I think visible.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 21,
+            "end": 56,
+            "quote": "to document the empty string change"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R07",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "components",
+        1,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 0,
+          "end": 57,
+          "quote": "I think it'd be good to document the empty string change."
+        }
+      },
+      "after": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 21,
+          "end": 56,
+          "quote": "to document the empty string change"
+        }
+      },
+      "reason": "The focal predicate is the documentation infinitive. Tightening its governing clause makes the distinction from the matrix I think visible.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 21,
+            "end": 56,
+            "quote": "to document the empty string change"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R08",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        3,
+        "components",
+        2,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 0,
+          "end": 57,
+          "quote": "I think it'd be good to document the empty string change."
+        }
+      },
+      "after": {
+        "source_id": "pr14441:review_comments:3",
+        "span": {
+          "start": 21,
+          "end": 56,
+          "quote": "to document the empty string change"
+        }
+      },
+      "reason": "The focal predicate is the documentation infinitive. Tightening its governing clause makes the distinction from the matrix I think visible.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 21,
+            "end": 56,
+            "quote": "to document the empty string change"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R09",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "units",
+        9,
+        "speech_act"
+      ],
+      "before": "reported_action",
+      "after": "asserted",
+      "reason": "Both are good changes is a declarative positive evaluation, rather than an explicit ACK token or a report of an edit. It remains ordinary assent context.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:4",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Both are good changes. Thanks!"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R10",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "episode_summary",
+        "observed_outcomes",
+        2,
+        "claim"
+      ],
+      "before": "ryanofsky recorded a later utACK for 89306ab0df93bfdf5630910bc20b1eccb7379172 and identified code simplification and release-note updates since the earlier review. promag and meshcollider also recorded utACKs for that revision; meshcollider qualified the comparison with the original PR.",
+      "after": "ryanofsky recorded a later utACK for 89306ab0df93bfdf5630910bc20b1eccb7379172 and identified code simplification and release-note updates since the earlier review. promag recorded a utACK using its matching abbreviated SHA; meshcollider supplied the full revision and qualified the comparison with the original PR.",
+      "reason": "The source supplies a short hash for promag. Preserve that evidence form rather than presenting the full-revision identity as directly stated by that actor.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:1",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "utACK 89306ab."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "evidence_basis_error",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R11",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "episode_summary",
+        "observed_outcomes",
+        2,
+        "claim_parts",
+        1
+      ],
+      "before": {
+        "text": "promag recorded utACK 89306ab.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:1",
+            "span": {
+              "start": 0,
+              "end": 14,
+              "quote": "utACK 89306ab."
+            }
+          }
+        ]
+      },
+      "after": {
+        "text": "promag recorded utACK 89306ab, whose prefix matches the supplied full head SHA; full-revision identity is a bounded contextual inference.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:1",
+            "span": {
+              "start": 0,
+              "end": 14,
+              "quote": "utACK 89306ab."
+            }
+          },
+          {
+            "source_id": "pr14441:supplement_metadata",
+            "span": {
+              "start": 334,
+              "end": 388,
+              "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+            }
+          }
+        ]
+      },
+      "reason": "Attach the supplied full head hash to the short-hash correspondence claim.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:1",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "utACK 89306ab."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "evidence_basis_error",
+      "meaning_changes": false
+    },
+    {
+      "change_id": "R12",
+      "stage": "single complete source-based self-review",
+      "path": [
+        "episode_summary",
+        "observed_outcomes",
+        2,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:1",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "utACK 89306ab."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:2",
+          "span": {
+            "start": 0,
+            "end": 337,
+            "quote": "utACK https://github.com/bitcoin/bitcoin/pull/14441/commits/89306ab0df93bfdf5630910bc20b1eccb7379172\r\n\r\nThis is slightly different from other backport PRs because the changes to `src/wallet/rpcwallet.cpp` are significantly different from the original PR to achieve the same functionality. The tests are basically a clean backport though."
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:1",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "utACK 89306ab."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:comments:2",
+          "span": {
+            "start": 0,
+            "end": 337,
+            "quote": "utACK https://github.com/bitcoin/bitcoin/pull/14441/commits/89306ab0df93bfdf5630910bc20b1eccb7379172\r\n\r\nThis is slightly different from other backport PRs because the changes to `src/wallet/rpcwallet.cpp` are significantly different from the original PR to achieve the same functionality. The tests are basically a clean backport though."
+          }
+        }
+      ],
+      "reason": "The parent outcome evidence must include every anchor used by the revised claim part.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:1",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "utACK 89306ab."
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changes": false
+    }
+  ],
+  "change_count": 12,
+  "meaning_changing_changes": 2,
+  "note": "First-complete structural checks passed. Repairs arise only from the single complete source review; the first-complete output is preserved."
+}

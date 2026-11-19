@@ -1,0 +1,50 @@
+{
+  "run_id": "F01_v04_r1",
+  "completed_at_utc": "2026-11-07T18:59:22.012262+00:00",
+  "schema_valid": true,
+  "packet_hash_valid": true,
+  "first_complete_and_frozen_inputs_unchanged": {
+    "INSTRUCTIONS.txt": true,
+    "protocol/codebook.txt": true,
+    "protocol/annotation_schema.json": true,
+    "packet.json": true,
+    "annotation.first_complete.json": true
+  },
+  "final_working_copy_identical": true,
+  "recorded_source_anchors_verified": 3186,
+  "official_checker_status": "fail",
+  "remaining_coding_errors": 0,
+  "remaining_packet_checker_compatibility_errors": [
+    {
+      "code": "revision",
+      "unit_id": "S09",
+      "message": "Pinned revision claim lacks supplied revision identity"
+    },
+    {
+      "code": "revision",
+      "unit_id": "S26",
+      "message": "Pinned revision claim lacks supplied revision identity"
+    },
+    {
+      "code": "revision",
+      "unit_id": "S34",
+      "message": "Pinned revision claim lacks supplied revision identity"
+    }
+  ],
+  "checker_feedback_occurrences_documented": {
+    "review_flags": 820,
+    "errors": 21
+  },
+  "unit_counts": {
+    "statement": 34,
+    "context": 14,
+    "quotation": 12
+  },
+  "entry_screening_counts": {
+    "candidate": 16,
+    "context_only": 23,
+    "empty": 3
+  },
+  "one_complete_source_review": true,
+  "source_review_changes": 72
+}

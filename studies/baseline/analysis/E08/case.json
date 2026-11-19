@@ -1,0 +1,77 @@
+{
+  "episode_id": "E08",
+  "pr_number": 11743,
+  "label": "Contested review sufficiency",
+  "mechanism": "reason_giving",
+  "initiation": "A merge prompts a challenge to feedback handling and the number of ACKs.",
+  "outcome": "The author gives a scoped sufficiency rationale; later discussion proposes a follow-up explanation.",
+  "alternative_explanation": "An individual justification may coexist with broader flexible practice, not a fixed shared threshold.",
+  "mechanism_status": "consistent_with",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Explanation of this application; collective-choice clarification is an alternative, not an established new rule.",
+  "claim_ids": [
+    "E08-C1",
+    "E08-C2",
+    "E08-C3",
+    "E08-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E08:comments:4",
+      "span": {
+        "start": 742,
+        "end": 862,
+        "quote": "And for rather simple pulls, such as this one, I try to merge quickly. Two utACK or one tested ACK should be sufficient."
+      }
+    },
+    {
+      "source_id": "E08:outcome",
+      "span": {
+        "start": 86,
+        "end": 126,
+        "quote": "\"merged_at\": \"2017-11-22T16:34:02+00:00\""
+      }
+    },
+    {
+      "source_id": "E08:comments:3",
+      "span": {
+        "start": 97,
+        "end": 190,
+        "quote": "Beside it only had one ACK. Test code should follow the same review rules as the other right?"
+      }
+    },
+    {
+      "source_id": "E08:comments:8",
+      "span": {
+        "start": 0,
+        "end": 92,
+        "quote": "Oops, didn't realize this was already merged. Guess I will add the comment myself in #11687."
+      }
+    },
+    {
+      "source_id": "E08:comments:9",
+      "span": {
+        "start": 11,
+        "end": 74,
+        "quote": "Jup, thanks for doing that. I should have done it in this pull."
+      }
+    },
+    {
+      "source_id": "E08:comments:4",
+      "span": {
+        "start": 813,
+        "end": 862,
+        "quote": "Two utACK or one tested ACK should be sufficient."
+      }
+    },
+    {
+      "source_id": "E08:comments:3",
+      "span": {
+        "start": 125,
+        "end": 190,
+        "quote": "Test code should follow the same review rules as the other right?"
+      }
+    }
+  ]
+}

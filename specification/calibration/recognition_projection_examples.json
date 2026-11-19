@@ -1,0 +1,598 @@
+{
+  "release_version": "0.4.1",
+  "schema_version": "0.4",
+  "examples": [
+    {
+      "origin": "Post-evaluation reconciled interpretation; not an independent reference answer",
+      "run": "F01_v04_r1.json",
+      "unit": {
+        "unit_id": "S13",
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 302,
+          "end": 375,
+          "quote": "But we can also keep this PR open until there's another PR that needs it."
+        },
+        "parent_unit_id": null,
+        "record_role": "statement",
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "we",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 306,
+                  "end": 308,
+                  "quote": "we"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          },
+          {
+            "symbol": "I",
+            "text": "keep",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 318,
+                  "end": 322,
+                  "quote": "keep"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          },
+          {
+            "symbol": "Bdir",
+            "text": "this PR",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 323,
+                  "end": 330,
+                  "quote": "this PR"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          },
+          {
+            "symbol": "Cex",
+            "text": "open until there's another PR that needs it",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 331,
+                  "end": 374,
+                  "quote": "open until there's another PR that needs it"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          }
+        ],
+        "institution": {
+          "type": "strategy_candidate",
+          "dispute_present": false,
+          "rationale": "An explicit alternative method for staging this contribution. Can expresses a feasible option, not demonstrated authorized discretion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "response",
+              "target": "broader_principle",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:15",
+                  "span": {
+                    "start": 158,
+                    "end": 239,
+                    "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+                  }
+                }
+              ],
+              "rationale": "Sjors repeats the broader open-PR method with occasional rebasing. The later statement does not restate the condition that another PR needs it, so it cannot establish repetition of the complete conditional proposition. This is same-actor correspondence, not interpersonal recognition.",
+              "mode": "same_actor_restatement",
+              "speaker_relation": "same_actor",
+              "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+              "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+              "identity_evidence": [
+                {
+                  "source_id": "pr26586:supplement_metadata",
+                  "span": {
+                    "start": 12,
+                    "end": 57,
+                    "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+                  }
+                }
+              ]
+            }
+          ],
+          "authority_evidence": [],
+          "standing_profile": {
+            "documentary": "none",
+            "recognition": "none",
+            "application": "none"
+          },
+          "documentary_support": [],
+          "application_evidence": [],
+          "challenges": [],
+          "type_alternatives": []
+        },
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_rationale": "The focal action is Sjors proposes keeping this PR open until another PR needs it. It concerns ordinary contribution, review, testing, or maintenance within this episode.",
+        "complexity_flags": [
+          "none"
+        ],
+        "alternative_interpretation": "A literal capability claim rather than a recommended course.",
+        "confidence": "plausible",
+        "uncertainty_reason": " The frozen checker projects only this-proposition expectation_recognition events into the recognition profile. The response event preserves same-actor continuity although the profile is none; the codebook's broader same-actor wording remains a documented ambiguity.",
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "The retained occurrence is plain prose; no edit-history inference is made."
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_merged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 319,
+                  "end": 333,
+                  "quote": "\"merged\": true"
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 229,
+                  "end": 269,
+                  "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+                }
+              }
+            ],
+            "rationale": "The identified PR was recorded merged. This records the broader contribution only; it does not by itself show adoption or rejection of this proposition.",
+            "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+            "identity_evidence": [
+              {
+                "source_id": "pr26586:supplement_metadata",
+                "span": {
+                  "start": 12,
+                  "end": 57,
+                  "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              }
+            ]
+          }
+        ],
+        "proposition": {
+          "summary": "Sjors proposes keeping this PR open until another PR needs it.",
+          "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "domain": "Bitcoin Core previous-release compatibility testing and review of PR #26586",
+          "time_scope": "Utterance recorded 2022-11-29T11:22:45+00:00; no persistence beyond the supplied episode is inferred.",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:supplement_metadata",
+              "span": {
+                "start": 12,
+                "end": 57,
+                "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+              }
+            }
+          ],
+          "qualifiers": [
+            {
+              "description": "This is an alternative to immediate integration; specific tests may be added later and an already available release makes that easier.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:6",
+                  "span": {
+                    "start": 153,
+                    "end": 301,
+                    "quote": "I've noticed over the past few years that people would add specific tests later on. It's slightly easier to do that if the release is already there."
+                  }
+                }
+              ],
+              "attachment": "scope_note",
+              "linked_unit_id": null,
+              "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+            }
+          ]
+        },
+        "target_level_alternatives": [],
+        "observed_level_alternatives": [],
+        "level_evidence": {
+          "target_activity": "Sjors proposes keeping this PR open until another PR needs it.",
+          "observed_activity": "Contribution discussion, review, or testing report in the supplied PR.",
+          "arrangement": "Version selection and maintenance of Bitcoin Core compatibility tests, with proposals handled through PR review.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "origin": "Post-evaluation reconciled interpretation; not an independent reference answer",
+      "run": "F01_v04_r2.json",
+      "unit": {
+        "unit_id": "U25",
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        },
+        "parent_unit_id": "G01",
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "general",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "add",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:0",
+                "span": {
+                  "start": 31,
+                  "end": 34,
+                  "quote": "add"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          },
+          {
+            "symbol": "Bdir",
+            "text": "the latest release",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:0",
+                "span": {
+                  "start": 35,
+                  "end": 53,
+                  "quote": "the latest release"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          },
+          {
+            "symbol": "Cex",
+            "text": "for each missing feature",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:0",
+                "span": {
+                  "start": 54,
+                  "end": 78,
+                  "quote": "for each missing feature"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local",
+            "governing_span": {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "dispute_present": true,
+          "rationale": "maflcko proposes adding only the latest release for each missing feature. The candidate reflects expected conduct or an asserted standard; no attributed authorization or enforcement claim meets the rule-candidate threshold.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "pr26586:review_comments:1",
+                  "span": {
+                    "start": 0,
+                    "end": 60,
+                    "quote": "Unrelated: The same goes for the other versions in this file"
+                  }
+                },
+                {
+                  "source_id": "pr26586:review_comments:0",
+                  "span": {
+                    "start": 0,
+                    "end": 79,
+                    "quote": "I think it only makes sense to add the latest release for each missing feature."
+                  }
+                }
+              ],
+              "rationale": "The same actor says the same criterion goes for the other versions in this file, explicitly extending the criterion as the relevant standard. This supports only maintained commitment within one episode.",
+              "mode": "same_actor_restatement",
+              "speaker_relation": "same_actor",
+              "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+              "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+              "identity_evidence": [
+                {
+                  "source_id": "pr26586:supplement_metadata",
+                  "span": {
+                    "start": 12,
+                    "end": 57,
+                    "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+                  }
+                }
+              ]
+            }
+          ],
+          "authority_evidence": [],
+          "standing_profile": {
+            "documentary": "broader",
+            "recognition": "same_actor_only",
+            "application": "none"
+          },
+          "documentary_support": [
+            {
+              "coverage": "broader",
+              "claim_as_of": "2022-12-09",
+              "source_as_of": "2022-12-09",
+              "date_basis": "pinned_revision",
+              "temporal_fit": "established",
+              "evidence": [
+                {
+                  "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+                  "span": {
+                    "start": 281,
+                    "end": 440,
+                    "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+                  }
+                }
+              ],
+              "rationale": "A contemporaneous pinned commit describes a similar selection rationale in other compatibility tests. It documents the broader principle, not authority or exact application to wallet tests."
+            }
+          ],
+          "application_evidence": [],
+          "challenges": [
+            {
+              "aspect": "content",
+              "target": "this_proposition",
+              "evidence": [
+                {
+                  "source_id": "pr26586:review_comments:2",
+                  "span": {
+                    "start": 284,
+                    "end": 490,
+                    "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+                  }
+                },
+                {
+                  "source_id": "pr26586:review_comments:2",
+                  "span": {
+                    "start": 491,
+                    "end": 535,
+                    "quote": "I don't think 24.x is special to 23.x at all"
+                  }
+                }
+              ],
+              "rationale": "The author responds to the quoted criterion by proposing retention of non-EOL majors even without specialness, contesting the requirement's application to this wallet test."
+            }
+          ],
+          "type_alternatives": [
+            "strategy_candidate"
+          ]
+        },
+        "statement_target_level": "operational",
+        "observed_action_level": "collective_choice",
+        "level_rationale": "The focal criterion governs operational choice of releases. The visible exchange deliberates over that recurring criterion, supporting collective-choice observed action.",
+        "complexity_flags": [
+          "none"
+        ],
+        "alternative_interpretation": "An articulated technical selection strategy rather than socially expected conduct; no rule-making authority is attributed.",
+        "confidence": "plausible",
+        "uncertainty_reason": "",
+        "record_role": "statement",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "Supplied plain prose; inline formatting does not alter the communicative act."
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_merged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 319,
+                  "end": 333,
+                  "quote": "\"merged\": true"
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 229,
+                  "end": 269,
+                  "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+                }
+              }
+            ],
+            "rationale": "The containing PR is recorded merged. This records the contribution's disposition and does not show adoption of this reason, general expectation, or alternative procedure.",
+            "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+            "identity_evidence": [
+              {
+                "source_id": "pr26586:supplement_metadata",
+                "span": {
+                  "start": 12,
+                  "end": 57,
+                  "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              }
+            ]
+          }
+        ],
+        "proposition": {
+          "summary": "maflcko proposes adding only the latest release for each missing feature.",
+          "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "domain": "Bitcoin Core previous-release compatibility testing and associated PR review",
+          "time_scope": "Retained occurrence associated with 2022-12-09T08:27:38+00:00; complete edit history is unavailable.",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          ],
+          "qualifiers": [
+            {
+              "description": "Only limits the selection to the latest release for a missing feature; it does not mandate testing every released version.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:review_comments:0",
+                  "span": {
+                    "start": 11,
+                    "end": 78,
+                    "quote": "only makes sense to add the latest release for each missing feature"
+                  }
+                }
+              ],
+              "attachment": "scope_note",
+              "linked_unit_id": null,
+              "rationale": "Material qualification retained explicitly in the proposition scope."
+            }
+          ]
+        },
+        "target_level_alternatives": [
+          "collective_choice"
+        ],
+        "observed_level_alternatives": [],
+        "level_evidence": {
+          "target_activity": "maflcko proposes adding only the latest release for each missing feature.",
+          "observed_activity": "asserted contribution/review discourse",
+          "arrangement": "Repository contribution, review, and compatibility-test maintenance; no project-wide authority inferred.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

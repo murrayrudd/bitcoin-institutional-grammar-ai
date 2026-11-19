@@ -1,0 +1,40 @@
+{
+  "run_id": "F02_v03_r1",
+  "completed_at_utc": "2026-11-07T19:08:22.474049+00:00",
+  "steps": [
+    {
+      "order": 1,
+      "action": "Read INSTRUCTIONS.txt, complete codebook, complete schema, complete packet, and checker within assigned directory; no optional calibration files used."
+    },
+    {
+      "order": 2,
+      "action": "Construct complete annotation and freeze identical annotation.first_complete.json before checker or source self-review.",
+      "evidence_file": "first_complete_freeze.json"
+    },
+    {
+      "order": 3,
+      "action": "Run initial supplied checker; pass with 8 review flags.",
+      "evidence_file": "checks.first.json"
+    },
+    {
+      "order": 4,
+      "action": "Conduct one complete source-based self-review of 22 entries, 13 units, 6 relations, 25 recognition/disposition events, 5 outcomes, and 2 mechanisms.",
+      "evidence_file": "review_notes.json"
+    },
+    {
+      "order": 5,
+      "action": "Apply 2 logged source-review repairs; no mechanical repairs needed.",
+      "evidence_file": "repair_log.json"
+    },
+    {
+      "order": 6,
+      "action": "Save final annotation; rerun supplied checker, preserve output, resolve all final flags.",
+      "evidence_file": "checks.json"
+    },
+    {
+      "order": 7,
+      "action": "Verify unchanged first-complete hash, packet hash, identical working/final annotations, and exact references in review/repair records.",
+      "evidence_file": "run_completion.json"
+    }
+  ]
+}

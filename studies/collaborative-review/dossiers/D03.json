@@ -1,0 +1,424 @@
+{
+  "topic_id": "D03",
+  "title": "Observed artifact and complete application",
+  "question": "Determine what the final spelling artifact and checkbox patch establish. Distinguish observation of the relevant resulting artifact from evidence of a historical transformation and from full fulfillment of all conditions. Do not add new criteria to v0.4.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q005",
+      "title": "For the spelling correction, R06 and R08 classify application as observed from the resulting integrated spelling, while R14 classifies exact observed correction as unresolved because the earlier typo and its location are absent.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "The guide permits observation of an act or artifact. The resulting spelling is visible, while a historically located typo-correction operation is not. This supports two bounded observation objects, not a proven false implementation claim.",
+      "resolution": "Retain the observed requested spelling and unresolved correction chronology as separate claims. A later specification should distinguish observed resulting state from observed transformation. Do not impose an unavailable before/after-history requirement retrospectively on an explicitly artifact-limited claim.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 80,
+            "end": 113,
+            "quote": "+`listtransactions` label support"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 437,
+            "end": 499,
+            "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 196,
+            "end": 210,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 622,
+            "end": 657,
+            "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Application and challenge and Presentation and later disposition: observed application requires evidence of the relevant act or artifact; particular implementation requires claimed patch changes and integration evidence.",
+        "guide_1: application requires evidence of the relevant act or artifact with trigger/provision connected; a particular implemented edit requires the claimed patch change and integration evidence."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F02_v04_r3",
+          "units": [
+            {
+              "unit_id": "F02-S01",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends correcting the release-note RPC spelling to `listtransactions`, including its final `s`; the expected editor is inferred as the contributor updating this PR, not an attributed authority.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The requested spelling is the complete identifier `listtransactions`, including the terminal `s`."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained added heading contains the complete requested RPC name with terminal s. The same head SHA is recorded as merged. This demonstrates the requested resulting spelling, not the missing intermediate typo or the cause of its correction."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "unresolved",
+                  "rationale": "A local edit is reported fixed without a uniquely recoverable target. This does not upgrade the focal application profile beyond the independently supported patch observation."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F02_v04_r2",
+          "units": [
+            {
+              "unit_id": "S02",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends using the RPC spelling listtransactions, including the final s, in the release notes.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The requested spelling includes the final s."
+              ],
+              "application": [
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The integrated release-notes artifact uses listtransactions, including the final s. This establishes the resulting spelling, not the exact earlier typo or a particular reply pairing. The patch is retained at the head revision that matches the recorded merged commit."
+                },
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports a PR update and the reviewer identifies release-notes updates since the previous review. These reports do not individually itemize this edit."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "unresolved",
+                  "rationale": "A repair is reported, but the precise repaired item is not recoverable from fixed alone."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F02_v04_r1",
+          "units": [
+            {
+              "unit_id": "F02_S01",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends correcting the release-note RPC name in this PR to `listtransactions`, including the final `s`; the addressed editor is contextually inferred to be jnewbery.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "Use the complete identifier `listtransactions`, including its final s, not a shortened or singular identifier."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "this_proposition",
+                  "rationale": "The author's aggregate update report, corroborated by the reviewer's release-note update report, contextually includes this suggestion. Specific reply threading remains unavailable."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The retained release-note artifact contains the requested complete identifier and its head is the recorded merge commit. However, the supplied review has no line number or pre-update paragraph, so the exact typo occurrence and correction operation cannot be independently matched. This is artifact consistency with the request, while exact observed application remains unresolved; the separate aggregate participant report is retained."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "reported"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q014",
+      "title": "R13 and R15 retain unresolved application of the complete checkbox proposition despite a supplied checkbox artifact; R16 uses none while still describing that artifact in its outcome.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the narrower observed checkbox artifact and the unresolved full-placement/application question. A future convention could specify partial observed artifact support; no stronger full-proposition implementation conclusion is justified here.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 68,
+            "end": 85,
+            "quote": "\"state\": \"closed\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Application and challenge: observed application requires relevant act or artifact with provision connected; assessments concern the focal proposition and do not equate a retained patch with integration."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F03_v04_r1",
+          "units": [
+            {
+              "unit_id": "U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "jonasschnelli offers PR #7819 adding an opt-in BIP125 RBF-signaling checkbox to the Send-Coins-Pannel next to Add Recipient; the PR lacks a GUI transaction-replacement workflow.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "No GUI mechanism for actually replacing a transaction is included.",
+                "Whether to proceed without a GUI replacement workflow is explicitly uncertain; that larger workflow is reported as in progress.",
+                "Two refactoring commits are attributed to #7159; that source PR is not the decision object of this checkbox proposal."
+              ],
+              "application": [
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The retained head contains a checkbox artifact, but #7819 was not merged. The packet establishes a prepared feature, not integrated application of the offered proposal; an earlier-to-later implementation sequence is unavailable."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "unresolved"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        },
+        {
+          "run_id": "F03_v04_r3",
+          "units": [
+            {
+              "unit_id": "F03-U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The submitted #7819 patch adds a checkbox next to Add Recipient in the Send-Coins-Pannel to set nSequence for BIP125 RBF signaling; it does not supply a GUI transaction-replacement workflow.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The checkbox is beside Add Recipient and signals BIP125 RBF by setting nSequence.",
+                "The offered PR does not provide a way to replace a transaction through the GUI."
+              ],
+              "application": [
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The retained unmerged head demonstrates a checkbox, checked-state wiring, and a sequence-setting branch in the proposed artifact. It does not verify the complete focal proposition, including placement next to Add Recipient and absence of any GUI replacement path, and supplies no integration evidence. Application of the complete proposed edit is therefore unresolved. The narrower artifact facts remain available as outcome evidence."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "unresolved"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[2]"
+          ]
+        },
+        {
+          "run_id": "F03_v04_r2",
+          "units": [
+            {
+              "unit_id": "F03-U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author offers adding a checkbox next to Add Recipient in the Send-Coins-Pannel to set nSequence for BIP125 RBF signaling.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The feature only signals opt-in-RBF; the PR does not supply a GUI method to replace a transaction.",
+                "The retained body is associated with PR creation but may contain later edits; no sentence-level historical dating is claimed."
+              ],
+              "application": [],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr14441:patch:0",
+      "kind": "patch",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+    },
+    {
+      "source_id": "pr14441:review_comments:0",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "Should be `listtransactions` with `s`."
+    },
+    {
+      "source_id": "pr14441:supplement_metadata",
+      "kind": "record_metadata",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "{\n  \"url\": \"https://github.com/bitcoin/bitcoin/pull/14441\",\n  \"number\": 14441,\n  \"title\": \"[wallet] Backport(0.17): Restore ability to list incoming transactions by label\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"base\": \"0.17\",\n  \"base_sha\": \"5b47b8efd48d233a5f7c12d1d7713dcd2f616255\",\n  \"head\": \"restore_listtransactions_label\",\n  \"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\",\n  \"head_repo_full_name\": \"jnewbery/bitcoin\",\n  \"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\",\n  \"created_at\": \"2018-10-09T08:02:49Z\",\n  \"updated_at\": \"2021-12-16T14:03:21Z\",\n  \"closed_at\": \"2018-11-10T11:46:03Z\",\n  \"merged_at\": \"2018-11-10T11:46:02Z\"\n}"
+    },
+    {
+      "source_id": "pr7819:body",
+      "kind": "body",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF.\n\nThis PR does not include a way to actually replace a transaction with the GUI. So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk).\nBut I don't want to hold back review of this PR.\n\nIncludes two refactoring commits from https://github.com/bitcoin/bitcoin/pull/7159\n\n<img width=\"1056\" alt=\"bildschirmfoto 2016-04-05 um 16 49 20\" src=\"https://cloud.githubusercontent.com/assets/178464/14286488/7ea518be-fb4f-11e5-8b21-437261f23141.png\">\n\n<img width=\"546\" alt=\"bildschirmfoto 2016-04-05 um 17 14 09\" src=\"https://cloud.githubusercontent.com/assets/178464/14287110/da21d78e-fb51-11e5-9be1-bf91391fd8ab.png\">\n"
+    },
+    {
+      "source_id": "pr7819:metadata",
+      "kind": "record_metadata",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "{\n  \"number\": 7819,\n  \"title\": \"[Qt] Simple opt-in-RBF checkbox\",\n  \"state\": \"closed\",\n  \"created_at\": \"2016-04-05T15:15:15+00:00\",\n  \"updated_at\": \"2021-09-08T11:40:59+00:00\",\n  \"closed_at\": \"2016-06-09T09:21:57+00:00\",\n  \"merged_at\": null,\n  \"author\": \"jonasschnelli\",\n  \"author_id\": 178464,\n  \"merged\": false,\n  \"merged_by\": null,\n  \"merged_by_id\": null,\n  \"labels\": [\n    \"GUI\"\n  ],\n  \"files\": [\n    {\n      \"filename\": \"src/qt/forms/sendcoinsdialog.ui\",\n      \"additions\": 10,\n      \"deletions\": 0,\n      \"changes\": 10,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/sendcoinsdialog.cpp\",\n      \"additions\": 9,\n      \"deletions\": 2,\n      \"changes\": 11,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/walletmodel.cpp\",\n      \"additions\": 2,\n      \"deletions\": 2,\n      \"changes\": 4,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/walletmodel.h\",\n      \"additions\": 1,\n      \"deletions\": 1,\n      \"changes\": 2,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/wallet/wallet.cpp\",\n      \"additions\": 5,\n      \"deletions\": 5,\n      \"changes\": 10,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/wallet/wallet.h\",\n      \"additions\": 6,\n      \"deletions\": 1,\n      \"changes\": 7,\n      \"status\": \"modified\"\n    }\n  ]\n}"
+    },
+    {
+      "source_id": "pr7819:patch:0",
+      "kind": "patch",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "@@ -1256,6 +1256,16 @@\n        </property>\n       </widget>\n      </item>\n+     <item>\n+      <widget class=\"QCheckBox\" name=\"optInRBF\">\n+       <property name=\"text\">\n+        <string>Allow Replace-By-Fee</string>\n+       </property>\n+       <property name=\"toolTip\">\n+        <string>Signals that this transaction can be replaced with a transation paying higher fees (as long as the transaction is NOT confirmed).</string>\n+       </property>\n+      </widget>\n+     </item>\n      <item>\n       <spacer name=\"horizontalSpacer\">\n        <property name=\"orientation\">"
+    }
+  ]
+}

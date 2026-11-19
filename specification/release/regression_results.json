@@ -1,0 +1,278 @@
+{
+  "status": "pass",
+  "passed": 32,
+  "total": 32,
+  "tests": [
+    {
+      "test": "Complete source-grounded development example",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Wrong proposal with matching closed-unmerged labels",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "metadata_object",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "metadata_object"
+      ]
+    },
+    {
+      "test": "Unmerged is not enough to prove closed",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "status_parts",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "status_parts"
+      ]
+    },
+    {
+      "test": "Later document cannot prove earlier standing",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "backdating",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "backdating",
+        "support_profile"
+      ]
+    },
+    {
+      "test": "Dated support cannot omit revision basis",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "document_date",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "document_date"
+      ]
+    },
+    {
+      "test": "Broad documentary support remains acceptable",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": "",
+      "expected_review_flag": "document_scope",
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Mechanical checker cannot settle documentary entailment",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": "document_scope",
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Ordinary assent cannot become expectation recognition",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "recognition_mode",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "recognition_mode",
+        "support_profile"
+      ]
+    },
+    {
+      "test": "Same speaker retained without interpersonal promotion",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Same speaker cannot become interpersonal by label",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "support_profile",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "support_profile"
+      ]
+    },
+    {
+      "test": "Invented recognition episode rejected",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "recognition_episode",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "recognition_episode"
+      ]
+    },
+    {
+      "test": "Repeated comments in one episode do not establish repeated support",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "support_profile",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "support_profile"
+      ]
+    },
+    {
+      "test": "Scoped application challenge must remain visible",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "challenge_flag",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "challenge_flag"
+      ]
+    },
+    {
+      "test": "Broader challenge does not automatically dispute focal proposition",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Exact pronoun from another governing clause rejected",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "predicate_scope",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "outside_unit",
+        "predicate_scope"
+      ]
+    },
+    {
+      "test": "Lost qualifier attachment detected",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "qualifier_link",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "qualifier_link"
+      ]
+    },
+    {
+      "test": "Unknown higher-level target with bounded alternatives permitted",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Higher-level label requires evidence",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "higher_level",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "higher_level"
+      ]
+    },
+    {
+      "test": "Summary must carry all clause evidence",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "claim_parts",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "claim_parts",
+        "summary_evidence"
+      ]
+    },
+    {
+      "test": "Unresolved status recognition permitted",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Question mismatch raises semantic review flag",
+      "expected_status": "pass",
+      "observed_status": "pass",
+      "expected_error_code": null,
+      "expected_review_flag": "question_audit",
+      "pass": true,
+      "observed_error_codes": []
+    },
+    {
+      "test": "Old scalar standing is rejected by the new schema",
+      "expected_status": "fail",
+      "observed_status": "fail",
+      "expected_error_code": "schema",
+      "expected_review_flag": null,
+      "pass": true,
+      "observed_error_codes": [
+        "schema"
+      ]
+    },
+    {
+      "test": "JSON Schema is well formed",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input baseline_v03/protocol/codebook.txt",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input baseline_v03/protocol/annotation_schema.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input baseline_v03/tools/check_annotation.py",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input sources/round12_packet.original.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input sources/round12_source_reconciliation.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input sources/round12_baseline_impact.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input sources/round12_independent_source_audit.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input sources/round12_overlap_metrics.json",
+      "pass": true
+    },
+    {
+      "test": "Unchanged retained input baseline_v03/protocol/round12_coder_instructions.txt",
+      "pass": true
+    }
+  ],
+  "interpretation": "These tests check intended safeguards and schema behavior on development material. They do not measure semantic accuracy, independent agreement, or generalization."
+}

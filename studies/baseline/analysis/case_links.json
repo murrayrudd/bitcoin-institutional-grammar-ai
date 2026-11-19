@@ -1,0 +1,47 @@
+{
+  "warning": "Twelve PRs are linked episodes, not twelve independent observations or a longitudinal sample.",
+  "links": [
+    {
+      "source": "E05",
+      "target": "E06",
+      "relation": "analytical_comparison",
+      "basis": "Hash-specific review conventions; no direct causal lineage asserted."
+    },
+    {
+      "source": "E06",
+      "target": "E07",
+      "relation": "analytical_comparison",
+      "basis": "Version-aware review classification and mutable bot tables."
+    },
+    {
+      "source": "E09",
+      "target": "E10",
+      "relation": "analytical_comparison",
+      "basis": "Unmerged maintainer documentation proposals separated by years; no continuous process claimed."
+    },
+    {
+      "source": "E10",
+      "target": "E11",
+      "relation": "explicit_reference",
+      "basis": "The proposed MAINTAINERS.md cites PR 23798 as an example of appointment."
+    },
+    {
+      "source": "E11",
+      "target": "E12",
+      "relation": "mechanism_comparison",
+      "basis": "Opposite changes to a technical signer list; distinct role contexts."
+    },
+    {
+      "source": "E03",
+      "target": "prior_18283",
+      "relation": "explicit_reference",
+      "basis": "A previously studied PR is linked in the discussion; it is not a new focal episode."
+    },
+    {
+      "source": "E12",
+      "target": "prior_27058",
+      "relation": "explicit_reference",
+      "basis": "The bot links a related verification fix; it remains excluded from the new-case count."
+    }
+  ]
+}

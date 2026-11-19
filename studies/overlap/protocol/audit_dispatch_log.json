@@ -1,0 +1,22 @@
+{
+  "dispatch_recorded_at_utc": "2026-11-07T17:32:16.060179+00:00",
+  "all_coding_frozen_before_dispatch": true,
+  "tasks": [
+    {
+      "agent": "/root/overlap_aligner",
+      "fork_turns": "none",
+      "model_override": null,
+      "instructions": "protocol/alignment_task.txt",
+      "inputs": "common_input and field-masked analysis/alignment_input.json",
+      "prior_labels_and_metrics_withheld": true
+    },
+    {
+      "agent": "/root/overlap_source_auditor",
+      "fork_turns": "none",
+      "model_override": null,
+      "instructions": "protocol/source_audit_task.txt",
+      "inputs": "common_input and frozen reviewer outputs",
+      "prior_baseline_and_metrics_withheld": true
+    }
+  ]
+}

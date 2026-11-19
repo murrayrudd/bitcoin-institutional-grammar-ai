@@ -1,0 +1,102 @@
+{
+  "run_id": "F03_v03_r2",
+  "finalized_at_utc": "2026-11-07T19:26:23.060578+00:00",
+  "phases": [
+    {
+      "order": 1,
+      "action": "Read complete instructions, codebook, schema, and packet; enumerate assigned directory",
+      "external_sources": false
+    },
+    {
+      "order": 2,
+      "action": "Screen all entries and generate complete annotation",
+      "artifacts": [
+        "annotation.json"
+      ]
+    },
+    {
+      "order": 3,
+      "action": "Preserve first-complete annotation before validation or self-review",
+      "artifacts": [
+        "annotation.first_complete.json"
+      ],
+      "sha256": "1edf4053a8fd2d6c6e24e229a681d286a71ef80a6be8094e4c928525572ebe6d"
+    },
+    {
+      "order": 4,
+      "action": "Run provided checker",
+      "command": "python3 tools/check_annotation.py packet.json annotation.json > checks.first.json",
+      "exit_code": 0,
+      "status": "pass",
+      "errors": 0,
+      "review_flags": 14
+    },
+    {
+      "order": 5,
+      "action": "Conduct one complete source-based self-review and record corrections",
+      "artifacts": [
+        "repair_log.json",
+        "review_notes.json",
+        "annotation.final.json"
+      ],
+      "source_self_review_passes": 1,
+      "new_sources": false,
+      "mechanical_repairs": 0,
+      "repair_entries": 10
+    },
+    {
+      "order": 6,
+      "action": "Run final provided checker",
+      "command": "python3 tools/check_annotation.py packet.json annotation.final.json > checks.json",
+      "exit_code": 0,
+      "status": "pass",
+      "errors": 0,
+      "review_flags": 18
+    },
+    {
+      "order": 7,
+      "action": "Resolve every first/final checker flag, verify unchanged inputs and freeze, and complete access/output records",
+      "all_flags_reviewed": true,
+      "all_frozen_inputs_unchanged": true
+    }
+  ],
+  "counts": {
+    "screened_entries": 19,
+    "focal_entries": 10,
+    "screening_dispositions": {
+      "candidate": 9,
+      "context_only": 10
+    },
+    "unit_roles": {
+      "context": 7,
+      "statement": 16,
+      "container": 1,
+      "quotation": 2
+    },
+    "total_units": 26,
+    "relations": 15,
+    "recognition_events": 8,
+    "disposition_events": 4,
+    "outcome_claims": 3,
+    "mechanisms": 3,
+    "self_review_passes": 1,
+    "repair_entries": 10,
+    "final_exact_anchor_references": 223,
+    "final_checker_flags": 18
+  },
+  "first_complete_sha256": "1edf4053a8fd2d6c6e24e229a681d286a71ef80a6be8094e4c928525572ebe6d",
+  "final_annotation_sha256": "e37bec0af2fd684df3639cdd67eb3470b2ae4a4f34f01ba7f295cba469da4639",
+  "unresolved_limits": [
+    "No complete edit or revision history, reliable reply threading, or supplied review/test completion records; retained text may reflect later edits.",
+    "No rendered images; visual claims are restricted to the supplied prose and retained code patch.",
+    "No patch or substantive discussion for PR 8182 and no supplied outcome for PR 7159; inclusion and refactoring links cannot verify per-proposition implementation.",
+    "No institutional authorization, rule-making procedure, enforcement linkage, participant role credentials, or repeated recognition evidence is supplied.",
+    "No evidence of network adoption or higher-level authority allocation; repository status is a separate object from network behavior.",
+    "Do the exposure reservations and review-now claim express technical feasibility alone, or an interpersonal expectation about how this contribution should proceed?",
+    "Does the author's personal non-delay preference amount to a development strategy, and does the reported additional-output attempt remain active after the fee-only question?",
+    "Which wording or feature suggestions, if any, were implemented in PR 8182 or another contribution? The report of inclusion does not identify individual suggestions.",
+    "Does Greg's suggestion refer to the preceding alternate-label proposal, and what complete replacement spelling does the quoted replaceab fragment intend?",
+    "What exactly does the [send immediately] option mean when it delays sending, and what is meant by initially set in the abort parenthetical?",
+    "Did the rebase observation have any role in supersession? The packet establishes no such causal or enforcement relation."
+  ]
+}

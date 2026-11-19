@@ -1,0 +1,1500 @@
+{
+  "run_id": "R4_C_source_first",
+  "episode_id": "CoreKnots_R4_C",
+  "packet_sha256": "243d892a04989cac6783c4b00b39bd3397b738bc5a3e484e49f3dab06b4db1b7",
+  "review_basis": "Source-first review of the eight complete focal records under frozen project v0.3. No earlier annotation or narrative was available for comparison. Claims and rhetoric are retained as attributed source content, not adopted as factual conclusions.",
+  "counts": {
+    "screened_entries": 43,
+    "focal_records": 8,
+    "candidate_focal_records": 8,
+    "focal_statement_units": 23,
+    "supporting_statement_units": 1,
+    "total_units": 39,
+    "role_counts": {
+      "statement": 24,
+      "container": 2,
+      "context": 10,
+      "quotation": 3
+    },
+    "relations": 19
+  },
+  "per_focal_source": [
+    {
+      "source_id": "32359-213",
+      "author": "nick1981",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "32359-213",
+        "disposition": "candidate",
+        "reason": "Candidate: four retained propositions, including three external quoted configuration claims and nick1981's high-default alternative. The explanatory question, preference, and RAM claim are contextual; quoted original attribution is unavailable.",
+        "unit_ids": [
+          "C213_permission",
+          "C213_defaults",
+          "C213_increase",
+          "C213_high_default"
+        ]
+      },
+      "statement_count": 4,
+      "decisions": [
+        {
+          "unit_id": "C213_permission",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 229,
+              "end": 339,
+              "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+            }
+          },
+          "rationale": "An externally quoted speaker claims a node runner entitlement. This records the claim, not an established permission or a verified software capability.",
+          "alternative": "An appeal to developers to preserve configuration capability is also plausible. The adverse filling clause is retained as an intended end state of the same configuration entitlement, rather than counted as a second independently adopted permission.",
+          "uncertainty": "The original quoted author and original occurrence are absent; should be allowed also expresses an obligation on an unstated permission-giver."
+        },
+        {
+          "unit_id": "C213_defaults",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 394,
+              "end": 458,
+              "quote": "A conservative approach would be to let the defaults be as it is"
+            }
+          },
+          "rationale": "An external one-off technical proposal to retain current defaults; no attributable commitment or standing rule is established.",
+          "alternative": "The entire conservative approach can be one coupled proposal with the following optional-increase clause if both current defaults and users choosing increases remain explicit.",
+          "uncertainty": "The original speaker and exact current default value are not supplied."
+        },
+        {
+          "unit_id": "C213_increase",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 463,
+              "end": 523,
+              "quote": "allow it to be increased for those who chose to increase it."
+            }
+          },
+          "rationale": "A technical proposal to enable optional increases, not established authority or an institutional permission already in force.",
+          "alternative": "This can remain coupled with retention of current defaults. The permission supplied by allow is a proposed software affordance; normative authorization of users is unresolved.",
+          "uncertainty": "The object pronoun can mean a limit or default parameter; the exact numeric or option referent is not supplied."
+        },
+        {
+          "unit_id": "C213_high_default",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 526,
+              "end": 607,
+              "quote": "Or setting a default high limit, so that a node runner can set to a lowest value."
+            }
+          },
+          "rationale": "nick1981 offers a technical alternative. The purpose clause describes user capability; can does not establish institutional permission.",
+          "alternative": "The purpose can be represented as a linked capability proposition; keeping it as Cex preserves the required downward configurability without creating a second institutional rule.",
+          "uncertainty": "Neither high nor lowest is quantified; the intended parameter must be inferred from the quoted configuration discussion."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 41,
+              "end": 153,
+              "quote": "I can understand removing the limits as a default config in core (although i would prefer it not to be this way)"
+            }
+          },
+          "reason": "A qualified acknowledgment and preference, not a distinct executable proposal beyond the later conservative-default alternative; not treated as permission or endorsement of the PR."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 160,
+              "end": 222,
+              "quote": "why is the ability to configure it being removed all together?"
+            }
+          },
+          "reason": "Bare explanatory question inside an external quote; no supplied original exchange establishes an independent request to act or give reasons."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-213",
+            "span": {
+              "start": 340,
+              "end": 388,
+              "quote": "This can make running a node very RAM expensive."
+            }
+          },
+          "reason": "Technical burden rationale; no deontic force or independent verified causal finding."
+        }
+      ]
+    },
+    {
+      "source_id": "33224-018",
+      "author": "achow101",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "33224-018",
+        "disposition": "candidate",
+        "reason": "Candidate: an external quoted suggestion to add a flag is retained; the respondent's remaining text is technical diagnosis and uncertainty. No duty follows from the source-location capability claim.",
+        "unit_ids": [
+          "C018_add_flag",
+          "C018_diagnosis"
+        ]
+      },
+      "statement_count": 1,
+      "decisions": [
+        {
+          "unit_id": "C018_add_flag",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 127,
+              "end": 217,
+              "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+            }
+          },
+          "rationale": "An external technical suggestion survives within a literal question. The packet does not identify the original speaker; achow101 is the respondent, not necessarily the proposer.",
+          "alternative": "A literal comparative technical question can remain context if no action recommendation is inferred. The supplied reply makes the add-option interpretation plausible.",
+          "uncertainty": "Quoted author and original source ID are absent; the reply questions the proposed cause rather than explicitly refusing to add the flag."
+        },
+        {
+          "unit_id": "C018_diagnosis",
+          "record_role": "context",
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 221,
+              "end": 505,
+              "quote": "I don't think line numbers is the problem. The actual source location of the string can change and the ids in the `.xlf` won't change. It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change. It's unclear to me why the sort order would change."
+            }
+          },
+          "rationale": "A tentative causal diagnosis and stated uncertainty. No institutional obligation or technical fact is independently verified.",
+          "alternative": "",
+          "uncertainty": ""
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 2,
+              "end": 30,
+              "quote": "Is this context info useful?"
+            }
+          },
+          "reason": "Informational question in an external quote; no separately established invitation beyond the retained add-flag proposal."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 31,
+              "end": 126,
+              "quote": "Line numbers will change whenever some previous function in the file gets a non-trivial edit..."
+            }
+          },
+          "reason": "Technical prediction supporting the quoted suggestion; will is not a duty."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 264,
+              "end": 355,
+              "quote": "The actual source location of the string can change and the ids in the `.xlf` won't change."
+            }
+          },
+          "reason": "Technical capability/stability claim retained in the diagnosis context, not a permission."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-018",
+            "span": {
+              "start": 454,
+              "end": 505,
+              "quote": "It's unclear to me why the sort order would change."
+            }
+          },
+          "reason": "An explicit uncertainty, not a direction to a named actor or an institutional statement."
+        }
+      ]
+    },
+    {
+      "source_id": "32359-115",
+      "author": "glozow",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "32359-115",
+        "disposition": "candidate",
+        "reason": "Candidate: forum characterization, merit criterion, conditional no-obligation to repost, and two distinct inferred discouragements. The reassurance and spam-impact explanation do not add independent prescriptions.",
+        "unit_ids": [
+          "C115_forum",
+          "C115_merit",
+          "C115_no_repost",
+          "C115_avoid_group",
+          "C115_unsubstantiated",
+          "C115_repetition"
+        ]
+      },
+      "statement_count": 5,
+      "decisions": [
+        {
+          "unit_id": "C115_forum",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 14,
+              "end": 91,
+              "quote": "this is a pull request open for code review, not a per-username voting forum."
+            }
+          },
+          "rationale": "glozow characterizes the current forum and explicitly excludes a voting interpretation. Supplied documentation gives compatible peer-review context but does not establish the speaker's office.",
+          "alternative": "This may be an indirect request to keep comments focused on code review. Its negative remit must remain if recoded regulatively.",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C115_merit",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 92,
+              "end": 186,
+              "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+            }
+          },
+          "rationale": "This is an asserted review-evaluation expectation, not proof that every review was in fact weighted this way. D_CONTRIB documents related discretionary merit weighting, not the exact categorical formulation.",
+          "alternative": "A constitutive decomposition of Reviews / are weighted / merit rather than repetition preserves the same criterion. A pragmatic obligation to weight reviews this way is possible but stronger than the source's reported-practice syntax.",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C115_no_repost",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 212,
+              "end": 299,
+              "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+            }
+          },
+          "rationale": "An explicit denial of a need to repeat an already-made point, addressed to readers of this discussion. It is not a categorical prohibition on all repeat contributions.",
+          "alternative": "The reassurance may also discourage repetition, but the lexical negative is no obligation, not must not.",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C115_avoid_group",
+          "record_role": "container",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 300,
+              "end": 419,
+              "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+            }
+          },
+          "rationale": "Container preserves shared negative evaluation and recipient-impact rationale without counting a third prescription.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C115_unsubstantiated",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 322,
+              "end": 343,
+              "quote": "leave unsubstantiated"
+            }
+          },
+          "rationale": "The asserted lack of reason is read as advice against unsubstantiated review signals. D_MOD documents a related moderated expectation, with exceptions for constructive reframing; this utterance does not itself announce a sanction.",
+          "alternative": "A literal evaluative assertion without an actionable prescription remains possible. Coupling this clause with repeat acks/nacks is acceptable only if both negative duties survive.",
+          "uncertainty": "The discouraging force is pragmatic; no explicit deontic operator governs leave."
+        },
+        {
+          "unit_id": "C115_repetition",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 347,
+              "end": 364,
+              "quote": "repeat acks/nacks"
+            }
+          },
+          "rationale": "Advice against repeated review signals is distinct from advice against unsubstantiated signals. The supplied moderation document recognizes the related value of new information but qualifies repetition and constructive reframing.",
+          "alternative": "Literal disapproval without prescription is possible. A single shared-object edit is equivalent if both unsubstantiated and repeated signals remain discouraged.",
+          "uncertainty": "Pragmatic force is advisory; whether particular repeated signals would be removed is not supplied."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 0,
+              "end": 13,
+              "quote": "Reminder that"
+            }
+          },
+          "reason": "Metadiscursive introduction to the retained forum statement, not a separate instruction."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 187,
+              "end": 211,
+              "quote": "Please rest assured that"
+            }
+          },
+          "reason": "Reassurance framing; the relevant embedded no-obligation proposition is coded."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-115",
+            "span": {
+              "start": 365,
+              "end": 419,
+              "quote": "other than to spam the people subscribed to this repo."
+            }
+          },
+          "reason": "The asserted impact explains the two discouragements; it is not a separately stated sanction, intended reward, or observed enforcement event."
+        }
+      ]
+    },
+    {
+      "source_id": "32406-165",
+      "author": "maflcko",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "32406-165",
+        "disposition": "candidate",
+        "reason": "Candidate: separate issue-navigation instruction. Repeated question and reported known issue/fix are nonstatement records.",
+        "unit_ids": [
+          "C165_quote",
+          "C165_referral",
+          "C165_known",
+          "C165_fixed"
+        ]
+      },
+      "statement_count": 1,
+      "decisions": [
+        {
+          "unit_id": "C165_quote",
+          "record_role": "quotation",
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 2,
+              "end": 68,
+              "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+            }
+          },
+          "rationale": "The exact question is already represented as C164_question; repetition is not another request or endorsement.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C165_referral",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 95,
+              "end": 145,
+              "quote": "See https://github.com/maflcko/DrahtBot/issues/51."
+            }
+          },
+          "rationale": "A separate navigation instruction to a named issue; the linked issue contents are not supplied and are not imported.",
+          "alternative": "The referral can be viewed as informational context, but v0.3 explicitly retains separate see instructions.",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C165_known",
+          "record_role": "context",
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 94,
+              "quote": "This is a known issue."
+            }
+          },
+          "rationale": "Technical diagnosis offered in response to the repeated question.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C165_fixed",
+          "record_role": "context",
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 146,
+              "end": 157,
+              "quote": "edit: fixed"
+            }
+          },
+          "rationale": "maflcko reports a repair. No independent verification, repair timing, or repair scope is supplied.",
+          "alternative": "",
+          "uncertainty": "The in-place edit has no supplied update timestamp; fixed is not evidence of every bot behavior or any governance outcome."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 2,
+              "end": 68,
+              "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+            }
+          },
+          "reason": "Repeated question linked to the supplied original; not another independent statement or endorsement."
+        },
+        {
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 94,
+              "quote": "This is a known issue."
+            }
+          },
+          "reason": "A response diagnosis, not a governing instruction."
+        },
+        {
+          "evidence": {
+            "source_id": "32406-165",
+            "span": {
+              "start": 146,
+              "end": 157,
+              "quote": "edit: fixed"
+            }
+          },
+          "reason": "Reported repair context, with neither exact edit time nor independent verification. No institutional adoption is inferred."
+        }
+      ]
+    },
+    {
+      "source_id": "32359-227",
+      "author": "aryaethn",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "32359-227",
+        "disposition": "candidate",
+        "reason": "Candidate: three attributed expectations inside an external rhetorical quotation and a separately asserted majority-decision claim. Agreement with the debate framing is not endorsement of both opposed prescriptions.",
+        "unit_ids": [
+          "C227_quote_group",
+          "C227_proactive",
+          "C227_capitulate",
+          "C227_remove_efforts",
+          "C227_agreement",
+          "C227_majority"
+        ]
+      },
+      "statement_count": 4,
+      "decisions": [
+        {
+          "unit_id": "C227_quote_group",
+          "record_role": "container",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 2,
+              "end": 329,
+              "quote": "This debate is currently divided along the lines of those who believe we should remain proactive towards spam filtration, despite the lack of a 100% effective solution, vs those who believe the absence of a technically perfect solutions means we should capitulate to spammers, and remove all efforts to slow down / reduce spam."
+            }
+          },
+          "rationale": "The original source of this quoted typology is absent. Children preserve expectations attributed within it; they are not independent observed camps or direct commitments by aryaethn.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C227_proactive",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 72,
+              "end": 169,
+              "quote": "we should remain proactive towards spam filtration, despite the lack of a 100% effective solution"
+            }
+          },
+          "rationale": "The external quotation attributes this expectation to one described position. It is not verified as shared, nor directly assigned to a named speaker.",
+          "alternative": "The whole typology can be retained as contextual rhetoric rather than direct prescriptions. If retained as statements, these embedded actors and perspectives must remain attributed.",
+          "uncertainty": "The original speaker and people described by we or those are not identified."
+        },
+        {
+          "unit_id": "C227_capitulate",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 245,
+              "end": 277,
+              "quote": "we should capitulate to spammers"
+            }
+          },
+          "rationale": "This is a potentially hostile characterization of an opposing position within an external quote. The reviewer does not attribute actual belief or endorsement to opponents or to aryaethn.",
+          "alternative": "Treating the opponent characterization as rhetorical context is reasonable. Retaining it here preserves a grammatically explicit attributed should while withholding truth and shared-standing claims.",
+          "uncertainty": "Capitulation may be polemical rather than a faithful statement of another participant's prescription."
+        },
+        {
+          "unit_id": "C227_remove_efforts",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 283,
+              "end": 329,
+              "quote": "remove all efforts to slow down / reduce spam."
+            }
+          },
+          "rationale": "A second independently executable action assigned to the polemically described opposing position. This is not an endorsement or observed policy.",
+          "alternative": "Keep jointly with capitulation if both actions and the assigned absence-of-perfect-solution premise remain visible; alternatively treat the rhetorical typology as context.",
+          "uncertainty": "Unknown original speaker, unknown actual proponents, and polemical attribution."
+        },
+        {
+          "unit_id": "C227_agreement",
+          "record_role": "context",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 333,
+              "end": 385,
+              "quote": "I agree. It's a debate that no one wins by argument."
+            }
+          },
+          "rationale": "aryaethn assents to the quoted framing and then asserts limits of argument. This is not separate endorsement of both opposed prescriptions.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C227_majority",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 386,
+              "end": 423,
+              "quote": "Only the majority decides the winner."
+            }
+          },
+          "rationale": "The claim assigns exclusive decisional efficacy to a majority. It is retained as an attributed arrangement claim, not an established voting rule, authorized decision procedure, or finding about actual outcomes. No explicit response challenges this majority claim. The unresolved relation to the earlier forum claim records a possible conflict, not a demonstrated dispute directed at this counterclaim.",
+          "alternative": "This may be a rhetorical prediction about popularity, with no institutional configuration at all. If it refers to PR merge authority, it conflicts with the supplied maintainer-and-merit account; if it concerns wider adoption, that contrast may not hold.",
+          "uncertainty": "The electorate, decision domain, counting method, and meaning of winner are unspecified."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 333,
+              "end": 341,
+              "quote": "I agree."
+            }
+          },
+          "reason": "Assent to the quoted framing; not independent endorsement of both rhetorically opposed expectations."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 342,
+              "end": 385,
+              "quote": "It's a debate that no one wins by argument."
+            }
+          },
+          "reason": "Context for the majority claim; absent a specified institutional process, retained as an assessment of persuasive limits rather than another rule."
+        },
+        {
+          "evidence": {
+            "source_id": "32359-227",
+            "span": {
+              "start": 54,
+              "end": 71,
+              "quote": "those who believe"
+            }
+          },
+          "reason": "Attribution framing is preserved in the container, institution rationales, and uncertainties; it is not itself a separate prescription."
+        }
+      ]
+    },
+    {
+      "source_id": "32381-012",
+      "author": "instagibbs",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "32381-012",
+        "disposition": "candidate",
+        "reason": "Candidate: conditional setting recommendation with tentative numeric elaboration, plus an inferred recommendation against extra node arguments. ~0 is an unelaborated stance marker, not an institutional statement.",
+        "unit_ids": [
+          "C012_setting",
+          "C012_no_args"
+        ]
+      },
+      "statement_count": 2,
+      "decisions": [
+        {
+          "unit_id": "C012_setting",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32381-012",
+            "span": {
+              "start": 6,
+              "end": 199,
+              "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?"
+            }
+          },
+          "rationale": "A conditional technical recommendation with a tentative numeric elaboration, not an unqualified duty or demonstrated contributor norm.",
+          "alternative": "The final question can be retained as a separate context question about candidate values. It is kept here as a tentative elaboration of the same proposed edit, not a second independently executable instruction.",
+          "uncertainty": "The knob and parameter value are context dependent; 150 bytes or beyond is questioned rather than firmly required."
+        },
+        {
+          "unit_id": "C012_no_args",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "32381-012",
+            "span": {
+              "start": 250,
+              "end": 305,
+              "quote": "I don't think adding more args in the node makes sense."
+            }
+          },
+          "rationale": "An indirect negative technical recommendation responding to jesterhodl's suggestion. No institutional obligation is established.",
+          "alternative": "A literal opinion about the value of adding arguments can remain context; the addressed response to a concrete suggestion supports the recommendation reading.",
+          "uncertainty": "The reply does not explicitly name the implementer, and does not establish a general ban on additional arguments."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "32381-012",
+            "span": {
+              "start": 0,
+              "end": 2,
+              "quote": "~0"
+            }
+          },
+          "reason": "Unelaborated stance marker; no independently interpretable prescription."
+        },
+        {
+          "evidence": {
+            "source_id": "32381-012",
+            "span": {
+              "start": 154,
+              "end": 199,
+              "quote": "Anything that results in 150 bytes or beyond?"
+            }
+          },
+          "reason": "Included as a tentative numeric elaboration of the setting recommendation, not counted as a second instruction or asserted minimum requirement."
+        },
+        {
+          "evidence": {
+            "source_id": "32381-012",
+            "span": {
+              "start": 215,
+              "end": 249,
+              "quote": "while I understand your main point"
+            }
+          },
+          "reason": "Limited acknowledgment does not accept the proposed extra argument; the following disagreement is retained."
+        }
+      ]
+    },
+    {
+      "source_id": "33453-body",
+      "author": "bitschmidty",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "33453-body",
+        "disposition": "candidate",
+        "reason": "Candidate: concrete removal method, possible future deprecation, embedded schedule advice, claimed best practice, and footgun principle. Exact repeated warning expectation links to its supplied original; empirical and technical rationales remain claims/context.",
+        "unit_ids": [
+          "C33453_remove_deprecation",
+          "C33453_warning_quote",
+          "C33453_clarity",
+          "C33453_future_deprecation",
+          "C33453_schedule",
+          "C33453_best_practice",
+          "C33453_footguns"
+        ]
+      },
+      "statement_count": 5,
+      "decisions": [
+        {
+          "unit_id": "C33453_remove_deprecation",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 0,
+              "end": 187,
+              "quote": "Removes the deprecation for the `datacarrier` and `datacarriersize` options by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406"
+            }
+          },
+          "rationale": "The proposal articulates an implementation method for removing deprecation. Its institutional classification is an authored contribution strategy, not an enforceable general rule.",
+          "alternative": "A purely descriptive report of patch contents is reasonable. Under the proposal reading the explicit removal action and specified reverting method are preserved.",
+          "uncertainty": "The body has an updated_at later than the merge; the packet does not reconstruct what text was visible at each earlier time."
+        },
+        {
+          "unit_id": "C33453_warning_quote",
+          "record_role": "quotation",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 727,
+              "end": 819,
+              "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+            }
+          },
+          "rationale": "Exact repeated expectation from C32714_warning_expectation, explicitly attributed to Ava Chow and PR 32714. It is not a second statement.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C33453_clarity",
+          "record_role": "context",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1138,
+              "end": 1205,
+              "quote": "Removing the deprecation gives clarity for their planning purposes."
+            }
+          },
+          "rationale": "A rationale used with the explicitly attributed warning expectation. Its predicted benefit is an author claim, not an observed user outcome.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C33453_future_deprecation",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1206,
+              "end": 1327,
+              "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+            }
+          },
+          "rationale": "The author preserves the possibility of later deprecation. Possible may mean technical or practical capability rather than authorized discretion; no permission-granting actor is given.",
+          "alternative": "This can be technical context rather than an institutional permission candidate. The embedded schedule recommendation is separately retained.",
+          "uncertainty": "The modal does not distinguish feasibility from permission; no schedule or procedure for later deprecation is adopted."
+        },
+        {
+          "unit_id": "C33453_schedule",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1244,
+              "end": 1301,
+              "quote": "preferably with a removal schedule to better inform users"
+            }
+          },
+          "rationale": "A proposed advisory expectation for future deprecation communication. The surrounding possibility does not establish a binding scheduling requirement.",
+          "alternative": "This can remain only a qualified constraint inside future deprecation. The separate layer is not additional evidence of adoption.",
+          "uncertainty": "The recommendation is conditional and aspirational, without a supplied future plan."
+        },
+        {
+          "unit_id": "C33453_best_practice",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1378,
+              "end": 1496,
+              "quote": "As a best practice, Bitcoin Core has avoided an option when the developers cannot articulate when they should be used."
+            }
+          },
+          "rationale": "The author reports and recommends a best practice. This records a claim about historical practice; no independent series of past decisions or attributed enforcement is supplied.",
+          "alternative": "A strategy-candidate reading emphasizes the articulated decision method; a context-only reading emphasizes a historical claim. No separate should is extracted from the embedded question of when options should be used.",
+          "uncertainty": "The packet does not substantiate the historical regularity; the pronoun they refers to options by context despite the singular an option."
+        },
+        {
+          "unit_id": "C33453_footguns",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1640,
+              "end": 1666,
+              "quote": "Don’t offer users footguns"
+            }
+          },
+          "rationale": "The author explicitly calls this a good principle, while arguing that this option has small remediable impacts. The external maxim is not independently sourced and establishes no enforceable institutional prohibition.",
+          "alternative": "Advisory recommendation is reasonable given good principle and the qualified discussion of impacts. Negative polarity and the distinct user recipient must remain.",
+          "uncertainty": "Footguns is metaphorical and undefined; the author's tolerance of small impacts does not settle an operational threshold."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 193,
+              "end": 259,
+              "quote": "Many current Bitcoin Core users want to continue using this option"
+            }
+          },
+          "reason": "Author-attributed preference claim, explicitly based on public postings rather than a formal survey; no prevalence or consensus finding follows."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 511,
+              "end": 572,
+              "quote": "for now there seem to be a bunch of users who like the option"
+            }
+          },
+          "reason": "External observational quotation attributed to AJ Towns; not an institutional statement or separately verified survey."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 727,
+              "end": 819,
+              "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+            }
+          },
+          "reason": "Not excluded from the record: coded as a repeated quotation with the original supplied proposition at C32714_warning_expectation, avoiding double counting."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 941,
+              "end": 1015,
+              "quote": "there is even less likelihood of a near term plan to remove these options."
+            }
+          },
+          "reason": "An author prediction, not independent evidence of the actual absence of future plans."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1072,
+              "end": 1137,
+              "quote": "the option could be removed in the next version or perhaps never."
+            }
+          },
+          "reason": "A claim of planning uncertainty, not permission or a definite removal schedule."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1497,
+              "end": 1638,
+              "quote": "There is non-zero maintenance cost to keeping this code around (although leaving the options deprecated for a long time has the same effect)."
+            }
+          },
+          "reason": "Technical/economic rationale, not a sanction or separate obligation."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1716,
+              "end": 1833,
+              "quote": "there seems to be only small impacts that can quickly be remedied by changing the option value by Bitcoin Core users."
+            }
+          },
+          "reason": "Qualified impact claim used to argue the principle's application; not an instruction that users must change the value or independently verified impact estimate."
+        },
+        {
+          "evidence": {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1834,
+              "end": 1949,
+              "quote": "There already exist in Bitcoin Core more potentially-user-harmful options/values than what datacarrier might cause."
+            }
+          },
+          "reason": "Comparative author claim; no comparative risk evidence is supplied."
+        }
+      ]
+    },
+    {
+      "source_id": "33224-010",
+      "author": "hebasto",
+      "full_source_reviewed": true,
+      "screening": {
+        "source_id": "33224-010",
+        "disposition": "candidate",
+        "reason": "Candidate: explicit post-final-freeze prohibition. Quoted concern, software-workflow explanation, and causal risk claims remain context; no authority or sanction is inferred.",
+        "unit_ids": [
+          "C010_quote",
+          "C010_freeze"
+        ]
+      },
+      "statement_count": 1,
+      "decisions": [
+        {
+          "unit_id": "C010_quote",
+          "record_role": "quotation",
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 2,
+              "end": 84,
+              "quote": "cc @hebasto; given this would change translations after translation string freeze."
+            }
+          },
+          "rationale": "Repeated text from C008_freeze_concern; not another recognition event.",
+          "alternative": "",
+          "uncertainty": ""
+        },
+        {
+          "unit_id": "C010_freeze",
+          "record_role": "statement",
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 635,
+              "end": 726,
+              "quote": "there must not be any translation source updates after the final translation string freeze."
+            }
+          },
+          "rationale": "An explicit blanket expectation against post-final-freeze translation-source updates. Neither the supplied docs nor a named role establish authority for this exact prohibition. The later workaround recognizes the freeze rationale while qualifying its application; it does not simply accept the absolute wording.",
+          "alternative": "The utterance can be a rule candidate if additional evidence establishes authorized freeze-setting or enforcement. It can also be understood as a shorthand ban on harmful translation invalidation; that narrower meaning is not its literal wording.",
+          "uncertainty": "The packet lacks the freeze announcement, the final freeze date, the speaker's delegated authority, and an explicit decision on exceptions."
+        }
+      ],
+      "nonstatement_or_duplicate_decisions": [
+        {
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 2,
+              "end": 84,
+              "quote": "cc @hebasto; given this would change translations after translation string freeze."
+            }
+          },
+          "reason": "Exact repeated concern linked to its original; not another expectation-recognition event."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 88,
+              "end": 215,
+              "quote": "The translation workflow on Transifex includes marking translated strings as \"Reviewed\", which locks them from further changes."
+            }
+          },
+          "reason": "Technical workflow description, not automatically an institutional constitutive status or role."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 216,
+              "end": 290,
+              "quote": "Not every translation team uses this feature, but those who do rely on it."
+            }
+          },
+          "reason": "Qualified background claim; prevents treating the described review feature as universal."
+        },
+        {
+          "evidence": {
+            "source_id": "33224-010",
+            "span": {
+              "start": 452,
+              "end": 621,
+              "quote": "it is not guaranteed that updating the translation source file (as in https://github.com/bitcoin/bitcoin/pull/33193) won’t reset the \"Reviewed\" status for other strings."
+            }
+          },
+          "reason": "Stated technical uncertainty supporting the prohibition; not verified effects or an institutional sanction."
+        }
+      ]
+    }
+  ],
+  "context_and_attribution_decisions": [
+    {
+      "claim": "External quotations whose originals are absent are retained as new attributed statement candidates; the current comment author is not substituted for the missing original speaker. The opposed spam positions are rhetorical descriptions, not verified camps.",
+      "evidence": [
+        {
+          "source_id": "32359-213",
+          "span": {
+            "start": 229,
+            "end": 339,
+            "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+          }
+        },
+        {
+          "source_id": "33224-018",
+          "span": {
+            "start": 127,
+            "end": 217,
+            "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+          }
+        },
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 54,
+            "end": 122,
+            "quote": "those who believe we should remain proactive towards spam filtration"
+          }
+        },
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 174,
+            "end": 277,
+            "quote": "those who believe the absence of a technically perfect solutions means we should capitulate to spammers"
+          }
+        }
+      ]
+    },
+    {
+      "claim": "The supplied contribution guide assigns merges to project merge maintainers and permits merit weighting. These statements contextualize the forum/majority contrast; they do not prove the role of any named commenter or resolve whether majority concerns repository integration.",
+      "evidence": [
+        {
+          "source_id": "D_CONTRIB",
+          "span": {
+            "start": 13905,
+            "end": 13997,
+            "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+          }
+        },
+        {
+          "source_id": "D_CONTRIB",
+          "span": {
+            "start": 17365,
+            "end": 17506,
+            "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit."
+          }
+        },
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 386,
+            "end": 423,
+            "quote": "Only the majority decides the winner."
+          }
+        }
+      ]
+    },
+    {
+      "claim": "The moderation document supports attributable moderation of repeated or unconstructive comments, with an exception for constructive reframing. No focal sanction is inferred, and its qualified provision is not silently substituted for the focal discouragement.",
+      "evidence": [
+        {
+          "source_id": "D_MOD",
+          "span": {
+            "start": 1340,
+            "end": 1464,
+            "quote": "Moderators may remove comments that do not either contribute new information or constructively reframe existing information."
+          }
+        },
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 300,
+            "end": 419,
+            "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+          }
+        }
+      ]
+    },
+    {
+      "claim": "The provided release and translation documents supply release-workflow context, but no supplied text specifies the exact final freeze prohibition or assigns hebasto authority to create it. The norm-candidate classification abstains from a rule claim.",
+      "evidence": [
+        {
+          "source_id": "D_RELEASE",
+          "span": {
+            "start": 1305,
+            "end": 1410,
+            "quote": "Update translations see [translation_process.md](/doc/translation_process.md#synchronising-translations)."
+          }
+        },
+        {
+          "source_id": "D_TRANSLATION",
+          "span": {
+            "start": 2134,
+            "end": 2217,
+            "quote": "For general PRs, you shouldn’t include any updates to the translation source files."
+          }
+        },
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 635,
+            "end": 726,
+            "quote": "there must not be any translation source updates after the final translation string freeze."
+          }
+        }
+      ]
+    }
+  ],
+  "response_sequences": [
+    {
+      "category": "review_coordination",
+      "claim": "A status question is repeated verbatim in maflcko's reply, followed by an issue diagnosis, issue-51 referral, and reported fix. This establishes a specific question-response sequence, with the edit timing and actual repair unresolved.",
+      "evidence": [
+        {
+          "source_id": "32406-164",
+          "span": {
+            "start": 0,
+            "end": 66,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 2,
+            "end": 68,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 72,
+            "end": 157,
+            "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+          }
+        }
+      ],
+      "unit_ids": [
+        "C164_question",
+        "C165_quote",
+        "C165_known",
+        "C165_referral",
+        "C165_fixed"
+      ],
+      "alternative_explanation": "The repair may have happened independently of the question or outside this thread; the comment does not identify the intervention.",
+      "status": "supported_sequence"
+    },
+    {
+      "category": "reason_giving",
+      "claim": "The translation-freeze concern receives a categorical no-updates response grounded in risk to Reviewed status. achow101 then reports experiments and recognizes the rationale for a freeze while suggesting a conditional workaround; l0rinc later reports a linked fix. This supports a reason-giving sequence but does not identify the cause of the subsequent PR merge or prove the exact workaround was integrated.",
+      "evidence": [
+        {
+          "source_id": "33224-008",
+          "span": {
+            "start": 0,
+            "end": 82,
+            "quote": "cc @hebasto; given this would change translations after translation string freeze."
+          }
+        },
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 452,
+            "end": 621,
+            "quote": "it is not guaranteed that updating the translation source file (as in https://github.com/bitcoin/bitcoin/pull/33193) won’t reset the \"Reviewed\" status for other strings."
+          }
+        },
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 635,
+            "end": 726,
+            "quote": "there must not be any translation source updates after the final translation string freeze."
+          }
+        },
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 0,
+            "end": 145,
+            "quote": "I've done some experimenting with a test project on transifex to see what the actual effects this change would cause, and a potential workaround."
+          }
+        },
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 903,
+            "end": 971,
+            "quote": "I think this issue is why we institute a translation strings freeze."
+          }
+        },
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 1722,
+            "end": 1882,
+            "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+          }
+        },
+        {
+          "source_id": "33224-019",
+          "span": {
+            "start": 0,
+            "end": 284,
+            "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:"
+          }
+        },
+        {
+          "source_id": "M33224",
+          "span": {
+            "start": 0,
+            "end": 430,
+            "quote": "{\n  \"number\": 33224,\n  \"title\": \"doc: unify `datacarriersize` warning with release notes\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-08-20T03:45:42Z\",\n  \"closed_at\": \"2025-09-02T22:48:55Z\",\n  \"merged_at\": \"2025-09-02T22:48:54Z\",\n  \"head_sha\": \"2885bd0e1c4fc863a7f28ff0fd353f5cffb03442\",\n  \"base_sha\": \"f5f853d952542ebd45339a270a98362696877657\",\n  \"actual_merge_sha\": \"46369583f3a99d2b403349790f8b26dbc28de132\"\n}"
+          }
+        }
+      ],
+      "unit_ids": [
+        "C008_freeze_concern",
+        "C010_freeze",
+        "C015_workaround",
+        "C019_test_report"
+      ],
+      "alternative_explanation": "The participants may be addressing technical invalidation while preserving a narrower freeze expectation, rather than negotiating or overriding an absolute governance prohibition. The merge may depend on other unprovided review.",
+      "status": "supported_sequence"
+    },
+    {
+      "category": "reason_giving",
+      "claim": "bitschmidty explicitly attributes the conditional no-removal-warning expectation to Ava Chow, repeats it, and ties deprecation removal to clarity for users. This is attributable reuse of the expectation. Recorded integration of the broader change does not establish the expectation as an enforceable rule or identify its causal weight.",
+      "evidence": [
+        {
+          "source_id": "32714-body",
+          "span": {
+            "start": 858,
+            "end": 950,
+            "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+          }
+        },
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 677,
+            "end": 821,
+            "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._”"
+          }
+        },
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 1138,
+            "end": 1205,
+            "quote": "Removing the deprecation gives clarity for their planning purposes."
+          }
+        },
+        {
+          "source_id": "M33453",
+          "span": {
+            "start": 0,
+            "end": 446,
+            "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+          }
+        }
+      ],
+      "unit_ids": [
+        "C32714_warning_expectation",
+        "C33453_warning_quote",
+        "C33453_clarity",
+        "C33453_remove_deprecation"
+      ],
+      "alternative_explanation": "The same edit may have been supported for maintenance, preference, or communication reasons independently of the quoted principle. The supplied body history is incomplete.",
+      "status": "supported_sequence"
+    },
+    {
+      "category": "authority_allocation",
+      "claim": "glozow frames the PR as code review rather than per-username voting and asserts merit weighting. aryaethn later claims only a majority decides the winner. The statements reveal potentially incompatible decision conceptions, but the packet does not establish a direct reply, a shared meaning of winner, or a change to the merge arrangement.",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 14,
+            "end": 91,
+            "quote": "this is a pull request open for code review, not a per-username voting forum."
+          }
+        },
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 92,
+            "end": 186,
+            "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+          }
+        },
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 333,
+            "end": 423,
+            "quote": "I agree. It's a debate that no one wins by argument. Only the majority decides the winner."
+          }
+        },
+        {
+          "source_id": "D_CONTRIB",
+          "span": {
+            "start": 13905,
+            "end": 13997,
+            "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+          }
+        }
+      ],
+      "unit_ids": [
+        "C115_forum",
+        "C115_merit",
+        "C227_majority"
+      ],
+      "alternative_explanation": "Majority may refer to wider user adoption or rhetorical victory rather than PR integration, in which case the claims concern different arenas.",
+      "status": "unresolved"
+    }
+  ],
+  "recorded_outcomes": [
+    {
+      "claim": "The bot reply identifies a known issue, directs readers to issue 51, and carries an edit reporting fixed. The report does not verify the repair or show when the edit was made.",
+      "evidence": [
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 72,
+            "end": 157,
+            "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+          }
+        }
+      ]
+    },
+    {
+      "claim": "PR 33224 has a recorded merge. Its supplied patch softens will be removed to expected to be removed. The translation-thread reports concern testing and a linked fix; neither the merge nor the report proves acceptance of a blanket freeze prohibition.",
+      "evidence": [
+        {
+          "source_id": "M33224",
+          "span": {
+            "start": 0,
+            "end": 430,
+            "quote": "{\n  \"number\": 33224,\n  \"title\": \"doc: unify `datacarriersize` warning with release notes\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-08-20T03:45:42Z\",\n  \"closed_at\": \"2025-09-02T22:48:55Z\",\n  \"merged_at\": \"2025-09-02T22:48:54Z\",\n  \"head_sha\": \"2885bd0e1c4fc863a7f28ff0fd353f5cffb03442\",\n  \"base_sha\": \"f5f853d952542ebd45339a270a98362696877657\",\n  \"actual_merge_sha\": \"46369583f3a99d2b403349790f8b26dbc28de132\"\n}"
+          }
+        },
+        {
+          "source_id": "X33224",
+          "span": {
+            "start": 0,
+            "end": 631,
+            "quote": "@@ -904,7 +904,7 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n     }\n \n     if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n     }\n \n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config."
+          }
+        },
+        {
+          "source_id": "33224-019",
+          "span": {
+            "start": 0,
+            "end": 284,
+            "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:"
+          }
+        }
+      ]
+    },
+    {
+      "claim": "PR 33453 has a recorded merge, and its supplied patch removes the displayed deprecation labels and startup warning. The 30.x backport metadata lists #33453 and records that backport PR merged; this is repository evidence, not a finding about network adoption or community acceptance of every stated rationale.",
+      "evidence": [
+        {
+          "source_id": "M33453",
+          "span": {
+            "start": 0,
+            "end": 446,
+            "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+          }
+        },
+        {
+          "source_id": "X33453",
+          "span": {
+            "start": 0,
+            "end": 2665,
+            "quote": "@@ -658,9 +658,9 @@ void SetupServerArgs(ArgsManager& argsman, bool can_listen_ipc)\n     argsman.AddArg(\"-dustrelayfee=<amt>\", strprintf(\"Fee rate (in %s/kvB) used to define dust, the value of an output such that it will cost more than its value in fees at this fee rate to spend it. (default: %s)\", CURRENCY_UNIT, FormatMoney(DUST_RELAY_TX_FEE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-acceptstalefeeestimates\", strprintf(\"Read fee estimates even if they are stale (%sdefault: %u) fee estimates are considered stale if they are %s hours old\", \"regtest only; \", DEFAULT_ACCEPT_STALE_FEE_ESTIMATES, Ticks<std::chrono::hours>(MAX_FILE_AGE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::DEBUG_TEST);\n     argsman.AddArg(\"-bytespersigop\", strprintf(\"Equivalent bytes per sigop in transactions for relay and mining (default: %u)\", DEFAULT_BYTES_PER_SIGOP), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n-    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n+    argsman.AddArg(\"-datacarrier\", strprintf(\"Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-datacarriersize\",\n-                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n+                   strprintf(\"Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n                              \"are of this size or less, allowing multiple outputs (default: %u)\",\n                              MAX_OP_RETURN_RELAY),\n                    ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n@@ -903,10 +903,6 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n         InitWarning(_(\"Option '-checkpoints' is set but checkpoints were removed. This option has no effect.\"));\n     }\n \n-    if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n-    }\n-\n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config.\n     if (args.IsArgSet(\"-maxorphantx\")) {\n         InitWarning(_(\"Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.\"));"
+          }
+        },
+        {
+          "source_id": "M33473",
+          "span": {
+            "start": 0,
+            "end": 547,
+            "quote": "{\n  \"number\": 33473,\n  \"title\": \"[30.x] Backports & rc3\",\n  \"body\": \"Backports:\\r\\n* #33434\\r\\n* #33446\\r\\n* #33453\\r\\n* #33475\\r\\n* #33482\\r\\n* #33484\\r\\n* #33504\\r\\n\\r\\nIncludes changes for `v30.0rc3`:\\r\\n* Version bump\\r\\n* Regen manpages\\r\\n* Regen exmaple .conf\",\n  \"base\": \"30.x\",\n  \"head_sha\": \"4e869a67aa7415f9c756bf6463e3437ae0a3ec44\",\n  \"merged\": true,\n  \"merge_commit_sha\": \"d5e0077bef4cc4484242bb9a88a4840bc803c091\",\n  \"created_at\": \"2025-09-24T14:11:42Z\",\n  \"closed_at\": \"2025-10-06T09:37:33Z\",\n  \"merged_at\": \"2025-10-06T09:37:33Z\"\n}"
+          }
+        }
+      ]
+    },
+    {
+      "claim": "PRs 32359, 32381, and 32714 are recorded closed without merge. Those dispositions alone do not show rejection of each focal or quoted proposition.",
+      "evidence": [
+        {
+          "source_id": "M32359",
+          "span": {
+            "start": 0,
+            "end": 378,
+            "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+          }
+        },
+        {
+          "source_id": "M32381",
+          "span": {
+            "start": 0,
+            "end": 372,
+            "quote": "{\n  \"number\": 32381,\n  \"title\": \"policy: allow more than one OP_RETURN outputs per tx\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-29T20:21:59Z\",\n  \"closed_at\": \"2025-04-30T19:12:08Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"5fd80bd662fd47e0df2dfd951eb445e8a50ccebc\",\n  \"base_sha\": \"51d76634fb57fc7a3382fa26389e6c7f863bea76\",\n  \"actual_merge_sha\": null\n}"
+          }
+        },
+        {
+          "source_id": "M32714",
+          "span": {
+            "start": 0,
+            "end": 397,
+            "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+          }
+        }
+      ]
+    }
+  ],
+  "missing_context": [
+    "Original quoted occurrence and speaker for 32359-213; original quoted debate framing for 32359-227; original add-flag suggestion and speaker for 33224-018 are absent. Their absence does not show no originals exist.",
+    "The supplied packet does not contain full comment histories, moderation events for these focal statements, or body versions at every date. Several body updated_at values postdate the historical episode.",
+    "The exact freeze announcement/date, authority for the final translation freeze, exception decision, and complete translation-workaround patch history are not supplied.",
+    "The content of DrahtBot issue 51 and a timestamped verification of the reported fix are not supplied.",
+    "Formal recognition, enforcement, a specified electorate, and the decision domain for the majority claim are not supplied."
+  ],
+  "interpretive_questions": [
+    "Does the majority claim refer to this PR's merge, broader software adoption, or rhetorical victory? The current record cannot select a governance level confidently.",
+    "Does the freeze prohibition literally forbid every source update, or only changes causing disruptive invalidation? The later workaround recognizes the rationale but leaves the exact exception status unresolved.",
+    "Are the externally quoted opponent prescriptions faithful attributions or rhetorical characterizations? They are retained as claims, not verified positions.",
+    "Does future deprecation being possible express practical capability or authorized discretion? The supplied wording does not resolve that distinction.",
+    "Is the no-removal-warning principle locally recognized by the later rationale, or merely quoted as persuasive background? The chosen local-recognition reading relies on the argument using it, not repetition alone."
+  ],
+  "additional_source_requests": [],
+  "source_additions": [],
+  "final_semantic_review": {
+    "completed": true,
+    "method": "Reread all eight full focal texts alongside each unit and component anchor, then revisited response, standing, chronology, and disposition claims. All three repeated quotations link to supplied originals. Every outside-unit component has an explicit scope explanation. No rule candidate was inferred solely from a modal, document title, merge, ACK, or chronology.",
+    "limitations": "Structural pass establishes schema and exact anchors only. The retained alternatives, unidentified quoted speakers, uncertain decision domain, and incomplete histories remain substantive limitations."
+  },
+  "access_audit": {
+    "research_input_paths": [
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/REVIEW_TASK.txt",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/protocol/codebook.txt",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/protocol/annotation_schema.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/packet.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/tools/check_annotation.py"
+    ],
+    "own_output_or_script_paths_accessed": [
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/build_annotation.py",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/annotation.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/annotation.initial.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/checks.initial.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/finalize_review.py",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/repair_log.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/review_notes.json",
+      "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/checks.json"
+    ],
+    "disallowed_material_encountered": false,
+    "statement": "No parent directory, other review, prior project analysis, Library material, external source, or conversation-history research material was inspected. All research access and output stayed in this C directory."
+  }
+}

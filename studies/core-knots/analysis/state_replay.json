@@ -1,0 +1,207 @@
+{
+  "scope": "A projection of selected main-branch changes, not a full repository history, an adoption model, or a model of Bitcoin consensus rules. The old lines in C3 establish the tracked starting fields. Unmerged proposals do not apply their proposed changes.",
+  "initial_state": {
+    "default_policy": "earlier_83_byte_limit",
+    "output_budget": "single_output",
+    "options_available": true,
+    "deprecated": false,
+    "startup_warning": null
+  },
+  "events": [
+    {
+      "event_id": "C2_disposition",
+      "case_id": "C2",
+      "date_time": "2025-04-30T19:12:08Z",
+      "action": "close_unmerged",
+      "actor": "darosior",
+      "before": {
+        "default_policy": "earlier_83_byte_limit",
+        "output_budget": "single_output",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "after": {
+        "default_policy": "earlier_83_byte_limit",
+        "output_budget": "single_output",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "changed_fields": [],
+      "evidence": [
+        "F32381"
+      ]
+    },
+    {
+      "event_id": "C1_disposition",
+      "case_id": "C1",
+      "date_time": "2025-05-12T15:19:05Z",
+      "action": "close_unmerged",
+      "actor": "glozow",
+      "before": {
+        "default_policy": "earlier_83_byte_limit",
+        "output_budget": "single_output",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "after": {
+        "default_policy": "earlier_83_byte_limit",
+        "output_budget": "single_output",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "changed_fields": [],
+      "evidence": [
+        "F32359"
+      ]
+    },
+    {
+      "event_id": "C3_disposition",
+      "case_id": "C3",
+      "date_time": "2025-06-09T12:25:45Z",
+      "action": "merge",
+      "actor": "glozow",
+      "before": {
+        "default_policy": "earlier_83_byte_limit",
+        "output_budget": "single_output",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "after": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "will_be_removed"
+      },
+      "changed_fields": [
+        "default_policy",
+        "output_budget",
+        "deprecated",
+        "startup_warning"
+      ],
+      "evidence": [
+        "F32406",
+        "X32406"
+      ]
+    },
+    {
+      "event_id": "C4_disposition",
+      "case_id": "C4",
+      "date_time": "2025-06-10T18:37:57Z",
+      "action": "close_unmerged",
+      "actor": "achow101",
+      "before": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "will_be_removed"
+      },
+      "after": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "will_be_removed"
+      },
+      "changed_fields": [],
+      "evidence": [
+        "F32714"
+      ]
+    },
+    {
+      "event_id": "C5_disposition",
+      "case_id": "C5",
+      "date_time": "2025-09-02T22:48:54Z",
+      "action": "merge",
+      "actor": "achow101",
+      "before": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "will_be_removed"
+      },
+      "after": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "expected_removal"
+      },
+      "changed_fields": [
+        "startup_warning"
+      ],
+      "evidence": [
+        "F33224",
+        "X33224"
+      ]
+    },
+    {
+      "event_id": "C6_disposition",
+      "case_id": "C6",
+      "date_time": "2025-09-30T22:23:33Z",
+      "action": "merge",
+      "actor": "achow101",
+      "before": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": true,
+        "startup_warning": "expected_removal"
+      },
+      "after": {
+        "default_policy": "higher_default_100000_transaction_ceiling",
+        "output_budget": "aggregate_across_multiple_outputs",
+        "options_available": true,
+        "deprecated": false,
+        "startup_warning": null
+      },
+      "changed_fields": [
+        "deprecated",
+        "startup_warning"
+      ],
+      "evidence": [
+        "F33453",
+        "X33453"
+      ]
+    }
+  ],
+  "final_state": {
+    "default_policy": "higher_default_100000_transaction_ceiling",
+    "output_budget": "aggregate_across_multiple_outputs",
+    "options_available": true,
+    "deprecated": false,
+    "startup_warning": null
+  },
+  "supporting_backport": {
+    "event_id": "C6B_disposition",
+    "case_id": "C6B",
+    "pr": 33473,
+    "action": "merge",
+    "actor": "fanquake",
+    "author": "fanquake",
+    "actor_is_author": true,
+    "date_time": "2025-10-06T09:37:33Z",
+    "target_branch": "30.x",
+    "actual_merge_sha": "d5e0077bef4cc4484242bb9a88a4840bc803c091",
+    "sources": [
+      "F33473",
+      "M33473"
+    ],
+    "scope": "supporting_backport",
+    "publication_observed": null,
+    "adoption_observed": null
+  },
+  "unobserved_outcomes": [
+    "publication",
+    "operator_adoption",
+    "network_acceptance",
+    "restored_confidence"
+  ]
+}

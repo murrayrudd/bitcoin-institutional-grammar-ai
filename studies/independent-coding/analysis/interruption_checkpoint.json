@@ -1,0 +1,51 @@
+{
+  "recorded_at_utc": "2026-11-07T20:04:05.736154+00:00",
+  "status": "interrupted_after_independent_coding_and_alignment_before_completed_source_audits",
+  "reason": "Both independent source-review agents returned weekly usage-limit errors. No final source-review or comparative error conclusion is available.",
+  "completed": [
+    "18 independent coding runs, all original input and output hashes reverified",
+    "Masked alignment: 314 statement occurrences, 56 groups, 42 common all-six one-to-one propositions",
+    "Pre-reconciliation agreement and supplementary nominal alpha",
+    "Alpha numerical implementation verified against a published example",
+    "Separate metadata-identity diagnostic; original workflow failures retained"
+  ],
+  "source_review_a": {
+    "complete_cases": [
+      "F02",
+      "F03"
+    ],
+    "remaining_case": "F01",
+    "F01_completed_annotation_ids": [
+      "R01",
+      "R03"
+    ],
+    "F01_remaining_annotation_count": 4,
+    "note": "All 42 F01 source entries read; pending cross-annotation checks remain in review_progress.json. Case checkpoints are retained; no final review.json."
+  },
+  "source_review_b": {
+    "status": "working notes only; final review and coverage ledger incomplete",
+    "working_findings": 12,
+    "final_coverage_rows": 0,
+    "note": "case_notes records source comparisons for all three cases, but this does not substitute for a finished auditable review."
+  },
+  "remaining": [
+    "Finish reviewer A F01 and final combined coverage ledger",
+    "Finish reviewer B qualification/rationale and coverage checks, then final review",
+    "Mechanically validate and freeze both independent reviews",
+    "Reconcile source-supported findings; preserve unresolved alternatives",
+    "Write final comparative evaluation and readiness conclusion"
+  ],
+  "original_coding_rerun_required": false,
+  "primary_conclusion_status": "not established; source audits incomplete",
+  "credit_accounting": "Not exposed; no claim about how the platform charged the displayed balance.",
+  "review_checkpoint_sha256": {
+    "reviews/source_review_a/F02_review.first_complete.json": "d4d011c4188143386a5b245c9020c7452f85552a75cc15fe2682a4682f752471",
+    "reviews/source_review_a/F03_review.first_complete.json": "0ecf19ab4d68ceafc5c6419219d9d36c340da6c28d08c9ace9bfa2e2f5953678",
+    "reviews/source_review_a/F02_review.json": "d4d011c4188143386a5b245c9020c7452f85552a75cc15fe2682a4682f752471",
+    "reviews/source_review_a/review_progress.json": "697fdc282b4cb7e796e44628317e77f7592ec4c620121daa27aad7e558b37f65",
+    "reviews/source_review_a/F03_review.json": "0ecf19ab4d68ceafc5c6419219d9d36c340da6c28d08c9ace9bfa2e2f5953678",
+    "reviews/source_review_a/access_record.json": "f075d421758b262c1f04a0e194e41288719265c7ce8e13a6699059de193d83b1",
+    "reviews/source_review_b/mechanical_checks.json": "637e496984f860bdd1e759bebd81ef83ce765cbd45e439f6203756f6a6e11f31",
+    "reviews/source_review_b/review_work.json": "34c6cdd6028bd6c9ed404cad8d0b4da63cf3c278fcca589482a0bc879b2c5c34"
+  }
+}

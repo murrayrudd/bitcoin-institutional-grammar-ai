@@ -1,0 +1,661 @@
+[
+  {
+    "source_id": "32359-038",
+    "stratum": "purposive",
+    "pr": 32359,
+    "reviewer_group": "B",
+    "baseline_screen_class": "T",
+    "reviewer_statement_units": [
+      "B14"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32359_038_1"
+    ],
+    "decision": "Comment suggestion and reported incorporation preserved; direct reply metadata supplied.",
+    "evidence": [
+      {
+        "source_id": "32359-038",
+        "span": {
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32359-115",
+    "stratum": "purposive",
+    "pr": 32359,
+    "reviewer_group": "C",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "C115_forum",
+      "C115_merit",
+      "C115_no_repost",
+      "C115_unsubstantiated",
+      "C115_repetition"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32359_115_1"
+    ],
+    "decision": "Merit recognition retained after source completion. Repeated-posting constraint is not a specified majority rule.",
+    "evidence": [
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 0,
+          "end": 419,
+          "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum. Reviews are weighted by the merit of their arguments, not the number of times they are posted. Please rest assured that if your point has already been made here or on #28130, you don't need to post it again. There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32359-227",
+    "stratum": "purposive",
+    "pr": 32359,
+    "reviewer_group": "C",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "C227_proactive",
+      "C227_capitulate",
+      "C227_remove_efforts",
+      "C227_majority"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32359_227_1"
+    ],
+    "decision": "Unspecified majority claim retained without an assumed decision arena. Polemical descriptions of rival camps remain attributed claims.",
+    "evidence": [
+      {
+        "source_id": "32359-227",
+        "span": {
+          "start": 0,
+          "end": 424,
+          "quote": "> This debate is currently divided along the lines of those who believe we should remain proactive towards spam filtration, despite the lack of a 100% effective solution, vs those who believe the absence of a technically perfect solutions means we should capitulate to spammers, and remove all efforts to slow down / reduce spam.\r\n\r\nI agree. It's a debate that no one wins by argument. Only the majority decides the winner. "
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32381-body",
+    "stratum": "purposive",
+    "pr": 32381,
+    "reviewer_group": "A",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "A015",
+      "A016",
+      "A017"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32381_body_1",
+      "C32381_body_2",
+      "R4C32381_body_3"
+    ],
+    "decision": "Add the direct proposal to lift the restriction; retain the mailing-list referral and separate support for PR 32359.",
+    "evidence": [
+      {
+        "source_id": "32381-body",
+        "span": {
+          "start": 0,
+          "end": 951,
+          "quote": "Please keep conceptual discussions on the corresponding [mailing list thread](https://gnusha.org/pi/bitcoindev/rhfyCHr4RfaEalbfGejVdolYCVWIyf84PT2062DQbs5-eU8BPYty5sGyvI3hKeRZQtVC7rn_ugjUWFnWCymz9e9Chbn7FjWJePllFhZRKYk=@protonmail.com\r\n).\r\n\r\nBecause of the restriction on the number of `OP_RETURN` outputs per transaction, people are designing protocols that store data in non-pruneable and unspendable outputs. Lift this restriction to stop preventing them from using a less harmful way of achieving the same.\r\n\r\nThis is an alternative to #32359 with the smallest change that addresses the concern i raised on the mailing list thread above. Notably this does not remove any command line option and keeps the limit in place on the size of each `OP_RETURN` output. I still believe we should do #32359, as i signaled there. Hopefully this can be seen as a first step toward this goal, which addresses the short term harm without wasting everyone's time."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-149",
+    "stratum": "purposive",
+    "pr": 32406,
+    "reviewer_group": "A",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "A004",
+      "A010",
+      "A011",
+      "A012"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32406_149_1",
+      "C32406_149_2",
+      "C32406_149_3",
+      "R4C32406_149_4"
+    ],
+    "decision": "Add persuasion threshold claim; retain permission to defer minor edits and local recognition. Practical necessity is an alternative to duty.",
+    "evidence": [
+      {
+        "source_id": "32406-149",
+        "span": {
+          "start": 0,
+          "end": 1370,
+          "quote": "re-ACK 35bcd8eed38130445aef5ebe217ab42248fa6f18\r\n\r\nSmaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading.\r\n\r\n\r\n> unless @luke-jr/Knots argues convincingly that the removal of these config options in Core makes maintaining them in Knots an excessive amount of work\r\n\r\nIt really shouldn't be. After this PR it's a matter of changing the default. After we actually drop the deprecated option, it would be a matter of reverting that one commit.\r\n\r\n>  I don't know if it makes sense for Core to try catering to Knots' objectives\r\n\r\nIn general Bitcoin Core provides very limited catering to forks, whether that's altcoins, modified implementations or even just experimental features. We do have e.g. `CLIENT_NAME \"Bitcoin Core\"` that's easy to override, and a CI flag `SKIP_BRANCH_PUSH` which replaced a hardcoded gui repository name. But those require some convincing to include, as I've experienced myself with #29274.\r\n\r\nIt probably does not help (in motivating reviewers) if your fork's main marketing message is to discredit upstream.\r\n\r\n@gmaxwell wrote:\r\n\r\n> I have a slight preference for the closed PR that removes it completely. \r\n\r\nSo do I conceptually, but at this point this PR has had more code review and some subsequent improvements, so I'd rather not switch back."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-178",
+    "stratum": "purposive",
+    "pr": 32406,
+    "reviewer_group": "B",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B28",
+      "B29"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32406_178_1",
+      "C32406_178_2",
+      "C32406_178_3",
+      "R4C32406_178_4",
+      "R4C32406_178_5"
+    ],
+    "decision": "Add navigation and advisory reasoning; retain the locally recognized status definition and explicit rival meaning.",
+    "evidence": [
+      {
+        "source_id": "32406-178",
+        "span": {
+          "start": 0,
+          "end": 1965,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nDespite recommending against using it, a feature might be left in the software ~forever, eg because it's needed for backwards compatability (see [`gets()`](https://en.cppreference.com/w/c/io/gets) in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)), or it might be removed in the next release, because everybody is willing and able to stop using it.\r\n\r\nHere, the reason to recommend not using it is because it will likely harm the efficiency of block reconstruction, slowing down block relay, and also make you use more bandwidth (requesting the tx then rejecting it, then receiving the tx again when it's included in a block), for very little benefit -- it won't stop spam from getting into blocks, and likely won't stop spam from getting into your mempool given other encoding methods are more efficient. I think the vast majority of developers contributing to core would recommend not setting this option to a lower value than the default, so I think marking it as \"deprecated\" is reasonable, even if there are a few developers who strongly disagree.\r\n\r\nWhether (or when) the option should also be removed rather than just deprecated depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects. Given currently lots of people seem to want it, and maintaining it is very low effort, leaving the option in seems obviously sensible to me. YMMV, of course. And of course, even if it does get removed from core, if users actually want it, the code is open source so they can patch it back in or use a derivative that does that for them."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-228",
+    "stratum": "purposive",
+    "pr": 32406,
+    "reviewer_group": "A",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "A019"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32406_228_1"
+    ],
+    "decision": "Record challenge to the application of open-source legitimacy; retain level and grammar alternatives.",
+    "evidence": [
+      {
+        "source_id": "32406-228",
+        "span": {
+          "start": 0,
+          "end": 662,
+          "quote": "@pinheadmz a \"technically\" accurate gotcha attempt that ignores the deeper issue. The adoption drop signals a real erosion of trust, not just a casual exercise of open-source freedom. When a change pushes away a substantial portion of the user base, dismissing it as \"just fork it\" ignores a practical reality. Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input. When \"reasonable\" is defined by the few and dissenters are told to fork off, it stifles meaningful community participation. I like to think most contributors in this repo agree on this fundamental principle."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-252",
+    "stratum": "purposive",
+    "pr": 32406,
+    "reviewer_group": "B",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32406_252_1",
+      "C32406_252_2",
+      "R4C32406_252_3",
+      "R4C32406_252_4",
+      "R4C32406_252_5"
+    ],
+    "decision": "Apply dated policy, keep case scope, represent consequence and negative venue duty separately; add classification, permission, and referral candidates.",
+    "evidence": [
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 651,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here.\r\n\r\nComments about maintainers, other specific individuals, \"drama\" etc. are not on topic here in this thread. You can take that over to [bitcoin-core/meta](https://github.com/bitcoin-core/meta/), if you so desire.\r\n\r\nFailure to keep future comments focused on review of the proposed changes will result in a temporary ban. If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here. See the [moderation guidelines](https://github.com/bitcoin-core/meta/blob/main/MODERATION-GUIDELINES.md) for more information on this policy."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32714-body",
+    "stratum": "purposive",
+    "pr": 32714,
+    "reviewer_group": "B",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32714_body_1",
+      "C32714_body_2",
+      "C32714_body_3",
+      "C32714_body_4"
+    ],
+    "decision": "Retain status definition omitted by fresh review. Upgrade bounded recognition of warning principle. Exploratory bikeshedding can remain context.",
+    "evidence": [
+      {
+        "source_id": "32714-body",
+        "span": {
+          "start": 0,
+          "end": 950,
+          "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use.\r\n\r\nWhile deprecation obviously means that the options are not recommended for use, many users seem to believe that it also means that the options will be imminently removed. My understanding is that there is currently no plan to remove these options in the near future, and I don't think it would be wise to open a PR to remove the options for a few more years. While deprecation certainly does not give a timeline for removal, and the current text is still technically correct, I think that it would be clearer to users to remove the word \"deprecated\" from the documentation of this option while preserving the non-recommendation.\r\n\r\nOne thing that could be bikeshed is whether to warn on init if these options are set. IMO we should not have removal warnings if there is no current plan to actually remove them."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33224-010",
+    "stratum": "purposive",
+    "pr": 33224,
+    "reviewer_group": "C",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "C010_freeze"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C33224_010_1"
+    ],
+    "decision": "Preserve categorical prohibition as expressed; workaround and nominal-action alternatives remain unresolved.",
+    "evidence": [
+      {
+        "source_id": "33224-010",
+        "span": {
+          "start": 0,
+          "end": 726,
+          "quote": "> cc @hebasto; given this would change translations after translation string freeze.\r\n\r\nThe translation workflow on Transifex includes marking translated strings as \"Reviewed\", which locks them from further changes. Not every translation team uses this feature, but those who do rely on it. Unfortunately, the \"opensource\" plan used by the [Bitcoin organization](https://explore.transifex.com/bitcoin/) on Transifex has very limited functionality, and it is not guaranteed that updating the translation source file (as in https://github.com/bitcoin/bitcoin/pull/33193) won’t reset the \"Reviewed\" status for other strings.\r\n\r\nIn short, there must not be any translation source updates after the final translation string freeze."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33453-018",
+    "stratum": "purposive",
+    "pr": 33453,
+    "reviewer_group": "A",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "A013",
+      "A014"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C33453_018_1"
+    ],
+    "decision": "Maintainer timing discretion and personal non-objection preserved; neither establishes authority over network adoption.",
+    "evidence": [
+      {
+        "source_id": "33453-018",
+        "span": {
+          "start": 0,
+          "end": 138,
+          "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs), I will not put up a fuss either way."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33453-body",
+    "stratum": "purposive",
+    "pr": 33453,
+    "reviewer_group": "C",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "C33453_remove_deprecation",
+      "C33453_future_deprecation",
+      "C33453_schedule",
+      "C33453_best_practice",
+      "C33453_footguns"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C33453_body_1",
+      "C33453_body_2",
+      "R4C33453_body_3",
+      "R4C33453_body_4"
+    ],
+    "decision": "Add opening removal proposal and qualified footgun principle; preserve duplicate warning quotation and argument use.",
+    "evidence": [
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 0,
+          "end": 1951,
+          "quote": "Removes the deprecation for the `datacarrier` and `datacarriersize` options by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406\r\n\r\n**Many current Bitcoin Core users want to continue using this option**\r\nThis statement is based on public postings from many Bitcoin Core users and not a formal survey. AJ Towns’ observation from [#32406](https://github.com/bitcoin/bitcoin/pull/32406/commits/0b4048c73385166144d0b3e76beb9a2ac4cc1eca#r2084024874) that “_for now there seem to be a bunch of users who like the option_” has only become more apparent in the months since.\r\n\r\n**The deprecation intent is unclear to users**\r\nThis echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._” In months since that comment, partially due to increased feedback from Bitcoin Core users wanting to keep this option, there is even less likelihood of a near term plan to remove these options. That leaves Bitcoin Core users in an unclear situation: the option could be removed in the next version or perhaps never. Removing the deprecation gives clarity for their planning purposes. Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible.\r\n\r\n**Minimal downsides to removing deprecation**\r\nAs a best practice, Bitcoin Core has avoided an option when the developers cannot articulate when they should be used. There is non-zero maintenance cost to keeping this code around (although leaving the options deprecated for a long time has the same effect). “Don’t offer users footguns” is also a good principle, but with this option, there seems to be only small impacts that can quickly be remedied by changing the option value by Bitcoin Core users. There already exist in Bitcoin Core more potentially-user-harmful options/values than what datacarrier might cause.\r\n"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32359-213",
+    "stratum": "candidate",
+    "pr": 32359,
+    "reviewer_group": "C",
+    "baseline_screen_class": "T",
+    "reviewer_statement_units": [
+      "C213_permission",
+      "C213_defaults",
+      "C213_increase",
+      "C213_high_default"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32359_213_1"
+    ],
+    "decision": "Only high-default proposal is new at this occurrence; quoted configuration claims have retained originals at 32359-186.",
+    "evidence": [
+      {
+        "source_id": "32359-213",
+        "span": {
+          "start": 0,
+          "end": 607,
+          "quote": "> After looking further into this issue; I can understand removing the limits as a default config in core (although i would prefer it not to be this way) - but why is the ability to configure it being removed all together? \n> \n> As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam. This can make running a node very RAM expensive.\n> \n> A conservative approach would be to let the defaults be as it is and allow it to be increased for those who chose to increase it. \n\nOr setting a default high limit, so that a node runner can set to a lowest value."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32359-066",
+    "stratum": "excluded",
+    "pr": 32359,
+    "reviewer_group": "A",
+    "baseline_screen_class": "C",
+    "reviewer_statement_units": [
+      "A018"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "R4C32359_066_1"
+    ],
+    "decision": "Reclassify from context to candidate for two linked PR referrals in a single navigation instruction.",
+    "evidence": [
+      {
+        "source_id": "32359-066",
+        "span": {
+          "start": 0,
+          "end": 640,
+          "quote": "> An entire file can be serialized directly after an OP_RETURN as-is. So later, when a Bitcoin user goes to do data recovery, or has their system seized by a government and they do a cursory analysis of its contents, both will have to contend with the now completely plaintext arbitrary data that any anonymous person has now effectively forced them to store and/or process on their system in order to participate in the Bitcoin network.\r\n\r\nLuckily, blocks and mempool data are stored obfuscated on disk by XOR-ing with a random per-node key. See https://github.com/bitcoin/bitcoin/pull/28052, https://github.com/bitcoin/bitcoin/pull/28207."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32381-012",
+    "stratum": "candidate",
+    "pr": 32381,
+    "reviewer_group": "C",
+    "baseline_screen_class": "T",
+    "reviewer_statement_units": [
+      "C012_setting",
+      "C012_no_args"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32381_012_1",
+      "R4C32381_012_2"
+    ],
+    "decision": "Add addressed objection to further arguments, with literal evaluative alternative.",
+    "evidence": [
+      {
+        "source_id": "32381-012",
+        "span": {
+          "start": 0,
+          "end": 308,
+          "quote": "~0\r\n\r\nIf we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?\r\n\r\n@jesterhodl while I understand your main point I don't think adding more args in the node makes sense. \r\n"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32381-018",
+    "stratum": "excluded",
+    "pr": 32381,
+    "reviewer_group": "B",
+    "baseline_screen_class": "C",
+    "reviewer_statement_units": [],
+    "reconciled_screen": "context_only",
+    "candidate_ids": [],
+    "decision": "Retain context: acknowledgment/prediction does not itself create a distinct institutional prescription.",
+    "evidence": [
+      {
+        "source_id": "32381-018",
+        "span": {
+          "start": 0,
+          "end": 99,
+          "quote": "@ajtowns yes, that would be even simpler than this PR, though I doubt it will suddenly be embraced."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-148",
+    "stratum": "candidate",
+    "pr": 32406,
+    "reviewer_group": "A",
+    "baseline_screen_class": "T",
+    "reviewer_statement_units": [
+      "A020",
+      "A021"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32406_148_1"
+    ],
+    "decision": "Both technical test request and conditional documentation objection are already covered by the candidate passage.",
+    "evidence": [
+      {
+        "source_id": "32406-148",
+        "span": {
+          "start": 0,
+          "end": 323,
+          "quote": "I just mean adding something like `assert_greater_than(len(b'\\xff' * 5_000), MAX_SCRIPT_ELEMENT_SIZE)`. Adding a docstring that is not actually enforced in tests is confusing and fragile imo. Unless this is already tested in some other way I'm missing? If it shouldn't be tested, it probably shouldn't be documented either?"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32406-165",
+    "stratum": "excluded",
+    "pr": 32406,
+    "reviewer_group": "C",
+    "baseline_screen_class": "C",
+    "reviewer_statement_units": [
+      "C165_referral"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "R4C32406_165_1"
+    ],
+    "decision": "Reclassify as candidate for issue referral; reported fix and later categorization explanation remain distinct.",
+    "evidence": [
+      {
+        "source_id": "32406-165",
+        "span": {
+          "start": 0,
+          "end": 187,
+          "quote": "> Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot\r\n\r\nThis is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32714-014",
+    "stratum": "candidate",
+    "pr": 32714,
+    "reviewer_group": "A",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "A001",
+      "A002"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C32714_014_1",
+      "R4C32714_014_2",
+      "R4C32714_014_3"
+    ],
+    "decision": "Add editorial preferences; preserve the prior definition of discouragement as deprecation omitted by fresh review.",
+    "evidence": [
+      {
+        "source_id": "32714-014",
+        "span": {
+          "start": 0,
+          "end": 222,
+          "quote": "I do prefer \"are not recommended to be used\" more than \"have been marked as deprecated\" as it explains it more clearly to the user. However, discouragement *is* deprecation, it's weird to say \"after a deprecation warning.\""
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "32714-013",
+    "stratum": "excluded",
+    "pr": 32714,
+    "reviewer_group": "A",
+    "baseline_screen_class": "R",
+    "reviewer_statement_units": [],
+    "reconciled_screen": "context_only",
+    "candidate_ids": [],
+    "decision": "Retain as quotation and assent context; no separate new prescription.",
+    "evidence": [
+      {
+        "source_id": "32714-013",
+        "span": {
+          "start": 0,
+          "end": 453,
+          "quote": "Concept ACK, modulo the following\r\n\r\n> I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\nAgree with @ajtowns."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33224-000",
+    "stratum": "candidate",
+    "pr": 33224,
+    "reviewer_group": "B",
+    "baseline_screen_class": "B",
+    "reviewer_statement_units": [
+      "B02",
+      "B03",
+      "B04",
+      "B05"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C33224_000_1",
+      "C33224_000_2",
+      "R4C33224_000_3"
+    ],
+    "decision": "Add details referral. Bot list instructions are not independent human endorsements; stated bot consequence remains unverified.",
+    "evidence": [
+      {
+        "source_id": "33224-000",
+        "span": {
+          "start": 0,
+          "end": 1630,
+          "quote": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--006a51241073e994b41acfe9ec718e94-->\n### Code Coverage & Benchmarks\nFor details see: https://corecheck.dev/bitcoin/bitcoin/pulls/33224.\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\n| Type | Reviewers |\n| ---- | --------- |\n| ACK | [janb84](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3136345319), [Zero-1729](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3136389147), [cedwies](https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3206161232), [jonatack](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3137349429), [ryanofsky](https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3211413482), [hodlinator](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3141743326), [ajtowns](https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3212871951), [w0xlt](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3149210453), [kevkevinpal](https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3225484378), [optout21](https://github.com/bitcoin/bitcoin/pull/33224#pullrequestreview-3175541576), [achow101](https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3247030103) |\n\nIf your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update.\n<!--5faf32d7da4f0f540f40219e4f7537a3-->"
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33224-018",
+    "stratum": "excluded",
+    "pr": 33224,
+    "reviewer_group": "C",
+    "baseline_screen_class": "C",
+    "reviewer_statement_units": [
+      "C018_add_flag"
+    ],
+    "reconciled_screen": "context_only",
+    "candidate_ids": [],
+    "decision": "Retain as response context and repeated quotation; original technical request already appears at 33224-016.",
+    "evidence": [
+      {
+        "source_id": "33224-018",
+        "span": {
+          "start": 0,
+          "end": 505,
+          "quote": "> Is this context info useful? Line numbers will change whenever some previous function in the file gets a non-trivial edit... Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?\r\n\r\nI don't think line numbers is the problem. The actual source location of the string can change and the ids in the `.xlf` won't change. It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change. It's unclear to me why the sort order would change."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33453-004",
+    "stratum": "candidate",
+    "pr": 33453,
+    "reviewer_group": "B",
+    "baseline_screen_class": "I",
+    "reviewer_statement_units": [
+      "B01"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "C33453_004_1"
+    ],
+    "decision": "Conditional ACK contains a recommendation about the interval before reconsidering deprecation; already retained as a candidate.",
+    "evidence": [
+      {
+        "source_id": "33453-004",
+        "span": {
+          "start": 0,
+          "end": 649,
+          "quote": "Concept Ack assuming a long window before revaluation to deprecate\r\n\r\n- The value to the reduced social DoS would be higher than the cost of keeping the deprecation.\r\n- Not that it's needed but further proof that deprecation doesn't always lead to deprecation ultimately which is a good thing.\r\n- Would give devs more time to understand the core users of this option after removal of previous limits.  \r\n\r\nConcern: That if decided to be deprecated in the future this could lead to campaigns by other implementation maintainers to socially discredit Bitcoin Core thus causing another round of social DoS. Basically looping on the flat circle of time."
+        }
+      }
+    ]
+  },
+  {
+    "source_id": "33453-068",
+    "stratum": "excluded",
+    "pr": 33453,
+    "reviewer_group": "B",
+    "baseline_screen_class": "Q",
+    "reviewer_statement_units": [
+      "B27"
+    ],
+    "reconciled_screen": "candidate",
+    "candidate_ids": [
+      "R4C33453_068_1"
+    ],
+    "decision": "Retain the use-case criterion and rhetorical question as a bounded candidate; evaluative context is an alternative.",
+    "evidence": [
+      {
+        "source_id": "33453-068",
+        "span": {
+          "start": 0,
+          "end": 317,
+          "quote": ">However, I strongly oppose removing these options which so many people find useful to express their disgust for non-financial data in the block chain and therefore refuse to relay them.\r\n\r\n\"Expressing disgust\" is not a reasonable use case. Why do you think that Bitcoin Core should cater towards emotional outbursts?"
+        }
+      }
+    ]
+  }
+]

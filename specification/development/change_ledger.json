@@ -1,0 +1,181 @@
+{
+  "release": "0.4",
+  "status": "development release prepared for prospective evaluation",
+  "changes": [
+    {
+      "rule_id": "R01",
+      "change": "Bound the proposition and verify decision-object identity",
+      "audit_findings": [
+        "SA03",
+        "SA14",
+        "SA16",
+        "SA21"
+      ],
+      "implementation": "proposition; event object_id; metadata identity check",
+      "change_kind": "Criterion clarification and execution safeguard"
+    },
+    {
+      "rule_id": "R02",
+      "change": "Match documentary coverage and historical period",
+      "audit_findings": [
+        "SA01",
+        "SA02",
+        "SA07"
+      ],
+      "implementation": "documentary_support; source and claim dates; backdating check",
+      "change_kind": "Criterion clarification"
+    },
+    {
+      "rule_id": "R03",
+      "change": "Separate assent from attributable recognition",
+      "audit_findings": [
+        "SA02",
+        "SA07",
+        "SA15",
+        "SA20",
+        "SA24"
+      ],
+      "implementation": "recognition mode; speaker relation; episode key; recognition profile",
+      "change_kind": "Criterion clarification"
+    },
+    {
+      "rule_id": "R04",
+      "change": "Record support and challenges separately",
+      "audit_findings": [
+        "SA03",
+        "SA08",
+        "SA19",
+        "SA25",
+        "SA26"
+      ],
+      "implementation": "standing_profile; challenges; derived dispute_present",
+      "change_kind": "Schema and criterion change"
+    },
+    {
+      "rule_id": "R05",
+      "change": "Classify institutional type after identifying its evidentiary basis",
+      "audit_findings": [
+        "SA02",
+        "SA06",
+        "SA13",
+        "SA15",
+        "SA25"
+      ],
+      "implementation": "institution type alternatives; authority evidence; decision sequence",
+      "change_kind": "Criterion clarification"
+    },
+    {
+      "rule_id": "R06",
+      "change": "Attach all material qualifiers to the focal proposition",
+      "audit_findings": [
+        "SA05",
+        "SA06",
+        "SA12",
+        "SA18",
+        "SA22",
+        "SA23"
+      ],
+      "implementation": "proposition qualifiers with component, linked-unit, or scope-note attachment",
+      "change_kind": "Coverage safeguard"
+    },
+    {
+      "rule_id": "R07",
+      "change": "Anchor components to their governing predicate",
+      "audit_findings": [
+        "SA09",
+        "SA10",
+        "SA17"
+      ],
+      "implementation": "component governing_span; local-scope checks; source audit",
+      "change_kind": "Execution safeguard"
+    },
+    {
+      "rule_id": "R08",
+      "change": "Separate higher-level target claims from observed acts",
+      "audit_findings": [
+        "SA04",
+        "SA26"
+      ],
+      "implementation": "separate target and observed alternatives; level evidence",
+      "change_kind": "Criterion clarification"
+    },
+    {
+      "rule_id": "R09",
+      "change": "Preserve literal question and quotation conventions",
+      "audit_findings": [
+        "SA11"
+      ],
+      "implementation": "question review flag; existing speech-act rule retained",
+      "change_kind": "Execution safeguard"
+    },
+    {
+      "rule_id": "R10",
+      "change": "Support every material outcome and mechanism clause",
+      "audit_findings": [
+        "SA08",
+        "SA16",
+        "SA20",
+        "SA21"
+      ],
+      "implementation": "claim_parts; parent evidence coverage; source audit",
+      "change_kind": "Execution safeguard"
+    },
+    {
+      "rule_id": "R11",
+      "change": "Distinguish semantic errors from defensible representations",
+      "audit_findings": [
+        "SA04",
+        "SA05",
+        "SA06",
+        "SA10",
+        "SA12",
+        "SA13",
+        "SA17",
+        "SA18",
+        "SA22",
+        "SA23",
+        "SA24"
+      ],
+      "implementation": "masked alignment; source review diagnosis and effect fields",
+      "change_kind": "Evaluation clarification"
+    },
+    {
+      "rule_id": "R12",
+      "change": "Keep development, frozen evaluation, and reconciliation separate",
+      "audit_findings": [
+        "SA01",
+        "SA02",
+        "SA03",
+        "SA04",
+        "SA05",
+        "SA06",
+        "SA07",
+        "SA08",
+        "SA09",
+        "SA10",
+        "SA11",
+        "SA12",
+        "SA13",
+        "SA14",
+        "SA15",
+        "SA16",
+        "SA17",
+        "SA18",
+        "SA19",
+        "SA20",
+        "SA21",
+        "SA22",
+        "SA23",
+        "SA24",
+        "SA25",
+        "SA26"
+      ],
+      "implementation": "prospective evaluation protocol; preserved originals; release snapshot",
+      "change_kind": "Workflow change"
+    }
+  ],
+  "covered_audit_findings": 26,
+  "temporal_boundary": "RB01 is addressed by R02 and the C02 retained-body time qualification.",
+  "prior_annotations_modified": false,
+  "claim_of_improved_performance": false
+}

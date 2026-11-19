@@ -1,0 +1,1473 @@
+{
+  "run_id": "F03_v04_r3",
+  "first_complete_preserved": true,
+  "mechanical_repairs": [],
+  "source_review_passes": 1,
+  "changes": [
+    {
+      "change_id": "R01",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U01",
+      "paths": [
+        "institution.application_evidence[0].status",
+        "institution.application_evidence[0].rationale",
+        "institution.standing_profile.application"
+      ],
+      "before": {
+        "application_evidence": [
+          {
+            "status": "observed",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:patch:0",
+                "span": {
+                  "start": 87,
+                  "end": 136,
+                  "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:0",
+                "span": {
+                  "start": 168,
+                  "end": 214,
+                  "quote": "+        <string>Allow Replace-By-Fee</string>"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:1",
+                "span": {
+                  "start": 364,
+                  "end": 494,
+                  "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, CoinControlDialog::coinControl, ui->optInRBF->isChecked());"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:1",
+                "span": {
+                  "start": 577,
+                  "end": 681,
+                  "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, NULL, ui->optInRBF->isChecked());"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:2",
+                "span": {
+                  "start": 837,
+                  "end": 1027,
+                  "quote": "+        bool fCreated = wallet->CreateTransaction(vecSend, *newTx, *keyChange, nFeeRequired, nChangePosRet, strFailReason, coinControl, optInRBF ? CREATE_TX_RBF_OPT_IN : CREATE_TX_DEFAULT);"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:4",
+                "span": {
+                  "start": 1468,
+                  "end": 1602,
+                  "quote": "+                                              std::numeric_limits<unsigned int>::max() - ((flags & CREATE_TX_RBF_OPT_IN) ? 2 : 1) ));"
+                }
+              }
+            ],
+            "rationale": "The retained unmerged head artifact demonstrates the checkbox, its checked-state wiring, and the sequence-setting branch. This is observed implementation in the proposed artifact only, not repository integration, BIP125 behavioral validation, or proof of the visual placement. The reported location is unverified by the clipped patch."
+          }
+        ],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "observed"
+        }
+      },
+      "after": {
+        "application_evidence": [
+          {
+            "status": "unresolved",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:patch:0",
+                "span": {
+                  "start": 87,
+                  "end": 136,
+                  "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:0",
+                "span": {
+                  "start": 168,
+                  "end": 214,
+                  "quote": "+        <string>Allow Replace-By-Fee</string>"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:1",
+                "span": {
+                  "start": 364,
+                  "end": 494,
+                  "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, CoinControlDialog::coinControl, ui->optInRBF->isChecked());"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:1",
+                "span": {
+                  "start": 577,
+                  "end": 681,
+                  "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, NULL, ui->optInRBF->isChecked());"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:2",
+                "span": {
+                  "start": 837,
+                  "end": 1027,
+                  "quote": "+        bool fCreated = wallet->CreateTransaction(vecSend, *newTx, *keyChange, nFeeRequired, nChangePosRet, strFailReason, coinControl, optInRBF ? CREATE_TX_RBF_OPT_IN : CREATE_TX_DEFAULT);"
+                }
+              },
+              {
+                "source_id": "pr7819:patch:4",
+                "span": {
+                  "start": 1468,
+                  "end": 1602,
+                  "quote": "+                                              std::numeric_limits<unsigned int>::max() - ((flags & CREATE_TX_RBF_OPT_IN) ? 2 : 1) ));"
+                }
+              }
+            ],
+            "rationale": "The retained unmerged head demonstrates a checkbox, checked-state wiring, and a sequence-setting branch in the proposed artifact. It does not verify the complete focal proposition, including placement next to Add Recipient and absence of any GUI replacement path, and supplies no integration evidence. Application of the complete proposed edit is therefore unresolved. The narrower artifact facts remain available as outcome evidence."
+          }
+        ],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "unresolved"
+        }
+      },
+      "reason": "Partial evidence for an unmerged artifact was too readily summarized as observed application of the entire proposition. The complete placement/function/application claim exceeds the supplied evidence.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 364,
+            "end": 494,
+            "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, CoinControlDialog::coinControl, ui->optInRBF->isChecked());"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 577,
+            "end": 681,
+            "quote": "+        prepareStatus = model->prepareTransaction(currentTransaction, NULL, ui->optInRBF->isChecked());"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:2",
+          "span": {
+            "start": 837,
+            "end": 1027,
+            "quote": "+        bool fCreated = wallet->CreateTransaction(vecSend, *newTx, *keyChange, nFeeRequired, nChangePosRet, strFailReason, coinControl, optInRBF ? CREATE_TX_RBF_OPT_IN : CREATE_TX_DEFAULT);"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:4",
+          "span": {
+            "start": 1468,
+            "end": 1602,
+            "quote": "+                                              std::numeric_limits<unsigned int>::max() - ((flags & CREATE_TX_RBF_OPT_IN) ? 2 : 1) ));"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R02",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U02",
+      "paths": [
+        "components[0]"
+      ],
+      "before": {
+        "symbol": "A",
+        "text": "we",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 227,
+              "end": 229,
+              "quote": "we"
+            }
+          }
+        ],
+        "inference_note": "The explicitly supplied we is the actor of wanting the proposed feature; the inclusive actor set is unspecified.",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 280,
+            "quote": "So not sure if we want this without a GUI based replacement workflow"
+          }
+        }
+      },
+      "after": {
+        "symbol": "A",
+        "text": "we",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 227,
+              "end": 229,
+              "quote": "we"
+            }
+          }
+        ],
+        "inference_note": "We is the literal actor of wanting, not an explicitly stated performer of proceed with. Its projected actor role in the reconstructed decision reading is inferred; the group and its decision competence remain unspecified.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 280,
+            "quote": "So not sure if we want this without a GUI based replacement workflow"
+          }
+        }
+      },
+      "reason": "Reconstruction of the action changes the argument-role basis; lexical presence alone does not make the actor or target role explicit.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 227,
+            "end": 229,
+            "quote": "we"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R03",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U02",
+      "paths": [
+        "components[2]"
+      ],
+      "before": {
+        "symbol": "Bdir",
+        "text": "this [#7819]",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 235,
+              "end": 239,
+              "quote": "this"
+            }
+          }
+        ],
+        "inference_note": "This is the explicit object of want and remains the target under the proposed proceed-with reading; the containing PR identifies the referent.",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 280,
+            "quote": "So not sure if we want this without a GUI based replacement workflow"
+          }
+        }
+      },
+      "after": {
+        "symbol": "Bdir",
+        "text": "this [#7819]",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 235,
+              "end": 239,
+              "quote": "this"
+            }
+          }
+        ],
+        "inference_note": "This is the literal object of want. Its target role under the reconstructed proceed-with action is inferred, although its #7819 referent is unchanged.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 280,
+            "quote": "So not sure if we want this without a GUI based replacement workflow"
+          }
+        }
+      },
+      "reason": "Reconstruction of the action changes the argument-role basis; lexical presence alone does not make the actor or target role explicit.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 235,
+            "end": 239,
+            "quote": "this"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R04",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U06",
+      "paths": [
+        "proposition.qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The advice jointly concerns red text and the bang for the replaceability indication.",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 75,
+                "quote": "red text and the bang for it"
+              }
+            }
+          ],
+          "attachment": "component",
+          "linked_unit_id": null,
+          "rationale": "This qualification is part of the bounded proposition and must survive alignment and interpretation."
+        }
+      ],
+      "after": [
+        {
+          "description": "The advice jointly concerns red text and the bang for the replaceability indication.",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 75,
+                "quote": "red text and the bang for it"
+              }
+            }
+          ],
+          "attachment": "component",
+          "linked_unit_id": null,
+          "rationale": "This qualification is part of the bounded proposition and must survive alignment and interpretation."
+        },
+        {
+          "description": "The referent of for it is inferred as the replaceability indication from the immediately following wording concern and the retained confirmation patch.",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 77,
+                "end": 169,
+                "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+              }
+            },
+            {
+              "source_id": "pr7819:patch:1",
+              "span": {
+                "start": 1156,
+                "end": 1238,
+                "quote": "+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "This makes the proposed warning edit’s target explicit without claiming that the unseen screenshots verify it."
+        }
+      ],
+      "reason": "The edit target was recoverable from context but its contextual attribution needed an attached qualification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 1156,
+            "end": 1238,
+            "quote": "+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R05",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U08",
+      "paths": [
+        "components[0]"
+      ],
+      "before": {
+        "symbol": "D",
+        "text": "should",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 182,
+              "end": 188,
+              "quote": "should"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      },
+      "after": {
+        "symbol": "D",
+        "text": "should",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 221,
+              "end": 227,
+              "quote": "should"
+            }
+          }
+        ],
+        "inference_note": "The cited should is the modal of get red text in the relative clause. The earlier should governs be and is not used as evidence for this role.",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 192,
+            "end": 240,
+            "quote": "the non-replacable case that should get red text"
+          }
+        }
+      },
+      "reason": "The original valid offset cited the wrong should occurrence for the focal formatting predicate.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 221,
+            "end": 227,
+            "quote": "should"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 192,
+            "end": 240,
+            "quote": "the non-replacable case that should get red text"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R06",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U08",
+      "paths": [
+        "components[3]"
+      ],
+      "before": {
+        "symbol": "Cex",
+        "text": "red text",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 47,
+              "end": 55,
+              "quote": "red text"
+            }
+          }
+        ],
+        "inference_note": "Red text specifies how the inferred formatting action is performed; it is the complement of get in the literal source.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      },
+      "after": {
+        "symbol": "Cex",
+        "text": "red text",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 232,
+              "end": 240,
+              "quote": "red text"
+            }
+          }
+        ],
+        "inference_note": "Red text specifies how the inferred formatting action is performed; it is the complement of get in the literal source.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 192,
+            "end": 240,
+            "quote": "the non-replacable case that should get red text"
+          }
+        }
+      },
+      "reason": "The semantic-inference anchor had selected the earlier identical red-text phrase outside this proposition. The local occurrence is required even though the intended formatting meaning is unchanged.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 232,
+            "end": 240,
+            "quote": "red text"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 192,
+            "end": 240,
+            "quote": "the non-replacable case that should get red text"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R07",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U09",
+      "paths": [
+        "components[0:5].governing_span",
+        "components[0].occurrence_role",
+        "components[1].occurrence_role",
+        "components[2].evidence"
+      ],
+      "before": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 298,
+                "end": 300,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 301,
+                "end": 307,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 313,
+                "end": 317,
+                "quote": "have"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "an \"adaptive fee switch\"",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 364,
+                "end": 388,
+                "quote": "an \"adaptive fee switch\""
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks]",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 390,
+                "end": 561,
+                "quote": "that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks]"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        }
+      ],
+      "after": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 298,
+                "end": 300,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "The actor we is stated in the initial alternative and shared by the coordinated have-an-adaptive-fee-switch alternative. It is not a separate local actor occurrence for the second have predicate.",
+          "occurrence_role": "shared_scope",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 562,
+              "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 301,
+                "end": 307,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "Should is stated before the initial have clause and carries the deliberative recommendation across the coordinated switch alternatives. It is shared scope, not a modal locally repeated with the adaptive-fee predicate.",
+          "occurrence_role": "shared_scope",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 562,
+              "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 359,
+                "end": 363,
+                "quote": "have"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 562,
+              "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "an \"adaptive fee switch\"",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 364,
+                "end": 388,
+                "quote": "an \"adaptive fee switch\""
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 562,
+              "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks]",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 390,
+                "end": 561,
+                "quote": "that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks]"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 562,
+              "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          }
+        }
+      ],
+      "reason": "The original action anchor selected have a replaceable switch rather than have an adaptive fee switch. The actor and modal are shared across that coordinated alternative, not explicit local occurrences in its governing clause.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 359,
+            "end": 562,
+            "quote": "have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 298,
+            "end": 300,
+            "quote": "we"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 301,
+            "end": 307,
+            "quote": "should"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R08",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U09",
+      "paths": [
+        "speech_act"
+      ],
+      "before": "proposed",
+      "after": "question",
+      "reason": "The wondering-if formulation is an indirect deliberative question in the supplied occurrence; the quoted occurrence preserves that function.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R09",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U15",
+      "paths": [
+        "speech_act"
+      ],
+      "before": "proposed",
+      "after": "question",
+      "reason": "The wondering-if formulation is an indirect deliberative question in the supplied occurrence; the quoted occurrence preserves that function.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R10",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U13",
+      "paths": [
+        "relations[F03-U13 -> F03-U04].rationale"
+      ],
+      "before": "The later comment restates the author’s intention not to hold back review, now as a review-readiness claim.",
+      "after": "The comment’s readiness claim corresponds to and clarifies the intention expressed in the retained body. The body’s incomplete edit history prevents asserting which wording came first.",
+      "reason": "The retained body may have later edits, so describing the comment as a later restatement overclaimed textual chronology.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 157,
+            "end": 190,
+            "quote": "but this can be reviewed already."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R11",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U12",
+      "paths": [
+        "relations[F03-U12 -> F03-U03].rationale"
+      ],
+      "before": "The author’s comment repeats ongoing work on the same replacement GUI process; this is not independent support for an expectation.",
+      "after": "The comment and retained body describe the author’s ongoing replacement-GUI work. This correspondence clarifies the referent without establishing which wording came first or adding independent recognition.",
+      "reason": "Correspondence is supported; the retained body does not establish an original-to-repetition chronology.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 282,
+            "end": 327,
+            "quote": "which I'm working on but it is a bigger chunk"
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 248,
+            "end": 280,
+            "quote": "a GUI based replacement workflow"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R12",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U04",
+      "paths": [
+        "institution.recognition[0].rationale"
+      ],
+      "before": {
+        "kind": "response",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 157,
+              "end": 190,
+              "quote": "but this can be reviewed already."
+            }
+          }
+        ],
+        "rationale": "The same author restates the distinction between replacement development and present review. This is maintained personal intent, not interpersonal expectation recognition.",
+        "basis": "context_inferred",
+        "mode": "same_actor_restatement",
+        "speaker_relation": "same_actor",
+        "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+        "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+        "identity_evidence": [
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 4,
+              "end": 57,
+              "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/7819\""
+            }
+          }
+        ]
+      },
+      "after": {
+        "kind": "response",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 157,
+              "end": 190,
+              "quote": "but this can be reviewed already."
+            }
+          }
+        ],
+        "rationale": "The same author’s comment expresses a corresponding distinction between replacement development and present review. It demonstrates consistency of personal intent, not interpersonal expectation recognition or a verified order of textual restatement.",
+        "basis": "context_inferred",
+        "mode": "same_actor_restatement",
+        "speaker_relation": "same_actor",
+        "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+        "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+        "identity_evidence": [
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 4,
+              "end": 57,
+              "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/7819\""
+            }
+          }
+        ]
+      },
+      "reason": "The same-actor correspondence is retained without using the body creation date to date its retained sentence.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 157,
+            "end": 190,
+            "quote": "but this can be reviewed already."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R13",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U17",
+      "paths": [
+        "institution.challenges[0].target",
+        "institution.challenges[0].rationale",
+        "institution.dispute_present"
+      ],
+      "before": {
+        "challenges": [
+          {
+            "aspect": "content",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 430,
+                  "end": 484,
+                  "quote": "But maybe we should just focus on increasing the fees?"
+                }
+              }
+            ],
+            "rationale": "The same author tentatively questions continuing the additional-output scope by asking whether to focus just on fees. This is a challenge to scope, not evidence that the earlier work did not occur."
+          }
+        ],
+        "dispute_present": true
+      },
+      "after": {
+        "challenges": [
+          {
+            "aspect": "content",
+            "target": "broader_proposal",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 430,
+                  "end": 484,
+                  "quote": "But maybe we should just focus on increasing the fees?"
+                }
+              }
+            ],
+            "rationale": "The same author’s fee-only question raises a tentative alternative for the broader replacement-workflow scope. It does not contradict the focal report of having tried additional outputs. The workflow’s canonical proposal identity and any adopted scope decision remain unresolved."
+          }
+        ],
+        "dispute_present": false
+      },
+      "reason": "The question about future focus should not be counted as a challenge to the truth or content of the author’s reported earlier attempt.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R14",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U18",
+      "paths": [
+        "relations[F03-U18 -> F03-U17].type",
+        "relations[F03-U18 -> F03-U17].rationale"
+      ],
+      "before": {
+        "from_unit_id": "F03-U18",
+        "to_unit_id": "F03-U17",
+        "type": "challenges",
+        "basis": "context_inferred",
+        "rationale": "The author questions the scope of his own additional-output attempt by proposing just increasing fees; this is a tentative scope tension, not a withdrawal.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "F03-U18",
+        "to_unit_id": "F03-U17",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The fee-only question qualifies the possible future focus after the report of additional-output experimentation. It does not deny that the attempt occurred or establish that it was withdrawn.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "reason": "Use a qualification relation instead of a direct focal-proposition challenge because the two utterances concern different temporal/action layers.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R15",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U19",
+      "paths": [
+        "scope",
+        "proposition.domain"
+      ],
+      "before": {
+        "scope": "case_specific",
+        "domain": "Bitcoin Core Qt wallet development and review in the supplied #7819 discussion"
+      },
+      "after": {
+        "scope": "general",
+        "domain": "Implementation of additional-output transaction-replacement workflows, bounded to the technical method discussed in #7819."
+      },
+      "reason": "The generic you and confirmation contingency describe the method whenever this additional-output workflow is implemented, even though its discussion is local. Generality remains bounded to this technical workflow, not all project governance.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 295,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R16",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U20",
+      "paths": [
+        "scope"
+      ],
+      "before": "case_specific",
+      "after": "general",
+      "reason": "The asserted growth condition concerns repeated uses of the discussed workflow rather than a single observed transaction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R17",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U21",
+      "paths": [
+        "components[2]"
+      ],
+      "before": {
+        "symbol": "Cex",
+        "text": "Instead of the word \"replacable\"",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 0,
+              "end": 32,
+              "quote": "Instead of the word \"replacable\""
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local",
+        "governing_span": {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      },
+      "after": {
+        "symbol": "Cex",
+        "text": "Instead of the word \"replacable\"",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 0,
+              "end": 32,
+              "quote": "Instead of the word \"replacable\""
+            }
+          }
+        ],
+        "inference_note": "Instead of the old word explicitly contrasts the label alternatives. Its execution-constraint role under the reconstructed use action is inferred rather than a local argument of a supplied use predicate.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      },
+      "reason": "The proposed alternative is explicit, but its role as Cex under an inferred edit action should not be presented as a literal predicate role.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 32,
+            "quote": "Instead of the word \"replacable\""
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R18",
+      "stage": "single_source_self_review",
+      "unit_id": "F03-U25",
+      "paths": [
+        "components[1].evidence",
+        "components[1].inference_note"
+      ],
+      "before": {
+        "symbol": "Bdir",
+        "text": "#7819",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:7",
+            "span": {
+              "start": 0,
+              "end": 13,
+              "quote": "Needs rebase."
+            }
+          }
+        ],
+        "inference_note": "The omitted object is inferred from the comment’s containing PR and its canonical identity metadata. No object term is explicitly present in the clause.",
+        "occurrence_role": "context_reference",
+        "governing_span": {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      },
+      "after": {
+        "symbol": "Bdir",
+        "text": "#7819",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:7",
+            "span": {
+              "start": 0,
+              "end": 13,
+              "quote": "Needs rebase."
+            }
+          },
+          {
+            "source_id": "pr7819:supplement_metadata",
+            "span": {
+              "start": 4,
+              "end": 57,
+              "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/7819\""
+            }
+          }
+        ],
+        "inference_note": "The object is absent from Needs rebase. The comment is cataloged under #7819, and the supplied canonical-identity metadata anchor resolves the omitted object; neither anchor supplies an explicit local Bdir term.",
+        "occurrence_role": "context_reference",
+        "governing_span": {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      },
+      "reason": "Attach the object-identity evidence directly to the inferred component as well as to its proposition, keeping the nonlocal role visible.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "source_id": "pr7819:supplement_metadata",
+          "span": {
+            "start": 4,
+            "end": 57,
+            "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/7819\""
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    }
+  ],
+  "change_count": 18,
+  "meaning_changed_count": 7,
+  "notes": "All changes follow the frozen first-complete annotation and first checker result. A mechanical pass did not certify these interpretations."
+}

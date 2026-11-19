@@ -1,0 +1,2558 @@
+[
+  {
+    "change_id": "M01",
+    "stage": "mechanical",
+    "unit_id": "u06",
+    "field": "components.Bdir.evidence",
+    "meaning_changes": false,
+    "classification": "anchor_occurrence_error",
+    "reason": "Replaced an unintended first source occurrence with the intended complete token inside the focal unit. Intended role and proposition remain unchanged.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "it (review or comment referent unresolved)",
+      "basis": "unresolved",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 82,
+            "end": 84,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The nearest noun is comment while the preceding condition concerns a review listing. The exact object the bot ignores is not independently specified.",
+      "occurrence_role": "unresolved"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "it (review or comment referent unresolved)",
+      "basis": "unresolved",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 666,
+            "end": 668,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The nearest noun is comment while the preceding condition concerns a review listing. The exact object the bot ignores is not independently specified.",
+      "occurrence_role": "unresolved"
+    }
+  },
+  {
+    "change_id": "M02",
+    "stage": "mechanical",
+    "unit_id": "u08",
+    "field": "components.Bdir.evidence",
+    "meaning_changes": false,
+    "classification": "anchor_occurrence_error",
+    "reason": "Replaced an unintended first source occurrence with the intended complete token inside the focal unit. Intended role and proposition remain unchanged.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 27,
+            "end": 29,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The grammatical subject it becomes the target of the reconstructed rebase action; the PR setting resolves the likely referent.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 41,
+            "end": 43,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The grammatical subject it becomes the target of the reconstructed rebase action; the PR setting resolves the likely referent.",
+      "occurrence_role": "semantic_inference"
+    }
+  },
+  {
+    "change_id": "M03",
+    "stage": "mechanical",
+    "unit_id": "u09",
+    "field": "components.A.evidence",
+    "meaning_changes": false,
+    "classification": "anchor_occurrence_error",
+    "reason": "Replaced an unintended first source occurrence with the intended complete token inside the focal unit. Intended role and proposition remain unchanged.",
+    "before": {
+      "symbol": "A",
+      "text": "we",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 105,
+            "end": 107,
+            "quote": "we"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "A",
+      "text": "we",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 182,
+            "end": 184,
+            "quote": "we"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    }
+  },
+  {
+    "change_id": "M04",
+    "stage": "mechanical",
+    "unit_id": "u13",
+    "field": "components.I.evidence",
+    "meaning_changes": false,
+    "classification": "anchor_occurrence_error",
+    "reason": "Replaced an unintended first source occurrence with the intended complete token inside the focal unit. Intended role and proposition remain unchanged.",
+    "before": {
+      "symbol": "I",
+      "text": "remove",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 140,
+            "end": 146,
+            "quote": "remove"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "remove",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 188,
+            "end": 194,
+            "quote": "remove"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    }
+  },
+  {
+    "change_id": "M05",
+    "stage": "mechanical",
+    "unit_id": "u24",
+    "field": "components.Cex.evidence",
+    "meaning_changes": false,
+    "classification": "anchor_occurrence_error",
+    "reason": "Replaced an unintended first source occurrence with the intended complete token inside the focal unit. Intended role and proposition remain unchanged.",
+    "before": {
+      "symbol": "Cex",
+      "text": "always",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 541,
+            "end": 547,
+            "quote": "always"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "Cex",
+      "text": "always",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 657,
+            "end": 663,
+            "quote": "always"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    }
+  },
+  {
+    "change_id": "M06",
+    "stage": "mechanical",
+    "unit_id": "u15",
+    "field": "components.A.inference_note",
+    "meaning_changes": false,
+    "classification": "missing_role_preservation_explanation",
+    "reason": "Supplied the required explicit-argument explanation for the pragmatic parse; role basis retained for source self-review.",
+    "before": "",
+    "after": "The source explicitly assigns we the causative action have it loop. The reconstructed configure action retains that same causative actor; pragmatic recommendation force does not transform this actor role.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 82,
+          "end": 84,
+          "quote": "we"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M07",
+    "stage": "mechanical",
+    "unit_id": "u25",
+    "field": "components.Bdir.inference_note",
+    "meaning_changes": false,
+    "classification": "missing_role_preservation_explanation",
+    "reason": "Supplied the required explicit-argument explanation for the pragmatic parse; role basis retained for source self-review.",
+    "before": "",
+    "after": "The latest release is explicitly the object of add in the source. Reconstructing the indirect recommendation leaves that action-object relation intact; only the recommendation force is inferred.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 35,
+          "end": 53,
+          "quote": "the latest release"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S01",
+    "stage": "source_self_review",
+    "unit_id": "u01",
+    "field": "components.I",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Separated the action from its object while retaining the same reconstructed method.",
+    "before": {
+      "symbol": "I",
+      "text": "repeat the prior release-update procedure",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 35,
+            "quote": "The same procedure as every release"
+          }
+        }
+      ],
+      "inference_note": "The nominal assertion describes recurrence; repeating a release-update method is reconstructed, not a source verb.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "repeat",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 35,
+            "quote": "The same procedure as every release"
+          }
+        }
+      ],
+      "inference_note": "The nominal recurrence assertion is reconstructed as repeat. The procedure is represented separately as Bdir, avoiding action-object overlap.",
+      "occurrence_role": "semantic_inference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 35,
+          "quote": "The same procedure as every release"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S02",
+    "stage": "source_self_review",
+    "unit_id": "u01",
+    "field": "components.Bdir",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Added the exact supplied antecedent evidence for an elliptical method without inventing a complete workflow.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "previous-release test additions",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 18,
+            "quote": "The same procedure"
+          }
+        }
+      ],
+      "inference_note": "The method is elliptical. The immediately referenced v23.0 and v22.0 commit messages identify previous-release additions; this is not a complete reconstructed workflow.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "the prior release-update procedure (previous-release test additions)",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 18,
+            "quote": "The same procedure"
+          }
+        },
+        {
+          "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+          "span": {
+            "start": 69,
+            "end": 103,
+            "quote": "test: previous releases: add v23.0"
+          }
+        },
+        {
+          "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+          "span": {
+            "start": 69,
+            "end": 103,
+            "quote": "test: previous releases: add v22.0"
+          }
+        }
+      ],
+      "inference_note": "The nominal procedure becomes the reconstructed action target. The two immediately referenced commit messages resolve the method only to previous-release additions; its full workflow and universal practice are not reconstructed.",
+      "occurrence_role": "semantic_inference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 18,
+          "quote": "The same procedure"
+        }
+      },
+      {
+        "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+        "span": {
+          "start": 69,
+          "end": 103,
+          "quote": "test: previous releases: add v23.0"
+        }
+      },
+      {
+        "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+        "span": {
+          "start": 69,
+          "end": 103,
+          "quote": "test: previous releases: add v22.0"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S03",
+    "stage": "source_self_review",
+    "unit_id": "u07",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Sounds good is a declarative appraisal interpreted as an indirect recommendation, rather than a direct imperative.",
+    "before": "proposed",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 0,
+          "end": 30,
+          "quote": "Sounds good to hold off a bit."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S04",
+    "stage": "source_self_review",
+    "unit_id": "u08",
+    "field": "components.I",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Anchored the reconstructed rebase action to the complete action noun without its article.",
+    "before": {
+      "symbol": "I",
+      "text": "rebase",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 50,
+            "end": 58,
+            "quote": "a rebase"
+          }
+        }
+      ],
+      "inference_note": "The noun rebase is reconstructed as the requested action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "rebase",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 52,
+            "end": 58,
+            "quote": "rebase"
+          }
+        }
+      ],
+      "inference_note": "The noun rebase is reconstructed as the requested action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 52,
+          "end": 58,
+          "quote": "rebase"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S05",
+    "stage": "source_self_review",
+    "unit_id": "u08",
+    "field": "components.D",
+    "meaning_changes": false,
+    "classification": "epistemic_role_refinement",
+    "reason": "Preserved lexical needs and marked its modal role under the reconstructed action as inferred, rather than silently omitting the necessity language.",
+    "before": null,
+    "after": {
+      "symbol": "D",
+      "text": "needs",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 44,
+            "end": 49,
+            "quote": "needs"
+          }
+        }
+      ],
+      "inference_note": "Needs literally predicates a rebase requirement of the PR. Under the pragmatic request to rebase, its necessity becomes an inferred deontic role; the technical-necessity alternative remains open.",
+      "occurrence_role": "semantic_inference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 44,
+          "end": 49,
+          "quote": "needs"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S06",
+    "stage": "source_self_review",
+    "unit_id": "u09",
+    "field": "components",
+    "meaning_changes": false,
+    "classification": "qualification_refinement",
+    "reason": "Preserved the supplied bounded testing domain as an explicit contextual execution qualification.",
+    "before": [
+      {
+        "symbol": "A",
+        "text": "we",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 184,
+              "quote": "we"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "D",
+        "text": "should",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 185,
+              "end": 191,
+              "quote": "should"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "I",
+        "text": "add",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 192,
+              "end": 195,
+              "quote": "add"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "Bdir",
+        "text": "every major release",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 196,
+              "end": 215,
+              "quote": "every major release"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      }
+    ],
+    "after": [
+      {
+        "symbol": "A",
+        "text": "we",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 184,
+              "quote": "we"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "D",
+        "text": "should",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 185,
+              "end": 191,
+              "quote": "should"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "I",
+        "text": "add",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 192,
+              "end": 195,
+              "quote": "add"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "Bdir",
+        "text": "every major release",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 196,
+              "end": 215,
+              "quote": "every major release"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      {
+        "symbol": "Cex",
+        "text": "within backwards compatibility testing",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 28,
+              "end": 57,
+              "quote": "backwards compatibility tests"
+            }
+          }
+        ],
+        "inference_note": "The preceding reason sentence explicitly names the testing domain for the following So recommendation; this contextual scope is not an unbounded requirement to add releases everywhere.",
+        "occurrence_role": "shared_scope"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 0,
+          "end": 460,
+          "quote": "@luke-jr one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions, including wallet upgrades, consensus and p2p bugs. So I think we should add every major release.\r\n\r\nApart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download). On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S07",
+    "stage": "source_self_review",
+    "unit_id": "u16",
+    "field": "components.Cac",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Expanded the condition anaphor with its exact antecedent and marked the resolved condition as inferred.",
+    "before": {
+      "symbol": "Cac",
+      "text": "In that case",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 152,
+            "end": 164,
+            "quote": "In that case"
+          }
+        }
+      ],
+      "inference_note": "That case refers to the preceding proposed directory-based loop; the condition is expressed locally, while its antecedent is supplied by u15.",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "Cac",
+      "text": "under the proposed loop over whatever releases are available under releases/v* instead of hardcoding versions",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 152,
+            "end": 164,
+            "quote": "In that case"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        }
+      ],
+      "inference_note": "In that case explicitly conditions the choice, but the resolved configuration is inferred from the preceding proposal. Both the anaphor and its complete antecedent are anchored; no choice is asserted under the unchanged script.",
+      "occurrence_role": "context_reference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 152,
+          "end": 164,
+          "quote": "In that case"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S08",
+    "stage": "source_self_review",
+    "unit_id": "u26",
+    "field": "components.A",
+    "meaning_changes": false,
+    "classification": "epistemic_occurrence_correction",
+    "reason": "Moved actor evidence from the conditional want predicate to the explicit actor of the main remove-or-explain predicate.",
+    "before": {
+      "symbol": "A",
+      "text": "you",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "A",
+      "text": "you",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "inference_note": "The main-clause you explicitly performs remove; the earlier conditional you performs want and is not used as a substitute occurrence.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 108,
+          "end": 111,
+          "quote": "you"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S09",
+    "stage": "source_self_review",
+    "unit_id": "u27",
+    "field": "components.A",
+    "meaning_changes": false,
+    "classification": "epistemic_occurrence_correction",
+    "reason": "Moved actor evidence from the conditional want predicate to the explicit actor of the main remove-or-explain predicate.",
+    "before": {
+      "symbol": "A",
+      "text": "you",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "inference_note": "The explicit subject you in the antecedent and coordinated main clause scopes over this alternative action.",
+      "occurrence_role": "shared_scope"
+    },
+    "after": {
+      "symbol": "A",
+      "text": "you",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "inference_note": "The main-clause you will either need to governs both remove and explain; this is shared coordinated scope outside the smaller explanation span.",
+      "occurrence_role": "shared_scope"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 108,
+          "end": 111,
+          "quote": "you"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S10",
+    "stage": "source_self_review",
+    "unit_id": "u29",
+    "field": "components.Bdir",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Supplied the full contextual reference for that, preserving alternative removal or justification instead of implying a uniquely determined cleanup.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "that (apply the latest-release-per-missing-feature criterion to the other versions in this file)",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 82,
+            "end": 86,
+            "quote": "that"
+          }
+        }
+      ],
+      "inference_note": "That and the same goes refer to the preceding inline selection/cleanup discussion; this file is supplied as feature_backwards_compatibility.py in entry metadata, not a new named file in the text.",
+      "occurrence_role": "context_reference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "that (apply the latest-release-per-missing-feature criterion to the other versions in this file)",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 82,
+            "end": 86,
+            "quote": "that"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 60,
+            "quote": "The same goes for the other versions in this file"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 80,
+            "end": 174,
+            "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+          }
+        }
+      ],
+      "inference_note": "That and the same goes extend the preceding selection/justification approach to other versions in this file. The broader criterion and remove-or-explain alternatives are anchored; exact version removals and exact cleanup implementation remain unresolved.",
+      "occurrence_role": "context_reference"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 82,
+          "end": 86,
+          "quote": "that"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 11,
+          "end": 60,
+          "quote": "The same goes for the other versions in this file"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S11",
+    "stage": "source_self_review",
+    "unit_id": "u29",
+    "field": "alternative_interpretation",
+    "meaning_changes": false,
+    "classification": "uncertainty_refinement",
+    "reason": "Retained the bounded ambiguity of what the separate cleanup would entail.",
+    "before": "An exploratory cleanup suggestion with no volunteer commitment. Exact retained/removed versions are not enumerated.",
+    "after": "An exploratory cleanup suggestion with no volunteer commitment. That may cover applying the latest-per-feature criterion, removing redundant versions, or explaining their inclusion; the exact retained/removed versions are not enumerated.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 105,
+          "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S12",
+    "stage": "source_self_review",
+    "unit_id": "u31",
+    "field": "components.Bdir",
+    "meaning_changes": false,
+    "classification": "qualification_or_evidence_refinement",
+    "reason": "Explained the local object anaphor without claiming verification occurred.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions)",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 559,
+            "end": 672,
+            "quote": "this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions)"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions)",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 559,
+            "end": 672,
+            "quote": "this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions)"
+          }
+        }
+      ],
+      "inference_note": "This assumption refers to the preceding assessment that 24.x is not special to 23.x; both versions therefore means 24.x and 23.x. The literal direct-object role under verify is unchanged. The parenthetical supplies the example rather than a newly observed test result.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 559,
+          "end": 672,
+          "quote": "this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S13",
+    "stage": "source_self_review",
+    "unit_id": "u30",
+    "field": "alternative_interpretation",
+    "meaning_changes": false,
+    "classification": "defensible_alternative",
+    "reason": "Retained the uncertainty between recognition of a recurring expectation and assent to a technical preference.",
+    "before": "A technical test-coverage suggestion rather than a shared duty; choosing a recurring minimum-retention arrangement could instead be treated as collective-choice target.",
+    "after": "A technical test-coverage suggestion rather than a shared duty; choosing a recurring minimum-retention arrangement could instead be treated as collective-choice target. The tentative I tend to agree could instead be read as endorsement of a technical coverage preference alone; on that reading text_only standing would be more conservative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S14",
+    "stage": "source_self_review",
+    "unit_id": "u09",
+    "field": "institution.evidence",
+    "meaning_changes": false,
+    "classification": "evidence_refinement",
+    "reason": "Placed the exact challenging proposition directly in the standing evidence array, supplementing the existing relation evidence.",
+    "before": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S15",
+    "stage": "source_self_review",
+    "unit_id": "u25",
+    "field": "institution.evidence",
+    "meaning_changes": false,
+    "classification": "evidence_refinement",
+    "reason": "Placed the exact challenging proposition directly in the standing evidence array, supplementing the existing relation evidence.",
+    "before": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S16",
+    "stage": "source_self_review",
+    "unit_id": "u26",
+    "field": "institution.evidence",
+    "meaning_changes": false,
+    "classification": "evidence_refinement",
+    "reason": "Placed the exact challenging proposition directly in the standing evidence array, supplementing the existing relation evidence.",
+    "before": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      }
+    ],
+    "after": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S17",
+    "stage": "source_self_review",
+    "unit_id": "q01",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 2,
+          "end": 57,
+          "quote": "It is likely so general that it can't catch any issues."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S18",
+    "stage": "source_self_review",
+    "unit_id": "q02",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "technical_description",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 107,
+          "end": 149,
+          "quote": "doesn't test watch-only miniscript support"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S19",
+    "stage": "source_self_review",
+    "unit_id": "q03",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:7",
+        "span": {
+          "start": 2,
+          "end": 42,
+          "quote": "Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S20",
+    "stage": "source_self_review",
+    "unit_id": "q04",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 4,
+          "end": 44,
+          "quote": "Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S21",
+    "stage": "source_self_review",
+    "unit_id": "q05",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "question",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 52,
+          "end": 177,
+          "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S22",
+    "stage": "source_self_review",
+    "unit_id": "q06",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 1,
+          "end": 41,
+          "quote": "Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S23",
+    "stage": "source_self_review",
+    "unit_id": "q07",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 247,
+          "end": 366,
+          "quote": "apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S24",
+    "stage": "source_self_review",
+    "unit_id": "q08",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 2,
+          "end": 81,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S25",
+    "stage": "source_self_review",
+    "unit_id": "q09",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 82,
+          "end": 145,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S26",
+    "stage": "source_self_review",
+    "unit_id": "q10",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "asserted",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 149,
+          "end": 176,
+          "quote": "explain why 24.x is special"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S27",
+    "stage": "source_self_review",
+    "unit_id": "q11",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "proposed",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 178,
+          "end": 280,
+          "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S28",
+    "stage": "source_self_review",
+    "unit_id": "q12",
+    "field": "speech_act",
+    "meaning_changes": false,
+    "classification": "convention_deviation",
+    "reason": "Preserved the original communicative function in a repeated quotation; quotation record role does not make the source speech act other.",
+    "before": "other",
+    "after": "question",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 515,
+          "end": 616,
+          "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S29",
+    "stage": "source_self_review",
+    "unit_id": "c04b",
+    "field": "unit",
+    "meaning_changes": false,
+    "classification": "relation_endpoint_refinement",
+    "reason": "Added a context endpoint for the particular miniscript rationale; it is distinct from the separate #25717 claim.",
+    "before": null,
+    "after": {
+      "unit_id": "c04b",
+      "source_id": "pr26586:comments:4",
+      "span": {
+        "start": 331,
+        "end": 460,
+        "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Nonstatement record retained for context or a relation endpoint; no independent institution is asserted.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 331,
+              "end": 460,
+              "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Context records an attributable contribution, report, or technical rationale within ordinary review; it does not itself encode a prescription.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Plain occurrence in supplied text; no complete edit history is available."
+      },
+      "disposition_events": []
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S30",
+    "stage": "source_self_review",
+    "unit_id": "u33",
+    "field": "unit",
+    "meaning_changes": true,
+    "classification": "screening_omission",
+    "reason": "Added the independently interpretable directional testing-priority candidate. The first version preserved only the subsequent drop/host suggestions and therefore underrepresented this possible prescription.",
+    "before": null,
+    "after": {
+      "unit_id": "u33",
+      "source_id": "pr26586:comments:11",
+      "span": {
+        "start": 0,
+        "end": 181,
+        "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "prioritize checking",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 98,
+                "end": 181,
+                "quote": "It seems more important to be able to load an ancient wallet with a modern version."
+              }
+            }
+          ],
+          "inference_note": "Prioritize checking reconstructs a recommendation from the stated importance comparison; the source does not literally direct a test change.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "loading an ancient wallet with a modern version",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 136,
+                "end": 180,
+                "quote": "load an ancient wallet with a modern version"
+              }
+            }
+          ],
+          "inference_note": "The embedded capability under the literal importance claim becomes the target of the inferred testing priority. The direction ancient wallet to modern version is preserved.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "relative to opening a modern wallet with an ancient EOL version",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 0,
+                "end": 97,
+                "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version."
+              }
+            }
+          ],
+          "inference_note": "The first sentence supplies the comparison, including the EOL qualification. Relative priority does not imply a ban or a claim of zero importance.",
+          "occurrence_role": "semantic_inference"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The testing-priority implication is plausible in this review exchange, but an engineering-value comparison alone does not select a norm, rule, or committed strategy.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 0,
+              "end": 181,
+              "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The inferred priority concerns testing compatibility in two specified directions; it is ordinary technical test selection, not authority over release acceptance.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A comparison of technical importance rather than an invitation to change testing priorities. It does not declare modern-to-EOL compatibility worthless or prohibit testing it.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The action of prioritizing testing is inferred from an importance comparison, not directly requested.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Plain occurrence in supplied text; no complete edit history is available."
+      },
+      "disposition_events": []
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 0,
+          "end": 181,
+          "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S31",
+    "stage": "source_self_review",
+    "unit_id": "q11",
+    "field": "relation",
+    "meaning_changes": false,
+    "classification": "relation_evidence_refinement",
+    "reason": "Explained identity-preserving reformatting instead of claiming an exact whole-string match.",
+    "before": {
+      "from_unit_id": "q11",
+      "to_unit_id": "u28",
+      "type": "quotes",
+      "basis": "explicit",
+      "rationale": "Repeated occurrence reproduces the represented original proposition, with attribution supported by the exact matching text.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 178,
+            "end": 280,
+            "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 176,
+            "end": 225,
+            "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "q11",
+      "to_unit_id": "u28",
+      "type": "quotes",
+      "basis": "explicit",
+      "rationale": "The repeated referral reformats the commit as a Markdown link while retaining the same complete commit identity. This is the original navigation proposition, not a new endorsement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 178,
+            "end": 280,
+            "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 176,
+            "end": 225,
+            "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 178,
+          "end": 280,
+          "quote": "see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 176,
+          "end": 225,
+          "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S32",
+    "stage": "source_self_review",
+    "unit_id": "c03",
+    "field": "relations",
+    "meaning_changes": true,
+    "classification": "substantive_relation_target",
+    "reason": "The NACK clearly concerns this v24 proposal, not the historical recurrence asserted in u01. Removing the overbroad proposition-target link retains the review act and its source-grounded episode-level interpretation.",
+    "before": {
+      "from_unit_id": "c03",
+      "to_unit_id": "u01",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The Concept NACK opposes the broader v24 addition and its necessity, rather than denying the historical existence of prior additions.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:3",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+          }
+        },
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 35,
+            "quote": "The same procedure as every release"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": null,
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:3",
+        "span": {
+          "start": 0,
+          "end": 126,
+          "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+        }
+      },
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 35,
+          "quote": "The same procedure as every release"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S33",
+    "stage": "source_self_review",
+    "unit_id": "c05a",
+    "field": "relation",
+    "meaning_changes": true,
+    "classification": "substantive_relation_target",
+    "reason": "Retargeted the challenge from the distinct #25717 proposition to the actual miniscript rationale.",
+    "before": {
+      "from_unit_id": "c05a",
+      "to_unit_id": "u10",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The response challenges the miniscript-testing rationale accompanying the proposed addition; it does not prove that no other rationale applies.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 220,
+            "end": 330,
+            "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "c05a",
+      "to_unit_id": "c04b",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The response challenges the applicability of the miniscript addition/downgrade rationale to this general test, without denying the existence of miniscript support or establishing that #25717 is irrelevant.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 0,
+          "end": 104,
+          "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S34",
+    "stage": "source_self_review",
+    "unit_id": "c05b",
+    "field": "relation",
+    "meaning_changes": true,
+    "classification": "substantive_relation_type",
+    "reason": "Represented the concession-plus-counterreason as uptake, avoiding an incorrect challenge to the conceded technical premise.",
+    "before": {
+      "from_unit_id": "c06a",
+      "to_unit_id": "c05b",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "Probably not appears to concede limited issue detection while low cost supplies a countervailing reason; this does not assert that the test detects such issues.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 61,
+            "end": 101,
+            "quote": "Probably not, but it's a low cost check."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 175,
+            "end": 230,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "c05b",
+      "to_unit_id": "c06a",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The exact quoted limitation is followed by Probably not and a low-cost counterreason. This is a response that appears to concede limited detection; it does not challenge the limitation itself.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 175,
+            "end": 230,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 2,
+            "end": 57,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 61,
+            "end": 101,
+            "quote": "Probably not, but it's a low cost check."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 175,
+          "end": 230,
+          "quote": "It is likely so general that it can't catch any issues."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 2,
+          "end": 57,
+          "quote": "It is likely so general that it can't catch any issues."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 61,
+          "end": 101,
+          "quote": "Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S35",
+    "stage": "source_self_review",
+    "unit_id": "c07",
+    "field": "relation",
+    "meaning_changes": true,
+    "classification": "epistemic_relation_basis",
+    "reason": "Limited the cost challenge to the future extrapolation and marked the rhetorical inference as inferred.",
+    "before": {
+      "from_unit_id": "c07",
+      "to_unit_id": "c06a",
+      "type": "challenges",
+      "basis": "explicit",
+      "rationale": "The exact quoted low-cost assertion is followed by a question challenging its long-term premise.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:7",
+          "span": {
+            "start": 0,
+            "end": 171,
+            "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "c07",
+      "to_unit_id": "c06a",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The repeated low-cost assertion is questioned for an append-only future. The challenge to extrapolating low cost is inferred; the question does not deny that present costs are low.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:7",
+          "span": {
+            "start": 0,
+            "end": 171,
+            "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:7",
+        "span": {
+          "start": 0,
+          "end": 171,
+          "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S36",
+    "stage": "source_self_review",
+    "unit_id": "u14",
+    "field": "relation",
+    "meaning_changes": false,
+    "classification": "epistemic_relation_basis",
+    "reason": "Marked the explanatory relationship between adjacent assertions as inferred rather than explicit.",
+    "before": {
+      "from_unit_id": "u14",
+      "to_unit_id": "c09",
+      "type": "clarifies",
+      "basis": "explicit",
+      "rationale": "Keeping built copies supplies the immediately stated reason for the not-low-cost claim; it remains a participant claim.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 0,
+            "end": 207,
+            "quote": ">Probably not, but it's a low cost check.\r\n\r\nIt's not low cost. To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "u14",
+      "to_unit_id": "c09",
+      "type": "clarifies",
+      "basis": "context_inferred",
+      "rationale": "The built-copy prerequisite follows the cost denial and plausibly explains it; no explicit causal connective establishes the explanatory relation. Both remain participant claims.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 0,
+            "end": 207,
+            "quote": ">Probably not, but it's a low cost check.\r\n\r\nIt's not low cost. To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 0,
+          "end": 207,
+          "quote": ">Probably not, but it's a low cost check.\r\n\r\nIt's not low cost. To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S37",
+    "stage": "source_self_review",
+    "unit_id": "all",
+    "field": "units.order",
+    "meaning_changes": false,
+    "classification": "presentation_order",
+    "reason": "Sorted final records by supplied source and occurrence for reviewability; IDs and relations remain stable.",
+    "before": [
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "c01",
+      "u07",
+      "u08",
+      "c03",
+      "c04",
+      "u09",
+      "u10",
+      "c05a",
+      "c05b",
+      "u11",
+      "q01",
+      "c06a",
+      "q02",
+      "u12",
+      "c06b",
+      "q03",
+      "c07",
+      "q04",
+      "q05",
+      "u13",
+      "q06",
+      "c09",
+      "u14",
+      "u15",
+      "u16",
+      "u17",
+      "u18",
+      "c11",
+      "u19",
+      "c13a",
+      "c13b",
+      "u20",
+      "c15a",
+      "c15b",
+      "u21",
+      "u22",
+      "q07",
+      "u23",
+      "c15c",
+      "u24",
+      "u25",
+      "u26",
+      "u27",
+      "u28",
+      "u29",
+      "q08",
+      "q09",
+      "q10",
+      "q11",
+      "u30",
+      "u31",
+      "c32",
+      "u32",
+      "q12",
+      "c15d",
+      "c04b",
+      "u33"
+    ],
+    "after": [
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "c01",
+      "u07",
+      "u08",
+      "c03",
+      "c04",
+      "u09",
+      "u10",
+      "c04b",
+      "c05a",
+      "c05b",
+      "u11",
+      "q01",
+      "c06a",
+      "q02",
+      "u12",
+      "c06b",
+      "q03",
+      "c07",
+      "q04",
+      "q05",
+      "u13",
+      "q06",
+      "c09",
+      "u14",
+      "u15",
+      "u16",
+      "u33",
+      "u17",
+      "u18",
+      "c11",
+      "u19",
+      "c13a",
+      "c13b",
+      "u20",
+      "c15a",
+      "c15b",
+      "u21",
+      "u22",
+      "q07",
+      "u23",
+      "c15c",
+      "q12",
+      "c15d",
+      "u24",
+      "u25",
+      "u26",
+      "u27",
+      "u28",
+      "u29",
+      "q08",
+      "q09",
+      "q10",
+      "q11",
+      "u30",
+      "u31",
+      "c32",
+      "u32"
+    ],
+    "evidence": []
+  },
+  {
+    "change_id": "S38",
+    "stage": "source_self_review",
+    "unit_id": "pr26586:comments:4",
+    "field": "entry_screening",
+    "meaning_changes": false,
+    "classification": "screening_inventory",
+    "reason": "Updated source inventory for the added candidate/context endpoint and final source order.",
+    "before": {
+      "source_id": "pr26586:comments:4",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: general major-release inclusion and a specifically qualified v24 addition are retained; accident-prevention and miniscript claims are supporting rationale.",
+      "unit_ids": [
+        "c04",
+        "u09",
+        "u10"
+      ]
+    },
+    "after": {
+      "source_id": "pr26586:comments:4",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: general major-release inclusion and a specifically qualified v24 addition are retained; accident-prevention and miniscript claims are supporting rationale.",
+      "unit_ids": [
+        "c04",
+        "u09",
+        "u10",
+        "c04b"
+      ]
+    },
+    "evidence": []
+  },
+  {
+    "change_id": "S39",
+    "stage": "source_self_review",
+    "unit_id": "pr26586:comments:11",
+    "field": "entry_screening",
+    "meaning_changes": true,
+    "classification": "screening_inventory",
+    "reason": "Updated source inventory for the added candidate/context endpoint and final source order.",
+    "before": {
+      "source_id": "pr26586:comments:11",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: dropping EOL versions and hosting substitute regtest wallets are distinct linked proposals. Comparative compatibility priorities and failure-attention claims remain technical context.",
+      "unit_ids": [
+        "u17",
+        "u18",
+        "c11"
+      ]
+    },
+    "after": {
+      "source_id": "pr26586:comments:11",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: the relative priority of ancient-wallet-to-modern-version testing is retained as an uncertain indirect recommendation; dropping EOL versions and hosting substitute regtest wallets are distinct linked proposals. Failure-attention claims remain technical context.",
+      "unit_ids": [
+        "u33",
+        "u17",
+        "u18",
+        "c11"
+      ]
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 0,
+          "end": 181,
+          "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S40",
+    "stage": "source_self_review",
+    "unit_id": "pr26586:comments:15",
+    "field": "entry_screening",
+    "meaning_changes": false,
+    "classification": "screening_inventory",
+    "reason": "Updated source inventory for the added candidate/context endpoint and final source order.",
+    "before": {
+      "source_id": "pr26586:comments:15",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: tested ACK, keep-open and rebase method, not-rushing recommendation, repeated quotes, tentative minimum-coverage recognition, and follow-up pruning option retained; no pressing reason and thorough-checking claims remain rationale.",
+      "unit_ids": [
+        "c15a",
+        "c15b",
+        "u21",
+        "u22",
+        "q07",
+        "u23",
+        "c15c",
+        "u24",
+        "q12",
+        "c15d"
+      ]
+    },
+    "after": {
+      "source_id": "pr26586:comments:15",
+      "disposition": "candidate",
+      "reason": "Exhaustive focal screening: tested ACK, keep-open and rebase method, not-rushing recommendation, repeated quotes, tentative minimum-coverage recognition, and follow-up pruning option retained; no pressing reason and thorough-checking claims remain rationale.",
+      "unit_ids": [
+        "c15a",
+        "c15b",
+        "u21",
+        "u22",
+        "q07",
+        "u23",
+        "c15c",
+        "q12",
+        "c15d",
+        "u24"
+      ]
+    },
+    "evidence": []
+  },
+  {
+    "change_id": "S41",
+    "stage": "source_self_review",
+    "unit_id": "u10",
+    "field": "components.I",
+    "meaning_changes": false,
+    "classification": "epistemic_role_correction",
+    "reason": "Retained explicit embedded action and object roles; indirect recommendation force alone does not make those roles inferred.",
+    "before": {
+      "symbol": "I",
+      "text": "add",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 265,
+            "end": 271,
+            "quote": "adding"
+          }
+        }
+      ],
+      "inference_note": "The literal predicate is justify; the supported addition is reconstructed as a recommendation.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "adding",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 265,
+            "end": 271,
+            "quote": "adding"
+          }
+        }
+      ],
+      "inference_note": "The source explicitly supplies adding and the complete v24.0-or-available-release target. Treating that embedded action as the recommended action changes pragmatic force but does not transform its action/object roles; should still qualifies justify, not duty.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 265,
+          "end": 271,
+          "quote": "adding"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S42",
+    "stage": "source_self_review",
+    "unit_id": "u10",
+    "field": "components.Bdir",
+    "meaning_changes": false,
+    "classification": "epistemic_role_correction",
+    "reason": "Retained explicit embedded action and object roles; indirect recommendation force alone does not make those roles inferred.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "v24.0 (or whatever ends up widely available for download)",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 272,
+            "end": 329,
+            "quote": "v24.0 (or whatever ends up widely available for download)"
+          }
+        }
+      ],
+      "inference_note": "The object is embedded under adding; it becomes the target of the inferred focal recommendation, retaining the availability alternative.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "v24.0 (or whatever ends up widely available for download)",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 272,
+            "end": 329,
+            "quote": "v24.0 (or whatever ends up widely available for download)"
+          }
+        }
+      ],
+      "inference_note": "The source explicitly supplies adding and the complete v24.0-or-available-release target. Treating that embedded action as the recommended action changes pragmatic force but does not transform its action/object roles; should still qualifies justify, not duty.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 272,
+          "end": 329,
+          "quote": "v24.0 (or whatever ends up widely available for download)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S43",
+    "stage": "source_self_review",
+    "unit_id": "u23",
+    "field": "components.I",
+    "meaning_changes": false,
+    "classification": "epistemic_role_correction",
+    "reason": "Retained explicit embedded action and object roles; indirect recommendation force alone does not make those roles inferred.",
+    "before": {
+      "symbol": "I",
+      "text": "not rush merging",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 399,
+            "end": 415,
+            "quote": "not rush merging"
+          }
+        }
+      ],
+      "inference_note": "The focal recommendation is reconstructed from a reason for not rushing; negation is retained in the action.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "I",
+      "text": "not rush merging",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 399,
+            "end": 415,
+            "quote": "not rush merging"
+          }
+        }
+      ],
+      "inference_note": "The source expressly supplies the negated action not rush merging and its target new releases. Interpreting the reason statement as a recommendation does not reconstruct those predicate roles; the negation remains part of the stated action.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 399,
+          "end": 415,
+          "quote": "not rush merging"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S44",
+    "stage": "source_self_review",
+    "unit_id": "u23",
+    "field": "components.Bdir",
+    "meaning_changes": false,
+    "classification": "epistemic_role_correction",
+    "reason": "Retained explicit embedded action and object roles; indirect recommendation force alone does not make those roles inferred.",
+    "before": {
+      "symbol": "Bdir",
+      "text": "new releases",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 416,
+            "end": 428,
+            "quote": "new releases"
+          }
+        }
+      ],
+      "inference_note": "The embedded merging object becomes the target of the reconstructed recommendation.",
+      "occurrence_role": "semantic_inference"
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "new releases",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 416,
+            "end": 428,
+            "quote": "new releases"
+          }
+        }
+      ],
+      "inference_note": "The source expressly supplies the negated action not rush merging and its target new releases. Interpreting the reason statement as a recommendation does not reconstruct those predicate roles; the negation remains part of the stated action.",
+      "occurrence_role": "local"
+    },
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 416,
+          "end": 428,
+          "quote": "new releases"
+        }
+      }
+    ]
+  }
+]

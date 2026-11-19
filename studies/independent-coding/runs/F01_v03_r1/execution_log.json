@@ -1,0 +1,95 @@
+{
+  "run_id": "F01_v03_r1",
+  "events": [
+    {
+      "stage": "input_read",
+      "files": [
+        "INSTRUCTIONS.txt",
+        "protocol/codebook.txt",
+        "protocol/annotation_schema.json",
+        "packet.json"
+      ],
+      "note": "Initial overlong combined read truncated at tool display; separate complete reads of codebook, schema, packet metadata, and all entries followed."
+    },
+    {
+      "stage": "first_complete",
+      "file": "annotation.first_complete.json",
+      "freeze": {
+        "run_id": "F01_v03_r1",
+        "frozen_at_utc": "2026-11-07T18:50:25.077477+00:00",
+        "artifact": "annotation.first_complete.json",
+        "sha256": "550d96d511a207e13798c18206b854250ea46fd8a67692ec7a5aae62582160c6",
+        "before_checker_and_source_self_review": true
+      }
+    },
+    {
+      "stage": "initial_check",
+      "command": "python3 tools/check_annotation.py packet.json annotation.json",
+      "result": "checks.first.json"
+    },
+    {
+      "stage": "mechanical_repair",
+      "changes": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "checker": "checks.after_mechanical.json"
+    },
+    {
+      "stage": "source_self_review",
+      "rounds": 1,
+      "changes": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "interim_checker": "checks.review_draft.json",
+      "note": "One complete pass across all focal source entries, retained units, roles, qualifiers, relations, recognition/disposition events, and outcome/mechanism claims, with supplemental context screened and scope preserved."
+    },
+    {
+      "stage": "final_check",
+      "command": "python3 tools/check_annotation.py packet.json annotation.final.json",
+      "result": "checks.json"
+    },
+    {
+      "stage": "audit_records",
+      "files": [
+        "review_notes.json",
+        "repair_log.json",
+        "access_record.json",
+        "execution_log.json",
+        "run_manifest.json"
+      ]
+    }
+  ],
+  "no_frozen_input_modifications": true
+}

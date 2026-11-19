@@ -1,0 +1,70 @@
+{
+  "run_id": "F02_v03_r3",
+  "episode_id": "F02",
+  "stages": [
+    {
+      "order": 1,
+      "action": "Read assigned instructions, complete codebook, complete schema, and complete packet; no calibration or external material accessed."
+    },
+    {
+      "order": 2,
+      "action": "Created full annotation and froze first complete output before checker execution or source self-review.",
+      "artifacts": [
+        "annotation.json",
+        "annotation.first_complete.json"
+      ]
+    },
+    {
+      "order": 3,
+      "command": "python3 tools/check_annotation.py packet.json annotation.json > checks.first.json",
+      "exit_code": 0,
+      "status": "pass",
+      "errors": 0,
+      "review_flags": 5
+    },
+    {
+      "order": 4,
+      "action": "Performed one complete source-based self-review. Retained all five flags with source explanations and made one logged temporal-claim correction.",
+      "artifacts": [
+        "repair_log.json",
+        "review_notes.json",
+        "annotation.final.json"
+      ]
+    },
+    {
+      "order": 5,
+      "command": "python3 tools/check_annotation.py packet.json annotation.json > checks.json",
+      "exit_code": 0,
+      "status": "pass",
+      "errors": 0,
+      "review_flags": 5
+    },
+    {
+      "order": 6,
+      "action": "Verified final working annotation equals final saved annotation, reviewed flags are unchanged, and first-to-final diff matches the single repair log entry."
+    }
+  ],
+  "counts": {
+    "entries": 22,
+    "focal_entries": 16,
+    "screening": {
+      "context_only": 15,
+      "empty": 3,
+      "candidate": 4
+    },
+    "units": 13,
+    "record_roles": {
+      "context": 9,
+      "statement": 4
+    },
+    "relations": 6,
+    "recognition_events": 9,
+    "disposition_events": 10,
+    "outcomes": 4,
+    "mechanisms": 2,
+    "review_flags": 5,
+    "review_flags_addressed": 5,
+    "repairs": 1
+  },
+  "finished_at_utc": "2026-11-07T19:16:57.833668+00:00"
+}

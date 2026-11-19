@@ -1,0 +1,141 @@
+{
+  "status": "pass",
+  "screened_entries": 42,
+  "units": 61,
+  "statement_units": 32,
+  "exact_anchor_references": 385,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "u06",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The preceding coordinated instruction supplies the procedural trigger for this stated effect; no actual reaction is observed."
+    },
+    {
+      "unit_id": "u15",
+      "source_id": "pr26586:comments:10",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      },
+      "note": "The later sentence expressly describes an unchanged default under the same proposed approach; it lies outside this smallest action span."
+    },
+    {
+      "unit_id": "u22",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 180,
+          "end": 182,
+          "quote": "we"
+        }
+      },
+      "note": "The subject of the preceding coordinated clause scopes over the rebase action."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 86,
+          "end": 89,
+          "quote": "you"
+        }
+      },
+      "note": "The explicit subject you in the antecedent and coordinated main clause scopes over this alternative action."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "Need to scopes over the remove-or-explain alternatives; future will is not independently treated as D."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "The introductory conditional activates both alternative actions."
+    },
+    {
+      "unit_id": "u32",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 746,
+          "end": 786,
+          "quote": "cleaning up the releases list in general"
+        }
+      },
+      "note": "That resolves to the preceding ACK's cleanup object; its action-target role under exclude is inferred, and the evidence lies outside the focal assertion."
+    },
+    {
+      "unit_id": "u15",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": "The source explicitly assigns we the causative action have it loop. The reconstructed configure action retains that same causative actor; pragmatic recommendation force does not transform this actor role."
+    },
+    {
+      "unit_id": "u25",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The latest release is explicitly the object of add in the source. Reconstructing the indirect recommendation leaves that action-object relation intact; only the recommendation force is inferred."
+    },
+    {
+      "unit_id": "u30",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Although the utterance is an indirect question, the release phrase is explicitly the target of keep in the same predicate; no transformed argument role is introduced."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

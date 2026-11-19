@@ -1,0 +1,996 @@
+[
+  {
+    "topic_id": "D01",
+    "title": "Assent scope and decision object identity",
+    "status": "Corrected identity with retained interpretive disagreement",
+    "group_ids": [
+      "P01",
+      "P02",
+      "Q034",
+      "Q037"
+    ],
+    "finding": "Future cleanup remains unidentified. The general retention criterion has no applicable numbered decision object; #26586 remains the discussion episode. All reviewers accept these identity distinctions. A and B prefer ordinary tentative assent; C prefers unresolved expectation recognition. Full-proposition and broader-principle targets both remain defensible in context.",
+    "implementation": "Identity fields are corrected. The three existing assent encodings remain, with the alternatives explicit. The final analytical claim is tentative assent to the recurring retention floor, with institutional recognition and exact assent scope unsettled.",
+    "limits": [
+      "Do not claim an adopted retention policy, binding authority, or repeated independent recognition.",
+      "Do not transfer the containing PR merge to future work."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 638,
+          "end": 693,
+          "quote": "In any case we can always prune versions in a followup."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 11,
+          "end": 105,
+          "quote": "The same goes for the other versions in this file, so someone could do that in a separate pull"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 10,
+          "quote": "Unrelated:"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 87,
+          "end": 105,
+          "quote": "in a separate pull"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 105,
+          "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 739,
+          "end": 836,
+          "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 515,
+          "end": 616,
+          "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 621,
+          "end": 637,
+          "quote": "I tend to agree."
+        }
+      },
+      {
+        "source_id": "pr26586:supplement_metadata",
+        "span": {
+          "start": 12,
+          "end": 57,
+          "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 513,
+          "end": 637,
+          "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D01",
+      "B": "panel/B_final.json#D01",
+      "C": "panel/C_final.json#D01"
+    },
+    "change_ids": [
+      "CH001",
+      "CH002",
+      "CH003",
+      "CH004",
+      "CH005",
+      "CH006",
+      "CH007",
+      "CH008",
+      "CH009",
+      "CH044",
+      "CH045",
+      "CH046",
+      "CH047",
+      "CH048",
+      "CH049",
+      "CH050",
+      "CH051",
+      "CH052",
+      "CH053",
+      "CH054",
+      "CH055",
+      "CH056",
+      "CH057",
+      "CH058",
+      "CH059"
+    ]
+  },
+  {
+    "topic_id": "D02",
+    "title": "Same actor repetition and partial support",
+    "status": "Corrected scope with a retained specification ambiguity",
+    "group_ids": [
+      "P03",
+      "Q013",
+      "Q041"
+    ],
+    "finding": "The later open-and-rebase method omits the original until-another-PR-needs-it condition. Same-actor review-now correspondence preserves personal continuity. After inspecting the frozen checker, all reviewers retain response events and recognition none, while exposing the prose/checker tension.",
+    "implementation": "The partial response now targets the broader method. Event records retain same-actor continuity. The checker and codebook remain unchanged; no response is upgraded to expectation_recognition merely to produce same_actor_only.",
+    "limits": [
+      "The profile none does not mean no personal continuity was expressed.",
+      "No interpersonal recognition or verified body-versus-comment wording chronology follows."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 302,
+          "end": 375,
+          "quote": "But we can also keep this PR open until there's another PR that needs it."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 158,
+          "end": 239,
+          "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+        }
+      },
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 330,
+          "end": 378,
+          "quote": "But I don't want to hold back review of this PR."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 114,
+          "end": 190,
+          "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D02",
+      "B": "panel/B_final.json#D02",
+      "C": "panel/C_final.json#D02"
+    },
+    "change_ids": [
+      "CH010",
+      "CH011",
+      "CH060",
+      "CH061",
+      "CH062",
+      "CH063",
+      "CH064"
+    ]
+  },
+  {
+    "topic_id": "D03",
+    "title": "Observed artifact and complete application",
+    "status": "Resolved evidence distinction with explicit missing information",
+    "group_ids": [
+      "Q005",
+      "Q014"
+    ],
+    "finding": "The integrated release-note artifact establishes the requested spelling. It does not reconstruct the prior typo or correction history. The checkbox patch is observable even though unmerged, but the supplied fragments do not verify every qualification of the complete checkbox proposition.",
+    "implementation": "F02 r1 now records observed resulting spelling alongside its reported-application record. Complete checkbox application is unresolved in all three views; narrower artifact facts remain in outcomes.",
+    "limits": [
+      "Do not infer a verified before-and-after correction sequence.",
+      "Do not infer complete placement, missing workflow implementation, or repository integration from the checkbox artifact."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr14441:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 38,
+          "quote": "Should be `listtransactions` with `s`."
+        }
+      },
+      {
+        "source_id": "pr14441:patch:0",
+        "span": {
+          "start": 80,
+          "end": 113,
+          "quote": "+`listtransactions` label support"
+        }
+      },
+      {
+        "source_id": "pr14441:supplement_metadata",
+        "span": {
+          "start": 334,
+          "end": 388,
+          "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+        }
+      },
+      {
+        "source_id": "pr14441:supplement_metadata",
+        "span": {
+          "start": 437,
+          "end": 499,
+          "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+        }
+      },
+      {
+        "source_id": "pr14441:supplement_metadata",
+        "span": {
+          "start": 196,
+          "end": 210,
+          "quote": "\"merged\": true"
+        }
+      },
+      {
+        "source_id": "pr14441:supplement_metadata",
+        "span": {
+          "start": 622,
+          "end": 657,
+          "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+        }
+      },
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 0,
+          "end": 131,
+          "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+        }
+      },
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 133,
+          "end": 211,
+          "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+        }
+      },
+      {
+        "source_id": "pr7819:patch:0",
+        "span": {
+          "start": 87,
+          "end": 136,
+          "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+        }
+      },
+      {
+        "source_id": "pr7819:patch:0",
+        "span": {
+          "start": 168,
+          "end": 214,
+          "quote": "+        <string>Allow Replace-By-Fee</string>"
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 68,
+          "end": 85,
+          "quote": "\"state\": \"closed\""
+        }
+      },
+      {
+        "source_id": "pr7819:metadata",
+        "span": {
+          "start": 296,
+          "end": 311,
+          "quote": "\"merged\": false"
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D03",
+      "B": "panel/B_final.json#D03",
+      "C": "panel/C_final.json#D03"
+    },
+    "change_ids": [
+      "CH065",
+      "CH066",
+      "CH067",
+      "CH068",
+      "CH069",
+      "CH070"
+    ]
+  },
+  {
+    "topic_id": "D04",
+    "title": "Reported implementation and unmet verification conditions",
+    "status": "Agreed evidence limits with retained report-scope alternatives",
+    "group_ids": [
+      "Q006",
+      "Q035"
+    ],
+    "finding": "All reviewers accept contextual reported incorporation of the identified release-note suggestions as a reasonable preferred reading. They retain broader-proposal targeting as defensible. A rebase on master does not establish fulfillment of the after-#26589 condition.",
+    "implementation": "The original focal versus broader report scopes remain in the adjusted views. All three rebase records preserve the broad action report and explicitly mark complete conditional fulfillment unresolved.",
+    "limits": [
+      "Do not pair isolated fixed or Both replies to individual changes without evidence.",
+      "Do not equate reports with patch verification or verbatim adoption of every offered phrase."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 0,
+          "end": 72,
+          "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+        }
+      },
+      {
+        "source_id": "pr14441:reviews:4",
+        "span": {
+          "start": 0,
+          "end": 146,
+          "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+        }
+      },
+      {
+        "source_id": "pr14441:review_comments:4",
+        "span": {
+          "start": 0,
+          "end": 30,
+          "quote": "Both are good changes. Thanks!"
+        }
+      },
+      {
+        "source_id": "pr14441:review_comments:5",
+        "span": {
+          "start": 0,
+          "end": 5,
+          "quote": "fixed"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 31,
+          "end": 72,
+          "quote": "Meanwhile it needs a rebase after #26589."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 17,
+          "quote": "Rebased on master"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 153,
+          "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 40,
+          "quote": "Rebased on master and updated to v24.0.1"
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D04",
+      "B": "panel/B_final.json#D04",
+      "C": "panel/C_final.json#D04"
+    },
+    "change_ids": [
+      "CH071",
+      "CH072",
+      "CH073",
+      "CH074",
+      "CH075",
+      "CH076",
+      "CH077",
+      "CH078",
+      "CH079",
+      "CH080",
+      "CH081",
+      "CH082",
+      "CH083",
+      "CH084"
+    ]
+  },
+  {
+    "topic_id": "D05",
+    "title": "Technical necessity and social expectation",
+    "status": "Agreed uncertainty about institutional type",
+    "group_ids": [
+      "Q015",
+      "Q036"
+    ],
+    "finding": "Needs rebase supports a maintenance request but does not select between technical necessity and a proposed social expectation. All reviewers prefer undetermined in the synthesis while retaining norm_candidate as a serious alternative.",
+    "implementation": "Primary type variants remain. Missing alternatives are added, and the rationale that treated recurrence as necessary for a proposed norm is corrected.",
+    "limits": [
+      "Do not infer an institutional obligation, authorized merge gate, or enforcement from needs.",
+      "A proposed norm does not need to be already shared or recurring."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr7819:comments:7",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "Needs rebase."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 31,
+          "end": 72,
+          "quote": "Meanwhile it needs a rebase after #26589."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 44,
+          "end": 49,
+          "quote": "needs"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 59,
+          "end": 71,
+          "quote": "after #26589"
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D05",
+      "B": "panel/B_final.json#D05",
+      "C": "panel/C_final.json#D05"
+    },
+    "change_ids": [
+      "CH085",
+      "CH086",
+      "CH087",
+      "CH088",
+      "CH089"
+    ]
+  },
+  {
+    "topic_id": "D06",
+    "title": "Focal analytical layer and governance level",
+    "status": "Resolved distinction between analytical layers",
+    "group_ids": [
+      "Q045",
+      "Q051"
+    ],
+    "finding": "Performing release-selection work is operational. Proposing a recurring selection arrangement can target collective choice. Conditional developer discretion can be represented as an allocation or as the resulting conduct, provided the focal layer remains explicit.",
+    "implementation": "Existing primary levels remain where the rationale identifies their layer. Missing operational alternatives are added and the conditional allocation rationale is clarified.",
+    "limits": [
+      "Constitutive grammar does not establish constitutional authority.",
+      "No supplied record establishes a new adopted procedure or authority over Bitcoin network adoption."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 152,
+          "end": 232,
+          "quote": "In that case it's up to the developer which previous releases they want to test."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D06",
+      "B": "panel/B_final.json#D06",
+      "C": "panel/C_final.json#D06"
+    },
+    "change_ids": [
+      "CH090",
+      "CH091",
+      "CH092",
+      "CH093"
+    ]
+  },
+  {
+    "topic_id": "D07",
+    "title": "Targets of challenge",
+    "status": "Agreed target distinctions with retained scope-dependent projections",
+    "group_ids": [
+      "Q019",
+      "Q038",
+      "Q039",
+      "Q040",
+      "Q052"
+    ],
+    "finding": "The panel converges on a focal readiness-premise challenge when the checkbox statement offers exposure of the feature; an artifact-description layer supports broader targeting. The miniscript criticism reaches only its attached rationale. A proposed directory redesign need not contradict the present implementation prerequisite, and prospective fee-only questioning does not deny a past work report.",
+    "implementation": "Checkbox target variants remain with explicit layer explanations. The specialness challenge uses premise. The current built-copy proposition retains a broader-arrangement challenge and no focal dispute, with the continuing-application alternative visible.",
+    "limits": [
+      "Do not treat Boolean dispute agreement as complete agreement about meaning.",
+      "Do not infer rejection, withdrawal, interpersonal disagreement with oneself, or the contents of unseen #25717."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 0,
+          "end": 131,
+          "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+        }
+      },
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 133,
+          "end": 211,
+          "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:0",
+        "span": {
+          "start": 0,
+          "end": 88,
+          "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 0,
+          "end": 88,
+          "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 90,
+          "end": 113,
+          "quote": "Right. I totally agree."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 114,
+          "end": 190,
+          "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 147,
+          "end": 174,
+          "quote": "explain why 24.x is special"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 220,
+          "end": 330,
+          "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 0,
+          "end": 104,
+          "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 64,
+          "end": 207,
+          "quote": "To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:3",
+        "span": {
+          "start": 316,
+          "end": 429,
+          "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:3",
+        "span": {
+          "start": 430,
+          "end": 484,
+          "quote": "But maybe we should just focus on increasing the fees?"
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D07",
+      "B": "panel/B_final.json#D07",
+      "C": "panel/C_final.json#D07"
+    },
+    "change_ids": [
+      "CH094",
+      "CH095",
+      "CH096",
+      "CH097",
+      "CH098",
+      "CH099",
+      "CH100",
+      "CH101"
+    ]
+  },
+  {
+    "topic_id": "D08",
+    "title": "Response relations and their direction",
+    "status": "Corrected direction and selected bounded relation interpretations",
+    "group_ids": [
+      "P04",
+      "Q042",
+      "Q043"
+    ],
+    "finding": "Uptake must run from the separate-cleanup proposal to its response. All reviewers prefer clarification for the directly quoted cost concern and temporal order for the less securely attributed release-risk/pause sequence.",
+    "implementation": "The reversed uptake endpoints are repaired. The cost/pruning links use clarifies. The release-risk/pause link uses temporal with recorded creation timestamps and an explicit limitation on reply attribution and causality.",
+    "limits": [
+      "Context record status alone does not rule out an inferred invitation.",
+      "These links establish no completed pruning, formal hold, release withdrawal, or causal influence."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 62,
+          "end": 105,
+          "quote": "so someone could do that in a separate pull"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 788,
+          "end": 836,
+          "quote": "but I think that's outside of scope for this PR."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 739,
+          "end": 836,
+          "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:7",
+        "span": {
+          "start": 46,
+          "end": 171,
+          "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 181,
+          "end": 231,
+          "quote": "We can remove intermediate releases at some point."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 0,
+          "end": 231,
+          "quote": "> > Probably not, but it's a low cost check.\r\n> \r\n> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?\r\n\r\nWe can remove intermediate releases at some point."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:1",
+        "span": {
+          "start": 0,
+          "end": 142,
+          "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 0,
+          "end": 30,
+          "quote": "Sounds good to hold off a bit."
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D08",
+      "B": "panel/B_final.json#D08",
+      "C": "panel/C_final.json#D08"
+    },
+    "change_ids": [
+      "CH012",
+      "CH013",
+      "CH014",
+      "CH102",
+      "CH103",
+      "CH104",
+      "CH105",
+      "CH106",
+      "CH107",
+      "CH108",
+      "CH109",
+      "CH110",
+      "CH111",
+      "CH112",
+      "CH113",
+      "CH114",
+      "CH115"
+    ]
+  },
+  {
+    "topic_id": "D09",
+    "title": "Ambiguous bot referent",
+    "status": "Agreed unresolved software referent",
+    "group_ids": [
+      "Q022"
+    ],
+    "finding": "The bot announces a conditional next-update consequence. Its grammatical object it is explicit, but the source does not uniquely identify the software referent. The review is the most plausible linguistic gloss; comment and displayed-listing readings remain possible.",
+    "implementation": "The summary, qualifier, institutional rationale, target activity, and uncertainty description now carry that limit. The explicit grammatical object remains unchanged.",
+    "limits": [
+      "No observed bot execution, suppression, or sanction follows from the announcement."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 646,
+          "end": 688,
+          "quote": "the bot will ignore it on the next update."
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D09",
+      "B": "panel/B_final.json#D09",
+      "C": "panel/C_final.json#D09"
+    },
+    "change_ids": [
+      "CH116",
+      "CH117",
+      "CH118",
+      "CH119",
+      "CH120",
+      "CH121"
+    ]
+  },
+  {
+    "topic_id": "D10",
+    "title": "Methods and proposed expectations",
+    "status": "Shared type preferences with retained alternatives",
+    "group_ids": [
+      "Q047",
+      "Q048",
+      "Q049",
+      "Q025a"
+    ],
+    "finding": "The panel prefers strategy candidates for the specific-test and coupled EOL-drop/stored-wallet methods, and a norm candidate for proposed recurring merge restraint. A one-off engineering-preference reading remains defensible. Classification does not itself demonstrate social acceptance.",
+    "implementation": "Primary type variants remain with explicit alternatives and repaired rationales. The adjusted avoid-rushing representation uses the supplied not-rush-merging action. The earlier pragmatic parse remains a defensible alternative, not a newly discovered error.",
+    "limits": [
+      "Preserve the coupled method, exploratory force, and material conditions.",
+      "Do not infer shared norms, authority, or implementation from a candidate label."
+    ],
+    "source_evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 250,
+          "end": 327,
+          "quote": "specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 281,
+          "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 0,
+          "end": 181,
+          "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 370,
+          "end": 429,
+          "quote": "This can also be a reason to not rush merging new releases."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 285,
+          "end": 460,
+          "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 245,
+          "end": 366,
+          "quote": "> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 430,
+          "end": 509,
+          "quote": "This PR itself is where most of the thorough checking happens, at every rebase."
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 399,
+          "end": 407,
+          "quote": "not rush"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 408,
+          "end": 428,
+          "quote": "merging new releases"
+        }
+      }
+    ],
+    "panel_final_references": {
+      "A": "panel/A_final.json#D10",
+      "B": "panel/B_final.json#D10",
+      "C": "panel/C_final.json#D10"
+    },
+    "change_ids": [
+      "CH122",
+      "CH123",
+      "CH124",
+      "CH125",
+      "CH126",
+      "CH127",
+      "CH128",
+      "CH129",
+      "CH130",
+      "CH131",
+      "CH132",
+      "CH133",
+      "CH134",
+      "CH135",
+      "CH136"
+    ]
+  }
+]

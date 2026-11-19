@@ -1,0 +1,150 @@
+{
+  "unit_changes": [
+    {
+      "unit_id": "U02",
+      "change": "revised",
+      "fields": [
+        "institution"
+      ]
+    },
+    {
+      "unit_id": "U17",
+      "change": "revised",
+      "fields": [
+        "institution"
+      ]
+    },
+    {
+      "unit_id": "U18",
+      "change": "revised",
+      "fields": [
+        "grammar",
+        "components",
+        "institution",
+        "statement_target_level",
+        "level_rationale",
+        "alternative_interpretation",
+        "confidence",
+        "uncertainty_reason",
+        "record_role",
+        "parse_mode",
+        "presentation"
+      ]
+    },
+    {
+      "unit_id": "U19",
+      "change": "revised",
+      "fields": [
+        "span",
+        "components",
+        "institution",
+        "alternative_interpretation",
+        "uncertainty_reason",
+        "deontic_force"
+      ]
+    },
+    {
+      "unit_id": "U24",
+      "change": "revised",
+      "fields": [
+        "institution"
+      ]
+    },
+    {
+      "unit_id": "U25",
+      "change": "revised",
+      "fields": [
+        "institution",
+        "alternative_interpretation",
+        "uncertainty_reason"
+      ]
+    },
+    {
+      "unit_id": "N04",
+      "change": "revised",
+      "fields": [
+        "institution"
+      ]
+    },
+    {
+      "unit_id": "N14",
+      "change": "revised",
+      "fields": [
+        "institution",
+        "statement_target_level",
+        "level_rationale",
+        "alternative_interpretation",
+        "confidence",
+        "uncertainty_reason",
+        "level_alternatives"
+      ]
+    },
+    {
+      "unit_id": "N16",
+      "change": "revised",
+      "fields": [
+        "institution",
+        "level_rationale",
+        "alternative_interpretation",
+        "uncertainty_reason",
+        "level_alternatives"
+      ]
+    },
+    {
+      "unit_id": "R4_U19_negative",
+      "change": "added",
+      "fields": [
+        "entire_unit"
+      ]
+    }
+  ],
+  "removed_relations": [
+    {
+      "from_unit_id": "U02",
+      "to_unit_id": "N14",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "rationale": "The explicit merit-not-repetition criterion is substantively incompatible with numerical majority as sufficient decision authority; no direct reply between these passages is claimed.",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 92,
+            "end": 186,
+            "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+          }
+        },
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 386,
+            "end": 423,
+            "quote": "Only the majority decides the winner."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    }
+  ],
+  "added_relations": [
+    {
+      "from_unit_id": "U19",
+      "to_unit_id": "R4_U19_negative",
+      "type": "AND",
+      "basis": "explicit",
+      "rationale": "The positive alternative-venue duty and negative current-venue duty share a conditional antecedent and are coordinated by and.",
+      "evidence": [
+        {
+          "source_id": "32406-252",
+          "span": {
+            "start": 401,
+            "end": 509,
+            "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+          }
+        }
+      ],
+      "logic_scope": "propositions"
+    }
+  ],
+  "scope": "Changes reflect adjudication, not automatic acceptance of a reviewer output. All other baseline units are inherited, not newly validated."
+}

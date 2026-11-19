@@ -1,0 +1,320 @@
+{
+  "status": "fail",
+  "screened_entries": 42,
+  "units": 61,
+  "statement_units": 32,
+  "exact_anchor_references": 385,
+  "errors": [
+    {
+      "unit_id": "u06",
+      "symbol": "Bdir",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "u08",
+      "symbol": "Bdir",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "u09",
+      "symbol": "A",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "u09",
+      "symbol": "A",
+      "message": "outside-unit component lacks a scope/reference explanation"
+    },
+    {
+      "unit_id": "u09",
+      "symbol": "A",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "u13",
+      "symbol": "I",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "u13",
+      "symbol": "I",
+      "message": "outside-unit component lacks a scope/reference explanation"
+    },
+    {
+      "unit_id": "u24",
+      "symbol": "Cex",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "u24",
+      "symbol": "Cex",
+      "message": "outside-unit component lacks a scope/reference explanation"
+    },
+    {
+      "unit_id": "u15",
+      "message": "explicit pragmatic argument requires role-preservation explanation"
+    },
+    {
+      "unit_id": "u25",
+      "message": "explicit pragmatic argument requires role-preservation explanation"
+    }
+  ],
+  "review_flags": [
+    {
+      "unit_id": "u06",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "unresolved",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 82,
+          "end": 84,
+          "quote": "it"
+        }
+      },
+      "note": "The nearest noun is comment while the preceding condition concerns a review listing. The exact object the bot ignores is not independently specified."
+    },
+    {
+      "unit_id": "u06",
+      "source_id": "pr26586:comments:0",
+      "kind": "token_fragment",
+      "symbol": "Bdir",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 82,
+          "end": 84,
+          "quote": "it"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "u06",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The preceding coordinated instruction supplies the procedural trigger for this stated effect; no actual reaction is observed."
+    },
+    {
+      "unit_id": "u08",
+      "source_id": "pr26586:comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 27,
+          "end": 29,
+          "quote": "it"
+        }
+      },
+      "note": "The grammatical subject it becomes the target of the reconstructed rebase action; the PR setting resolves the likely referent."
+    },
+    {
+      "unit_id": "u08",
+      "source_id": "pr26586:comments:2",
+      "kind": "token_fragment",
+      "symbol": "Bdir",
+      "evidence": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 27,
+          "end": 29,
+          "quote": "it"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "u09",
+      "source_id": "pr26586:comments:4",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 105,
+          "end": 107,
+          "quote": "we"
+        }
+      },
+      "note": ""
+    },
+    {
+      "unit_id": "u09",
+      "source_id": "pr26586:comments:4",
+      "kind": "token_fragment",
+      "symbol": "A",
+      "evidence": {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 105,
+          "end": 107,
+          "quote": "we"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "u13",
+      "source_id": "pr26586:comments:8",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 140,
+          "end": 146,
+          "quote": "remove"
+        }
+      },
+      "note": ""
+    },
+    {
+      "unit_id": "u15",
+      "source_id": "pr26586:comments:10",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      },
+      "note": "The later sentence expressly describes an unchanged default under the same proposed approach; it lies outside this smallest action span."
+    },
+    {
+      "unit_id": "u22",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 180,
+          "end": 182,
+          "quote": "we"
+        }
+      },
+      "note": "The subject of the preceding coordinated clause scopes over the rebase action."
+    },
+    {
+      "unit_id": "u24",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 541,
+          "end": 547,
+          "quote": "always"
+        }
+      },
+      "note": ""
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 86,
+          "end": 89,
+          "quote": "you"
+        }
+      },
+      "note": "The explicit subject you in the antecedent and coordinated main clause scopes over this alternative action."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "Need to scopes over the remove-or-explain alternatives; future will is not independently treated as D."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "The introductory conditional activates both alternative actions."
+    },
+    {
+      "unit_id": "u32",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 746,
+          "end": 786,
+          "quote": "cleaning up the releases list in general"
+        }
+      },
+      "note": "That resolves to the preceding ACK's cleanup object; its action-target role under exclude is inferred, and the evidence lies outside the focal assertion."
+    },
+    {
+      "unit_id": "u15",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": ""
+    },
+    {
+      "unit_id": "u25",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": ""
+    },
+    {
+      "unit_id": "u30",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Although the utterance is an indirect question, the release phrase is explicitly the target of keep in the same predicate; no transformed argument role is introduced."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

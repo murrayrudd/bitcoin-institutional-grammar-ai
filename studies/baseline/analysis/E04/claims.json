@@ -1,0 +1,98 @@
+[
+  {
+    "claim_id": "E04-C1",
+    "episode_id": "E04",
+    "claim": "Standing guidance expects replies to review comments before merge, allows reasoned disagreement, and permits closure for inactive outstanding feedback.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E04:doc_before",
+        "span": {
+          "start": 8953,
+          "end": 9257,
+          "quote": "You are expected to reply to any review comments before your pull request is\nmerged. You may update the code or reject the feedback if you do not agree with\nit, but you should express so in a reply. If there is outstanding feedback and\nyou are not actively working on it, your pull request may be closed."
+        }
+      }
+    ],
+    "assessment_available_at": "D",
+    "limits_and_alternatives": "The documented duty is to respond, not to accept every reviewer demand."
+  },
+  {
+    "claim_id": "E04-C2",
+    "episode_id": "E04",
+    "claim": "maflcko explicitly links closure to alleged failures to prepare, explain and respond under the contribution guidelines.",
+    "assessment": "attributed",
+    "evidence": [
+      {
+        "source_id": "E04:comments:5",
+        "span": {
+          "start": 85,
+          "end": 309,
+          "quote": "You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines."
+        }
+      },
+      {
+        "source_id": "E04:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      },
+      {
+        "source_id": "E04:doc_before",
+        "span": {
+          "start": 9225,
+          "end": 9257,
+          "quote": "your pull request may be closed."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "This is an attributable enforcement claim with a provision, alleged trigger, actor and consequence. It does not independently establish every allegation or exclusive causation."
+  },
+  {
+    "claim_id": "E04-C3",
+    "episode_id": "E04",
+    "claim": "The author disputes the technical criticism while agreeing to continue discussion in the issue.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E04:comments:4",
+        "span": {
+          "start": 294,
+          "end": 420,
+          "quote": "The first sentence in your comment only makes sense in a vacuum. The standard is a thing. I agree with the second part. Let's."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Agreement to redirect discussion does not acknowledge all procedural allegations."
+  },
+  {
+    "claim_id": "E04-C4",
+    "episode_id": "E04",
+    "claim": "The closure was caused solely by procedural noncompliance, independently of technical disagreement.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E04:comments:4",
+        "span": {
+          "start": 118,
+          "end": 158,
+          "quote": "It doesn't \"seem[sic]\" to fix the issue?"
+        }
+      },
+      {
+        "source_id": "E04:comments:5",
+        "span": {
+          "start": 231,
+          "end": 309,
+          "quote": "I closed this for now, because it can't be merged according to the guidelines."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Participant reasoning supports a procedural mechanism; competing technical concerns and the counterfactual merge outcome remain unresolved."
+  }
+]

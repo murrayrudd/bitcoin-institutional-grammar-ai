@@ -1,0 +1,347 @@
+{
+  "status": "fail",
+  "screened_entries": 42,
+  "units": 62,
+  "statement_units": 31,
+  "exact_anchor_references": 400,
+  "errors": [
+    {
+      "unit_id": "need_rebase",
+      "symbol": "Bdir",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "developer_choice",
+      "symbol": "Cac",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "host_regtest",
+      "symbol": "Cex",
+      "message": "local component evidence is outside its unit"
+    },
+    {
+      "unit_id": "occasionally_rebase",
+      "symbol": "Bdir",
+      "message": "local component evidence is outside its unit"
+    }
+  ],
+  "review_flags": [
+    {
+      "unit_id": "b_method",
+      "source_id": "pr26586:body",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:metadata",
+        "span": {
+          "start": 23,
+          "end": 70,
+          "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+        }
+      },
+      "note": "The nominal phrase becomes the target of reconstructed repeat. The PR title and referenced commits identify the procedure."
+    },
+    {
+      "unit_id": "bot_ignore",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The coordinated conditional procedure makes the reaction the trigger; it is not an observed reaction."
+    },
+    {
+      "unit_id": "hold_off",
+      "source_id": "pr26586:comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:comments:1",
+        "span": {
+          "start": 0,
+          "end": 142,
+          "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+        }
+      },
+      "note": "Holding off lacks an expressed object; the PR discussion and release concern supply the likely target."
+    },
+    {
+      "unit_id": "need_rebase",
+      "source_id": "pr26586:comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 27,
+          "end": 29,
+          "quote": "it"
+        }
+      },
+      "note": "It is the literal subject of needs; it becomes the patient of the reconstructed rebase action. The referent is this PR."
+    },
+    {
+      "unit_id": "need_rebase",
+      "source_id": "pr26586:comments:2",
+      "kind": "token_fragment",
+      "symbol": "Bdir",
+      "evidence": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 27,
+          "end": 29,
+          "quote": "it"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "developer_choice",
+      "source_id": "pr26586:comments:10",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      },
+      "note": "Refers to the preceding available-release loop proposal, not any unreported implementation."
+    },
+    {
+      "unit_id": "drop_eol",
+      "source_id": "pr26586:comments:11",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 227,
+          "end": 280,
+          "quote": "the qa-assets repo hosts some regtest wallets instead"
+        }
+      },
+      "note": "The companion action supplies the proposed substitution; it is not an independent unqualified removal plan."
+    },
+    {
+      "unit_id": "host_regtest",
+      "source_id": "pr26586:comments:11",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 222,
+          "quote": "So maybe the EOL versions can be dropped"
+        }
+      },
+      "note": "Substitutes for the EOL-version approach in the coordinated clause."
+    },
+    {
+      "unit_id": "occasionally_rebase",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 161,
+          "end": 163,
+          "quote": "we"
+        }
+      },
+      "note": "Shared subject of the coordinated leave and rebase clause."
+    },
+    {
+      "unit_id": "occasionally_rebase",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "local",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 180,
+          "end": 211,
+          "quote": "we could just leave the PR open"
+        }
+      },
+      "note": "Literal object is the PR identified in the coordinated clause."
+    },
+    {
+      "unit_id": "remove23",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 86,
+          "end": 89,
+          "quote": "you"
+        }
+      },
+      "note": "Shared actor in the enclosing conditional requirement."
+    },
+    {
+      "unit_id": "remove23",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "Need governs both alternatives; future will is not itself the deontic operator."
+    },
+    {
+      "unit_id": "remove23",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "Enclosing condition activates both alternatives, which remain linked by OR."
+    },
+    {
+      "unit_id": "explain24",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 86,
+          "end": 89,
+          "quote": "you"
+        }
+      },
+      "note": "Shared actor of the coordinated requirement."
+    },
+    {
+      "unit_id": "explain24",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "Shared operator for remove or explain."
+    },
+    {
+      "unit_id": "explain24",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "The same explicit condition governs the explanatory alternative."
+    },
+    {
+      "unit_id": "separate_cleanup",
+      "source_id": "pr26586:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      "note": "Resolves elliptical do that using the immediately prior release-selection request and the later explicit cleanup ACK."
+    },
+    {
+      "unit_id": "separate_cleanup",
+      "source_id": "pr26586:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 739,
+          "end": 786,
+          "quote": "ACK on cleaning up the releases list in general"
+        }
+      },
+      "note": "Resolves elliptical do that using the immediately prior release-selection request and the later explicit cleanup ACK."
+    },
+    {
+      "unit_id": "cleanup_outside",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 746,
+          "end": 786,
+          "quote": "cleaning up the releases list in general"
+        }
+      },
+      "note": "The adjacent ACK supplies the antecedent of that. Its receiver role under reconstructed keep is inferred, not explicit."
+    },
+    {
+      "unit_id": "loop_available",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": "Even under the reconstructed change request, we is explicitly the actor of have it loop."
+    },
+    {
+      "unit_id": "separate_cleanup",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": "Explicit subject of could do retains actor role under reconstructed cleanup; no identity is supplied."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

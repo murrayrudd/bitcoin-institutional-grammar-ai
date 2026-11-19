@@ -1,0 +1,93 @@
+{
+  "episode_id": "E09",
+  "pr_number": 7005,
+  "label": "Roles without merged codification",
+  "mechanism": "authority_allocation",
+  "initiation": "A maintainer document is proposed to direct contributions.",
+  "outcome": "A mining role is asserted and acknowledged, but the document closes unmerged for stated workflow mismatch and inactivity.",
+  "alternative_explanation": "Role recognition can exist independently of this particular document; the discussion does not map all powers.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Role description and recognition; collective-choice codification is a bounded alternative for the document proposal.",
+  "claim_ids": [
+    "E09-C1",
+    "E09-C2",
+    "E09-C3",
+    "E09-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E09:body",
+      "span": {
+        "start": 0,
+        "end": 87,
+        "quote": "This is a guide to steering contributions to specific maintained areas of the codebase."
+      }
+    },
+    {
+      "source_id": "E09:doc_head",
+      "span": {
+        "start": 3,
+        "end": 61,
+        "quote": "List of maintainers and how to submit Bitcoin Core changes"
+      }
+    },
+    {
+      "source_id": "E09:comments:4",
+      "span": {
+        "start": 27,
+        "end": 54,
+        "quote": "I maintain the Mining area."
+      }
+    },
+    {
+      "source_id": "E09:comments:6",
+      "span": {
+        "start": 243,
+        "end": 291,
+        "quote": "ACK on mentioning @luke-jr as mining maintainer."
+      }
+    },
+    {
+      "source_id": "E09:comments:9",
+      "span": {
+        "start": 0,
+        "end": 38,
+        "quote": "I like the idea of listing maintainers"
+      }
+    },
+    {
+      "source_id": "E09:comments:9",
+      "span": {
+        "start": 168,
+        "end": 252,
+        "quote": "Closing this due to inactivity. Please reopen if you're going to work on this again."
+      }
+    },
+    {
+      "source_id": "E09:outcome",
+      "span": {
+        "start": 105,
+        "end": 129,
+        "quote": "\"recorded_merged\": false"
+      }
+    },
+    {
+      "source_id": "E09:comments:6",
+      "span": {
+        "start": 243,
+        "end": 291,
+        "quote": "ACK on mentioning @luke-jr as mining maintainer."
+      }
+    },
+    {
+      "source_id": "E09:outcome",
+      "span": {
+        "start": 105,
+        "end": 129,
+        "quote": "\"recorded_merged\": false"
+      }
+    }
+  ]
+}

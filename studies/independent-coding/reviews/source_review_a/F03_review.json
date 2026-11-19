@@ -1,0 +1,1679 @@
+{
+  "findings": [
+    {
+      "finding_id": "A007",
+      "episode_id": "F03",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "description": "R02 treats we as explicit in a reconstructed withhold-accepting action, explaining that the source already attributes the deliberative choice to the group. Other candidate parses treat transfer from wanting to acceptance as inferred; R13 leaves the uncertainty as context. The assigned guide requires role-specific evidence and permits explicit arguments in pragmatic parses with explanation, but does not state the later guide's predicate-local matching test. The actor referent is preserved and unidentified; the issue is evidence basis, not an invented decision-maker.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 227,
+            "end": 229,
+            "quote": "we"
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 215,
+            "end": 234,
+            "quote": "not sure if we want"
+          }
+        }
+      ],
+      "applicable_rule": "guide_2.txt, Grammar and argument roles: evaluate the role in the chosen parse; explain pragmatic actor assignments even when retaining explicit basis.",
+      "resolution": "Prefer inferred agency of acceptance where the acceptance predicate is reconstructed, but retain the explicit-deliberative-agent alternative under guide_2. A later rule should decide whether preserving agency across a changed predicate is enough for explicit basis. Do not import guide_1's narrower governing-span test into R02."
+    },
+    {
+      "finding_id": "A008",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R13 and R16 label the newly offered updatable/amendable replacement words and the conditional replaceab... spelling fragment as quotation none. Their own parses and proposition records identify these as replacement wording, and preserve the words, alternatives, tentativeness and condition correctly. This is a presentation convention deviation, not loss of the proposed edit.",
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U20",
+            "U23"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U13",
+            "F03-U16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Presentation and later disposition: newly drafted replacement wording is proposed_wording; presentation is separate from statement role and communicative function.",
+      "resolution": "Use proposed_wording for these two occurrences, leaving speech acts, incomplete spelling, conditional scope and institutional assessments unchanged."
+    },
+    {
+      "finding_id": "A009",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R15 and R16 use pragmatic parse_mode for this can be reviewed already while explicitly retaining the supplied review predicate and patient. Their explanations locate inference only in invitation force. This does not satisfy the assigned reconstructed-action trigger for pragmatic mode; the current-review versus exposure distinction remains intact.",
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Grammar and argument roles: literal when the action is directly supplied; inferred utterance force does not itself reconstruct the action.",
+      "resolution": "Use literal with explicit review and patient, while retaining the pragmatic invitation alternative and recommendation-versus-capability uncertainty."
+    },
+    {
+      "finding_id": "A010",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R16 codes Adds a checkbox as pragmatic although its own action note says the action is supplied and only offered-edit force is reconstructed. The artifact, placement, signaling function, missing GUI workflow, and unmerged status are otherwise preserved.",
+      "affected": [
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Grammar and argument roles: directly supplied action calls for literal parse_mode; source-role and force decisions remain separate.",
+      "resolution": "Use literal for the supplied Adds predicate. Retain the offered-contribution versus technical-context alternative; no new requirement or implementation inference follows."
+    },
+    {
+      "finding_id": "A011",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R15 uses pragmatic parse_mode for the exposure concern while coding expose and this as explicit and reconstructing only the negative advisory modal should not yet. Under the assigned action-based parse convention, the action itself has not been reconstructed. This differs from other annotations that reconstruct a defer or withhold-exposure predicate and can consequently use pragmatic.",
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 33,
+            "quote": "Not sure it makes sense to expose"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 34,
+            "end": 38,
+            "quote": "this"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 39,
+            "end": 85,
+            "quote": "until the wallet actually _can_ do replacement"
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Grammar and argument roles: infer force separately from whether an action is supplied; pragmatic mode is for a reconstructed action.",
+      "resolution": "With the current expose predicate, use literal and retain the inferred negative recommendation. Alternatively explicitly choose the reconstructed deferral predicate and explain its inferred role. This changes representation, not the bounded sequencing concern."
+    },
+    {
+      "finding_id": "A012",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "description": "R15 records the technical response to additional-output work as recognition targeting this_proposition with object_id null, even though the proposition and uncertainty notes say the required separate workflow identity is unknown. The same annotation correctly avoids assigning #7819 or #8182 to that work. The response correspondence is supportable, but its event target conflicts with the assigned unknown-object convention.",
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 179,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Recognition/disposition identity: null distinguishes unknown/inapplicable objects; an unknown required object also makes the target unresolved.",
+      "resolution": "Retain the textual response and its contextual basis, but use unresolved event target and explain unknown workflow identity. The event remains other, not expectation recognition; do not change the none recognition profile to interpersonal."
+    },
+    {
+      "finding_id": "A013",
+      "episode_id": "F03",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "description": "R13, R15 and R16 retain a same-actor restatement of the author's review-now strategy as maintained commitment, but summarize recognition as none. The guide says same-actor events alone give same_actor_only, alongside an expectation-qualified interpersonal threshold and an ordinary-assent-none rule. It does not expressly resolve whether a same-actor response restating a nondeontic personal strategy must use same_actor_only or remains none because no institutional expectation is recognized.",
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Recognition: distinguish maintained personal commitment from interpersonal recognition; same-actor events alone give same_actor_only, ordinary assent alone gives none.",
+      "resolution": "Prefer same_actor_only to expose the already recorded maintained-commitment evidence, while stating that no expectation or interpersonal recognition is established. Clarify prospectively whether the same-actor category requires an expectation-recognition event; do not reclassify this as interpersonal support."
+    },
+    {
+      "finding_id": "A014",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "description": "R13 and R15 retain unresolved application of the complete checkbox proposition despite a supplied checkbox artifact; R16 uses none while still describing that artifact in its outcome. The full proposition includes placement and other qualifications that the clipped patch cannot independently verify. The annotations consistently distinguish an unmerged proposed artifact from integrated application, so this does not establish a missing implementation claim.",
+      "affected": [
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[2]"
+          ]
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U01"
+          ],
+          "relation_ids": [],
+          "summary_paths": [
+            "episode_summary.observed_outcomes[1]"
+          ]
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 87,
+            "end": 136,
+            "quote": "+      <widget class=\"QCheckBox\" name=\"optInRBF\">"
+          }
+        },
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 168,
+            "end": 214,
+            "quote": "+        <string>Allow Replace-By-Fee</string>"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 68,
+            "end": 85,
+            "quote": "\"state\": \"closed\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Application and challenge: observed application requires relevant act or artifact with provision connected; assessments concern the focal proposition and do not equate a retained patch with integration.",
+      "resolution": "Preserve the narrower observed checkbox artifact and the unresolved full-placement/application question. A future convention could specify partial observed artifact support; no stronger full-proposition implementation conclusion is justified here."
+    },
+    {
+      "finding_id": "A015",
+      "episode_id": "F03",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "description": "Needs rebase receives norm_candidate in R07, R18 and R16, and undetermined in R02, R13 and R15. All preserve a technical-status alternative, omitted actor, absence of attributed authority, and lack of observed rebase or sanction. The terse source does not distinguish a contribution-accountability expectation from a technical maintenance diagnosis.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U26"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U22"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U25"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Force and institutional classification: norm_candidate requires socially expected conduct or accountability, but need not already be shared; technical necessity does not itself establish institutional obligation.",
+      "resolution": "Retain norm-versus-undetermined as a genuine source/criterion boundary. Do not require repetition or project-wide adoption to permit norm_candidate, and do not treat the bare need as proof of an authorized merge gate."
+    },
+    {
+      "finding_id": "A016",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "description": "The adaptive-fee suggestion is strategy_candidate in R15 because it explicitly articulates a technical method, while the other annotations emphasize the one-off tentative request to have that option and select undetermined. They preserve N replacements, future locktimes, multiplicatively higher fees, the fee-by-block display, and qualified assent. The difference concerns focal analytical layer, not evidence of commitment, authority or adoption.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Institutional classification and analytical layers: strategy_candidate can describe an articulated method; a one-off technical suggestion without such commitment normally remains undetermined; do not silently substitute embedded and focal layers.",
+      "resolution": "Preserve both bounded readings, identifying the explicit algorithm versus the proposed UI edit. Do not infer a personal implementation promise or an adopted strategy from either candidate classification."
+    },
+    {
+      "finding_id": "A017",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "description": "The child-transaction contingency is strategy_candidate in R15/R16 and undetermined in R02/R07/R18/R13. All retain its technical character and the condition that the child is for use if the original confirms, not that it is created only after confirmation. Treating the articulated method as a candidate versus treating technical necessity as insufficient institutional typing remains defensible.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U20"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U16"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 179,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 139,
+            "end": 176,
+            "quote": "for use in case the original confirms"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Force/type and boundaries: an articulated method may be a strategy candidate; engineering necessity and workload consequences do not establish institutional obligation or enforcement.",
+      "resolution": "Retain the method/technical-context alternatives. Do not turn need or must compute into an institutional duty, or exponential version growth into an O sanction."
+    },
+    {
+      "finding_id": "A018",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "description": "R07 relations[6] links the fee-only focus question to the adaptive-fee suggestion as clarifies; other annotations chiefly connect it to the author's preceding additional-output attempt. The immediate contrast is with additional outputs, but the same comment quotes the adaptive-fee proposal and calls it a possible solution. Either contextual link can represent part of the design discussion if it does not claim that the already fee-centered algorithm was formally narrowed or adopted.",
+      "affected": [
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U15",
+            "F03-U08"
+          ],
+          "relation_ids": [
+            "relations[6]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Relations: clarifier points to clarified; contextual links must be supported by wording and not mistaken for explicit decision or causal evidence.",
+      "resolution": "Retain the contextual relation with its limited sense, or prefer the nearer additional-output endpoint for the scope contrast. The source does not establish an accepted fee-only decision."
+    },
+    {
+      "finding_id": "A019",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "description": "R07 and R15 attach the exposure objection to the offered checkbox proposition as a dispute; R13 and R16 classify it as a broader-proposal premise challenge and leave the focal dispute flag false. R02/R18 retain the body description as context. The apparent discrepancy follows whether the focal proposition is an offered feature/exposure route or a descriptive artifact claim. All preserve the absence of GUI replacement and the distinction between reviewing and exposing.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U01",
+            "U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U01",
+            "U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U01",
+            "F03-U04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Candidate boundaries/dispute and guide_1 challenge scope: compare the same focal proposition and object; a challenge to a proposal premise need not deny an artifact description.",
+      "resolution": "Keep the layer distinction visible rather than scoring the Boolean in isolation. None of these analyses supports treating assent to exposure concerns as a rejection of review or proof that the checkbox did not exist."
+    },
+    {
+      "finding_id": "A020",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "description": "R15 extracts the two explicit ongoing replacement-GUI work reports as personal strategy candidates; other annotations retain them as progress context or attached qualifications. The attributable work and larger-task qualification are preserved across the case. The source does not establish a separate canonical implementation proposal, success, or future commitment merely from working-on wording.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U02",
+            "U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U02",
+            "U13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U12"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U02",
+            "F03-U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Records and institutional classification: retain relevant context and attributable plans/methods, without turning all reports into independent institutional propositions.",
+      "resolution": "Preserve candidate/context alternatives. Do not use a larger count of work-report candidates as more institutional evidence; do not silently identify this workflow with #8182."
+    }
+  ],
+  "coverage": [
+    {
+      "annotation_id": "R02",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23",
+        "F03-U24",
+        "F03-U25",
+        "F03-U26",
+        "F03-U27"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23",
+        "F03-U24",
+        "F03-U25",
+        "F03-U26",
+        "F03-U27"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[2]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    },
+    {
+      "annotation_id": "R07",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]",
+        "relations[10]",
+        "relations[11]",
+        "relations[12]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[2]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    },
+    {
+      "annotation_id": "R13",
+      "checked_unit_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U20",
+        "U21",
+        "U22",
+        "U23",
+        "U24",
+        "U25"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U21",
+        "U22",
+        "U24",
+        "U25"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]",
+        "relations[10]",
+        "relations[11]",
+        "relations[12]",
+        "relations[13]",
+        "relations[14]",
+        "relations[15]",
+        "relations[16]",
+        "relations[17]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[1]",
+        "episode_summary.observed_outcomes[0].claim_parts[2]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[1].claim_parts[0]",
+        "episode_summary.observed_outcomes[1].claim_parts[1]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[0].claim_parts[0]",
+        "episode_summary.mechanisms[0].claim_parts[1]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[1].claim_parts[0]",
+        "episode_summary.mechanisms[1].claim_parts[1]",
+        "episode_summary.mechanisms[1].claim_parts[2]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    },
+    {
+      "annotation_id": "R15",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U13",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23",
+        "F03-U24",
+        "F03-U25",
+        "F03-U26"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U09",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U18",
+        "F03-U19",
+        "F03-U20",
+        "F03-U21",
+        "F03-U22",
+        "F03-U23",
+        "F03-U24",
+        "F03-U25",
+        "F03-U26"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]",
+        "relations[10]",
+        "relations[11]",
+        "relations[12]",
+        "relations[13]",
+        "relations[14]",
+        "relations[15]",
+        "relations[16]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[1]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[1].claim_parts[0]",
+        "episode_summary.observed_outcomes[1].claim_parts[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[2].claim_parts[0]",
+        "episode_summary.observed_outcomes[2].claim_parts[1]",
+        "episode_summary.observed_outcomes[2].claim_parts[2]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[0].claim_parts[0]",
+        "episode_summary.mechanisms[0].claim_parts[1]",
+        "episode_summary.mechanisms[0].claim_parts[2]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[1].claim_parts[0]",
+        "episode_summary.mechanisms[1].claim_parts[1]",
+        "episode_summary.mechanisms[1].claim_parts[2]",
+        "episode_summary.mechanisms[1].claim_parts[3]",
+        "episode_summary.mechanisms[2]",
+        "episode_summary.mechanisms[2].claim_parts[0]",
+        "episode_summary.mechanisms[2].claim_parts[1]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    },
+    {
+      "annotation_id": "R16",
+      "checked_unit_ids": [
+        "F03-U01",
+        "F03-C01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-K01",
+        "F03-U05",
+        "F03-U06",
+        "F03-C02",
+        "F03-U07",
+        "F03-U08",
+        "F03-Q01",
+        "F03-C03",
+        "F03-U09",
+        "F03-C04",
+        "F03-Q02",
+        "F03-C05",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-C06",
+        "F03-U13",
+        "F03-C07",
+        "F03-U14",
+        "F03-U15",
+        "F03-U16",
+        "F03-U17",
+        "F03-C08"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "F03-C01",
+        "F03-U02",
+        "F03-U03",
+        "F03-U04",
+        "F03-K01",
+        "F03-U05",
+        "F03-U06",
+        "F03-C02",
+        "F03-U07",
+        "F03-U08",
+        "F03-Q01",
+        "F03-C03",
+        "F03-C04",
+        "F03-Q02",
+        "F03-C05",
+        "F03-U10",
+        "F03-U11",
+        "F03-U12",
+        "F03-C06",
+        "F03-C07",
+        "F03-U14",
+        "F03-U15",
+        "F03-U17",
+        "F03-C08"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]",
+        "relations[10]",
+        "relations[11]",
+        "relations[12]",
+        "relations[13]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[0]",
+        "episode_summary.observed_outcomes[0].claim_parts[1]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[1].claim_parts[0]",
+        "episode_summary.observed_outcomes[1].claim_parts[1]",
+        "episode_summary.observed_outcomes[1].claim_parts[2]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[2].claim_parts[0]",
+        "episode_summary.observed_outcomes[2].claim_parts[1]",
+        "episode_summary.observed_outcomes[2].claim_parts[2]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[0].claim_parts[0]",
+        "episode_summary.mechanisms[0].claim_parts[1]",
+        "episode_summary.mechanisms[0].claim_parts[2]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[1].claim_parts[0]",
+        "episode_summary.mechanisms[1].claim_parts[1]",
+        "episode_summary.mechanisms[1].claim_parts[2]",
+        "episode_summary.mechanisms[2]",
+        "episode_summary.mechanisms[2].claim_parts[0]",
+        "episode_summary.mechanisms[2].claim_parts[1]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    },
+    {
+      "annotation_id": "R18",
+      "checked_unit_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U20",
+        "U21",
+        "U22",
+        "U23",
+        "U24",
+        "U25",
+        "U26"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr7819:body",
+        "pr7819:comments:0",
+        "pr7819:comments:1",
+        "pr7819:comments:2",
+        "pr7819:comments:3",
+        "pr7819:comments:4",
+        "pr7819:comments:5",
+        "pr7819:comments:6",
+        "pr7819:comments:7",
+        "pr7819:comments:8",
+        "pr7819:metadata",
+        "pr7819:supplement_metadata",
+        "pr8182:supplement_metadata",
+        "pr7819:patch:0",
+        "pr7819:patch:1",
+        "pr7819:patch:2",
+        "pr7819:patch:3",
+        "pr7819:patch:4",
+        "pr7819:patch:5"
+      ],
+      "no_error_identified_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U20",
+        "U21",
+        "U22",
+        "U23",
+        "U24",
+        "U25",
+        "U26"
+      ],
+      "limits": [
+        "Revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because the assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing edit histories, reply threading, screenshots, successor patch and exact separate workflow identity prevent stronger historical/implementation claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]",
+        "relations[8]",
+        "relations[9]",
+        "relations[10]",
+        "relations[11]",
+        "relations[12]",
+        "relations[13]",
+        "relations[14]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]",
+        "episode_summary.mechanisms[2]"
+      ],
+      "checked_fields": "Every retained unit field and attached qualifier; recognition, disposition, authority, documentary, application and challenge records; every relation and source-screening reason; all outcome/mechanism clauses, nested claim_parts, missing-evidence and unresolved-question lists. All 19 source entries read in full.",
+      "no_error_note": "Units involved only in defensible alternatives or criterion ambiguities remain in no_error_identified_ids; no confirmed error was found under the assigned guide."
+    }
+  ],
+  "case_status": "complete",
+  "checked_claims_with_no_identified_error": [
+    "Both #7819 and the distinct #8182 are correctly bounded as closed and unmerged in all outcome claims. The non-null merge_commit_sha is not treated as integration.",
+    "No source supports a rebase sanction, maintainer authority, mandatory release gate, project-wide naming rule, repository integration, release inclusion or network adoption; no annotation asserts these.",
+    "All proposed design details are retained across focal records or attached/linked qualifications, including future locktimes, fee schedule, child-use contingency, timeout and literal ambiguous initially set wording.",
+    "The conditional spelling fallback and truncated replaceab... fragment survive all representations. Contextual linkage to prior naming suggestions is qualified, not treated as authenticated real-name mapping.",
+    "Tentative assent to the adaptive-fee option and quoted agreement on exposure are not promoted to institutional expectation recognition.",
+    "All supported-sequence mechanisms preserve timing and alternatives, including the fee-only question preceding the complexity explanation; no technical reason is claimed to have caused the unmerged outcome.",
+    "The self-questioning of additional-output scope in R18 is explicitly distinguished from denying the historical work report or proving interpersonal rejection; other annotations preserve it as an alternative/narrowing.",
+    "No material omitted focal prescription identified. Coupled versus split red/bang edits and coupled versus linked delayed-send/abort design are meaning-preserving with source-backed relations."
+  ],
+  "new_criterion_candidates": [
+    "Clarify actor-role transfer across a changed predicate in guide_2.",
+    "Clarify whether maintained same-actor commitment without a separately recognized expectation uses same_actor_only.",
+    "Clarify partial observed artifact support independently of integrated full-proposition application.",
+    "Clarify technical-method versus one-off suggested feature and maintenance-necessity versus accountability boundaries without requiring project-wide adoption."
+  ],
+  "source_anchor_check": {
+    "anchors_checked": 226,
+    "mismatches": 0
+  }
+}

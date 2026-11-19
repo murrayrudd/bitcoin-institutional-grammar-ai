@@ -1,0 +1,1294 @@
+{
+  "groups": [
+    {
+      "group_id": "G_32359_115_arena",
+      "source_id": "32359-115",
+      "meaning": "This pull request is a code-review forum, not a per-username voting forum.",
+      "units": {
+        "A": [
+          "A115_forum"
+        ],
+        "B": [
+          "B-115-remit"
+        ],
+        "C": [
+          "C115_arena"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All three retain the same positive remit and explicit exclusion. B omits the introductory reminder without changing the focal claim or its scope."
+    },
+    {
+      "group_id": "G_32359_115_merit",
+      "source_id": "32359-115",
+      "meaning": "Reviews are weighted by the merit of their arguments rather than their posting frequency.",
+      "units": {
+        "A": [
+          "A115_merit"
+        ],
+        "B": [
+          "B-115-merit"
+        ],
+        "C": [
+          "C115_weight"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The source sentence, review target, merit criterion, and excluded frequency criterion coincide."
+    },
+    {
+      "group_id": "G_32359_115_repeat",
+      "source_id": "32359-115",
+      "meaning": "A participant need not repost a point already made here or on #28130.",
+      "units": {
+        "A": [
+          "A115_repeat"
+        ],
+        "B": [
+          "B-115-repeat"
+        ],
+        "C": [
+          "C115_no_again"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same actor, negated need, repeated-posting action, and two-location prior-posting condition survive; A also retains the introductory reassurance."
+    },
+    {
+      "group_id": "G_32359_115_spam",
+      "source_id": "32359-115",
+      "meaning": "Leaving unsubstantiated or repeated ACKs/NACKs is discouraged on the stated ground that it only spams subscribers.",
+      "units": {
+        "A": [
+          "A115_spam"
+        ],
+        "B": [
+          "B-115-spam"
+        ],
+        "C": [
+          "C115_unsubstantiated"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All target the same negative evaluation of the same posting behavior. A/B encode avoidance in the action and C supplies an inferred negative modal; this is a representation difference to compare later, not a different focal proposition."
+    },
+    {
+      "group_id": "G_33453_068_usecase",
+      "source_id": "33453-068",
+      "meaning": "Expressing disgust is rejected as a reasonable use case for Bitcoin Core.",
+      "units": {
+        "A": [
+          "A068_reasonable"
+        ],
+        "B": [
+          "B-068-usecase"
+        ],
+        "C": [
+          "C453_usecase"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "A reconstructs negative admissibility advice from the assertion and following rhetorical question; B/C parse the assertion as a definition. The focal rejection of expressing disgust as a reasonable use case is shared. A's inferred actor and directive reading remain reviewable differences; its wider span does not independently encode a request to justify."
+    },
+    {
+      "group_id": "G_33453_068_justify",
+      "source_id": "33453-068",
+      "meaning": "The interlocutor is asked to justify why Bitcoin Core should cater toward what the speaker calls emotional outbursts.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-068-why"
+        ],
+        "C": []
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only B extracts a justification request from the question. A uses the question to support the use-case rejection, while C extracts only that rejection. A shared topic and adjacent sentence do not make the request for an explanation identical to the rejected use-case classification."
+    },
+    {
+      "group_id": "G_32406_178_definition",
+      "source_id": "32406-178",
+      "meaning": "Deprecated is proposed to mean only that developers recommend not using the feature.",
+      "units": {
+        "A": [
+          "A178_definition"
+        ],
+        "B": [
+          "B-178-definition"
+        ],
+        "C": [
+          "C178_definition"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All three focal units define the term using the same quoted developer recommendation. This definition layer is kept separate from C's independently extracted embedded nonuse expectation."
+    },
+    {
+      "group_id": "G_32406_178_nonuse",
+      "source_id": "32406-178",
+      "meaning": "Within the proposed definition, developers recommend that users not use the feature.",
+      "units": {
+        "A": [],
+        "B": [],
+        "C": [
+          "C178_nonuse"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only C makes the embedded user-conduct expectation its own focal statement. A/B preserve it as the property of the definition, which is already aligned separately; their definition IDs cannot also serve as a second same-layer match."
+    },
+    {
+      "group_id": "G_32406_178_gets",
+      "source_id": "32406-178",
+      "meaning": "Consult the linked C gets() example in the discussion of deprecation without prompt removal.",
+      "units": {
+        "A": [
+          "A178_see"
+        ],
+        "B": [
+          "B-178-see"
+        ],
+        "C": [
+          "C178_see_gets"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The navigation action and exact gets() target coincide. A/B include historical details and a glibc link in the object or its property, whereas C stops after the C example. Those details explain the example rather than qualifying who must consult it or changing the referent; no independent glibc navigation action is encoded. The narrower evidentiary detail in C is retained as a limitation, not erased."
+    },
+    {
+      "group_id": "G_32406_178_lower",
+      "source_id": "32406-178",
+      "meaning": "The reported recommendation is not to set the option below the default value.",
+      "units": {
+        "A": [
+          "A178_low"
+        ],
+        "B": [
+          "B-178-advice"
+        ],
+        "C": [
+          "C178_lower"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All preserve the same setting, negative advice, and below-default constraint. The full spans retain that this is the speaker's account of what the vast majority of contributing developers would recommend. A makes option users explicit by inference; B reconstructs refraining, and C retains setting with recommend not."
+    },
+    {
+      "group_id": "G_32406_178_mark",
+      "source_id": "32406-178",
+      "meaning": "Marking the option deprecated is considered reasonable even if a few developers strongly disagree.",
+      "units": {
+        "A": [
+          "A178_mark"
+        ],
+        "B": [
+          "B-178-mark"
+        ],
+        "C": [
+          "C178_mark"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The marking action, option referent, deprecated designation, and disagreement qualification are preserved. C omits the initial connective; literal versus pragmatic interpretation does not create a different focal marking proposal."
+    },
+    {
+      "group_id": "G_32406_178_tradeoff",
+      "source_id": "32406-178",
+      "meaning": "Whether or when to remove rather than merely deprecate the option depends on user appreciation, support effort, and perhaps harmful network effects.",
+      "units": {
+        "A": [
+          "A178_tradeoff"
+        ],
+        "B": [
+          "B-178-tradeoff"
+        ],
+        "C": [
+          "C178_tradeoff"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "Decide, weigh, and assess reconstruct the same decision relation. B puts the decision occasion in Cac and the criteria in Bdir, while A/C put the decision question in Bdir and criteria in Cex. All retain whether/when, removal versus deprecation, and the tentative third criterion; alignment does not endorse any particular role assignment."
+    },
+    {
+      "group_id": "G_32406_178_retain",
+      "source_id": "32406-178",
+      "meaning": "Retain the option given current user demand and very low maintenance effort.",
+      "units": {
+        "A": [
+          "A178_keep"
+        ],
+        "B": [
+          "B-178-retain"
+        ],
+        "C": [
+          "C178_retain"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All focal spans include both stated grounds and the same retention judgment. B does not separately componentize those grounds, but they remain in its retained statement; no qualification must be invented or dropped to recognize the match."
+    },
+    {
+      "group_id": "G_32406_178_patch",
+      "source_id": "32406-178",
+      "meaning": "If the option is removed from Core and users actually want it, they can patch it back in.",
+      "units": {
+        "A": [
+          "A178_patch_back"
+        ],
+        "B": [
+          "B-178-patch"
+        ],
+        "C": [
+          "C178_patch"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The patch-back alternative, user actor, and both removal and user-demand conditions are preserved through the components even where the unit starts later. Lexical can and explicit-versus-inferred role differences remain for later comparison."
+    },
+    {
+      "group_id": "G_32406_178_derivative",
+      "source_id": "32406-178",
+      "meaning": "If the option is removed from Core and users actually want it, they can use a derivative that restores it for them.",
+      "units": {
+        "A": [
+          "A178_derivative"
+        ],
+        "B": [
+          "B-178-derivative"
+        ],
+        "C": [
+          "C178_derivative"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The derivative alternative and its shared actor and conditions coincide. It is not merged with patching: each coder supplies a distinct derivative statement, and the source presents alternatives rather than a requirement to do both."
+    },
+    {
+      "group_id": "G_32406_148_assert",
+      "source_id": "32406-148",
+      "meaning": "Add an assertion like the specified assert_greater_than test unless the property is already tested another way.",
+      "units": {
+        "A": [
+          "A148_assert"
+        ],
+        "B": [
+          "B-148-assert"
+        ],
+        "C": [
+          "C148_assert"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The complete assertion target and exception coincide. A retains the intervening rationale and exception in a wider span; B/C keep smaller action spans and attach the exception nonlocally. A does not independently encode the avoid-untested-docstring action extracted by B."
+    },
+    {
+      "group_id": "G_32406_148_docnorm",
+      "source_id": "32406-148",
+      "meaning": "Avoid adding a docstring whose content is not actually enforced in tests.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-148-docnorm"
+        ],
+        "C": []
+      },
+      "alignment_type": "unpaired",
+      "rationale": "B reconstructs an independent recommendation from the confusing-and-fragile evaluation. A includes that sentence as surrounding rationale in its test-addition span, and C does not supply a focal counterpart. The test-addition request and documentation advice are not the same action."
+    },
+    {
+      "group_id": "G_32406_148_nodoc",
+      "source_id": "32406-148",
+      "meaning": "If the property should not be tested, it probably should not be documented either.",
+      "units": {
+        "A": [
+          "A148_document"
+        ],
+        "B": [
+          "B-148-nodoc"
+        ],
+        "C": [
+          "C148_doc"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All preserve the conditional negative documentation advice, including probably. C adds a contextual referent for it; none changes the focal action into the separate test-addition request."
+    },
+    {
+      "group_id": "G_32406_165_see",
+      "source_id": "32406-165",
+      "meaning": "Consult DrahtBot issue 51 for the known bot-updating issue.",
+      "units": {
+        "A": [
+          "A165_see"
+        ],
+        "B": [
+          "B-165-see"
+        ],
+        "C": [
+          "C165_see"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The see action and full issue URL are identical; the report of a fix is outside this focal navigation action."
+    },
+    {
+      "group_id": "G_32359_227_proactive",
+      "source_id": "32359-227",
+      "meaning": "One attributed camp says to remain proactive toward spam filtration despite lacking a completely effective solution.",
+      "units": {
+        "A": [
+          "A227_proactive"
+        ],
+        "B": [
+          "B-227-filter"
+        ],
+        "C": [
+          "C227_proactive"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the actor we, proactive filtration, and the lack-of-perfect-effectiveness concession. B includes the camp-attribution introduction; the same attribution remains recoverable from the immediate quoted context for A/C, without treating the quote as an independently established policy."
+    },
+    {
+      "group_id": "G_32359_227_capitulate_remove",
+      "source_id": "32359-227",
+      "meaning": "The quoted second camp links the absence of a technically perfect solution to capitulating to spammers and removing all efforts to slow or reduce spam; the retained mappings overlap but do not establish full equivalence.",
+      "units": {
+        "A": [
+          "A227_capitulate"
+        ],
+        "B": [
+          "B-227-capitulate",
+          "B-227-remove"
+        ],
+        "C": [
+          "C227_capitulate",
+          "C227_remove"
+        ]
+      },
+      "alignment_type": "unresolved",
+      "rationale": "A combines the two actions, while B/C split them and preserve the absence-of-a-technically-perfect-solution premise nonlocally or within the first span. A retains both actions and objects but has neither that premise in its unit span nor a component carrying it. B treats the premise as activation and C as attributed reasoning. A two-action split correspondence is clear, but declaring split_combined equivalence would silently restore a potentially material qualification to A and adjudicate its role. The knot is therefore retained unresolved, with all five units assigned only here."
+    },
+    {
+      "group_id": "G_32359_227_majority",
+      "source_id": "32359-227",
+      "meaning": "Only the majority decides the debate's winner; argument does not decide it.",
+      "units": {
+        "A": [
+          "A227_majority"
+        ],
+        "B": [
+          "B-227-majority"
+        ],
+        "C": [
+          "C227_majority"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The exclusive majority allocation and excluded argument route survive in every representation. B has a narrower sentence span but a component carrying the preceding not-by-argument claim. Constitutive versus actor-action decompositions do not prevent matching this same allocation claim."
+    },
+    {
+      "group_id": "G_32406_149_followups",
+      "source_id": "32406-149",
+      "meaning": "Smaller code changes can be left to followups in this PR, with the stated review-tracking difficulty as the reason.",
+      "units": {
+        "A": [
+          "A149_followups"
+        ],
+        "B": [
+          "B-149-followup"
+        ],
+        "C": [
+          "C149_followups"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same small-change action and followup destination are retained. The full sentence preserves the case-specific rationale for every coder even where it is not separately componentized; destination role differences do not alter the referent."
+    },
+    {
+      "group_id": "G_32406_149_default",
+      "source_id": "32406-149",
+      "meaning": "After this PR, maintaining the downstream alternative is described as a matter of changing the default.",
+      "units": {
+        "A": [],
+        "B": [],
+        "C": [
+          "C149_change_default"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only C extracts this technical-method statement as focal. The limited-catering/remit statement concerns Core's general accommodation of forks and is not an equivalent prescription to change a default."
+    },
+    {
+      "group_id": "G_32406_149_revert",
+      "source_id": "32406-149",
+      "meaning": "After the deprecated option is actually dropped, the downstream alternative is described as a matter of reverting that commit.",
+      "units": {
+        "A": [],
+        "B": [],
+        "C": [
+          "C149_revert"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only C supplies a focal statement for this second conditional maintenance method. It remains distinct from changing the default after the current PR and from the general fork-accommodation claim."
+    },
+    {
+      "group_id": "G_32406_149_remit",
+      "source_id": "32406-149",
+      "meaning": "Bitcoin Core generally provides very limited accommodation to forks, including altcoins, modified implementations, and experimental features.",
+      "units": {
+        "A": [
+          "A149_remit"
+        ],
+        "B": [
+          "B-149-remit"
+        ],
+        "C": [
+          "C149_remit"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the same entity, limited accommodation, enumerated scope, and full sentence. B/C do not separately componentize In general, but it remains explicit in their spans."
+    },
+    {
+      "group_id": "G_32406_149_convince",
+      "source_id": "32406-149",
+      "meaning": "Including fork accommodations of the cited CLIENT_NAME/SKIP_BRANCH_PUSH kinds requires some convincing.",
+      "units": {
+        "A": [
+          "A149_convince"
+        ],
+        "B": [
+          "B-149-convince"
+        ],
+        "C": [
+          "C149_convincing"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "A models inclusion conditional on convincing; B models providing a convincing case for inclusion; C models justifying inclusion. The same required persuasion/inclusion relation and contextual accommodation referents survive. These are alternative parses of one burden-of-justification claim, not matches based only on the fork topic."
+    },
+    {
+      "group_id": "G_32406_149_preference",
+      "source_id": "32406-149",
+      "meaning": "The quoted speaker expresses a slight preference for the closed proposal that removes the option completely.",
+      "units": {
+        "A": [
+          "A149_external_preference"
+        ],
+        "B": [
+          "B-149-externalpref"
+        ],
+        "C": [
+          "C149_external_preference"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "B retains the literal attributed preference, while A/C reconstruct choosing or pursuing that same proposal. All retain the same quoted sentence and weak preference. Differences in directive inference and actor roles remain available for comparison; this quote is not merged with the current speaker's decision to stay with the present PR."
+    },
+    {
+      "group_id": "G_32406_149_stay",
+      "source_id": "32406-149",
+      "meaning": "At this point the speaker prefers not to switch back, because this PR has received more review and subsequent improvements.",
+      "units": {
+        "A": [
+          "A149_stay"
+        ],
+        "B": [
+          "B-149-stay"
+        ],
+        "C": [
+          "C149_no_switch"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "Every span retains the present-stage limitation, greater review/improvement grounds, and negative switch-back preference. C begins after conceptual assent, which is not needed to preserve the focal decision. Different placements of negation and grounds do not change which choice is being expressed."
+    },
+    {
+      "group_id": "G_32359_066_see",
+      "source_id": "32359-066",
+      "meaning": "Consult Bitcoin Core PRs 28052 and 28207 in support of the disk-obfuscation explanation.",
+      "units": {
+        "A": [
+          "A066_see"
+        ],
+        "B": [
+          "B-066-see"
+        ],
+        "C": [
+          "C066_see"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The navigation action and both complete target URLs coincide; all coders treat the two references as one focal referral."
+    },
+    {
+      "group_id": "G_32714_body_replace",
+      "source_id": "32714-body",
+      "meaning": "Replace the deprecated designation for -datacarrier and -datacarriersize with wording that these options are not recommended for use.",
+      "units": {
+        "A": [
+          "A714_wording"
+        ],
+        "B": [
+          "B-32714-replace"
+        ],
+        "C": [
+          "C714_replace"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All three encode the immediate wording action with both option names and the instead/only restriction. The embedded recommendation governing option use is a separate analytical layer, not an additional counterpart for these edit IDs."
+    },
+    {
+      "group_id": "G_32714_body_nonuse",
+      "source_id": "32714-body",
+      "meaning": "The proposed replacement wording recommends against use of these options.",
+      "units": {
+        "A": [],
+        "B": [],
+        "C": [
+          "C714_nonuse"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only C extracts the embedded user-conduct expectation as its own focal unit. A/B preserve its words as the content to say, already aligned at the editorial layer. Matching their edit units here would silently substitute layers and reuse IDs."
+    },
+    {
+      "group_id": "G_32714_body_definition",
+      "source_id": "32714-body",
+      "meaning": "Deprecation means that the options are not recommended for use.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-32714-definition"
+        ],
+        "C": [
+          "C714_definition"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "B and C share the definitional claim; C additionally retains While. A has no independently extracted definition at this occurrence. The separate edit and nonuse layers are not substituted for this missing counterpart."
+    },
+    {
+      "group_id": "G_32714_body_delay",
+      "source_id": "32714-body",
+      "meaning": "Do not open a proposal to remove these options for a few more years.",
+      "units": {
+        "A": [
+          "A714_delay"
+        ],
+        "B": [
+          "B-32714-delay"
+        ],
+        "C": [
+          "C714_delay"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All reconstruct or retain the same negative prudential advice about opening a removal PR and the same delay. Differences between defer opening and open with an inferred negative recommendation preserve the action, target, and temporal scope."
+    },
+    {
+      "group_id": "G_32714_body_discuss_warning",
+      "source_id": "32714-body",
+      "meaning": "Discuss whether initialization should warn when these options are set.",
+      "units": {
+        "A": [],
+        "B": [],
+        "C": [
+          "C714_warn_discussion"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only C reconstructs a discussion invitation from could be bikeshed. Its focal action is discussion of the question; it is not the following conditional advice against removal warnings and is not an affirmative warning requirement."
+    },
+    {
+      "group_id": "G_32714_body_no_warning",
+      "source_id": "32714-body",
+      "meaning": "There should not be removal warnings if there is no current plan actually to remove the options.",
+      "units": {
+        "A": [
+          "A714_no_warning"
+        ],
+        "B": [
+          "B-32714-nowarning"
+        ],
+        "C": [
+          "C714_warning"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same negative warning advice, actor we, and no-current-removal-plan condition are retained verbatim."
+    },
+    {
+      "group_id": "G_33224_000_details",
+      "source_id": "33224-000",
+      "meaning": "Consult the specific corecheck.dev page for details on this PR's coverage and benchmarks.",
+      "units": {
+        "A": [
+          "A000_details"
+        ],
+        "B": [
+          "B-000-details"
+        ],
+        "C": [
+          "C224_coverage"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The see action, complete case-specific target, and stated informational purpose are identical."
+    },
+    {
+      "group_id": "G_33224_000_guideline",
+      "source_id": "33224-000",
+      "meaning": "Consult the linked contribution guideline for information on the review process.",
+      "units": {
+        "A": [
+          "A000_guideline"
+        ],
+        "B": [
+          "B-000-guideline"
+        ],
+        "C": [
+          "C224_guide"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the same link and informational purpose. This is the focal navigation request, not any unseen substantive content of the guideline."
+    },
+    {
+      "group_id": "G_33224_000_react",
+      "source_id": "33224-000",
+      "meaning": "If a review is incorrectly listed, react to this comment with a thumbs-down.",
+      "units": {
+        "A": [
+          "A000_react"
+        ],
+        "B": [
+          "B-000-react"
+        ],
+        "C": [
+          "C224_react"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The condition, comment target, and emoji reaction match. A/C infer the affected reviewer as actor and B leaves the imperative actor uncomponentized; the same addressee is recoverable from the retained second-person condition."
+    },
+    {
+      "group_id": "G_33224_000_ignore",
+      "source_id": "33224-000",
+      "meaning": "Following the requested correction reaction, the bot will ignore it on the next update, with the pronoun's referent left open.",
+      "units": {
+        "A": [
+          "A000_ignore"
+        ],
+        "B": [
+          "B-000-ignore"
+        ],
+        "C": [
+          "C224_ignore"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain bot, ignore, it, next update, and the reaction/incorrect-listing trigger through components. C explicitly preserves uncertainty between the likely review referent and the nearby comment; A/B leave it unexpanded. The match does not resolve that referential ambiguity or assert observed bot execution."
+    },
+    {
+      "group_id": "G_32381_012_knob",
+      "source_id": "32381-012",
+      "meaning": "A conditional suggestion to adjust the setting to the contemplated value plus a buffer is followed by a 150-bytes-or-beyond question; coverage of the numerical qualification differs.",
+      "units": {
+        "A": [
+          "A012_knob"
+        ],
+        "B": [
+          "B-012-knob",
+          "B-012-150"
+        ],
+        "C": [
+          "C012_knob"
+        ]
+      },
+      "alignment_type": "unresolved",
+      "rationale": "A retains both sentences and encodes the numerical question in the execution constraint. B splits the conditional setting proposal from an inferred choice of a setting yielding at least 150 bytes. C retains only the conditional setting proposal and has no numerical component or unit. Matching only the shared first sentence would drop a material part of A; treating all units as split_combined would impute the number to C and the first sentence's condition to B's independent second request. The packet context explains the numerical topic but cannot supply a missing focal representation. All four IDs are held in one unresolved overlap knot."
+    },
+    {
+      "group_id": "G_32381_012_no_args",
+      "source_id": "32381-012",
+      "meaning": "Do not add more arguments to the node.",
+      "units": {
+        "A": [
+          "A012_args"
+        ],
+        "B": [
+          "B-012-noargs"
+        ],
+        "C": [
+          "C012_no_args"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All derive the same negative advice from the evaluative sentence. A assigns the named addressee as actor, B/C leave the governed actor unspecified, and C omits the prefatory address; the action, object, and node scope coincide. Actor-role inference remains a later review issue."
+    },
+    {
+      "group_id": "G_32359_213_why",
+      "source_id": "32359-213",
+      "meaning": "Explain why the ability to configure the setting is being removed altogether.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-213-why"
+        ],
+        "C": []
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only B extracts an explanation request from the quoted question. The later configuration claim concerns the requested capability rather than the separate act of explaining its removal."
+    },
+    {
+      "group_id": "G_32359_213_configure",
+      "source_id": "32359-213",
+      "meaning": "The quoted node runner claims they should be allowed to configure their mempool and not have it filled with what they consider spam.",
+      "units": {
+        "A": [
+          "A213_configure"
+        ],
+        "B": [
+          "B-213-configure",
+          "B-213-nospam"
+        ],
+        "C": [
+          "C213_configure"
+        ]
+      },
+      "alignment_type": "split_combined",
+      "rationale": "A/C retain the whole coordinated sentence, encoding configure as the action and the not-have-it-filled clause as an execution constraint. B splits those two clauses and explicitly carries the same node-runner actor and should-be-allowed modal into the second unit. Together the B children preserve the full actor, configuration target, negative content qualification, and subjective what-I-consider-spam scope present in A/C. No independent explanatory request or new actor is added. This establishes coverage correspondence, while leaving the interpretation of the second clause as a separate permission versus a constraint for later comparison."
+    },
+    {
+      "group_id": "G_32359_213_defaults",
+      "source_id": "32359-213",
+      "meaning": "The proposed conservative approach leaves the existing defaults as they are.",
+      "units": {
+        "A": [
+          "A213_keep_defaults"
+        ],
+        "B": [
+          "B-213-default"
+        ],
+        "C": [
+          "C213_defaults"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the same let-defaults-remain action. A starts at the action, while B/C include the proposed-approach framing; the scope of keeping defaults is unchanged and remains distinct from allowing opt-in increases."
+    },
+    {
+      "group_id": "G_32359_213_increase",
+      "source_id": "32359-213",
+      "meaning": "Allow the setting to be increased for those who choose to increase it.",
+      "units": {
+        "A": [
+          "A213_allow_increase"
+        ],
+        "B": [
+          "B-213-increase"
+        ],
+        "C": [
+          "C213_increase"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the increase, the same pronoun target, and the choosing-user limitation. C treats allow as modal and A/B as action; this is a decomposition of the same allowed-conduct claim, not a new layer of implementation."
+    },
+    {
+      "group_id": "G_32359_213_high",
+      "source_id": "32359-213",
+      "meaning": "Alternatively set a high default limit so a node runner can set a lower value.",
+      "units": {
+        "A": [
+          "A213_high"
+        ],
+        "B": [
+          "B-213-high"
+        ],
+        "C": [
+          "C213_high"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The alternative high-default proposal and stated user-adjustment purpose coincide. All keep the full source wording a lowest value; the paraphrase does not supply a numerical threshold or resolve its awkward comparative wording."
+    },
+    {
+      "group_id": "G_32381_body_channel",
+      "source_id": "32381-body",
+      "meaning": "Keep conceptual discussion on the specified corresponding mailing-list thread.",
+      "units": {
+        "A": [
+          "A381_channel"
+        ],
+        "B": [
+          "B-32381-channel"
+        ],
+        "C": [
+          "C381_mail"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same discussion target and full destination are retained. Bind versus Cex coding of the destination does not change the channel instruction."
+    },
+    {
+      "group_id": "G_32381_body_lift",
+      "source_id": "32381-body",
+      "meaning": "Lift the restriction on the number of OP_RETURN outputs per transaction to permit the described less harmful data-storage approach.",
+      "units": {
+        "A": [
+          "A381_lift"
+        ],
+        "B": [
+          "B-32381-lift"
+        ],
+        "C": [
+          "C381_lift"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the lift action and purpose, and every representation supplies the complete restriction referent from the preceding sentence. Different evidence-basis labels do not change that referent."
+    },
+    {
+      "group_id": "G_32381_body_32359",
+      "source_id": "32381-body",
+      "meaning": "The speaker still advocates doing PR #32359.",
+      "units": {
+        "A": [
+          "A381_32359"
+        ],
+        "B": [
+          "B-32381-32359"
+        ],
+        "C": [
+          "C381_do32359"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain we should do #32359 and the same source sentence. This is not collapsed into the narrower restriction-lifting proposal."
+    },
+    {
+      "group_id": "G_32359_038_comment",
+      "source_id": "32359-038",
+      "meaning": "Add the supplied two-line OP_RETURN test comment, including its Add one more byte wording.",
+      "units": {
+        "A": [
+          "A038_comment"
+        ],
+        "B": [
+          "B-038-comment"
+        ],
+        "C": [
+          "C038_comment"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All infer the immediate add-comment action and treat the complete fenced wording as its object. C names the supplied two-line comment rather than reproducing its words in the component, but retains the identical full unit span. The packet's attached Added comment reply supports the editorial layer; the embedded imperative is not silently substituted as a separate byte-changing action."
+    },
+    {
+      "group_id": "G_33453_018_call",
+      "source_id": "33453-018",
+      "meaning": "The decision about backporting this change, including the 30-series release question, is described as a maintainer's call.",
+      "units": {
+        "A": [
+          "A018_call"
+        ],
+        "B": [
+          "B-018-call"
+        ],
+        "C": [
+          "C453_call"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same demonstrative decision allocation is retained. Packet entries 33453-014 and 33453-017 resolve that to backporting versus later master releases; 33453-019 supplies the 30.x/master implementation context. A/B retain the burden-of-backporting/review/RC parenthetical in components, and C retains it in the span. The broader backport wording and narrower 30.x paraphrases are preserved as a scope caveat, not generalized to all maintainer authority."
+    },
+    {
+      "group_id": "G_33453_018_no_fuss",
+      "source_id": "33453-018",
+      "meaning": "The speaker commits not to put up a fuss whichever way that release/backport decision goes.",
+      "units": {
+        "A": [
+          "A018_no_fuss"
+        ],
+        "B": [
+          "B-018-forbear"
+        ],
+        "C": [
+          "C453_no_fuss"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same speaker, negative fuss-making commitment, and either-way scope are retained. Splitting put up from its object or placing not in an execution component does not remove the negative commitment."
+    },
+    {
+      "group_id": "G_33224_018_locations",
+      "source_id": "33224-018",
+      "meaning": "Add -locations none to the LCONVERT invocation in translate.cmake, as suggested by the quoted question.",
+      "units": {
+        "A": [
+          "A018_locations"
+        ],
+        "B": [
+          "B-33224-018-add"
+        ],
+        "C": [
+          "C224_locations"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All three retain the same question, add action, complete option, and invocation destination. The subsequent technical response is not confused with the quoted suggestion."
+    },
+    {
+      "group_id": "G_32714_014_prefer",
+      "source_id": "32714-014",
+      "meaning": "Prefer are not recommended to be used over have been marked as deprecated because it is clearer to users.",
+      "units": {
+        "A": [
+          "A714_prefer"
+        ],
+        "B": [
+          "B-014-prefer"
+        ],
+        "C": [
+          "C714_prefer_words"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All reconstruct the same editorial use-wording action and preserve both the comparison and clarity purpose. B's object-role basis differs, but the target wording and analytical layer coincide."
+    },
+    {
+      "group_id": "G_32714_014_definition",
+      "source_id": "32714-014",
+      "meaning": "Discouragement is deprecation.",
+      "units": {
+        "A": [
+          "A714_equivalence"
+        ],
+        "B": [
+          "B-014-definition"
+        ],
+        "C": [
+          "C714_discouragement"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same term-equivalence claim is retained; C includes However and B retains emphasis markup in the function. Neither changes the focal definition."
+    },
+    {
+      "group_id": "G_32714_014_after",
+      "source_id": "32714-014",
+      "meaning": "Revise the phrase after a deprecation warning, which the speaker evaluates as weird.",
+      "units": {
+        "A": [
+          "A714_after"
+        ],
+        "B": [
+          "B-014-after"
+        ],
+        "C": [
+          "C714_after_phrase"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All infer the same revision target without supplying replacement wording. This remains separate from the earlier preferred phrase and the intervening definition."
+    },
+    {
+      "group_id": "G_32406_228_nondismiss",
+      "source_id": "32406-228",
+      "meaning": "When a change drives away a substantial portion of users, avoid dismissing that departure as just fork it.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-228-nondismiss"
+        ],
+        "C": []
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only B extracts an independent non-dismissal expectation from this conditional evaluation. The transparency claim extracted by all coders concerns decision-making and diverse input, not this specific dismissal action."
+    },
+    {
+      "group_id": "G_32406_228_transparency",
+      "source_id": "32406-228",
+      "meaning": "The speaker invokes open-source principles as requiring transparent decision-making that respects diverse input.",
+      "units": {
+        "A": [
+          "A228_transparency"
+        ],
+        "B": [
+          "B-228-transparency"
+        ],
+        "C": [
+          "C228_transparency"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the same sentence and two procedural qualifications. Nominal decision-making versus reconstructed make decisions is a parse difference; no decision-maker identity, authority, or shared adoption is supplied by the alignment."
+    },
+    {
+      "group_id": "G_32406_252_topic",
+      "source_id": "32406-252",
+      "meaning": "The addressed participant should keep comments on topic in this thread.",
+      "units": {
+        "A": [
+          "A252_topic"
+        ],
+        "B": [
+          "B-252-topic"
+        ],
+        "C": [
+          "C252_topic"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The addressee @1440000bytes, keep action, comment object, and on-topic constraint coincide. The source's please is not independently assigned a deontic value by alignment."
+    },
+    {
+      "group_id": "G_32406_252_definition",
+      "source_id": "32406-252",
+      "meaning": "Comments about maintainers, other specific people, drama, and similar matters are not on topic in this thread.",
+      "units": {
+        "A": [
+          "A252_scope"
+        ],
+        "B": [
+          "B-252-definition"
+        ],
+        "C": [
+          "C252_definition"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain the same excluded categories, negation, and thread restriction. B integrates the place restriction into P while A/C use Cex; the classification scope remains the same."
+    },
+    {
+      "group_id": "G_32406_252_meta",
+      "source_id": "32406-252",
+      "meaning": "The addressee may take those topics to bitcoin-core/meta if desired.",
+      "units": {
+        "A": [
+          "A252_meta"
+        ],
+        "B": [
+          "B-252-meta"
+        ],
+        "C": [
+          "C252_meta"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same action, demonstrative object, meta destination, and if-desired condition survive. A/C spell out the immediately preceding topic antecedent; B leaves that explicit in the source context. This is distinct from the later routing of debate about the moderation comment itself."
+    },
+    {
+      "group_id": "G_32406_252_ban",
+      "source_id": "32406-252",
+      "meaning": "Failure to focus future comments on review of the proposed changes is said to result in a temporary ban for the addressed participant.",
+      "units": {
+        "A": [
+          "A252_ban"
+        ],
+        "B": [
+          "B-252-ban"
+        ],
+        "C": [
+          "C252_ban"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The triggering conduct, temporary consequence, and inferred addressed recipient coincide. A labels ban literal while B/C reconstruct it from the consequence noun. This difference does not justify withholding a match, and alignment does not identify an unexpressed enforcer or claim an observed ban."
+    },
+    {
+      "group_id": "G_32406_252_debate_meta",
+      "source_id": "32406-252",
+      "meaning": "If the addressee wants to debate this moderation comment, do so on bitcoin-core/meta.",
+      "units": {
+        "A": [
+          "A252_debate"
+        ],
+        "B": [
+          "B-252-debate-meta"
+        ],
+        "C": [
+          "C252_debate_meta"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All preserve the same conditional debate action, moderation-comment target, and destination despite different analyses of do so and destination roles. This positive venue instruction is kept separate from the following negative venue clause."
+    },
+    {
+      "group_id": "G_32406_252_not_here",
+      "source_id": "32406-252",
+      "meaning": "If debating this moderation comment, do not do so here.",
+      "units": {
+        "A": [
+          "A252_not_here"
+        ],
+        "B": [
+          "B-252-not-here"
+        ],
+        "C": [
+          "C252_not_here"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All carry the shared debate action, comment object, condition, negation, and here restriction. Explicit-versus-inferred treatment of the elliptical material remains a later coding comparison."
+    },
+    {
+      "group_id": "G_32406_252_see",
+      "source_id": "32406-252",
+      "meaning": "Consult the linked moderation guidelines for more information on this policy.",
+      "units": {
+        "A": [
+          "A252_see"
+        ],
+        "B": [
+          "B-252-see"
+        ],
+        "C": [
+          "C252_see"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same see action, exact target URL, and informational purpose are retained. This referral is not treated as a counterpart for the warning or its consequence."
+    },
+    {
+      "group_id": "G_33453_004_window",
+      "source_id": "33453-004",
+      "meaning": "The conceptual endorsement assumes a long interval before reconsidering deprecation.",
+      "units": {
+        "A": [
+          "A004_window"
+        ],
+        "B": [
+          "B-004-window"
+        ],
+        "C": [
+          "C453_window"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All reconstruct the same timing expectation from the identical conditional ACK. Allowing a long interval and deferring reevaluation for that interval preserve the action/timing relation. The qualification remains an assumption of this endorsement, not a free-standing unconditional timetable."
+    },
+    {
+      "group_id": "G_33224_010_reviewed",
+      "source_id": "33224-010",
+      "meaning": "Within the Transifex workflow, marking strings Reviewed locks them against further changes, for teams that use that feature.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-010-reviewed"
+        ],
+        "C": []
+      },
+      "alignment_type": "unpaired",
+      "rationale": "Only B extracts the status/locking claim as a focal statement and carries the following team-use limitation. The final-freeze prohibition is a different action and temporal condition and cannot substitute as a match."
+    },
+    {
+      "group_id": "G_33224_010_freeze",
+      "source_id": "33224-010",
+      "meaning": "There must be no translation-source updates after the final translation string freeze.",
+      "units": {
+        "A": [
+          "A010_freeze"
+        ],
+        "B": [
+          "B-010-freeze"
+        ],
+        "C": [
+          "C224_freeze"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All preserve the same prohibition, translation-source target, and final-freeze timing. A retains nominal updates while B/C reconstruct update; B omits only In short. The source any remains recoverable in every full span."
+    },
+    {
+      "group_id": "G_33453_body_remove",
+      "source_id": "33453-body",
+      "meaning": "Remove deprecation of datacarrier and datacarriersize by reverting the specified commit from PR #32406.",
+      "units": {
+        "A": [
+          "A453_remove"
+        ],
+        "B": [
+          "B-33453-remove"
+        ],
+        "C": [
+          "C453_undeprecate"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "All retain both complete option names, the removal action, and the same full commit identifier and PR URL. C separates the options into a constraint, while A/B include them in the object; the edit target and means coincide."
+    },
+    {
+      "group_id": "G_33453_body_future",
+      "source_id": "33453-body",
+      "meaning": "Future deprecation of the option remains possible.",
+      "units": {
+        "A": [],
+        "B": [
+          "B-33453-future"
+        ],
+        "C": [
+          "C453_future"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "B and C both make future deprecation the focal action. B additionally componentizes the preferred schedule and informational purpose; C's full span retains that phrase and C also extracts it separately. A's overlapping full-sentence span is parsed solely as providing a schedule, so it is not a same-layer counterpart for the possibility claim. This grouping does not count A's source-span overlap as extraction of that distinct proposition."
+    },
+    {
+      "group_id": "G_33453_body_schedule",
+      "source_id": "33453-body",
+      "meaning": "If the option is deprecated in the future, preferably provide a removal schedule to inform users.",
+      "units": {
+        "A": [
+          "A453_schedule"
+        ],
+        "B": [],
+        "C": [
+          "C453_schedule"
+        ]
+      },
+      "alignment_type": "unpaired",
+      "rationale": "A and C independently make provision/inclusion of a removal schedule focal and preserve its hypothetical future-deprecation condition and user-information purpose. B preserves this wording as a qualification of the future-deprecation action but supplies no separate schedule-action unit. Its sole unit is assigned to the future-possibility group rather than reused here or substituted across layers. This is an extraction/layer distinction, not a claim that B lost the schedule words."
+    },
+    {
+      "group_id": "G_33453_body_practice",
+      "source_id": "33453-body",
+      "meaning": "Bitcoin Core has followed a best practice of avoiding an option when developers cannot articulate when it should be used.",
+      "units": {
+        "A": [
+          "A453_practice"
+        ],
+        "B": [
+          "B-33453-practice"
+        ],
+        "C": [
+          "C453_best_practice"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The same actor, avoiding action, option object, and inability-to-articulate-use condition are preserved. The best-practice framing remains in every span even where not separately componentized; alignment does not infer a general duty solely from the reported practice."
+    },
+    {
+      "group_id": "G_33453_body_footguns",
+      "source_id": "33453-body",
+      "meaning": "Do not offer users footguns.",
+      "units": {
+        "A": [
+          "A453_footguns"
+        ],
+        "B": [
+          "B-33453-footguns"
+        ],
+        "C": [
+          "C453_footguns"
+        ]
+      },
+      "alignment_type": "one_to_one",
+      "rationale": "The quoted negative principle, action, direct object, and recipient coincide. The surrounding qualification about this option's limited harms remains source context and is not silently made part of an unconditional adoption claim."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+import json, copy, hashlib
+from pathlib import Path
+R=Path('/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/C')
+a=json.loads((R/'annotation.json').read_text()); p=json.loads((R/'packet.json').read_text()); t={e['source_id']:e['text'] for e in p['entries']}; U={u['unit_id']:u for u in a['units']}; log=[]
+def ev(s,q,after=0):
+ st=t[s].index(q,after);return {'source_id':s,'span':{'start':st,'end':st+len(q),'quote':q}}
+def edit(uid,field,new,why='Source-based review clarification explained in replacement text.',category='source_review',meaning=False):
+ obj=U[uid] if uid else a
+ keys=field.split('.');cur=obj
+ for k in keys[:-1]:cur=cur[int(k)] if isinstance(cur,list) else cur[k]
+ k=keys[-1];k=int(k) if isinstance(cur,list) else k
+ old=copy.deepcopy(cur[k]);cur[k]=new
+ log.append({'change_id':f'C-repair-{len(log)+1:02d}','unit_id':uid,'field':field,'category':category,'changes_meaning':meaning,'rationale':why,'before':old,'after':copy.deepcopy(new)})
+def c(sym,text,s,q,basis='explicit',role='local',note=''):
+ return {'symbol':sym,'text':text,'basis':basis,'evidence':[ev(s,q)],'inference_note':note,'occurrence_role':role}
+# Three checker-identified lexical occurrence repairs, with no interpretation change.
+edit('C115_arena','components.1.evidence',[ev('32359-115','is a pull request')],'The earlier is anchor was inside this; anchor the actual copula.',category='mechanical',meaning=False)
+edit('C178_retain','components.2.evidence',[ev('32406-178','in seems obviously sensible')],'The earlier in anchor was inside maintaining; anchor the retained-in complement.',category='mechanical',meaning=False)
+edit('C714_discouragement','components.1.evidence',[ev('32714-014','*is*')],'The earlier is anchor was inside discouragement; anchor the emphasized copula.',category='mechanical',meaning=False)
+# One source-based review: role, scope, evidential standing and correspondence.
+edit('C115_weight','institution.standing','text_only','The June 9 document authorizes discretionary merit weighting but does not establish the exact exclusive criterion as documented on April 29.',meaning=True)
+edit('C115_weight','institution.rationale','The comment asserts argument-based rather than frequency-based weighting. The supplied June 9 CONTRIBUTING snapshot attributes discretion to maintainers to weigh reviews by merit, meeting the rule-candidate authorization threshold for weighting. It neither dates that authorization to April 29 nor documents the exact exclusive criterion; standing therefore remains text_only. A norm interpretation remains defensible.',meaning=True)
+edit('C213_increase','components.3.symbol','Bind','For those who chose identifies beneficiaries, not necessarily actors performing the passive increase. The first output incorrectly labeled that role explicit A.',category='epistemic_role',meaning=True)
+edit('C213_increase','alternative_interpretation','The increase may be performed by the choosing user or enabled by someone else on that user’s behalf; the source supplies a beneficiary rather than an explicit acting subject.',meaning=True)
+edit('C213_configure','alternative_interpretation','This may be a political autonomy claim or desired software capability rather than an institutional permission. The not-have-filled clause is retained as a coupled limit on the desired control; a separate immunity proposition is defensible, but no actor who must refrain from filling the mempool is identified.',meaning=False)
+for uid in ['C227_capitulate','C227_remove']:
+ idx=next(i for i,x in enumerate(U[uid]['components']) if x['symbol']=='Cac')
+ edit(uid,f'components.{idx}.symbol','Cex','The absence-of-perfect-solution means clause is an attributed justificatory premise, not a stated conditional activation rule.',category='scope_role',meaning=True)
+ edit(uid,f'components.{idx}.inference_note','The preceding means clause supplies the attributed reasoning for this action, not an if-condition or the coder’s factual assessment. It is shared with the coordinated action.',meaning=False)
+# Preserve the exact argument names in the persuasion requirement.
+edit('C149_convincing','components.1.text','fork accommodations such as CLIENT_NAME "Bitcoin Core" and SKIP_BRANCH_PUSH','Preserve the source example’s full string as well as the identifier.',meaning=False)
+cc=copy.deepcopy(U['C149_convincing']['components']);cc.append(c('D','require','32406-149','require'))
+edit('C149_convincing','components',cc,'The overt requirement operator belongs to the reconstructed justificatory-burden parse; practical-necessity uncertainty is retained.',meaning=False)
+cc=copy.deepcopy(U['C149_followups']['components']);cc.pop(4)
+edit('C149_followups','components',cc,'The as-clause explains the permission; it does not make deferral conditional on a new trigger. Its complete reason remains in the unit and institutional rationale.',category='scope_role',meaning=True)
+edit('C149_followups','institution.rationale',U['C149_followups']['institution']['rationale']+' The stated reason is the difficulty of tracking actual review comments amid what the author calls continued brigading.',meaning=False)
+edit('C149_no_switch','components.3',c('Cac','at this point','32406-149','at this point'),'Retain the temporal scope without converting the following reason-giving clause into an activation condition.',category='scope_role',meaning=True)
+# Expected recommendation is about the setting action; do not substitute its recommending group as the setting actor.
+cc=[c('D','recommend not','32406-178','recommend not'),c('I','setting','32406-178','setting'),c('Bdir','this option','32406-178','this option'),c('Cex','to a lower value than the default','32406-178','to a lower value than the default')]
+edit('C178_lower','components',cc,'Use the embedded nonuse expectation as the focal action, omitting the unexpressed setting actor. The majority of developers remains an attributed recommender in the unit, not the actor setting the option.',category='epistemic_role',meaning=True)
+edit('C178_lower','institution.rationale','The author anticipates that a vast majority of developers would recommend against setting the option below its default. The embedded setting action is focal; its actor is unexpressed and omitted. The majority claim is only the author’s attribution and does not establish shared acceptance or authorized discretion.',meaning=True)
+edit('C178_mark','components.3.symbol','Cex','Even if a few developers disagree is a concessive qualification, not the activating condition for deprecation.',category='scope_role',meaning=True)
+# The trade-off assertion recommends an assessment, not unconditional removal.
+cc=[c('I','assess','32406-178','Whether (or when) the option should also be removed rather than just deprecated depends on','context_inferred','semantic_inference','The depends-on assertion is reconstructed as an assessment method; it does not recommend removal regardless of the assessment.'),c('Bdir','whether or when the option should also be removed rather than just deprecated','32406-178','Whether (or when) the option should also be removed rather than just deprecated','context_inferred','semantic_inference','The embedded whether/when question becomes the informational object of inferred assess, preserving removal versus mere deprecation.'),c('Cex','the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects','32406-178','the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects')]
+edit('C178_tradeoff','components',cc,'The original parse could imply a removal recommendation activated by an unspecified trade-off. The revised parse preserves the source’s undecided whether/when and all assessment criteria.',meaning=True)
+edit('C178_tradeoff','parse_mode','pragmatic','The focal assess action is reconstructed from the depends-on assertion.',category='epistemic_role',meaning=True)
+edit('C178_tradeoff','institution.type','strategy_candidate','An articulated decision method is better supported than a socially expected obligation to remove.',meaning=True)
+edit('C178_tradeoff','institution.rationale','The author articulates a method for assessing whether and when to remove the option, considering user appreciation, maintenance effort, and possibly harmful network effects. No threshold or direction of the decision is supplied.',meaning=True)
+# Direction of clarifies must be from later clarification to earlier description.
+idx=next(i for i,r in enumerate(a['relations']) if r['from_unit_id']=='C165_known' and r['to_unit_id']=='C165_fixed')
+r=copy.deepcopy(a['relations'][idx]);r['from_unit_id']='C165_fixed';r['to_unit_id']='C165_known'
+edit(None,f'relations.{idx}',r,'The fixed report clarifies the earlier known-issue description, so the relation direction must run from fixed to known.',category='convention',meaning=False)
+# Make the premise-level dispute visible without converting desire into an actual plan.
+edit('C714_warning','institution.dispute_present',True,'The supplied reply challenges the no-near-term-removal premise. The warning norm itself is not conclusively rejected.',meaning=True)
+edit('C714_warning','institution.rationale',U['C714_warning']['institution']['rationale']+' The reply contests the no-removal-intention premise, but wanting removal is not proof of a scheduled plan; text_only standing and the distinction are retained.',meaning=False)
+edit('C714_after_phrase','components.0.text','revise','Use one reconstructed editorial action; avoidance remains a possible form of revision, not a second prescribed activity.',category='convention',meaning=False)
+edit('C714_after_phrase','alternative_interpretation','A rhetorical observation without a requested edit, or a request to avoid that phrase altogether rather than substitute a particular wording.',meaning=False)
+# Allocation decomposition: maintainer ownership is a constituting property, while workload is rationale.
+cc=[copy.deepcopy(U['C453_call']['components'][0]),c('F','is','33453-018',"that's",note='The contraction supplies the copula; the whole contraction is anchored to avoid a token-fragment span.'),c('P',"a maintainer's call",'33453-018',"a maintainer's call")]
+edit('C453_call','components',cc,'The workload parenthesis explains the allocation; it is not a constituting property. Preserve maintainer ownership as P and the copula as F.',category='convention',meaning=False)
+edit('C453_call','institution.rationale',U['C453_call']['institution']['rationale']+' The workload rationale specifically names backporting, obtaining review, and cutting RCs.',meaning=False)
+# Narrow the use-case status interpretation rather than claiming a new accepted criterion.
+edit('C453_usecase','confidence','unresolved','Institutional classification is plausible but a mere evaluative judgment is equally compatible with the supplied reply.',meaning=False)
+# Separate the embedded schedule recommendation from the merely available future deprecation course.
+future=U['C453_future'];cc=copy.deepcopy(future['components']);cc=cc[:3]
+edit('C453_future','components',cc,'The schedule preference is retained in a linked embedded expectation rather than presented as a constraint on the nondeontic availability claim.',category='segmentation',meaning=False)
+new=copy.deepcopy(future);new.update(unit_id='C453_schedule',span=ev('33453-body','preferably with a removal schedule to better inform users')['span'],parse_mode='pragmatic',deontic_force='recommendation',speech_act='proposed',scope='general',parent_unit_id='C453_future',alternative_interpretation='This could remain a material qualification of the future-deprecation course; separate coding preserves the advisory schedule action without treating it as adopted.',uncertainty_reason='No time interval or binding removal commitment is specified.',confidence='plausible')
+new['institution']={'type':'norm_candidate','standing':'text_only','dispute_present':False,'rationale':'A distinct advisory expectation asks that future deprecation include a schedule to inform users. It is not a claim that a removal date already exists.','evidence':[ev('33453-body','Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible.')],'recognition':[],'authority_evidence':[]}
+new['components']=[c('I','include','33453-body','preferably with','context_inferred','semantic_inference','The with-phrase becomes an inferred include action under the preference.'),c('Bdir','a removal schedule','33453-body','a removal schedule','context_inferred','semantic_inference','The prepositional complement is assigned the object role of inferred include.'),c('Cex','to better inform users','33453-body','to better inform users'),c('Cac','if the option is deprecated in the future','33453-body','Deprecating the option in the future','context_inferred','shared_scope','The preceding hypothetical future course scopes the schedule preference.')]
+new['disposition_events']=[]
+a['units'].append(new);U[new['unit_id']]=new
+log.append({'change_id':f'C-repair-{len(log)+1:02d}','unit_id':'C453_schedule','field':'unit','category':'segmentation','changes_meaning':False,'rationale':'Separate the already preserved material schedule preference as an executable embedded action; no new evidence or adoption claim is added.','before':None,'after':copy.deepcopy(new)})
+a['relations'].append({'from_unit_id':'C453_schedule','to_unit_id':'C453_future','type':'clarifies','basis':'explicit','rationale':'The preferably phrase qualifies the hypothetical future deprecation course with an advisory schedule. This is not evidence of adoption.','evidence':[ev('33453-body','Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible.')],'logic_scope':'not_applicable'})
+# Outcome evidence must support labels as well as the startup warning.
+ix=next(i for i,o in enumerate(a['episode_summary']['observed_outcomes']) if o['claim'].startswith('The #32406 patch'))
+e=copy.deepcopy(a['episode_summary']['observed_outcomes'][ix]['evidence']);e += [ev('X32406','+    argsman.AddArg("-datacarrier", strprintf("(DEPRECATED) Relay and mine data carrier transactions (default: %u)", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);'),ev('X32406','+                   strprintf("(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate "')]
+edit(None,f'episode_summary.observed_outcomes.{ix}.evidence',e,'Add exact label-change lines to support the claim that both options were marked deprecated, in addition to the existing warning anchor.',category='evidence_completeness',meaning=False)
+# Replace generic pragmatic-object notes with actual role-preservation explanations.
+explanations={'C115_unsubstantiated':('Bdir','Unsubstantiated or repeat acks/nacks is already the overt object of leave; inferring negative advice does not transform its grammatical role.'),'C213_defaults':('Bdir','The defaults is the overt object of let in the proposed approach; the advisory reading changes utterance force, not that object role.'),'C213_high':('Bdir','A default high limit is already the overt object of setting; the elliptical proposal requires no object-role reconstruction.'),'C012_no_args':('Bdir','More args is the overt object of adding inside the evaluative sentence; only the negative recommendation force is inferred.'),'C178_mark':('Bdir','It is the overt object of marking in the evaluation; the editorial recommendation preserves that role while its referent needs contextual resolution.'),'C178_retain':('Bdir','The option is the overt object of leaving; interpreting the judgment as advice does not transform that object role.'),'C252_debate_meta':('Bind','The explicitly supplied meta URL is the destination of do so; resolving do so as debate preserves the overt destination role.'),'C714_delay':('Bdir','A PR to remove the options is the overt object of open inside the negative prudential evaluation; only the directive force is inferred.')}
+for uid,(sym,n) in explanations.items():
+ i=next(i for i,cx in enumerate(U[uid]['components']) if cx['symbol']==sym)
+ edit(uid,f'components.{i}.inference_note',n,'Make the preserved argument role source-specific for the checker’s pragmatic-explicit review flag.',category='epistemic_explanation',meaning=False)
+# Rebuild screening references and preserve the reviewed full record.
+for sc in a['entry_screening']:
+ sc['unit_ids']=[u['unit_id'] for u in a['units'] if u['source_id']==sc['source_id']]
+(ROOT:=R/'annotation.json').write_text(json.dumps(a,ensure_ascii=False,indent=2)+'\n')
+review=json.loads((R/'review_notes.json').read_text())
+for x in review['per_focal_source']:
+ sid=x['source_id'];x['unit_ids']=[u['unit_id'] for u in a['units'] if u['source_id']==sid]
+ x['response_recognition_disposition_sequences']=[m for m in a['episode_summary']['mechanisms'] if any(e['source_id']==sid for e in m['evidence'])]
+ x['self_review_findings']=[{'change_id':z['change_id'],'unit_id':z['unit_id'],'rationale':z['rationale'],'changes_meaning':z['changes_meaning']} for z in log if z['unit_id'] in x['unit_ids']]
+ if sid=='33453-body':x['reasoning']+=' The schedule preference is separately represented as a linked embedded norm candidate, preserving the option/schedule distinction.'
+review['response_recognition_disposition_sequences']=a['episode_summary']['mechanisms']
+review['self_review']={'status':'completed_one_source_based_pass','scope':'All 24 focal sources, all 103 first-complete units, 36 first-complete relations, recognition/disposition events, and all episode outcome/mechanism claims were reviewed against the frozen packet. One embedded schedule unit and its relation were separated without adding an adoption claim.','external_semantic_feedback_received':False,'checker_flags_reviewed':'All first-checker flags examined. Three token-occurrence errors repaired. Remaining outside-unit anchors and explicit arguments in pragmatic parses retain source-specific explanations.','remaining_uncertainties':a['episode_summary']['unresolved_questions'],'counts':{'focal_sources':24,'screened_entries':len(a['entry_screening']),'final_units':len(a['units']),'final_statements':sum(u['record_role']=='statement' for u in a['units']),'final_relations':len(a['relations'])}}
+review['access_record']['own_generated_files_accessed'] += [str(R/'checks.first.json'),str(R/'review_notes.json'),str(R/'self_review.py')]
+(R/'review_notes.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
+repair={'run_id':'R12_C','first_complete_preserved':True,'first_complete_sha256':hashlib.sha256((R/'annotation.first_complete.json').read_bytes()).hexdigest(),'source_based_self_review_passes':1,'outside_semantic_feedback':False,'changes':log,'counts':{'logged_changes':len(log),'changes_marked_meaning_changing':sum(z['changes_meaning'] for z in log)},'note':'Pre-completion construction is preserved in build_annotation.py; this log records every first-complete-to-final repair. The extra schedule unit/clarifies relation and refreshed screening/notes are explicitly recorded. No input packet, codebook, schema, or checker was changed.'}
+(R/'repair_log.json').write_text(json.dumps(repair,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'units':len(a['units']),'statements':sum(u['record_role']=='statement' for u in a['units']),'relations':len(a['relations']),'logged_changes':len(log),'meaning_changes':repair['counts']['changes_marked_meaning_changing']}))

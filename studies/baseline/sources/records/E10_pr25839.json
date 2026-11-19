@@ -1,0 +1,320 @@
+{
+  "number": 25839,
+  "title": "[WIP] Minimal MAINTAINERS.md file",
+  "body": "This PR \"reverse builds on\" https://github.com/bitcoin/bitcoin/pull/25560 by carving out the parts that should be uncontroversial/purely descriptive of the current role of maintainership, while allowing #25560 to focus on the more aspirational parts (as suggested by instagibbs). Please be sure to cross reference for comments/discussion on #25560.",
+  "state": "closed",
+  "created_at": "2022-08-13T18:08:54+00:00",
+  "updated_at": "2024-01-11T12:24:39+00:00",
+  "closed_at": "2022-10-02T17:56:53+00:00",
+  "merged_at": null,
+  "author": "JeremyRubin",
+  "author_id": 886523,
+  "draft": false,
+  "mergeable": null,
+  "merged": false,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Docs"
+  ],
+  "milestone": null,
+  "merged_by": null,
+  "merged_by_id": null,
+  "comments": [
+    {
+      "body": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--174a7506f384e20aa4161008e828411d-->\n### Conflicts\nNo conflicts as of last run.",
+      "author": "DrahtBot",
+      "created_at": "2022-08-14T02:09:24+00:00"
+    },
+    {
+      "body": "thanks :) will go through",
+      "author": "instagibbs",
+      "created_at": "2022-08-18T21:00:31+00:00"
+    },
+    {
+      "body": "doesn't seem like there is desire to improve documentation here, closing / up for grabs.",
+      "author": "JeremyRubin",
+      "created_at": "2022-10-02T17:56:53+00:00"
+    },
+    {
+      "body": "Please mark up for grabs, thanks",
+      "author": "Rspigler",
+      "created_at": "2022-10-02T20:39:09+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "jarolrod",
+      "submitted_at": "2022-08-17T02:41:33+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-18T20:46:55+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "maflcko",
+      "submitted_at": "2022-08-19T08:04:06+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-19T15:16:50+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "maflcko",
+      "submitted_at": "2022-08-19T15:33:52+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "instagibbs",
+      "submitted_at": "2022-08-19T15:35:56+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "Concept ACK\r\n\r\nSince opinions will always differ on a topic like this, I think a `Maintainers.md` file should be as bland and boring as possible, just stating the undisputable facts, nothing interpretational. The style of this document is too essayistic for my taste, some examples below.",
+      "author": "mzumsande",
+      "submitted_at": "2022-08-19T15:49:56+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "Rspigler",
+      "submitted_at": "2022-08-21T21:13:33+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "Rspigler",
+      "submitted_at": "2022-08-21T21:15:24+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T15:52:38+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T15:55:16+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T15:59:56+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T16:02:43+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T16:15:27+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T16:17:04+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "JeremyRubin",
+      "submitted_at": "2022-08-29T16:25:25+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "why link to `MAINTAINERS.md` twice here?",
+      "author": "jarolrod",
+      "created_at": "2022-08-17T02:36:32+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": 13
+    },
+    {
+      "body": "i guess it is redundant? can remove, i just default to linking to where terms are defined, and separately to where more can be read. ",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-18T20:46:55+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": 13
+    },
+    {
+      "body": "This sentence is basically identical to the one before. Suggest to drop one of them.",
+      "author": "mzumsande",
+      "created_at": "2022-08-18T21:04:34+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 31
+    },
+    {
+      "body": "This is very debatable, see https://github.com/bitcoin/bitcoin/pull/25560#discussion_r916055527 with which I agree.  I would prefer to remove it.",
+      "author": "mzumsande",
+      "created_at": "2022-08-18T21:12:57+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 93
+    },
+    {
+      "body": "Pretty sure I already left a comment about this in the other pull, but I don't see the the point of a focus area column. The focus area is something that is entrusted to the maintainer to decide for themselves. If they can't do that, they shouldn't become a maintainer in the first place.\r\n\r\nAlso, the focus area may constantly change. For example I no longer care about functional tests as much as I did 5 years ago, because they are in a much better shape by now. Am I supposed to remove myself from that focus area now? Also, achow recently merged a p2p change in commit 22d96d76ab02fc73e7fe0d810bacee4c982df085, so is someone supposed to edit this table before or after the fact? Finally, if all rows mention \"general\" I wonder what the point is, since the conveyed information is minimal if not none.",
+      "author": "maflcko",
+      "created_at": "2022-08-19T08:04:06+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 11
+    },
+    {
+      "body": "I responded on this topic in the other PR ICYMI: https://github.com/bitcoin/bitcoin/pull/25560#discussion_r945171237\r\n\r\nNot every maintainer has General tag here. For example, @hebasto and @achow101 do not. It's up to them if they want to update it to list General or not.\r\n\r\nIf you don't care about the test system as much these days, and don't want to review the work there, it is no issue to update your focus areas. Doing so may also even help highlight if that area is under-maintained, and could maybe use a new maintainer.\r\n\r\nW.r.t. @achow101  merging a P2P change, as noted in the document, these are not enforced rules, just documentation. If @achow101 plans to regularly work on P2P, I would think he should update his focus area, if it is one-off or infrequent maybe not. \r\n\r\nPerhaps it would be nice to pair with this table a list of all \"focus tags\" / systems, regardless of if there is a maintainer currently focusing on it?\r\n\r\n\r\n\r\n",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-19T15:16:50+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 11
+    },
+    {
+      "body": "Whether something is an honor is very subjective, I would not mention \"honor\" here at all.",
+      "author": "mzumsande",
+      "created_at": "2022-08-19T15:30:03+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 74
+    },
+    {
+      "body": "The details here will be effectively useless the more broad (Assume my focus area is tests, but someone creates a test for macOS, which I may not be able to review or test) they are and the less often they are updated. I can promise you that this list won't be updated, just like no one updated `REVIEWERS.md`.\r\n\r\n",
+      "author": "maflcko",
+      "created_at": "2022-08-19T15:33:52+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 11
+    },
+    {
+      "body": "Have to agree. I'd be surprised if it even gets promptly updated when maintainers join/depart.",
+      "author": "instagibbs",
+      "created_at": "2022-08-19T15:35:56+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 11
+    },
+    {
+      "body": "This section is (or will very soon be?) out of date, maybe just mention that there used to be a lead maintainer but currently there is none. No need to elaborate on the reasons and background too much.",
+      "author": "mzumsande",
+      "created_at": "2022-08-19T15:46:15+00:00",
+      "path": "MAINTAINERS.md",
+      "line": null
+    },
+    {
+      "body": "```suggestion\r\nThus maintainers' role is not directly elevated above that of regular\r\ncontributors, as maintainers serve mostly as arbiters of if changes are\r\nacceptable to the contributors of the project in aggregate.\r\n```",
+      "author": "Rspigler",
+      "created_at": "2022-08-21T20:56:50+00:00",
+      "path": "MAINTAINERS.md",
+      "line": null
+    },
+    {
+      "body": "```suggestion\r\nHistorically, one of Bitcoin's maintainers was a designated \"Lead Maintainer\",\r\n```",
+      "author": "Rspigler",
+      "created_at": "2022-08-21T20:58:25+00:00",
+      "path": "MAINTAINERS.md",
+      "line": null
+    },
+    {
+      "body": "```suggestion\r\npost](https://laanwj.github.io/2021/01/21/decentralize.html), @laanwj stated\r\nthat they wanted to take more of a background role as a maintainer, and therefore have decided not to \"pass the baton\" to a successor as a Lead Maintainer, instead choosing to focus on decentralizing the maintainership ecosystem. As such, while the unofficial\r\n```",
+      "author": "Rspigler",
+      "created_at": "2022-08-21T21:10:55+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 61
+    },
+    {
+      "body": "If there is no prohibition or process, why include this? Or maybe include why there isn't?",
+      "author": "Rspigler",
+      "created_at": "2022-08-21T21:11:41+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 69
+    },
+    {
+      "body": "```suggestion\r\nMaintainers fulfill the role of evaluating and merging PRs that have met the above conditions, as detailed in [MAINTAINERS.md](/MAINTAINERS.md).\r\n```",
+      "author": "Rspigler",
+      "created_at": "2022-08-21T21:15:24+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "they say different things:\r\n\r\n1. Scoping that is what a maintainer is\r\n2. text ripped from CONTRIBUTING.md, which clarifies how a maintainer makes that decision.\r\n\r\nmaybe the 1st can become:\r\n\r\n```\r\nLargely, the role of maintainers is to merge Pull Requests when appropriate.\r\n```",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T15:52:37+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 31
+    },
+    {
+      "body": "Removing it would seem to me be prescriptive (aspirational), rather than descriptive of the current status quo. We should aim to debate prescriptive additions or omissions in follow up work?",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T15:55:16+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 93
+    },
+    {
+      "body": "see discussion here. https://github.com/bitcoin/bitcoin/pull/25560#discussion_r945178336\r\n\r\nthe intent is to provide clarity from the project against past statements by maintainers describing it as an honour, and honour is used in this sentence precisely to clarify that it is not an honor is the objective sense of the word (an honor, like an award / recognition).\r\n\r\nThe subjective part is up to \"but it may be honorable to serve as one\".",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T15:59:56+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 74
+    },
+    {
+      "body": "I think it is good to leave in because people may want to know who the lead maintainer is, given that other documentation and sources (even those in our own repo still) refer to lead maintainer.\r\n\r\nLeaving it out would be a disservice to a reader who wants to know who the lead is.\r\n\r\nOf course, now that Wladimir has actually stepped down without naming a replacement, the verbiage here could be updated to have less background information because the situation is less confusing.",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T16:02:43+00:00",
+      "path": "MAINTAINERS.md",
+      "line": null
+    },
+    {
+      "body": "Is there a lighter touch way that can be done?",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T16:15:27+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 11
+    },
+    {
+      "body": "probably removing this section now that Wlad has more fully stepped down.",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T16:17:03+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 61
+    },
+    {
+      "body": "It is here because it is a question that has come up often, so it is good to be able to point to a documented procedure when the question arises next.",
+      "author": "JeremyRubin",
+      "created_at": "2022-08-29T16:25:25+00:00",
+      "path": "MAINTAINERS.md",
+      "line": 69
+    }
+  ],
+  "files": [
+    {
+      "filename": "CONTRIBUTING.md",
+      "additions": 6,
+      "deletions": 9,
+      "changes": 15,
+      "status": "modified"
+    },
+    {
+      "filename": "MAINTAINERS.md",
+      "additions": 120,
+      "deletions": 0,
+      "changes": 120,
+      "status": "added"
+    }
+  ],
+  "time_to_close_days": 49,
+  "total_comments": 4,
+  "total_reviews": 16,
+  "total_files_changed": 2,
+  "total_additions": 126,
+  "total_deletions": 9
+}

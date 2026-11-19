@@ -1,0 +1,180 @@
+{
+  "reviewer": "source_review_a",
+  "assigned_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/source_review_a",
+  "status": "complete_and_frozen",
+  "files_accessed": [
+    {
+      "filename": "INSTRUCTIONS.txt",
+      "sha256": "98eebd26d7adb47313fb63a9714d34bd289eb297640d643b747309f0b7f5428b",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "RUNTIME_NOTES.txt",
+      "sha256": "61fd8ece2977aab2d6fcfdc31748457249e863af78b9b17b1a13228e488a98c4",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "output_format.json",
+      "sha256": "982fc3aa0147d6b5e12a1988daf04cccb3db761eed8762fd89568701a2aff2c5",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "input_manifest.json",
+      "sha256": "4180cb4a5f0956f4e9dd771c7701f29c38c104e90232e9fcd97daf8516a121f1",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "dossier_index.json",
+      "sha256": "42c9442fe6febe275d6c9f78c7e08fda2cb466673bf1d963860f9f077386a978",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "guide_1.txt",
+      "sha256": "f361264a33a2beae46ef2d46e88c85ea487b5cefd807b61eea79dfbab05dcae5",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "guide_2.txt",
+      "sha256": "103c475d794dbcc2b65d0663eb5dec452380f9bef42aee5c294cb0f78ded22d0",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F01_packet.json",
+      "sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F02_packet.json",
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F03_packet.json",
+      "sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F01_dossier.json",
+      "sha256": "dbe2cab923928edc0918fa96f0061fb5933fdfd0b9baf39abd53685fc2ea2d53",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F02_dossier.json",
+      "sha256": "43488d726ee231f485a1b1c3c069e94e64fe8766d7e07f794e6e8b2dc9300e3d",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "F03_dossier.json",
+      "sha256": "63648769a741620d416ea6ba599e6d8bc49098297c2871d75d726603683e5938",
+      "unchanged_from_initial_access_record": true
+    },
+    {
+      "filename": "annotations.json",
+      "sha256": "6a128586223b2166ef36074ac5d6c97b9600901c128978e65f584137d5b52745",
+      "unchanged_from_initial_access_record": true
+    }
+  ],
+  "access_scope": "All research reads and writes stayed within the assigned review directory. No parent directory contents, other review content, external research, condition identities, agreement statistics or recovery reports were inspected. Administrative parent messages conveyed task/resume/status information only. No delegation or model/effort override. Original inputs are unchanged.",
+  "annotation_access": "All annotations were semantically read through the supplied lossless per-case dossiers. The original annotations.json was inventoried/hashed; the dossier is the substantive review representation.",
+  "methods": [
+    "Read instructions, runtime notes, output format, manifests/index and both assigned guides. Applied the guide assigned to each annotation.",
+    "Read all 83 distinct source-packet entries in full, including complete supplied guidance, metadata and patches; checked every focal entry for omitted material propositions and every supplemental entry for relevant contextual evidence.",
+    "Read all 18 annotations and all 587 retained units in bounded field batches, including component basis, role, qualifications, recognition, disposition, documentary/application/authority/challenge assessments, levels and alternatives.",
+    "Inspected all 327 relations and every outcome/mechanism clause, including claim_parts where supplied, missing-evidence lists and unresolved questions. Shared-looking claims were checked directly; voting was not used.",
+    "Used exact-value references only to avoid repeating already-read identical values within a bounded annotation inspection. Truncated initial reads were replaced by bounded reads before coverage was marked complete.",
+    "Saved incremental case findings and annotation progress. F02 and F03 were continued from completed checkpoints after interruption; only unfinished F01 inspection was resumed.",
+    "Validated canonical unit/relation/summary paths, complete coverage lists and 677 exact evidence-pool anchors separately from semantic review. Preserved first complete results before mechanical corrections."
+  ],
+  "coverage_totals": {
+    "annotations": 18,
+    "retained_units": 587,
+    "relations": 327,
+    "distinct_packet_entries": 83
+  },
+  "case_totals": {
+    "F01": {
+      "annotations": 6,
+      "retained_units": 351,
+      "relations": 199,
+      "packet_entries": 42
+    },
+    "F02": {
+      "annotations": 6,
+      "retained_units": 81,
+      "relations": 41,
+      "packet_entries": 22
+    },
+    "F03": {
+      "annotations": 6,
+      "retained_units": 155,
+      "relations": 87,
+      "packet_entries": 19
+    }
+  },
+  "findings_counts": {
+    "total": 50,
+    "diagnosis": {
+      "defensible_alternative": 22,
+      "criterion_ambiguity": 9,
+      "execution_failure": 18,
+      "unresolved": 1
+    },
+    "effect": {
+      "coverage_or_scope": 9,
+      "convention_only": 17,
+      "evidence_basis": 24
+    }
+  },
+  "validation": {
+    "validated_at_utc": "2026-11-07T20:25:05.369266+00:00",
+    "errors": [],
+    "evidence_pool_anchors_checked": 677,
+    "findings": 50,
+    "coverage_rows": 18,
+    "role": "Mechanical checks after semantic review; not a replacement for reading."
+  },
+  "review_limits": [
+    "This independent review is revisable AI judgment, not a reference truth set. Findings count bounded issues, not independent observations or a quality score.",
+    "All findings use each annotation's assigned guide. Version masking is incomplete because guides and schemas differ. No condition identities, agreement statistics, other review content or external research were accessed.",
+    "The frozen source packets bound factual conclusions. Missing edit/reply histories, exact intermediate changes, referenced-PR outcomes and unobserved actions remain missing; no external facts were supplied.",
+    "All 18 annotations, 587 retained units, 327 relations and 83 distinct packet entries were semantically inspected. Exact-anchor validation is separate from that semantic review.",
+    "No confirmed interpretation-changing execution failure was identified. Evidence-basis errors, convention deviations, criterion ambiguities, defensible alternatives and unresolved findings are kept distinct."
+  ],
+  "corrections_record": "corrections_record.json",
+  "first_complete_files": [
+    "F01_review.first_complete.json",
+    "F02_review.first_complete.json",
+    "F03_review.first_complete.json",
+    "review.first_complete.json",
+    "coverage_ledger.first_complete.json"
+  ],
+  "configuration": "Inherited configuration; no model or reasoning overrides and no delegation.",
+  "written_files": [
+    "F01_inspection.txt",
+    "F01_review.first_complete.json",
+    "F01_review.json",
+    "F02_inspection.txt",
+    "F02_review.first_complete.json",
+    "F02_review.json",
+    "F03_inspection.txt",
+    "F03_review.first_complete.json",
+    "F03_review.json",
+    "access_record.json",
+    "assemble_review.py",
+    "compact_review.py",
+    "corrections_record.json",
+    "coverage_ledger.first_complete.json",
+    "coverage_ledger.json",
+    "freeze_record.json",
+    "inspect_review.py",
+    "review.first_complete.json",
+    "review.json",
+    "review_progress.json",
+    "review_progress.pre_freeze.json",
+    "save_f01_review.py",
+    "save_f02_review.py",
+    "save_f03_review.py",
+    "validation_record.json"
+  ],
+  "completed_at_utc": "2026-11-07T20:25:38.731753+00:00"
+}

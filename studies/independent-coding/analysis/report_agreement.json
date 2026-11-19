@@ -1,0 +1,131 @@
+[
+  {
+    "type": "heading",
+    "text": "Independent agreement"
+  },
+  {
+    "type": "paragraph",
+    "text": "The eighteen runs contain 587 retained units, including 314 statement occurrences: 155 under version 0.3 and 159 under version 0.4. The masked alignment assigns every statement exactly once to 56 groups: 48 one-to-one, four split/combined, and four unmatched groups. It records no unresolved alignment group. These are correspondence judgments, not source-validity findings."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Case",
+      "0.3 statements by run",
+      "0.4 statements by run",
+      "Within-version matches: 0.3 / 0.4",
+      "Common all-six matches"
+    ],
+    "rows": [
+      [
+        "F01",
+        "31, 31, 33",
+        "34, 33, 30",
+        "28 / 28",
+        27
+      ],
+      [
+        "F02",
+        "4, 4, 4",
+        "4, 5, 4",
+        "4 / 4",
+        4
+      ],
+      [
+        "F03",
+        "16, 16, 16",
+        "15, 17, 17",
+        "14 / 12",
+        11
+      ]
+    ],
+    "widths": [
+      0.6,
+      1.35,
+      1.35,
+      2.0,
+      1.8
+    ],
+    "font_size": 9.5,
+    "note": "Within-version matches require one corresponding statement from each of that version’s three coders. The common subset requires one-to-one correspondence across all six runs. Counts describe retained records; source review determines material omissions and meaning preservation."
+  },
+  {
+    "type": "paragraph",
+    "text": "Within-version comparison includes 46 propositions under version 0.3 and 44 under version 0.4, covering 138 of 155 and 132 of 159 statement occurrences, respectively. The common all-six comparison contains 42 propositions: 27 from F01, four from F02, and eleven from F03. It therefore concentrates heavily on the procedure case. The table below compares the same propositions under both versions."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Field",
+      "0.3: all three agree",
+      "0.4: all three agree",
+      "0.3: nominal alpha",
+      "0.4: nominal alpha"
+    ],
+    "rows": [
+      [
+        "Grammar",
+        "41/42 (97.6%)",
+        "41/42 (97.6%)",
+        "0.4960",
+        "0.4960"
+      ],
+      [
+        "Deontic force",
+        "36/42 (85.7%)",
+        "38/42 (90.5%)",
+        "0.7997",
+        "0.8281"
+      ],
+      [
+        "Institutional type",
+        "34/42 (81.0%)",
+        "29/42 (69.0%)",
+        "0.7580",
+        "0.6468"
+      ],
+      [
+        "Statement target level",
+        "35/42 (83.3%)",
+        "33/42 (78.6%)",
+        "-0.0504",
+        "-0.0684"
+      ],
+      [
+        "Observed action level",
+        "37/42 (88.1%)",
+        "35/42 (83.3%)",
+        "0.6627",
+        "0.6176"
+      ],
+      [
+        "Dispute present",
+        "41/42 (97.6%)",
+        "40/42 (95.2%)",
+        "0.8922",
+        "0.8714"
+      ]
+    ],
+    "widths": [
+      1.8,
+      1.45,
+      1.45,
+      1.2,
+      1.2
+    ],
+    "font_size": 9.5,
+    "note": "Independent final coding, before external reconciliation. Alpha is a supplementary descriptive statistic. The figures do not measure accuracy, population reliability, or negotiated consensus. Dispute is only a Boolean projection; its target and substantive scope require source review."
+  },
+  {
+    "type": "paragraph",
+    "text": "All three coders match on all six fields simultaneously in 24 of 42 common propositions under version 0.3 and 21 of 42 under version 0.4. This composite is more demanding than agreement on any individual field and should not be compared directly with a conventional alpha threshold. Grammar remains unchanged; deontic-force agreement improves modestly on the common subset, while institutional-type and level agreement decline. These results do not support an overall repeatability improvement for version 0.4."
+  },
+  {
+    "type": "paragraph",
+    "text": "Category imbalance matters. Each version assigns 124 of the 126 common-subset grammar judgments to regulative and only two to constitutive. Thus, 41 of 42 propositions have unanimous grammar labels while nominal alpha remains approximately 0.496. This sample supplies little evidence about discrimination between grammar categories. Target-level judgments likewise concentrate on operational activity; the coders place the few collective-choice labels on different propositions, producing slightly negative alpha. A high raw agreement percentage therefore cannot establish reliable identification of the less common category."
+  },
+  {
+    "type": "paragraph",
+    "text": "Screening agreement covers 48 of 49 focal entries under version 0.3 and 47 of 49 under version 0.4. Exact-span triple matches total 40 and 36, respectively. Semantic correspondence recovers additional matches without requiring identical text boundaries. These results remain distinct from the source review’s assessment of omitted actions, missing conditions, and unsupported institutional claims. The alpha implementation reproduces the published nominal example in Hayes and Krippendorff (2007), including missing judgments, to the reported four decimal places."
+  }
+]

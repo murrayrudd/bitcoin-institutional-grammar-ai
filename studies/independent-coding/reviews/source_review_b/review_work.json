@@ -1,0 +1,753 @@
+{
+  "reviewer": "source_review_b",
+  "findings": [
+    {
+      "finding_id": "B001",
+      "episode_id": "F02",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "unresolved",
+      "description": "The final artifact supplies the complete requested spelling, but the reviewed occurrence and earlier typo are absent. R06 and R08 treat the resulting spelling as observed application and proposition-specific integration; R14 requires a matched correction operation and leaves observed application unresolved. The assigned guide distinguishes reported action from observed artifact but does not precisely specify whether a resulting identifier alone proves a correction at an unlocated occurrence.",
+      "affected": [
+        {
+          "annotation_id": "R06",
+          "unit_ids": [
+            "F02-S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 80,
+            "end": 113,
+            "quote": "+`listtransactions` label support"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 437,
+            "end": 499,
+            "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        }
+      ],
+      "applicable_rule": "guide_1: application requires evidence of the relevant act or artifact with trigger/provision connected; a particular implemented edit requires the claimed patch change and integration evidence.",
+      "resolution": "Preserve the observed final spelling and recorded integration. Keep the actual typo-correction operation unverified. Specify the artifact-versus-operation threshold only in a later criterion revision; do not retrospectively count either bounded representation as a substantive failure."
+    },
+    {
+      "finding_id": "B002",
+      "episode_id": "F02",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "description": "The nominal backport description supports either technical context or a cautious pragmatic contribution proposal. R08 retains a statement while the other runs screen it as context; R08 preserves partial reversion, target version, attributed fix claim, and the literal-description alternative without inferring a merge requirement.",
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "unit_ids": [
+            "C00"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "unit_ids": [],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "unit_ids": [
+            "F02-C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "unit_ids": [
+            "C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        }
+      ],
+      "applicable_rule": "Both assigned guides: extract plausible candidates with technical alternatives; context inventory is not a substantive quality score; preserve attribution, object and qualification.",
+      "resolution": "Retain the alternative as a coverage difference, not an omitted mandatory institutional prescription or an established institutional act. Do not use the focal merge to infer outcomes for referenced objects."
+    },
+    {
+      "finding_id": "B003",
+      "episode_id": "F02",
+      "diagnosis": "defensible_alternative",
+      "effect": "convention_only",
+      "description": "The proposed paragraph can retain the literal hypothetical first-person editor or reconstruct advice to the PR editor. All six preserve the same tentative edit and technical qualifications; neither parse makes the reviewer commit to editing or makes the addressee explicit.",
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 117,
+            "quote": "I'd maybe change it to:"
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides: distinguish literal and pragmatic parses; preserve explicit action/object roles where retained and explain reconstructed actor roles; preserve defensible alternative decompositions.",
+      "resolution": "Preserve both bounded actor analyses. Agreement on actor-basis labels is not a substitute for assessing the common tentative replacement proposition."
+    },
+    {
+      "finding_id": "B004",
+      "episode_id": "F01",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "description": "R10 relations[24] labels U33 -> U30 as uptake. U30 is maflcko’s earlier suggestion to perform cleanup in a separate pull; U33 is the author’s later boundary that cleanup is outside this PR. The direction therefore reverses the initiating proposal and the putative response. Their substantive scope correspondence remains plausible; this is not proof of adoption or of a cleanup outcome.",
+      "affected": [
+        {
+          "annotation_id": "R10",
+          "unit_ids": [
+            "U30",
+            "U33"
+          ],
+          "relation_ids": [
+            "relations[24]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1, Relations: uptake points from the initiating request or proposal to its attributable response or reported implementation; clarifies runs from clarifying to clarified content.",
+      "resolution": "For an uptake claim reverse the endpoints to U30 -> U33 and retain contextual basis. Alternatively retain U33 -> U30 with a clarification relation and an appropriately bounded explanation. No change to the PR outcome is warranted."
+    },
+    {
+      "finding_id": "B005",
+      "episode_id": "F01",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "description": "The rebase report names master but not fulfillment of the after-#26589 qualification. R09 u08 institution.recognition[0] and disposition_events[0], and R17 C02b institution.recognition[0], target this_proposition while explicitly acknowledging that the dependency is unverified. R17’s disposition separately remains unresolved. The representations preserve the limitation in prose, but the target label can be read as either correspondence to the requested action or implementation of the complete qualified proposition.",
+      "affected": [
+        {
+          "annotation_id": "R09",
+          "unit_ids": [
+            "u08"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "unit_ids": [
+            "C02b"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 40,
+            "quote": "Rebased on master and updated to v24.0.1"
+          }
+        }
+      ],
+      "applicable_rule": "guide_2 requires material qualifications to survive, distinguishes reported implementation from verification, and requires event target scope. It does not specify a separate partial-implementation target or exactly how incomplete reported fulfillment maps to this_proposition.",
+      "resolution": "Preserve a report that the current PR was rebased on master, with fulfillment of the #26589-dependent request unresolved. Do not count the report as verification of the complete qualified request. Clarify the action-correspondence versus full-proposition target convention in a later guide; the explicit caveats prevent treating this as an unqualified factual implementation error."
+    },
+    {
+      "finding_id": "B006",
+      "episode_id": "F01",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "description": "R04 S13 institution.recognition[0] calls the later open-and-occasionally-rebase suggestion a same-actor restatement of this_proposition. The original proposition’s stopping condition is another PR needing this addition; the later suggestion does not repeat that condition. R04’s own relations[32] distinguishes the timing qualifications. The event target is narrower than the evidence supports, although no interpersonal standing is claimed.",
+      "affected": [
+        {
+          "annotation_id": "R04",
+          "unit_ids": [
+            "S13"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 302,
+            "end": 375,
+            "quote": "But we can also keep this PR open until there's another PR that needs it."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 158,
+            "end": 239,
+            "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1 requires preserving material conditions and distinguishes this_proposition from broader_principle; recognition of a shared general principle does not endorse every clause of a particular formulation.",
+      "resolution": "Retain same-actor correspondence to the broader open-PR method, using broader_principle rather than this_proposition. Do not infer that the later suggestion reiterates the dependent-PR stopping condition, nor turn the later merge into rejection of that condition."
+    },
+    {
+      "finding_id": "B007",
+      "episode_id": "F01",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "description": "Future cleanup is explicitly assigned to a separate pull or follow-up, yet R03 R05 and C30 and R10 U24 set proposition.decision_object_id to the containing PR #26586. Their prose itself says the later contribution is unidentified. R03 R05 also assigns the containing PR as object_id for the general-cleanup endorsement. These identifiers conflate the venue in which future cleanup is discussed with its unresolved implementation proposal. No supplied disposition is wrongly asserted for the future cleanup, so the demonstrated effect is an identity-evidence error.",
+      "affected": [
+        {
+          "annotation_id": "R03",
+          "unit_ids": [
+            "R05",
+            "C30"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "unit_ids": [
+            "U24"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1, Focal proposition and event identity: identify the specific decision object when established, leave null when unresolved/inapplicable, and do not substitute the containing discussion’s identifier for a different proposal.",
+      "resolution": "Set the unidentified future cleanup proposal’s decision_object_id to null and explain that #26586 remains the discussion venue. For the R03 endorsement distinguish general-cleanup assent from an identified follow-up object; retain the known episode key without treating it as the unknown proposal ID. Preserve the existing absence of a cleanup disposition."
+    },
+    {
+      "finding_id": "B008",
+      "episode_id": "F01",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "unresolved",
+      "description": "The recent-non-EOL retention minimum receives an exact partial quotation followed by I tend to agree. R01 minimum_recent, R09 u30 and R17 R02a read this as local recognition of the proposed expectation; R03 R06 and R10 U31 retain ordinary assent, and R04 S32 leaves expectation recognition unresolved. The quotation identifies the recurring floor but omits the original wallet-domain lead-in and explicit no-substitution phrase. Both the recognition threshold and full-versus-core target scope remain interpretive at this occurrence; quotation and assent alone do not settle them.",
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "unit_ids": [
+            "minimum_recent"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "unit_ids": [
+            "R06"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "unit_ids": [
+            "S32"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "unit_ids": [
+            "u30"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "unit_ids": [
+            "U31"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "unit_ids": [
+            "R02a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 513,
+            "end": 637,
+            "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+          }
+        }
+      ],
+      "applicable_rule": "guide_2 permits locally_supported only for attributable recognition of an expectation or arrangement, not mere technical assent. guide_1 further requires treatment as a reason, standard, status, or governing consideration and distinguishes broader-principle from full-proposition recognition. Neither guide resolves this specific qualified-assent threshold by a mandatory linguistic cue.",
+      "resolution": "Preserve qualified local assent to the quoted retention floor as the common evidenced claim. Keep ordinary technical endorsement and recognition of a proposed local standard as explicit alternatives, with the full wallet/no-substitution scope separately qualified. Do not infer a binding, project-wide, enforced, repeated, or permanent policy from this occurrence; do not adjudicate by counting annotations."
+    },
+    {
+      "finding_id": "B009",
+      "episode_id": "F01",
+      "diagnosis": "defensible_alternative",
+      "effect": "convention_only",
+      "description": "The every-major-release instruction is represented at two analytical layers: the operational act of adding versions, or the collective-choice proposal to select a recurring coverage arrangement. The annotations retain the recurring scope and uncertainty about adoption. These level labels need not express different historical conclusions when the focal layer is stated.",
+      "affected": [
+        {
+          "annotation_id": "R01",
+          "unit_ids": [
+            "every_major"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R03",
+          "unit_ids": [
+            "C05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R04",
+          "unit_ids": [
+            "S10"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R09",
+          "unit_ids": [
+            "u09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R10",
+          "unit_ids": [
+            "U09"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R17",
+          "unit_ids": [
+            "C04a"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides separate statement target from observed action and classify governed activity rather than a modal word; operational conduct and deliberation over a recurring arrangement are distinct analytical layers, with justified alternatives retained.",
+      "resolution": "Preserve the layer stated in each rationale. Compare the operational inclusion expectation and the proposal to choose that recurring standard separately; none of these labels alone establishes adoption, authorization, constitutional authority, or network governance."
+    },
+    {
+      "finding_id": "B010",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R15 F03-U17 institution.recognition[0] uses target=this_proposition with object_id=null and no identity evidence, while the same unit explicitly says the contemplated workflow’s proposal identity is unknown. The technical response plainly corresponds to the additional-output idea, but the event does not follow the assigned guide’s unknown-object target convention. Its standing profile remains none and it asserts no implementation or authority.",
+      "affected": [
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 179,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ],
+      "applicable_rule": "guide_1, event identity: every recognition event declares object_id and identity_evidence; explain whether null is unknown or inapplicable; an unknown required object also makes target unresolved.",
+      "resolution": "Keep the contextual correspondence to the additional-output method, but use an unresolved event target with an explicit unknown-object explanation under this guide. Do not assign #7819 or #8182 as the future-work object merely from the venue or later supersession. This is a representation-convention correction, not evidence that the technical response did not occur."
+    },
+    {
+      "finding_id": "B011",
+      "episode_id": "F03",
+      "diagnosis": "execution_failure",
+      "effect": "evidence_basis",
+      "description": "R02 relations[3] and R07 relations[3] describe the body’s non-delay intention as earlier than the current-review comment. The retained body was subsequently updated and the packet supplies no sentence-level history. The semantic correspondence is supported, but that particular wording order is not. Both annotations otherwise acknowledge the edit-history limit.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U14"
+          ],
+          "relation_ids": [
+            "relations[3]"
+          ],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U03",
+            "F03-U11"
+          ],
+          "relation_ids": [
+            "relations[3]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rule": "guide_2 requires bounded source-grounded relations and forbids reconstructing missing history. The frozen body entry explicitly warns that its creation timestamp does not date retained later-edited wording.",
+      "resolution": "Retain the clarifies relation as semantic correspondence and remove earlier/later wording claims between the body sentence and comment. The comment sequence itself remains dated; there is no basis to infer which version of the body sentence preceded that sequence."
+    },
+    {
+      "finding_id": "B012",
+      "episode_id": "F03",
+      "diagnosis": "defensible_alternative",
+      "effect": "unresolved",
+      "description": "The fee-only question can be read as tentative self-questioning of continued additional-output work, or only as an alternative scope after a historical attempt. R18 U17 marks dispute_present with that narrow prospective meaning; other annotations preserve the question without treating the report of trying the method as disputed. The source does not contradict the historical attempt or record a final abandonment.",
+      "affected": [
+        {
+          "annotation_id": "R02",
+          "unit_ids": [
+            "F03-U18",
+            "F03-U19"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R07",
+          "unit_ids": [
+            "F03-U14",
+            "F03-U15"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R13",
+          "unit_ids": [
+            "U16",
+            "U17"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R15",
+          "unit_ids": [
+            "F03-U17",
+            "F03-U18"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R16",
+          "unit_ids": [
+            "F03-U10",
+            "F03-U11"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R18",
+          "unit_ids": [
+            "U17",
+            "U18"
+          ],
+          "relation_ids": [
+            "relations[9]"
+          ],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "applicable_rule": "Both guides require any dispute to target the same proposition or its application/premise and preserve uncertainty. A historical work report and the prospective continuation of its method are distinguishable focal meanings; opposing themes alone do not establish interpersonal conflict.",
+      "resolution": "Keep the historical attempt uncontested. Retain prospective self-questioning as a bounded alternative challenge to continuation or scope, without counting it as interpersonal disagreement, rejection, withdrawal, or an adopted fee-only decision. The Boolean should not be treated as a complete measure of dispute meaning."
+    }
+  ],
+  "coverage": [],
+  "case_notes": {
+    "F02": {
+      "status": "source comparison complete; final ledger checks pending",
+      "source_entries_read": 22,
+      "observations": [
+        "Four substantive review edits are preserved with settings and hedges.",
+        "All reports/ACKs remain distinct from obligation recognition and network adoption.",
+        "Terse Both/fixed targets remain unresolved.",
+        "Patch contains both technical documentation paragraphs; missing backward-compatibility wording is not silently promoted to verbatim adoption."
+      ]
+    },
+    "F01": {
+      "status": "source comparison complete; final ledger checks pending",
+      "source_entries_read": 42,
+      "observations": [
+        "All original and supplemental entries screened, including three empty review bodies.",
+        "Pinned guidance and historical patches establish bounded documentary content, not universal release-selection authority or uninterrupted standing.",
+        "Bot reaction is an announced conditional procedure, not an observed correction or sanction.",
+        "The retained merged addition preserves prior versions; it does not settle adoption of every general coverage criterion.",
+        "Operational versus recurring-arrangement levels remain qualified analytical alternatives."
+      ]
+    },
+    "F03": {
+      "status": "source comparison complete; final ledger checks pending",
+      "source_entries_read": 19,
+      "observations": [
+        "Review-now is distinct from exposing the feature; no permission or completed review is inferred from can.",
+        "Technical sequence, child-transaction, and computational-growth claims remain attributed rather than institutional sanctions.",
+        "All annotations preserve the incomplete spelling fragment and the delayed-send option’s unresolved wording.",
+        "The retained #7819 artifact is unmerged; reported inclusion in #8182 remains separate from verified code transfer and both recorded unmerged outcomes.",
+        "The unseen images, missing successor patch, and absent revision chronology are not supplied from outside sources."
+      ]
+    }
+  },
+  "review_limits": [
+    "Version masking is incomplete because assigned schemas differ.",
+    "This is revisable AI source review, not a reference truth set.",
+    "Only supplied frozen packets and assigned guides are used; absent thread, revision, permission and adoption histories remain absent."
+  ]
+}

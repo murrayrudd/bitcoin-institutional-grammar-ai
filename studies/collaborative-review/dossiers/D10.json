@@ -1,0 +1,512 @@
+{
+  "topic_id": "D10",
+  "title": "Methods and proposed expectations",
+  "question": "Assess whether a specific-test preference, the coupled EOL-drop and stored-wallet alternative, and not rushing a merge articulate methods or expected conduct. Retain defensible alternatives; no shared norm follows merely from classification.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q047",
+      "title": "The specific-test preference is strategy_candidate in R04/R10 and undetermined in R01/R03/R09/R17.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain articulated-method and engineering-preference readings. This is not evidence that a shared testing norm was adopted. Avoid imposing a new commitment threshold on every identifiable method.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 231,
+            "end": 327,
+            "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 250,
+            "end": 327,
+            "quote": "specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, strategy_candidate for an explicit method/personal plan, undetermined for a one-off technical suggestion without sufficient institutional type evidence."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C09",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 231,
+                "end": 327,
+                "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko favors using specific compatibility tests, illustrated by tests findable using git grep -l skip_if_no_prev.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The grep command identifies examples, not a separate imperative."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S12",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 231,
+                "end": 327,
+                "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko prefers using specific compatibility tests, exemplified by tests found with git grep -l skip_if_no_prev.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "An articulated methodological preference for specific tests, without expressed duty.",
+                "type_alternatives": [
+                  "norm_candidate",
+                  "undetermined"
+                ]
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U11",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 231,
+                "end": 327,
+                "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko recommends specific compatibility tests, exemplified by those located with git grep -l skip_if_no_prev, in preference to the general test.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The examples can be located with git grep -l skip_if_no_prev; the speaker does not supply an independent imperative to run it."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "maflcko recommends specific compatibility tests, exemplified by those located with git grep -l skip_if_no_prev, in preference to the general test.",
+                "type_alternatives": [
+                  "undetermined"
+                ]
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q048",
+      "title": "The coupled EOL-drop/regtest-wallet alternative is strategy_candidate in R04/R10 and undetermined in the other annotations.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve both proposals, their substitution relation, and exploratory force. The store parse must retain inferred destination and no invented human actor. Do not infer implementation or a duty to abandon all EOL tests.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 281,
+            "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 0,
+            "end": 181,
+            "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, method versus one-off design suggestion, role-specific basis under reconstructed actions, and semantically equivalent coupled actions."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C20",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko tentatively proposes dropping EOL versions as part of a replacement approach using regtest wallets.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Maybe makes the proposal tentative; removal is paired with hosting regtest wallets instead.",
+                "Rationale prioritizes old-wallet loading in modern versions over modern-wallet opening in ancient EOL versions."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+                "type_alternatives": []
+              }
+            },
+            {
+              "unit_id": "C21",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 227,
+                "end": 281,
+                "quote": "the qa-assets repo hosts some regtest wallets instead?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko tentatively proposes hosting some regtest wallets in the qa-assets repository instead, paired with dropping EOL versions.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Tentative replacement paired with dropping EOL versions."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S18",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko tentatively proposes dropping EOL versions from these tests.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "This is paired with storing regtest wallets in qa-assets instead and prioritizes loading old wallets with modern versions over opening modern wallets with EOL versions.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "A tentative alternative testing method, without an obligation or authorization.",
+                "type_alternatives": []
+              }
+            },
+            {
+              "unit_id": "S19",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 227,
+                "end": 281,
+                "quote": "the qa-assets repo hosts some regtest wallets instead?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko tentatively proposes hosting some regtest wallets in qa-assets as the counterpart to dropping EOL versions.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Instead refers to replacing EOL-version testing, with priority given to loading ancient wallets in a modern version.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "The storage component of a proposed compatibility-testing method; no expected duty is established.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U17",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko proposes possibly dropping EOL versions from these tests as part of a replacement using retained regtest wallets.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The stated priority is loading ancient wallets with modern versions rather than opening modern wallets with ancient EOL software; the proposal is tentative."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "maflcko proposes possibly dropping EOL versions from these tests as part of a replacement using retained regtest wallets.",
+                "type_alternatives": [
+                  "undetermined"
+                ]
+              }
+            },
+            {
+              "unit_id": "U18",
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 223,
+                "end": 281,
+                "quote": "and the qa-assets repo hosts some regtest wallets instead?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "As the paired alternative to EOL versions, maflcko proposes that the qa-assets repository host some regtest wallets.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The stated priority is loading ancient wallets with modern versions rather than opening modern wallets with ancient EOL software; the proposal is tentative."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "strategy_candidate",
+                "rationale": "As the paired alternative to EOL versions, maflcko proposes that the qa-assets repository host some regtest wallets.",
+                "type_alternatives": [
+                  "undetermined"
+                ]
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q049",
+      "title": "The not-rush-merging formulation is norm_candidate in R04/R10/R17 and undetermined in R01/R03/R09.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the proposed-restraint and case-specific-rationale alternatives. Resolve the separate parse-mode convention without treating it as evidence that the norm interpretation is true or false.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 285,
+            "end": 460,
+            "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 245,
+            "end": 366,
+            "quote": "> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 430,
+            "end": 509,
+            "quote": "This PR itself is where most of the thorough checking happens, at every rebase."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, norm_candidate as proposed expected conduct without shared acceptance; undetermined when institutional relevance does not select a type."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C28",
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 370,
+                "end": 429,
+                "quote": "This can also be a reason to not rush merging new releases."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors suggests not rushing new-release additions into these tests because thorough checking occurs on PR rebases.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The stated checking benefit is Sjors account, not an observed CI log.",
+                "The referenced failure-investigation assertion excepts recurring obvious smoke issues."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S24",
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 370,
+                "end": 429,
+                "quote": "This can also be a reason to not rush merging new releases."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors suggests that the claimed lack of failure investigation is a reason not to rush merging new releases into the testing matrix.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "This refers to the quoted claim that, apart from obvious smoke-test issues on every run, failures receive little investigation.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "norm_candidate",
+                "rationale": "A proposed restraint on recurring integration timing, supported by an explicit reason rather than attributed authority.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U23",
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 370,
+                "end": 429,
+                "quote": "This can also be a reason to not rush merging new releases."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers the reported weak investigation of intermittent failures as a reason not to rush merging additions of new releases.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "This refers to the immediately repeated failure-investigation qualification, not a claim that no failures receive attention.",
+                "Sjors attributes thorough checking to the PR at each rebase; this remains a participant report."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "norm_candidate",
+                "rationale": "Sjors offers the reported weak investigation of intermittent failures as a reason not to rush merging additions of new releases. The candidate reflects expected conduct or an asserted standard; no attributed authorization or enforcement claim meets the rule-candidate threshold.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:11",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version. So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?\r\n\r\nIn any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here.\r\n"
+    },
+    {
+      "source_id": "pr26586:comments:15",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master. That said, there's no pressing reason to merge this. As we've done before, we could just leave the PR open and occasionally rebase it.\r\n\r\n\r\n> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here\r\n\r\nThis can also be a reason to not rush merging new releases. This PR itself is where most of the thorough checking happens, at every rebase.\r\n\r\n> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree. In any case we can always prune versions in a followup."
+    },
+    {
+      "source_id": "pr26586:comments:5",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues. I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+    }
+  ]
+}

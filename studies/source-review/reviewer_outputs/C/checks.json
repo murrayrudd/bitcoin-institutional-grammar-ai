@@ -1,0 +1,187 @@
+{
+  "status": "pass",
+  "screened_entries": 43,
+  "units": 39,
+  "statement_units": 24,
+  "exact_anchor_references": 240,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "C115_unsubstantiated",
+      "source_id": "32359-115",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 354,
+          "end": 364,
+          "quote": "acks/nacks"
+        }
+      },
+      "note": "The coordinated phrase supplies the shared review-signal object after repeat; it is outside this minimal child span but applies to leave as well."
+    },
+    {
+      "unit_id": "C115_unsubstantiated",
+      "source_id": "32359-115",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 300,
+          "end": 321,
+          "quote": "There is no reason to"
+        }
+      },
+      "note": "The shared negative evaluation is interpreted as advisory avoidance, not a lexical obligation or binding prohibition."
+    },
+    {
+      "unit_id": "C115_repetition",
+      "source_id": "32359-115",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 300,
+          "end": 321,
+          "quote": "There is no reason to"
+        }
+      },
+      "note": "The preceding negative evaluation scopes both coordinated actions. It supplies inferred avoidance, not an explicit must not."
+    },
+    {
+      "unit_id": "C227_capitulate",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 192,
+          "end": 244,
+          "quote": "the absence of a technically perfect solutions means"
+        }
+      },
+      "note": "The preceding means clause supplies the premise assigned to this described position. Rendering the premise as activation is an interpretive choice; it is not verified as an actual opponent belief."
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 245,
+          "end": 247,
+          "quote": "we"
+        }
+      },
+      "note": "The preceding we should clause scopes the coordinated remove action."
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 248,
+          "end": 254,
+          "quote": "should"
+        }
+      },
+      "note": "The source should governing capitulate also scopes and remove."
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 192,
+          "end": 244,
+          "quote": "the absence of a technically perfect solutions means"
+        }
+      },
+      "note": "The quoted means clause supplies the premise for both described actions; activation wording is an inference."
+    },
+    {
+      "unit_id": "C33453_schedule",
+      "source_id": "33453-body",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1206,
+          "end": 1242,
+          "quote": "Deprecating the option in the future"
+        }
+      },
+      "note": "The enclosing future-deprecation clause scopes the recommendation, so the conditional wording is inferred rather than quoted."
+    },
+    {
+      "unit_id": "C213_defaults",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Defaults are the expressed target of let in both the source and the proposed retention reading."
+    },
+    {
+      "unit_id": "C213_high_default",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The source directly makes the limit the target of setting; the pragmatic recommendation preserves that role."
+    },
+    {
+      "unit_id": "C115_unsubstantiated",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The coordinated phrase supplies the shared review-signal object after repeat; it is outside this minimal child span but applies to leave as well."
+    },
+    {
+      "unit_id": "C115_repetition",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "acks/nacks remains the explicit object of repeat when the evaluative sentence is read as a recommendation."
+    },
+    {
+      "unit_id": "C018_add_flag",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The flag remains the direct object of add in the literal question and inferred recommendation."
+    },
+    {
+      "unit_id": "C018_add_flag",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bind",
+      "note": "The invocation remains the distinct destination of the added flag. Treating it as an execution target instead is a bounded grammatical alternative."
+    },
+    {
+      "unit_id": "C012_no_args",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The expression more args is already the object of adding; the pragmatic negative recommendation preserves that role."
+    },
+    {
+      "unit_id": "C33453_remove_deprecation",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The deprecation remains the explicit target of Removes in the descriptive source and proposed-change reading."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

@@ -1,0 +1,69 @@
+{
+  "run_id": "F02_v04_r2",
+  "episode_id": "F02",
+  "packet_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+  "stages": [
+    {
+      "stage": 1,
+      "action": "Read assigned instructions, complete v0.4 codebook/schema, and complete packet within run directory."
+    },
+    {
+      "stage": 2,
+      "action": "Completed all entry screening and first annotation; preserved annotation.first_complete.json before checks or source self-review."
+    },
+    {
+      "stage": 3,
+      "action": "Executed python3 tools/check_annotation.py packet.json annotation.json; preserved checks.first.json.",
+      "result": "pass; no mechanical errors; 36 source-review flags"
+    },
+    {
+      "stage": 4,
+      "action": "Completed one source-based self-review and recorded eight changes in repair_log.json; preserved first-complete file.",
+      "source_review_count": 1
+    },
+    {
+      "stage": 5,
+      "action": "Saved annotation.final.json and ran the supplied checker on it; preserved checks.json.",
+      "result": "pass; no mechanical errors; same 36 review flags, all addressed by indexed resolutions"
+    },
+    {
+      "stage": 6,
+      "action": "Saved access/configuration record and final artifact hashes; verified first-complete freeze and packet hash."
+    }
+  ],
+  "counts": {
+    "screened_entries": 22,
+    "focal_sources": 16,
+    "supplemental_sources": 6,
+    "candidate_entries": 5,
+    "context_only_entries": 14,
+    "empty_entries": 3,
+    "units": 15,
+    "statement_units": 5,
+    "context_units": 10,
+    "relations": 8,
+    "observed_outcomes": 4,
+    "mechanisms": 2,
+    "source_review_changes": 8,
+    "checker_flags": 36,
+    "checker_errors": 0
+  },
+  "artifact_hashes": {
+    "annotation.first_complete.json": "d1090bd00bb75c61ae21343feb0912d9d8d9c428b9fa8d5a44732cdee27b14cd",
+    "checks.first.json": "4aa5ea5b00e6d1c715a74ece0912ff2331d590cba44d7b417fdf787315a6f416",
+    "annotation.json": "7cc3d959c3bbd57f084dfff239d388d7a0f07e27503dee3cc9fdbf0275245c35",
+    "annotation.final.json": "7cc3d959c3bbd57f084dfff239d388d7a0f07e27503dee3cc9fdbf0275245c35",
+    "checks.json": "e110d7e4d639050dc9d8f5073d73d92b26145fa4b3dcab3279bb2c4b3510b776",
+    "repair_log.json": "c1e5ad49c7b2a77fd48e2ac7a6b1a0701deeb326438274dded2754330464a9b0",
+    "review_notes.json": "98c56b7de82d8effcf4d1406dc217a7ea9efd74ebb3e13dd736f94b8c69b7fc2",
+    "access_record.json": "1a93a8dab8b328998137852caa47df69bd84c4dbc9c8d69f50de58f468b46cae"
+  },
+  "unresolved_limits": [
+    "Should the nominal backport body be treated as a pragmatic contribution proposal or exclusively as technical context? Both readings are retained; it supports no rule or authority claim.",
+    "Which exact documentation edits are the two changes endorsed by Both, and which edit is the target of fixed?",
+    "Which complete earlier expression is the new check for \"*\", and how precisely did the final review update alter it?",
+    "How far do the supplied one-off edit suggestions bear any broader institutional significance beyond ordinary contribution review? The packet does not select a stronger institutional type."
+  ],
+  "completion_status": "complete_with_explicit_source_limits",
+  "finished_at_utc": "2026-11-07T19:09:39.957713+00:00"
+}

@@ -1,0 +1,436 @@
+{
+  "run_id": "R4_C_source_first_supplemented",
+  "episode_id": "CoreKnots_R4_C",
+  "supplement_source_id": "32406-169",
+  "original_packet_sha256": "243d892a04989cac6783c4b00b39bd3397b738bc5a3e484e49f3dab06b4db1b7",
+  "supplemented_packet_sha256": "15ce520b664af399fdce1ede4fd8243d51c2889c5b9397359eb7f76fc0df75f1",
+  "scope": "Source-only context completion, restricted to the added original source and focal interpretations it bears on. No baseline annotation, other review, or narrative conclusion was inspected. The eight focal records and their source text are unchanged.",
+  "packet_integrity": {
+    "original_entries_unchanged": true,
+    "focal_selection_unchanged": true,
+    "one_added_context_entry_matches_completion": true,
+    "provenance_hash_matches": true
+  },
+  "counts": {
+    "screened_entries": 44,
+    "focal_records": 8,
+    "total_units": 42,
+    "statement_units": 24,
+    "focal_statement_units": 23,
+    "role_counts": {
+      "statement": 24,
+      "container": 2,
+      "context": 12,
+      "quotation": 4
+    },
+    "relations": 21
+  },
+  "changed_existing_unit_ids": [
+    "C115_forum",
+    "C115_merit",
+    "C165_fixed",
+    "C227_majority"
+  ],
+  "changed_top_level_fields_by_unit": {
+    "C115_forum": [
+      "institution"
+    ],
+    "C115_merit": [
+      "institution",
+      "alternative_interpretation",
+      "confidence",
+      "uncertainty_reason"
+    ],
+    "C165_fixed": [
+      "institution",
+      "alternative_interpretation",
+      "uncertainty_reason"
+    ],
+    "C227_majority": [
+      "institution",
+      "alternative_interpretation"
+    ]
+  },
+  "new_context_or_quotation_unit_ids": [
+    "C166_classification_complaint",
+    "C169_quote",
+    "C169_reply"
+  ],
+  "new_statement_units": 0,
+  "changes": [
+    {
+      "unit_id": "C115_merit",
+      "decision": "Change standing from text_only to locally_supported, add attributable expectation_recognition targeted at this_proposition, and preserve the bounded alternative. No grammatical component, force, scope, or governance-level change.",
+      "rationale": "Both statements explicitly prioritize the substance of review over a numeric tally. The added source names technical content and category counts, while the focal unit names argument merit and repeated postings. This supplies recognition of the general criterion, not verification of actual weights or acceptance of every application. No direct reply to glozow or cross-episode chain is inferred.",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 92,
+            "end": 186,
+            "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 504,
+            "end": 613,
+            "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+          }
+        }
+      ],
+      "reasonable_alternative": "A strict exact-application reading could retain text_only and use broader_proposal recognition because the quantities compared differ. That alternative is recorded in the supplemented unit."
+    },
+    {
+      "unit_id": "C115_forum",
+      "decision": "Add broader-arrangement recognition and evidence; retain text_only standing and case-specific operational coding.",
+      "rationale": "The added non-voting claim concerns the bot summary in PR 32406. It supports a compatible arrangement, but does not explicitly characterize this PR 32359 forum.",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 14,
+            "end": 91,
+            "quote": "this is a pull request open for code review, not a per-username voting forum."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 335,
+            "end": 394,
+            "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 395,
+            "end": 503,
+            "quote": "It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C165_fixed",
+      "decision": "Refine the interpretation and add evidence; retain context role, reported_action, and all classification fields.",
+      "rationale": "The earlier quoted question asks whether the bot stopped updating; the new reply explains mixed-ACK/NACK categorization. Fixed is not shown to cover both, and the update timestamp remains absent.",
+      "evidence": [
+        {
+          "source_id": "32406-164",
+          "span": {
+            "start": 0,
+            "end": 66,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 146,
+            "end": 157,
+            "quote": "edit: fixed"
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 113,
+            "end": 198,
+            "quote": "When a comment contains both `ack` and `nack` (in uppercase), the bot just picks one."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C227_majority",
+      "decision": "Add the contrary bot-purpose context and bounded interpretation; retain text_only, unknown target level, and dispute_present=false.",
+      "rationale": "The added source is contrary to interpreting bot totals as an intended voting mechanism, but it neither quotes the majority statement nor identifies what winner means. Its different target does not establish a direct challenge to this focal proposition.",
+      "evidence": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 386,
+            "end": 423,
+            "quote": "Only the majority decides the winner."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 335,
+            "end": 394,
+            "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 504,
+            "end": 613,
+            "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+          }
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "C166_classification_complaint",
+        "C169_quote",
+        "C169_reply"
+      ],
+      "decision": "Add two supporting context units and one repeated quotation with quotes and uptake relations.",
+      "rationale": "The exact repetition establishes the recipient complaint of maflcko's added reply. The source's broader institutional claims remain available as evidence without exhaustive supporting-entry coding.",
+      "evidence": [
+        {
+          "source_id": "32406-166",
+          "span": {
+            "start": 10,
+            "end": 70,
+            "quote": "drahtbot has categorized your comment as nack instead of ack"
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 2,
+            "end": 62,
+            "quote": "drahtbot has categorized your comment as nack instead of ack"
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 113,
+            "end": 198,
+            "quote": "When a comment contains both `ack` and `nack` (in uppercase), the bot just picks one."
+          }
+        }
+      ]
+    }
+  ],
+  "justified_nonchanges": [
+    {
+      "unit_ids": [
+        "C165_referral",
+        "C165_known",
+        "C165_quote",
+        "C164_question"
+      ],
+      "decision": "No change to the issue referral, known-issue statement, repeated updating question, or original question.",
+      "rationale": "The added response targets the categorization complaint, not the original navigation instruction or issue-51 contents. The source supplies no new authority, sanction, or verified implementation for those focal units.",
+      "evidence": [
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 72,
+            "end": 157,
+            "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 2,
+            "end": 62,
+            "quote": "drahtbot has categorized your comment as nack instead of ack"
+          }
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "C115_no_repost",
+        "C115_unsubstantiated",
+        "C115_repetition"
+      ],
+      "decision": "No change to standing or deontic interpretation.",
+      "rationale": "Content over category totals does not explicitly recognize the conditional no-obligation to repeat a point, a duty to substantiate every ACK, or the full prohibition-like reading of repeated comments.",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 212,
+            "end": 299,
+            "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+          }
+        },
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 300,
+            "end": 419,
+            "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 504,
+            "end": 613,
+            "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+          }
+        }
+      ]
+    },
+    {
+      "source_ids": [
+        "32359-213",
+        "33224-018",
+        "32381-012",
+        "33453-body",
+        "33224-010"
+      ],
+      "decision": "No changes to their focal statements or interpretations.",
+      "rationale": "The added source concerns bot categories and review-summary purpose, not node-configuration proposals, translation tooling or freeze exceptions, extra arguments, or deprecation principles. It supplies no missing original quoted attribution for those focal sources.",
+      "evidence": [
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 113,
+            "end": 198,
+            "quote": "When a comment contains both `ack` and `nack` (in uppercase), the bot just picks one."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 395,
+            "end": 503,
+            "quote": "It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 504,
+            "end": 613,
+            "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+          }
+        }
+      ]
+    },
+    {
+      "decision": "No rule_candidate, repeatedly_supported, sanction, institutional effect, or causal merge finding added.",
+      "rationale": "The reply describes an expectation and a summary purpose without establishing rule-making authority, enforcement, a linked cross-episode chain, or an observed effect on integration. The unseen current-master guideline link is not treated as additional documentation.",
+      "evidence": [
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 335,
+            "end": 394,
+            "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 504,
+            "end": 613,
+            "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+          }
+        },
+        {
+          "source_id": "32406-169",
+          "span": {
+            "start": 614,
+            "end": 805,
+            "quote": "This is also explained in the comment above the table: \"See [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\""
+          }
+        }
+      ]
+    }
+  ],
+  "response_sequence": {
+    "claim": "The earlier updating complaint receives a known-issue response, referral, and reported fix. A separate categorization complaint is then quoted exactly in the added source and receives an explanation of selection when both categories occur, together with a non-voting review-summary explanation. Exact correspondence establishes the two replies; chronology does not show that the first repair caused the second clarification.",
+    "evidence": [
+      {
+        "source_id": "32406-164",
+        "span": {
+          "start": 0,
+          "end": 66,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+        }
+      },
+      {
+        "source_id": "32406-165",
+        "span": {
+          "start": 72,
+          "end": 157,
+          "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+        }
+      },
+      {
+        "source_id": "32406-166",
+        "span": {
+          "start": 10,
+          "end": 70,
+          "quote": "drahtbot has categorized your comment as nack instead of ack"
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 2,
+          "end": 62,
+          "quote": "drahtbot has categorized your comment as nack instead of ack"
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 113,
+          "end": 198,
+          "quote": "When a comment contains both `ack` and `nack` (in uppercase), the bot just picks one."
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 335,
+          "end": 394,
+          "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 395,
+          "end": 503,
+          "quote": "It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment."
+        }
+      }
+    ]
+  },
+  "unresolved_questions": [
+    "Whether category totals and repeated posting counts warrant this-proposition recognition of the general merit criterion or only broader-proposal recognition.",
+    "Whether the two bot issues share an underlying cause; what the fixed edit covered and when it was made.",
+    "What winner and majority mean in the focal majority claim; the added source does not identify its decision arena."
+  ],
+  "preserved_first_output_sha256": {
+    "annotation.json": "eb337c687b26c8e0cc74b9fd01c7af197d20869ec48f4dd08457121f2585c013",
+    "review_notes.json": "7a8766e4a56ae18a2d4587602f5854bbac5748cdd6eb8c9dcaff97c92fe51106",
+    "checks.json": "87cc051093a81babd83268614771592f3fc289c2b1c44b3766e53e42054c4083",
+    "repair_log.json": "19fca427b699556f6453f944366dd38cb0af26e3e4d332bf364b81760d44a045"
+  },
+  "accessed_paths": [
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/context_completion.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/context_completion_provenance.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/packet_v2.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/packet.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/annotation.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/review_notes.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/checks.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/repair_log.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/build_supplement.py",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/tools/check_annotation.py",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/protocol/annotation_schema.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/annotation.supplemented.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/checks.supplemented.json",
+    "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/C/supplement_review.json"
+  ],
+  "disallowed_material_encountered": false,
+  "source_review_completed": "Reread the added source and the original bot, forum/merit, and majority texts; reviewed all four changed units, new endpoints, event scopes, and summary changes against their exact evidence. The original extraction and component assignments remain unchanged."
+}

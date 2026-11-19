@@ -1,0 +1,102 @@
+{
+  "release_version": "0.4.1",
+  "annotation_schema_version": "0.4",
+  "date": "2026-11-07",
+  "status": "fixed operational release for reproducible reuse",
+  "origin": "Collaborative reconciliation decision D02 identified a mismatch between the recognition summary prose and the evaluated checker.",
+  "decision": "Clarify the instructions to match the evaluated projection; preserve the checker and all validation constraints.",
+  "projection": [
+    "Select recognition events with kind expectation_recognition and target this_proposition.",
+    "A different_actor event qualifies with mode explicit_expectation, expectation_application, or status_recognition and basis other than unresolved.",
+    "At least two distinct nonempty qualifying episode keys yield repeated_interpersonal; otherwise any qualifying different_actor event yields interpersonal.",
+    "Absent those conditions, a same_actor event in the selected set yields same_actor_only; otherwise a nonempty selected set yields unresolved; an empty selected set yields none."
+  ],
+  "interpretation": "A generic response or a broader-principle event remains visible outside the focal summary. None does not deny personal continuity or assent. Do not relabel an event merely to change its projection. Preserve unresolved basis and alternatives even when the deterministic summary is same_actor_only.",
+  "compatibility": {
+    "checker_sha256": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5",
+    "checker_byte_identical": true,
+    "schema_constraints": "unchanged; descriptions only",
+    "original_schema_version": "0.4",
+    "historical_records": "unchanged original archives and retained files; separately labeled derived reconciliation views"
+  },
+  "current_files_changed_from_v04": [
+    "README.txt",
+    "protocol/alignment_instructions.txt",
+    "protocol/annotation_schema.json",
+    "protocol/codebook.txt",
+    "protocol/coder_instructions.txt",
+    "protocol/source_review_instructions.txt",
+    "tools/build_codebook.py",
+    "tools/build_schema.py",
+    "tools/test_specification.py",
+    "tools/verify_release.py"
+  ],
+  "additions": [
+    "Reusable metadata adapter with conflict and identity checks",
+    "Packet preparation instructions",
+    "Bounded collaborative reconciliation instructions",
+    "Two labeled post-evaluation recognition examples",
+    "Complete evaluation, reconciliation, and application archives",
+    "Integrated working paper, source files, and bounded later follow-up",
+    "Compatibility, manuscript, and document review records"
+  ],
+  "metadata_adapter": "Normalize before future packet freeze. Preserve all original fields and exact text, reject conflicting aliases and identity mismatch, and log original and derived hashes. Never overwrite a frozen historical annotation.",
+  "evaluation_boundary": "No new independent coding, cross-model comparison, prospective transfer result, or semantic accuracy claim. Original v0.3-v0.4 agreement remains 24/42 versus 21/42 for all-six-field unanimity on the common subset.",
+  "checks": {
+    "regression": "release/regression_results.json",
+    "compatibility": "release/compatibility_results.json",
+    "manuscript": "release/manuscript_checks.json",
+    "document_review": "release/document_quality_check.json"
+  },
+  "historical_archives": [
+    {
+      "path": "evidence/core_knots_comparison_v01.zip",
+      "bytes": 2869437,
+      "sha256": "b210462c6f8c88e978ecfd3ba0df5e1b062d2550b9198b5f275f0c34d2615588",
+      "zip_crc": "pass",
+      "members": 36
+    },
+    {
+      "path": "evidence/core_knots_source_review_v01.zip",
+      "bytes": 1388267,
+      "sha256": "8ceba370f891f478dd6af19dd8a8c9a0280b510abbce3dca9f94ac4d9e0a86f1",
+      "zip_crc": "pass",
+      "members": 107
+    },
+    {
+      "path": "evidence/fresh_coding_v01.zip",
+      "bytes": 9052383,
+      "sha256": "a170138fce0a2931ce83406548811268b61b8269b4f47a378e3114a125b2812c",
+      "zip_crc": "pass",
+      "members": 647
+    },
+    {
+      "path": "evidence/methodological_baseline_v01.zip",
+      "bytes": 652560,
+      "sha256": "5514b97a314d690bd526f4cb97ea4fdb8ab7a1da96c117805ddabf45753822bf",
+      "zip_crc": "pass",
+      "members": 145
+    },
+    {
+      "path": "evidence/overlap_validation_v01.zip",
+      "bytes": 5642127,
+      "sha256": "212544a1232b871234d697e165a574fc205c0ed9c018d2911913528fd1bd3e5d",
+      "zip_crc": "pass",
+      "members": 104
+    },
+    {
+      "path": "evidence/reconciliation_v01.zip",
+      "bytes": 886334,
+      "sha256": "f24c1d1c272eea32c9a6a5c44b0bfea3570960d03e5814b54d5095c4970c3e51",
+      "zip_crc": "pass",
+      "members": 85
+    },
+    {
+      "path": "evidence/specification_v0.4.zip",
+      "bytes": 294261,
+      "sha256": "03268e6c2b7b63c50be01c3a78bcc080cb69147b3ff41f06f525f9b400ca7256",
+      "zip_crc": "pass",
+      "members": 42
+    }
+  ]
+}

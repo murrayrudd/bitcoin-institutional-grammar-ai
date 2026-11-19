@@ -1,0 +1,268 @@
+{
+  "title": "IG2 coding evaluation: recovered progress",
+  "subtitle": "Project specifications 0.3 and 0.4 | November 7, 2026\nIndependent coding complete; source audits incomplete",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Recovered position"
+    },
+    {
+      "type": "paragraph",
+      "text": "The completed research outputs survived the interruption. All eighteen independent coding runs, their original source packets, the masked proposition alignment, and the agreement calculations remain intact. A recovery check confirmed every frozen run’s input and output hashes and the alignment freeze. There is no need to repeat the independent coding."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both independent source-review agents encountered the weekly usage limit before completing their final audits. Consequently, the primary comparison of source-supported errors and the final readiness judgment remain unfinished. The agreement results below are complete descriptive findings; they do not establish that version 0.4 is validated or better overall."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Stage",
+        "Recovered status"
+      ],
+      "rows": [
+        [
+          "Sources and specifications",
+          "Frozen packets and both coding specifications intact."
+        ],
+        [
+          "Independent coding",
+          "18 runs complete: 3 cases × 2 versions × 3 coders."
+        ],
+        [
+          "Masked alignment",
+          "Complete: all 314 statement occurrences assigned exactly once."
+        ],
+        [
+          "Agreement analysis",
+          "Complete, including supplementary alpha and numerical verification."
+        ],
+        [
+          "Source review A",
+          "F02 and F03 case reviews complete. F01 has two of six annotations reviewed; remaining annotations and cross-checks pending."
+        ],
+        [
+          "Source review B",
+          "Working findings and all-case source-comparison notes retained. Final coverage ledger and review remain incomplete."
+        ],
+        [
+          "Reconciliation and final assessment",
+          "Pending completion and freezing of both independent source reviews."
+        ]
+      ],
+      "widths": [
+        1.8,
+        5.3
+      ],
+      "font_size": 9.5
+    },
+    {
+      "type": "paragraph",
+      "text": "The source cases are Bitcoin Core PR #26586, concerning previous-release compatibility tests; PR #14441, a wallet backport; and PR #7819, an opt-in replacement checkbox proposal. A frozen deterministic selection excluded 226 previously exposed or referenced PRs from the retained project inventory. The three packets preserve 49 original entries and 34 supplemental entries. Every paired run for a case received identical source bytes. Freshness refers to that recorded project inventory; model training exposure remains unknown."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each coder worked independently, preserved its first complete output, received mechanical feedback, and performed one source-based self-review. The comparison uses final independent outputs before external reconciliation. All runs used the inherited primary configuration without overrides. Provider snapshots, seeds, token use, cost, and the platform’s credit accounting were unavailable."
+    },
+    {
+      "type": "heading",
+      "text": "Independent agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The eighteen runs contain 587 retained units, including 314 statement occurrences: 155 under version 0.3 and 159 under version 0.4. The masked alignment assigns every statement exactly once to 56 groups: 48 one-to-one, four split/combined, and four unmatched groups. It records no unresolved alignment group. These are correspondence judgments, not source-validity findings."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Case",
+        "0.3 statements by run",
+        "0.4 statements by run",
+        "Within-version matches: 0.3 / 0.4",
+        "Common all-six matches"
+      ],
+      "rows": [
+        [
+          "F01",
+          "31, 31, 33",
+          "34, 33, 30",
+          "28 / 28",
+          27
+        ],
+        [
+          "F02",
+          "4, 4, 4",
+          "4, 5, 4",
+          "4 / 4",
+          4
+        ],
+        [
+          "F03",
+          "16, 16, 16",
+          "15, 17, 17",
+          "14 / 12",
+          11
+        ]
+      ],
+      "widths": [
+        0.6,
+        1.35,
+        1.35,
+        2.0,
+        1.8
+      ],
+      "font_size": 9.5,
+      "note": "Within-version matches require one corresponding statement from each of that version’s three coders. The common subset requires one-to-one correspondence across all six runs. Counts describe retained records; source review determines material omissions and meaning preservation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Within-version comparison includes 46 propositions under version 0.3 and 44 under version 0.4, covering 138 of 155 and 132 of 159 statement occurrences, respectively. The common all-six comparison contains 42 propositions: 27 from F01, four from F02, and eleven from F03. It therefore concentrates heavily on the procedure case. The table below compares the same propositions under both versions."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Field",
+        "0.3: all three agree",
+        "0.4: all three agree",
+        "0.3: nominal alpha",
+        "0.4: nominal alpha"
+      ],
+      "rows": [
+        [
+          "Grammar",
+          "41/42 (97.6%)",
+          "41/42 (97.6%)",
+          "0.4960",
+          "0.4960"
+        ],
+        [
+          "Deontic force",
+          "36/42 (85.7%)",
+          "38/42 (90.5%)",
+          "0.7997",
+          "0.8281"
+        ],
+        [
+          "Institutional type",
+          "34/42 (81.0%)",
+          "29/42 (69.0%)",
+          "0.7580",
+          "0.6468"
+        ],
+        [
+          "Statement target level",
+          "35/42 (83.3%)",
+          "33/42 (78.6%)",
+          "-0.0504",
+          "-0.0684"
+        ],
+        [
+          "Observed action level",
+          "37/42 (88.1%)",
+          "35/42 (83.3%)",
+          "0.6627",
+          "0.6176"
+        ],
+        [
+          "Dispute present",
+          "41/42 (97.6%)",
+          "40/42 (95.2%)",
+          "0.8922",
+          "0.8714"
+        ]
+      ],
+      "widths": [
+        1.8,
+        1.45,
+        1.45,
+        1.2,
+        1.2
+      ],
+      "font_size": 9.5,
+      "note": "Independent final coding, before external reconciliation. Alpha is a supplementary descriptive statistic. The figures do not measure accuracy, population reliability, or negotiated consensus. Dispute is only a Boolean projection; its target and substantive scope require source review."
+    },
+    {
+      "type": "paragraph",
+      "text": "All three coders match on all six fields simultaneously in 24 of 42 common propositions under version 0.3 and 21 of 42 under version 0.4. This composite is more demanding than agreement on any individual field and should not be compared directly with a conventional alpha threshold. Grammar remains unchanged; deontic-force agreement improves modestly on the common subset, while institutional-type and level agreement decline. These results do not support an overall repeatability improvement for version 0.4."
+    },
+    {
+      "type": "paragraph",
+      "text": "Category imbalance matters. Each version assigns 124 of the 126 common-subset grammar judgments to regulative and only two to constitutive. Thus, 41 of 42 propositions have unanimous grammar labels while nominal alpha remains approximately 0.496. This sample supplies little evidence about discrimination between grammar categories. Target-level judgments likewise concentrate on operational activity; the coders place the few collective-choice labels on different propositions, producing slightly negative alpha. A high raw agreement percentage therefore cannot establish reliable identification of the less common category."
+    },
+    {
+      "type": "paragraph",
+      "text": "Screening agreement covers 48 of 49 focal entries under version 0.3 and 47 of 49 under version 0.4. Exact-span triple matches total 40 and 36, respectively. Semantic correspondence recovers additional matches without requiring identical text boundaries. These results remain distinct from the source review’s assessment of omitted actions, missing conditions, and unsupported institutional claims. The alpha implementation reproduces the published nominal example in Hayes and Krippendorff (2007), including missing judgments, to the reported four decimal places."
+    },
+    {
+      "type": "heading",
+      "text": "Mechanical checks and preserved failures"
+    },
+    {
+      "type": "paragraph",
+      "text": "The original final checker passes cover 15 of 18 runs: nine under version 0.3 and six under version 0.4. The three remaining runs retain nine revision-identity failures in the procedure case. The source packet supplies the relevant identities, but its field names and one serialized commit identity do not match the fields expected by the checker."
+    },
+    {
+      "type": "paragraph",
+      "text": "A separate post-freeze diagnostic exposes those existing identities under the expected fields, without changing source text or coding judgments, and passes all eighteen outputs. The original failures remain in the records. This diagnostic identifies a packet/checker integration problem; it neither replaces the original workflow result nor establishes semantic correctness."
+    },
+    {
+      "type": "heading",
+      "text": "Human coding standards and agent reconciliation"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a structured codebook analysis with three coders, nominal Krippendorff alpha is a suitable field-level measure, accompanied by raw agreement, category frequencies, and extraction coverage (Hayes and Krippendorff, 2007). Common conventions treat approximately 0.80 as dependable and 0.667–0.80 as supporting tentative use. These conventions depend on the inference and consequences of error; they are not universal publication gates (Krippendorff, 2016–2017). No such threshold was added to this study’s frozen primary criteria."
+    },
+    {
+      "type": "paragraph",
+      "text": "Independent reliability and negotiated agreement answer different questions. Campbell et al. (2013) illustrate the distinction with combined-code agreement of 54% before negotiation and 96% afterward. Their result supports a reconciliation procedure, not a general acceptance threshold. Qualitative teams can discuss disagreements, document their decisions, and retain unresolved alternatives; reliability alone does not establish validity (O’Connor and Joffe, 2020)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Agents can follow this approach. After independent outputs freeze, they can exchange the disputed coding, exact source passages, and reasons; each can retain or revise its interpretation. A final record should distinguish a source-supported correction, an agreed convention, and unresolved alternatives. The discussion should not require unanimity, and source checking should include initially unanimous claims. Any codebook revision learned during discussion requires a fresh test if the paper claims improved independent repeatability."
+    },
+    {
+      "type": "paragraph",
+      "text": "This run planned independent source review followed by coordinator reconciliation; those stages remain incomplete at this recovery checkpoint. It does not measure negotiated agreement among the original coders, and it does not compare AI with human coding performance. For the methodology working paper, the defensible claim concerns a transparent analytical workflow with identified limits. Stable extraction, traceable evidence, and explicit uncertainty can support that claim even when some interpretive fields require reconciliation. A claim that the workflow independently classifies those fields reliably would require stronger evidence."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "type": "heading",
+      "text": "Precisely where to resume"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reviewer A should resume its F01 review using its own retained progress record, complete the remaining four annotations and cross-annotation checks, and assemble the full findings and coverage ledger. Reviewer B should complete its pending qualification, rationale, and coverage checks from its retained working notes. Its empty coverage ledger means that the working file cannot count as a completed audit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each reviewer should retain access only to its own assigned sources, guides, and work records. Neither should receive this report, aggregate agreement, the mask key, or the other review. Existing contexts can resume if available; a replacement context must record the discontinuity and preserve the same isolation. After both reviews freeze, the coordinator can validate evidence anchors, reconcile findings against the source, retain unresolved alternatives, and complete the primary comparative assessment."
+    },
+    {
+      "type": "paragraph",
+      "text": "The evidence archive includes RESUME.txt, a machine-readable interruption checkpoint, all original runs and logs, the completed alignment and statistics, and both unfinished source-review records. The earlier frozen-runs checkpoint also remains available. No conclusion about comparative source quality should substitute for the missing final audit."
+    },
+    {
+      "type": "heading",
+      "text": "Methodological references"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hayes, A. F., and K. Krippendorff. 2007. Answering the Call for a Standard Reliability Measure for Coding Data. Communication Methods and Measures 1(1):77–89. https://doi.org/10.1080/19312450709336664"
+    },
+    {
+      "type": "paragraph",
+      "text": "Campbell, J. L., C. Quincy, J. Osserman, and O. K. Pedersen. 2013. Coding In-depth Semistructured Interviews: Problems of Unitization and Intercoder Reliability and Agreement. Sociological Methods & Research 42(3):294–320. https://doi.org/10.1177/0049124113500475"
+    },
+    {
+      "type": "paragraph",
+      "text": "O’Connor, C., and H. Joffe. 2020. Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines. International Journal of Qualitative Methods 19:1–13. https://doi.org/10.1177/1609406919899220"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krippendorff, K. 2016–2017. Communication Scholars Oral History Project, interview by Jefferson Pooley; transcript substantially edited by Krippendorff, p. 52. University of Pennsylvania, Annenberg School for Communication. Source URL and reference metadata appear in analysis/methodological_references.json."
+    }
+  ]
+}

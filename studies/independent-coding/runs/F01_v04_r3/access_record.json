@@ -1,0 +1,112 @@
+{
+  "run_id": "F01_v04_r3",
+  "configuration": "inherited primary; no override",
+  "model_identity": null,
+  "provider_snapshot": null,
+  "seed": null,
+  "sampling_parameters": null,
+  "reasoning_effort": null,
+  "tokens": null,
+  "cost": null,
+  "configuration_basis": "The assignment exposed inherited primary configuration only. No model identity is inferred from protocol, manifest, filenames or historical study instructions.",
+  "runtime": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "execution": "python3 via exec_command; functions orchestration",
+    "libraries": [
+      "json",
+      "hashlib",
+      "copy",
+      "pathlib",
+      "collections",
+      "sys",
+      "datetime",
+      "jsonschema"
+    ],
+    "ordinary_library_runtime_access_only_outside_run_directory": true
+  },
+  "research_inputs_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/INSTRUCTIONS.txt",
+      "mode": "content read and integrity hash"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/protocol/codebook.txt",
+      "mode": "content read and integrity hash"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/protocol/annotation_schema.json",
+      "mode": "content read and integrity hash"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/packet.json",
+      "mode": "content read and integrity hash"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/tools/check_annotation.py",
+      "mode": "content read and integrity hash"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/input_manifest.json",
+      "mode": "content read and integrity hash"
+    }
+  ],
+  "calibration_access": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/calibration/annotation.json",
+      "mode": "directory name/size and integrity SHA256 only; contents not exposed to coder or used as examples"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/calibration/packet.json",
+      "mode": "directory name/size and integrity SHA256 only; contents not exposed to coder or used as examples"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/calibration/cases.json",
+      "mode": "directory name/size and integrity SHA256 only; contents not exposed to coder or used as examples"
+    }
+  ],
+  "own_outputs_accessed_or_written": [
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/annotation.final.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/annotation.first_complete.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/annotation.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/apply_source_review.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/build_annotation.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/checks.final_attempt_01.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/checks.first.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/checks.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/checks.mechanical_01.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/checks.source_review_01.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/finalize_role_review.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/first_complete_manifest.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/input_integrity_check.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/repair_log.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/repair_mechanical.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/review_notes.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/write_review_records.py",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/access_record.json",
+    "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r3/completion_record.json"
+  ],
+  "prohibited_accesses": {
+    "other_runs": false,
+    "parent_research_history": false,
+    "Library": false,
+    "web_or_external_sources": false,
+    "other_agent_answers": false,
+    "agents_spawned": 0
+  },
+  "coordinator_messages": "Task dispatch and stage-status coordination only; no substantive answer or source supplied by another coder.",
+  "execution_incidents": [
+    {
+      "stage": "initial construction",
+      "incident": "An initial functions JS syntax error prevented the intended shell call from executing; no file was written by that call."
+    },
+    {
+      "stage": "self-review application",
+      "incident": "A helper missing an optional quote argument failed before saving changes. The checker then found no annotation.final.json. That result is preserved in checks.final_attempt_01.json; helper and file creation were corrected."
+    }
+  ],
+  "all_originals_unchanged": true,
+  "review_rounds": 1,
+  "final_checker_status": "fail",
+  "remaining_checker_errors": 1,
+  "remaining_error_summary": "Pinned revision metadata field-name mismatch, documented in review_notes.json."
+}

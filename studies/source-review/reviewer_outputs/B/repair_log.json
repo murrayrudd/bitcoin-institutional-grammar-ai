@@ -1,0 +1,786 @@
+{
+  "run_id": "R4_B_source_first",
+  "repairs": [
+    {
+      "kind": "mechanical_anchor",
+      "unit_id": "B11",
+      "before": {
+        "symbol": "I",
+        "text": "leaving in",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1716,
+              "end": 1723,
+              "quote": "leaving"
+            }
+          },
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1720,
+              "end": 1722,
+              "quote": "in"
+            }
+          }
+        ],
+        "inference_note": "The separable particle in belongs with leaving; the option is kept separately as its object.",
+        "occurrence_role": "local"
+      },
+      "after": {
+        "symbol": "I",
+        "text": "leaving in",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1716,
+              "end": 1723,
+              "quote": "leaving"
+            }
+          },
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1735,
+              "end": 1737,
+              "quote": "in"
+            }
+          }
+        ],
+        "inference_note": "The separable particle in belongs with leaving; the option is kept separately as its object.",
+        "occurrence_role": "local"
+      },
+      "reason": "The original search matched in inside leaving. It now anchors the separate particle in after the complete object."
+    },
+    {
+      "kind": "mechanical_explanation",
+      "unit_id": "B19",
+      "before": {
+        "symbol": "Bind",
+        "text": "https://github.com/bitcoin-core/meta/",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 457,
+              "end": 494,
+              "quote": "https://github.com/bitcoin-core/meta/"
+            }
+          }
+        ],
+        "inference_note": "",
+        "occurrence_role": "local"
+      },
+      "after": {
+        "symbol": "Bind",
+        "text": "https://github.com/bitcoin-core/meta/",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 457,
+              "end": 494,
+              "quote": "https://github.com/bitcoin-core/meta/"
+            }
+          }
+        ],
+        "inference_note": "The explicit destination of do so remains the destination of the recovered debate action; no argument-role transformation is introduced.",
+        "occurrence_role": "local"
+      },
+      "reason": "Added the role-preservation explanation required for an explicit destination in a pragmatic parse."
+    },
+    {
+      "kind": "source_review_anchor",
+      "unit_id": "B19",
+      "before": {
+        "symbol": "A",
+        "text": "you",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 277,
+              "end": 280,
+              "quote": "you"
+            }
+          }
+        ],
+        "inference_note": "The main-clause imperative addressee is recovered from you in the condition; it is not an overt main-clause subject.",
+        "occurrence_role": "semantic_inference"
+      },
+      "after": {
+        "symbol": "A",
+        "text": "you",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 404,
+              "end": 407,
+              "quote": "you"
+            }
+          }
+        ],
+        "inference_note": "The main-clause imperative addressee is recovered from you in the condition; it is not an overt main-clause subject.",
+        "occurrence_role": "semantic_inference"
+      },
+      "reason": "The initial search found you in the earlier optional-venue clause. The final anchor is the you in the actual debate-condition governing these duties."
+    },
+    {
+      "kind": "source_review_anchor",
+      "unit_id": "B20",
+      "before": {
+        "symbol": "A",
+        "text": "you",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 277,
+              "end": 280,
+              "quote": "you"
+            }
+          }
+        ],
+        "inference_note": "The addressee is inherited from the conditional and positive imperative.",
+        "occurrence_role": "shared_scope"
+      },
+      "after": {
+        "symbol": "A",
+        "text": "you",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 404,
+              "end": 407,
+              "quote": "you"
+            }
+          }
+        ],
+        "inference_note": "The addressee is inherited from the conditional and positive imperative.",
+        "occurrence_role": "shared_scope"
+      },
+      "reason": "The initial search found you in the earlier optional-venue clause. The final anchor is the you in the actual debate-condition governing these duties."
+    },
+    {
+      "kind": "source_review_refinement",
+      "unit_id": "B10",
+      "before": [
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1340,
+                "end": 1346,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "removed",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1355,
+                "end": 1362,
+                "quote": "removed"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the option",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1329,
+                "end": 1339,
+                "quote": "the option"
+              }
+            }
+          ],
+          "inference_note": "The passive grammatical subject is the affected object of the removal action in the regulative parse; the role is reconstructed rather than labeled explicit.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "rather than just deprecated",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1363,
+                "end": 1390,
+                "quote": "rather than just deprecated"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects.",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1391,
+                "end": 1628,
+                "quote": "depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects."
+              }
+            }
+          ],
+          "inference_note": "This is an explicitly stated decision dependency, not a measured threshold; perhaps limits the third factor.",
+          "occurrence_role": "local"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "decide",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1311,
+                "end": 1628,
+                "quote": "Whether (or when) the option should also be removed rather than just deprecated depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects."
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The focal action of deciding is reconstructed from Whether (or when) ... depends on; the sentence does not itself recommend removal."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "Whether (or when) the option should also be removed rather than just deprecated",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1311,
+                "end": 1390,
+                "quote": "Whether (or when) the option should also be removed rather than just deprecated"
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The clause is the grammatical subject of depends, and becomes the informational object of inferred decide. Its should is internal to the unresolved decision, not an explicit D on decide."
+        },
+        {
+          "symbol": "Cex",
+          "text": "weigh user appreciation, maintenance effort, and perhaps harmful network effects",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 1391,
+                "end": 1628,
+                "quote": "depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects."
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The explicit dependency becomes the inferred decision method/constraint. Perhaps keeps harmful network effects optional; there is no invented activation threshold."
+        }
+      ],
+      "reason": "The action is deciding whether/when, with a trade-off criterion; the first parse risked turning a decision dependency into a recommendation to remove."
+    },
+    {
+      "kind": "source_review_role",
+      "unit_id": "B13",
+      "before": {
+        "symbol": "A",
+        "text": "they (users who want the option)",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1895,
+              "end": 1899,
+              "quote": "they"
+            }
+          }
+        ],
+        "inference_note": "The actor is supplied by the first branch of the coordinated capability statement.",
+        "occurrence_role": "shared_scope"
+      },
+      "after": {
+        "symbol": "A",
+        "text": "they",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 1895,
+              "end": 1899,
+              "quote": "they"
+            }
+          }
+        ],
+        "inference_note": "They is the grammatically shared subject of patch and use in the coordinated sentence. Users supplies the antecedent; the actor role is explicit under both verbs.",
+        "occurrence_role": "shared_scope"
+      },
+      "reason": "Preserved the explicit grammatically shared actor role in the literal coordinated alternatives."
+    },
+    {
+      "kind": "authorized_source_amendment",
+      "unit_id": "B14",
+      "before": {
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "unresolved",
+            "basis": "unresolved",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              }
+            ],
+            "rationale": "petertodd reports adding a comment, but the packet lacks a reply/thread link identifying which comment. A likely correspondence to this snippet is not verified."
+          }
+        ],
+        "disposition": [
+          {
+            "kind": "reported_implemented",
+            "target": "unresolved",
+            "basis": "unresolved",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              }
+            ],
+            "rationale": "The implementation report does not name or reproduce the proposed wording."
+          },
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32359",
+                "span": {
+                  "start": 0,
+                  "end": 378,
+                  "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32359 closed without merge. This does not refute the report that a comment was added on the branch or establish rejection of this comment."
+          }
+        ],
+        "uncertainty": "The supplied record lacks file/line and thread-parent metadata, so add versus replace is not determined."
+      },
+      "after": {
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              },
+              {
+                "source_id": "T32359_038_053",
+                "span": {
+                  "start": 0,
+                  "end": 1201,
+                  "quote": "[\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2063718969,\n    \"author\": \"Sjors\",\n    \"created_at\": \"2025-04-28T13:56:26+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T14:00:56+00:00\",\n    \"body\": \"```cpp\\r\\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\\r\\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\\r\\n```\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": null,\n    \"fresh_index\": 38,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-038\"\n  },\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2064478495,\n    \"author\": \"petertodd\",\n    \"created_at\": \"2025-04-28T20:15:52+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T20:15:52+00:00\",\n    \"body\": \"Added comment.\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": 2063718969,\n    \"fresh_index\": 53,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-053\"\n  }\n]"
+                }
+              }
+            ],
+            "rationale": "The added thread metadata gives 32359-053 in_reply_to_id 2063718969, matching 32359-038, in the same src/test/transaction_tests.cpp path. The author specifically reports adding the proposed comment, but exact inserted wording is not verified by a file diff."
+          }
+        ],
+        "disposition": [
+          {
+            "kind": "reported_implemented",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              },
+              {
+                "source_id": "T32359_038_053",
+                "span": {
+                  "start": 0,
+                  "end": 1201,
+                  "quote": "[\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2063718969,\n    \"author\": \"Sjors\",\n    \"created_at\": \"2025-04-28T13:56:26+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T14:00:56+00:00\",\n    \"body\": \"```cpp\\r\\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\\r\\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\\r\\n```\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": null,\n    \"fresh_index\": 38,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-038\"\n  },\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2064478495,\n    \"author\": \"petertodd\",\n    \"created_at\": \"2025-04-28T20:15:52+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T20:15:52+00:00\",\n    \"body\": \"Added comment.\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": 2063718969,\n    \"fresh_index\": 53,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-053\"\n  }\n]"
+                }
+              }
+            ],
+            "rationale": "The added thread metadata gives 32359-053 in_reply_to_id 2063718969, matching 32359-038, in the same src/test/transaction_tests.cpp path. The author specifically reports adding the proposed comment, but exact inserted wording is not verified by a file diff."
+          },
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32359",
+                "span": {
+                  "start": 0,
+                  "end": 378,
+                  "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32359 closed without merge. This does not refute the report that a comment was added on the branch or establish rejection of this comment."
+          }
+        ],
+        "uncertainty": "The thread metadata identifies Added comment as a reply to this exact snippet in src/test/transaction_tests.cpp. The source change itself is not supplied, so exact inserted wording remains unverified."
+      },
+      "reason": "The coordinator supplied the specifically requested thread metadata in packet_v2.json before finalization; no prior annotation was disclosed."
+    },
+    {
+      "kind": "source_review_logical_scope",
+      "unit_id": "B01",
+      "before": {
+        "symbol": "Cac",
+        "text": "endorsement of the concept",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "33453-004",
+            "span": {
+              "start": 0,
+              "end": 20,
+              "quote": "Concept Ack assuming"
+            }
+          }
+        ],
+        "inference_note": "The inferred expectation is a condition on this author's endorsement, not an unconditional obligation accepted by the project.",
+        "occurrence_role": "semantic_inference"
+      },
+      "after": {
+        "symbol": "Cex",
+        "text": "as a condition of the author's concept endorsement",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "33453-004",
+            "span": {
+              "start": 0,
+              "end": 20,
+              "quote": "Concept Ack assuming"
+            }
+          }
+        ],
+        "inference_note": "The source conditions its ACK on a long interval. This qualifies the inferred expectation; it does not state that an endorsement triggers a duty to defer.",
+        "occurrence_role": "semantic_inference"
+      },
+      "reason": "Preserved the direction of the conditional endorsement without inventing an activation condition on the requested delay."
+    },
+    {
+      "kind": "source_review_omission",
+      "unit_id": "B28",
+      "before": null,
+      "after": {
+        "unit_id": "B28",
+        "source_id": "32406-178",
+        "span": {
+          "start": 266,
+          "end": 501,
+          "quote": "see [`gets()`](https://en.cppreference.com/w/c/io/gets) in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)"
+        },
+        "parent_unit_id": null,
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "see",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 266,
+                  "end": 269,
+                  "quote": "see"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local"
+          },
+          {
+            "symbol": "Bdir",
+            "text": "[`gets()`](https://en.cppreference.com/w/c/io/gets)",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 270,
+                  "end": 321,
+                  "quote": "[`gets()`](https://en.cppreference.com/w/c/io/gets)"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local"
+          },
+          {
+            "symbol": "Bdir,p",
+            "text": "in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 322,
+                  "end": 501,
+                  "quote": "in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)"
+                }
+              }
+            ],
+            "inference_note": "The full descriptive qualification identifies the example as the author presents it. Dates and continued usability are retained author claims, not independently verified technical facts.",
+            "occurrence_role": "local"
+          }
+        ],
+        "institution": {
+          "type": "undetermined",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "An explicit navigation request to inspect a named compatibility example; it remains a technical referral with no supplied obligation or institutional authorization.",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 266,
+                "end": 501,
+                "quote": "see [`gets()`](https://en.cppreference.com/w/c/io/gets) in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)"
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_rationale": "The referral supports reasoning in this contribution review, an operational discussion act. It does not assign broader epistemic authority.",
+        "complexity_flags": [
+          "none"
+        ],
+        "alternative_interpretation": "The surrounding compatibility description is technical rationale, but the explicit see instruction is separately executable and is retained under the frozen navigation convention.",
+        "confidence": "clear",
+        "uncertainty_reason": "",
+        "record_role": "statement",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "level_alternatives": [],
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "Presentation follows the supplied occurrence."
+        },
+        "disposition_events": [],
+        "template_note": "This is a one-off technical-example referral, not a reusable bot occurrence."
+      },
+      "reason": "The final reread identified an explicit see referral inside the technical example. It is extracted separately under the codebook's navigation convention."
+    },
+    {
+      "kind": "source_review_coverage",
+      "unit_id": "B29",
+      "before": null,
+      "after": {
+        "unit_id": "B29",
+        "source_id": "32406-178",
+        "span": {
+          "start": 607,
+          "end": 649,
+          "quote": "Here, the reason to recommend not using it"
+        },
+        "parent_unit_id": null,
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "components": [
+          {
+            "symbol": "D",
+            "text": "recommend not",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 627,
+                  "end": 640,
+                  "quote": "recommend not"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local"
+          },
+          {
+            "symbol": "I",
+            "text": "using",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 641,
+                  "end": 646,
+                  "quote": "using"
+                }
+              }
+            ],
+            "inference_note": "",
+            "occurrence_role": "local"
+          },
+          {
+            "symbol": "Bdir",
+            "text": "it",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-178",
+                "span": {
+                  "start": 647,
+                  "end": 649,
+                  "quote": "it"
+                }
+              }
+            ],
+            "inference_note": "It is explicitly the object of using. In this paragraph it refers to the option discussed in the PR; the later this option and nondefault-value formulation help resolve the referent.",
+            "occurrence_role": "local"
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "The author directly supplies reasons for recommending non-use here. This is distinct in attribution from the later conjecture about the vast majority of developers. The technical harm claims are rationale, not verified outcomes.",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 607,
+                "end": 1061,
+                "quote": "Here, the reason to recommend not using it is because it will likely harm the efficiency of block reconstruction, slowing down block relay, and also make you use more bandwidth (requesting the tx then rejecting it, then receiving the tx again when it's included in a block), for very little benefit -- it won't stop spam from getting into blocks, and likely won't stop spam from getting into your mempool given other encoding methods are more efficient. "
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_rationale": "The focal act concerns review, contribution, documentation, or use of the specific software option; no allocation of rule-making powers is supplied.",
+        "complexity_flags": [
+          "unresolved_reference"
+        ],
+        "alternative_interpretation": "This can be grouped with B08 as one advisory proposition if the direct recommendation, the speculative developer-majority attribution, and the later lower-than-default qualification all remain visible. The literal non-use phrase is broader than the lower-value formulation, so their equivalence is not assumed.",
+        "confidence": "plausible",
+        "uncertainty_reason": "The relation between non-use of the option and the later narrower advice against a lower-than-default setting is not fully explicit.",
+        "record_role": "statement",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "level_alternatives": [],
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "Presentation follows the supplied occurrence."
+        },
+        "disposition_events": []
+      },
+      "reason": "The final reread separated the author's direct local non-use recommendation from the differently attributed and qualified developer-majority claim, preventing silent loss of attribution or scope."
+    },
+    {
+      "kind": "source_review_qualification",
+      "unit_id": "B22",
+      "before": [
+        {
+          "source_id": "32714-body",
+          "span": {
+            "start": 0,
+            "end": 136,
+            "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32714-body",
+          "span": {
+            "start": 0,
+            "end": 136,
+            "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+          }
+        },
+        {
+          "source_id": "32714-body",
+          "span": {
+            "start": 616,
+            "end": 768,
+            "quote": "I think that it would be clearer to users to remove the word \"deprecated\" from the documentation of this option while preserving the non-recommendation."
+          }
+        }
+      ],
+      "reason": "Cited the later explanatory restatement so the documentation scope and preservation constraint are explicitly recoverable without duplicating the edit."
+    }
+  ],
+  "note": "The first completed annotation and unchanged-checker feedback remain in annotation_first_complete.json and checks_first.json. The listed edits address checker findings, source reread precision, and the requested bounded metadata amendment.",
+  "final_packet": "packet_v2.json",
+  "final_packet_sha256": "1436d91070a4436b279d8f69286cfd765c85d2a12b825790ef5e44a5246ce88f"
+}

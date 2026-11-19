@@ -1,0 +1,1968 @@
+{
+  "schema_version": "0.3",
+  "run_id": "F02_v03_r3",
+  "episode_id": "F02",
+  "packet_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+  "entry_screening": [
+    {
+      "source_id": "pr14441:body",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Describes the contribution, partial reverts, and referenced fix; no separable conduct prescription or committed method is expressed.",
+      "unit_ids": [
+        "C00"
+      ]
+    },
+    {
+      "source_id": "pr14441:comments:0",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Reports a PR update and thanks a reviewer; retained as uptake context, not a new prescription.",
+      "unit_ids": [
+        "C01"
+      ]
+    },
+    {
+      "source_id": "pr14441:comments:1",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Commit-specific review endorsement only; retained as context, without institutional authority or expectation claims.",
+      "unit_ids": [
+        "C07"
+      ]
+    },
+    {
+      "source_id": "pr14441:comments:2",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Review endorsement plus explanation of code and test backport differences; no proposed recurring backport arrangement.",
+      "unit_ids": [
+        "C08"
+      ]
+    },
+    {
+      "source_id": "pr14441:reviews:0",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Commit-specific endorsement only; retained as an earlier review-target endpoint.",
+      "unit_ids": [
+        "C02"
+      ]
+    },
+    {
+      "source_id": "pr14441:reviews:1",
+      "disposition": "empty",
+      "reason": "Focal empty text. COMMENTED state does not create an unexpressed proposition.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:reviews:2",
+      "disposition": "empty",
+      "reason": "Focal empty text. COMMENTED state does not create an unexpressed proposition.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:reviews:3",
+      "disposition": "empty",
+      "reason": "Focal empty text. COMMENTED state does not create an unexpressed proposition.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:reviews:4",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Updated commit endorsement and reported change set; retained as context, without turning technical assent into expectation recognition.",
+      "unit_ids": [
+        "C03"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:0",
+      "disposition": "candidate",
+      "reason": "Focal entry screened exhaustively. Elliptical naming correction is a plausible editorial recommendation; technical correctness alternative retained.",
+      "unit_ids": [
+        "S01"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:1",
+      "disposition": "candidate",
+      "reason": "Focal entry screened exhaustively. One proposed paragraph replacement includes its full technical content; initial criticism supplies rationale rather than a second independent request.",
+      "unit_ids": [
+        "S02"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:2",
+      "disposition": "candidate",
+      "reason": "Focal entry screened exhaustively. One suggested removal preserves its purpose and epistemic exception; the preceding technical premise supplies the elided object.",
+      "unit_ids": [
+        "S03"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:3",
+      "disposition": "candidate",
+      "reason": "Focal entry screened exhaustively. One documentation request includes suggested wording and all conditional behavior qualifications; embedded capabilities/errors are technical content.",
+      "unit_ids": [
+        "S04"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:4",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Endorsement of two unnamed changes; retained as one context record with unresolved referents.",
+      "unit_ids": [
+        "C04"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:5",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Bare implementation report with unresolved target; no new directive.",
+      "unit_ids": [
+        "C05"
+      ]
+    },
+    {
+      "source_id": "pr14441:review_comments:6",
+      "disposition": "context_only",
+      "reason": "Focal entry screened exhaustively. Agreement and reported removal of the distinctive check; retained as specific uptake context, not an additional prescription.",
+      "unit_ids": [
+        "C06"
+      ]
+    },
+    {
+      "source_id": "pr14441:metadata",
+      "disposition": "context_only",
+      "reason": "Supplement screened for outcome context. Records PR identity, changed files, merger alias and status; not an exhaustive institutional extraction target. Metadata supplies no independently established contributor authority.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:supplement_metadata",
+      "disposition": "context_only",
+      "reason": "Supplement screened for revision and outcome context. Its merged flag and timestamp corroborate this PR's recorded integration and identify the retained head; no assumption about unrelated referenced PRs.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:patch:0",
+      "disposition": "context_only",
+      "reason": "Supplement screened for documentation-outcome context. Retained head supplies the requested name and two behavioral explanations. Context-only scope does not assert absence of all institutional content.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:patch:1",
+      "disposition": "context_only",
+      "reason": "Supplement screened for technical-outcome context. Contains wallet RPC code, argument validation, and help text. Technical must/should wording is not automatically institutional obligation; this is not an exhaustive supplemental extraction target.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:patch:2",
+      "disposition": "context_only",
+      "reason": "Supplement screened for test context. Adds labeled import and transaction assertions at the retained head. Context-only selection is not a claim that the artifact has no institutional relevance.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "pr14441:patch:3",
+      "disposition": "context_only",
+      "reason": "Supplement screened for test context. Changes watch-only label filtering assertions at the retained head. Context-only selection is not a claim that the artifact has no institutional relevance.",
+      "unit_ids": []
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "C00",
+      "source_id": "pr14441:body",
+      "span": {
+        "start": 0,
+        "end": 99,
+        "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "technical_description",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The body identifies the backport, its claimed partial reversions and referenced fix; it does not independently prescribe contributor conduct.",
+        "evidence": [
+          {
+            "source_id": "pr14441:body",
+            "span": {
+              "start": 0,
+              "end": 99,
+              "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The PR as an act offers a backport for integration, but the body itself is a contribution description rather than a separable conduct prescription.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C01",
+      "source_id": "pr14441:comments:0",
+      "span": {
+        "start": 0,
+        "end": 72,
+        "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The author reports updating the PR with ryanofsky's changes. This is implementation reporting about the broader contribution, not recognition of a binding expectation.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:0",
+            "span": {
+              "start": 0,
+              "end": 72,
+              "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The report may cover each of the reviewer's suggestions, but it does not individually verify their exact wording.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C07",
+      "source_id": "pr14441:comments:1",
+      "span": {
+        "start": 0,
+        "end": 14,
+        "quote": "utACK 89306ab."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "A separate participant endorses the named abbreviated revision 89306ab; no individual review suggestion or institutional expectation is specified.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:1",
+            "span": {
+              "start": 0,
+              "end": 14,
+              "quote": "utACK 89306ab."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C08",
+      "source_id": "pr14441:comments:2",
+      "span": {
+        "start": 0,
+        "end": 337,
+        "quote": "utACK https://github.com/bitcoin/bitcoin/pull/14441/commits/89306ab0df93bfdf5630910bc20b1eccb7379172\r\n\r\nThis is slightly different from other backport PRs because the changes to `src/wallet/rpcwallet.cpp` are significantly different from the original PR to achieve the same functionality. The tests are basically a clean backport though."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The reviewer endorses the fully identified revision and explains this backport's code-versus-test differences. These are technical review observations, not a proposed backport procedure.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:2",
+            "span": {
+              "start": 0,
+              "end": 337,
+              "quote": "utACK https://github.com/bitcoin/bitcoin/pull/14441/commits/89306ab0df93bfdf5630910bc20b1eccb7379172\r\n\r\nThis is slightly different from other backport PRs because the changes to `src/wallet/rpcwallet.cpp` are significantly different from the original PR to achieve the same functionality. The tests are basically a clean backport though."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Mention of other backport PRs could provide comparative practice context, but it does not state a general obligation or authorized exception.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C02",
+      "source_id": "pr14441:reviews:0",
+      "span": {
+        "start": 0,
+        "end": 46,
+        "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "An attributable review endorsement names c8d1f1513fb39d80cebbc32e1b5327209485e085; it is neither an instruction nor a grant of authority.",
+        "evidence": [
+          {
+            "source_id": "pr14441:reviews:0",
+            "span": {
+              "start": 0,
+              "end": 46,
+              "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C03",
+      "source_id": "pr14441:reviews:4",
+      "span": {
+        "start": 0,
+        "end": 146,
+        "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "An updated review endorsement names 89306ab0df93bfdf5630910bc20b1eccb7379172 and reports code simplification and release-notes updates since the prior review.",
+        "evidence": [
+          {
+            "source_id": "pr14441:reviews:4",
+            "span": {
+              "start": 0,
+              "end": 146,
+              "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The passage supports a changed review target and a reported change set, not changed judgment, mandatory reapproval, or recognition of an institutional duty.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "S01",
+      "source_id": "pr14441:review_comments:0",
+      "span": {
+        "start": 0,
+        "end": 38,
+        "quote": "Should be `listtransactions` with `s`."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "jnewbery, inferred as the PR reviser",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 34,
+                "end": 72,
+                "quote": "I've updated the PR with your changes."
+              }
+            }
+          ],
+          "inference_note": "No actor is named in the elliptical recommendation. The later statement is attributed to jnewbery in packet metadata and identifies the speaker as the person updating the PR with this reviewer's changes; this supports an inferred addressee, not an institutional role.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "D",
+          "text": "Should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 6,
+                "quote": "Should"
+              }
+            }
+          ],
+          "inference_note": "Advisory should expresses the naming recommendation in this review context; an interpretation as technical correctness remains possible.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "write",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              }
+            }
+          ],
+          "inference_note": "The literal predicate is be. Write reconstructs the proposed editorial action rather than labeling be as an institutional definition.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "`listtransactions`",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 10,
+                "end": 28,
+                "quote": "`listtransactions`"
+              }
+            }
+          ],
+          "inference_note": "The desired identifier is a literal predicative complement under be; its role as the object to write is reconstructed under the editorial action. The complete identifier is preserved.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "with `s`",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 29,
+                "end": 37,
+                "quote": "with `s`"
+              }
+            }
+          ],
+          "inference_note": "The explicit qualifier preserves the plural-s correction rather than merely naming an unspecified spelling edit.",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A one-off technical/editorial review recommendation is institutionally relevant as proposed contributor conduct, but the packet supplies no attributed authorization or social expectation sufficient to select rule, norm, or strategy. Technical assent and editing do not establish expectation recognition.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:0",
+            "span": {
+              "start": 0,
+              "end": 38,
+              "quote": "Should be `listtransactions` with `s`."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr14441:comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 72,
+                  "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+                }
+              }
+            ],
+            "rationale": "The PR author thanks ryanofsky and reports incorporating the reviewer's changes. Attribution to the set of review suggestions is supported, but individual implementation is not verified by this broad report."
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 272,
+                  "end": 312,
+                  "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+                }
+              },
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 364,
+                  "end": 378,
+                  "quote": "\"merged\": true"
+                }
+              }
+            ],
+            "rationale": "Metadata records integration of PR #14441, not recognition of this recommendation as an expectation or verification of each embedded edit."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal act is correcting the RPC name in this PR's release notes. Its operational target is an editorial change, not the constitution of an RPC or a governance role.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Literally this is a technical correctness assertion about an RPC name. The review location in doc/release-notes.md and advisory should support an elliptical request to correct the spelling; no binding naming rule is established.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The exact replaced token and comment line are not supplied. The requested spelling is explicit; the action and reviser are reconstructed.",
+      "record_role": "statement",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "The proposal is supplied in ordinary prose with inline code; no strike-through or later formatting history is established."
+      },
+      "disposition_events": [
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            }
+          ],
+          "rationale": "The broader PR is reported updated with the reviewer's changes; the scope remains broader than exact fulfillment of this proposition."
+        },
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 272,
+                "end": 312,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+              }
+            },
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 364,
+                "end": 378,
+                "quote": "\"merged\": true"
+              }
+            }
+          ],
+          "rationale": "The PR is recorded merged on 2018-11-10. No network-adoption or general-governance consequence follows from this metadata."
+        }
+      ]
+    },
+    {
+      "unit_id": "S02",
+      "source_id": "pr14441:review_comments:1",
+      "span": {
+        "start": 94,
+        "end": 531,
+        "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "I (ryanofsky as the hypothetical editor)",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 94,
+                "end": 95,
+                "quote": "I"
+              }
+            }
+          ],
+          "inference_note": "The first-person subject belongs to the explicitly supplied hypothetical action I would change. Packet authorship attributes I to ryanofsky. This literal proposal is not treated as a committed personal plan.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "I",
+          "text": "change",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 104,
+                "end": 110,
+                "quote": "change"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 111,
+                "end": 113,
+                "quote": "it"
+              }
+            },
+            {
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 14,
+                "quote": "This paragraph"
+              }
+            }
+          ],
+          "inference_note": "It remains the explicit object of change. The antecedent This paragraph lies outside the minimal proposal span and resolves the target to the criticized paragraph, not to the PR as a whole.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels).",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 114,
+                "end": 531,
+                "quote": "to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+              }
+            }
+          ],
+          "inference_note": "The full replacement wording constrains the proposed edit: both directions when deprecated accounts are enabled, incoming only without that setting, with the account-versus-label explanation. These are technical content qualifications, not separate institutional permissions.",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A one-off technical/editorial review recommendation is institutionally relevant as proposed contributor conduct, but the packet supplies no attributed authorization or social expectation sufficient to select rule, norm, or strategy. Technical assent and editing do not establish expectation recognition.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:1",
+            "span": {
+              "start": 94,
+              "end": 531,
+              "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr14441:comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 72,
+                  "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+                }
+              }
+            ],
+            "rationale": "The PR author thanks ryanofsky and reports incorporating the reviewer's changes. Attribution to the set of review suggestions is supported, but individual implementation is not verified by this broad report."
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 272,
+                  "end": 312,
+                  "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+                }
+              },
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 364,
+                  "end": 378,
+                  "quote": "\"merged\": true"
+                }
+              }
+            ],
+            "rationale": "Metadata records integration of PR #14441, not recognition of this recommendation as an expectation or verification of each embedded edit."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action is changing this release-note paragraph. The recurring RPC behaviors described inside the proposed text are technical content, not recurring contributor-governance arrangements.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "As an indirect review request, the expected editor could instead be the PR author, contextually inferred from the later update report. The chosen literal parse preserves the reviewer's hypothetical I would change without converting it into a commitment. The replacement text itself is technical description.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The antecedent paragraph's original full text is absent. The source supplies a proposed replacement, but its literal first-person formulation and recipient-oriented review use allow alternative actor parses.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "proposed_wording",
+        "markup": "mixed",
+        "rationale": "An original editorial proposal introduces new replacement/additional wording; the blockquoted technical text is proposed wording, not a repeated original proposition."
+      },
+      "disposition_events": [
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            }
+          ],
+          "rationale": "The broader PR is reported updated with the reviewer's changes; the scope remains broader than exact fulfillment of this proposition."
+        },
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 272,
+                "end": 312,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+              }
+            },
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 364,
+                "end": 378,
+                "quote": "\"merged\": true"
+              }
+            }
+          ],
+          "rationale": "The PR is recorded merged on 2018-11-10. No network-adoption or general-governance consequence follows from this metadata."
+        }
+      ]
+    },
+    {
+      "unit_id": "S03",
+      "source_id": "pr14441:review_comments:2",
+      "span": {
+        "start": 61,
+        "end": 115,
+        "quote": "Maybe drop for clarity (unless I'm missing something)."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "jnewbery, inferred as the PR reviser",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:6",
+              "span": {
+                "start": 107,
+                "end": 123,
+                "quote": "I've removed it."
+              }
+            }
+          ],
+          "inference_note": "The recommendation omits its actor. The later response, attributed to jnewbery, reports removal of the same distinctive check, supporting this inferred addressee.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "I",
+          "text": "drop",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:2",
+              "span": {
+                "start": 67,
+                "end": 71,
+                "quote": "drop"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the new check for \"*\" here",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:2",
+              "span": {
+                "start": 16,
+                "end": 42,
+                "quote": "the new check for \"*\" here"
+              }
+            }
+          ],
+          "inference_note": "The object of drop is elided. The preceding clause supplies the new check as subject of changes anything; its object role under drop is reconstructed. This evidence is outside the minimal suggestion span.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "for clarity",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:2",
+              "span": {
+                "start": 72,
+                "end": 83,
+                "quote": "for clarity"
+              }
+            }
+          ],
+          "inference_note": "An explicitly stated purpose constrains the suggested removal; it is not an if-seeking-clarity activation condition.",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cac",
+          "text": "unless I'm missing something",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:2",
+              "span": {
+                "start": 85,
+                "end": 113,
+                "quote": "unless I'm missing something"
+              }
+            }
+          ],
+          "inference_note": "The suggestion is defeasible if the reviewer has overlooked a relevant rationale; this qualification is not silently discarded.",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A one-off technical/editorial review recommendation is institutionally relevant as proposed contributor conduct, but the packet supplies no attributed authorization or social expectation sufficient to select rule, norm, or strategy. Technical assent and editing do not establish expectation recognition.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:2",
+            "span": {
+              "start": 61,
+              "end": 115,
+              "quote": "Maybe drop for clarity (unless I'm missing something)."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:2",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "I don't see how the new check for \"*\" here changes anything."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr14441:review_comments:6",
+                "span": {
+                  "start": 0,
+                  "end": 123,
+                  "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+                }
+              }
+            ],
+            "rationale": "The author specifically refers to the check for \"*\", accepts the behavioral-equivalence premise, and says it was removed. This is attributable implementation reporting; the absence of reply threading keeps the linkage contextual and does not establish expectation recognition."
+          },
+          {
+            "kind": "reported_implementation",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr14441:comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 72,
+                  "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+                }
+              }
+            ],
+            "rationale": "The PR author thanks ryanofsky and reports incorporating the reviewer's changes. Attribution to the set of review suggestions is supported, but individual implementation is not verified by this broad report."
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 272,
+                  "end": 312,
+                  "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+                }
+              },
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 364,
+                  "end": 378,
+                  "quote": "\"merged\": true"
+                }
+              }
+            ],
+            "rationale": "Metadata records integration of PR #14441, not recognition of this recommendation as an expectation or verification of each embedded edit."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action is removing the particular new check for \"*\" in this PR's wallet code. Review and reported editing are operational; no general simplification requirement is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "This can be read as a tentative engineering simplification rather than a socially expected practice. Maybe is a hedge, not lexical institutional permission; the omitted object is recoverable from the immediately preceding technical premise.",
+      "confidence": "plausible",
+      "uncertainty_reason": "No reliable thread or intermediate patch is supplied, but the distinctive check and explicit author removal report provide strong local correspondence. The reviewer's caveat does not identify what missing consideration would defeat the advice.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "The proposal is supplied in ordinary prose with inline code; no strike-through or later formatting history is established."
+      },
+      "disposition_events": [
+        {
+          "kind": "accepted",
+          "target": "this_proposition",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:6",
+              "span": {
+                "start": 0,
+                "end": 123,
+                "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+              }
+            }
+          ],
+          "rationale": "Agreement about the same check and the removal report support acceptance of this local technical suggestion, not adoption of an institutional rule."
+        },
+        {
+          "kind": "reported_implemented",
+          "target": "this_proposition",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:6",
+              "span": {
+                "start": 0,
+                "end": 123,
+                "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+              }
+            }
+          ],
+          "rationale": "The response identifies the check for \"*\" and reports its removal. No complete intermediate code history is available for independent verification of the precise removed check."
+        },
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            }
+          ],
+          "rationale": "The broader PR is reported updated with the reviewer's changes; the scope remains broader than exact fulfillment of this proposition."
+        },
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 272,
+                "end": 312,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+              }
+            },
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 364,
+                "end": 378,
+                "quote": "\"merged\": true"
+              }
+            }
+          ],
+          "rationale": "The PR is recorded merged on 2018-11-10. No network-adoption or general-governance consequence follows from this metadata."
+        }
+      ]
+    },
+    {
+      "unit_id": "S04",
+      "source_id": "pr14441:review_comments:3",
+      "span": {
+        "start": 0,
+        "end": 414,
+        "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+      },
+      "parent_unit_id": null,
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "jnewbery, inferred as the PR reviser",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 34,
+                "end": 72,
+                "quote": "I've updated the PR with your changes."
+              }
+            }
+          ],
+          "inference_note": "The reviewer is the subject of I think, not an explicit actor of document. The later author report identifies jnewbery as the PR reviser and supports a contextual addressee for the request.",
+          "occurrence_role": "context_reference"
+        },
+        {
+          "symbol": "I",
+          "text": "document",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 24,
+                "end": 32,
+                "quote": "document"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the empty string change",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 33,
+                "end": 56,
+                "quote": "the empty string change"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local"
+        },
+        {
+          "symbol": "Cex",
+          "text": "Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing.",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 58,
+                "end": 414,
+                "quote": "Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              }
+            }
+          ],
+          "inference_note": "The introduced wording proposes the technical content of the documentation: empty-string behavior with deprecated accounts, the error without that setting, and its stated usefulness/confusion rationale. Maybe leaves the exact wording advisory.",
+          "occurrence_role": "local"
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A one-off technical/editorial review recommendation is institutionally relevant as proposed contributor conduct, but the packet supplies no attributed authorization or social expectation sufficient to select rule, norm, or strategy. Technical assent and editing do not establish expectation recognition.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:3",
+            "span": {
+              "start": 0,
+              "end": 414,
+              "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr14441:comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 72,
+                  "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+                }
+              }
+            ],
+            "rationale": "The PR author thanks ryanofsky and reports incorporating the reviewer's changes. Attribution to the set of review suggestions is supported, but individual implementation is not verified by this broad report."
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 272,
+                  "end": 312,
+                  "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+                }
+              },
+              {
+                "source_id": "pr14441:metadata",
+                "span": {
+                  "start": 364,
+                  "end": 378,
+                  "quote": "\"merged\": true"
+                }
+              }
+            ],
+            "rationale": "Metadata records integration of PR #14441, not recognition of this recommendation as an expectation or verification of each embedded edit."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action is adding documentation to this contribution's release notes. The conditional RPC behavior being described is not itself a contributor-governance rule or a stated institutional sanction.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The proposed block is a technical capability/error description. Its institutional relevance arises from the explicit request to document that behavior; possible to pass is not permission granted by a governance authority.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The author later reports incorporation of the reviewer's changes, but that broad report does not establish exact adoption of every proposed word.",
+      "record_role": "statement",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "proposed_wording",
+        "markup": "mixed",
+        "rationale": "An original editorial proposal introduces new replacement/additional wording; the blockquoted technical text is proposed wording, not a repeated original proposition."
+      },
+      "disposition_events": [
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr14441:comments:0",
+              "span": {
+                "start": 0,
+                "end": 72,
+                "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+              }
+            }
+          ],
+          "rationale": "The broader PR is reported updated with the reviewer's changes; the scope remains broader than exact fulfillment of this proposition."
+        },
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 272,
+                "end": 312,
+                "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+              }
+            },
+            {
+              "source_id": "pr14441:metadata",
+              "span": {
+                "start": 364,
+                "end": 378,
+                "quote": "\"merged\": true"
+              }
+            }
+          ],
+          "rationale": "The PR is recorded merged on 2018-11-10. No network-adoption or general-governance consequence follows from this metadata."
+        }
+      ]
+    },
+    {
+      "unit_id": "C04",
+      "source_id": "pr14441:review_comments:4",
+      "span": {
+        "start": 0,
+        "end": 30,
+        "quote": "Both are good changes. Thanks!"
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The author endorses two changes without naming them. This single occurrence is retained without multiplying it into independent endorsements of particular suggestions.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:4",
+            "span": {
+              "start": 0,
+              "end": 30,
+              "quote": "Both are good changes. Thanks!"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "unresolved_reference"
+      ],
+      "alternative_interpretation": "The two substantive release-note paragraphs are plausible referents, but the naming correction is also in the release-note discussion and reliable threading is unavailable.",
+      "confidence": "unresolved",
+      "uncertainty_reason": "The referent of Both cannot be uniquely recovered from the supplied text and path.",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C05",
+      "source_id": "pr14441:review_comments:5",
+      "span": {
+        "start": 0,
+        "end": 5,
+        "quote": "fixed"
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The author reports a fix but supplies no textual referent. The report is retained with an unresolved target.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:5",
+            "span": {
+              "start": 0,
+              "end": 5,
+              "quote": "fixed"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "unresolved_reference"
+      ],
+      "alternative_interpretation": "It could respond to the naming correction or another release-note request. Source ordering and the shared file path do not uniquely decide.",
+      "confidence": "unresolved",
+      "uncertainty_reason": "The object of fixed is absent and reliable reply threading is not supplied.",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C06",
+      "source_id": "pr14441:review_comments:6",
+      "span": {
+        "start": 0,
+        "end": 123,
+        "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+      },
+      "parent_unit_id": null,
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The author agrees about behavioral equivalence with or without the check for \"*\" and reports removal. The shared distinctive object supports linking this response to the removal suggestion.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:6",
+            "span": {
+              "start": 0,
+              "end": 123,
+              "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "The visible act concerns this contribution, review, or reported revision in PR #14441; no recurring governance arrangement or allocation of powers is established.",
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The report establishes the author's stated edit, not an independently reconstructed intermediate patch or a general obligation to follow review.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "record_role": "context",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "level_alternatives": [],
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Supplied occurrence is ordinary prose, including any inline code or commit reference; no later formatting history is inferred."
+      },
+      "disposition_events": []
+    }
+  ],
+  "relations": [
+    {
+      "from_unit_id": "S01",
+      "to_unit_id": "C01",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The later author report explicitly thanks the reviewer and says the PR incorporates the reviewer's changes. This is broader-proposal reported uptake, not verified individual fulfillment or expectation recognition.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "S02",
+      "to_unit_id": "C01",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The later author report explicitly thanks the reviewer and says the PR incorporates the reviewer's changes. This is broader-proposal reported uptake, not verified individual fulfillment or expectation recognition.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "S04",
+      "to_unit_id": "C01",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The later author report explicitly thanks the reviewer and says the PR incorporates the reviewer's changes. This is broader-proposal reported uptake, not verified individual fulfillment or expectation recognition.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "S03",
+      "to_unit_id": "C06",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "The distinctive check for \"*\" is repeated in the author's agreement and removal report, supporting a specific response to the drop suggestion. Reliable reply threading is absent, so the relation remains context-inferred.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C03",
+      "to_unit_id": "C02",
+      "type": "review_target_update",
+      "basis": "context_inferred",
+      "rationale": "The same reviewer names a new commit and refers to changes since the last review. The earlier supplied review names c8d1f1513fb39d80cebbc32e1b5327209485e085; the later names 89306ab0df93bfdf5630910bc20b1eccb7379172. The earlier target is linked by author, chronology, and wording, not by an explicit full quotation; no changed judgment or mandatory reapproval is inferred.",
+      "evidence": [
+        {
+          "source_id": "pr14441:reviews:0",
+          "span": {
+            "start": 0,
+            "end": 46,
+            "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C01",
+      "to_unit_id": "C03",
+      "type": "temporal",
+      "basis": "context_inferred",
+      "rationale": "Entry timestamps place the author update report at 2018-10-10T07:40:49+00:00 before the later review at 2018-10-10T07:57:22+00:00. This orders supplied occurrences only and does not establish the timing of hidden edits or causation.",
+      "evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    }
+  ],
+  "episode_summary": {
+    "observed_outcomes": [
+      {
+        "claim": "The author reports incorporating ryanofsky's changes into PR #14441. The reviewer subsequently endorses revision 89306ab0df93bfdf5630910bc20b1eccb7379172 and describes only code simplification and release-notes updates since the earlier review of c8d1f1513fb39d80cebbc32e1b5327209485e085. These are attributed reports and endorsements, not proof of recognized obligations.",
+        "evidence": [
+          {
+            "source_id": "pr14441:comments:0",
+            "span": {
+              "start": 0,
+              "end": 72,
+              "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+            }
+          },
+          {
+            "source_id": "pr14441:reviews:0",
+            "span": {
+              "start": 0,
+              "end": 46,
+              "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+            }
+          },
+          {
+            "source_id": "pr14441:reviews:4",
+            "span": {
+              "start": 0,
+              "end": 146,
+              "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+            }
+          }
+        ]
+      },
+      {
+        "claim": "The author specifically reports removing the check for \"*\" after agreeing that behavior would be identical with or without it. The packet does not reconstruct the exact intermediate patch reviewed.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:2",
+            "span": {
+              "start": 0,
+              "end": 115,
+              "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:6",
+            "span": {
+              "start": 0,
+              "end": 123,
+              "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+            }
+          }
+        ]
+      },
+      {
+        "claim": "The retained release-notes patch contains the complete name `listtransactions`, distinguishes transactions returned with versus without -deprecatedrpc=accounts, and describes the empty-string case and error without that setting. These contents correspond to the review suggestions, with wording differences; the head snapshot alone does not establish the causal editing history.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:0",
+            "span": {
+              "start": 0,
+              "end": 38,
+              "quote": "Should be `listtransactions` with `s`."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 531,
+              "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:3",
+            "span": {
+              "start": 0,
+              "end": 414,
+              "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+            }
+          },
+          {
+            "source_id": "pr14441:patch:0",
+            "span": {
+              "start": 0,
+              "end": 1034,
+              "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+            }
+          }
+        ]
+      },
+      {
+        "claim": "The supplied metadata records PR #14441 as merged at 2018-11-10T11:46:02+00:00 by the alias laanwj; supplemental metadata identifies the base as 0.17 and head/merge revision as 89306ab0df93bfdf5630910bc20b1eccb7379172. This is repository integration, with no supplied network-adoption outcome.",
+        "evidence": [
+          {
+            "source_id": "pr14441:metadata",
+            "span": {
+              "start": 272,
+              "end": 312,
+              "quote": "\"merged_at\": \"2018-11-10T11:46:02+00:00\""
+            }
+          },
+          {
+            "source_id": "pr14441:metadata",
+            "span": {
+              "start": 364,
+              "end": 378,
+              "quote": "\"merged\": true"
+            }
+          },
+          {
+            "source_id": "pr14441:metadata",
+            "span": {
+              "start": 382,
+              "end": 403,
+              "quote": "\"merged_by\": \"laanwj\""
+            }
+          },
+          {
+            "source_id": "pr14441:supplement_metadata",
+            "span": {
+              "start": 214,
+              "end": 228,
+              "quote": "\"base\": \"0.17\""
+            }
+          },
+          {
+            "source_id": "pr14441:supplement_metadata",
+            "span": {
+              "start": 334,
+              "end": 388,
+              "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+            }
+          },
+          {
+            "source_id": "pr14441:supplement_metadata",
+            "span": {
+              "start": 437,
+              "end": 499,
+              "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+            }
+          }
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "category": "reason_giving",
+        "claim": "The reviewer questions whether the new check for \"*\" changes behavior and tentatively suggests dropping it for clarity unless something has been overlooked. The author responds that behavior is identical and reports removal. This specific correspondence supports a local reason-giving-and-edit sequence, without establishing that the review imposed a duty.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:2",
+            "span": {
+              "start": 0,
+              "end": 115,
+              "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:6",
+            "span": {
+              "start": 0,
+              "end": 123,
+              "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+            }
+          }
+        ],
+        "unit_ids": [
+          "S03",
+          "C06"
+        ],
+        "alternative_explanation": "The author could have reached the same simplification independently; the supplied response supports uptake but does not identify a causal effect or verify intermediate code.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "review_coordination",
+        "claim": "The naming correction and two documentation suggestions are followed by the author's report that the PR was updated with the reviewer's changes; the same reviewer then endorses a later revision and reports code simplification and release-notes updates. The retained release-notes patch contains corresponding technical content. This supports a review-and-revision sequence at the broader contribution level, while the targets of Both are good changes and fixed remain unresolved.",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:0",
+            "span": {
+              "start": 0,
+              "end": 38,
+              "quote": "Should be `listtransactions` with `s`."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 531,
+              "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:3",
+            "span": {
+              "start": 0,
+              "end": 414,
+              "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+            }
+          },
+          {
+            "source_id": "pr14441:comments:0",
+            "span": {
+              "start": 0,
+              "end": 72,
+              "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+            }
+          },
+          {
+            "source_id": "pr14441:reviews:0",
+            "span": {
+              "start": 0,
+              "end": 46,
+              "quote": "utACK c8d1f1513fb39d80cebbc32e1b5327209485e085"
+            }
+          },
+          {
+            "source_id": "pr14441:reviews:4",
+            "span": {
+              "start": 0,
+              "end": 146,
+              "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+            }
+          },
+          {
+            "source_id": "pr14441:patch:0",
+            "span": {
+              "start": 0,
+              "end": 1034,
+              "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:4",
+            "span": {
+              "start": 0,
+              "end": 30,
+              "quote": "Both are good changes. Thanks!"
+            }
+          },
+          {
+            "source_id": "pr14441:review_comments:5",
+            "span": {
+              "start": 0,
+              "end": 5,
+              "quote": "fixed"
+            }
+          }
+        ],
+        "unit_ids": [
+          "S01",
+          "S02",
+          "S04",
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05"
+        ],
+        "alternative_explanation": "Editorial changes could have been revised independently or together; incomplete threading and edit history prevent assigning every acknowledgment or exact textual change to a single request. The later merged status does not by itself demonstrate a review requirement.",
+        "status": "supported_sequence"
+      }
+    ],
+    "missing_evidence": [
+      "Reliable reply threading, comment line positions, and complete edit/revision histories are absent; source indices are not comment IDs.",
+      "The complete original paragraph and exact intermediate version of the newly added check are not supplied.",
+      "No supplied authority provision, enforcement linkage, or explicit recognition of a contributor expectation supports rule or locally-supported standing for these technical suggestions.",
+      "No outcomes for referenced PRs #14411, #13075, #14023, or issue/proposal #14382 are supplied beyond the focal body's claims.",
+      "No network adoption, release deployment, or higher-level governance allocation outcome is established by repository merge metadata."
+    ],
+    "unresolved_questions": [
+      "Which two exact changes does Both are good changes endorse, and which specific request does fixed answer?",
+      "Should the hypothetical I would change in the paragraph suggestion be parsed literally as the reviewer's proposed editing action or pragmatically as a request to the PR reviser? Both preserve the same proposed edit, but actor-role coding differs.",
+      "How much of the precise documentation wording was adopted through each review exchange rather than subsequent independent revision?",
+      "Do these case-specific suggestions instantiate any broader recognized contributor expectation? The supplied exchange does not decide."
+    ]
+  }
+}

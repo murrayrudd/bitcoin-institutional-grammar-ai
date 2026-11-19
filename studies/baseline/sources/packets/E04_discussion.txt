@@ -1,0 +1,45 @@
+[E04:body] ViralTaco 2022-10-27T02:09:30+00:00
+This commit makes the behavior defined (unsigned integer overflow as if: 
+`it->second.nscore = static_cast<int>(static_cast<unsigned> (it->second.nscore) + 1U);`)
+See: Issue #24049; Discussion on [stackoverflow](https://stackoverflow.com/q/74102221/9282847).
+
+[E04:comments:0] hebasto 2022-10-27T08:19:41+00:00
+@ViralTaco 
+
+Did you see a discussion in #24090? Especially, https://github.com/bitcoin/bitcoin/pull/24090#issuecomment-1046959948 and https://github.com/bitcoin/bitcoin/pull/24090#issuecomment-1064206706?
+
+[E04:comments:1] DrahtBot 2022-10-27T14:09:15+00:00
+<!--e57a25ab6845829454e8d69fc972939a-->
+
+The following sections might be updated with supplementary metadata relevant to reviewers and maintainers.
+
+<!--021abf342d371248e50ceaed478a90ca-->
+### Reviews
+See [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.
+A summary of reviews will appear here.
+<!--174a7506f384e20aa4161008e828411d-->
+### Conflicts
+Reviewers, this pull request conflicts with the following ones:
+
+* [#25390](https://github.com/bitcoin/bitcoin/pull/25390) (sync: introduce a thread-safe generic container and use it to remove a bunch of "GlobalMutex"es by vasild)
+
+If you consider this pull request important, please also help to review the conflicting pull requests. Ideally, start with the one that should be merged first.
+
+
+[E04:comments:2] luke-jr 2022-10-27T17:32:57+00:00
+Doesn't appear to actually fix the issue though?
+
+[E04:comments:3] maflcko 2022-11-18T14:33:41+00:00
+Looking at the previous comments, this doesn't seem to be a fix. Let's continue discussion in the issue for now.
+
+[E04:comments:4] ViralTaco 2022-11-20T19:20:38+00:00
+> Looking at the previous comments, this doesn't seem to be a fix. Let's continue discussion in the issue for now.
+
+It doesn't "seem[sic]" to fix the issue?  
+What issue? The code before this patch has undefined behavior.
+It can do anything, but it doesn't have to. It could do nothing.
+
+The first sentence in your comment only makes sense in a vacuum. The standard is a thing. I agree with the second part. Let's.
+
+[E04:comments:5] maflcko 2022-11-20T19:42:27+00:00
+The burden to prepare, explain and motivate a change for reviewers is on the author. You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines. At a minimum for this simple one line change, you'll have to create at most one commit, with an explanation, and you'll have to reply to review comments. All of this is explained in https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md

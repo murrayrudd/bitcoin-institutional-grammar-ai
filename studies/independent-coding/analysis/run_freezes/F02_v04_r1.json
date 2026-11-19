@@ -1,0 +1,368 @@
+{
+  "run_id": "F02_v04_r1",
+  "frozen_at_utc": "2026-11-07T19:08:17.434034+00:00",
+  "input_integrity": "pass",
+  "files": {
+    "annotation.first_complete.json": "8e58d67da53d15490c5c54643965c4a7e57095cc74572921154abd9551405bc4",
+    "annotation.final.json": "a1bf604192d2157045c82edda907756a44a849c6981918f339fec44899b7f189",
+    "checks.first.json": "63eba71b543ad1572db6e733613f1be1499a3a5fa7acbbc2bd7247179b49caae",
+    "checks.json": "63eba71b543ad1572db6e733613f1be1499a3a5fa7acbbc2bd7247179b49caae",
+    "repair_log.json": "4622e58035f820f331fde26d11d147f6d65458f97c6ab9ce85bfd8afec348cf0",
+    "review_notes.json": "850a9b022760702bd40a2cc0c94555bbcba76833f28fdadd7ac7dd63369ed574",
+    "access_record.json": "513e453f477ead0e677d8d8a0b0ada17df43061c5d8e6b183266023a1a648fec"
+  },
+  "independent_mechanical_checks": {
+    "first_complete": {
+      "status": "pass",
+      "screened_entries": 22,
+      "units": 13,
+      "statement_units": 4,
+      "exact_anchor_references": 232,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    },
+    "final": {
+      "status": "pass",
+      "screened_entries": 22,
+      "units": 13,
+      "statement_units": 4,
+      "exact_anchor_references": 232,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  }
+}

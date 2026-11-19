@@ -1,0 +1,76 @@
+{
+  "first_complete_output": "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/A/annotation.first_complete.json",
+  "first_checker_output": "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/A/checks.first_complete.json",
+  "final_output": "/workspace/scratch/c25a5dc72c15/round4_work/reviewer_workspaces/A/annotation.json",
+  "repairs": [
+    {
+      "kind": "mechanical_anchor",
+      "unit_id": "A017",
+      "description": "Repaired do action evidence: global substring search had selected do inside an earlier mailing-list URL. Updated component construction to prefer the chosen unit's span and anchored do to we should do #32359."
+    },
+    {
+      "kind": "final_source_review_convention",
+      "unit_id": "A002",
+      "description": "Preserved the declarative critique as asserted speech and removed proposed_wording presentation: it names criticized wording and supplies no replacement."
+    },
+    {
+      "kind": "final_source_review_precision",
+      "unit_id": "A011",
+      "description": "Narrowed reconstructed action from favor pursuing to favor so a weak preference does not acquire a commitment to act."
+    },
+    {
+      "kind": "final_source_review_scope",
+      "unit_id": "A013",
+      "description": "Expanded the resolved decision referent to preserve both alternatives in the supplied question: backporting (30 et al) or following releases from master."
+    }
+  ],
+  "exact_field_changes": [
+    {
+      "path": "/units/1/presentation/quotation",
+      "before": "proposed_wording",
+      "after": "none"
+    },
+    {
+      "path": "/units/1/presentation/rationale",
+      "before": "The named phrase is wording under criticism; the inferred edit is new in this occurrence.",
+      "after": "Quotation marks name wording under criticism. The source supplies no newly drafted replacement wording, so proposed_wording is not assigned to this unit."
+    },
+    {
+      "path": "/units/1/speech_act",
+      "before": "proposed",
+      "after": "asserted"
+    },
+    {
+      "path": "/units/10/components/0/inference_note",
+      "before": "Infers a proposed choice from a stated weak preference. The speaker is not silently recast as the actor responsible for implementation.",
+      "after": "Infers a recommended preference among alternatives without adding a commitment to pursue or implement the closed PR. The speaker is not silently recast as the implementation actor."
+    },
+    {
+      "path": "/units/10/components/0/text",
+      "before": "favor pursuing",
+      "after": "favor"
+    },
+    {
+      "path": "/units/12/components/0/inference_note",
+      "before": "The referent of that is recovered from the preceding exchange about backporting to 30 rather than following releases; the subject role is reconstructed for the resolved entity.",
+      "after": "The referent of that is recovered from the preceding exchange. Both backporting (30 et al) and limiting the change to following releases from master are retained; the subject role is reconstructed for the resolved entity."
+    },
+    {
+      "path": "/units/12/components/0/text",
+      "before": "whether to backport this PR to the 30.0 release",
+      "after": "whether to backport this PR (30 et al) or leave it for following releases from master"
+    },
+    {
+      "path": "/units/16/components/2/evidence/0/span/end",
+      "before": 133,
+      "after": 792
+    },
+    {
+      "path": "/units/16/components/2/evidence/0/span/start",
+      "before": 131,
+      "after": 790
+    }
+  ],
+  "codebook_or_checker_modified": false,
+  "no_semantic_comparison_performed": true
+}

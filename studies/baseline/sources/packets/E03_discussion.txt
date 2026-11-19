@@ -1,0 +1,76 @@
+[E03:body] luke-jr 2020-01-16T14:21:15+00:00
+
+
+[E03:comments:0] cvengler 2020-01-16T14:24:59+00:00
+Concept ACK.
+Maybe it's worth pointing it out that drahtbot will give a warning if a rebase is required.
+
+[E03:comments:1] michaelfolkson 2020-01-16T14:35:37+00:00
+Concept ACK. 
+
+~~Do we need to make clear that this guidance doesn't apply to squashing commits (which also uses the `git rebase` command)?~~
+
+``` The `git rebase` command may still be useful for fixups or reorganization *within* your branch; that's usually ok to do.``` covers this.
+
+Perhaps should be stronger. Squashing commits isn't "usually ok to do", it is encouraged?
+
+So replace "that's usually ok to do" with "see the [contributing doc](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#squashing-commits) for guidance on this"?
+
+[E03:comments:2] Sjors 2020-01-16T14:40:56+00:00
+ACK eb293e5b1d2b87ec82eebea8cbf5dd783dfb54fd
+
+[E03:comments:3] promag 2020-01-17T01:23:21+00:00
+@emilengler BTW I don't agree with your suggestion because @DrahtBot is not part of the project and integrates with GitHub.
+
+[E03:comments:4] maflcko 2020-03-19T18:35:51+00:00
+@luke-jr Are you still working on this?
+
+[E03:comments:5] maflcko 2020-03-19T18:36:20+00:00
+Also, there has been a related pull in the meantime: #18283
+
+[E03:comments:6] luke-jr 2020-03-19T18:51:22+00:00
+I am satisfied with the current PR as-is.
+
+[E03:comments:7] maflcko 2020-03-20T14:13:57+00:00
+> I am satisfied with the current PR as-is.
+
+Ok, removed the "Waiting for author" label, but it still would be nice if you replied to the feedback to say why it doesn't apply.
+
+[E03:comments:8] michaelfolkson 2020-08-13T14:40:07+00:00
+I don't think this is optimal as there are couple of review nits that could improve it. But this has been open a while and author doesn't want to address nits so ACKing. Willing to review a follow up PR that picks up the nits.
+
+ACK eb293e5b1d2b87ec82eebea8cbf5dd783dfb54fd
+
+[edit: also happy to open a PR myself addressing the nits if this is merged]
+
+[E03:reviews:0] fjahr 2020-01-16T16:08:38+00:00
+Concept ACK
+
+
+
+[E03:reviews:1] promag 2020-01-16T16:27:59+00:00
+
+
+[E03:reviews:2] maflcko 2020-01-16T20:25:43+00:00
+
+
+[E03:reviews:3] RiccardoMasutti 2020-08-13T14:14:49+00:00
+ACK eb293e5
+
+[E03:reviews:4] jnewbery 2020-08-13T14:36:09+00:00
+
+
+[E03:review_comments:0] fjahr 2020-01-16T16:01:54+00:00
+nit: could mention `git help rebase` to learn more about rebase.
+
+[E03:review_comments:1] fjahr 2020-01-16T16:04:21+00:00
+indentation
+
+[E03:review_comments:2] promag 2020-01-16T16:27:48+00:00
+nit "that's usually common or even necessary in order to have fully working commits" or similar.
+
+[E03:review_comments:3] maflcko 2020-01-16T20:25:42+00:00
+It is no more disruptive than any other force push. `git range-diff` can handle rebases easily
+
+[E03:review_comments:4] jnewbery 2020-08-13T14:36:09+00:00
+"rebuilding" here is ambiguous. I think you mean "apply the commits in your branch to the master branch", but it could also be interpreted as meaning "compiling and linking"

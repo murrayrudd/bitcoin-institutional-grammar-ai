@@ -1,0 +1,4836 @@
+{
+  "schema_version": "0.3",
+  "run_id": "R4_C_source_first",
+  "episode_id": "CoreKnots_R4_C",
+  "packet_sha256": "243d892a04989cac6783c4b00b39bd3397b738bc5a3e484e49f3dab06b4db1b7",
+  "entry_screening": [
+    {
+      "source_id": "32359-114",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-115",
+      "disposition": "candidate",
+      "reason": "Candidate: forum characterization, merit criterion, conditional no-obligation to repost, and two distinct inferred discouragements. The reassurance and spam-impact explanation do not add independent prescriptions.",
+      "unit_ids": [
+        "C115_forum",
+        "C115_merit",
+        "C115_no_repost",
+        "C115_avoid_group",
+        "C115_unsubstantiated",
+        "C115_repetition"
+      ]
+    },
+    {
+      "source_id": "32359-116",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-212",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-213",
+      "disposition": "candidate",
+      "reason": "Candidate: four retained propositions, including three external quoted configuration claims and nick1981's high-default alternative. The explanatory question, preference, and RAM claim are contextual; quoted original attribution is unavailable.",
+      "unit_ids": [
+        "C213_permission",
+        "C213_defaults",
+        "C213_increase",
+        "C213_high_default"
+      ]
+    },
+    {
+      "source_id": "32359-214",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-226",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-227",
+      "disposition": "candidate",
+      "reason": "Candidate: three attributed expectations inside an external rhetorical quotation and a separately asserted majority-decision claim. Agreement with the debate framing is not endorsement of both opposed prescriptions.",
+      "unit_ids": [
+        "C227_quote_group",
+        "C227_proactive",
+        "C227_capitulate",
+        "C227_remove_efforts",
+        "C227_agreement",
+        "C227_majority"
+      ]
+    },
+    {
+      "source_id": "32359-228",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32359-body",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32381-011",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded. Necessary context relation endpoint(s) retained.",
+      "unit_ids": [
+        "C011_direction"
+      ]
+    },
+    {
+      "source_id": "32381-012",
+      "disposition": "candidate",
+      "reason": "Candidate: conditional setting recommendation with tentative numeric elaboration, plus an inferred recommendation against extra node arguments. ~0 is an unelaborated stance marker, not an institutional statement.",
+      "unit_ids": [
+        "C012_setting",
+        "C012_no_args"
+      ]
+    },
+    {
+      "source_id": "32381-013",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32381-body",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32406-164",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded. Necessary context relation endpoint(s) retained.",
+      "unit_ids": [
+        "C164_question"
+      ]
+    },
+    {
+      "source_id": "32406-165",
+      "disposition": "candidate",
+      "reason": "Candidate: separate issue-navigation instruction. Repeated question and reported known issue/fix are nonstatement records.",
+      "unit_ids": [
+        "C165_quote",
+        "C165_referral",
+        "C165_known",
+        "C165_fixed"
+      ]
+    },
+    {
+      "source_id": "32406-166",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32406-body",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "32714-body",
+      "disposition": "candidate",
+      "reason": "Supporting context outside focal extraction scope except the necessary original warning-expectation statement endpoint, which is fully coded to link the exact focal quotation and subsequent recognition.",
+      "unit_ids": [
+        "C32714_warning_expectation"
+      ]
+    },
+    {
+      "source_id": "33224-008",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded. Necessary context relation endpoint(s) retained.",
+      "unit_ids": [
+        "C008_freeze_concern"
+      ]
+    },
+    {
+      "source_id": "33224-009",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "33224-010",
+      "disposition": "candidate",
+      "reason": "Candidate: explicit post-final-freeze prohibition. Quoted concern, software-workflow explanation, and causal risk claims remain context; no authority or sanction is inferred.",
+      "unit_ids": [
+        "C010_quote",
+        "C010_freeze"
+      ]
+    },
+    {
+      "source_id": "33224-011",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "33224-015",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded. Necessary context relation endpoint(s) retained.",
+      "unit_ids": [
+        "C015_workaround"
+      ]
+    },
+    {
+      "source_id": "33224-017",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "33224-018",
+      "disposition": "candidate",
+      "reason": "Candidate: an external quoted suggestion to add a flag is retained; the respondent's remaining text is technical diagnosis and uncertainty. No duty follows from the source-location capability claim.",
+      "unit_ids": [
+        "C018_add_flag",
+        "C018_diagnosis"
+      ]
+    },
+    {
+      "source_id": "33224-019",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded. Necessary context relation endpoint(s) retained.",
+      "unit_ids": [
+        "C019_test_report"
+      ]
+    },
+    {
+      "source_id": "33224-body",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "33453-body",
+      "disposition": "candidate",
+      "reason": "Candidate: concrete removal method, possible future deprecation, embedded schedule advice, claimed best practice, and footgun principle. Exact repeated warning expectation links to its supplied original; empirical and technical rationales remain claims/context.",
+      "unit_ids": [
+        "C33453_remove_deprecation",
+        "C33453_warning_quote",
+        "C33453_clarity",
+        "C33453_future_deprecation",
+        "C33453_schedule",
+        "C33453_best_practice",
+        "C33453_footguns"
+      ]
+    },
+    {
+      "source_id": "D_CONTRIB",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "D_MOD",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "D_RELEASE",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "D_TRANSLATION",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M32359",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M32381",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M32406",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M32714",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M33224",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M33453",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "M33473",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "X32406",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "X33224",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    },
+    {
+      "source_id": "X33453",
+      "disposition": "context_only",
+      "reason": "Supporting context outside focal extraction scope; screened for attribution, recognition, authority, chronology, and disposition, not exhaustively component-coded.",
+      "unit_ids": []
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "C213_permission",
+      "source_id": "32359-213",
+      "span": {
+        "start": 229,
+        "end": 339,
+        "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "permission",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "I",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 246,
+                "end": 247,
+                "quote": "I"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "A,p",
+          "text": "a node runner",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 232,
+                "end": 245,
+                "quote": "a node runner"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "should be allowed",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 248,
+                "end": 265,
+                "quote": "should be allowed"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "configure",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 269,
+                "end": 278,
+                "quote": "configure"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "my mempool",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 279,
+                "end": 289,
+                "quote": "my mempool"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "and not have it filled with what I consider spam",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 290,
+                "end": 338,
+                "quote": "and not have it filled with what I consider spam"
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The coordinated negative end state is represented as the material outcome sought through configuration. This is a semantic choice, not an explicitly labeled execution constraint; it preserves the speaker-relative spam judgment and negative polarity."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "An externally quoted speaker claims a node runner entitlement. This records the claim, not an established permission or a verified software capability.",
+        "evidence": [
+          {
+            "source_id": "32359-213",
+            "span": {
+              "start": 229,
+              "end": 339,
+              "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal claimed permission concerns node operation; the visible act is a contribution discussion. Neither controls network adoption.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "compound"
+      ],
+      "alternative_interpretation": "An appeal to developers to preserve configuration capability is also plausible. The adverse filling clause is retained as an intended end state of the same configuration entitlement, rather than counted as a second independently adopted permission.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The original quoted author and original occurrence are absent; should be allowed also expresses an obligation on an unstated permission-giver.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C213_defaults",
+      "source_id": "32359-213",
+      "span": {
+        "start": 394,
+        "end": 458,
+        "quote": "A conservative approach would be to let the defaults be as it is"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "let",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 430,
+                "end": 433,
+                "quote": "let"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the defaults",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 434,
+                "end": 446,
+                "quote": "the defaults"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "Defaults are the expressed target of let in both the source and the proposed retention reading."
+        },
+        {
+          "symbol": "Cex",
+          "text": "be as it is",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 447,
+                "end": 458,
+                "quote": "be as it is"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "An external one-off technical proposal to retain current defaults; no attributable commitment or standing rule is established.",
+        "evidence": [
+          {
+            "source_id": "32359-213",
+            "span": {
+              "start": 394,
+              "end": 458,
+              "quote": "A conservative approach would be to let the defaults be as it is"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action concerns default software behavior, not a revision of contributor decision procedures.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The entire conservative approach can be one coupled proposal with the following optional-increase clause if both current defaults and users choosing increases remain explicit.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The original speaker and exact current default value are not supplied.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C213_increase",
+      "source_id": "32359-213",
+      "span": {
+        "start": 463,
+        "end": 523,
+        "quote": "allow it to be increased for those who chose to increase it."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "allow",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 463,
+                "end": 468,
+                "quote": "allow"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it to be increased",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 469,
+                "end": 487,
+                "quote": "it to be increased"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bind",
+          "text": "those who chose to increase it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 492,
+                "end": 522,
+                "quote": "those who chose to increase it"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A technical proposal to enable optional increases, not established authority or an institutional permission already in force.",
+        "evidence": [
+          {
+            "source_id": "32359-213",
+            "span": {
+              "start": 463,
+              "end": 523,
+              "quote": "allow it to be increased for those who chose to increase it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "This concerns configurable node behavior. It does not allocate repository authority.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "unresolved_reference"
+      ],
+      "alternative_interpretation": "This can remain coupled with retention of current defaults. The permission supplied by allow is a proposed software affordance; normative authorization of users is unresolved.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The object pronoun can mean a limit or default parameter; the exact numeric or option referent is not supplied.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C213_high_default",
+      "source_id": "32359-213",
+      "span": {
+        "start": 526,
+        "end": 607,
+        "quote": "Or setting a default high limit, so that a node runner can set to a lowest value."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "setting",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 529,
+                "end": 536,
+                "quote": "setting"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "a default high limit",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 537,
+                "end": 557,
+                "quote": "a default high limit"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The source directly makes the limit the target of setting; the pragmatic recommendation preserves that role."
+        },
+        {
+          "symbol": "Cex",
+          "text": "so that a node runner can set to a lowest value.",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-213",
+              "span": {
+                "start": 559,
+                "end": 607,
+                "quote": "so that a node runner can set to a lowest value."
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "nick1981 offers a technical alternative. The purpose clause describes user capability; can does not establish institutional permission.",
+        "evidence": [
+          {
+            "source_id": "32359-213",
+            "span": {
+              "start": 526,
+              "end": 607,
+              "quote": "Or setting a default high limit, so that a node runner can set to a lowest value."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The proposed default and configurability govern software operation. The discussion is ordinary contribution deliberation.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The purpose can be represented as a linked capability proposition; keeping it as Cex preserves the required downward configurability without creating a second institutional rule.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Neither high nor lowest is quantified; the intended parameter must be inferred from the quoted configuration discussion.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_forum",
+      "source_id": "32359-115",
+      "span": {
+        "start": 14,
+        "end": 91,
+        "quote": "this is a pull request open for code review, not a per-username voting forum."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "this",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 14,
+                "end": 18,
+                "quote": "this"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "is",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 16,
+                "end": 18,
+                "quote": "is"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "a pull request open for code review, not a per-username voting forum",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 22,
+                "end": 90,
+                "quote": "a pull request open for code review, not a per-username voting forum"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "glozow characterizes the current forum and explicitly excludes a voting interpretation. Supplied documentation gives compatible peer-review context but does not establish the speaker's office.",
+        "evidence": [
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 15292,
+              "end": 15381,
+              "quote": "Anyone may participate in peer review which is expressed by comments in the pull\nrequest."
+            }
+          },
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 13905,
+              "end": 13997,
+              "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The statement characterizes the present review forum; it does not itself create powers to revise governance procedures.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "This may be an indirect request to keep comments focused on code review. Its negative remit must remain if recoded regulatively.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_merit",
+      "source_id": "32359-115",
+      "span": {
+        "start": 92,
+        "end": 186,
+        "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "Bdir",
+          "text": "Reviews",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 92,
+                "end": 99,
+                "quote": "Reviews"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "Passive subject Reviews is explicitly the target of weighting, not the actor."
+        },
+        {
+          "symbol": "I",
+          "text": "weighted",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 104,
+                "end": 112,
+                "quote": "weighted"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "by the merit of their arguments, not the number of times they are posted",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 113,
+                "end": 185,
+                "quote": "by the merit of their arguments, not the number of times they are posted"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "This is an asserted review-evaluation expectation, not proof that every review was in fact weighted this way. D_CONTRIB documents related discretionary merit weighting, not the exact categorical formulation.",
+        "evidence": [
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 17365,
+              "end": 17506,
+              "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal activity is assessing contribution reviews under an existing arrangement. Clarifying that arrangement is operational; recurring revision is not established.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A constitutive decomposition of Reviews / are weighted / merit rather than repetition preserves the same criterion. A pragmatic obligation to weight reviews this way is possible but stronger than the source's reported-practice syntax.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_no_repost",
+      "source_id": "32359-115",
+      "span": {
+        "start": 212,
+        "end": 299,
+        "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "no_obligation",
+      "components": [
+        {
+          "symbol": "Cac",
+          "text": "if your point has already been made here or on #28130",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 212,
+                "end": 265,
+                "quote": "if your point has already been made here or on #28130"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "A",
+          "text": "you",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 215,
+                "end": 218,
+                "quote": "you"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "don't need to",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 271,
+                "end": 284,
+                "quote": "don't need to"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "post",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 285,
+                "end": 289,
+                "quote": "post"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 290,
+                "end": 292,
+                "quote": "it"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "again",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 293,
+                "end": 298,
+                "quote": "again"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "An explicit denial of a need to repeat an already-made point, addressed to readers of this discussion. It is not a categorical prohibition on all repeat contributions.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 212,
+              "end": 299,
+              "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "This governs whether participants need to post in this review discussion; it does not choose a new recurring institution.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The reassurance may also discourage repetition, but the lexical negative is no obligation, not must not.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_avoid_group",
+      "source_id": "32359-115",
+      "span": {
+        "start": 300,
+        "end": 419,
+        "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+      },
+      "parent_unit_id": null,
+      "record_role": "container",
+      "grammar": "not_institutional",
+      "speech_act": "other",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Container preserves shared negative evaluation and recipient-impact rationale without counting a third prescription.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "not_applicable",
+      "level_rationale": "Structural grouping only.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "compound"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_unsubstantiated",
+      "source_id": "32359-115",
+      "span": {
+        "start": 322,
+        "end": 343,
+        "quote": "leave unsubstantiated"
+      },
+      "parent_unit_id": "C115_avoid_group",
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "leave",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 322,
+                "end": 327,
+                "quote": "leave"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "acks/nacks",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 354,
+                "end": 364,
+                "quote": "acks/nacks"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The coordinated phrase supplies the shared review-signal object after repeat; it is outside this minimal child span but applies to leave as well."
+        },
+        {
+          "symbol": "Bdir,p",
+          "text": "unsubstantiated",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 328,
+                "end": 343,
+                "quote": "unsubstantiated"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "do not",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 300,
+                "end": 321,
+                "quote": "There is no reason to"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The shared negative evaluation is interpreted as advisory avoidance, not a lexical obligation or binding prohibition."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The asserted lack of reason is read as advice against unsubstantiated review signals. D_MOD documents a related moderated expectation, with exceptions for constructive reframing; this utterance does not itself announce a sanction.",
+        "evidence": [
+          {
+            "source_id": "D_MOD",
+            "span": {
+              "start": 1092,
+              "end": 1135,
+              "quote": "Comments should contribute new information."
+            }
+          },
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 16539,
+              "end": 16667,
+              "quote": "A `NACK` needs to include a rationale why the change is not worthwhile.\nNACKs without accompanying reasoning may be disregarded."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The action governed is an immediate review comment. Repository discussion standards supply context, not evidence of enforcement in this thread.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A literal evaluative assertion without an actionable prescription remains possible. Coupling this clause with repeat acks/nacks is acceptable only if both negative duties survive.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The discouraging force is pragmatic; no explicit deontic operator governs leave.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C115_repetition",
+      "source_id": "32359-115",
+      "span": {
+        "start": 347,
+        "end": 364,
+        "quote": "repeat acks/nacks"
+      },
+      "parent_unit_id": "C115_avoid_group",
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "repeat",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 347,
+                "end": 353,
+                "quote": "repeat"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "acks/nacks",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 354,
+                "end": 364,
+                "quote": "acks/nacks"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "acks/nacks remains the explicit object of repeat when the evaluative sentence is read as a recommendation."
+        },
+        {
+          "symbol": "D",
+          "text": "do not",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 300,
+                "end": 321,
+                "quote": "There is no reason to"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The preceding negative evaluation scopes both coordinated actions. It supplies inferred avoidance, not an explicit must not."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "Advice against repeated review signals is distinct from advice against unsubstantiated signals. The supplied moderation document recognizes the related value of new information but qualifies repetition and constructive reframing.",
+        "evidence": [
+          {
+            "source_id": "D_MOD",
+            "span": {
+              "start": 1092,
+              "end": 1464,
+              "quote": "Comments should contribute new information. A certain amount of repetition is critical for learning, dissemination of ideas, and understanding in communication, but it can be taken too far when the same information is repeated in the same context. Moderators may remove comments that do not either contribute new information or constructively reframe existing information."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "This concerns review-comment conduct. No sanction or new rule-making action is recorded.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Literal disapproval without prescription is possible. A single shared-object edit is equivalent if both unsubstantiated and repeated signals remain discouraged.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Pragmatic force is advisory; whether particular repeated signals would be removed is not supplied.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C164_question",
+      "source_id": "32406-164",
+      "span": {
+        "start": 0,
+        "end": 66,
+        "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "question",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Supporting context outside focal extraction scope; original question endpoint for the exact repeated occurrence and reply.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "A review-tool status inquiry, not a governance rule.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C165_quote",
+      "source_id": "32406-165",
+      "span": {
+        "start": 2,
+        "end": 68,
+        "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+      },
+      "parent_unit_id": null,
+      "record_role": "quotation",
+      "grammar": "not_institutional",
+      "speech_act": "question",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The exact question is already represented as C164_question; repetition is not another request or endorsement.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Repeated operational inquiry.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "repeated",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C165_referral",
+      "source_id": "32406-165",
+      "span": {
+        "start": 95,
+        "end": 145,
+        "quote": "See https://github.com/maflcko/DrahtBot/issues/51."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "See",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-165",
+              "span": {
+                "start": 95,
+                "end": 98,
+                "quote": "See"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "https://github.com/maflcko/DrahtBot/issues/51",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32406-165",
+              "span": {
+                "start": 99,
+                "end": 144,
+                "quote": "https://github.com/maflcko/DrahtBot/issues/51"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A separate navigation instruction to a named issue; the linked issue contents are not supplied and are not imported.",
+        "evidence": [
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 95,
+              "end": 145,
+              "quote": "See https://github.com/maflcko/DrahtBot/issues/51."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "This coordinates understanding of an operational review tool.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The referral can be viewed as informational context, but v0.3 explicitly retains separate see instructions.",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C165_known",
+      "source_id": "32406-165",
+      "span": {
+        "start": 72,
+        "end": 94,
+        "quote": "This is a known issue."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "technical_description",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Technical diagnosis offered in response to the repeated question.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational support conversation.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C165_fixed",
+      "source_id": "32406-165",
+      "span": {
+        "start": 146,
+        "end": 157,
+        "quote": "edit: fixed"
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "maflcko reports a repair. No independent verification, repair timing, or repair scope is supplied.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational tool-maintenance report.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "plausible",
+      "uncertainty_reason": "The in-place edit has no supplied update timestamp; fixed is not evidence of every bot behavior or any governance outcome.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C018_add_flag",
+      "source_id": "33224-018",
+      "span": {
+        "start": 127,
+        "end": 217,
+        "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "question",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "add",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-018",
+              "span": {
+                "start": 149,
+                "end": 152,
+                "quote": "add"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "`-locations none`",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-018",
+              "span": {
+                "start": 153,
+                "end": 170,
+                "quote": "`-locations none`"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The flag remains the direct object of add in the literal question and inferred recommendation."
+        },
+        {
+          "symbol": "Bind",
+          "text": "the LCONVERT invocation in translate.cmake",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-018",
+              "span": {
+                "start": 174,
+                "end": 216,
+                "quote": "the LCONVERT invocation in translate.cmake"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The invocation remains the distinct destination of the added flag. Treating it as an execution target instead is a bounded grammatical alternative."
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "disputed",
+        "dispute_present": true,
+        "rationale": "An external technical suggestion survives within a literal question. The packet does not identify the original speaker; achow101 is the respondent, not necessarily the proposer.",
+        "evidence": [
+          {
+            "source_id": "33224-018",
+            "span": {
+              "start": 127,
+              "end": 217,
+              "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33224-018",
+                "span": {
+                  "start": 221,
+                  "end": 263,
+                  "quote": "I don't think line numbers is the problem."
+                }
+              },
+              {
+                "source_id": "33224-018",
+                "span": {
+                  "start": 356,
+                  "end": 453,
+                  "quote": "It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change."
+                }
+              }
+            ],
+            "rationale": "achow101 questions the line-location premise of the suggested flag; this is not recognized obligation or conclusive technical falsification."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "A proposed change to translation tooling is operational maintenance.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A literal comparative technical question can remain context if no action recommendation is inferred. The supplied reply makes the add-option interpretation plausible.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Quoted author and original source ID are absent; the reply questions the proposed cause rather than explicitly refusing to add the flag.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C018_diagnosis",
+      "source_id": "33224-018",
+      "span": {
+        "start": 221,
+        "end": 505,
+        "quote": "I don't think line numbers is the problem. The actual source location of the string can change and the ids in the `.xlf` won't change. It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change. It's unclear to me why the sort order would change."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "technical_description",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "A tentative causal diagnosis and stated uncertainty. No institutional obligation or technical fact is independently verified.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational debugging, not epistemic governance.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_quote_group",
+      "source_id": "32359-227",
+      "span": {
+        "start": 2,
+        "end": 329,
+        "quote": "This debate is currently divided along the lines of those who believe we should remain proactive towards spam filtration, despite the lack of a 100% effective solution, vs those who believe the absence of a technically perfect solutions means we should capitulate to spammers, and remove all efforts to slow down / reduce spam."
+      },
+      "parent_unit_id": null,
+      "record_role": "container",
+      "grammar": "not_institutional",
+      "speech_act": "other",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "The original source of this quoted typology is absent. Children preserve expectations attributed within it; they are not independent observed camps or direct commitments by aryaethn.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "not_applicable",
+      "level_rationale": "Structural grouping of a rhetorical contrast.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "compound"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_proactive",
+      "source_id": "32359-227",
+      "span": {
+        "start": 72,
+        "end": 169,
+        "quote": "we should remain proactive towards spam filtration, despite the lack of a 100% effective solution"
+      },
+      "parent_unit_id": "C227_quote_group",
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 72,
+                "end": 74,
+                "quote": "we"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 75,
+                "end": 81,
+                "quote": "should"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "remain proactive",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 82,
+                "end": 98,
+                "quote": "remain proactive"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "spam filtration",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 107,
+                "end": 122,
+                "quote": "spam filtration"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "despite the lack of a 100% effective solution",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 124,
+                "end": 169,
+                "quote": "despite the lack of a 100% effective solution"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The external quotation attributes this expectation to one described position. It is not verified as shared, nor directly assigned to a named speaker.",
+        "evidence": [
+          {
+            "source_id": "32359-227",
+            "span": {
+              "start": 72,
+              "end": 169,
+              "quote": "we should remain proactive towards spam filtration, despite the lack of a 100% effective solution"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The proposed conduct concerns operational filtering policy. Its description does not revise governance authority.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The whole typology can be retained as contextual rhetoric rather than direct prescriptions. If retained as statements, these embedded actors and perspectives must remain attributed.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The original speaker and people described by we or those are not identified.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_capitulate",
+      "source_id": "32359-227",
+      "span": {
+        "start": 245,
+        "end": 277,
+        "quote": "we should capitulate to spammers"
+      },
+      "parent_unit_id": "C227_quote_group",
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 245,
+                "end": 247,
+                "quote": "we"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 248,
+                "end": 254,
+                "quote": "should"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "capitulate",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 255,
+                "end": 265,
+                "quote": "capitulate"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "spammers",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 269,
+                "end": 277,
+                "quote": "spammers"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "in the absence of a technically perfect solution",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 192,
+                "end": 244,
+                "quote": "the absence of a technically perfect solutions means"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The preceding means clause supplies the premise assigned to this described position. Rendering the premise as activation is an interpretive choice; it is not verified as an actual opponent belief."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "This is a potentially hostile characterization of an opposing position within an external quote. The reviewer does not attribute actual belief or endorsement to opponents or to aryaethn.",
+        "evidence": [
+          {
+            "source_id": "32359-227",
+            "span": {
+              "start": 245,
+              "end": 277,
+              "quote": "we should capitulate to spammers"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The described conduct concerns operational filtering; no repository mandate is established.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Treating the opponent characterization as rhetorical context is reasonable. Retaining it here preserves a grammatically explicit attributed should while withholding truth and shared-standing claims.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Capitulation may be polemical rather than a faithful statement of another participant's prescription.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "source_id": "32359-227",
+      "span": {
+        "start": 283,
+        "end": 329,
+        "quote": "remove all efforts to slow down / reduce spam."
+      },
+      "parent_unit_id": "C227_quote_group",
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 72,
+                "end": 74,
+                "quote": "we"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The preceding we should clause scopes the coordinated remove action."
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 75,
+                "end": 81,
+                "quote": "should"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The source should governing capitulate also scopes and remove."
+        },
+        {
+          "symbol": "I",
+          "text": "remove",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 283,
+                "end": 289,
+                "quote": "remove"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "all efforts to slow down / reduce spam",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 290,
+                "end": 328,
+                "quote": "all efforts to slow down / reduce spam"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "in the absence of a technically perfect solution",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 192,
+                "end": 244,
+                "quote": "the absence of a technically perfect solutions means"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The quoted means clause supplies the premise for both described actions; activation wording is an inference."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A second independently executable action assigned to the polemically described opposing position. This is not an endorsement or observed policy.",
+        "evidence": [
+          {
+            "source_id": "32359-227",
+            "span": {
+              "start": 283,
+              "end": 329,
+              "quote": "remove all efforts to slow down / reduce spam."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The attributed target is filtering activity, not governance rule creation.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Keep jointly with capitulation if both actions and the assigned absence-of-perfect-solution premise remain visible; alternatively treat the rhetorical typology as context.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Unknown original speaker, unknown actual proponents, and polemical attribution.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_agreement",
+      "source_id": "32359-227",
+      "span": {
+        "start": 333,
+        "end": 385,
+        "quote": "I agree. It's a debate that no one wins by argument."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "aryaethn assents to the quoted framing and then asserts limits of argument. This is not separate endorsement of both opposed prescriptions.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "A comment about this debate; the decision arena remains unspecified.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C227_majority",
+      "source_id": "32359-227",
+      "span": {
+        "start": 386,
+        "end": 423,
+        "quote": "Only the majority decides the winner."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "the majority",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 391,
+                "end": 403,
+                "quote": "the majority"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "decides",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 404,
+                "end": 411,
+                "quote": "decides"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "the winner",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 412,
+                "end": 422,
+                "quote": "the winner"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "Only",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32359-227",
+              "span": {
+                "start": 386,
+                "end": 390,
+                "quote": "Only"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "text_only",
+        "dispute_present": true,
+        "rationale": "The claim assigns exclusive decisional efficacy to a majority. It is retained as an attributed arrangement claim, not an established voting rule, authorized decision procedure, or finding about actual outcomes.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 14,
+              "end": 91,
+              "quote": "this is a pull request open for code review, not a per-username voting forum."
+            }
+          },
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 13905,
+              "end": 13997,
+              "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "unknown",
+      "observed_action_level": "operational",
+      "level_rationale": "The source names a debate winner but does not identify whether this means a PR merge, adoption by users, or broader social victory. A constitutional allocation would require establishing that the majority governs collective-choice decisions.",
+      "level_alternatives": [
+        "operational",
+        "constitutional"
+      ],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "This may be a rhetorical prediction about popularity, with no institutional configuration at all. If it refers to PR merge authority, it conflicts with the supplied maintainer-and-merit account; if it concerns wider adoption, that contrast may not hold.",
+      "confidence": "unresolved",
+      "uncertainty_reason": "The electorate, decision domain, counting method, and meaning of winner are unspecified.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C012_setting",
+      "source_id": "32381-012",
+      "span": {
+        "start": 6,
+        "end": 199,
+        "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 68,
+                "end": 70,
+                "quote": "we"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The standalone we in we probably should is the explicit actor; its membership is unknown."
+        },
+        {
+          "symbol": "D",
+          "text": "probably should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 71,
+                "end": 86,
+                "quote": "probably should"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "twiddle",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 92,
+                "end": 99,
+                "quote": "twiddle"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 100,
+                "end": 102,
+                "quote": "it"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "If we're twiddling a knob to upset the least amount of people",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 6,
+                "end": 67,
+                "quote": "If we're twiddling a knob to upset the least amount of people"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "to the value we're considering (plus some buffer)",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 103,
+                "end": 152,
+                "quote": "to the value we're considering (plus some buffer)"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "tentatively, a result of 150 bytes or beyond",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 154,
+                "end": 199,
+                "quote": "Anything that results in 150 bytes or beyond?"
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The question elaborates the same setting recommendation tentatively. It is not converted into a required lower bound."
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A conditional technical recommendation with a tentative numeric elaboration, not an unqualified duty or demonstrated contributor norm.",
+        "evidence": [
+          {
+            "source_id": "32381-012",
+            "span": {
+              "start": 6,
+              "end": 199,
+              "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action is choosing a software setting. The surrounding contribution discussion is operational, not a new review decision procedure.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "compound"
+      ],
+      "alternative_interpretation": "The final question can be retained as a separate context question about candidate values. It is kept here as a tentative elaboration of the same proposed edit, not a second independently executable instruction.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The knob and parameter value are context dependent; 150 bytes or beyond is questioned rather than firmly required.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C012_no_args",
+      "source_id": "32381-012",
+      "span": {
+        "start": 250,
+        "end": 305,
+        "quote": "I don't think adding more args in the node makes sense."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "adding",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 264,
+                "end": 270,
+                "quote": "adding"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "more args",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 271,
+                "end": 280,
+                "quote": "more args"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The expression more args is already the object of adding; the pragmatic negative recommendation preserves that role."
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the node",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 281,
+                "end": 292,
+                "quote": "in the node"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "do not",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32381-012",
+              "span": {
+                "start": 250,
+                "end": 305,
+                "quote": "I don't think adding more args in the node makes sense."
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "Negative assessment is interpreted as advisory avoidance; the source does not contain an explicit prohibition operator governing adding."
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "An indirect negative technical recommendation responding to jesterhodl's suggestion. No institutional obligation is established.",
+        "evidence": [
+          {
+            "source_id": "32381-011",
+            "span": {
+              "start": 606,
+              "end": 748,
+              "quote": "instead of removing the limit on count, you could let node runners set the policy via something like `opreturncount` and set the default to 2."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The target is the proposed software interface change, not who has authority to decide it.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A literal opinion about the value of adding arguments can remain context; the addressed response to a concrete suggestion supports the recommendation reading.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The reply does not explicitly name the implementer, and does not establish a general ban on additional arguments.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C011_direction",
+      "source_id": "32381-011",
+      "span": {
+        "start": 606,
+        "end": 748,
+        "quote": "instead of removing the limit on count, you could let node runners set the policy via something like `opreturncount` and set the default to 2."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Supporting context outside focal extraction scope; retained as the target of the named reply, not exhaustively component-coded.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "A source proposal used to identify the response target.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C008_freeze_concern",
+      "source_id": "33224-008",
+      "span": {
+        "start": 0,
+        "end": 82,
+        "quote": "cc @hebasto; given this would change translations after translation string freeze."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Supporting context outside focal extraction scope; original concern and quoted reply target.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational coordination around a release workflow.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C010_quote",
+      "source_id": "33224-010",
+      "span": {
+        "start": 2,
+        "end": 84,
+        "quote": "cc @hebasto; given this would change translations after translation string freeze."
+      },
+      "parent_unit_id": null,
+      "record_role": "quotation",
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Repeated text from C008_freeze_concern; not another recognition event.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Quoted operational coordination.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "repeated",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C010_freeze",
+      "source_id": "33224-010",
+      "span": {
+        "start": 635,
+        "end": 726,
+        "quote": "there must not be any translation source updates after the final translation string freeze."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "prohibition",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "must not",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-010",
+              "span": {
+                "start": 641,
+                "end": 649,
+                "quote": "must not"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "updates",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-010",
+              "span": {
+                "start": 676,
+                "end": 683,
+                "quote": "updates"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The explicit nominal action updates is retained; no unstated contributor actor is invented."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "translation source",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-010",
+              "span": {
+                "start": 657,
+                "end": 675,
+                "quote": "translation source"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "Within the nominal action expression, translation source names the target being updated."
+        },
+        {
+          "symbol": "Cac",
+          "text": "after the final translation string freeze",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33224-010",
+              "span": {
+                "start": 684,
+                "end": 725,
+                "quote": "after the final translation string freeze"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "disputed",
+        "dispute_present": true,
+        "rationale": "An explicit blanket expectation against post-final-freeze translation-source updates. Neither the supplied docs nor a named role establish authority for this exact prohibition. The later workaround recognizes the freeze rationale while qualifying its application; it does not simply accept the absolute wording.",
+        "evidence": [
+          {
+            "source_id": "D_TRANSLATION",
+            "span": {
+              "start": 2134,
+              "end": 2358,
+              "quote": "For general PRs, you shouldn’t include any updates to the translation source files. They will be updated periodically, primarily around pre-releases, allowing time for any new phrases to be translated before public releases."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33224-015",
+                "span": {
+                  "start": 903,
+                  "end": 971,
+                  "quote": "I think this issue is why we institute a translation strings freeze."
+                }
+              }
+            ],
+            "rationale": "achow101 explicitly recognizes a translation-freeze arrangement and its rationale. This does not establish acceptance of the exact no-source-updates-after-final-freeze proposition."
+          },
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33224-015",
+                "span": {
+                  "start": 975,
+                  "end": 1028,
+                  "quote": "However, I think there is a workaround to this issue."
+                }
+              },
+              {
+                "source_id": "33224-015",
+                "span": {
+                  "start": 1722,
+                  "end": 1882,
+                  "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+                }
+              }
+            ],
+            "rationale": "A conditional workaround is offered to the identified translation-change problem, qualifying the application of the categorical prohibition. The nine ACKs are reported, not independently enumerated in this packet."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The rule-like utterance applies an asserted existing release arrangement to operational updates. Collective-choice is a bounded alternative if this exchange is creating or relaxing the arrangement.",
+      "level_alternatives": [
+        "collective_choice"
+      ],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The utterance can be a rule candidate if additional evidence establishes authorized freeze-setting or enforcement. It can also be understood as a shorthand ban on harmful translation invalidation; that narrower meaning is not its literal wording.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The packet lacks the freeze announcement, the final freeze date, the speaker's delegated authority, and an explicit decision on exceptions.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C015_workaround",
+      "source_id": "33224-015",
+      "span": {
+        "start": 975,
+        "end": 1882,
+        "quote": "However, I think there is a workaround to this issue. Ultimately the reason transifex thinks 121 additional strings need to be translated is because the `.xlf` files contain an id for each string which is based upon the position of a string in the `bitcoin_en.ts` file which is automatically generated from the source code using `lupdate`. But if we instead modify `bitcoin_en.ts` directly as well, `lupdate` will not change the string order so the generated `bitcoin_en.xlf` file will contain just the changed string (and some other autogenerated context changes that don't seem to make a difference), which can be uploaded to Transifex. The result is that only this single string needs to be translated and no other strings will be affected.\r\n\r\nIf this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Supporting context outside focal extraction scope; records the conditional technical workaround and proposal-level reported ACK count as the response endpoint.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational review and translation handling; adoption of a revised recurring freeze arrangement is not established.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C019_test_report",
+      "source_id": "33224-019",
+      "span": {
+        "start": 0,
+        "end": 284,
+        "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:"
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "reported_action",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Supporting context outside focal extraction scope; l0rinc reports reproduction and a linked fix. This is not an independent audit of the fix or verification of the exact workaround in C015.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational test report.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_remove_deprecation",
+      "source_id": "33453-body",
+      "span": {
+        "start": 0,
+        "end": 187,
+        "quote": "Removes the deprecation for the `datacarrier` and `datacarriersize` options by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "Removes",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 0,
+                "end": 7,
+                "quote": "Removes"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the deprecation for the `datacarrier` and `datacarriersize` options",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 8,
+                "end": 75,
+                "quote": "the deprecation for the `datacarrier` and `datacarriersize` options"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": "The deprecation remains the explicit target of Removes in the descriptive source and proposed-change reading."
+        },
+        {
+          "symbol": "Cex",
+          "text": "by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 76,
+                "end": 187,
+                "quote": "by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The proposal articulates an implementation method for removing deprecation. Its institutional classification is an authored contribution strategy, not an enforceable general rule.",
+        "evidence": [
+          {
+            "source_id": "X33453",
+            "span": {
+              "start": 2162,
+              "end": 2323,
+              "quote": "-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M33453",
+                "span": {
+                  "start": 0,
+                  "end": 446,
+                  "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+                }
+              }
+            ],
+            "rationale": "Metadata records PR 33453 merged on 2025-09-30. Integration does not recognize every normative rationale."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The focal action changes documentation/status of software options. It is ordinary contribution and maintenance, not a change in governance authority.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A purely descriptive report of patch contents is reasonable. Under the proposal reading the explicit removal action and specified reverting method are preserved.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The body has an updated_at later than the merge; the packet does not reconstruct what text was visible at each earlier time.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": [
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "M33453",
+              "span": {
+                "start": 0,
+                "end": 446,
+                "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+              }
+            }
+          ],
+          "rationale": "Recorded merge pertains to the contribution. X33453 separately supports that its displayed patch removes deprecation labels and the warning."
+        }
+      ]
+    },
+    {
+      "unit_id": "C32714_warning_expectation",
+      "source_id": "32714-body",
+      "span": {
+        "start": 858,
+        "end": 950,
+        "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 862,
+                "end": 864,
+                "quote": "we"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "should not",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 865,
+                "end": 875,
+                "quote": "should not"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 876,
+                "end": 880,
+                "quote": "have"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "removal warnings",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 881,
+                "end": 897,
+                "quote": "removal warnings"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "if there is no current plan to actually remove them",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 898,
+                "end": 949,
+                "quote": "if there is no current plan to actually remove them"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "locally_supported",
+        "dispute_present": false,
+        "rationale": "A conditional advisory expectation about removal warnings, with later attributable use by bitschmidty as a reason for removing deprecation. That reasoning supports local recognition, not rule authority or demonstrated consensus.",
+        "evidence": [
+          {
+            "source_id": "32714-body",
+            "span": {
+              "start": 858,
+              "end": 950,
+              "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 677,
+                  "end": 821,
+                  "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._”"
+                }
+              },
+              {
+                "source_id": "33453-body",
+                "span": {
+                  "start": 1138,
+                  "end": 1205,
+                  "quote": "Removing the deprecation gives clarity for their planning purposes."
+                }
+              }
+            ],
+            "rationale": "bitschmidty explicitly attributes the conditional warning principle to Ava Chow and uses it with a clarity rationale for the offered removal. This is recognition through argument, not a new count for a repeated quote."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The expectation governs operational user-facing warnings. It does not allocate power to choose governance arrangements.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "The later quotation alone would be insufficient endorsement. Local recognition here depends on its explicit use in the argument for clarity and against current deprecation.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The recognition is interpretive and does not establish that the whole community accepted the principle or its application in every case.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": [
+        {
+          "kind": "recorded_closed_unmerged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "M32714",
+              "span": {
+                "start": 0,
+                "end": 397,
+                "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+              }
+            }
+          ],
+          "rationale": "The original PR was closed without merge. This does not reject the conditional warning principle."
+        }
+      ]
+    },
+    {
+      "unit_id": "C33453_warning_quote",
+      "source_id": "33453-body",
+      "span": {
+        "start": 727,
+        "end": 819,
+        "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+      },
+      "parent_unit_id": null,
+      "record_role": "quotation",
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "Exact repeated expectation from C32714_warning_expectation, explicitly attributed to Ava Chow and PR 32714. It is not a second statement.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Quoted rationale for operational maintenance.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "repeated",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_clarity",
+      "source_id": "33453-body",
+      "span": {
+        "start": 1138,
+        "end": 1205,
+        "quote": "Removing the deprecation gives clarity for their planning purposes."
+      },
+      "parent_unit_id": null,
+      "record_role": "context",
+      "grammar": "not_institutional",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "components": [],
+      "institution": {
+        "type": "not_applicable",
+        "standing": "not_applicable",
+        "dispute_present": false,
+        "rationale": "A rationale used with the explicitly attributed warning expectation. Its predicted benefit is an author claim, not an observed user outcome.",
+        "evidence": [],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "not_applicable",
+      "observed_action_level": "operational",
+      "level_rationale": "Operational maintenance reasoning.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "",
+      "confidence": "clear",
+      "uncertainty_reason": "",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_future_deprecation",
+      "source_id": "33453-body",
+      "span": {
+        "start": 1206,
+        "end": 1327,
+        "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "unresolved",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "Deprecating",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1206,
+                "end": 1217,
+                "quote": "Deprecating"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1218,
+                "end": 1228,
+                "quote": "the option"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the future",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1229,
+                "end": 1242,
+                "quote": "in the future"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "preferably with a removal schedule to better inform users",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1244,
+                "end": 1301,
+                "quote": "preferably with a removal schedule to better inform users"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author preserves the possibility of later deprecation. Possible may mean technical or practical capability rather than authorized discretion; no permission-granting actor is given.",
+        "evidence": [
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1206,
+              "end": 1327,
+              "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The action concerns future maintenance of the option, not constitutional assignment of who may make governance decisions.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "nested_component"
+      ],
+      "alternative_interpretation": "This can be technical context rather than an institutional permission candidate. The embedded schedule recommendation is separately retained.",
+      "confidence": "unresolved",
+      "uncertainty_reason": "The modal does not distinguish feasibility from permission; no schedule or procedure for later deprecation is adopted.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_schedule",
+      "source_id": "33453-body",
+      "span": {
+        "start": 1244,
+        "end": 1301,
+        "quote": "preferably with a removal schedule to better inform users"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "preferably",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1244,
+                "end": 1254,
+                "quote": "preferably"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "provide",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1255,
+                "end": 1278,
+                "quote": "with a removal schedule"
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The source supplies an adjunct, not the verb provide; a recommendation to provide the schedule is reconstructed."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "a removal schedule",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1260,
+                "end": 1278,
+                "quote": "a removal schedule"
+              }
+            }
+          ],
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The schedule is the complement of with in the source; its direct-object role under provide is inferred."
+        },
+        {
+          "symbol": "Cac",
+          "text": "when deprecating the option in the future",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1206,
+                "end": 1242,
+                "quote": "Deprecating the option in the future"
+              }
+            }
+          ],
+          "occurrence_role": "shared_scope",
+          "inference_note": "The enclosing future-deprecation clause scopes the recommendation, so the conditional wording is inferred rather than quoted."
+        },
+        {
+          "symbol": "Cex",
+          "text": "to better inform users",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1279,
+                "end": 1301,
+                "quote": "to better inform users"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A proposed advisory expectation for future deprecation communication. The surrounding possibility does not establish a binding scheduling requirement.",
+        "evidence": [
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1244,
+              "end": 1301,
+              "quote": "preferably with a removal schedule to better inform users"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The recommendation governs future user-facing maintenance communication.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "This can remain only a qualified constraint inside future deprecation. The separate layer is not additional evidence of adoption.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The recommendation is conditional and aspirational, without a supplied future plan.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_best_practice",
+      "source_id": "33453-body",
+      "span": {
+        "start": 1378,
+        "end": 1496,
+        "quote": "As a best practice, Bitcoin Core has avoided an option when the developers cannot articulate when they should be used."
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "Bitcoin Core",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1398,
+                "end": 1410,
+                "quote": "Bitcoin Core"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "has avoided",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1411,
+                "end": 1422,
+                "quote": "has avoided"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "an option",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1423,
+                "end": 1432,
+                "quote": "an option"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "when the developers cannot articulate when they should be used",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1433,
+                "end": 1495,
+                "quote": "when the developers cannot articulate when they should be used"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author reports and recommends a best practice. This records a claim about historical practice; no independent series of past decisions or attributed enforcement is supplied.",
+        "evidence": [
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1378,
+              "end": 1496,
+              "quote": "As a best practice, Bitcoin Core has avoided an option when the developers cannot articulate when they should be used."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "This expectation guides software-option maintenance decisions. Generality does not make it a collective-choice decision about governance arrangements.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "A strategy-candidate reading emphasizes the articulated decision method; a context-only reading emphasizes a historical claim. No separate should is extracted from the embedded question of when options should be used.",
+      "confidence": "plausible",
+      "uncertainty_reason": "The packet does not substantiate the historical regularity; the pronoun they refers to options by context despite the singular an option.",
+      "presentation": {
+        "quotation": "none",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    },
+    {
+      "unit_id": "C33453_footguns",
+      "source_id": "33453-body",
+      "span": {
+        "start": 1640,
+        "end": 1666,
+        "quote": "Don’t offer users footguns"
+      },
+      "parent_unit_id": null,
+      "record_role": "statement",
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "prohibition",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "Don’t",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1640,
+                "end": 1645,
+                "quote": "Don’t"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "offer",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1646,
+                "end": 1651,
+                "quote": "offer"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bind",
+          "text": "users",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1652,
+                "end": 1657,
+                "quote": "users"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "footguns",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "33453-body",
+              "span": {
+                "start": 1658,
+                "end": 1666,
+                "quote": "footguns"
+              }
+            }
+          ],
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author explicitly calls this a good principle, while arguing that this option has small remediable impacts. The external maxim is not independently sourced and establishes no enforceable institutional prohibition.",
+        "evidence": [
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1640,
+              "end": 1666,
+              "quote": "Don’t offer users footguns"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_rationale": "The principle concerns product-design conduct and user risk, not authority allocation.",
+      "level_alternatives": [],
+      "complexity_flags": [
+        "none"
+      ],
+      "alternative_interpretation": "Advisory recommendation is reasonable given good principle and the qualified discussion of impacts. Negative polarity and the distinct user recipient must remain.",
+      "confidence": "plausible",
+      "uncertainty_reason": "Footguns is metaphorical and undefined; the author's tolerance of small impacts does not settle an operational threshold.",
+      "presentation": {
+        "quotation": "external",
+        "markup": "plain",
+        "rationale": "Presentation follows the supplied occurrence; no edit-history inference."
+      },
+      "disposition_events": []
+    }
+  ],
+  "relations": [
+    {
+      "from_unit_id": "C213_defaults",
+      "to_unit_id": "C213_increase",
+      "type": "AND",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "32359-213",
+          "span": {
+            "start": 430,
+            "end": 523,
+            "quote": "let the defaults be as it is and allow it to be increased for those who chose to increase it."
+          }
+        }
+      ],
+      "rationale": "The quoted conservative approach combines retaining defaults with optional increases.",
+      "logic_scope": "actions"
+    },
+    {
+      "from_unit_id": "C213_defaults",
+      "to_unit_id": "C213_high_default",
+      "type": "OR",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "32359-213",
+          "span": {
+            "start": 394,
+            "end": 523,
+            "quote": "A conservative approach would be to let the defaults be as it is and allow it to be increased for those who chose to increase it."
+          }
+        },
+        {
+          "source_id": "32359-213",
+          "span": {
+            "start": 526,
+            "end": 607,
+            "quote": "Or setting a default high limit, so that a node runner can set to a lowest value."
+          }
+        }
+      ],
+      "rationale": "Or presents the high-default option as an alternative to the earlier paired retain-default/increase configuration. The AND-linked increase clause remains within the first alternative. No exclusivity is asserted.",
+      "logic_scope": "propositions"
+    },
+    {
+      "from_unit_id": "C115_unsubstantiated",
+      "to_unit_id": "C115_repetition",
+      "type": "AND",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 300,
+            "end": 419,
+            "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+          }
+        }
+      ],
+      "rationale": "The negative evaluation scopes both alternatives in leave unsubstantiated or repeat; avoiding each is the paired recommended conduct. It is not a requirement to perform either disfavored action.",
+      "logic_scope": "actions"
+    },
+    {
+      "from_unit_id": "C165_quote",
+      "to_unit_id": "C164_question",
+      "type": "quotes",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 2,
+            "end": 68,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-164",
+          "span": {
+            "start": 0,
+            "end": 66,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        }
+      ],
+      "rationale": "Exact repeated question.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C164_question",
+      "to_unit_id": "C165_known",
+      "type": "uptake",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 2,
+            "end": 68,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 72,
+            "end": 94,
+            "quote": "This is a known issue."
+          }
+        }
+      ],
+      "rationale": "The exact-quoted status question receives an issue diagnosis.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C164_question",
+      "to_unit_id": "C165_fixed",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 2,
+            "end": 68,
+            "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+          }
+        },
+        {
+          "source_id": "32406-165",
+          "span": {
+            "start": 146,
+            "end": 157,
+            "quote": "edit: fixed"
+          }
+        }
+      ],
+      "rationale": "The same reply carries a reported fix, attributable to maflcko; its timing and technical verification remain unknown.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C018_add_flag",
+      "to_unit_id": "C018_diagnosis",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-018",
+          "span": {
+            "start": 127,
+            "end": 217,
+            "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+          }
+        },
+        {
+          "source_id": "33224-018",
+          "span": {
+            "start": 221,
+            "end": 263,
+            "quote": "I don't think line numbers is the problem."
+          }
+        }
+      ],
+      "rationale": "The reply addresses the quoted suggestion by questioning its premise.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C018_diagnosis",
+      "to_unit_id": "C018_add_flag",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-018",
+          "span": {
+            "start": 221,
+            "end": 263,
+            "quote": "I don't think line numbers is the problem."
+          }
+        },
+        {
+          "source_id": "33224-018",
+          "span": {
+            "start": 356,
+            "end": 453,
+            "quote": "It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change."
+          }
+        }
+      ],
+      "rationale": "The challenge is to the suggested line-location explanation, not an explicitly announced rejection of the flag change.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C227_capitulate",
+      "to_unit_id": "C227_remove_efforts",
+      "type": "AND",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 245,
+            "end": 329,
+            "quote": "we should capitulate to spammers, and remove all efforts to slow down / reduce spam."
+          }
+        }
+      ],
+      "rationale": "Both actions are assigned to the same described position.",
+      "logic_scope": "actions"
+    },
+    {
+      "from_unit_id": "C227_majority",
+      "to_unit_id": "C115_forum",
+      "type": "challenges",
+      "basis": "unresolved",
+      "evidence": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 386,
+            "end": 423,
+            "quote": "Only the majority decides the winner."
+          }
+        },
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 14,
+            "end": 91,
+            "quote": "this is a pull request open for code review, not a per-username voting forum."
+          }
+        }
+      ],
+      "rationale": "Potential conflict over the basis of a decision, only if debate winner means disposition of this PR. No direct reply or common decision domain is established.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C012_no_args",
+      "to_unit_id": "C011_direction",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "32381-012",
+          "span": {
+            "start": 203,
+            "end": 305,
+            "quote": "@jesterhodl while I understand your main point I don't think adding more args in the node makes sense."
+          }
+        },
+        {
+          "source_id": "32381-011",
+          "span": {
+            "start": 688,
+            "end": 722,
+            "quote": "via something like `opreturncount`"
+          }
+        }
+      ],
+      "rationale": "The addressed reply disputes the additional-argument part of the proposed direction, not necessarily its entire rationale.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C010_quote",
+      "to_unit_id": "C008_freeze_concern",
+      "type": "quotes",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 2,
+            "end": 84,
+            "quote": "cc @hebasto; given this would change translations after translation string freeze."
+          }
+        },
+        {
+          "source_id": "33224-008",
+          "span": {
+            "start": 0,
+            "end": 82,
+            "quote": "cc @hebasto; given this would change translations after translation string freeze."
+          }
+        }
+      ],
+      "rationale": "Exact repeated concern.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C008_freeze_concern",
+      "to_unit_id": "C010_freeze",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 2,
+            "end": 84,
+            "quote": "cc @hebasto; given this would change translations after translation string freeze."
+          }
+        },
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 635,
+            "end": 726,
+            "quote": "there must not be any translation source updates after the final translation string freeze."
+          }
+        }
+      ],
+      "rationale": "The quoted concern receives an explicit prohibition supported by technical reasoning.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C010_freeze",
+      "to_unit_id": "C015_workaround",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 635,
+            "end": 726,
+            "quote": "there must not be any translation source updates after the final translation string freeze."
+          }
+        },
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 903,
+            "end": 971,
+            "quote": "I think this issue is why we institute a translation strings freeze."
+          }
+        },
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 975,
+            "end": 1028,
+            "quote": "However, I think there is a workaround to this issue."
+          }
+        }
+      ],
+      "rationale": "The later experiment and conditional workaround directly address the translation-freeze problem; no causal effect on merging is inferred.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C015_workaround",
+      "to_unit_id": "C010_freeze",
+      "type": "challenges",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 1722,
+            "end": 1882,
+            "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+          }
+        },
+        {
+          "source_id": "33224-010",
+          "span": {
+            "start": 635,
+            "end": 726,
+            "quote": "there must not be any translation source updates after the final translation string freeze."
+          }
+        }
+      ],
+      "rationale": "A proposed suitable source-file modification qualifies application of the categorical prohibition; this challenges the blanket application rather than the value of a freeze.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C015_workaround",
+      "to_unit_id": "C019_test_report",
+      "type": "temporal",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33224-015",
+          "span": {
+            "start": 975,
+            "end": 1028,
+            "quote": "However, I think there is a workaround to this issue."
+          }
+        },
+        {
+          "source_id": "33224-019",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I have checked the problem against the actual Core translations on Transifex"
+          }
+        }
+      ],
+      "rationale": "Entry timestamps order the workaround discussion on August 28 before the report on August 29. The linked tool fix need not be identical to the manual workaround.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C33453_warning_quote",
+      "to_unit_id": "C32714_warning_expectation",
+      "type": "quotes",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 727,
+            "end": 819,
+            "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+          }
+        },
+        {
+          "source_id": "32714-body",
+          "span": {
+            "start": 858,
+            "end": 950,
+            "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+          }
+        }
+      ],
+      "rationale": "The same expectation appears in the supplied earlier body.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C32714_warning_expectation",
+      "to_unit_id": "C33453_clarity",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 677,
+            "end": 821,
+            "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._”"
+          }
+        },
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 1138,
+            "end": 1205,
+            "quote": "Removing the deprecation gives clarity for their planning purposes."
+          }
+        }
+      ],
+      "rationale": "The later author explicitly reuses the earlier conditional warning principle in the argument for clarity. This is expectation recognition through reasoning, not proof that the principle caused integration.",
+      "logic_scope": "not_applicable"
+    },
+    {
+      "from_unit_id": "C33453_schedule",
+      "to_unit_id": "C33453_future_deprecation",
+      "type": "clarifies",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "33453-body",
+          "span": {
+            "start": 1206,
+            "end": 1327,
+            "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+          }
+        }
+      ],
+      "rationale": "The embedded schedule recommendation qualifies the possible future action without making later deprecation obligatory.",
+      "logic_scope": "not_applicable"
+    }
+  ],
+  "episode_summary": {
+    "observed_outcomes": [
+      {
+        "claim": "The bot reply identifies a known issue, directs readers to issue 51, and carries an edit reporting fixed. The report does not verify the repair or show when the edit was made.",
+        "evidence": [
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 157,
+              "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+            }
+          }
+        ]
+      },
+      {
+        "claim": "PR 33224 has a recorded merge. Its supplied patch softens will be removed to expected to be removed. The translation-thread reports concern testing and a linked fix; neither the merge nor the report proves acceptance of a blanket freeze prohibition.",
+        "evidence": [
+          {
+            "source_id": "M33224",
+            "span": {
+              "start": 0,
+              "end": 430,
+              "quote": "{\n  \"number\": 33224,\n  \"title\": \"doc: unify `datacarriersize` warning with release notes\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-08-20T03:45:42Z\",\n  \"closed_at\": \"2025-09-02T22:48:55Z\",\n  \"merged_at\": \"2025-09-02T22:48:54Z\",\n  \"head_sha\": \"2885bd0e1c4fc863a7f28ff0fd353f5cffb03442\",\n  \"base_sha\": \"f5f853d952542ebd45339a270a98362696877657\",\n  \"actual_merge_sha\": \"46369583f3a99d2b403349790f8b26dbc28de132\"\n}"
+            }
+          },
+          {
+            "source_id": "X33224",
+            "span": {
+              "start": 0,
+              "end": 631,
+              "quote": "@@ -904,7 +904,7 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n     }\n \n     if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n     }\n \n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config."
+            }
+          },
+          {
+            "source_id": "33224-019",
+            "span": {
+              "start": 0,
+              "end": 284,
+              "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:"
+            }
+          }
+        ]
+      },
+      {
+        "claim": "PR 33453 has a recorded merge, and its supplied patch removes the displayed deprecation labels and startup warning. The 30.x backport metadata lists #33453 and records that backport PR merged; this is repository evidence, not a finding about network adoption or community acceptance of every stated rationale.",
+        "evidence": [
+          {
+            "source_id": "M33453",
+            "span": {
+              "start": 0,
+              "end": 446,
+              "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+            }
+          },
+          {
+            "source_id": "X33453",
+            "span": {
+              "start": 0,
+              "end": 2665,
+              "quote": "@@ -658,9 +658,9 @@ void SetupServerArgs(ArgsManager& argsman, bool can_listen_ipc)\n     argsman.AddArg(\"-dustrelayfee=<amt>\", strprintf(\"Fee rate (in %s/kvB) used to define dust, the value of an output such that it will cost more than its value in fees at this fee rate to spend it. (default: %s)\", CURRENCY_UNIT, FormatMoney(DUST_RELAY_TX_FEE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-acceptstalefeeestimates\", strprintf(\"Read fee estimates even if they are stale (%sdefault: %u) fee estimates are considered stale if they are %s hours old\", \"regtest only; \", DEFAULT_ACCEPT_STALE_FEE_ESTIMATES, Ticks<std::chrono::hours>(MAX_FILE_AGE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::DEBUG_TEST);\n     argsman.AddArg(\"-bytespersigop\", strprintf(\"Equivalent bytes per sigop in transactions for relay and mining (default: %u)\", DEFAULT_BYTES_PER_SIGOP), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n-    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n+    argsman.AddArg(\"-datacarrier\", strprintf(\"Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-datacarriersize\",\n-                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n+                   strprintf(\"Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n                              \"are of this size or less, allowing multiple outputs (default: %u)\",\n                              MAX_OP_RETURN_RELAY),\n                    ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n@@ -903,10 +903,6 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n         InitWarning(_(\"Option '-checkpoints' is set but checkpoints were removed. This option has no effect.\"));\n     }\n \n-    if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n-    }\n-\n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config.\n     if (args.IsArgSet(\"-maxorphantx\")) {\n         InitWarning(_(\"Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.\"));"
+            }
+          },
+          {
+            "source_id": "M33473",
+            "span": {
+              "start": 0,
+              "end": 547,
+              "quote": "{\n  \"number\": 33473,\n  \"title\": \"[30.x] Backports & rc3\",\n  \"body\": \"Backports:\\r\\n* #33434\\r\\n* #33446\\r\\n* #33453\\r\\n* #33475\\r\\n* #33482\\r\\n* #33484\\r\\n* #33504\\r\\n\\r\\nIncludes changes for `v30.0rc3`:\\r\\n* Version bump\\r\\n* Regen manpages\\r\\n* Regen exmaple .conf\",\n  \"base\": \"30.x\",\n  \"head_sha\": \"4e869a67aa7415f9c756bf6463e3437ae0a3ec44\",\n  \"merged\": true,\n  \"merge_commit_sha\": \"d5e0077bef4cc4484242bb9a88a4840bc803c091\",\n  \"created_at\": \"2025-09-24T14:11:42Z\",\n  \"closed_at\": \"2025-10-06T09:37:33Z\",\n  \"merged_at\": \"2025-10-06T09:37:33Z\"\n}"
+            }
+          }
+        ]
+      },
+      {
+        "claim": "PRs 32359, 32381, and 32714 are recorded closed without merge. Those dispositions alone do not show rejection of each focal or quoted proposition.",
+        "evidence": [
+          {
+            "source_id": "M32359",
+            "span": {
+              "start": 0,
+              "end": 378,
+              "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+            }
+          },
+          {
+            "source_id": "M32381",
+            "span": {
+              "start": 0,
+              "end": 372,
+              "quote": "{\n  \"number\": 32381,\n  \"title\": \"policy: allow more than one OP_RETURN outputs per tx\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-29T20:21:59Z\",\n  \"closed_at\": \"2025-04-30T19:12:08Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"5fd80bd662fd47e0df2dfd951eb445e8a50ccebc\",\n  \"base_sha\": \"51d76634fb57fc7a3382fa26389e6c7f863bea76\",\n  \"actual_merge_sha\": null\n}"
+            }
+          },
+          {
+            "source_id": "M32714",
+            "span": {
+              "start": 0,
+              "end": 397,
+              "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+            }
+          }
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "category": "review_coordination",
+        "claim": "A status question is repeated verbatim in maflcko's reply, followed by an issue diagnosis, issue-51 referral, and reported fix. This establishes a specific question-response sequence, with the edit timing and actual repair unresolved.",
+        "evidence": [
+          {
+            "source_id": "32406-164",
+            "span": {
+              "start": 0,
+              "end": 66,
+              "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+            }
+          },
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 2,
+              "end": 68,
+              "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+            }
+          },
+          {
+            "source_id": "32406-165",
+            "span": {
+              "start": 72,
+              "end": 157,
+              "quote": "This is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+            }
+          }
+        ],
+        "unit_ids": [
+          "C164_question",
+          "C165_quote",
+          "C165_known",
+          "C165_referral",
+          "C165_fixed"
+        ],
+        "alternative_explanation": "The repair may have happened independently of the question or outside this thread; the comment does not identify the intervention.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "reason_giving",
+        "claim": "The translation-freeze concern receives a categorical no-updates response grounded in risk to Reviewed status. achow101 then reports experiments and recognizes the rationale for a freeze while suggesting a conditional workaround; l0rinc later reports a linked fix. This supports a reason-giving sequence but does not identify the cause of the subsequent PR merge or prove the exact workaround was integrated.",
+        "evidence": [
+          {
+            "source_id": "33224-008",
+            "span": {
+              "start": 0,
+              "end": 82,
+              "quote": "cc @hebasto; given this would change translations after translation string freeze."
+            }
+          },
+          {
+            "source_id": "33224-010",
+            "span": {
+              "start": 452,
+              "end": 621,
+              "quote": "it is not guaranteed that updating the translation source file (as in https://github.com/bitcoin/bitcoin/pull/33193) won’t reset the \"Reviewed\" status for other strings."
+            }
+          },
+          {
+            "source_id": "33224-010",
+            "span": {
+              "start": 635,
+              "end": 726,
+              "quote": "there must not be any translation source updates after the final translation string freeze."
+            }
+          },
+          {
+            "source_id": "33224-015",
+            "span": {
+              "start": 0,
+              "end": 145,
+              "quote": "I've done some experimenting with a test project on transifex to see what the actual effects this change would cause, and a potential workaround."
+            }
+          },
+          {
+            "source_id": "33224-015",
+            "span": {
+              "start": 903,
+              "end": 971,
+              "quote": "I think this issue is why we institute a translation strings freeze."
+            }
+          },
+          {
+            "source_id": "33224-015",
+            "span": {
+              "start": 1722,
+              "end": 1882,
+              "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+            }
+          },
+          {
+            "source_id": "33224-019",
+            "span": {
+              "start": 0,
+              "end": 284,
+              "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:"
+            }
+          },
+          {
+            "source_id": "M33224",
+            "span": {
+              "start": 0,
+              "end": 430,
+              "quote": "{\n  \"number\": 33224,\n  \"title\": \"doc: unify `datacarriersize` warning with release notes\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-08-20T03:45:42Z\",\n  \"closed_at\": \"2025-09-02T22:48:55Z\",\n  \"merged_at\": \"2025-09-02T22:48:54Z\",\n  \"head_sha\": \"2885bd0e1c4fc863a7f28ff0fd353f5cffb03442\",\n  \"base_sha\": \"f5f853d952542ebd45339a270a98362696877657\",\n  \"actual_merge_sha\": \"46369583f3a99d2b403349790f8b26dbc28de132\"\n}"
+            }
+          }
+        ],
+        "unit_ids": [
+          "C008_freeze_concern",
+          "C010_freeze",
+          "C015_workaround",
+          "C019_test_report"
+        ],
+        "alternative_explanation": "The participants may be addressing technical invalidation while preserving a narrower freeze expectation, rather than negotiating or overriding an absolute governance prohibition. The merge may depend on other unprovided review.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "reason_giving",
+        "claim": "bitschmidty explicitly attributes the conditional no-removal-warning expectation to Ava Chow, repeats it, and ties deprecation removal to clarity for users. This is attributable reuse of the expectation. Recorded integration of the broader change does not establish the expectation as an enforceable rule or identify its causal weight.",
+        "evidence": [
+          {
+            "source_id": "32714-body",
+            "span": {
+              "start": 858,
+              "end": 950,
+              "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+            }
+          },
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 677,
+              "end": 821,
+              "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._”"
+            }
+          },
+          {
+            "source_id": "33453-body",
+            "span": {
+              "start": 1138,
+              "end": 1205,
+              "quote": "Removing the deprecation gives clarity for their planning purposes."
+            }
+          },
+          {
+            "source_id": "M33453",
+            "span": {
+              "start": 0,
+              "end": 446,
+              "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+            }
+          }
+        ],
+        "unit_ids": [
+          "C32714_warning_expectation",
+          "C33453_warning_quote",
+          "C33453_clarity",
+          "C33453_remove_deprecation"
+        ],
+        "alternative_explanation": "The same edit may have been supported for maintenance, preference, or communication reasons independently of the quoted principle. The supplied body history is incomplete.",
+        "status": "supported_sequence"
+      },
+      {
+        "category": "authority_allocation",
+        "claim": "glozow frames the PR as code review rather than per-username voting and asserts merit weighting. aryaethn later claims only a majority decides the winner. The statements reveal potentially incompatible decision conceptions, but the packet does not establish a direct reply, a shared meaning of winner, or a change to the merge arrangement.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 14,
+              "end": 91,
+              "quote": "this is a pull request open for code review, not a per-username voting forum."
+            }
+          },
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 92,
+              "end": 186,
+              "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+            }
+          },
+          {
+            "source_id": "32359-227",
+            "span": {
+              "start": 333,
+              "end": 423,
+              "quote": "I agree. It's a debate that no one wins by argument. Only the majority decides the winner."
+            }
+          },
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 13905,
+              "end": 13997,
+              "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+            }
+          }
+        ],
+        "unit_ids": [
+          "C115_forum",
+          "C115_merit",
+          "C227_majority"
+        ],
+        "alternative_explanation": "Majority may refer to wider user adoption or rhetorical victory rather than PR integration, in which case the claims concern different arenas.",
+        "status": "unresolved"
+      }
+    ],
+    "missing_evidence": [
+      "Original quoted occurrence and speaker for 32359-213; original quoted debate framing for 32359-227; original add-flag suggestion and speaker for 33224-018 are absent. Their absence does not show no originals exist.",
+      "The supplied packet does not contain full comment histories, moderation events for these focal statements, or body versions at every date. Several body updated_at values postdate the historical episode.",
+      "The exact freeze announcement/date, authority for the final translation freeze, exception decision, and complete translation-workaround patch history are not supplied.",
+      "The content of DrahtBot issue 51 and a timestamped verification of the reported fix are not supplied.",
+      "Formal recognition, enforcement, a specified electorate, and the decision domain for the majority claim are not supplied."
+    ],
+    "unresolved_questions": [
+      "Does the majority claim refer to this PR's merge, broader software adoption, or rhetorical victory? The current record cannot select a governance level confidently.",
+      "Does the freeze prohibition literally forbid every source update, or only changes causing disruptive invalidation? The later workaround recognizes the rationale but leaves the exact exception status unresolved.",
+      "Are the externally quoted opponent prescriptions faithful attributions or rhetorical characterizations? They are retained as claims, not verified positions.",
+      "Does future deprecation being possible express practical capability or authorized discretion? The supplied wording does not resolve that distinction.",
+      "Is the no-removal-warning principle locally recognized by the later rationale, or merely quoted as persuasive background? The chosen local-recognition reading relies on the argument using it, not repetition alone."
+    ]
+  }
+}

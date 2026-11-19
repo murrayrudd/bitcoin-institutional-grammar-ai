@@ -1,0 +1,249 @@
+{
+  "status": "pass",
+  "screened_entries": 42,
+  "units": 63,
+  "statement_units": 33,
+  "exact_anchor_references": 401,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "u01",
+      "source_id": "pr26586:body",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+        "span": {
+          "start": 69,
+          "end": 103,
+          "quote": "test: previous releases: add v23.0"
+        }
+      },
+      "note": "The nominal procedure becomes the reconstructed action target. The two immediately referenced commit messages resolve the method only to previous-release additions; its full workflow and universal practice are not reconstructed."
+    },
+    {
+      "unit_id": "u01",
+      "source_id": "pr26586:body",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+        "span": {
+          "start": 69,
+          "end": 103,
+          "quote": "test: previous releases: add v22.0"
+        }
+      },
+      "note": "The nominal procedure becomes the reconstructed action target. The two immediately referenced commit messages resolve the method only to previous-release additions; its full workflow and universal practice are not reconstructed."
+    },
+    {
+      "unit_id": "u06",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The preceding coordinated instruction supplies the procedural trigger for this stated effect; no actual reaction is observed."
+    },
+    {
+      "unit_id": "u09",
+      "source_id": "pr26586:comments:4",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 28,
+          "end": 57,
+          "quote": "backwards compatibility tests"
+        }
+      },
+      "note": "The preceding reason sentence explicitly names the testing domain for the following So recommendation; this contextual scope is not an unbounded requirement to add releases everywhere."
+    },
+    {
+      "unit_id": "u15",
+      "source_id": "pr26586:comments:10",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 233,
+          "end": 318,
+          "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      },
+      "note": "The later sentence expressly describes an unchanged default under the same proposed approach; it lies outside this smallest action span."
+    },
+    {
+      "unit_id": "u16",
+      "source_id": "pr26586:comments:10",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      },
+      "note": "In that case explicitly conditions the choice, but the resolved configuration is inferred from the preceding proposal. Both the anaphor and its complete antecedent are anchored; no choice is asserted under the unchanged script."
+    },
+    {
+      "unit_id": "u22",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 180,
+          "end": 182,
+          "quote": "we"
+        }
+      },
+      "note": "The subject of the preceding coordinated clause scopes over the rebase action."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 108,
+          "end": 111,
+          "quote": "you"
+        }
+      },
+      "note": "The main-clause you will either need to governs both remove and explain; this is shared coordinated scope outside the smaller explanation span."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "Need to scopes over the remove-or-explain alternatives; future will is not independently treated as D."
+    },
+    {
+      "unit_id": "u27",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "The introductory conditional activates both alternative actions."
+    },
+    {
+      "unit_id": "u29",
+      "source_id": "pr26586:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      "note": "That and the same goes extend the preceding selection/justification approach to other versions in this file. The broader criterion and remove-or-explain alternatives are anchored; exact version removals and exact cleanup implementation remain unresolved."
+    },
+    {
+      "unit_id": "u29",
+      "source_id": "pr26586:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      },
+      "note": "That and the same goes extend the preceding selection/justification approach to other versions in this file. The broader criterion and remove-or-explain alternatives are anchored; exact version removals and exact cleanup implementation remain unresolved."
+    },
+    {
+      "unit_id": "u32",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 746,
+          "end": 786,
+          "quote": "cleaning up the releases list in general"
+        }
+      },
+      "note": "That resolves to the preceding ACK's cleanup object; its action-target role under exclude is inferred, and the evidence lies outside the focal assertion."
+    },
+    {
+      "unit_id": "u10",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The source explicitly supplies adding and the complete v24.0-or-available-release target. Treating that embedded action as the recommended action changes pragmatic force but does not transform its action/object roles; should still qualifies justify, not duty."
+    },
+    {
+      "unit_id": "u15",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": "The source explicitly assigns we the causative action have it loop. The reconstructed configure action retains that same causative actor; pragmatic recommendation force does not transform this actor role."
+    },
+    {
+      "unit_id": "u23",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The source expressly supplies the negated action not rush merging and its target new releases. Interpreting the reason statement as a recommendation does not reconstruct those predicate roles; the negation remains part of the stated action."
+    },
+    {
+      "unit_id": "u25",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The latest release is explicitly the object of add in the source. Reconstructing the indirect recommendation leaves that action-object relation intact; only the recommendation force is inferred."
+    },
+    {
+      "unit_id": "u30",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Although the utterance is an indirect question, the release phrase is explicitly the target of keep in the same predicate; no transformed argument role is introduced."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

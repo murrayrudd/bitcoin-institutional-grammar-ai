@@ -1,0 +1,102 @@
+[E07:body] jeanpablojp 2026-08-31T13:04:07+00:00
+Six unused items in src/wallet, one per commit.
+
+`DescriptorScriptPubKeyMan::AddDescriptorKey`, a private wrapper that
+lost its caller in #28333.
+
+`COutput::ToString`, no callers. It was used by `COutput::print()`,
+which went away with the other `print()` methods in wallet.
+
+The two `CHDChain` keypool index members, whose last uses went away with
+`LegacySPKM` in #28710.
+
+`WalletDatabase::m_refcount`. Only BDB ever maintained it, and BDB went
+away in #28710.
+
+The `warnings` parameter of `CreateFromDump`, never written, along with
+the loop that printed it in wallet-tool. The `push_back` went away with
+the `-format` option in #31250.
+
+The two BDB-only members of `DatabaseOptions`, `use_shared_memory` and
+`max_log_mb`. Their last readers went away with BDB in #28710, along
+with the `-privdb` and `-dblogsize` options that set them.
+
+
+[E07:comments:0] DrahtBot 2026-08-31T13:04:16+00:00
+<!--e57a25ab6845829454e8d69fc972939a-->
+
+The following sections might be updated with supplementary metadata relevant to reviewers and maintainers.
+
+<!--006a51241073e994b41acfe9ec718e94-->
+### Code Coverage & Benchmarks
+For details see: https://corecheck.dev/bitcoin/bitcoin/pulls/36127.
+<!--021abf342d371248e50ceaed478a90ca-->
+### Reviews
+See [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) and [AI policy](https://github.com/bitcoin/bitcoin/blob/master/doc/AI_POLICY.md) for information on the review process.
+| Type | Reviewers |
+| ---- | --------- |
+| ACK | [pablomartin4btc](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078531967), [vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594) |
+| Stale ACK | [Eunovo](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5077647514) |
+
+If your review is incorrectly listed, please copy-paste <code>&lt;!--meta-tag:bot-skip--&gt;</code> into the comment that the bot should ignore.
+<!--5faf32d7da4f0f540f40219e4f7537a3-->
+
+[E07:comments:1] vicjuma 2026-09-01T11:26:02+00:00
+ACK bbed824a64f0a5335442261b3abd63db22453cd6
+
+[E07:comments:2] jeanpablojp 2026-09-01T12:51:12+00:00
+Pushed a sixth commit taking @pablomartin4btc's suggestion, `use_shared_memory` and `max_log_mb` in `DatabaseOptions`. Their last readers went with BDB in #28710, same as `m_refcount`, along with the `-privdb` and `-dblogsize` options that set them. Credited on the commit.
+
+[E07:comments:3] pablomartin4btc 2026-09-01T16:06:59+00:00
+> reACK
+
+Mmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...
+
+> | Type | Reviewers |
+> | ---------| ---------|
+> | ACK  | [pablomartin4btc](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078531967)   |
+> | Concept ACK   | [vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594)  | 
+> | Stale ACK  | [Eunovo](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5077647514)  |
+
+
+
+[E07:comments:4] maflcko 2026-09-01T17:34:10+00:00
+> Mmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...
+
+You can find more details on code review in https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review. (Without a hash, no one can know what the comment is referring to)
+
+[E07:comments:5] vicjuma 2026-09-01T17:41:10+00:00
+> Mmm... I think the @DrahtBot hasn't properly counted @vicjuma's ACK...
+
+> You can find more details on code
+
+thanks @maflcko and @pablomartin4btc 
+
+[E07:reviews:0] pablomartin4btc 2026-08-31T18:10:21+00:00
+ACK bbed824a64f0a5335442261b3abd63db22453cd6
+
+Clean removal, verified every symbol's references.
+
+Found one more piece of unused code that would make a natural 6th commit
+for the PR — these 2 data members in `struct DatabaseOptions`:
+```c++
+bool use_shared_memory = false; //!< Let other processes access the database.
+int64_t max_log_mb = 100;       //!< Max log size to allow before consolidating.
+```
+Both `use_shared_memory` and `max_log_mb` were last actually consumed in 04a7a7a28c — part of the merge for PR #28710, the same PR the existing commits already cite for the `m_next_*` and `m_refcount` removals.
+
+[E07:reviews:1] Eunovo 2026-09-01T11:50:54+00:00
+ACK https://github.com/bitcoin/bitcoin/pull/36127/commits/bbed824a64f0a5335442261b3abd63db22453cd6
+
+[E07:reviews:2] pablomartin4btc 2026-09-01T13:21:10+00:00
+ACK 9f0543d69a1357371017c8289d9addc457b6f132
+
+[E07:reviews:3] vicjuma 2026-09-01T13:29:01+00:00
+ACK 9f0543d69a1357371017c8289d9addc457b6f132
+
+
+[E07:reviews:4] fanquake 2026-09-07T13:08:17+00:00
+
+
+[E07:review_comments:0] fanquake 2026-09-07T13:08:18+00:00
+Looks like the last use of `warnings` in `CreateFromDrump` was removed in 7a41c939f05f2208c33e8f09eecbbfd579fb4023.

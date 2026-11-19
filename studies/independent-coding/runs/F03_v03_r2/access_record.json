@@ -1,0 +1,237 @@
+{
+  "run_id": "F03_v03_r2",
+  "recorded_at_utc": "2026-11-07T19:26:23.060578+00:00",
+  "working_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r2",
+  "scope": "All research, reads, and outputs remained within this assigned run directory; ordinary Python runtime imports are listed separately. No parent-directory, other-run, Library, web, or external research inputs were read.",
+  "files_accessed": [
+    {
+      "path": "INSTRUCTIONS.txt",
+      "access": [
+        "read",
+        "integrity_hash"
+      ],
+      "purpose": "Run boundary and required workflow"
+    },
+    {
+      "path": "protocol/codebook.txt",
+      "access": [
+        "read_complete",
+        "integrity_hash"
+      ],
+      "purpose": "Assigned version 0.3 interpretation conventions"
+    },
+    {
+      "path": "protocol/annotation_schema.json",
+      "access": [
+        "read_complete",
+        "checker_read",
+        "integrity_hash"
+      ],
+      "purpose": "Full annotation structure"
+    },
+    {
+      "path": "packet.json",
+      "access": [
+        "read_complete",
+        "programmatic_read",
+        "integrity_hash"
+      ],
+      "purpose": "Sole research source packet and exact Unicode anchors"
+    },
+    {
+      "path": "tools/check_annotation.py",
+      "access": [
+        "read_complete",
+        "execute",
+        "integrity_hash"
+      ],
+      "purpose": "Provided mechanical validation only"
+    },
+    {
+      "path": "input_manifest.json",
+      "access": [
+        "read_complete"
+      ],
+      "purpose": "Input integrity and exposed inherited-configuration record"
+    },
+    {
+      "path": "build_annotation.py",
+      "access": [
+        "write",
+        "execute"
+      ],
+      "purpose": "Generate first complete annotation and preserve freeze before checks"
+    },
+    {
+      "path": "annotation.json",
+      "access": [
+        "write",
+        "read",
+        "checker_read",
+        "revise"
+      ],
+      "purpose": "Working full-schema annotation; final content equals annotation.final.json"
+    },
+    {
+      "path": "annotation.first_complete.json",
+      "access": [
+        "write_once",
+        "read",
+        "integrity_hash"
+      ],
+      "purpose": "First complete freeze, never revised"
+    },
+    {
+      "path": "checks.first.json",
+      "access": [
+        "write",
+        "read"
+      ],
+      "purpose": "Preserved first checker result"
+    },
+    {
+      "path": "self_review_finalize.py",
+      "access": [
+        "write",
+        "execute"
+      ],
+      "purpose": "Apply single source-self-review corrections and record exact before/after changes"
+    },
+    {
+      "path": "annotation.final.json",
+      "access": [
+        "write",
+        "read",
+        "checker_read",
+        "integrity_hash"
+      ],
+      "purpose": "Final full-schema annotation"
+    },
+    {
+      "path": "checks.json",
+      "access": [
+        "write",
+        "read"
+      ],
+      "purpose": "Final checker result"
+    },
+    {
+      "path": "repair_log.json",
+      "access": [
+        "write",
+        "read"
+      ],
+      "purpose": "Every annotation change after first-complete freeze"
+    },
+    {
+      "path": "review_notes.json",
+      "access": [
+        "write",
+        "read",
+        "complete_flag_resolutions"
+      ],
+      "purpose": "Full source review plus disposition of every checker flag"
+    },
+    {
+      "path": "finalize_records.py",
+      "access": [
+        "write",
+        "execute",
+        "integrity_hash"
+      ],
+      "purpose": "Resolve flagged anchors, verify input integrity, and write provenance logs"
+    },
+    {
+      "path": "access_record.json",
+      "access": [
+        "write",
+        "integrity_hash"
+      ],
+      "purpose": "This access and exposed-runtime record"
+    },
+    {
+      "path": "execution_log.json",
+      "access": [
+        "write",
+        "integrity_hash"
+      ],
+      "purpose": "Ordered required workflow and validation outcomes"
+    },
+    {
+      "path": "output_manifest.json",
+      "access": [
+        "write"
+      ],
+      "purpose": "Output hashes and unit counts; own hash omitted to avoid recursive self-hashing"
+    }
+  ],
+  "directory_inventory_access": {
+    "directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F03_v03_r2",
+    "recursive": true,
+    "purpose": "Enumerate assigned inputs only; no traversal outside this directory"
+  },
+  "ordinary_runtime_access": {
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "runtime_modules": [
+      "json",
+      "hashlib",
+      "copy",
+      "pathlib",
+      "sys",
+      "re",
+      "datetime",
+      "collections",
+      "jsonschema (through provided checker)"
+    ],
+    "source_note": "Python imports used ordinary installed runtime/library code; no external research content was retrieved."
+  },
+  "exposed_configuration": {
+    "configuration": "inherited primary; no override",
+    "configuration_source": "Dispatch and input_manifest.json",
+    "model_identity": null,
+    "reasoning_effort": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling_parameters": null,
+    "tokens": null,
+    "cost": null,
+    "note": "No independently exposed model selector, provider snapshot, sampling, usage, or cost telemetry was available. No model identity or reasoning setting was inferred from the historical protocol text."
+  },
+  "outside_sources_used": false,
+  "network_calls": 0,
+  "subagents_spawned": 0,
+  "frozen_input_integrity": [
+    {
+      "file": "INSTRUCTIONS.txt",
+      "expected_sha256": "f75eadacb7f22418c439c97ee24880b8cf151747aae89b7f8615e99ee73ccf38",
+      "actual_sha256": "f75eadacb7f22418c439c97ee24880b8cf151747aae89b7f8615e99ee73ccf38",
+      "unchanged": true
+    },
+    {
+      "file": "packet.json",
+      "expected_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "actual_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "unchanged": true
+    },
+    {
+      "file": "protocol/annotation_schema.json",
+      "expected_sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2",
+      "actual_sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2",
+      "unchanged": true
+    },
+    {
+      "file": "protocol/codebook.txt",
+      "expected_sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+      "actual_sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+      "unchanged": true
+    },
+    {
+      "file": "tools/check_annotation.py",
+      "expected_sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775",
+      "actual_sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775",
+      "unchanged": true
+    }
+  ],
+  "limitations": "Conversation/tool-output token and cost telemetry, exact provider configuration, and a provider-side execution snapshot are not exposed."
+}

@@ -1,0 +1,3438 @@
+[
+  {
+    "baseline_unit_id": "N01",
+    "source_id": "32359-038",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "N01",
+      "source_id": "32359-038",
+      "record_role": "statement",
+      "span": {
+        "start": 0,
+        "end": 149,
+        "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+      },
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The code fence could be technical context alone; the reply Added comment supports the editorial-request reading.",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "add",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The inline replacement comment and matching author reply support an inferred editorial request to add the comment."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The fenced code-comment wording is the proposed target of the inferred edit."
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "Specific proposed code-comment text, not a general institutional norm.",
+        "evidence": [
+          {
+            "source_id": "32359-038",
+            "span": {
+              "start": 0,
+              "end": 149,
+              "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "reported_implementation",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              }
+            ],
+            "rationale": "Reply explicitly reports the comment addition; no independent patch audit for this edit."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": [
+        {
+          "kind": "reported_implemented",
+          "target": "this_proposition",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "32359-053",
+              "span": {
+                "start": 0,
+                "end": 14,
+                "quote": "Added comment."
+              }
+            }
+          ],
+          "rationale": "Specific reply reports implementation."
+        },
+        {
+          "kind": "recorded_closed_unmerged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "M32359",
+              "span": {
+                "start": 0,
+                "end": 378,
+                "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+              }
+            }
+          ],
+          "rationale": "Despite local implementation, the encompassing contribution closed without merging."
+        }
+      ]
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B14",
+        "source_id": "32359-038",
+        "record_role": "statement",
+        "span": {
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "It could be treated as a suggested replacement rather than addition, or as technical illustrative context. A separate embedded instruction layer is possible if its test-reader role is kept distinct from the reviewer's edit request.",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "insert or revise the source comment",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "The edit action is inferred from the standalone fenced wording in an inline review. The snippet itself is not a literal imperative to insert a comment."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "The quoted comment becomes the object of the reconstructed edit action; its argument role is inferred even though its full text is present."
+          }
+        ],
+        "institution": {
+          "type": "undetermined",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "In the inline review, the fenced source comment proposes an editorial change. The complete historical byte-limit explanation and embedded Add one more byte instruction are the proposed comment content, not two separate author requests.",
+          "evidence": [
+            {
+              "source_id": "32359-038",
+              "span": {
+                "start": 0,
+                "end": 149,
+                "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "reported_implementation",
+              "target": "this_proposition",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "32359-053",
+                  "span": {
+                    "start": 0,
+                    "end": 14,
+                    "quote": "Added comment."
+                  }
+                },
+                {
+                  "source_id": "T32359_038_053",
+                  "span": {
+                    "start": 0,
+                    "end": 1201,
+                    "quote": "[\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2063718969,\n    \"author\": \"Sjors\",\n    \"created_at\": \"2025-04-28T13:56:26+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T14:00:56+00:00\",\n    \"body\": \"```cpp\\r\\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\\r\\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\\r\\n```\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": null,\n    \"fresh_index\": 38,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-038\"\n  },\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2064478495,\n    \"author\": \"petertodd\",\n    \"created_at\": \"2025-04-28T20:15:52+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T20:15:52+00:00\",\n    \"body\": \"Added comment.\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": 2063718969,\n    \"fresh_index\": 53,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-053\"\n  }\n]"
+                  }
+                }
+              ],
+              "rationale": "The added thread metadata gives 32359-053 in_reply_to_id 2063718969, matching 32359-038, in the same src/test/transaction_tests.cpp path. The author specifically reports adding the proposed comment, but exact inserted wording is not verified by a file diff."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": [
+          {
+            "kind": "reported_implemented",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32359-053",
+                "span": {
+                  "start": 0,
+                  "end": 14,
+                  "quote": "Added comment."
+                }
+              },
+              {
+                "source_id": "T32359_038_053",
+                "span": {
+                  "start": 0,
+                  "end": 1201,
+                  "quote": "[\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2063718969,\n    \"author\": \"Sjors\",\n    \"created_at\": \"2025-04-28T13:56:26+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T14:00:56+00:00\",\n    \"body\": \"```cpp\\r\\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\\r\\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\\r\\n```\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": null,\n    \"fresh_index\": 38,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-038\"\n  },\n  {\n    \"pr\": 32359,\n    \"kind\": \"inline\",\n    \"id\": 2064478495,\n    \"author\": \"petertodd\",\n    \"created_at\": \"2025-04-28T20:15:52+00:00\",\n    \"timestamp_source\": \"GitHub supplement\",\n    \"updated_at\": \"2025-04-28T20:15:52+00:00\",\n    \"body\": \"Added comment.\",\n    \"url\": \"https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495\",\n    \"path\": \"src/test/transaction_tests.cpp\",\n    \"state\": null,\n    \"in_reply_to_id\": 2063718969,\n    \"fresh_index\": 53,\n    \"phase\": \"before disposition\",\n    \"entry_id\": \"32359-053\"\n  }\n]"
+                }
+              }
+            ],
+            "rationale": "The added thread metadata gives 32359-053 in_reply_to_id 2063718969, matching 32359-038, in the same src/test/transaction_tests.cpp path. The author specifically reports adding the proposed comment, but exact inserted wording is not verified by a file diff."
+          },
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32359",
+                "span": {
+                  "start": 0,
+                  "end": 378,
+                  "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32359 closed without merge. This does not refute the report that a comment was added on the branch or establish rejection of this comment."
+          }
+        ]
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U01",
+    "source_id": "32359-115",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "U01",
+      "source_id": "32359-115",
+      "record_role": "statement",
+      "span": {
+        "start": 0,
+        "end": 91,
+        "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum."
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "This may restate familiar practice; the excerpt does not establish its acceptance or an authorization procedure.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "this",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "is",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "a pull request open for code review, not a per-username voting forum",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The speaker defines the purpose of this contribution venue and excludes a voting-forum interpretation.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 0,
+              "end": 91,
+              "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C115_forum",
+        "source_id": "32359-115",
+        "record_role": "statement",
+        "span": {
+          "start": 14,
+          "end": 91,
+          "quote": "this is a pull request open for code review, not a per-username voting forum."
+        },
+        "grammar": "constitutive",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "This may be an indirect request to keep comments focused on code review. Its negative remit must remain if recoded regulatively.",
+        "components": [
+          {
+            "symbol": "E",
+            "text": "this",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "F",
+            "text": "is",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "P",
+            "text": "a pull request open for code review, not a per-username voting forum",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "constitutive_specification",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "glozow characterizes the current forum and explicitly excludes a voting interpretation. Supplied documentation gives compatible peer-review context but does not establish the speaker's office. The source-only supplement recognizes a compatible non-voting purpose for the PR 32406 review summary. Its different immediate referent supplies broader-arrangement support without establishing proposition-specific recognition of this PR 32359 forum.",
+          "evidence": [
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 15292,
+                "end": 15381,
+                "quote": "Anyone may participate in peer review which is expressed by comments in the pull\nrequest."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 13905,
+                "end": 13997,
+                "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+              }
+            },
+            {
+              "source_id": "32406-169",
+              "span": {
+                "start": 335,
+                "end": 394,
+                "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+              }
+            },
+            {
+              "source_id": "32406-169",
+              "span": {
+                "start": 395,
+                "end": 503,
+                "quote": "It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "broader_proposal",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "32406-169",
+                  "span": {
+                    "start": 335,
+                    "end": 394,
+                    "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+                  }
+                },
+                {
+                  "source_id": "32406-169",
+                  "span": {
+                    "start": 395,
+                    "end": 503,
+                    "quote": "It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment."
+                  }
+                }
+              ],
+              "rationale": "The later source recognizes the broader non-voting review arrangement by explaining the purpose of the bot summary on PR 32406. It does not explicitly characterize this particular PR 32359 forum, so this case-specific statement remains text_only rather than locally_supported."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U02",
+    "source_id": "32359-115",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "U02",
+      "source_id": "32359-115",
+      "record_role": "statement",
+      "span": {
+        "start": 92,
+        "end": 186,
+        "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The practical reach may be this PR rather than every Core review; no weights or decision threshold are specified.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "Reviews",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "are weighted",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "by the merit of their arguments, not the number of times they are posted",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "locally_supported",
+        "dispute_present": true,
+        "rationale": "Merit-based review weighting is asserted here and independently recognized in the later bot-purpose explanation. The dated contribution guide supports discretionary merit weighting, but is not treated as exact documentary proof of the categorical merit-not-repetition sentence.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 92,
+              "end": 186,
+              "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+            }
+          },
+          {
+            "source_id": "D_CONTRIB",
+            "span": {
+              "start": 17365,
+              "end": 17506,
+              "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32406-169",
+                "span": {
+                  "start": 504,
+                  "end": 613,
+                  "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+                }
+              }
+            ],
+            "rationale": "A different participant explicitly recognizes substantive review content rather than numerical category totals as the relevant evaluation basis. It does not supply numeric weights."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C115_merit",
+        "source_id": "32359-115",
+        "record_role": "statement",
+        "span": {
+          "start": 92,
+          "end": 186,
+          "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "A constitutive decomposition of Reviews / are weighted / merit rather than repetition preserves the same criterion. A pragmatic obligation to weight reviews this way is possible but stronger than the source's reported-practice syntax. A stricter proposition-identity reading can keep text_only standing and classify the added recognition as broader_proposal because category counts and repeated postings are different quantities. The chosen local-recognition reading treats that as a bounded application difference within the expressed general merit-over-count criterion.",
+        "components": [
+          {
+            "symbol": "Bdir",
+            "text": "Reviews",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Passive subject Reviews is explicitly the target of weighting, not the actor."
+          },
+          {
+            "symbol": "I",
+            "text": "weighted",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "by the merit of their arguments, not the number of times they are posted",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "locally_supported",
+          "dispute_present": false,
+          "rationale": "The assertion expresses a general review-evaluation expectation. Added source 32406-169 independently and attributably recognizes technical content over counts of categorized signals, supporting local recognition of the same criterion. This does not verify each actual weighting decision or establish an authorized rule. D_CONTRIB supplies compatible discretionary merit-weighting documentation. Repeatedly-supported standing is not inferred from two PR numbers alone without a separately established cross-episode recognition chain.",
+          "evidence": [
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 17365,
+                "end": 17506,
+                "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit."
+              }
+            },
+            {
+              "source_id": "32406-169",
+              "span": {
+                "start": 504,
+                "end": 613,
+                "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "32406-169",
+                  "span": {
+                    "start": 504,
+                    "end": 613,
+                    "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+                  }
+                },
+                {
+                  "source_id": "32406-169",
+                  "span": {
+                    "start": 335,
+                    "end": 394,
+                    "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+                  }
+                }
+              ],
+              "rationale": "maflcko explicitly states the general expectation that technical content, rather than counts of categorized review signals, matters. This is attributable recognition of the focal content-over-count criterion within the supplied multithread episode, not a direct reply to glozow or proof of actual weighting. The source contrasts category counts whereas the focal sentence contrasts repeated postings; that bounded application difference remains explicit."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U03",
+    "source_id": "32359-115",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "U03",
+      "source_id": "32359-115",
+      "record_role": "statement",
+      "span": {
+        "start": 187,
+        "end": 299,
+        "quote": "Please rest assured that if your point has already been made here or on #28130, you don't need to post it again."
+      },
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "no_obligation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "you",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "don't need to",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "post",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "The pronoun refers to the point described in the activation condition."
+        },
+        {
+          "symbol": "Cac",
+          "text": "if your point has already been made here or on #28130",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "again",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The conditional statement explicitly denies a need to repeat a previously expressed point.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 187,
+              "end": 299,
+              "quote": "Please rest assured that if your point has already been made here or on #28130, you don't need to post it again."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C115_no_repost",
+        "source_id": "32359-115",
+        "record_role": "statement",
+        "span": {
+          "start": 212,
+          "end": 299,
+          "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "no_obligation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "The reassurance may also discourage repetition, but the lexical negative is no obligation, not must not.",
+        "components": [
+          {
+            "symbol": "Cac",
+            "text": "if your point has already been made here or on #28130",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "A",
+            "text": "you",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "D",
+            "text": "don't need to",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "post",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "it",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "again",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "An explicit denial of a need to repeat an already-made point, addressed to readers of this discussion. It is not a categorical prohibition on all repeat contributions.",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 212,
+                "end": 299,
+                "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U04",
+    "source_id": "32359-115",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "U04",
+      "source_id": "32359-115",
+      "record_role": "statement",
+      "span": {
+        "start": 300,
+        "end": 419,
+        "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+      },
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "pragmatic",
+      "deontic_force": "recommendation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "Literal reading: an evaluative claim about motives rather than a request. The actor is not explicitly supplied.",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "refrain from leaving",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "A negative assessment of reasons is read as an indirect recommendation, not a literal imperative."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "unsubstantiated or repeat acks/nacks",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "This remains the target of leaving under the inferred negative recommendation; its referent and qualifiers are unchanged."
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The statement functions as indirect discouragement of unsubstantiated or repeated approvals and objections.",
+        "evidence": [
+          {
+            "source_id": "32359-115",
+            "span": {
+              "start": 300,
+              "end": 419,
+              "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C115_unsubstantiated",
+        "source_id": "32359-115",
+        "record_role": "statement",
+        "span": {
+          "start": 322,
+          "end": 343,
+          "quote": "leave unsubstantiated"
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "A literal evaluative assertion without an actionable prescription remains possible. Coupling this clause with repeat acks/nacks is acceptable only if both negative duties survive.",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "leave",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "acks/nacks",
+            "basis": "explicit",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The coordinated phrase supplies the shared review-signal object after repeat; it is outside this minimal child span but applies to leave as well."
+          },
+          {
+            "symbol": "Bdir,p",
+            "text": "unsubstantiated",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "D",
+            "text": "do not",
+            "basis": "context_inferred",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The shared negative evaluation is interpreted as advisory avoidance, not a lexical obligation or binding prohibition."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "The asserted lack of reason is read as advice against unsubstantiated review signals. D_MOD documents a related moderated expectation, with exceptions for constructive reframing; this utterance does not itself announce a sanction.",
+          "evidence": [
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1092,
+                "end": 1135,
+                "quote": "Comments should contribute new information."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 16539,
+                "end": 16667,
+                "quote": "A `NACK` needs to include a rationale why the change is not worthwhile.\nNACKs without accompanying reasoning may be disregarded."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      },
+      {
+        "unit_id": "C115_repetition",
+        "source_id": "32359-115",
+        "record_role": "statement",
+        "span": {
+          "start": 347,
+          "end": 364,
+          "quote": "repeat acks/nacks"
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "Literal disapproval without prescription is possible. A single shared-object edit is equivalent if both unsubstantiated and repeated signals remain discouraged.",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "repeat",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "acks/nacks",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "acks/nacks remains the explicit object of repeat when the evaluative sentence is read as a recommendation."
+          },
+          {
+            "symbol": "D",
+            "text": "do not",
+            "basis": "context_inferred",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The preceding negative evaluation scopes both coordinated actions. It supplies inferred avoidance, not an explicit must not."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "Advice against repeated review signals is distinct from advice against unsubstantiated signals. The supplied moderation document recognizes the related value of new information but qualifies repetition and constructive reframing.",
+          "evidence": [
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1092,
+                "end": 1464,
+                "quote": "Comments should contribute new information. A certain amount of repetition is critical for learning, dissemination of ideas, and understanding in communication, but it can be taken too far when the same information is repeated in the same context. Moderators may remove comments that do not either contribute new information or constructively reframe existing information."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "N14",
+    "source_id": "32359-227",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "N14",
+      "source_id": "32359-227",
+      "record_role": "statement",
+      "span": {
+        "start": 386,
+        "end": 423,
+        "quote": "Only the majority decides the winner."
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "collective_choice",
+      "observed_action_level": "operational",
+      "level_alternatives": [
+        "constitutional"
+      ],
+      "alternative_interpretation": "A regulative parse could use majority as actor; the decisive constituency and counting method are unspecified.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "Only the majority",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "The constituted decision-making entity is the majority; exclusivity is retained."
+        },
+        {
+          "symbol": "F",
+          "text": "decides",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "the winner",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "The object identifies what the asserted deciding function governs."
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "disputed",
+        "dispute_present": true,
+        "rationale": "A participant attributes decision authority to a majority, contrary to the expressed merit-weighted repository procedure.",
+        "evidence": [
+          {
+            "source_id": "32359-227",
+            "span": {
+              "start": 386,
+              "end": 423,
+              "quote": "Only the majority decides the winner."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C227_majority",
+        "source_id": "32359-227",
+        "record_role": "statement",
+        "span": {
+          "start": 386,
+          "end": 423,
+          "quote": "Only the majority decides the winner."
+        },
+        "grammar": "constitutive",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "statement_target_level": "unknown",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "operational",
+          "constitutional"
+        ],
+        "alternative_interpretation": "This may be a rhetorical prediction about popularity, with no institutional configuration at all. If it refers to PR merge authority, it conflicts with the supplied maintainer-and-merit account; if it concerns wider adoption, that contrast may not hold. If majority refers specifically to a bot tally of ACK/NACK categories, the added explanation is contrary evidence about that tally's declared purpose. That conditional contrast does not establish what the original author meant.",
+        "components": [
+          {
+            "symbol": "E",
+            "text": "the majority",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "F",
+            "text": "decides",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "P",
+            "text": "the winner",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "Only",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "constitutive_specification",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "The claim assigns exclusive decisional efficacy to a majority. It is retained as an attributed arrangement claim, not an established voting rule, authorized decision procedure, or finding about actual outcomes. No explicit response challenges this majority claim. The unresolved relation to the earlier forum claim records a possible conflict, not a demonstrated dispute directed at this counterclaim. Added source 32406-169 makes the bot-summary purpose explicitly non-voting and values technical content over category totals. It is not a direct reply to this majority claim and does not resolve whether winner means a merge decision, adoption, or rhetorical success.",
+          "evidence": [
+            {
+              "source_id": "32359-115",
+              "span": {
+                "start": 14,
+                "end": 91,
+                "quote": "this is a pull request open for code review, not a per-username voting forum."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 13905,
+                "end": 13997,
+                "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+              }
+            },
+            {
+              "source_id": "32406-169",
+              "span": {
+                "start": 335,
+                "end": 394,
+                "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+              }
+            },
+            {
+              "source_id": "32406-169",
+              "span": {
+                "start": 504,
+                "end": 613,
+                "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "N02",
+    "source_id": "32406-149",
+    "review_group": "A",
+    "baseline": {
+      "unit_id": "N02",
+      "source_id": "32406-149",
+      "record_role": "statement",
+      "span": {
+        "start": 51,
+        "end": 202,
+        "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+      },
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "permission",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The stated reason attributes brigading; the analysis does not independently identify coordinated actors.",
+      "components": [
+        {
+          "symbol": "Bdir",
+          "text": "Smaller code code changes",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "can",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "be left",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bind",
+          "text": "followups",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "as it's tedious to keep track of actual code review comments in this PR due to continued brigading",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "locally_supported",
+        "dispute_present": false,
+        "rationale": "The reviewer permits deferring minor changes; the next reviewer explicitly recognizes the nonblocking arrangement.",
+        "evidence": [
+          {
+            "source_id": "32406-149",
+            "span": {
+              "start": 51,
+              "end": 202,
+              "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-151",
+                "span": {
+                  "start": 327,
+                  "end": 406,
+                  "quote": "Agreed. Leaving nits here just for reference but they shouldn't block progress."
+                }
+              }
+            ],
+            "rationale": "The reviewer quotes the deferral expectation and explicitly agrees that nits should not block progress."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "A004",
+        "source_id": "32406-149",
+        "record_role": "statement",
+        "span": {
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "permission",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "This may be a pragmatic coordination judgment for a congested review rather than a general norm. Either reading retains its case-specific permission and the explicit later recognition.",
+        "components": [
+          {
+            "symbol": "Bdir",
+            "text": "Smaller code code changes",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "D",
+            "text": "can",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "be left",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bind",
+            "text": "followups",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Followups are the destination for the deferred code changes; Bdir identifies the changes being deferred."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "locally_supported",
+          "dispute_present": false,
+          "rationale": "Sjors permits postponing minor review changes in this PR. Stickies-v quotes the expectation, agrees, and says nits should not block progress, providing attributable recognition of its nonblocking review scope. Brigading remains Sjors's characterization, not a verified event.",
+          "evidence": [
+            {
+              "source_id": "32406-149",
+              "span": {
+                "start": 51,
+                "end": 202,
+                "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 17309,
+                "end": 17363,
+                "quote": "A \"nit\" refers to a trivial, often non-blocking issue."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "evidence": [
+                {
+                  "source_id": "32406-151",
+                  "span": {
+                    "start": 172,
+                    "end": 323,
+                    "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+                  }
+                },
+                {
+                  "source_id": "32406-151",
+                  "span": {
+                    "start": 327,
+                    "end": 406,
+                    "quote": "Agreed. Leaving nits here just for reference but they shouldn't block progress."
+                  }
+                }
+              ],
+              "rationale": "The exact quoted permission is followed by explicit agreement and a corresponding expectation that nits should not block progress. This is more specific than the broad re-ACK.",
+              "basis": "explicit"
+            },
+            {
+              "kind": "recorded_status",
+              "target": "broader_proposal",
+              "evidence": [
+                {
+                  "source_id": "M32406",
+                  "span": {
+                    "start": 0,
+                    "end": 411,
+                    "quote": "{\n  \"number\": 32406,\n  \"title\": \"policy: uncap datacarrier by default\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-05-02T15:41:22Z\",\n  \"closed_at\": \"2025-06-09T12:25:45Z\",\n  \"merged_at\": \"2025-06-09T12:25:45Z\",\n  \"head_sha\": \"a189d636184b1c28fa4a325b56c1fab8f44527b1\",\n  \"base_sha\": \"4b1d48a6866b24f0ed027334c6de642fc848d083\",\n  \"actual_merge_sha\": \"f3bbc746647d1fd23bf5cfe357e32f38c5f6319c\"\n}"
+                  }
+                }
+              ],
+              "rationale": "The encompassing PR was merged. The metadata does not show which small changes were deferred or that the merge was caused by this permission.",
+              "basis": "explicit"
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_merged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32406",
+                "span": {
+                  "start": 0,
+                  "end": 411,
+                  "quote": "{\n  \"number\": 32406,\n  \"title\": \"policy: uncap datacarrier by default\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-05-02T15:41:22Z\",\n  \"closed_at\": \"2025-06-09T12:25:45Z\",\n  \"merged_at\": \"2025-06-09T12:25:45Z\",\n  \"head_sha\": \"a189d636184b1c28fa4a325b56c1fab8f44527b1\",\n  \"base_sha\": \"4b1d48a6866b24f0ed027334c6de642fc848d083\",\n  \"actual_merge_sha\": \"f3bbc746647d1fd23bf5cfe357e32f38c5f6319c\"\n}"
+                }
+              }
+            ],
+            "rationale": "The encompassing PR was merged. The metadata does not show which small changes were deferred or that the merge was caused by this permission."
+          }
+        ]
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "N04",
+    "source_id": "32406-178",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "N04",
+      "source_id": "32406-178",
+      "record_role": "statement",
+      "span": {
+        "start": 44,
+        "end": 120,
+        "quote": "\"deprecated\" as meaning just \"the devs recommend you don't use this feature\""
+      },
+      "grammar": "constitutive",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The local endorsement does not settle competing claims that deprecation entails removal.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "\"deprecated\"",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "meaning",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "\"the devs recommend you don't use this feature\"",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "locally_supported",
+        "dispute_present": true,
+        "rationale": "A proposed meaning is explicitly quoted and endorsed by another participant. This is local recognition, not an agreed project-wide definition.",
+        "evidence": [
+          {
+            "source_id": "32406-178",
+            "span": {
+              "start": 44,
+              "end": 120,
+              "quote": "\"deprecated\" as meaning just \"the devs recommend you don't use this feature\""
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "32406-180",
+                "span": {
+                  "start": 127,
+                  "end": 194,
+                  "quote": "Agree on all you said, that's what I tried to argue in few words :)"
+                }
+              }
+            ],
+            "rationale": "The reply quotes the status definition and explicitly identifies it as the intended interpretation."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B06",
+        "source_id": "32406-178",
+        "record_role": "statement",
+        "span": {
+          "start": 0,
+          "end": 121,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\"."
+        },
+        "grammar": "constitutive",
+        "speech_act": "asserted",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "statement_target_level": "collective_choice",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "operational"
+        ],
+        "alternative_interpretation": "A regulative interpretation request (think of deprecated in this way) preserves the same proposed advisory status. A narrower reading treats the sentence as terminology discussion outside institutional configuration.",
+        "components": [
+          {
+            "symbol": "E",
+            "text": "\"deprecated\"",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "F",
+            "text": "as meaning just",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "P",
+            "text": "\"the devs recommend you don't use this feature\"",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "constitutive_specification",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "ajtowns offers a personal interpretation of the deprecation status as communicating developer advice. It is a candidate institutional status meaning, not proof of a project-wide definition or of developer agreement.",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 0,
+                "end": 121,
+                "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\"."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "endorsement",
+              "target": "this_proposition",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "32406-180",
+                  "span": {
+                    "start": 0,
+                    "end": 194,
+                    "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+                  }
+                }
+              ],
+              "rationale": "The exact definition is quoted and agreed with; this demonstrates attributable semantic endorsement, not a binding rule or shared project norm."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      },
+      {
+        "unit_id": "B07",
+        "source_id": "32406-178",
+        "record_role": "statement",
+        "span": {
+          "start": 74,
+          "end": 119,
+          "quote": "the devs recommend you don't use this feature"
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "This layer can remain inside the constitutive property of B06 without being counted as a second independent endorsement. Its advisory negative force must still be preserved.",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "you",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "D",
+            "text": "recommend ... don't",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Recommend supplies the advisory force and don't negates use within the recommended content; the recommending source is the devs, not the user."
+          },
+          {
+            "symbol": "I",
+            "text": "use",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "this feature",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "This is the advisory expectation embedded in the author's proposed definition, attributed in that definition to the devs. It does not prove that developers in fact share it.",
+          "evidence": [
+            {
+              "source_id": "32406-178",
+              "span": {
+                "start": 74,
+                "end": 119,
+                "quote": "the devs recommend you don't use this feature"
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "endorsement",
+              "target": "broader_proposal",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "32406-180",
+                  "span": {
+                    "start": 0,
+                    "end": 194,
+                    "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+                  }
+                }
+              ],
+              "rationale": "Agree on all you said broadly assents to the whole comment; it does not independently verify this embedded proposition or establish an obligation."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "N16",
+    "source_id": "32406-228",
+    "review_group": "A",
+    "baseline": {
+      "unit_id": "N16",
+      "source_id": "32406-228",
+      "record_role": "statement",
+      "span": {
+        "start": 311,
+        "end": 454,
+        "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "obligation",
+      "statement_target_level": "epistemic",
+      "observed_action_level": "operational",
+      "level_alternatives": [
+        "constitutional",
+        "collective_choice"
+      ],
+      "alternative_interpretation": "Constitutional or ordinary accountability framing is also plausible; principles are underspecified and no enforcement arrangement is supplied.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "Open-source principles",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "require",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "transparent decision-making that respects diverse input",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The speaker invokes a foundational account of open-source legitimacy against an account centered on fork freedom.",
+        "evidence": [
+          {
+            "source_id": "32406-228",
+            "span": {
+              "start": 311,
+              "end": 454,
+              "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "A019",
+        "source_id": "32406-228",
+        "record_role": "statement",
+        "span": {
+          "start": 311,
+          "end": 454,
+          "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "general",
+        "parse_mode": "pragmatic",
+        "deontic_force": "obligation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "collective_choice",
+          "epistemic"
+        ],
+        "alternative_interpretation": "A constitutive reading could define adequate open-source governance, and a collective-choice reading could treat this as a demand to revise recurring decision procedures. The selected regulative reading treats it as an asserted existing standard for decision conduct, not an established allocation of powers.",
+        "components": [
+          {
+            "symbol": "D",
+            "text": "require",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "make",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "Reconstructs an action from the nominal decision-making; no explicit acting subject is supplied."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "decisions",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "The nominal object of require is transformed into the direct object of inferred make. This transformed role is not marked explicit."
+          },
+          {
+            "symbol": "Cex",
+            "text": "transparently and with respect for diverse input",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "Preserves both demanded qualities as constraints on the reconstructed decision action; their mapping into Cex is inferred."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "disputed",
+          "dispute_present": true,
+          "rationale": "Maluquices asserts an accountability standard of transparent decision-making respectful of diverse input. The reply disputes the application or premise of invoking open source in this episode; it does not clearly reject transparency as a general value. The author's assertion that most contributors agree is not independent recognition.",
+          "evidence": [
+            {
+              "source_id": "32406-228",
+              "span": {
+                "start": 311,
+                "end": 454,
+                "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+              }
+            },
+            {
+              "source_id": "32406-228",
+              "span": {
+                "start": 579,
+                "end": 662,
+                "quote": "I like to think most contributors in this repo agree on this fundamental principle."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "response",
+              "target": "this_proposition",
+              "evidence": [
+                {
+                  "source_id": "32406-229",
+                  "span": {
+                    "start": 0,
+                    "end": 186,
+                    "quote": "@maluquices  all I'm trying to say is, don't drag \"open source\" into this conversation. Every single word has been open, as well as years of historical merit of the author and reviewers."
+                  }
+                }
+              ],
+              "rationale": "The addressed reply resists invoking open-source principles here and asserts that the process has been open. This supports a dispute over application/premise, not a demonstrated rejection of the general transparency standard.",
+              "basis": "context_inferred"
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U17",
+    "source_id": "32406-252",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "U17",
+      "source_id": "32406-252",
+      "record_role": "statement",
+      "span": {
+        "start": 0,
+        "end": 77,
+        "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+      },
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "obligation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The author announces enforcement; the packet does not independently verify the author permissions or execution of a ban.",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "@1440000bytes",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "keep",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "comments",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "on topic",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "rule_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A named addressee receives an instruction backed by an attributable temporary-ban announcement in the same comment.",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 0,
+              "end": 77,
+              "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 295,
+              "end": 400,
+              "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+            }
+          }
+        ]
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B15",
+        "source_id": "32406-252",
+        "record_role": "statement",
+        "span": {
+          "start": 0,
+          "end": 77,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "obligation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "@1440000bytes",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "keep",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "comments",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "on topic",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "rule_candidate",
+          "standing": "documented",
+          "dispute_present": false,
+          "rationale": "The addressed on-topic duty is backed by this speaker's explicit temporary-ban warning and the supplied dated moderation guidance. The actor's official role is not inferred from the username.",
+          "evidence": [
+            {
+              "source_id": "32406-252",
+              "span": {
+                "start": 0,
+                "end": 77,
+                "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+              }
+            },
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 521,
+                "end": 549,
+                "quote": "- Comments will be on-topic."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": [
+            {
+              "source_id": "32406-252",
+              "span": {
+                "start": 295,
+                "end": 400,
+                "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+              }
+            },
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 429,
+                "end": 549,
+                "quote": "within Bitcoin Core software projects, moderators will seek to uphold the following norms:\n\n- Comments will be on-topic."
+              }
+            }
+          ]
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U19",
+    "source_id": "32406-252",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "U19",
+      "source_id": "32406-252",
+      "record_role": "statement",
+      "span": {
+        "start": 401,
+        "end": 509,
+        "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+      },
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "A pragmatic reconstruction with I debate preserves the same conditional venue instruction.",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "you",
+          "basis": "context_inferred",
+          "occurrence_role": "shared_scope",
+          "inference_note": "The conditional subject supplies the implied addressee of do so."
+        },
+        {
+          "symbol": "I",
+          "text": "do so",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "Do so refers to debating this comment; the elliptical wording is retained."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "this comment",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The object of debate in the condition is inherited by the elliptical action do so."
+        },
+        {
+          "symbol": "Cac",
+          "text": "If you want to debate this comment",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "on https://github.com/bitcoin-core/meta/, and not here",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "A conditional referral locates debate about moderation outside this PR.",
+        "evidence": [
+          {
+            "source_id": "32406-252",
+            "span": {
+              "start": 401,
+              "end": 509,
+              "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B19",
+        "source_id": "32406-252",
+        "record_role": "statement",
+        "span": {
+          "start": 401,
+          "end": 494,
+          "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/"
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "obligation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "you",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "The main-clause imperative addressee is recovered from you in the condition; it is not an overt main-clause subject."
+          },
+          {
+            "symbol": "I",
+            "text": "debate",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "Do so resolves to debate in the preceding conditional clause; the focal action is reconstructed from the elliptical predicate."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "this comment",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "This comment is explicitly the object of debate in the conditional antecedent, and that same object role is preserved by do so in the main-clause request."
+          },
+          {
+            "symbol": "Bind",
+            "text": "https://github.com/bitcoin-core/meta/",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "The explicit destination of do so remains the destination of the recovered debate action; no argument-role transformation is introduced."
+          },
+          {
+            "symbol": "Cac",
+            "text": "If you want to debate this comment",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "rule_candidate",
+          "standing": "documented",
+          "dispute_present": false,
+          "rationale": "The conditional instruction requires a moderation challenge to be taken to the designated venue. The paired not here and dated guidance support an obligatory venue boundary; please alone is not D.",
+          "evidence": [
+            {
+              "source_id": "32406-252",
+              "span": {
+                "start": 401,
+                "end": 494,
+                "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/"
+              }
+            },
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1467,
+                "end": 1840,
+                "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted. If you wish to discuss moderation, please file an issue in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/issues/new), which is the home for project management issues, and nontechnical discussions relating to development of the codebase."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": [
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1467,
+                "end": 1840,
+                "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted. If you wish to discuss moderation, please file an issue in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/issues/new), which is the home for project management issues, and nontechnical discussions relating to development of the codebase."
+              }
+            }
+          ]
+        },
+        "disposition_events": []
+      },
+      {
+        "unit_id": "B20",
+        "source_id": "32406-252",
+        "record_role": "statement",
+        "span": {
+          "start": 496,
+          "end": 509,
+          "quote": "and not here."
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "prohibition",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "you",
+            "basis": "context_inferred",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The addressee is inherited from the conditional and positive imperative."
+          },
+          {
+            "symbol": "D",
+            "text": "not",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "debate",
+            "basis": "context_inferred",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The negated action is reconstructed from the preceding coordinated clause."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "this comment",
+            "basis": "explicit",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The same explicit debate-object in the conditional antecedent governs the elliptical negative clause; the role is preserved rather than transformed."
+          },
+          {
+            "symbol": "Cex",
+            "text": "here",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cac",
+            "text": "If you want to debate this comment",
+            "basis": "explicit",
+            "occurrence_role": "shared_scope",
+            "inference_note": "The conditional scope governs both the positive venue instruction and the coordinated negative duty."
+          }
+        ],
+        "institution": {
+          "type": "rule_candidate",
+          "standing": "documented",
+          "dispute_present": false,
+          "rationale": "The coordinated negative duty prohibits debating this moderation comment in the current thread; it is separated from the positive alternative-venue duty.",
+          "evidence": [
+            {
+              "source_id": "32406-252",
+              "span": {
+                "start": 496,
+                "end": 509,
+                "quote": "and not here."
+              }
+            },
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1467,
+                "end": 1840,
+                "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted. If you wish to discuss moderation, please file an issue in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/issues/new), which is the home for project management issues, and nontechnical discussions relating to development of the codebase."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": [
+            {
+              "source_id": "D_MOD",
+              "span": {
+                "start": 1467,
+                "end": 1840,
+                "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted. If you wish to discuss moderation, please file an issue in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/issues/new), which is the home for project management issues, and nontechnical discussions relating to development of the codebase."
+              }
+            }
+          ]
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U24",
+    "source_id": "32714-body",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "U24",
+      "source_id": "32714-body",
+      "record_role": "statement",
+      "span": {
+        "start": 0,
+        "end": 136,
+        "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+      },
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The embedded recommendation concerns user conduct; the focal action is the documentation edit.",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "say",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "that these options are not recommended for use",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "only",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "undetermined",
+        "standing": "text_only",
+        "dispute_present": true,
+        "rationale": "A direct request proposes replacing deprecation wording with non-recommendation. The request does not itself bind users or future maintainers.",
+        "evidence": [
+          {
+            "source_id": "32714-body",
+            "span": {
+              "start": 0,
+              "end": 136,
+              "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "broader_proposal",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "32714-007",
+                "span": {
+                  "start": 17,
+                  "end": 106,
+                  "quote": "It's fine to _add_ a non-recommendation text, but we should keep the deprecation warning."
+                }
+              }
+            ],
+            "rationale": "A reviewer permits adding wording but recommends retaining the warning; this is a scoped response to the broader proposal."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": [
+        {
+          "kind": "recorded_closed_unmerged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "M32714",
+              "span": {
+                "start": 0,
+                "end": 397,
+                "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+              }
+            }
+          ],
+          "rationale": "PR 32714 closed without merging. This does not demonstrate rejection of every embedded recommendation."
+        }
+      ]
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B22",
+        "source_id": "32714-body",
+        "record_role": "statement",
+        "span": {
+          "start": 0,
+          "end": 136,
+          "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "",
+        "components": [
+          {
+            "symbol": "I",
+            "text": "say",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "that these options are not recommended for use",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "undetermined",
+          "standing": "disputed",
+          "dispute_present": true,
+          "rationale": "A coupled editorial substitution: communicate non-recommendation instead of deprecation. Splitting off only the positive wording would lose the exclusion of the deprecated label. The later restatement explicitly locates the same substitution in the option documentation while preserving non-recommendation; it is cited as clarification of this edit rather than counted as another edit.",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 0,
+                "end": 136,
+                "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+              }
+            },
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 616,
+                "end": 768,
+                "quote": "I think that it would be clearer to users to remove the word \"deprecated\" from the documentation of this option while preserving the non-recommendation."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "response",
+              "target": "broader_proposal",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "32714-007",
+                  "span": {
+                    "start": 0,
+                    "end": 714,
+                    "quote": "Concept NACK.\r\n\r\nIt's fine to _add_ a non-recommendation text, but we should keep the deprecation warning. If by the time we would normally drop a depreceated feature (v31 or v32) there's still a strong risk of brigading, then that's perhaps a _political_ argument for delaying it further, but it's still deprecated.\r\n\r\nI don't think the comparison with #29240 is correct here. There the deprecation itself was a mistake, because there were good technical reasons for users to keep using username and password. That's simply not the case here, as evidenced by the need to add non-recommendation text.\r\n\r\nRemoving the deprecation warning now also means having to repeat the drama when bringing the deprecation back."
+                  }
+                }
+              ],
+              "rationale": "The supplied NACK is a response to the PR concept. Its reasons and scope are retained without coding it as an authoritative rejection."
+            },
+            {
+              "kind": "response",
+              "target": "broader_proposal",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "32714-009",
+                  "span": {
+                    "start": 0,
+                    "end": 604,
+                    "quote": "Concept NACK *for v30*\r\n\r\nNoting that this PR is opened on the day after 32406 is merged.\r\n\r\nKeeping the settings as deprecated for now means the delta to full removal is smaller, while removing the deprecation increases that delta. I think enough boats have been burned already, let's not re-build them only to burn them again. People implying maliciousness behind the first PR will not suddenly have their confidence restored by this one.\r\n\r\nWhat would change my mind:\r\n* New/better arguments for using them with non-default values.\r\n* Enough releases having passed without a push for complete removal."
+                  }
+                }
+              ],
+              "rationale": "The supplied NACK is a response to the PR concept. Its reasons and scope are retained without coding it as an authoritative rejection."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32714",
+                "span": {
+                  "start": 0,
+                  "end": 397,
+                  "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32714 closed without integration. Metadata does not identify the closer's reasoning or formally reject each embedded expectation."
+          }
+        ]
+      },
+      {
+        "unit_id": "B23",
+        "source_id": "32714-body",
+        "record_role": "statement",
+        "span": {
+          "start": 94,
+          "end": 135,
+          "quote": "these options are not recommended for use"
+        },
+        "grammar": "regulative",
+        "speech_act": "proposed",
+        "scope": "case_specific",
+        "parse_mode": "pragmatic",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "The embedded expectation may remain inside B22's object rather than receive its own unit; neither representation should count it as evidence of project adoption.",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "users of the options",
+            "basis": "context_inferred",
+            "occurrence_role": "context_reference",
+            "inference_note": "The next explanatory sentence names users; they are the inferred actors of the embedded non-use advice, not explicit actors in this clause."
+          },
+          {
+            "symbol": "D",
+            "text": "not recommended",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "use",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "Use is a nominal complement after for; interpreting it as the focal action requires a reconstructed role."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "these options",
+            "basis": "context_inferred",
+            "occurrence_role": "semantic_inference",
+            "inference_note": "These options is the grammatical subject of the passive recommendation, and becomes the target of reconstructed use; the role change is inferred."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "The proposed documentation communicates advisory non-use, not a prohibition. This embedded expectation is distinct from the outer request to change its presentation.",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 94,
+                "end": 135,
+                "quote": "these options are not recommended for use"
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32714",
+                "span": {
+                  "start": 0,
+                  "end": 397,
+                  "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32714 closed without integration. Metadata does not identify the closer's reasoning or formally reject each embedded expectation."
+          }
+        ]
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U25",
+    "source_id": "32714-body",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "U25",
+      "source_id": "32714-body",
+      "record_role": "statement",
+      "span": {
+        "start": 858,
+        "end": 950,
+        "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+      },
+      "grammar": "regulative",
+      "speech_act": "proposed",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "recommendation",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The practical scope may be these options rather than every deprecation. Later quotation establishes recurrence, not by itself independent recognition of a general norm.",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "D",
+          "text": "should not",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "have",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "removal warnings",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cac",
+          "text": "if there is no current plan to actually remove them",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The speaker recommends withholding removal warnings when there is no current removal plan.",
+        "evidence": [
+          {
+            "source_id": "32714-body",
+            "span": {
+              "start": 858,
+              "end": 950,
+              "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "B26",
+        "source_id": "32714-body",
+        "record_role": "statement",
+        "span": {
+          "start": 858,
+          "end": 950,
+          "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "recommendation",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "collective_choice"
+        ],
+        "alternative_interpretation": "Treating should not as binding would require stronger authority evidence. The later echo can more conservatively be classed as endorsement, leaving standing text_only; the primary analysis treats explicit reuse as a recognized documentation expectation.",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "we",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "D",
+            "text": "should not",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "have",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "removal warnings",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cac",
+            "text": "if there is no current plan to actually remove them",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Them refers to the options; the condition concerns an actual current plan, not merely the absence of a published date."
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "locally_supported",
+          "dispute_present": false,
+          "rationale": "The author expresses an advisory accountability expectation: removal warnings should match an actual current removal plan. The later PR body quotes this exact expectation and adopts it as a reason for changing documentation. This supports local recognition, not a project-wide binding rule.",
+          "evidence": [
+            {
+              "source_id": "32714-body",
+              "span": {
+                "start": 858,
+                "end": 950,
+                "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "33453-body",
+                  "span": {
+                    "start": 677,
+                    "end": 821,
+                    "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._”"
+                  }
+                },
+                {
+                  "source_id": "33453-body",
+                  "span": {
+                    "start": 822,
+                    "end": 1205,
+                    "quote": "In months since that comment, partially due to increased feedback from Bitcoin Core users wanting to keep this option, there is even less likelihood of a near term plan to remove these options. That leaves Bitcoin Core users in an unclear situation: the option could be removed in the next version or perhaps never. Removing the deprecation gives clarity for their planning purposes."
+                  }
+                }
+              ],
+              "rationale": "The later author explicitly quotes and uses the same no-current-plan expectation as a justification for documentation changes. This is specific local recognition of the expectation, not inferred merely from implementation."
+            },
+            {
+              "kind": "response",
+              "target": "broader_proposal",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "source_id": "32714-007",
+                  "span": {
+                    "start": 0,
+                    "end": 714,
+                    "quote": "Concept NACK.\r\n\r\nIt's fine to _add_ a non-recommendation text, but we should keep the deprecation warning. If by the time we would normally drop a depreceated feature (v31 or v32) there's still a strong risk of brigading, then that's perhaps a _political_ argument for delaying it further, but it's still deprecated.\r\n\r\nI don't think the comparison with #29240 is correct here. There the deprecation itself was a mistake, because there were good technical reasons for users to keep using username and password. That's simply not the case here, as evidenced by the need to add non-recommendation text.\r\n\r\nRemoving the deprecation warning now also means having to repeat the drama when bringing the deprecation back."
+                  }
+                },
+                {
+                  "source_id": "32714-009",
+                  "span": {
+                    "start": 0,
+                    "end": 604,
+                    "quote": "Concept NACK *for v30*\r\n\r\nNoting that this PR is opened on the day after 32406 is merged.\r\n\r\nKeeping the settings as deprecated for now means the delta to full removal is smaller, while removing the deprecation increases that delta. I think enough boats have been burned already, let's not re-build them only to burn them again. People implying maliciousness behind the first PR will not suddenly have their confidence restored by this one.\r\n\r\nWhat would change my mind:\r\n* New/better arguments for using them with non-default values.\r\n* Enough releases having passed without a push for complete removal."
+                  }
+                }
+              ],
+              "rationale": "The NACKs favor keeping deprecation in the current situation. They contest the proposal and its timing/premises; they do not clearly reject the abstract conditional no-plan principle."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": [
+          {
+            "kind": "recorded_closed_unmerged",
+            "target": "broader_proposal",
+            "basis": "explicit",
+            "evidence": [
+              {
+                "source_id": "M32714",
+                "span": {
+                  "start": 0,
+                  "end": 397,
+                  "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+                }
+              }
+            ],
+            "rationale": "PR 32714 closed without integration. Metadata does not identify the closer's reasoning or formally reject each embedded expectation."
+          }
+        ]
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U26a",
+    "source_id": "32714-body",
+    "review_group": "B",
+    "baseline": {
+      "unit_id": "U26a",
+      "source_id": "32714-body",
+      "record_role": "statement",
+      "span": {
+        "start": 146,
+        "end": 218,
+        "quote": "deprecation obviously means that the options are not recommended for use"
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "This is a proposed or asserted interpretation of a communicative status, not a demonstrated universally accepted definition.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "deprecation",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "means",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "P",
+          "text": "that the options are not recommended for use",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The speaker supplies the meaning of a software-support status label.",
+        "evidence": [
+          {
+            "source_id": "32714-body",
+            "span": {
+              "start": 146,
+              "end": 218,
+              "quote": "deprecation obviously means that the options are not recommended for use"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U32",
+    "source_id": "33224-010",
+    "review_group": "C",
+    "baseline": {
+      "unit_id": "U32",
+      "source_id": "33224-010",
+      "record_role": "statement",
+      "span": {
+        "start": 625,
+        "end": 726,
+        "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+      },
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "general",
+      "parse_mode": "pragmatic",
+      "deontic_force": "prohibition",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "A literal constitutive parse constraining the existence of updates is defensible. The responsible actor is not supplied and is omitted.",
+      "components": [
+        {
+          "symbol": "D",
+          "text": "must not",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "update",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The existential construction is reconstructed as an action prohibition; the noun updates supplies the inferred verb."
+        },
+        {
+          "symbol": "Bdir",
+          "text": "translation source",
+          "basis": "context_inferred",
+          "occurrence_role": "semantic_inference",
+          "inference_note": "The noun modifier becomes the target of the reconstructed action update."
+        },
+        {
+          "symbol": "Cac",
+          "text": "after the final translation string freeze",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "norm_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The source asserts an absolute prohibition on translation-source updates after the final freeze. Another contributor recognizes the freeze rationale, but neither that response nor the dated process documents independently establishes this exact prohibition.",
+        "evidence": [
+          {
+            "source_id": "33224-010",
+            "span": {
+              "start": 625,
+              "end": 726,
+              "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+            }
+          },
+          {
+            "source_id": "33224-015",
+            "span": {
+              "start": 903,
+              "end": 971,
+              "quote": "I think this issue is why we institute a translation strings freeze."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33224-015",
+                "span": {
+                  "start": 903,
+                  "end": 971,
+                  "quote": "I think this issue is why we institute a translation strings freeze."
+                }
+              }
+            ],
+            "rationale": "The contributor responds to the freeze problem and invokes its rationale. This does not explicitly recognize the full absolute prohibition after the final freeze."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "C010_freeze",
+        "source_id": "33224-010",
+        "record_role": "statement",
+        "span": {
+          "start": 635,
+          "end": 726,
+          "quote": "there must not be any translation source updates after the final translation string freeze."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "general",
+        "parse_mode": "literal",
+        "deontic_force": "prohibition",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "collective_choice"
+        ],
+        "alternative_interpretation": "The utterance can be a rule candidate if additional evidence establishes authorized freeze-setting or enforcement. It can also be understood as a shorthand ban on harmful translation invalidation; that narrower meaning is not its literal wording.",
+        "components": [
+          {
+            "symbol": "D",
+            "text": "must not",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "I",
+            "text": "updates",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "The explicit nominal action updates is retained; no unstated contributor actor is invented."
+          },
+          {
+            "symbol": "Bdir",
+            "text": "translation source",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Within the nominal action expression, translation source names the target being updated."
+          },
+          {
+            "symbol": "Cac",
+            "text": "after the final translation string freeze",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "norm_candidate",
+          "standing": "disputed",
+          "dispute_present": true,
+          "rationale": "An explicit blanket expectation against post-final-freeze translation-source updates. Neither the supplied docs nor a named role establish authority for this exact prohibition. The later workaround recognizes the freeze rationale while qualifying its application; it does not simply accept the absolute wording.",
+          "evidence": [
+            {
+              "source_id": "D_TRANSLATION",
+              "span": {
+                "start": 2134,
+                "end": 2358,
+                "quote": "For general PRs, you shouldn’t include any updates to the translation source files. They will be updated periodically, primarily around pre-releases, allowing time for any new phrases to be translated before public releases."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "broader_proposal",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "33224-015",
+                  "span": {
+                    "start": 903,
+                    "end": 971,
+                    "quote": "I think this issue is why we institute a translation strings freeze."
+                  }
+                }
+              ],
+              "rationale": "achow101 explicitly recognizes a translation-freeze arrangement and its rationale. This does not establish acceptance of the exact no-source-updates-after-final-freeze proposition."
+            },
+            {
+              "kind": "response",
+              "target": "this_proposition",
+              "basis": "context_inferred",
+              "evidence": [
+                {
+                  "source_id": "33224-015",
+                  "span": {
+                    "start": 975,
+                    "end": 1028,
+                    "quote": "However, I think there is a workaround to this issue."
+                  }
+                },
+                {
+                  "source_id": "33224-015",
+                  "span": {
+                    "start": 1722,
+                    "end": 1882,
+                    "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+                  }
+                }
+              ],
+              "rationale": "A conditional workaround is offered to the identified translation-change problem, qualifying the application of the categorical prohibition. The nine ACKs are reported, not independently enumerated in this packet."
+            }
+          ],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U39",
+    "source_id": "33453-018",
+    "review_group": "A",
+    "baseline": {
+      "unit_id": "U39",
+      "source_id": "33453-018",
+      "record_role": "statement",
+      "span": {
+        "start": 11,
+        "end": 100,
+        "quote": "that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+      },
+      "grammar": "constitutive",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "The parenthetical explains the burdens behind the role attribution and remains rationale, not an execution condition. No complete maintainer powers are verified.",
+      "components": [
+        {
+          "symbol": "E",
+          "text": "that",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "F",
+          "text": "is",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": "The clitic supplies the explicit copular function."
+        },
+        {
+          "symbol": "P",
+          "text": "a maintainer's call",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "constitutive_specification",
+        "standing": "locally_supported",
+        "dispute_present": false,
+        "rationale": "The speaker attributes responsibility for the backport decision to a maintainer. The named costs clarify the decision object without observing a new allocation of powers. Round 3: The proposer explicitly defers the release/backport timing decision to maintainers in response to the quoted timing discussion. Recognition is specific to this release decision.",
+        "evidence": [
+          {
+            "source_id": "33453-018",
+            "span": {
+              "start": 11,
+              "end": 100,
+              "quote": "that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+            }
+          },
+          {
+            "source_id": "33453-069",
+            "span": {
+              "start": 2611,
+              "end": 2660,
+              "quote": "I defer to you and the other maintainers on this."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "33453-069",
+                "span": {
+                  "start": 2611,
+                  "end": 2660,
+                  "quote": "I defer to you and the other maintainers on this."
+                }
+              }
+            ],
+            "rationale": "The proposer explicitly defers the release/backport timing decision to maintainers in response to the quoted timing discussion. Recognition is specific to this release decision."
+          }
+        ],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "A013",
+        "source_id": "33453-018",
+        "record_role": "statement",
+        "span": {
+          "start": 0,
+          "end": 100,
+          "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+        },
+        "grammar": "constitutive",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [
+          "collective_choice"
+        ],
+        "alternative_interpretation": "The passage can be parsed as a practical acknowledgment of who bears release work rather than a formal exclusive authorization. Existing operational remit is the main reading; collective-choice clarification is possible if the arrangement itself is being settled.",
+        "components": [
+          {
+            "symbol": "E",
+            "text": "whether to backport this PR (30 et al) or leave it for following releases from master",
+            "basis": "context_inferred",
+            "occurrence_role": "context_reference",
+            "inference_note": "The referent of that is recovered from the preceding exchange. Both backporting (30 et al) and limiting the change to following releases from master are retained; the subject role is reconstructed for the resolved entity."
+          },
+          {
+            "symbol": "F",
+            "text": "is",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "The explicit constitutive copula is supplied by the contraction that's; the evidence preserves the full contraction."
+          },
+          {
+            "symbol": "P",
+            "text": "a maintainer's call",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          }
+        ],
+        "institution": {
+          "type": "constitutive_specification",
+          "standing": "locally_supported",
+          "dispute_present": false,
+          "rationale": "Instagibbs attributes this backport/release judgment to a maintainer. Supplied dated contribution guidance identifies release and backport responsibilities; bitschmidty later expressly defers to maintainers on the same release choice. Recognition concerns the arrangement, not a verified identity or exclusive legal power.",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 0,
+                "end": 100,
+                "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 624,
+                "end": 774,
+                "quote": "As such, there are repository maintainers who are responsible for\nmerging pull requests, the [release cycle](/doc/release-process.md), and\nmoderation."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 20776,
+                "end": 20932,
+                "quote": "Maintainers will do backports in batches and\nuse the proper `Needs backport (...)` labels\nwhen needed (the original author does not need to worry about it)."
+              }
+            }
+          ],
+          "recognition": [
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "evidence": [
+                {
+                  "source_id": "33453-069",
+                  "span": {
+                    "start": 2611,
+                    "end": 2840,
+                    "quote": "I defer to you and the other maintainers on this. I think merging a PR with some version of the wording suggestion above to the codebase, regardless of whether it is released in v30 or v31 \"should\" have the desired clarification."
+                  }
+                },
+                {
+                  "source_id": "33453-069",
+                  "span": {
+                    "start": 2503,
+                    "end": 2607,
+                    "quote": "So the merge + backport + release notes changes need to happen very quickly for this to be incorporated."
+                  }
+                }
+              ],
+              "rationale": "The PR author explicitly defers to maintainers after the quoted discussion of merge, backport, and release timing. The referent is the same release judgment, although the source is not a direct quotation of 33453-018. This is independent corroboration, not evidence that 33453-018 caused the deference.",
+              "basis": "context_inferred"
+            },
+            {
+              "kind": "expectation_recognition",
+              "target": "this_proposition",
+              "evidence": [
+                {
+                  "source_id": "33453-017",
+                  "span": {
+                    "start": 90,
+                    "end": 204,
+                    "quote": "But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+                  }
+                }
+              ],
+              "rationale": "The immediately preceding reply already assigns the backport judgment to release-process participants, conditional on support. It anticipates and supports the same arrangement, without verifying individual identities.",
+              "basis": "context_inferred"
+            }
+          ],
+          "authority_evidence": [
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 624,
+                "end": 774,
+                "quote": "As such, there are repository maintainers who are responsible for\nmerging pull requests, the [release cycle](/doc/release-process.md), and\nmoderation."
+              }
+            },
+            {
+              "source_id": "D_CONTRIB",
+              "span": {
+                "start": 20776,
+                "end": 20932,
+                "quote": "Maintainers will do backports in batches and\nuse the proper `Needs backport (...)` labels\nwhen needed (the original author does not need to worry about it)."
+              }
+            }
+          ]
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  },
+  {
+    "baseline_unit_id": "U39b",
+    "source_id": "33453-018",
+    "review_group": "A",
+    "baseline": {
+      "unit_id": "U39b",
+      "source_id": "33453-018",
+      "record_role": "statement",
+      "span": {
+        "start": 102,
+        "end": 138,
+        "quote": "I will not put up a fuss either way."
+      },
+      "grammar": "regulative",
+      "speech_act": "asserted",
+      "scope": "case_specific",
+      "parse_mode": "literal",
+      "deontic_force": "nondeontic",
+      "statement_target_level": "operational",
+      "observed_action_level": "operational",
+      "level_alternatives": [],
+      "alternative_interpretation": "This could remain a contextual expression of acceptance; the chosen candidate preserves the explicit personal plan without treating it as a shared norm.",
+      "components": [
+        {
+          "symbol": "A",
+          "text": "I",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "I",
+          "text": "not put up",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Bdir",
+          "text": "a fuss",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        },
+        {
+          "symbol": "Cex",
+          "text": "either way",
+          "basis": "explicit",
+          "occurrence_role": "local",
+          "inference_note": ""
+        }
+      ],
+      "institution": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The speaker states a personal prospective commitment to accept either outcome. Will is future commitment rather than an imposed deontic duty.",
+        "evidence": [
+          {
+            "source_id": "33453-018",
+            "span": {
+              "start": 102,
+              "end": 138,
+              "quote": "I will not put up a fuss either way."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": []
+      },
+      "disposition_events": []
+    },
+    "overlapping_review_units": [
+      {
+        "unit_id": "A014",
+        "source_id": "33453-018",
+        "record_role": "statement",
+        "span": {
+          "start": 102,
+          "end": 138,
+          "quote": "I will not put up a fuss either way."
+        },
+        "grammar": "regulative",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "statement_target_level": "operational",
+        "observed_action_level": "operational",
+        "level_alternatives": [],
+        "alternative_interpretation": "It may be conversational reassurance rather than a strategy worth generalizing; retaining it as a personal plan preserves its negation and either-way scope.",
+        "components": [
+          {
+            "symbol": "A",
+            "text": "I",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Explicit speaker subject; no institutional role is inferred."
+          },
+          {
+            "symbol": "I",
+            "text": "not put up",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Bdir",
+            "text": "a fuss",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": ""
+          },
+          {
+            "symbol": "Cex",
+            "text": "either way",
+            "basis": "explicit",
+            "occurrence_role": "local",
+            "inference_note": "Covers either backport/release outcome identified by the preceding allocation; it is not permission imposed on another actor."
+          }
+        ],
+        "institution": {
+          "type": "strategy_candidate",
+          "standing": "text_only",
+          "dispute_present": false,
+          "rationale": "An explicit personal commitment not to object to either result; will indicates a plan, not a deontic operator. No later silence is treated as verified performance.",
+          "evidence": [
+            {
+              "source_id": "33453-018",
+              "span": {
+                "start": 102,
+                "end": 138,
+                "quote": "I will not put up a fuss either way."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "disposition_events": []
+      }
+    ],
+    "warning": "Literal overlap is an index for source review, not semantic agreement."
+  }
+]

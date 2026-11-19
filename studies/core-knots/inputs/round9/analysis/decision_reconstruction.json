@@ -1,0 +1,392 @@
+[
+  {
+    "case_id": "C1",
+    "pr": 32359,
+    "decision_object": "Remove limits and configuration options",
+    "observed_outcome": "Closed without merge",
+    "process_assessment": "Reported edits and test additions did not settle the configuration question. The closure explanation redirected work to a proposal retaining the options.",
+    "evidence_ids": [
+      "E01",
+      "E05",
+      "E06"
+    ],
+    "chain_ids": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06"
+    ],
+    "arena_ids": [
+      "A1",
+      "A2"
+    ],
+    "existing_unit_ids": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U06",
+      "N01",
+      "D05",
+      "D06"
+    ],
+    "metadata_source_id": "M32359",
+    "created_at": "2025-04-27T20:52:44Z",
+    "closed_at": "2025-05-12T15:19:05Z",
+    "merged_at": null,
+    "merge_commit": null,
+    "interpretive_boundary": "Closure is not rejection of every rationale or every incorporated edit.",
+    "round9": {
+      "trigger": "Proposal to remove datacarrier limits and configuration options.",
+      "alternatives": [
+        "Remove limits and options together.",
+        "Retain options while changing default policy in PR 32406."
+      ],
+      "control": "The closer redirects the pending proposal; the closure expressly leaves PR 32406’s outcome open.",
+      "settled": "This proposal closes without integration.",
+      "unsettled": "Whether the replacement will merge; whether options should eventually disappear.",
+      "extension": "The May interview gives a contributor’s account of accommodating option retention despite preferring removal. It follows closure and cannot cause that recorded act.",
+      "rival": "Review investment and the technical properties of the replacement can help explain the route.",
+      "judgment": "Retaining a live alternative is observable; the podcast adds the preference distinction, not a new outcome.",
+      "link_ids": [
+        "J01",
+        "J02"
+      ],
+      "podcast_statement_ids": []
+    }
+  },
+  {
+    "case_id": "C2",
+    "pr": 32381,
+    "decision_object": "Allow multiple outputs while retaining per-output limits and options",
+    "observed_outcome": "Closed without merge",
+    "process_assessment": "The expressly narrower alternative attracted a technical objection and its proposer concluded that the intended regular-contributor agreement was absent.",
+    "evidence_ids": [
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "chain_ids": [
+      "L07",
+      "L08"
+    ],
+    "arena_ids": [
+      "A1",
+      "A2"
+    ],
+    "existing_unit_ids": [
+      "U08",
+      "U09a",
+      "U09b"
+    ],
+    "metadata_source_id": "M32381",
+    "created_at": "2025-04-29T20:21:59Z",
+    "closed_at": "2025-04-30T19:12:08Z",
+    "merged_at": null,
+    "merge_commit": null,
+    "interpretive_boundary": "A smaller decision is not sufficient for acceptance; the alternative also changes technical properties.",
+    "round9": {
+      "trigger": "A smaller alternative allows multiple outputs while retaining a per-output cap.",
+      "alternatives": [
+        "Keep per-output limits across multiple outputs.",
+        "Adopt an aggregate budget and higher default.",
+        "Close the proposed first step."
+      ],
+      "control": "The author seeks agreement among regular contributors and closes after judging it absent; a reviewer gives a concrete design objection.",
+      "settled": "The narrower proposal does not merge.",
+      "unsettled": "Whether the broader default change or a different technical design will be accepted.",
+      "extension": "No retained podcast passage specifically reconstructs this closure. The case remains grounded in the GitHub record and tests the limits of scope reduction.",
+      "rival": "The narrower design has distinct technical disadvantages according to its reviewer.",
+      "judgment": "Do not infer that a smaller decision is easier to settle regardless of its content.",
+      "link_ids": [],
+      "podcast_statement_ids": []
+    }
+  },
+  {
+    "case_id": "C3",
+    "pr": 32406,
+    "decision_object": "Raise the default; retain and deprecate options; allow aggregate budgeting across outputs",
+    "observed_outcome": "Merged June 9",
+    "process_assessment": "The merger judged objections addressed, retained user options and deferred disagreement over future removal. Postmerge participants continued to challenge consensus and responsibility.",
+    "evidence_ids": [
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E37",
+      "E38",
+      "E50"
+    ],
+    "chain_ids": [
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "L14",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "L21"
+    ],
+    "arena_ids": [
+      "A1",
+      "A2"
+    ],
+    "existing_unit_ids": [
+      "U11",
+      "U14",
+      "U16b",
+      "U17",
+      "U18",
+      "U19",
+      "U20a",
+      "U21a",
+      "U21b",
+      "U21c",
+      "U21e",
+      "U22",
+      "U23",
+      "N02",
+      "N03",
+      "N04",
+      "N15",
+      "N16",
+      "R4_U19_negative"
+    ],
+    "metadata_source_id": "M32406",
+    "created_at": "2025-05-02T15:41:22Z",
+    "closed_at": "2025-06-09T12:25:45Z",
+    "merged_at": "2025-06-09T12:25:45Z",
+    "merge_commit": "f3bbc746647d1fd23bf5cfe357e32f38c5f6319c",
+    "interpretive_boundary": "Readiness and consensus are attributed judgments; merge does not establish acceptance by users or a network mandate.",
+    "round9": {
+      "trigger": "A replacement proposal combines a higher default, aggregate budgeting, retained options, and deprecation.",
+      "alternatives": [
+        "Retain options without deprecation.",
+        "Retain and discourage them while deferring removal.",
+        "Remove options or retain restrictive default policy."
+      ],
+      "control": "The merger weighs objections and invokes contributor agreement on postponing removal; documented participation rights coexist with differentiated merge control.",
+      "settled": "Repository integration of changed default policy and retained, deprecated options on June 9.",
+      "unsettled": "Future removal, appropriate monetary use, the constituency entitled to consent, and effects of defaults on the network.",
+      "extension": "Before the merge, Mechanic treats deprecation as future withdrawal and asks for community responsiveness, while Poinsot separates his removal preference from changing the default. Later public accounts show wider disagreement after repository integration.",
+      "rival": "Technical arguments about relay and storage incentives, accumulated review, and differing meanings of deprecation accompany the institutional process.",
+      "judgment": "The decision resolves a software configuration question without establishing agreement on its broader justification.",
+      "link_ids": [
+        "J03",
+        "J04",
+        "J05",
+        "J06",
+        "J07",
+        "J08",
+        "J09",
+        "J10",
+        "J11",
+        "J12"
+      ],
+      "podcast_statement_ids": [
+        "PU04",
+        "PU06",
+        "PU07"
+      ]
+    }
+  },
+  {
+    "case_id": "C4",
+    "pr": 32714,
+    "decision_object": "Replace deprecation with advice against use",
+    "observed_outcome": "Closed without merge June 10",
+    "process_assessment": "The warning principle was proposed immediately after the default merge. Reviewers disputed the wording distinction, supported continued deprecation and stated possible conditions for later reconsideration.",
+    "evidence_ids": [
+      "E12",
+      "E13",
+      "E14"
+    ],
+    "chain_ids": [
+      "L22",
+      "L23"
+    ],
+    "arena_ids": [
+      "A1"
+    ],
+    "existing_unit_ids": [
+      "U24",
+      "U25",
+      "U26a",
+      "U27",
+      "U28a",
+      "U28b",
+      "U29",
+      "U30"
+    ],
+    "metadata_source_id": "M32714",
+    "created_at": "2025-06-10T04:41:08Z",
+    "closed_at": "2025-06-10T18:37:57Z",
+    "merged_at": null,
+    "merge_commit": null,
+    "interpretive_boundary": "The later PR did not adopt this exact June proposal; the principle and proposed code change are different analytical objects.",
+    "round9": {
+      "trigger": "A next-day proposal replaces deprecation with advice against using the options.",
+      "alternatives": [
+        "Keep deprecation.",
+        "Use non-recommendation wording.",
+        "Remove discouragement and leave the choice to users."
+      ],
+      "control": "Reviewers contest the semantic distinction and immediate reconsideration; stated conditions for revisiting the issue remain individual positions.",
+      "settled": "The proposed wording change closes unmerged on June 10.",
+      "unsettled": "The credibility of a removal warning without a timetable and the grounds for later reconsideration.",
+      "extension": "Earlier interviews show differing expectations about deprecation. The June failure therefore concerns how to respond to that ambiguity, not evidence that the ambiguity arose only in September.",
+      "rival": "Churn after a recent merge and disagreement over the alternative wording coexist with a reviewer’s preference for undeprecation.",
+      "judgment": "Rejection of this proposal does not imply rejection of every premise or every alternative within the discussion.",
+      "link_ids": [
+        "J13",
+        "J14"
+      ],
+      "podcast_statement_ids": []
+    }
+  },
+  {
+    "case_id": "C5",
+    "pr": 33224,
+    "decision_object": "Soften future-removal wording during release preparation",
+    "observed_outcome": "Merged September 2",
+    "process_assessment": "Translation disruption constrained the implementation path. A participant proposed accepting the wording while leaving it untranslated until v31; the merged patch changes the warning text.",
+    "evidence_ids": [
+      "E15",
+      "E16",
+      "E17"
+    ],
+    "chain_ids": [
+      "L24",
+      "L25"
+    ],
+    "arena_ids": [
+      "A1",
+      "A3"
+    ],
+    "existing_unit_ids": [
+      "U32",
+      "U33",
+      "U34"
+    ],
+    "metadata_source_id": "M33224",
+    "created_at": "2025-08-20T03:45:42Z",
+    "closed_at": "2025-09-02T22:48:55Z",
+    "merged_at": "2025-09-02T22:48:54Z",
+    "merge_commit": "46369583f3a99d2b403349790f8b26dbc28de132",
+    "interpretive_boundary": "The exact absolute freeze prohibition remains text_only; neither translation-system behavior nor a general exception policy was independently verified.",
+    "round9": {
+      "trigger": "A proposal aligns a categorical removal warning with the less definite release-note wording.",
+      "alternatives": [
+        "Retain the categorical warning.",
+        "Change the wording and update translations.",
+        "Accept the wording while deferring translation."
+      ],
+      "control": "Translation and release participants assess timing and disruption separately from support for the text.",
+      "settled": "The warning changes from will be removed to expected to be removed in the merged patch.",
+      "unsettled": "The options remain deprecated; the corpus does not establish whether users read or interpreted the revised warning.",
+      "extension": "Murch’s later process description contextualizes successive release steps. It does not verify the translation experiment or the chosen implementation path.",
+      "rival": "Release feasibility explains how supported wording can advance without resolving the larger policy dispute.",
+      "judgment": "Communication changes form their own decision object and remain distinct from measured reception.",
+      "link_ids": [
+        "J15"
+      ],
+      "podcast_statement_ids": []
+    }
+  },
+  {
+    "case_id": "C6",
+    "pr": 33453,
+    "decision_object": "Remove deprecation and startup warning; decide release targeting separately",
+    "observed_outcome": "Merged September 30; supporting backport merged October 6",
+    "process_assessment": "An earlier warning principle reappeared alongside revised technical assessments and demand claims. Reviewers could support this change while preferring eventual removal. Wider reversal demands remained outside the merged patch; release feasibility received separate treatment.",
+    "evidence_ids": [
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "E29",
+      "E39",
+      "E40",
+      "E41",
+      "E42",
+      "E43",
+      "E44",
+      "E45",
+      "E46",
+      "E47",
+      "E48",
+      "E49"
+    ],
+    "chain_ids": [
+      "L26",
+      "L27",
+      "L28",
+      "L29",
+      "L30",
+      "L31",
+      "L32",
+      "L33",
+      "L34"
+    ],
+    "arena_ids": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "existing_unit_ids": [
+      "U36",
+      "U38",
+      "U39",
+      "U39b",
+      "U40",
+      "U41a",
+      "U41b",
+      "U41c",
+      "U43"
+    ],
+    "metadata_source_id": "M33453",
+    "created_at": "2025-09-22T10:40:53Z",
+    "closed_at": "2025-09-30T22:23:33Z",
+    "merged_at": "2025-09-30T22:23:33Z",
+    "merge_commit": "cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80",
+    "interpretive_boundary": "Removing a warning is neither permanent maintenance commitment nor reversal of the higher default; master merge, branch integration, publication and adoption are separate outcomes.",
+    "round9": {
+      "trigger": "A proposal removes deprecation and its startup warning while leaving default policy unchanged.",
+      "alternatives": [
+        "Remove deprecation and warning.",
+        "Remove only the future-removal sentence.",
+        "Keep deprecation or pursue broader reversal separately."
+      ],
+      "control": "The author retains discretion over proposal form; reviewers and maintainers distinguish content, merge, backport, and release timing.",
+      "settled": "Master integration on September 30; supporting 30.x backport integration on October 6.",
+      "unsettled": "The higher default, permanent maintenance obligations, distribution and adoption, and wider legitimacy.",
+      "extension": "Poinsot’s May, September, and October accounts show support for continued availability alongside a continuing preference for fewer options. User concern, warning accuracy, technical reassessment, and release opportunity jointly enter the explanation.",
+      "rival": "The later proposal differs from June in wording, technical arguments, reported demand, and calendar position. Institutional learning alone cannot explain the contrast.",
+      "judgment": "Accommodation is strongest at the level of a bounded change; endorsement of users’ reasons and network agreement do not follow.",
+      "link_ids": [
+        "J16",
+        "J17",
+        "J18",
+        "J19",
+        "J20",
+        "J21",
+        "J22"
+      ],
+      "podcast_statement_ids": []
+    }
+  }
+]

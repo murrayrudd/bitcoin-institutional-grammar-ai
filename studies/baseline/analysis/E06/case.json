@@ -1,0 +1,85 @@
+{
+  "episode_id": "E06",
+  "pr_number": 31904,
+  "label": "Version specific review attribution",
+  "mechanism": "review_coordination",
+  "initiation": "A bare ACK prompts a distinction between conceptual approval and review of a particular revision.",
+  "outcome": "A hash-specific response appears, but the final table labels that review stale and the merge message credits another top-commit ACK.",
+  "alternative_explanation": "Earlier review can influence the patch even without final top-commit credit.",
+  "mechanism_status": "consistent_with",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Constitutive classification of a review event is not constitutional authority.",
+  "claim_ids": [
+    "E06-C1",
+    "E06-C2",
+    "E06-C3",
+    "E06-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E06:comments:5",
+      "span": {
+        "start": 63,
+        "end": 171,
+        "quote": "If you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack."
+      }
+    },
+    {
+      "source_id": "E06:comments:0",
+      "span": {
+        "start": 517,
+        "end": 533,
+        "quote": "| ACK | [laanwj]"
+      }
+    },
+    {
+      "source_id": "E06:comments:0",
+      "span": {
+        "start": 607,
+        "end": 635,
+        "quote": "| Stale ACK | [purpleKarrot]"
+      }
+    },
+    {
+      "source_id": "E06:merge_message",
+      "span": {
+        "start": 1940,
+        "end": 1960,
+        "quote": "ACKs for top commit:"
+      }
+    },
+    {
+      "source_id": "E06:merge_message",
+      "span": {
+        "start": 1963,
+        "end": 1970,
+        "quote": "laanwj:"
+      }
+    },
+    {
+      "source_id": "E06:comments:0",
+      "span": {
+        "start": 607,
+        "end": 635,
+        "quote": "| Stale ACK | [purpleKarrot]"
+      }
+    },
+    {
+      "source_id": "E06:comments:0",
+      "span": {
+        "start": 607,
+        "end": 635,
+        "quote": "| Stale ACK | [purpleKarrot]"
+      }
+    },
+    {
+      "source_id": "E06:comments:5",
+      "span": {
+        "start": 0,
+        "end": 61,
+        "quote": "Thanks for the review and the C++17 suggestion @purpleKarrot."
+      }
+    }
+  ]
+}

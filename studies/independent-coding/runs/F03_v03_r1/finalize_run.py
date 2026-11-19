@@ -1,0 +1,29 @@
+import collections, datetime, hashlib, json, platform, sys
+from pathlib import Path
+R=Path(__file__).resolve().parent
+sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
+a=json.loads((R/'annotation.final.json').read_text()); checks=json.loads((R/'checks.json').read_text()); review=json.loads((R/'review_notes.json').read_text()); first=json.loads((R/'annotation.first_complete.json').read_text())
+assert checks['status']=='pass' and not checks['errors']
+assert (R/'annotation.json').read_bytes()==(R/'annotation.final.json').read_bytes()
+assert a['packet_sha256']==sha(R/'packet.json')==first['packet_sha256']
+key=lambda x:(x['unit_id'],x['kind'],x.get('symbol'))
+resolved={key(x['flag']):x for x in review['checker_flag_resolutions']}
+assert all(key(f) in resolved for f in checks['review_flags'])
+review['final_checker_summary']={'status':checks['status'],'errors':len(checks['errors']),'review_flags':len(checks['review_flags']),'all_final_flags_have_source_based_resolutions':True,'retained_flags':[{'unit_id':f['unit_id'],'kind':f['kind'],'symbol':f.get('symbol'),'resolution_status':resolved[key(f)]['status']} for f in checks['review_flags']]}
+(R/'review_notes.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
+
+read_inputs=[('INSTRUCTIONS.txt','read completely; run scope and sequencing'),('protocol/codebook.txt','read completely; assigned version 0.3 coding protocol'),('protocol/annotation_schema.json','read completely and used by supplied checker'),('packet.json','read completely; only research evidence; reread for single complete source self-review'),('tools/check_annotation.py','executed for all three preserved checks; import/file-read lines inspected for access accounting')]
+artifacts=['build_annotation.py','repair_mechanical.py','source_self_review.py','finalize_run.py','annotation.json','annotation.first_complete.json','annotation.final.json','checks.first.json','checks.mechanical.json','checks.json','repair_log.json','review_notes.json']
+access={'run_id':'F03_v03_r1','episode_id':'F03','recorded_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'authorized_directory':str(R),'files_accessed':[{'path':str(R/name),'access':purpose,'sha256':sha(R/name)} for name,purpose in read_inputs]+[{'path':str(R/name),'access':'created within the run; read or executed as part of generation, repair, validation, review, or final hash accounting','sha256':sha(R/name)} for name in artifacts],
+'outputs_written_by_this_finalization':[str(R/'access_record.json'),str(R/'run_manifest.json')],
+'access_scope':'Application-level file accesses explicitly performed for this run. Python and jsonschema runtime import internals are ordinary dependencies, not research inputs; individual import file reads were not traced.',
+'ordinary_runtime_dependencies':['Python standard library json, hashlib, pathlib, sys, re, copy, collections, datetime, platform','jsonschema imported by the supplied checker'],
+'model_runtime_configuration':{'configuration_selection':'Inherited primary configuration; no model or reasoning override selected for this run.','inherited_primary_configuration':True,'model_identifier':None,'provider_snapshot':None,'reasoning_effort':None,'seed':None,'sampling':None,'temperature':None,'top_p':None,'token_use':None,'cost':None,'note':'Exact provider model/configuration values were not exposed to this run. Historical requested configurations appearing in the codebook were not treated as evidence of the actual runtime.','python_version':sys.version,'python_implementation':platform.python_implementation(),'shell':'bash','timezone':'Etc/UTC'},
+'isolation':{'external_sources_used':False,'web_used':False,'library_used':False,'other_run_outputs_accessed':False,'parent_directories_read':False,'parent_history_used_as_research':False,'agents_spawned':False,'frozen_inputs_modified':False,'new_sources_added_after_dispatch':False,'coordination_note':'Only progress/completion messages were sent to the coordinator; no other coder answer or semantic key was received.'},
+'first_complete_freeze':{'path':str(R/'annotation.first_complete.json'),'sha256':sha(R/'annotation.first_complete.json'),'timing':'Written before the first checker run and before source self-review; preserved unchanged thereafter.'},
+'checker_sequence':['checks.first.json','checks.mechanical.json','checks.json'],'source_self_review_count':1}
+(R/'access_record.json').write_text(json.dumps(access,ensure_ascii=False,indent=2)+'\n')
+outputs=['annotation.json','annotation.first_complete.json','annotation.final.json','checks.first.json','checks.mechanical.json','checks.json','repair_log.json','review_notes.json','access_record.json']
+manifest={'run_id':'F03_v03_r1','episode_id':'F03','packet_sha256':a['packet_sha256'],'counts':{'screened_entries':len(a['entry_screening']),'focal_entries':10,'supplemental_entries':9,'screening_dispositions':dict(collections.Counter(x['disposition'] for x in a['entry_screening'])),'units':len(a['units']),'record_roles':dict(collections.Counter(u['record_role'] for u in a['units'])),'relations':len(a['relations']),'observed_outcomes':len(a['episode_summary']['observed_outcomes']),'mechanisms':len(a['episode_summary']['mechanisms']),'repair_log_changes':len(json.loads((R/'repair_log.json').read_text())['changes']),'source_self_reviews':1,'checker_errors':len(checks['errors']),'retained_review_flags':len(checks['review_flags'])},'validation_status':checks['status'],'outputs':[{'path':str(R/name),'sha256':sha(R/name),'bytes':(R/name).stat().st_size} for name in outputs],'unresolved_limits':a['episode_summary']['missing_evidence']+a['episode_summary']['unresolved_questions']}
+(R/'run_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'counts':manifest['counts'],'validation_status':manifest['validation_status'],'directory':str(R)},indent=2))

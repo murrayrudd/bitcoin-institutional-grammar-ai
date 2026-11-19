@@ -1,0 +1,49 @@
+{
+  "version": "0.3 to 0.4",
+  "automatic_semantic_conversion_allowed": false,
+  "fields": [
+    {
+      "old": "institution.standing",
+      "new": "standing_profile plus documentary_support, recognition, application_evidence, and challenges",
+      "action": "Reassess each dimension against sources. A legacy label alone is insufficient."
+    },
+    {
+      "old": "institution.dispute_present",
+      "new": "dispute_present derived from scoped challenges",
+      "action": "Identify the challenged proposition and aspect."
+    },
+    {
+      "old": "level_alternatives",
+      "new": "target_level_alternatives and observed_level_alternatives",
+      "action": "Assign each alternative to the correct analytical question."
+    },
+    {
+      "old": "recognition and disposition target",
+      "new": "target plus object_id and identity_evidence",
+      "action": "Verify the actual decision object; do not infer identity from containing PR."
+    },
+    {
+      "old": "component evidence",
+      "new": "component evidence plus governing_span",
+      "action": "Verify the specific predicate occurrence and contextual role."
+    },
+    {
+      "old": "implicit or elsewhere-stored qualifications",
+      "new": "proposition.qualifiers with explicit attachment",
+      "action": "Retain negation, conditionality, attribution, tentative status, and time."
+    },
+    {
+      "old": "outcome or mechanism evidence array",
+      "new": "claim_parts plus complete parent evidence",
+      "action": "Check every material clause."
+    }
+  ],
+  "legacy_retention": "Preserve original files and source identifiers. Record each new interpretation in a separate versioned record with reason and evidence. Do not silently replace previous scores.",
+  "priority_review": [
+    "U32 application challenge",
+    "U02 and N16 preferred grammar and alternatives",
+    "U25 conditional warning recognition",
+    "Any event whose containing PR differs from its referenced decision object"
+  ],
+  "status": "Migration guidance only; no inherited manuscript or analysis record has been recoded in this release."
+}

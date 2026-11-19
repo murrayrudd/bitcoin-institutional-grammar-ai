@@ -1,0 +1,920 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bitcoin-governance:ig2:0.3",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.3"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "packet_sha256": {
+      "type": "string"
+    },
+    "entry_screening": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "disposition": {
+            "enum": [
+              "candidate",
+              "context_only",
+              "empty"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "unit_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "source_id",
+          "disposition",
+          "reason",
+          "unit_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "span": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "quote": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "start",
+              "end",
+              "quote"
+            ],
+            "additionalProperties": false
+          },
+          "parent_unit_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "grammar": {
+            "enum": [
+              "regulative",
+              "constitutive",
+              "undetermined",
+              "not_institutional"
+            ]
+          },
+          "speech_act": {
+            "enum": [
+              "asserted",
+              "proposed",
+              "question",
+              "reported_action",
+              "technical_description",
+              "other"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "case_specific",
+              "general",
+              "unknown"
+            ]
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "symbol": {
+                  "enum": [
+                    "A",
+                    "D",
+                    "I",
+                    "Bdir",
+                    "Bind",
+                    "E",
+                    "F",
+                    "P",
+                    "M",
+                    "Cac",
+                    "Cex",
+                    "A,p",
+                    "Bdir,p",
+                    "Bind,p",
+                    "E,p",
+                    "P,p"
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                },
+                "basis": {
+                  "enum": [
+                    "explicit",
+                    "context_inferred",
+                    "unresolved"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "source_id": {
+                        "type": "string"
+                      },
+                      "span": {
+                        "type": "object",
+                        "properties": {
+                          "start": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "end": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "start",
+                          "end",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "source_id",
+                      "span"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "inference_note": {
+                  "type": "string"
+                },
+                "occurrence_role": {
+                  "enum": [
+                    "local",
+                    "shared_scope",
+                    "context_reference",
+                    "semantic_inference",
+                    "unresolved"
+                  ]
+                },
+                "token_exception": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "symbol",
+                "text",
+                "basis",
+                "evidence",
+                "inference_note",
+                "occurrence_role"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "institution": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": [
+                  "rule_candidate",
+                  "norm_candidate",
+                  "strategy_candidate",
+                  "constitutive_specification",
+                  "undetermined",
+                  "not_applicable"
+                ]
+              },
+              "standing": {
+                "enum": [
+                  "text_only",
+                  "documented",
+                  "locally_supported",
+                  "repeatedly_supported",
+                  "disputed",
+                  "unknown",
+                  "not_applicable"
+                ]
+              },
+              "dispute_present": {
+                "type": "boolean"
+              },
+              "rationale": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string"
+                    },
+                    "span": {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "end": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "start",
+                        "end",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "span"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "recognition": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "response",
+                        "endorsement",
+                        "reported_implementation",
+                        "expectation_recognition",
+                        "recorded_status"
+                      ]
+                    },
+                    "target": {
+                      "enum": [
+                        "this_proposition",
+                        "broader_proposal",
+                        "unresolved"
+                      ]
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "source_id": {
+                            "type": "string"
+                          },
+                          "span": {
+                            "type": "object",
+                            "properties": {
+                              "start": {
+                                "type": "integer",
+                                "minimum": 0
+                              },
+                              "end": {
+                                "type": "integer",
+                                "minimum": 0
+                              },
+                              "quote": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "start",
+                              "end",
+                              "quote"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "source_id",
+                          "span"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "rationale": {
+                      "type": "string"
+                    },
+                    "basis": {
+                      "enum": [
+                        "explicit",
+                        "context_inferred",
+                        "unresolved"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "target",
+                    "evidence",
+                    "rationale",
+                    "basis"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "authority_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string"
+                    },
+                    "span": {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "end": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "start",
+                        "end",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "span"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "type",
+              "standing",
+              "dispute_present",
+              "rationale",
+              "evidence",
+              "recognition",
+              "authority_evidence"
+            ],
+            "additionalProperties": false
+          },
+          "statement_target_level": {
+            "enum": [
+              "operational",
+              "collective_choice",
+              "constitutional",
+              "epistemic",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "observed_action_level": {
+            "enum": [
+              "operational",
+              "collective_choice",
+              "constitutional",
+              "epistemic",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "level_rationale": {
+            "type": "string"
+          },
+          "complexity_flags": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "compound",
+                "nested_component",
+                "hybrid_candidate",
+                "unresolved_negation",
+                "unresolved_reference",
+                "none"
+              ]
+            }
+          },
+          "alternative_interpretation": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "clear",
+              "plausible",
+              "unresolved"
+            ]
+          },
+          "uncertainty_reason": {
+            "type": "string"
+          },
+          "record_role": {
+            "enum": [
+              "statement",
+              "context",
+              "container",
+              "quotation"
+            ]
+          },
+          "parse_mode": {
+            "enum": [
+              "literal",
+              "pragmatic"
+            ]
+          },
+          "deontic_force": {
+            "enum": [
+              "obligation",
+              "prohibition",
+              "permission",
+              "recommendation",
+              "no_obligation",
+              "nondeontic",
+              "unresolved"
+            ]
+          },
+          "level_alternatives": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "operational",
+                "collective_choice",
+                "constitutional",
+                "epistemic",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "template_note": {
+            "type": "string"
+          },
+          "presentation": {
+            "type": "object",
+            "properties": {
+              "quotation": {
+                "enum": [
+                  "none",
+                  "repeated",
+                  "external",
+                  "proposed_wording",
+                  "unknown"
+                ]
+              },
+              "markup": {
+                "enum": [
+                  "plain",
+                  "struck_through",
+                  "suggestion_block",
+                  "code_block",
+                  "mixed",
+                  "unknown"
+                ]
+              },
+              "rationale": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "quotation",
+              "markup",
+              "rationale"
+            ],
+            "additionalProperties": false
+          },
+          "disposition_events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "withdrawn",
+                    "rejected",
+                    "accepted",
+                    "reported_implemented",
+                    "recorded_merged",
+                    "recorded_closed_unmerged"
+                  ]
+                },
+                "target": {
+                  "enum": [
+                    "this_proposition",
+                    "broader_proposal",
+                    "unresolved"
+                  ]
+                },
+                "basis": {
+                  "enum": [
+                    "explicit",
+                    "context_inferred",
+                    "unresolved"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "source_id": {
+                        "type": "string"
+                      },
+                      "span": {
+                        "type": "object",
+                        "properties": {
+                          "start": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "end": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "start",
+                          "end",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "source_id",
+                      "span"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "rationale": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "target",
+                "basis",
+                "evidence",
+                "rationale"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "unit_id",
+          "source_id",
+          "span",
+          "parent_unit_id",
+          "grammar",
+          "speech_act",
+          "scope",
+          "components",
+          "institution",
+          "statement_target_level",
+          "observed_action_level",
+          "level_rationale",
+          "complexity_flags",
+          "alternative_interpretation",
+          "confidence",
+          "uncertainty_reason",
+          "record_role",
+          "parse_mode",
+          "deontic_force",
+          "level_alternatives",
+          "presentation",
+          "disposition_events"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_unit_id": {
+            "type": "string"
+          },
+          "to_unit_id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "O",
+              "AND",
+              "OR",
+              "XOR",
+              "NOT",
+              "clarifies",
+              "requests",
+              "uptake",
+              "challenges",
+              "authorizes",
+              "applies",
+              "revises",
+              "temporal",
+              "quotes",
+              "review_target_update"
+            ]
+          },
+          "basis": {
+            "enum": [
+              "explicit",
+              "context_inferred",
+              "unresolved"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string"
+                },
+                "span": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "quote": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end",
+                    "quote"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "source_id",
+                "span"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "logic_scope": {
+            "enum": [
+              "propositions",
+              "actions",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "from_unit_id",
+          "to_unit_id",
+          "type",
+          "basis",
+          "rationale",
+          "evidence",
+          "logic_scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "episode_summary": {
+      "type": "object",
+      "properties": {
+        "observed_outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string"
+                    },
+                    "span": {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "end": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "start",
+                        "end",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "span"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "claim",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "mechanisms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "enum": [
+                  "reason_giving",
+                  "review_coordination",
+                  "scope_management",
+                  "conditional_integration",
+                  "authority_allocation",
+                  "procedural_revision",
+                  "other"
+                ]
+              },
+              "claim": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string"
+                    },
+                    "span": {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "end": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "start",
+                        "end",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "span"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "unit_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "alternative_explanation": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "supported_sequence",
+                  "consistent_with",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "category",
+              "claim",
+              "evidence",
+              "unit_ids",
+              "alternative_explanation",
+              "status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "missing_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unresolved_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "observed_outcomes",
+        "mechanisms",
+        "missing_evidence",
+        "unresolved_questions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "episode_id",
+    "packet_sha256",
+    "entry_screening",
+    "units",
+    "relations",
+    "episode_summary"
+  ],
+  "additionalProperties": false
+}

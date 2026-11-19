@@ -1,0 +1,348 @@
+{
+  "run_id": "F03_v03_r1",
+  "changes": [
+    {
+      "change_id": "R01",
+      "phase": "checker_feedback",
+      "classification": "evidence_origin_error",
+      "meaning_changes": false,
+      "affected": [
+        "F03-U09.components.Bdir.evidence"
+      ],
+      "before": {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 47,
+          "end": 55,
+          "quote": "red text"
+        }
+      },
+      "after": {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 232,
+          "end": 240,
+          "quote": "red text"
+        }
+      },
+      "reason": "The first checker flagged the same phrase anchored outside this unit. The local occurrence in the non-replacable-case proposal is the correct evidence. The action target and inference status do not change."
+    },
+    {
+      "change_id": "R02",
+      "phase": "source_self_review",
+      "classification": "epistemic_labeling_error",
+      "meaning_changes": false,
+      "affected": [
+        "F03-U09.components.D"
+      ],
+      "before": {
+        "symbol": "D",
+        "text": "should",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 221,
+              "end": 231,
+              "quote": "should get"
+            }
+          }
+        ],
+        "inference_note": "The second should scopes over getting red text and supports advisory force in the reconstructed display request; the anchor includes the predicate to disambiguate the two should occurrences.",
+        "occurrence_role": "semantic_inference"
+      },
+      "after": {
+        "symbol": "D",
+        "text": "should",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 221,
+              "end": 227,
+              "quote": "should"
+            }
+          }
+        ],
+        "inference_note": "The second should directly marks the recommended red-text treatment. Reconstructing display does not make this lexical modal inferred; the local anchor distinguishes it from the earlier should be.",
+        "occurrence_role": "local"
+      },
+      "reason": "The lexical deontic role survives the pragmatic display reconstruction and must remain explicit. The force remains recommendation."
+    },
+    {
+      "change_id": "R03",
+      "phase": "source_self_review",
+      "classification": "epistemic_labeling_error",
+      "meaning_changes": false,
+      "affected": [
+        "F03-U10.components.I"
+      ],
+      "before": {
+        "symbol": "I",
+        "text": "have",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 366,
+              "quote": "have an"
+            }
+          }
+        ],
+        "inference_note": "Uses the second have, identified by its following article, as the action of choosing the adaptive option; the field normalizes the scoped selection rather than treating the first have as the positive proposal.",
+        "occurrence_role": "semantic_inference"
+      },
+      "after": {
+        "symbol": "I",
+        "text": "have",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 359,
+              "end": 363,
+              "quote": "have"
+            }
+          }
+        ],
+        "inference_note": "The second have explicitly supplies the positive alternative action. Tentative recommendation force does not make this action inferred, and the anchor excludes its object article.",
+        "occurrence_role": "local"
+      },
+      "reason": "The source directly supplies have in the adaptive-option clause. Replaced the broader have an anchor and corrected explicitness without changing the selected design."
+    },
+    {
+      "change_id": "R04",
+      "phase": "source_self_review",
+      "classification": "substantive_role_precision",
+      "meaning_changes": true,
+      "affected": [
+        "F03-U06.components.Bdir"
+      ],
+      "before": {
+        "symbol": "Bdir",
+        "text": "red text",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 47,
+              "end": 55,
+              "quote": "red text"
+            }
+          }
+        ],
+        "inference_note": "The literal object of deserves is recast as the target of removing the styling.",
+        "occurrence_role": "semantic_inference"
+      },
+      "after": {
+        "symbol": "Bdir",
+        "text": "red styling",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 47,
+              "end": 55,
+              "quote": "red text"
+            }
+          }
+        ],
+        "inference_note": "The phrase red text is interpreted as red styling to remove from the warning, not as a requirement to delete the warning words. The literal object of deserves is recast as the inferred edit target.",
+        "occurrence_role": "semantic_inference"
+      },
+      "reason": "Clarifies the requested removal as the red treatment, preventing a possible reading that all warning text must be deleted. The source criticizes what visual treatment the confirmation window deserves."
+    },
+    {
+      "change_id": "R05",
+      "phase": "source_self_review",
+      "classification": "evidence_completeness",
+      "meaning_changes": false,
+      "affected": [
+        "episode_summary.mechanisms[1].evidence/unit_ids"
+      ],
+      "before": {
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 0,
+              "end": 283,
+              "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 285,
+              "end": 315,
+              "quote": "Yes. This might be a solution."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 4,
+              "end": 59,
+              "quote": "workflow for additional outputs is more complex because"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 60,
+              "end": 179,
+              "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 180,
+              "end": 294,
+              "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+            }
+          }
+        ],
+        "unit_ids": [
+          "F03-U10",
+          "F03-U16",
+          "F03-U17",
+          "F03-U18",
+          "F03-U19",
+          "F03-U20",
+          "F03-U21"
+        ]
+      },
+      "after": {
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 0,
+              "end": 283,
+              "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 285,
+              "end": 315,
+              "quote": "Yes. This might be a solution."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 4,
+              "end": 59,
+              "quote": "workflow for additional outputs is more complex because"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 60,
+              "end": 179,
+              "quote": "you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 180,
+              "end": 294,
+              "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:5",
+            "span": {
+              "start": 119,
+              "end": 176,
+              "quote": "doing the add output thing would be pretty interesting..."
+            }
+          }
+        ],
+        "unit_ids": [
+          "F03-U10",
+          "F03-U16",
+          "F03-U17",
+          "F03-U18",
+          "F03-U19",
+          "F03-U20",
+          "F03-U21",
+          "F03-U23"
+        ]
+      },
+      "reason": "The alternative explanation mentions later interest in output additions; added that exact source evidence and its context endpoint."
+    },
+    {
+      "change_id": "R06",
+      "phase": "source_self_review",
+      "classification": "presentation_clarity",
+      "meaning_changes": false,
+      "affected": [
+        "episode_summary.observed_outcomes[2].claim"
+      ],
+      "before": "The supplied retained-head confirmation patch still contains red styling and the text This transaction is replacable (optin-RBF)! . This is evidence of that snapshot, not a dated response to the comments or a rejection of the proposed style, naming, and spelling changes.",
+      "after": "The supplied retained-head confirmation patch still contains red styling and the text \"This transaction is replacable (optin-RBF)!\". This is evidence of that snapshot, not a dated response to the comments or a rejection of the proposed style, naming, and spelling changes.",
+      "reason": "Delimited the exact UI string clearly; no outcome or causal interpretation changed."
+    }
+  ]
+}

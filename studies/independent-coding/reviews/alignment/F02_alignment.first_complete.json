@@ -1,0 +1,751 @@
+{
+  "episode_id": "F02",
+  "groups": [
+    {
+      "group_id": "F02-G001",
+      "episode_id": "F02",
+      "proposition": "The submitted contribution proposes a backport of PR #14411 to v0.17, described as partially reverting #13075 and #14023 and fixing #14382.",
+      "status": "unmatched",
+      "members": {
+        "R08": [
+          "S01"
+        ]
+      },
+      "rationale": "Only R08 unitizes the PR-body contribution as a proposed backport. The other five annotations supply only the four later review edits. The body concerns submission/backport of a distinct source PR, not spelling, paragraph replacement, code simplification, or empty-string documentation. It is therefore a coverage difference, not a finding that the extra or absent unit is a substantive error.",
+      "source_evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R08",
+          "unit_id": "S01",
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": false,
+        "not_applicable": true
+      }
+    },
+    {
+      "group_id": "F02-G002",
+      "episode_id": "F02",
+      "proposition": "ryanofsky recommends correcting the release-note RPC spelling to listtransactions, including the final s.",
+      "status": "one_to_one",
+      "members": {
+        "R05": [
+          "S01"
+        ],
+        "R06": [
+          "F02-S01"
+        ],
+        "R08": [
+          "S02"
+        ],
+        "R11": [
+          "F02-S01"
+        ],
+        "R12": [
+          "S01"
+        ],
+        "R14": [
+          "F02_S01"
+        ]
+      },
+      "rationale": "All six identify the same review correction, source, target identifier, and advisory should. Write/use/correct are reconstructions of the same elliptical should-be edit; representing the complete spelling in Bdir, Bdir,p, or Cex does not create separate propositions. R08 leaves the editor unresolved while others infer jnewbery or the PR editor from the later update; that actor-resolution difference remains available for field/source review and is not an alignment exclusion. All retain the final-s qualification.",
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R05",
+          "unit_id": "S01",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "annotation_id": "R06",
+          "unit_id": "F02-S01",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "annotation_id": "R08",
+          "unit_id": "S02",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "annotation_id": "R11",
+          "unit_id": "F02-S01",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "annotation_id": "R12",
+          "unit_id": "S01",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "annotation_id": "R14",
+          "unit_id": "F02_S01",
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F02-G003",
+      "episode_id": "F02",
+      "proposition": "ryanofsky tentatively proposes replacing the release-note paragraph with the supplied account-setting distinction and its account-versus-label explanation.",
+      "status": "one_to_one",
+      "members": {
+        "R05": [
+          "S02"
+        ],
+        "R06": [
+          "F02-S02"
+        ],
+        "R08": [
+          "S03"
+        ],
+        "R11": [
+          "F02-S02"
+        ],
+        "R12": [
+          "S02"
+        ],
+        "R14": [
+          "F02_S02"
+        ]
+      },
+      "rationale": "All six concern the same bounded paragraph-replacement proposal and preserve both outgoing/incoming transactions with the accounts setting versus incoming only without it, including the stated account/label explanation. R05/R06/R08 parse I as the hypothetical reviewer-editor, while R11/R12/R14 infer the advised PR contributor. Both are representations of this same tentative review suggestion, not separate personal-commitment and editorial-request events. The actor/parse difference is deliberately retained in a one-to-one correspondence. The preceding same-release criticism is attached with differing detail; full semantic agreement is not asserted.",
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 93,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R05",
+          "unit_id": "S02",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "annotation_id": "R06",
+          "unit_id": "F02-S02",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "annotation_id": "R08",
+          "unit_id": "S03",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "annotation_id": "R11",
+          "unit_id": "F02-S02",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "annotation_id": "R12",
+          "unit_id": "S02",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "annotation_id": "R14",
+          "unit_id": "F02_S02",
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F02-G004",
+      "episode_id": "F02",
+      "proposition": "ryanofsky tentatively recommends dropping the new check for \"*\" for clarity, unless the reviewer is missing something.",
+      "status": "one_to_one",
+      "members": {
+        "R05": [
+          "S03"
+        ],
+        "R06": [
+          "F02-S03"
+        ],
+        "R08": [
+          "S04"
+        ],
+        "R11": [
+          "F02-S03"
+        ],
+        "R12": [
+          "S03"
+        ],
+        "R14": [
+          "F02_S03"
+        ]
+      },
+      "rationale": "The same drop action, locally resolved check, clarity purpose, and defeasible recommendation occur in every annotation. R06 carries the unless clause as an explicitly attached proposition scope note; the other five carry it as Cac, with additional scope records where supplied. This is a qualifier-location convention, not omission merely because Cac is absent. R08 leaves the actor unresolved; other annotations infer the editor. The reviewer's preceding uncertainty about technical effect is a rationale, not an independently established redundancy claim.",
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 60,
+            "quote": "I don't see how the new check for \"*\" here changes anything."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 107,
+            "end": 123,
+            "quote": "I've removed it."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R05",
+          "unit_id": "S03",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "annotation_id": "R06",
+          "unit_id": "F02-S03",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "annotation_id": "R08",
+          "unit_id": "S04",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "annotation_id": "R11",
+          "unit_id": "F02-S03",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "annotation_id": "R12",
+          "unit_id": "S03",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "annotation_id": "R14",
+          "unit_id": "F02_S03",
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    },
+    {
+      "group_id": "F02-G005",
+      "episode_id": "F02",
+      "proposition": "ryanofsky recommends documenting the empty-string change and offers tentative wording describing the two accounts-setting branches, backward compatibility, and usefulness/confusion rationale.",
+      "status": "one_to_one",
+      "members": {
+        "R05": [
+          "S04"
+        ],
+        "R06": [
+          "F02-S04"
+        ],
+        "R08": [
+          "S05"
+        ],
+        "R11": [
+          "F02-S04"
+        ],
+        "R12": [
+          "S04"
+        ],
+        "R14": [
+          "F02_S04"
+        ]
+      },
+      "rationale": "All six target the same documentation action and empty-string behavior. R14 keeps the technical draft in explicit proposition qualifiers rather than a Cex component; the other annotations place it in Cex, differing on whether that relation is literal or inferred. R14's attachment is explicit and therefore counts. Literal infinitive versus pragmatic request, and resolved versus unresolved editor, concern representation of the same focal edit. The technical capability/error content is not aligned as a separate institutional permission or sanction.",
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "selected_spans": [
+        {
+          "annotation_id": "R05",
+          "unit_id": "S04",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "annotation_id": "R06",
+          "unit_id": "F02-S04",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "annotation_id": "R08",
+          "unit_id": "S05",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "annotation_id": "R11",
+          "unit_id": "F02-S04",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "annotation_id": "R12",
+          "unit_id": "S04",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "annotation_id": "R14",
+          "unit_id": "F02_S04",
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "exact_span_result": {
+        "comparison": "source_id/start/end/quote of focal unit span; separate from semantic correspondence",
+        "all_member_spans_identical": true,
+        "not_applicable": false
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "annotation_id": "R05",
+      "checked_unit_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "assigned_count": 4,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R06",
+      "checked_unit_ids": [
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-S04"
+      ],
+      "assigned_count": 4,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R08",
+      "checked_unit_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "assigned_count": 5,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R11",
+      "checked_unit_ids": [
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-S04"
+      ],
+      "assigned_count": 4,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R12",
+      "checked_unit_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "assigned_count": 4,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    },
+    {
+      "annotation_id": "R14",
+      "checked_unit_ids": [
+        "F02_S01",
+        "F02_S02",
+        "F02_S03",
+        "F02_S04"
+      ],
+      "assigned_count": 4,
+      "checked_packet_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "checked_links_for_alignment": true,
+      "unit_propositions_and_explicit_qualifier_links_checked": true,
+      "limits": [
+        "Masked semantic alignment only; no classification-label agreement or source-review correctness rating."
+      ]
+    }
+  ],
+  "notes": [
+    "Partial masking: annotation IDs are anonymous; classification labels and condition/run identities were not exposed. Components, parse choices, and proposition records can reveal representation conventions.",
+    "Four common all-six one-to-one groups (24 of 25 unit occurrences); one unmatched body proposal. Labels are withheld, so no label-agreement score is computed.",
+    "All 22 packet entries and all six annotation records, including links (empty in this case), were read; evidence offsets validated as Python Unicode code-point indices."
+  ],
+  "counts": {
+    "groups": 5,
+    "units": 25,
+    "status_counts": {
+      "unmatched": 1,
+      "one_to_one": 4
+    }
+  },
+  "first_complete_case_saved_utc": "2026-11-07T19:36:13.320487+00:00"
+}

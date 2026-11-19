@@ -1,0 +1,114 @@
+[
+  {
+    "claim_id": "E09-C1",
+    "episode_id": "E09",
+    "claim": "The proposed MAINTAINERS file sought to direct contributions toward maintained subsystems.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E09:body",
+        "span": {
+          "start": 0,
+          "end": 87,
+          "quote": "This is a guide to steering contributions to specific maintained areas of the codebase."
+        }
+      },
+      {
+        "source_id": "E09:doc_head",
+        "span": {
+          "start": 3,
+          "end": 61,
+          "quote": "List of maintainers and how to submit Bitcoin Core changes"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Its proposal status must remain separate from recognition of particular people and roles."
+  },
+  {
+    "claim_id": "E09-C2",
+    "episode_id": "E09",
+    "claim": "The discussion contains a self-described mining role and explicit acknowledgment by another participant.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E09:comments:4",
+        "span": {
+          "start": 27,
+          "end": 54,
+          "quote": "I maintain the Mining area."
+        }
+      },
+      {
+        "source_id": "E09:comments:6",
+        "span": {
+          "start": 243,
+          "end": 291,
+          "quote": "ACK on mentioning @luke-jr as mining maintainer."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "This supports local recognition, not an exhaustive or exclusive jurisdiction assignment."
+  },
+  {
+    "claim_id": "E09-C3",
+    "episode_id": "E09",
+    "claim": "laanwj closes the inactive proposal while retaining support for the idea and inviting further work.",
+    "assessment": "attributed",
+    "evidence": [
+      {
+        "source_id": "E09:comments:9",
+        "span": {
+          "start": 0,
+          "end": 38,
+          "quote": "I like the idea of listing maintainers"
+        }
+      },
+      {
+        "source_id": "E09:comments:9",
+        "span": {
+          "start": 168,
+          "end": 252,
+          "quote": "Closing this due to inactivity. Please reopen if you're going to work on this again."
+        }
+      },
+      {
+        "source_id": "E09:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "The stated reason includes workflow mismatch and inactivity; closure does not negate every role described."
+  },
+  {
+    "claim_id": "E09-C4",
+    "episode_id": "E09",
+    "claim": "Failure to merge the maintainer document shows that subsystem roles did not exist.",
+    "assessment": "contradicted",
+    "evidence": [
+      {
+        "source_id": "E09:comments:6",
+        "span": {
+          "start": 243,
+          "end": 291,
+          "quote": "ACK on mentioning @luke-jr as mining maintainer."
+        }
+      },
+      {
+        "source_id": "E09:outcome",
+        "span": {
+          "start": 105,
+          "end": 129,
+          "quote": "\"recorded_merged\": false"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Explicit local recognition coexists with failed codification; wider role arrangements remain unmeasured."
+  }
+]

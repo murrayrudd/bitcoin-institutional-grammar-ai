@@ -1,0 +1,75 @@
+[E09:body] jgarzik 2015-11-13T15:33:00+00:00
+This is a guide to steering contributions to specific maintained areas of the codebase.
+
+It is also useful as a status list of various code areas - in the future, we'll see maintainers disappear, code go unmaintained, newbies arrive and pick up code, etc.
+
+
+[E09:comments:0] paveljanik 2015-11-13T16:14:08+00:00
+Well, I think something like this is needed but maybe not that verbose. On the contrary Qt GUI entry looks good to me ;-)
+
+I think there is no need to mention explicitly the Git/whatever tree type etc. Maintainers should work on GitHub. Patches should be PRed not published to mailing list (if you want to "publish them" first, lets mail the link to the branch) etc. The workflow is GitHub centric... If there is anything specific about particular maintained area, lets describe it, but...
+
+Or do want e.g. Jonas to create its own maintained Qt GUI tree and then him to PR the changes (like @theuni 's trivial tree)?
+
+
+[E09:comments:1] paveljanik 2015-11-13T16:15:24+00:00
+I miss the list of GitHub tags for the specific area (helps with the area identification in the PR and Issues).
+
+
+[E09:comments:2] luke-jr 2015-11-13T22:31:49+00:00
+Shouldn't we add the rest of the maintainers to the initial list?
+
+
+[E09:comments:3] jgarzik 2015-11-14T00:01:34+00:00
+Thanks for the comments.  Agree with almost all from @luke-jr @jonasschnelli @paveljanik.  Will revise.
+
+RE @luke-jr "Add the rest" -- this list is for _specific_ areas of where people are proactively making a commitment to maintain.
+
+
+[E09:comments:4] luke-jr 2015-11-14T01:53:29+00:00
+@jgarzik Yes, for example, I maintain the Mining area. I'm not sure who else maintains what, but I would be surprised if it was just Jonas and I.
+
+
+[E09:comments:5] jgarzik 2015-11-14T02:00:52+00:00
+@luke-jr Awesome -- and I would propose to merge this as-is, and request that you submit a pull request to add that section - crypto-volunteerism that creates a nice audit trail along the way.
+
+That's what should happen moving forward -- patch MAINTAINERS -- and it's better than continually revising this PR.
+
+
+[E09:comments:6] laanwj 2015-11-14T06:40:14+00:00
+Concept ACK, but yes remove mention of the mailing list. We have no mailing list for submitting patches, and using bitcoin-dev for this would not be appreciated.
+In cae of security critical issues it's better to mail the maintainer directly.
+
+ACK on mentioning @luke-jr as mining maintainer. He's always been one of the few miners actively involved with development. Also needs @theuni as Build system Maintainer.
+
+Edit: it should also mention `src/univalue`, `src/leveldb`, which fall outside maintenance of this repository, and refer to the upstream repositories.
+
+
+[E09:comments:7] gmaxwell 2015-11-16T08:41:04+00:00
+re @laanwj 's edit: and src/secp256k1
+
+
+[E09:comments:8] sipa 2015-11-28T13:14:07+00:00
+Concept ACK, but I think it can be more tailored to our workflow.
+
+
+[E09:comments:9] laanwj 2016-01-21T14:42:23+00:00
+I like the idea of listing maintainers, but right now this file seems directly copied from Linux and is not applicable to Bitcoin Core development workflow as it is. 
+
+Closing this due to inactivity. Please reopen if you're going to work on this again.
+
+
+[E09:comments:10] btcdrak 2016-01-21T14:44:17+00:00
+I was going to say, this is better in CONTRIBUTING.md and much of the content is duplicated there already, I'll open a PR.
+
+
+[E09:review_comments:0] jonasschnelli 2015-11-13T15:41:15+00:00
+Maybe add something that it's possible and trivial to enable Travis on the users bitcoin-repository fork, so one can test the changes over Travis even before open a PR on bitcoin/bitcoin?
+
+
+[E09:review_comments:1] luke-jr 2015-11-13T22:30:18+00:00
+I don't think we need a mailing list post for every merge request... especially considering the ML is for Bitcoin, not Bitcoin Core.
+
+
+[E09:review_comments:2] luke-jr 2015-11-13T22:31:11+00:00
+Qt is not uppercased.

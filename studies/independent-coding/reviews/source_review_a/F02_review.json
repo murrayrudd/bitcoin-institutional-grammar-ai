@@ -1,0 +1,950 @@
+{
+  "findings": [
+    {
+      "finding_id": "A001",
+      "episode_id": "F02",
+      "diagnosis": "defensible_alternative",
+      "effect": "coverage_or_scope",
+      "description": "The nominal backport body is retained as a pragmatic contribution proposal in R08 S01 and as technical context in the other annotations. R08 explicitly preserves the descriptive alternative, distinct referenced objects, partial-reversion qualification, and lack of authority. The packet does not require one additional institutional proposition merely from submission of a PR. This is candidate-boundary sensitivity, not a demonstrated omission or inflated authority claim.",
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "unit_ids": [
+            "C00"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "unit_ids": [],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "unit_ids": [
+            "F02-C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "unit_ids": [
+            "C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_C01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:body",
+          "span": {
+            "start": 0,
+            "end": 99,
+            "quote": "Backport of PR #14411 to v0.17.\r\n\r\nThis change partially reverts #13075 and #14023.\r\n\r\nFixes #14382"
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Records and proposition boundaries: retain independently interpretable candidates and relevant technical context; retain technical alternatives and do not reconstruct unexpressed authority.",
+      "resolution": "Preserve both readings in alignment as a candidate/context boundary alternative. Do not count the backport candidate as an independent recognized rule, and do not score context-only readings as an omission without a new prospective boundary criterion."
+    },
+    {
+      "finding_id": "A002",
+      "episode_id": "F02",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "convention_only",
+      "description": "The paragraph-replacement suggestion supports a literal hypothetical reviewer-as-editor parse and a pragmatic addressee-as-editor parse. R05/R06/R08 use the former; R11/R12/R14 use the latter and mark the substituted actor inferred while retaining the explicit change verb and object. Both preserve the same proposed paragraph and tentative force. The guides distinguish reconstructed action from inferred force but do not fully specify whether changing the hypothetical performer alone requires pragmatic parse_mode.",
+      "affected": [
+        {
+          "annotation_id": "R05",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R06",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R11",
+          "unit_ids": [
+            "F02-S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 531,
+            "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 94,
+            "end": 95,
+            "quote": "I"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 104,
+            "end": 110,
+            "quote": "change"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 111,
+            "end": 113,
+            "quote": "it"
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        }
+      ],
+      "applicable_rule": "Both guides, Grammar and argument roles: literal where action is supplied, pragmatic when an indirect request requires reconstructed action; assess role basis in the selected parse and preserve alternatives.",
+      "resolution": "Preserve both actor analyses as explicit alternatives. For a later version, specify whether performer substitution with an unchanged explicit predicate is a pragmatic parse trigger. Do not retrospectively recode either as a changed institutional conclusion."
+    },
+    {
+      "finding_id": "A003",
+      "episode_id": "F02",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R14 F02_S03 labels the directly supplied imperative drop as pragmatic even though its own rationale identifies an omitted actor and antecedent-resolved object, not a reconstructed action. The object, clarity purpose, defeasibility, attribution, and reported-only application are otherwise preserved.",
+      "affected": [
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S03"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 61,
+            "end": 115,
+            "quote": "Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 16,
+            "end": 42,
+            "quote": "the new check for \"*\" here"
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Grammar and argument roles: parse_mode is literal when the source directly supplies the action; inferred components do not by themselves replace the action.",
+      "resolution": "Use literal for this focal drop clause while retaining the contextual actor, inferred object, and all qualifiers. This is a parse convention correction, not an altered recommendation or implementation claim."
+    },
+    {
+      "finding_id": "A004",
+      "episode_id": "F02",
+      "diagnosis": "execution_failure",
+      "effect": "convention_only",
+      "description": "R11 F02-S04 and R12 S04 label the document-the-empty-string-change proposition pragmatic even though document and its object are explicitly supplied and no editing predicate is reconstructed. Their rationales locate the inference in recommendation force and addressee. The drafted content, optional wording, conditions, and technical-versus-institutional distinction survive.",
+      "affected": [
+        {
+          "annotation_id": "R11",
+          "unit_ids": [
+            "F02-S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R12",
+          "unit_ids": [
+            "S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 57,
+            "quote": "I think it'd be good to document the empty string change."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 24,
+            "end": 32,
+            "quote": "document"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 33,
+            "end": 56,
+            "quote": "the empty string change"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 58,
+            "end": 414,
+            "quote": "Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        }
+      ],
+      "applicable_rule": "guide_2.txt, Grammar and argument roles: literal when the source directly supplies the action; inferred utterance force does not automatically make an explicitly stated action inferred.",
+      "resolution": "Use literal for the supplied document action; retain inferred addressee and the optional wording. No institutional-type or standing correction follows."
+    },
+    {
+      "finding_id": "A005",
+      "episode_id": "F02",
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis",
+      "description": "For the spelling correction, R06 and R08 classify application as observed from the resulting integrated spelling, while R14 classifies exact observed correction as unresolved because the earlier typo and its location are absent. These are different observation objects: a resulting artifact versus a historically identified correction operation. The rationales state their limits, so neither establishes the missing before/after edit history.",
+      "affected": [
+        {
+          "annotation_id": "R06",
+          "unit_ids": [
+            "F02-S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S02"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S01"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 80,
+            "end": 113,
+            "quote": "+`listtransactions` label support"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 334,
+            "end": 388,
+            "quote": "\"head_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 437,
+            "end": 499,
+            "quote": "\"merge_commit_sha\": \"89306ab0df93bfdf5630910bc20b1eccb7379172\""
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 196,
+            "end": 210,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 622,
+            "end": 657,
+            "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Application and challenge and Presentation and later disposition: observed application requires evidence of the relevant act or artifact; particular implementation requires claimed patch changes and integration evidence.",
+      "resolution": "Retain the observed requested spelling and unresolved correction chronology as separate claims. A later specification should distinguish observed resulting state from observed transformation. Do not impose an unavailable before/after-history requirement retrospectively on an explicitly artifact-limited claim."
+    },
+    {
+      "finding_id": "A006",
+      "episode_id": "F02",
+      "diagnosis": "defensible_alternative",
+      "effect": "evidence_basis",
+      "description": "R14 maps the author's aggregate update report, corroborated by the reviewer's release-note-update report, to each release-note suggestion as context-inferred reported application. R06/R08 retain those reports at broader-proposal scope. R14 explicitly avoids claiming exact patch proof from that report; all three retain unresolved terse replies. The packet supports a qualified inclusion inference, while exact wording and individual reply targets remain unverified.",
+      "affected": [
+        {
+          "annotation_id": "R06",
+          "unit_ids": [
+            "F02-S01",
+            "F02-S02",
+            "F02-S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R08",
+          "unit_ids": [
+            "S02",
+            "S03",
+            "S05"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        },
+        {
+          "annotation_id": "R14",
+          "unit_ids": [
+            "F02_S01",
+            "F02_S02",
+            "F02_S04"
+          ],
+          "relation_ids": [],
+          "summary_paths": []
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:4",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Both are good changes. Thanks!"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:5",
+          "span": {
+            "start": 0,
+            "end": 5,
+            "quote": "fixed"
+          }
+        }
+      ],
+      "applicable_rule": "guide_1.txt, Recognition and Application: independently assess target, basis, and application; no new mandatory aggregate-report targeting convention is supplied in this guide.",
+      "resolution": "Keep the qualification visible: reported incorporation of the set of changes can contextually include the edit, but cannot verify the exact formulation or resolve fixed/Both. Do not treat reported and observed as interchangeable, or upgrade ordinary assent to expectation recognition."
+    }
+  ],
+  "coverage": [
+    {
+      "annotation_id": "R05",
+      "checked_unit_ids": [
+        "C00",
+        "C01",
+        "C07",
+        "C08",
+        "C02",
+        "C03",
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "C04",
+        "C05",
+        "C06"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "C00",
+        "C01",
+        "C07",
+        "C08",
+        "C02",
+        "C03",
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "C04",
+        "C05",
+        "C06"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    },
+    {
+      "annotation_id": "R06",
+      "checked_unit_ids": [
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-S04",
+        "F02-C01",
+        "F02-C02",
+        "F02-C03",
+        "F02-C04",
+        "F02-C05",
+        "F02-C06",
+        "F02-C07",
+        "F02-C08"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-S04",
+        "F02-C01",
+        "F02-C02",
+        "F02-C03",
+        "F02-C04",
+        "F02-C05",
+        "F02-C06",
+        "F02-C07",
+        "F02-C08"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    },
+    {
+      "annotation_id": "R08",
+      "checked_unit_ids": [
+        "S01",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "S02",
+        "S03",
+        "C10",
+        "S04",
+        "C09",
+        "S05",
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "S01",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "S02",
+        "S03",
+        "C10",
+        "S04",
+        "C09",
+        "S05",
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    },
+    {
+      "annotation_id": "R11",
+      "checked_unit_ids": [
+        "F02-C01",
+        "F02-C02",
+        "F02-C03",
+        "F02-C04",
+        "F02-C05",
+        "F02-C06",
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-S04",
+        "F02-C07",
+        "F02-C08",
+        "F02-C09"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "F02-C01",
+        "F02-C02",
+        "F02-C03",
+        "F02-C04",
+        "F02-C05",
+        "F02-C06",
+        "F02-S01",
+        "F02-S02",
+        "F02-S03",
+        "F02-C07",
+        "F02-C08",
+        "F02-C09"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.observed_outcomes[4]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    },
+    {
+      "annotation_id": "R12",
+      "checked_unit_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "S01",
+        "C07",
+        "S02",
+        "C08",
+        "S03",
+        "S04",
+        "C09",
+        "C10",
+        "C11"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "S01",
+        "C07",
+        "S02",
+        "C08",
+        "S03",
+        "C09",
+        "C10",
+        "C11"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.observed_outcomes[3]",
+        "episode_summary.observed_outcomes[4]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    },
+    {
+      "annotation_id": "R14",
+      "checked_unit_ids": [
+        "F02_S01",
+        "F02_S02",
+        "F02_S03",
+        "F02_S04",
+        "F02_C01",
+        "F02_C02",
+        "F02_C03",
+        "F02_C04",
+        "F02_C05",
+        "F02_C06",
+        "F02_C07",
+        "F02_C08",
+        "F02_C09"
+      ],
+      "checked_relations": true,
+      "checked_summary": true,
+      "checked_entry_ids": [
+        "pr14441:body",
+        "pr14441:comments:0",
+        "pr14441:comments:1",
+        "pr14441:comments:2",
+        "pr14441:reviews:0",
+        "pr14441:reviews:1",
+        "pr14441:reviews:2",
+        "pr14441:reviews:3",
+        "pr14441:reviews:4",
+        "pr14441:review_comments:0",
+        "pr14441:review_comments:1",
+        "pr14441:review_comments:2",
+        "pr14441:review_comments:3",
+        "pr14441:review_comments:4",
+        "pr14441:review_comments:5",
+        "pr14441:review_comments:6",
+        "pr14441:metadata",
+        "pr14441:supplement_metadata",
+        "pr14441:patch:0",
+        "pr14441:patch:1",
+        "pr14441:patch:2",
+        "pr14441:patch:3"
+      ],
+      "no_error_identified_ids": [
+        "F02_S01",
+        "F02_S02",
+        "F02_S04",
+        "F02_C01",
+        "F02_C02",
+        "F02_C03",
+        "F02_C04",
+        "F02_C05",
+        "F02_C06",
+        "F02_C07",
+        "F02_C08",
+        "F02_C09"
+      ],
+      "limits": [
+        "Review is revisable AI judgment, not a reference truth set.",
+        "Version masking is incomplete because assigned guides and schemas differ; no condition identities or agreement statistics were sought.",
+        "Missing reply threading, full edit histories, prior typo/paragraph and intermediate check diff prevent stronger historical or target-specific claims."
+      ],
+      "checked_relation_ids": [
+        "relations[0]",
+        "relations[1]",
+        "relations[2]",
+        "relations[3]",
+        "relations[4]",
+        "relations[5]",
+        "relations[6]",
+        "relations[7]"
+      ],
+      "checked_summary_paths": [
+        "episode_summary.observed_outcomes[0]",
+        "episode_summary.observed_outcomes[1]",
+        "episode_summary.observed_outcomes[2]",
+        "episode_summary.mechanisms[0]",
+        "episode_summary.mechanisms[1]"
+      ],
+      "checked_fields": "All retained unit fields, screening reasons, all relation fields, all outcome/mechanism clauses and claim_parts where present, plus missing-evidence and unresolved-question lists. Source packet entries screened in full, including all three empty reviews and all supplemental patches.",
+      "no_error_note": "No error identified means no confirmed error under the assigned guide; separately reported defensible alternatives and criterion ambiguities may still involve these units."
+    }
+  ],
+  "case_status": "complete",
+  "checked_claims_with_no_identified_error": [
+    "All four bounded review edits preserve requested technical content, negation, setting conditions and tentative force.",
+    "All annotations avoid authority, sanction, rule adoption, network adoption and mandatory reapproval inferences.",
+    "No material focal prescription omission identified beyond the explicitly defensible body candidate/context boundary.",
+    "All retained relations have identifiable endpoints and correctly oriented meanings; explicit versus contextual review-target linkage is defensible given the direct since-last-review phrase and one supplied earlier same-reviewer endorsement.",
+    "Outcome and mechanism claims are limited to attributed reports, matching retained artifacts, repository integration and supported textual sequences; no causal identification is claimed.",
+    "Both and fixed remain unresolved; the specific star-check response has sufficient textual identity for reported uptake."
+  ],
+  "new_criterion_candidates": [
+    "Clarify performer-only changes in literal/pragmatic parse mode.",
+    "Separate observed requested artifact state from independently observed correction operation."
+  ],
+  "source_anchor_check": {
+    "anchors_checked": 77,
+    "mismatches": 0
+  }
+}

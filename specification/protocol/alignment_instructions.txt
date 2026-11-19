@@ -1,0 +1,9 @@
+Align frozen focal propositions using source text, selected spans, grammatical components, explicit qualifier links, and analytical-layer descriptions. Hide classification labels and run identities where feasible. Component choices can reveal representation differences; describe masking as partial.
+
+Use actor or unresolved actor, action or configuration, object, negation and force, material qualifications, attribution, time scope, and governed activity to establish correspondence. Exact string spans are a separate mechanical result. Do not align different analytical layers merely because they use the same sentence.
+
+Assign every focal statement once to a one-to-one group, split/combined group, unmatched group, or unresolved group. Include all source IDs and statement IDs. Give source-grounded reasons for non-exact or unresolved matches. A qualifier stored elsewhere in an annotation counts only if its attachment to the focal proposition is explicit.
+
+Compute field agreement on one-to-one groups and report the denominator and excluded coverage. Separately describe split/combined representations and their preservation or loss of meaning. Do not treat unresolved alignment as agreement, and do not classify every unmatched unit as a substantive error. Freeze mapping before exposing compared labels; preserve all subsequent source-review qualifications without silently changing the original mapping.
+
+Release 0.4.1 clarification: standing_profile.recognition summarizes only expectation_recognition events targeting this_proposition. Generic same-actor responses and broader-principle restatements remain visible at event level and need not change a none summary. Never promote event kind merely to obtain same_actor_only. Preserve source-grounded alternatives. Annotation schema and checker behavior remain 0.4.

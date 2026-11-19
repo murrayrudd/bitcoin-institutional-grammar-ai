@@ -1,0 +1,127 @@
+{
+  "design": "Controlled execution of original gpg.sh with stubbed GPG VALIDSIG output and real before/merged trusted-key files. SHA1 option selects a simpler code path; it is not a security recommendation. No revoked/expired-key branches tested.",
+  "inference": "For the simulated valid signature status, changing membership changes this script gate. This neither proves signature authenticity nor reveals GitHub access permissions or institutional legitimacy.",
+  "runs": [
+    {
+      "pr": 23798,
+      "state": "before",
+      "condition": "changed_key",
+      "key": "152812300785C96444D3334D17565732E08E5E41",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 23798,
+      "state": "before",
+      "condition": "unchanged_key",
+      "key": "133EAC179436F14A5CF1B794860FEB804E669320",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 23798,
+      "state": "before",
+      "condition": "unlisted_key",
+      "key": "0000000000000000000000000000000000000000",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 23798,
+      "state": "merged",
+      "condition": "changed_key",
+      "key": "152812300785C96444D3334D17565732E08E5E41",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 23798,
+      "state": "merged",
+      "condition": "unchanged_key",
+      "key": "133EAC179436F14A5CF1B794860FEB804E669320",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 23798,
+      "state": "merged",
+      "condition": "unlisted_key",
+      "key": "0000000000000000000000000000000000000000",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "before",
+      "condition": "changed_key",
+      "key": "71A3B16735405025D447E8F274810B012346C9A6",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "before",
+      "condition": "unchanged_key",
+      "key": "152812300785C96444D3334D17565732E08E5E41",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "before",
+      "condition": "unlisted_key",
+      "key": "0000000000000000000000000000000000000000",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "merged",
+      "condition": "changed_key",
+      "key": "71A3B16735405025D447E8F274810B012346C9A6",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "merged",
+      "condition": "unchanged_key",
+      "key": "152812300785C96444D3334D17565732E08E5E41",
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    },
+    {
+      "pr": 27054,
+      "state": "merged",
+      "condition": "unlisted_key",
+      "key": "0000000000000000000000000000000000000000",
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "passed": true,
+      "script_sha256": "4aab2a83ddf7581e5861fd2f07b9e8774a4a4eb78ddd3d5370c707162f8cae5e"
+    }
+  ],
+  "all_passed": true
+}

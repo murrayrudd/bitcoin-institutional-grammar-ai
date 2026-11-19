@@ -1,0 +1,4730 @@
+[
+  {
+    "original_run_id": "F02_v04_r2",
+    "adjusted_path": "dataset/adjusted_annotations/F02_v04_r2.json",
+    "original_sha256": "7cc3d959c3bbd57f084dfff239d388d7a0f07e27503dee3cc9fdbf0275245c35",
+    "adjusted_sha256": "1105baec7447b1fa1c0c61cd2d55e3cb305e755bd3a18bbd6c9ef972554f8b1d",
+    "check": {
+      "status": "pass",
+      "screened_entries": 22,
+      "units": 15,
+      "statement_units": 5,
+      "exact_anchor_references": 265,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S05",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S05",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F02_v04_r1",
+    "adjusted_path": "dataset/adjusted_annotations/F02_v04_r1.json",
+    "original_sha256": "a1bf604192d2157045c82edda907756a44a849c6981918f339fec44899b7f189",
+    "adjusted_sha256": "16dda79bc26642d61417c3807fcfe72b9486f61b85bea2da601557eea2c59b2c",
+    "check": {
+      "status": "pass",
+      "screened_entries": 22,
+      "units": 13,
+      "statement_units": 4,
+      "exact_anchor_references": 232,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02_S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02_S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F03_v04_r3",
+    "adjusted_path": "dataset/adjusted_annotations/F03_v04_r3.json",
+    "original_sha256": "407f733c573b0358e78847bf4beac5b0042ec1490eb2a81bf31056fb58d2ec32",
+    "adjusted_sha256": "1027193ccdd1ff2a85d6ea49c1b279ce9db4ff247c8575c0006e3959af136284",
+    "check": {
+      "status": "pass",
+      "screened_entries": 19,
+      "units": 26,
+      "statement_units": 17,
+      "exact_anchor_references": 409,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U08",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U12",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U18",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U19",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U21",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U23",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U24",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U25",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F03_v04_r2",
+    "adjusted_path": "dataset/adjusted_annotations/F03_v04_r2.json",
+    "original_sha256": "1bf0e234c76a7cc9392bffdd62960c7210cdfa4f164b74fede5b86c122943a83",
+    "adjusted_sha256": "078ef2e745f959ea2b97f1a009cee6482e47524413aa416f0a2ce8c214579d22",
+    "check": {
+      "status": "pass",
+      "screened_entries": 19,
+      "units": 28,
+      "statement_units": 17,
+      "exact_anchor_references": 375,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "F03-U01",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U07",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U08",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U10",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U11",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U12",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U14",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U15",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U16",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F03-U17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F03-U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F02_v04_r3",
+    "adjusted_path": "dataset/adjusted_annotations/F02_v04_r3.json",
+    "original_sha256": "0610a01ed7e94256d033f84197f1f5ba45d2650640c3b2ed61b9e851ffadb5ef",
+    "adjusted_sha256": "78ee7139f702bab5edcbb74f4279bc8cd46876f603522bf1b06a70049d85500d",
+    "check": {
+      "status": "pass",
+      "screened_entries": 22,
+      "units": 12,
+      "statement_units": 4,
+      "exact_anchor_references": 278,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02-S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02-S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S02",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02-S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "F02-S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "F02-S04",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F01_v04_r3",
+    "adjusted_path": "dataset/adjusted_annotations/F01_v04_r3.json",
+    "original_sha256": "a183d5dcf47fdbb55b851edd4bc726c74ca134f042b920edd92c9033167580f5",
+    "adjusted_sha256": "4de6231d4be6f4353b5f5b6da7d5fb10721e93ade454e3a68eb00685b66a8ed8",
+    "check": {
+      "status": "pass",
+      "screened_entries": 42,
+      "units": 53,
+      "statement_units": 30,
+      "exact_anchor_references": 661,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "B01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "B01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "B01",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "B02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "B03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "B03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "D01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "D02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "D03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "D03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "C03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "C03",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "C05",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C05",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "C06",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C09",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C11",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C13",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C15",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "C15",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C16",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C16",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C17",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C20",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C20",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C21",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "C21",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C23",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "C23",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "C23",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C27",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C28",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "C30",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "C30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "R01",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "R01",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "R02",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "R03",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "R06",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "R06",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R07",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "R09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "R09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "R09",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F03_v04_r1",
+    "adjusted_path": "dataset/adjusted_annotations/F03_v04_r1.json",
+    "original_sha256": "37376addb8994f159b8f09da0f9ab1a319c313dd352f251efe04f423e6beafb5",
+    "adjusted_sha256": "71cacaa0291628033f45857d0f8e61ce83afa6ca2d4bdf1ed83bbe6962f23e9f",
+    "check": {
+      "status": "pass",
+      "screened_entries": 19,
+      "units": 25,
+      "statement_units": 15,
+      "exact_anchor_references": 368,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U01",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U01",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U07",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U10",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U16",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U18",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U20",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U22",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U23",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U24",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F01_v04_r1",
+    "adjusted_path": "dataset/adjusted_annotations/F01_v04_r1.json",
+    "original_sha256": "1131df7f50fc772e507f5e6a9af611e1fcd9809f0c5a73cf5074e70e37134da8",
+    "adjusted_sha256": "9b7494a86755c032e8ce1a6f569983c7dc345b652e7407692cf2264dedfd8d3f",
+    "check": {
+      "status": "pass",
+      "screened_entries": 42,
+      "units": 60,
+      "statement_units": 34,
+      "exact_anchor_references": 695,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S07",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S08",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "S09",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S09",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S09",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S10",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S10",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S10",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S10",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S10",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S11",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S11",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S12",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S12",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S12",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S14",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S14",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S14",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S15",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S16",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S16",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S16",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S17",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S17",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S18",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S18",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S18",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S19",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S19",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S19",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S20",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S20",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S20",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S21",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S22",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S23",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S24",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S25",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S26",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "S26",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "S26",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S26",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S26",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S26",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S27",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S27",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S28",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S28",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S29",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S29",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S29",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S30",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S30",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S30",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S31",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S32",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "S32",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "recognition_audit",
+          "unit_id": "S32",
+          "message": "Verify recognition of an expectation, distinct attribution, and independent episode identity"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S32",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "S32",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S33",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "S34",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S34",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S34",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "S34",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "S34",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "recognition_audit",
+          "unit_id": "S34",
+          "message": "Verify recognition of an expectation, distinct attribution, and independent episode identity"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  },
+  {
+    "original_run_id": "F01_v04_r2",
+    "adjusted_path": "dataset/adjusted_annotations/F01_v04_r2.json",
+    "original_sha256": "1d51b94b39e9b49e5ccad50e33f5d5d15c47806e9f6cd9c70afa785c9a7ca3d4",
+    "adjusted_sha256": "90ca728bfa0a7b35c1f91ae0a431e1d651a82ef11846e77177fcc8ee208fd689",
+    "check": {
+      "status": "pass",
+      "screened_entries": 42,
+      "units": 54,
+      "statement_units": 33,
+      "exact_anchor_references": 684,
+      "errors": [],
+      "review_flags": [
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U01",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U01",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "U01",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "U01",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U02",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U02",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U03",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U03",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U04",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U04",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U05",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U05",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U06",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U06",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U07",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U07",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U08",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U08",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U08",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U08",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U09",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U09",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "U09",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U09",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U09",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "U09",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U10",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U10",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U10",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U11",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U11",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U12",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U12",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U13",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U13",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U14",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U14",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U15",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U15",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U16",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U16",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U17",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U17",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U18",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U18",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U19",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U19",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U19",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U19",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U20",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U20",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U21",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U21",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U22",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U22",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U23",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U23",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "U23",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U24",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U24",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U25",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U25",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "U25",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U25",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "recognition_audit",
+          "unit_id": "U25",
+          "message": "Verify recognition of an expectation, distinct attribution, and independent episode identity"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "U25",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U26",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U26",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U26",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U27",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U27",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U27",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U28",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U28",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U29",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U29",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U29",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U29",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "U29",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U30",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U30",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U31",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U31",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "application_audit",
+          "unit_id": "U31",
+          "message": "Verify the target and whether the record reports or demonstrates application; an announced consequence is not an executed sanction"
+        },
+        {
+          "code": "challenge_audit",
+          "unit_id": "U31",
+          "message": "Verify the common proposition and the exact content, authority, premise, or application being challenged"
+        },
+        {
+          "code": "higher_level_audit",
+          "unit_id": "U31",
+          "message": "Verify the governed activity and institutional arrangement independently of the utterance location"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U32",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U32",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "qualifier_audit",
+          "unit_id": "U33",
+          "message": "Check that all material conditions, negation, attribution, and alternatives are listed or encoded"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "predicate_audit",
+          "unit_id": "U33",
+          "message": "Verify the cited occurrence performs this role in the declared governing clause"
+        },
+        {
+          "code": "document_scope",
+          "unit_id": "U33",
+          "message": "Verify exact proposition coverage and that the source actually supplies authoritative guidance"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "challenge_object",
+          "unit_id": null,
+          "message": "Verify both endpoints concern the same proposition, premise, or application"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        },
+        {
+          "code": "summary_audit",
+          "unit_id": null,
+          "message": "Verify claim_parts cover every material clause; mechanical inclusion does not establish entailment"
+        }
+      ],
+      "semantic_validity": "Not certified; audit flags require recorded source review"
+    }
+  }
+]

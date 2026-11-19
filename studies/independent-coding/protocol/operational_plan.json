@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-11-07T18:39:00.968390+00:00",
+  "parent_protocol_id": "IG2_0.4_prospective_overlap_v1",
+  "canonical_identifier_format": "bitcoin/bitcoin#<decimal PR number>",
+  "text_size": "Sum of Python Unicode lengths of complete body plus all comments, reviews, and review_comments bodies, including bot and quoted text, excluding title and serialized metadata. No text normalization.",
+  "strata_order": [
+    "procedure_title",
+    "merged",
+    "closed_unmerged"
+  ],
+  "procedure_assignment": "Eligible title pattern first regardless of outcome; then remaining merged; then remaining closed with merged false. No year, human-entry, file-size, duration, or claim-content filters.",
+  "eligibility": "1000 <= source_text_characters <= 12000 and absent from conservative exposure inventory. Unique corpus record IDs.",
+  "supplements": "Complete retained corpus discussion; serialized corpus outcome metadata. Before dispatch, retrieve selected PR outcome metadata and relevant patches, plus directly referenced guidance pinned to an observed revision where available. No new discussion comments from live sources; no invented missing context. Log unavailable sources.",
+  "coding_scope": "Every original entry is focal, including empty entries. Supplemental files and metadata supply context and do not require exhaustive extraction, but every entry must be screened.",
+  "conditions": [
+    "v03",
+    "v04"
+  ],
+  "schedule": [
+    {
+      "case": "F01",
+      "order": [
+        "F01_v03_r1",
+        "F01_v04_r1",
+        "F01_v03_r2",
+        "F01_v04_r2",
+        "F01_v03_r3",
+        "F01_v04_r3"
+      ]
+    },
+    {
+      "case": "F02",
+      "order": [
+        "F02_v04_r1",
+        "F02_v03_r1",
+        "F02_v04_r2",
+        "F02_v03_r2",
+        "F02_v04_r3",
+        "F02_v03_r3"
+      ]
+    },
+    {
+      "case": "F03",
+      "order": [
+        "F03_v03_r1",
+        "F03_v04_r1",
+        "F03_v03_r2",
+        "F03_v04_r2",
+        "F03_v03_r3",
+        "F03_v04_r3"
+      ]
+    }
+  ],
+  "dispatch": "Fresh context for each run; no parent history; inherited primary model and reasoning configuration, no override. Unknown provider snapshot/seed/sampling/tokens/cost null.",
+  "masking": "Alignment sees shuffled run aliases, no version labels or institution/level/force classification fields. Source reviewers see run aliases and full records without condition names or aggregate agreement. Schema structure may reveal the condition; masking is limited, not guaranteed blinding.",
+  "source_review": "Two fresh contexts review all final runs and source entries. Coordinator reconciles source-supported findings, preserves unresolved alternatives, and never overwrites raw coding.",
+  "scoring": "Count distinct source-supported error groups by proposition/error issue/case. A group may affect multiple runs and conditions; report run incidences separately. Primary effects: interpretation-changing, evidence-basis, coverage/scope. Secondary: convention-only, defensible-alternative, unresolved. No accuracy denominators or statistical inference.",
+  "agreement": "Pre-reconciliation one-to-one semantic matches within each condition and all three coders. Split/combined and unmatched groups separate. Report each field with explicit denominator. Exact-span comparison also reported. No scalar/profile standing percentage crosswalk.",
+  "frozen_criteria": "Use protocol/protocol.json and the frozen specification. A newly discovered criterion problem is reported, not changed during the evaluation."
+}

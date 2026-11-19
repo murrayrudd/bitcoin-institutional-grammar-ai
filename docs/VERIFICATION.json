@@ -1,0 +1,278 @@
+{
+  "status": "pass",
+  "package_version": "1.0.0",
+  "python_version": "3.12.14",
+  "jsonschema_version": "4.26.0",
+  "commands_passed": 23,
+  "outputs_compared": 49,
+  "common_proposition_agreement": {
+    "denominator": 42,
+    "field_count": 6,
+    "all_three_all_six_fields": {
+      "v03": 24,
+      "v04": 21
+    }
+  },
+  "commands": [
+    {
+      "directory": ".",
+      "command": [
+        "python",
+        "scripts/verify_package.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "631ddc3c892202b1144274964a6d9f68f6f2adbd2cee4ad82594994cfd6daf8f"
+    },
+    {
+      "directory": "specification",
+      "command": [
+        "python",
+        "tools/test_specification.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "fd2f680dd3ed46687de40f459114e1d21fa1e612540572dfea0d9383309f7bc1"
+    },
+    {
+      "directory": "specification",
+      "command": [
+        "python",
+        "tools/test_release_correction.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "8a6a9f967fb18499f5e7fe62fb2fc577ddbd052e41a19f90e222853783ff9b49"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/assemble_sources.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "c294d59f0cd38f10cd235e117d3febcbed672a385ae7971420155c1f7e37d271"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/build_analysis.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "5084acaf6966297ee639993d7be7cf2619299dfbe0aad91134577db98d151922"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/build_focal_ig.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "6ac481afc375b8539a3dfb5b322ec5494a1eadc4975260d77aeda23c40406fc1"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/build_diagnostics.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "3e6aafce92315bc3ffafc30a0f9ab2aaafdddcab9d3da099c1d7a8fb042b2127"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/key_gate_experiment.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "8507a28a07e8d9b0872250aca42b7d6face47fb601a4c9bfa1827feb30a91652"
+    },
+    {
+      "directory": "studies/baseline",
+      "command": [
+        "python",
+        "tools/validate_analysis.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "3d75e8fd26ce194a8ab0a05066fd515d5c534388616faa39e1df37b10b6281dd"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/verify_package.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "938f471eba605a5f497cb8fa942c0a74c7af68665faaf76564f0164374581086"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/verify_final_evaluation.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "a36cf2b00426c13b4416be7f3ef0875887ab913425f2c80024acb80e550ff120"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/evaluate.py",
+        "verify"
+      ],
+      "returncode": 0,
+      "output_sha256": "2c44e870ba0561718a3ce200a50b735106309f575cbf642f7334541cbf939882"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/metrics.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "912cd9b971216361a526597b822a718440012e8bfec90e26ab9a16e3b01b419d"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/supplementary_alpha.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "4fbe36d9ba1f5dc67343b702563da5e04bec8fea3ed340904fc715e51abe6d65"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/verify_alpha.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "0913bf0d7e8eac5fb13d8dc1a5b6e8f785b73c3e552fd16f826d3aa160e557be"
+    },
+    {
+      "directory": "studies/independent-coding",
+      "command": [
+        "python",
+        "tools/run_descriptives.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "94e782e186834fb46bce73f186c360cb12125d7c4ac6d92509315820dba32241"
+    },
+    {
+      "directory": "studies/collaborative-review",
+      "command": [
+        "python",
+        "tools/verify_reconciliation.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "4abb4bb5094adf192d0a4b36774d0967cec41bf35fc35187a15f3288557c9b5d"
+    },
+    {
+      "directory": "studies/collaborative-review",
+      "command": [
+        "python",
+        "tools/build_dataset.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "994b8ccf4d697a44f4df651e693ad7422b516c433c8e0569ebd445ae7a1d3fea"
+    },
+    {
+      "directory": "studies/source-review",
+      "command": [
+        "python",
+        "tools/verify_review.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "f9d63906572910eaa7b362765e0a71bef99fa6b6fb63c978650c1e161503d9bc"
+    },
+    {
+      "directory": "studies/overlap",
+      "command": [
+        "python",
+        "tools/compare_annotations.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "01ed2976c5439070d3ee3ad08f60778372ca139934ac0e4552693e4db66a58cf"
+    },
+    {
+      "directory": "studies/core-knots",
+      "command": [
+        "python",
+        "build_analysis.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "c1842be7d8feea9eae095c24b142c7f7d2043dca21bd2977a86de0c2b29a8816"
+    },
+    {
+      "directory": "studies/core-knots",
+      "command": [
+        "python",
+        "verify_model.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "c0dfb36de7a098594ef7f98a266a39563f070237dc6020912b81e09611a1623d"
+    },
+    {
+      "directory": "studies/followup",
+      "command": [
+        "python",
+        "build_ledger.py"
+      ],
+      "returncode": 0,
+      "output_sha256": "dd03491d96dbca62ff811e501d3fbdb3e24e09bfd0a1e63efc374bc1ecc0ff5e"
+    }
+  ],
+  "compared_outputs": [
+    "specification/release/regression_results.json",
+    "specification/release/compatibility_results.json",
+    "studies/baseline/analysis/claim_ledger.json",
+    "studies/baseline/analysis/claim_index.csv",
+    "studies/baseline/analysis/focal_ig_records.json",
+    "studies/baseline/analysis/case_mechanisms.json",
+    "studies/baseline/analysis/narrative_comparison.json",
+    "studies/baseline/analysis/evidence_matrix.json",
+    "studies/baseline/analysis/case_links.json",
+    "studies/baseline/analysis/source_integrity.json",
+    "studies/baseline/analysis/key_gate_experiment.json",
+    "studies/baseline/analysis/timing_checks.json",
+    "studies/independent-coding/analysis/overlap_metrics.json",
+    "studies/independent-coding/analysis/supplementary_alpha.json",
+    "studies/independent-coding/analysis/run_descriptives.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F03_v04_r2.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F02_v04_r3.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F01_v04_r2.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F02_v04_r1.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F03_v04_r3.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F03_v04_r1.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F01_v04_r1.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F02_v04_r2.json",
+    "studies/collaborative-review/dataset/adjusted_annotations/F01_v04_r3.json",
+    "studies/collaborative-review/dataset/reference_only_v03/F03_v03_r1.json",
+    "studies/collaborative-review/dataset/reference_only_v03/F03_v03_r3.json",
+    "studies/collaborative-review/dataset/packets/F03.json",
+    "studies/collaborative-review/dataset/packets/F01.json",
+    "studies/collaborative-review/dataset/packets/F02.json",
+    "studies/collaborative-review/analysis/metadata_adapter.json",
+    "studies/collaborative-review/analysis/change_log.json",
+    "studies/overlap/analysis/overlap_metrics.json",
+    "studies/core-knots/analysis/state_replay.json",
+    "studies/core-knots/analysis/proposal_commits_inherited.json",
+    "studies/core-knots/analysis/claim_ledger.json",
+    "studies/core-knots/analysis/inherited_units_used.json",
+    "studies/core-knots/analysis/provenance.json",
+    "studies/core-knots/analysis/disposition_sources.json",
+    "studies/core-knots/analysis/evidence_anchors_inherited.json",
+    "studies/core-knots/analysis/podcast_passages_used.json",
+    "studies/core-knots/analysis/case_comparison.json",
+    "studies/core-knots/analysis/comparison_tests.json",
+    "studies/core-knots/analysis/institution_action_links.json",
+    "studies/core-knots/analysis/policy_patch_sources.json",
+    "studies/core-knots/analysis/github_sources_used.json",
+    "studies/core-knots/analysis/disposition_events.json",
+    "studies/core-knots/analysis/web_cards_inherited.json",
+    "studies/core-knots/analysis/comparison_protocol.json",
+    "studies/followup/claim_ledger.json"
+  ],
+  "scope": "Frozen-file integrity and deterministic reproduction; no new AI coding or full-parent-corpus selection reconstruction."
+}

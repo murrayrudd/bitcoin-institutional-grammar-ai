@@ -1,0 +1,193 @@
+{
+  "episode_id": "E01",
+  "pr_number": 8771,
+  "url": "https://github.com/bitcoin/bitcoin/pull/8771",
+  "title": "CONTRIBUTING: Mention not to open several pulls",
+  "created_at": "2016-09-21T09:31:42+00:00",
+  "closed_at": "2016-09-25T11:10:29+00:00",
+  "merged_at": "2016-09-25T11:10:29+00:00",
+  "recorded_merged": true,
+  "recorded_merger": "laanwj",
+  "entries": [
+    {
+      "source_id": "E01:body",
+      "kind": "body",
+      "author": "luke-jr",
+      "timestamp": "2016-09-21T09:31:42+00:00",
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:comments:0",
+      "kind": "comments",
+      "author": "gmaxwell",
+      "timestamp": "2016-09-22T18:38:48+00:00",
+      "path": null,
+      "text": "Seems reasonable, though the minor \"Fix 0.13 release notes attribution mistake\" commit seems unrelated. \n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:0",
+      "kind": "reviews",
+      "author": "luke-jr",
+      "timestamp": "2016-09-21T09:32:31+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:1",
+      "kind": "reviews",
+      "author": "laanwj",
+      "timestamp": "2016-09-21T09:34:22+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:2",
+      "kind": "reviews",
+      "author": "maflcko",
+      "timestamp": "2016-09-21T09:46:48+00:00",
+      "path": null,
+      "text": "Addressed feedback\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:3",
+      "kind": "reviews",
+      "author": "luke-jr",
+      "timestamp": "2016-09-21T10:03:22+00:00",
+      "path": null,
+      "text": "ACK\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:4",
+      "kind": "reviews",
+      "author": "laanwj",
+      "timestamp": "2016-09-21T12:07:28+00:00",
+      "path": null,
+      "text": "",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:reviews:5",
+      "kind": "reviews",
+      "author": "jonasschnelli",
+      "timestamp": "2016-09-21T12:57:32+00:00",
+      "path": null,
+      "text": "ACK\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:review_comments:0",
+      "kind": "review_comments",
+      "author": "luke-jr",
+      "timestamp": "2016-09-21T09:32:00+00:00",
+      "path": "CONTRIBUTING.md",
+      "text": "Not sure this is something we want to encourage...\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:review_comments:1",
+      "kind": "review_comments",
+      "author": "luke-jr",
+      "timestamp": "2016-09-21T09:32:18+00:00",
+      "path": "CONTRIBUTING.md",
+      "text": "\"same change\"?\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:review_comments:2",
+      "kind": "review_comments",
+      "author": "laanwj",
+      "timestamp": "2016-09-21T09:34:14+00:00",
+      "path": "CONTRIBUTING.md",
+      "text": "Well, not in general, but we want to encourage it for people that don't know how to use git. I'd prefer people to learn how to do it themselves, of course, but personally tutoring everyone how to use git (especially those that use the web interface :( ) is a lot of work.\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:review_comments:3",
+      "kind": "review_comments",
+      "author": "laanwj",
+      "timestamp": "2016-09-21T12:07:28+00:00",
+      "path": "CONTRIBUTING.md",
+      "text": "should this be \"several pull requests\"?\n",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    }
+  ],
+  "supplemental_entries": [
+    {
+      "source_id": "E01:outcome",
+      "text": "{\"closed_at\": \"2016-09-25T11:10:29+00:00\", \"created_at\": \"2016-09-21T09:31:42+00:00\", \"merged_at\": \"2016-09-25T11:10:29+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"laanwj\"}",
+      "layer": "T",
+      "source_type": "frozen_metadata",
+      "url": "https://github.com/bitcoin/bitcoin/pull/8771"
+    },
+    {
+      "source_id": "E01:doc_before",
+      "text": "Contributing to Bitcoin Core\n============================\n\nThe Bitcoin Core project operates an open contributor model where anyone is\nwelcome to contribute towards development in the form of peer review, testing\nand patches. This document explains the practical process and guidelines for\ncontributing.\n\nFirstly in terms of structure, there is no particular concept of \"Core\ndevelopers\" in the sense of privileged people. Open source often naturally\nrevolves around meritocracy where longer term contributors gain more trust from\nthe developer community. However, some hierarchy is necessary for practical\npurposes. As such there are repository \"maintainers\" who are responsible for\nmerging pull requests as well as a \"lead maintainer\" who is responsible for the\nrelease cycle, overall merging, moderation and appointment of maintainers.\n\n\nContributor Workflow\n--------------------\n\nThe codebase is maintained using the \"contributor workflow\" where everyone\nwithout exception contributes patch proposals using \"pull requests\". This\nfacilitates social contribution, easy testing and peer review.\n\nTo contribute a patch, the workflow is as follows:\n\n  - Fork repository\n  - Create topic branch\n  - Commit patches\n\nThe project coding conventions in the [developer notes](doc/developer-notes.md)\nmust be adhered to.\n\nIn general [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)\nand diffs should be easy to read. For this reason do not mix any formatting\nfixes or code moves with actual code changes.\n\nCommit messages should be verbose by default consisting of a short subject line\n(50 chars max), a blank line and detailed explanatory text as separate\nparagraph(s); unless the title alone is self-explanatory (like \"Corrected typo\nin main.cpp\") then a single title line is sufficient. Commit messages should be\nhelpful to people reading your code in the future, so explain the reasoning for\nyour decisions. Further explanation [here](http://chris.beams.io/posts/git-commit/).\n\nIf a particular commit references another issue, please add the reference, for\nexample `refs #1234`, or `fixes #4321`. Using the `fixes` or `closes` keywords\nwill cause the corresponding issue to be closed when the pull request is merged.\n\nPlease refer to the [Git manual](https://git-scm.com/doc) for more information\nabout Git.\n\n  - Push changes to your fork\n  - Create pull request\n\nThe title of the pull request should be prefixed by the component or area that\nthe pull request affects. Examples:\n\n    Consensus: Add new opcode for BIP-XXXX OP_CHECKAWESOMESIG\n    Net: Automatically create hidden service, listen on Tor\n    Qt: Add feed bump button\n    Trivial: Fix typo in main.cpp\n\nIf a pull request is specifically not to be considered for merging (yet) please\nprefix the title with [WIP] or use [Tasks Lists](https://help.github.com/articles/basic-writing-and-formatting-syntax/#task-lists)\nin the body of the pull request to indicate tasks are pending.\n\nThe body of the pull request should contain enough description about what the\npatch does together with any justification/reasoning. You should include\nreferences to any discussions (for example other tickets or mailing list\ndiscussions).\n\nAt this stage one should expect comments and review from other contributors. You\ncan add more commits to your pull request by committing them locally and pushing\nto your fork until you have satisfied all feedback.\n\nSquashing Commits\n---------------------------\nIf your pull request is accepted for merging, you may be asked by a maintainer\nto squash and or [rebase](https://git-scm.com/docs/git-rebase) your commits\nbefore it will be merged. The basic squashing workflow is shown below.\n\n    git checkout your_branch_name\n    git rebase -i HEAD~n\n    # n is normally the number of commits in the pull\n    # set commits from 'pick' to 'squash', save and quit\n    # on the next screen, edit/refine commit messages\n    # save and quit\n    git push -f # (force push to GitHub)\n\nThe length of time required for peer review is unpredictable and will vary from\npull request to pull request.\n\n\nPull Request Philosophy\n-----------------------\n\nPatchsets should always be focused. For example, a pull request could add a\nfeature, fix a bug, or refactor code; but not a mixture. Please also avoid super\npull requests which attempt to do too much, are overly large, or overly complex\nas this makes review difficult.\n\n\n###Features\n\nWhen adding a new feature, thought must be given to the long term technical debt\nand maintenance that feature may require after inclusion. Before proposing a new\nfeature that will require maintenance, please consider if you are willing to\nmaintain it (including bug fixing). If features get orphaned with no maintainer\nin the future, they may be removed by the Repository Maintainer.\n\n\n###Refactoring\n\nRefactoring is a necessary part of any software project's evolution. The\nfollowing guidelines cover refactoring pull requests for the project.\n\nThere are three categories of refactoring, code only moves, code style fixes,\ncode refactoring. In general refactoring pull requests should not mix these\nthree kinds of activity in order to make refactoring pull requests easy to\nreview and uncontroversial. In all cases, refactoring PRs must not change the\nbehaviour of code within the pull request (bugs must be preserved as is).\n\nProject maintainers aim for a quick turnaround on refactoring pull requests, so\nwhere possible keep them short, uncomplex and easy to verify.\n\n\n\"Decision Making\" Process\n-------------------------\n\nThe following applies to code changes to the Bitcoin Core project (and related\nprojects such as libsecp256k1), and is not to be confused with overall Bitcoin\nNetwork Protocol consensus changes.\n\nWhether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers and ultimately the project lead.\n\nMaintainers will take into consideration if a patch is in line with the general\nprinciples of the project; meets the minimum standards for inclusion; and will\njudge the general consensus of contributors.\n\nIn general, all pull requests must:\n\n  - have a clear use case, fix a demonstrable bug or serve the greater good of\n    the project (for example refactoring for modularisation);\n  - be well peer reviewed;\n  - have unit tests and functional tests where appropriate;\n  - follow code style guidelines;\n  - not break the existing test suite;\n  - where bugs are fixed, where possible, there should be unit tests\n    demonstrating the bug and also proving the fix. This helps prevent regression.\n\nPatches that change Bitcoin consensus rules are considerably more involved than\nnormal because they affect the entire ecosystem and so must be preceded by\nextensive mailing list discussions and have a numbered BIP. While each case will\nbe different, one should be prepared to expend more time and effort than for\nother kinds of patches because of increased peer review and consensus building\nrequirements.\n\n\n###Peer Review\n\nAnyone may participate in peer review which is expressed by comments in the pull\nrequest. Typically reviewers will review the code for obvious errors, as well as\ntest out the patch set and opine on the technical merits of the patch. Project\nmaintainers take into account the peer review when determining if there is\nconsensus to merge a pull request (remember that discussions may have been\nspread out over github, mailing list and IRC discussions). The following\nlanguage is used within pull-request comments:\n\n  - ACK means \"I have tested the code and I agree it should be merged\";\n  - NACK means \"I disagree this should be merged\", and must be accompanied by\n    sound technical justification. NACKs without accompanying reasoning may be disregarded;\n  - utACK means \"I have not tested the code, but I have reviewed it and it looks\n    OK, I agree it can be merged\";\n  - Concept ACK means \"I agree in the general principle of this pull request\";\n  - Nit refers to trivial, often non-blocking issues.\n\nReviewers should include the commit hash which they reviewed in their comments.\n\nProject maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and also may weight based on meritocracy: Those\nthat have demonstrated a deeper commitment and understanding towards the project\n(over time) or have clear domain expertise may naturally have more weight, as\none would expect in all walks of life.\n\nWhere a patch set affects consensus critical code, the bar will be set much\nhigher in terms of discussion and peer review requirements, keeping in mind that\nmistakes could be very costly to the wider community. This includes refactoring\nof consensus critical code.\n\nWhere a patch set proposes to change the Bitcoin consensus, it must have been\ndiscussed extensively on the mailing list and IRC, be accompanied by a widely\ndiscussed BIP and have a generally widely perceived technical consensus of being\na worthwhile change based on the judgement of the maintainers.\n\n\nRelease Policy\n--------------\n\nThe project leader is the release manager for each Bitcoin Core release.\n",
+      "layer": "D",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/2b514aa2eae61839ad162b2f6e5ba69ef96c5c97/CONTRIBUTING.md",
+      "git_blob_sha": "62ebc7917aad4b302003c2a6c82b42cc4f54fe82",
+      "raw_file": "sources/supplements/doc_8771_before.json"
+    },
+    {
+      "source_id": "E01:doc_head",
+      "text": "Contributing to Bitcoin Core\n============================\n\nThe Bitcoin Core project operates an open contributor model where anyone is\nwelcome to contribute towards development in the form of peer review, testing\nand patches. This document explains the practical process and guidelines for\ncontributing.\n\nFirstly in terms of structure, there is no particular concept of \"Core\ndevelopers\" in the sense of privileged people. Open source often naturally\nrevolves around meritocracy where longer term contributors gain more trust from\nthe developer community. However, some hierarchy is necessary for practical\npurposes. As such there are repository \"maintainers\" who are responsible for\nmerging pull requests as well as a \"lead maintainer\" who is responsible for the\nrelease cycle, overall merging, moderation and appointment of maintainers.\n\n\nContributor Workflow\n--------------------\n\nThe codebase is maintained using the \"contributor workflow\" where everyone\nwithout exception contributes patch proposals using \"pull requests\". This\nfacilitates social contribution, easy testing and peer review.\n\nTo contribute a patch, the workflow is as follows:\n\n  - Fork repository\n  - Create topic branch\n  - Commit patches\n\nThe project coding conventions in the [developer notes](doc/developer-notes.md)\nmust be adhered to.\n\nIn general [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)\nand diffs should be easy to read. For this reason do not mix any formatting\nfixes or code moves with actual code changes.\n\nCommit messages should be verbose by default consisting of a short subject line\n(50 chars max), a blank line and detailed explanatory text as separate\nparagraph(s); unless the title alone is self-explanatory (like \"Corrected typo\nin main.cpp\") then a single title line is sufficient. Commit messages should be\nhelpful to people reading your code in the future, so explain the reasoning for\nyour decisions. Further explanation [here](http://chris.beams.io/posts/git-commit/).\n\nIf a particular commit references another issue, please add the reference, for\nexample `refs #1234`, or `fixes #4321`. Using the `fixes` or `closes` keywords\nwill cause the corresponding issue to be closed when the pull request is merged.\n\nPlease refer to the [Git manual](https://git-scm.com/doc) for more information\nabout Git.\n\n  - Push changes to your fork\n  - Create pull request\n\nThe title of the pull request should be prefixed by the component or area that\nthe pull request affects. Examples:\n\n    Consensus: Add new opcode for BIP-XXXX OP_CHECKAWESOMESIG\n    Net: Automatically create hidden service, listen on Tor\n    Qt: Add feed bump button\n    Trivial: Fix typo in main.cpp\n\nIf a pull request is specifically not to be considered for merging (yet) please\nprefix the title with [WIP] or use [Tasks Lists](https://help.github.com/articles/basic-writing-and-formatting-syntax/#task-lists)\nin the body of the pull request to indicate tasks are pending.\n\nThe body of the pull request should contain enough description about what the\npatch does together with any justification/reasoning. You should include\nreferences to any discussions (for example other tickets or mailing list\ndiscussions).\n\nAt this stage one should expect comments and review from other contributors. You\ncan add more commits to your pull request by committing them locally and pushing\nto your fork until you have satisfied all feedback.\n\nSquashing Commits\n---------------------------\nIf your pull request is accepted for merging, you may be asked by a maintainer\nto squash and or [rebase](https://git-scm.com/docs/git-rebase) your commits\nbefore it will be merged. The basic squashing workflow is shown below.\n\n    git checkout your_branch_name\n    git rebase -i HEAD~n\n    # n is normally the number of commits in the pull\n    # set commits from 'pick' to 'squash', save and quit\n    # on the next screen, edit/refine commit messages\n    # save and quit\n    git push -f # (force push to GitHub)\n\nIf you have problems with squashing (or other workflows with `git`), you can\nalternatively enable \"Allow edits from maintainers\" in the right GitHub\nsidebar and ask for help in the pull request.\n\nPlease refrain from creating several pull requests for the same change.\nUse the pull request that is already open (or was created earlier) to amend\nchanges. This preserves the discussion and review that happened earlier for\nthe respective change set.\n\nThe length of time required for peer review is unpredictable and will vary from\npull request to pull request.\n\n\nPull Request Philosophy\n-----------------------\n\nPatchsets should always be focused. For example, a pull request could add a\nfeature, fix a bug, or refactor code; but not a mixture. Please also avoid super\npull requests which attempt to do too much, are overly large, or overly complex\nas this makes review difficult.\n\n\n###Features\n\nWhen adding a new feature, thought must be given to the long term technical debt\nand maintenance that feature may require after inclusion. Before proposing a new\nfeature that will require maintenance, please consider if you are willing to\nmaintain it (including bug fixing). If features get orphaned with no maintainer\nin the future, they may be removed by the Repository Maintainer.\n\n\n###Refactoring\n\nRefactoring is a necessary part of any software project's evolution. The\nfollowing guidelines cover refactoring pull requests for the project.\n\nThere are three categories of refactoring, code only moves, code style fixes,\ncode refactoring. In general refactoring pull requests should not mix these\nthree kinds of activity in order to make refactoring pull requests easy to\nreview and uncontroversial. In all cases, refactoring PRs must not change the\nbehaviour of code within the pull request (bugs must be preserved as is).\n\nProject maintainers aim for a quick turnaround on refactoring pull requests, so\nwhere possible keep them short, uncomplex and easy to verify.\n\n\n\"Decision Making\" Process\n-------------------------\n\nThe following applies to code changes to the Bitcoin Core project (and related\nprojects such as libsecp256k1), and is not to be confused with overall Bitcoin\nNetwork Protocol consensus changes.\n\nWhether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers and ultimately the project lead.\n\nMaintainers will take into consideration if a patch is in line with the general\nprinciples of the project; meets the minimum standards for inclusion; and will\njudge the general consensus of contributors.\n\nIn general, all pull requests must:\n\n  - have a clear use case, fix a demonstrable bug or serve the greater good of\n    the project (for example refactoring for modularisation);\n  - be well peer reviewed;\n  - have unit tests and functional tests where appropriate;\n  - follow code style guidelines;\n  - not break the existing test suite;\n  - where bugs are fixed, where possible, there should be unit tests\n    demonstrating the bug and also proving the fix. This helps prevent regression.\n\nPatches that change Bitcoin consensus rules are considerably more involved than\nnormal because they affect the entire ecosystem and so must be preceded by\nextensive mailing list discussions and have a numbered BIP. While each case will\nbe different, one should be prepared to expend more time and effort than for\nother kinds of patches because of increased peer review and consensus building\nrequirements.\n\n\n###Peer Review\n\nAnyone may participate in peer review which is expressed by comments in the pull\nrequest. Typically reviewers will review the code for obvious errors, as well as\ntest out the patch set and opine on the technical merits of the patch. Project\nmaintainers take into account the peer review when determining if there is\nconsensus to merge a pull request (remember that discussions may have been\nspread out over github, mailing list and IRC discussions). The following\nlanguage is used within pull-request comments:\n\n  - ACK means \"I have tested the code and I agree it should be merged\";\n  - NACK means \"I disagree this should be merged\", and must be accompanied by\n    sound technical justification. NACKs without accompanying reasoning may be disregarded;\n  - utACK means \"I have not tested the code, but I have reviewed it and it looks\n    OK, I agree it can be merged\";\n  - Concept ACK means \"I agree in the general principle of this pull request\";\n  - Nit refers to trivial, often non-blocking issues.\n\nReviewers should include the commit hash which they reviewed in their comments.\n\nProject maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and also may weight based on meritocracy: Those\nthat have demonstrated a deeper commitment and understanding towards the project\n(over time) or have clear domain expertise may naturally have more weight, as\none would expect in all walks of life.\n\nWhere a patch set affects consensus critical code, the bar will be set much\nhigher in terms of discussion and peer review requirements, keeping in mind that\nmistakes could be very costly to the wider community. This includes refactoring\nof consensus critical code.\n\nWhere a patch set proposes to change the Bitcoin consensus, it must have been\ndiscussed extensively on the mailing list and IRC, be accompanied by a widely\ndiscussed BIP and have a generally widely perceived technical consensus of being\na worthwhile change based on the judgement of the maintainers.\n\n\nRelease Policy\n--------------\n\nThe project leader is the release manager for each Bitcoin Core release.\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/faa91bc335da1c0f20b7a3375b1cfcfdc7b10af5/CONTRIBUTING.md",
+      "git_blob_sha": "7e9b4f10df1eaf59b7a2b48acc56b4a79addd0b0",
+      "raw_file": "sources/supplements/doc_8771_head.json"
+    },
+    {
+      "source_id": "E01:merge_message",
+      "text": "CONTRIBUTING: Mention not to open several pulls",
+      "layer": "I",
+      "source_type": "git_commit",
+      "url": "https://github.com/bitcoin/bitcoin/commit/faa91bc335da1c0f20b7a3375b1cfcfdc7b10af5",
+      "commit_sha": "faa91bc335da1c0f20b7a3375b1cfcfdc7b10af5"
+    },
+    {
+      "source_id": "E01:merge_diff",
+      "text": "@@ -87,6 +87,15 @@ before it will be merged. The basic squashing workflow is shown below.\n     # save and quit\n     git push -f # (force push to GitHub)\n \n+If you have problems with squashing (or other workflows with `git`), you can\n+alternatively enable \"Allow edits from maintainers\" in the right GitHub\n+sidebar and ask for help in the pull request.\n+\n+Please refrain from creating several pull requests for the same change.\n+Use the pull request that is already open (or was created earlier) to amend\n+changes. This preserves the discussion and review that happened earlier for\n+the respective change set.\n+\n The length of time required for peer review is unpredictable and will vary from\n pull request to pull request.\n ",
+      "layer": "I",
+      "source_type": "git_patch",
+      "url": "https://github.com/bitcoin/bitcoin/commit/faa91bc335da1c0f20b7a3375b1cfcfdc7b10af5",
+      "commit_sha": "faa91bc335da1c0f20b7a3375b1cfcfdc7b10af5"
+    }
+  ],
+  "limits": [
+    "Public corpus may omit patch histories, comment edits, thread links, and off-platform activity.",
+    "No model accuracy, superiority, cost or scalability estimates.",
+    "Recorded merges do not establish recognition of each provision or network adoption.",
+    "Source sufficiency remains revisable; richer evidence is not a gold standard."
+  ]
+}

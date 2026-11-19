@@ -1,0 +1,106 @@
+[
+  {
+    "claim_id": "E06-C1",
+    "episode_id": "E06",
+    "claim": "The author locally distinguishes a hash-specific code ACK from a concept ACK.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E06:comments:5",
+        "span": {
+          "start": 63,
+          "end": 171,
+          "quote": "If you agree with the changes, please add the latest hash after your ack, otherwise it's just a concept ack."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "This combines a request and a classification claim; it does not make the author a unilateral rule maker."
+  },
+  {
+    "claim_id": "E06-C2",
+    "episode_id": "E06",
+    "claim": "The stored bot table classifies purpleKarrot as stale and laanwj as ACK.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 517,
+          "end": 533,
+          "quote": "| ACK | [laanwj]"
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Mutable table contents have no reliable event time from their original creation timestamp."
+  },
+  {
+    "claim_id": "E06-C3",
+    "episode_id": "E06",
+    "claim": "The merge message credits laanwj for the top commit and does not list purpleKarrot there.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E06:merge_message",
+        "span": {
+          "start": 1940,
+          "end": 1960,
+          "quote": "ACKs for top commit:"
+        }
+      },
+      {
+        "source_id": "E06:merge_message",
+        "span": {
+          "start": 1963,
+          "end": 1970,
+          "quote": "laanwj:"
+        }
+      },
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Absence was checked against the full commit message. Attribution does not measure all influence on the contribution."
+  },
+  {
+    "claim_id": "E06-C4",
+    "episode_id": "E06",
+    "claim": "Stale classification proves a reviewer was punished or excluded from deliberation.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E06:comments:0",
+        "span": {
+          "start": 607,
+          "end": 635,
+          "quote": "| Stale ACK | [purpleKarrot]"
+        }
+      },
+      {
+        "source_id": "E06:comments:5",
+        "span": {
+          "start": 0,
+          "end": 61,
+          "quote": "Thanks for the review and the C++17 suggestion @purpleKarrot."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Version-specific accounting and acknowledged input are a plausible alternative to punishment."
+  }
+]

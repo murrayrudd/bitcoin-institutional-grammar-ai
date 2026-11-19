@@ -1,0 +1,40 @@
+{
+  "round": 4,
+  "date": "2026-11-06",
+  "title": "Separate AI source review",
+  "baseline_library_file_id": "libfile_a17ea781dfb48191ad0bb568fb794905",
+  "baseline_zip_sha256": "02bfa9d631a450cff93180a6d9b3c5ebc1536dfcc0b955302171c58c4221f979",
+  "purpose": "Source-first recoding of a fixed subset, then source-based reconciliation against Round 3; not independent human validation.",
+  "selection_seed": "CoreKnots_R4_20261106_v01",
+  "purposive_source_ids": [
+    "32359-038",
+    "32359-115",
+    "32359-227",
+    "32381-body",
+    "32406-149",
+    "32406-178",
+    "32406-228",
+    "32406-252",
+    "32714-body",
+    "33224-010",
+    "33453-018",
+    "33453-body"
+  ],
+  "additional_sampling": "One candidate-bearing source per PR with no baseline full statement annotation, excluding anchors; one nonempty source per PR with no retained candidate and screen class A/C/Q/R. Eligibility is 30 to 2400 Unicode characters. Rank eligible IDs by SHA-256(seed|stratum|source_id); select the minimum. Preserve every eligible ID and hash.",
+  "review_assignment": "Three fresh contexts, each four purposive entries, two sampled candidate entries, and two sampled excluded entries; order randomized by a fixed hash. No sample labels, prior annotations, screening decisions, response interpretations, or narrative conclusions supplied.",
+  "scope": "All propositions within each complete focal source record, including overlooked prescriptions; supporting sources used for interpretation, recognition, and disposition only.",
+  "context_selection": "Preserve the six proposal bodies, metadata, selected final patch contexts, and four dated procedural documents. Add adjacent discussion records and all source records in an existing response chain touching a focal source. Only source text and metadata are supplied, without chain titles, roles, conclusions, or baseline labels. Context selection itself is informed by prior work.",
+  "reviewer_access": "Prompt-restricted to its own input directory. Shared filesystem is not a technical sandbox. No parent conversation is inherited. Public author handles, PR IDs, and codebook examples remain visible.",
+  "requested_configuration": "Inherited parent configuration; no model override requested. Actual provider snapshot, seed, temperature, and token cost are not exposed.",
+  "freeze": "This protocol, selected IDs, source packets, codebook, schema, and prompt hashes are saved before reviewer dispatch. Fresh outputs are frozen before baseline comparison.",
+  "comparison": "Compare source coverage, proposition meaning, grammar and components, force, evidence standing, governance levels, and response/disposition links. Count grouped findings and affected records separately. Distinguish substantive errors, epistemic labeling errors, convention deviations, defensible alternatives, and unresolved judgments. A reviewer output is evidence for review, not a gold standard.",
+  "coverage_boundary": "Selective full annotation in Round 3 means newly coded propositions are not automatically baseline omissions. An omission in the candidate screen requires absence from the candidate inventory, not merely absence from final.json.",
+  "execution_boundary": "One source-first run per disjoint shard. Mechanical repairs may precede final output freeze and must be disclosed. No semantic feedback or baseline disclosure before freeze. No repeated-run reliability or population accuracy estimate.",
+  "deliverables": [
+    "Review report",
+    "Discrepancy ledger with exact evidence",
+    "Frozen reviewer packets and outputs",
+    "Adjudicated corrections or addendum with prior version preserved",
+    "Short list of unresolved questions if any require author judgment"
+  ]
+}

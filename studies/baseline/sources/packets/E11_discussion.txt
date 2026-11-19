@@ -1,0 +1,120 @@
+[E11:body] achow101 2021-12-16T19:53:51+00:00
+For maintaining the wallet and psbt things
+
+[E11:comments:0] jonatack 2021-12-16T20:05:50+00:00
+Concept/approach ACK
+
+[E11:comments:1] laanwj 2021-12-16T20:12:35+00:00
+Concept ACK. Matches the key I have:
+```
+pub   rsa4096/0x17565732E08E5E41 2015-03-05 [SC] [expires: 2022-03-05]
+      152812300785C96444D3334D17565732E08E5E41
+```
+
+[E11:comments:2] 0xB10C 2021-12-16T20:25:19+00:00
+ACK on having achow101 as wallet maintainer.
+
+[E11:comments:3] luke-jr 2021-12-17T03:54:48+00:00
+Concept ACK (but please don't remove BDB support any time soon :p)
+
+[E11:comments:4] S3RK 2021-12-17T07:24:00+00:00
+ACK on achow101 being wallet maintainer
+
+[E11:comments:5] maflcko 2021-12-17T07:48:40+00:00
+ACK (but please remove BDB asap, thx)
+
+[E11:comments:6] ajtowns 2021-12-17T08:59:25+00:00
+Concept ACK.
+
+Key matches key in contrib/builder-keys/keys.txt. I don't expect achow to treat BDB removal particularly differently to any other (wallet-related) PR...
+
+[E11:comments:7] glozow 2021-12-17T11:12:39+00:00
+concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+[E11:comments:8] michaelfolkson 2021-12-17T12:49:02+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+(conditional on bringing BDB back as a first class citizen)
+
+(Joke. Congrats, well deserved)
+
+[E11:comments:9] kiminuo 2021-12-17T15:03:04+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+Congratulations.
+
+[E11:comments:10] jb55 2021-12-17T23:25:54+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+[E11:comments:11] gruve-p 2021-12-19T15:38:27+00:00
+ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008
+
+[E11:comments:12] meshcollider 2021-12-20T07:09:59+00:00
+Congratulations @achow101  🎉 
+
+[E11:comments:13] sipa 2021-12-20T18:54:21+00:00
+Posthumous ACK 33b511251acbd0ed802a8843361c7dc8d1512008. The key matches the one I have in my keyring.
+
+[E11:reviews:0] None 2021-12-16T20:18:11+00:00
+ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008
+
+Verified the key with https://achow101.com/contact/
+
+[E11:reviews:1] meshcollider 2021-12-16T22:35:42+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+I've verified this key in person at previous coredevs, and achow101 is a very logical replacement in the role, now I no longer have time. Thanks for volunteering Andrew!
+
+[E11:reviews:2] darosior 2021-12-17T10:15:30+00:00
+Concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+[E11:reviews:3] shaavan 2021-12-17T10:38:46+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+Verified the key with: https://achow101.com/contact/
+
+[E11:reviews:4] promag 2021-12-17T15:47:40+00:00
+ACK
+
+[E11:reviews:5] benthecarman 2021-12-17T17:09:56+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+[E11:reviews:6] hebasto 2021-12-17T18:42:31+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+```
+$ gpg --refresh-keys
+$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41
+pub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]
+      152812300785C96444D3334D17565732E08E5E41
+uid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>
+uid           [ unknown] Andrew Chow <achow101@yahoo.com>
+uid           [ unknown] Andrew Chow <andrew@achow101.com>
+uid           [ unknown] Andrew Chow <achow101-lists@achow101.com>
+uid           [ unknown] Andrew Chow <achow101-github@achow101.com>
+uid           [ unknown] Andrew Chow <achow101@pm.me>
+uid           [ unknown] Andrew Chow <achow101@protonmail.com>
+sub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]
+
+```
+
+[E11:reviews:7] Zero-1729 2021-12-17T18:48:38+00:00
+ACK 33b511251acbd0ed802a8843361c7dc8d1512008
+
+Agree on having achow101 as wallet maintainer.
+
+Verified:
+```sh
+$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41
+pub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]
+      152812300785C96444D3334D17565732E08E5E41
+uid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>
+uid           [ unknown] Andrew Chow <achow101-github@achow101.com>
+uid           [ unknown] Andrew Chow <achow101-lists@achow101.com>
+uid           [ unknown] Andrew Chow <andrew@achow101.com>
+uid           [ unknown] Andrew Chow <achow101@yahoo.com>
+uid           [ unknown] Andrew Chow <achow101@pm.me>
+uid           [ unknown] Andrew Chow <achow101@protonmail.com>
+sub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]
+
+```

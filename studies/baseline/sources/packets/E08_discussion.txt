@@ -1,0 +1,48 @@
+[E08:body] maflcko 2017-11-21T13:52:31+00:00
+Fixes https://github.com/bitcoin/bitcoin/pull/10849#discussion_r127847938
+
+[E08:comments:0] jnewbery 2017-11-21T15:24:24+00:00
+Tested ACK fa61c6f6a6fda3e68f3f84d27bcc996af861bcfd
+
+[E08:comments:1] promag 2017-11-21T15:41:16+00:00
+Could rename `w3` to `w`? Why make the test slower?
+
+[E08:comments:2] sipa 2017-11-22T02:47:53+00:00
+> Why make the test slower?
+
+?
+
+[E08:comments:3] promag 2017-11-22T17:28:08+00:00
+Come on, I think I made a valid point, and if it wasn't clear at least give a chance to explain. Beside it only had one ACK. Test code should follow the same review rules as the other right?
+
+My point is that renaming w3 to w would be enough, or am I wrong? It is slower in the sense that at least more RPC calls are (unnecessarily) made.
+
+[E08:comments:4] maflcko 2017-11-22T17:58:54+00:00
+Yes, you are right that renaming w3 to w achieves the goal in a different way. However, I don't think we should be counting the number of rpc calls, when optimizing the functional test suite for speed. Especially, since some calls like `getwalletinfo` or `getnewaddress` are trivial computationally wise.
+
+I'd understand your concern in case, let's say, we called `generate(100)` or added a new node to the topology (thus having to wait for startup, chain sync and shutdown).
+
+Re: Review on test pulls.
+In the past there have been many test pulls sitting for months, not gaining any review (e.g. #11182, #10711, #10099). Instead, their author had to rebase every couple of weeks. To be fair those pulls were more involved than this one. And for rather simple pulls, such as this one, I try to merge quickly. Two utACK or one tested ACK should be sufficient. Again, your feedback was not ignored, but I didn't consider it critical to hold up the merge. If I changed the pull to address your feedback, review needed to be start all over again, equivalent to creating a new pull request. Personally, I don't think that would be worth it. Though, if you feel strongly about the feedback, you are very welcome to create a patch for it and submit it for review.
+
+[E08:comments:5] promag 2017-11-22T18:31:36+00:00
+@MarcoFalke really appreciate the reply.
+
+[E08:comments:6] promag 2017-11-22T18:44:56+00:00
+It tests that a RPC to wallet w doesn't hit wallet w1 for instance.
+
+[E08:comments:7] maflcko 2017-11-22T18:46:15+00:00
+@ryanofsky As I understand, the potential bug is that a call to "w" matches any of "w1", "w2", ... , because the one wallets' name is a prefix of another wallet. Alternatively, a call to wallet "w3" will instead call to "w", because or logic might only compare up to the length of the shortest wallet file name.
+
+Overall this should be testing our "endpoint-to-wallet" method.
+
+[E08:comments:8] ryanofsky 2017-11-22T18:59:41+00:00
+Oops, didn't realize this was already merged. Guess I will add the comment myself in #11687.
+
+[E08:comments:9] maflcko 2017-11-22T19:07:12+00:00
+@ryanofsky Jup, thanks for doing that. I should have done it in this pull.
+
+[E08:reviews:0] ryanofsky 2017-11-22T18:37:36+00:00
+I don't understand what this is testing. What exactly is a "length extension bug" in this context? Either of the changes discussed seems fine but I think should definitely be accompanied by a comment explaining precisely what bug (or type of bug) the "w" test case is intended to catch so coverage is not lost in the future.
+
+Note that #11687 also makes significant changes to this test and renames some of the wallets.

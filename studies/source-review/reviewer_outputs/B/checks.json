@@ -1,0 +1,189 @@
+{
+  "status": "pass",
+  "screened_entries": 50,
+  "units": 41,
+  "statement_units": 29,
+  "exact_anchor_references": 312,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "B05",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1470,
+          "end": 1543,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The triggering reaction is inherited from the immediately preceding coordinated clause; this is the announced procedural dependency, not an observed reaction."
+    },
+    {
+      "unit_id": "B13",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1895,
+          "end": 1899,
+          "quote": "they"
+        }
+      },
+      "note": "They is the grammatically shared subject of patch and use in the coordinated sentence. Users supplies the antecedent; the actor role is explicit under both verbs."
+    },
+    {
+      "unit_id": "B13",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1802,
+          "end": 1866,
+          "quote": "even if it does get removed from core, if users actually want it"
+        }
+      },
+      "note": "The complete pair of conditions governs both coordinated fallback methods."
+    },
+    {
+      "unit_id": "B18",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "D_MOD",
+        "span": {
+          "start": 3775,
+          "end": 3822,
+          "quote": "moderators will use warnings, timeouts and bans"
+        }
+      },
+      "note": "The dated procedure identifies moderators as the actors for bans. It does not verify that willcl-ark occupies that role; the actor is an inferred institutional enforcer, not an inferred identity."
+    },
+    {
+      "unit_id": "B18",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bind",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "@1440000bytes"
+        }
+      },
+      "note": "The affected participant is inferred from the addressee of the enclosing warning; the consequence sentence does not repeat the username."
+    },
+    {
+      "unit_id": "B20",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 404,
+          "end": 407,
+          "quote": "you"
+        }
+      },
+      "note": "The addressee is inherited from the conditional and positive imperative."
+    },
+    {
+      "unit_id": "B20",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 416,
+          "end": 435,
+          "quote": "debate this comment"
+        }
+      },
+      "note": "The negated action is reconstructed from the preceding coordinated clause."
+    },
+    {
+      "unit_id": "B20",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 423,
+          "end": 435,
+          "quote": "this comment"
+        }
+      },
+      "note": "The same explicit debate-object in the conditional antecedent governs the elliptical negative clause; the role is preserved rather than transformed."
+    },
+    {
+      "unit_id": "B20",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 435,
+          "quote": "If you want to debate this comment"
+        }
+      },
+      "note": "The conditional scope governs both the positive venue instruction and the coordinated negative duty."
+    },
+    {
+      "unit_id": "B23",
+      "source_id": "32714-body",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32714-body",
+        "span": {
+          "start": 220,
+          "end": 230,
+          "quote": "many users"
+        }
+      },
+      "note": "The next explanatory sentence names users; they are the inferred actors of the embedded non-use advice, not explicit actors in this clause."
+    },
+    {
+      "unit_id": "B19",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "This comment is explicitly the object of debate in the conditional antecedent, and that same object role is preserved by do so in the main-clause request."
+    },
+    {
+      "unit_id": "B19",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bind",
+      "note": "The explicit destination of do so remains the destination of the recovered debate action; no argument-role transformation is introduced."
+    },
+    {
+      "unit_id": "B20",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The same explicit debate-object in the conditional antecedent governs the elliptical negative clause; the role is preserved rather than transformed."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

@@ -1,0 +1,23 @@
+SOURCE PACKET PREPARATION
+Release 0.4.1
+
+Retain the unmodified source packet. Each entry requires a unique source_id,
+its exact decoded text, and object_id set to an evidenced identifier or null.
+Keep provenance, available timestamps, and supplements distinct. Do not insert
+missing discussion or infer an object from the containing conversation.
+
+Before freezing a new coding packet, run:
+python tools/normalize_packet_metadata.py original.json packet.json metadata_log.json
+
+The adapter adds revision_id from revision and blob_sha from git_blob_sha. For
+commit_metadata it exposes a retained full SHA only when the stored html_url,
+object_id, and SHA agree. It rejects conflicting aliases and identity mismatch.
+It preserves every original entry field and all source text. The log records
+original and adapted packet hashes. The new packet hash controls subsequent
+coding. Identical text does not mean identical file bytes.
+
+An existing annotation refers to its original packet hash. A historical repair
+therefore requires a separately named derived annotation and a logged hash
+change, as in the reconciliation evidence. Never rewrite a frozen independent
+annotation merely to pass a later checker. Do not apply this adapter to claim
+that metadata supplies evidence absent from the preserved text.

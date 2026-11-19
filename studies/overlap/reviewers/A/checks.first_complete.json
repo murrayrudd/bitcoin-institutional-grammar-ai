@@ -1,0 +1,388 @@
+{
+  "status": "fail",
+  "screened_entries": 98,
+  "units": 102,
+  "statement_units": 62,
+  "exact_anchor_references": 623,
+  "errors": [
+    {
+      "unit_id": "A115_forum",
+      "symbol": "F",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "A115_repeat",
+      "symbol": "A",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "A178_keep",
+      "symbol": "Cex",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "A252_debate",
+      "symbol": "Bdir",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "A714_equivalence",
+      "symbol": "F",
+      "message": "component anchor is a token fragment without an exception"
+    },
+    {
+      "unit_id": "A018_call",
+      "symbol": "E",
+      "message": "component anchor is a token fragment without an exception"
+    }
+  ],
+  "review_flags": [
+    {
+      "unit_id": "A115_forum",
+      "source_id": "32359-115",
+      "kind": "token_fragment",
+      "symbol": "F",
+      "evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 16,
+          "end": 18,
+          "quote": "is"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A115_repeat",
+      "source_id": "32359-115",
+      "kind": "token_fragment",
+      "symbol": "A",
+      "evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 215,
+          "end": 218,
+          "quote": "you"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A381_lift",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 253,
+          "end": 321,
+          "quote": "the restriction on the number of `OP_RETURN` outputs per transaction"
+        }
+      },
+      "note": "The preceding sentence resolves this restriction; the complete technical qualifier is preserved outside the smallest request unit."
+    },
+    {
+      "unit_id": "A148_document",
+      "source_id": "32406-148",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-148",
+        "span": {
+          "start": 111,
+          "end": 161,
+          "quote": "a docstring that is not actually enforced in tests"
+        }
+      },
+      "note": "The preceding clause identifies the documentation under discussion, but the exact referent of it could instead be the tested behavior."
+    },
+    {
+      "unit_id": "A149_convince",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 775,
+          "end": 925,
+          "quote": "We do have e.g. `CLIENT_NAME \"Bitcoin Core\"` that's easy to override, and a CI flag `SKIP_BRANCH_PUSH` which replaced a hardcoded gui repository name."
+        }
+      },
+      "note": "The preceding exact sentence supplies the demonstrative antecedent; no unrelated occupational identity is inferred."
+    },
+    {
+      "unit_id": "A178_mark",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1150,
+          "end": 1161,
+          "quote": "this option"
+        }
+      },
+      "note": "The immediately preceding recommendation resolves it to the option under discussion; the precise command-line identifier is not invented from background knowledge."
+    },
+    {
+      "unit_id": "A178_keep",
+      "source_id": "32406-178",
+      "kind": "token_fragment",
+      "symbol": "Cex",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1683,
+          "end": 1685,
+          "quote": "in"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A252_meta",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 81,
+          "end": 149,
+          "quote": "Comments about maintainers, other specific individuals, \"drama\" etc."
+        }
+      },
+      "note": "That refers to the immediately preceding categories; permission to discuss does not authorize harassment."
+    },
+    {
+      "unit_id": "A252_ban",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "@1440000bytes"
+        }
+      },
+      "note": "The opening addressed participant is the inferred target of this warning; the consequence clause does not repeat the name."
+    },
+    {
+      "unit_id": "A252_debate",
+      "source_id": "32406-252",
+      "kind": "token_fragment",
+      "symbol": "Bdir",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 445,
+          "end": 447,
+          "quote": "so"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 416,
+          "end": 435,
+          "quote": "debate this comment"
+        }
+      },
+      "note": "The negative ellipsis inherits debate from the preceding conditional instruction."
+    },
+    {
+      "unit_id": "A252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 423,
+          "end": 435,
+          "quote": "this comment"
+        }
+      },
+      "note": "The shared object is the moderation comment, not all technical comments."
+    },
+    {
+      "unit_id": "A252_not_here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 435,
+          "quote": "If you want to debate this comment"
+        }
+      },
+      "note": "The condition governs both the positive routing instruction and this negative clause."
+    },
+    {
+      "unit_id": "A711_a",
+      "source_id": "32714-011",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32714-011",
+        "span": {
+          "start": 382,
+          "end": 384,
+          "quote": "we"
+        }
+      },
+      "note": "The subject we is shared from the enclosing either/or proposal."
+    },
+    {
+      "unit_id": "A711_a",
+      "source_id": "32714-011",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32714-011",
+        "span": {
+          "start": 385,
+          "end": 391,
+          "quote": "should"
+        }
+      },
+      "note": "Should scopes the alternative bundles, not a duty to perform both."
+    },
+    {
+      "unit_id": "A711_b",
+      "source_id": "32714-011",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32714-011",
+        "span": {
+          "start": 382,
+          "end": 384,
+          "quote": "we"
+        }
+      },
+      "note": "The subject comes from the enclosing either/or proposal."
+    },
+    {
+      "unit_id": "A711_b",
+      "source_id": "32714-011",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32714-011",
+        "span": {
+          "start": 385,
+          "end": 391,
+          "quote": "should"
+        }
+      },
+      "note": "Should scopes the offered alternative bundle; it does not compel both bundles."
+    },
+    {
+      "unit_id": "A714_equivalence",
+      "source_id": "32714-014",
+      "kind": "token_fragment",
+      "symbol": "F",
+      "evidence": {
+        "source_id": "32714-014",
+        "span": {
+          "start": 142,
+          "end": 144,
+          "quote": "is"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A000_ignore",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1470,
+          "end": 1506,
+          "quote": "If your review is incorrectly listed"
+        }
+      },
+      "note": "The initial condition scopes both the reaction instruction and promised procedural response."
+    },
+    {
+      "unit_id": "A000_ignore",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1508,
+          "end": 1543,
+          "quote": "please react with 👎 to this comment"
+        }
+      },
+      "note": "The coordinated request-response construction makes the reaction a trigger for the bot behavior, rather than a lexical condition directly expressed in the consequence clause."
+    },
+    {
+      "unit_id": "A018_call",
+      "source_id": "33453-018",
+      "kind": "token_fragment",
+      "symbol": "E",
+      "evidence": {
+        "source_id": "33453-018",
+        "span": {
+          "start": 11,
+          "end": 15,
+          "quote": "that"
+        }
+      },
+      "exception": ""
+    },
+    {
+      "unit_id": "A018_call",
+      "source_id": "33453-018",
+      "kind": "outside_unit",
+      "symbol": "E,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33453-014",
+        "span": {
+          "start": 0,
+          "end": 130,
+          "quote": "@bitschmidty to be clear are you considering this as something to backport (30 et al), or just for following releases from master."
+        }
+      },
+      "note": "The earlier explicitly addressed question and subsequent preference response identify that as the backport/release choice."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

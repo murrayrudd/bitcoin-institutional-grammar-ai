@@ -1,0 +1,825 @@
+[
+  {
+    "finding_id": "R4-01",
+    "title": "Unspecified majority and unsupported conflict",
+    "category": "substantive_error",
+    "origin": "baseline",
+    "baseline_unit_ids": [
+      "N14",
+      "U02"
+    ],
+    "reviewer_unit_ids": [
+      "C227_majority",
+      "C115_merit"
+    ],
+    "decision": "Retain the majority claim as attributed text; set target level to unknown, remove the inferred challenge relation and the associated dispute flags. Merit versus repeated posting need not conflict with an unspecified majority claim.",
+    "evidence": [
+      {
+        "source_id": "32359-227",
+        "span": {
+          "start": 386,
+          "end": 423,
+          "quote": "Only the majority decides the winner."
+        }
+      },
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 92,
+          "end": 186,
+          "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 335,
+          "end": 394,
+          "quote": "The goal is *not* to have everyone \"register\" their \"vote\"."
+        }
+      }
+    ],
+    "effect_on_paper": "No evidence of a defined voting rule; avoid using this pair as proof of rival aggregation procedures."
+  },
+  {
+    "finding_id": "R4-02",
+    "title": "Written moderation policy underused",
+    "category": "substantive_error",
+    "origin": "baseline",
+    "baseline_unit_ids": [
+      "U17",
+      "U19"
+    ],
+    "reviewer_unit_ids": [
+      "B15",
+      "B19",
+      "B20"
+    ],
+    "decision": "Use documented standing for the on-topic and appeal-venue provisions. Treat the venue instruction as a rule candidate with obligatory force, preserving its case-specific scope.",
+    "evidence": [
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 77,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 509,
+          "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+        }
+      },
+      {
+        "source_id": "D_MOD",
+        "span": {
+          "start": 523,
+          "end": 549,
+          "quote": "Comments will be on-topic."
+        }
+      },
+      {
+        "source_id": "D_MOD",
+        "span": {
+          "start": 1467,
+          "end": 1840,
+          "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted. If you wish to discuss moderation, please file an issue in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/issues/new), which is the home for project management issues, and nontechnical discussions relating to development of the codebase."
+        }
+      }
+    ],
+    "effect_on_paper": "The episode applies written institutional arrangements as well as informal expectations; documentation does not verify individual permissions or enforcement."
+  },
+  {
+    "finding_id": "R4-03",
+    "title": "Separate consequence and negative duty",
+    "category": "convention_deviation",
+    "origin": "baseline",
+    "baseline_unit_ids": [
+      "U18",
+      "U19"
+    ],
+    "reviewer_unit_ids": [
+      "B18",
+      "B19",
+      "B20"
+    ],
+    "decision": "Represent the announced sanction as its own statement (U18), keep the existing O link, and split the negative current-thread duty from U19. The original coding already preserved both meanings; this corrects their prescribed representation.",
+    "evidence": [
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 295,
+          "end": 400,
+          "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 509,
+          "quote": "If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+        }
+      },
+      {
+        "source_id": "D_MOD",
+        "span": {
+          "start": 3734,
+          "end": 4026,
+          "quote": "If moderation of individual posts fails, moderators will use warnings, timeouts and bans at increasing rates based on prior patterns of behavior. Usually mildly uncivil behavior (such as being off-topic/disruptive or rudeness) will result in a warning or temporary ban (in the order of days)."
+        }
+      }
+    ],
+    "effect_on_paper": "No new observed sanction or institutional mechanism is inferred from the representation change."
+  },
+  {
+    "finding_id": "R4-04",
+    "title": "Warning principle receives local recognition",
+    "category": "substantive_error",
+    "origin": "baseline",
+    "baseline_unit_ids": [
+      "U25"
+    ],
+    "reviewer_unit_ids": [
+      "B26",
+      "C32714_warning_expectation"
+    ],
+    "decision": "Upgrade to locally_supported with context_inferred recognition, using the September argument as well as its quotation.",
+    "evidence": [
+      {
+        "source_id": "32714-body",
+        "span": {
+          "start": 858,
+          "end": 950,
+          "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+        }
+      },
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 677,
+          "end": 1205,
+          "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._” In months since that comment, partially due to increased feedback from Bitcoin Core users wanting to keep this option, there is even less likelihood of a near term plan to remove these options. That leaves Bitcoin Core users in an unclear situation: the option could be removed in the next version or perhaps never. Removing the deprecation gives clarity for their planning purposes."
+        }
+      }
+    ],
+    "effect_on_paper": "A reason from a proposal that did not merge can become part of the justification for a later proposal; unique causal influence is not identified."
+  },
+  {
+    "finding_id": "R4-05",
+    "title": "Challenge to application of the legitimacy claim",
+    "category": "substantive_error",
+    "origin": "baseline",
+    "baseline_unit_ids": [
+      "N16"
+    ],
+    "reviewer_unit_ids": [
+      "A019"
+    ],
+    "decision": "Record the reply as a dispute about application. Preserve constitutive and regulative alternatives and the bounded epistemic interpretation; add operational to level alternatives.",
+    "evidence": [
+      {
+        "source_id": "32406-228",
+        "span": {
+          "start": 311,
+          "end": 454,
+          "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+        }
+      },
+      {
+        "source_id": "32406-229",
+        "span": {
+          "start": 0,
+          "end": 187,
+          "quote": "@maluquices  all I'm trying to say is, don't drag \"open source\" into this conversation. Every single word has been open, as well as years of historical merit of the author and reviewers. "
+        }
+      }
+    ],
+    "effect_on_paper": "The dispute provides evidence of competing legitimacy arguments, not an observed transfer of authority or a demonstrated new governance level."
+  },
+  {
+    "finding_id": "R4-06",
+    "title": "Substitution dispute already preserved",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "U24"
+    ],
+    "reviewer_unit_ids": [
+      "B22"
+    ],
+    "decision": "Use disputed as the primary standing label. Round 3 already retained the challenge, dispute flag, and unmerged disposition, so this is label alignment rather than a newly discovered rejection.",
+    "evidence": [
+      {
+        "source_id": "32714-body",
+        "span": {
+          "start": 0,
+          "end": 136,
+          "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+        }
+      },
+      {
+        "source_id": "32714-007",
+        "span": {
+          "start": 17,
+          "end": 106,
+          "quote": "It's fine to _add_ a non-recommendation text, but we should keep the deprecation warning."
+        }
+      }
+    ],
+    "effect_on_paper": "The June wording proposal still did not integrate; its embedded reasons remain separately assessable."
+  },
+  {
+    "finding_id": "R4-07",
+    "title": "Five missed navigation instructions",
+    "category": "substantive_error",
+    "origin": "baseline",
+    "baseline_unit_ids": [],
+    "reviewer_unit_ids": [
+      "A018",
+      "C165_referral",
+      "B02",
+      "B28",
+      "B21"
+    ],
+    "decision": "Add five exact-span navigation candidates, including two from comments previously excluded as technical context.",
+    "evidence": [
+      {
+        "source_id": "32359-066",
+        "span": {
+          "start": 543,
+          "end": 640,
+          "quote": "See https://github.com/bitcoin/bitcoin/pull/28052, https://github.com/bitcoin/bitcoin/pull/28207."
+        }
+      },
+      {
+        "source_id": "32406-165",
+        "span": {
+          "start": 95,
+          "end": 145,
+          "quote": "See https://github.com/maflcko/DrahtBot/issues/51."
+        }
+      },
+      {
+        "source_id": "33224-000",
+        "span": {
+          "start": 220,
+          "end": 287,
+          "quote": "For details see: https://corecheck.dev/bitcoin/bitcoin/pulls/33224."
+        }
+      },
+      {
+        "source_id": "32406-178",
+        "span": {
+          "start": 266,
+          "end": 501,
+          "quote": "see [`gets()`](https://en.cppreference.com/w/c/io/gets) in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)"
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 510,
+          "end": 651,
+          "quote": "See the [moderation guidelines](https://github.com/bitcoin-core/meta/blob/main/MODERATION-GUIDELINES.md) for more information on this policy."
+        }
+      }
+    ],
+    "effect_on_paper": "Improves extraction completeness; referrals do not establish shared expectations or authority."
+  },
+  {
+    "finding_id": "R4-08",
+    "title": "Additional proposals and procedural claims",
+    "category": "extraction_addendum",
+    "origin": "baseline",
+    "baseline_unit_ids": [],
+    "reviewer_unit_ids": [
+      "A016",
+      "A010",
+      "A001",
+      "A002",
+      "C012_no_args",
+      "C33453_footguns",
+      "C33453_remove_deprecation",
+      "B16",
+      "B17",
+      "B08",
+      "B09",
+      "B29"
+    ],
+    "decision": "Retain ten additional candidate passages. Direct proposals and permissions are distinguishable from indirect criticisms or descriptions; the latter retain explicit alternatives. None is promoted to a shared institution merely by inclusion.",
+    "evidence": [
+      {
+        "source_id": "32381-body",
+        "span": {
+          "start": 412,
+          "end": 510,
+          "quote": "Lift this restriction to stop preventing them from using a less harmful way of achieving the same."
+        }
+      },
+      {
+        "source_id": "32406-149",
+        "span": {
+          "start": 926,
+          "end": 1011,
+          "quote": "But those require some convincing to include, as I've experienced myself with #29274."
+        }
+      },
+      {
+        "source_id": "32714-014",
+        "span": {
+          "start": 0,
+          "end": 131,
+          "quote": "I do prefer \"are not recommended to be used\" more than \"have been marked as deprecated\" as it explains it more clearly to the user."
+        }
+      },
+      {
+        "source_id": "32714-014",
+        "span": {
+          "start": 174,
+          "end": 222,
+          "quote": "it's weird to say \"after a deprecation warning.\""
+        }
+      },
+      {
+        "source_id": "32381-012",
+        "span": {
+          "start": 250,
+          "end": 305,
+          "quote": "I don't think adding more args in the node makes sense."
+        }
+      },
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1640,
+          "end": 1666,
+          "quote": "Don’t offer users footguns"
+        }
+      },
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 0,
+          "end": 187,
+          "quote": "Removes the deprecation for the `datacarrier` and `datacarriersize` options by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406"
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 81,
+          "end": 187,
+          "quote": "Comments about maintainers, other specific individuals, \"drama\" etc. are not on topic here in this thread."
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 188,
+          "end": 291,
+          "quote": "You can take that over to [bitcoin-core/meta](https://github.com/bitcoin-core/meta/), if you so desire."
+        }
+      },
+      {
+        "source_id": "32406-178",
+        "span": {
+          "start": 607,
+          "end": 1307,
+          "quote": "Here, the reason to recommend not using it is because it will likely harm the efficiency of block reconstruction, slowing down block relay, and also make you use more bandwidth (requesting the tx then rejecting it, then receiving the tx again when it's included in a block), for very little benefit -- it won't stop spam from getting into blocks, and likely won't stop spam from getting into your mempool given other encoding methods are more efficient. I think the vast majority of developers contributing to core would recommend not setting this option to a lower value than the default, so I think marking it as \"deprecated\" is reasonable, even if there are a few developers who strongly disagree."
+        }
+      }
+    ],
+    "effect_on_paper": "Broadens source coverage without inflating the number of established norms. Counts are passage additions, not independent institutions."
+  },
+  {
+    "finding_id": "R4-09",
+    "title": "Rhetorical question retained as a bounded candidate",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [],
+    "reviewer_unit_ids": [
+      "B27"
+    ],
+    "decision": "Retain the evaluative premise and question together for high-recall screening. Do not infer a binding obligation to answer or a shared project criterion.",
+    "evidence": [
+      {
+        "source_id": "33453-068",
+        "span": {
+          "start": 190,
+          "end": 317,
+          "quote": "\"Expressing disgust\" is not a reasonable use case. Why do you think that Bitcoin Core should cater towards emotional outbursts?"
+        }
+      }
+    ],
+    "effect_on_paper": "This changes the candidate inventory, not the institutional standing of the criterion."
+  },
+  {
+    "finding_id": "R4-10",
+    "title": "Quoted originals already represented",
+    "category": "context_completion",
+    "origin": "review_packet",
+    "baseline_unit_ids": [],
+    "reviewer_unit_ids": [
+      "C018_add_flag",
+      "C213_permission",
+      "C213_defaults",
+      "C213_increase"
+    ],
+    "decision": "Retain the repeated material as quoted context for corpus-level counting. The complete registry supplies the originals at 33224-016 and 32359-186, both already in the candidate inventory. Their absence from the initial C packet explains fresh external-quotation statement records; those are not newly discovered institutions.",
+    "evidence": [
+      {
+        "source_id": "33224-016",
+        "span": {
+          "start": 415,
+          "end": 523,
+          "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake? (Post branch-off)"
+        }
+      },
+      {
+        "source_id": "33224-018",
+        "span": {
+          "start": 127,
+          "end": 217,
+          "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+        }
+      },
+      {
+        "source_id": "32359-186",
+        "span": {
+          "start": 225,
+          "end": 335,
+          "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+        }
+      },
+      {
+        "source_id": "32359-213",
+        "span": {
+          "start": 229,
+          "end": 339,
+          "quote": "As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+        }
+      }
+    ],
+    "effect_on_paper": "Avoid duplicate statement counts and retain the response relation without treating quotation as independent endorsement."
+  },
+  {
+    "finding_id": "R4-11",
+    "title": "Preserved permissions and allocation of timing authority",
+    "category": "substantive_equivalence",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "N02",
+      "U03",
+      "U39",
+      "U39b"
+    ],
+    "reviewer_unit_ids": [
+      "A004",
+      "C115_no_repost",
+      "A013",
+      "A014"
+    ],
+    "decision": "Preserve the permission to defer small edits, absence of an obligation to repost, attributed maintainer timing discretion, and personal commitment not to object. Different spans or resolved pronouns preserve the relevant arrangements.",
+    "evidence": [
+      {
+        "source_id": "32406-149",
+        "span": {
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        }
+      },
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 187,
+          "end": 299,
+          "quote": "Please rest assured that if your point has already been made here or on #28130, you don't need to post it again."
+        }
+      },
+      {
+        "source_id": "33453-018",
+        "span": {
+          "start": 11,
+          "end": 100,
+          "quote": "that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+        }
+      },
+      {
+        "source_id": "33453-018",
+        "span": {
+          "start": 102,
+          "end": 138,
+          "quote": "I will not put up a fuss either way."
+        }
+      }
+    ],
+    "effect_on_paper": "The source-supported core explanation survives these comparisons."
+  },
+  {
+    "finding_id": "R4-12",
+    "title": "Coupled discouragement versus split actions",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "U04"
+    ],
+    "reviewer_unit_ids": [
+      "C115_unsubstantiated",
+      "C115_repetition"
+    ],
+    "decision": "Retain the coupled baseline representation, with the two separately parsed actions available as an alternative. Both preserve the discouragement and its evaluative rather than overtly mandatory wording.",
+    "evidence": [
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 300,
+          "end": 419,
+          "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+        }
+      }
+    ],
+    "effect_on_paper": "No claim that repetition is literally prohibited follows from the semantic discouragement alone."
+  },
+  {
+    "finding_id": "R4-13",
+    "title": "Forum purpose and merit criterion",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "U01",
+      "U02"
+    ],
+    "reviewer_unit_ids": [
+      "C115_forum",
+      "C115_merit"
+    ],
+    "decision": "Preserve U01 as a case-specific constitutive account of this forum with text_only standing. For U02, preserve the baseline constitutive arrangement and locally_supported standing. The reviewer's regulative description is a defensible alternative. The source-only supplement supplies attributable recognition of the general merit-over-count criterion; exact counts and applications differ.",
+    "evidence": [
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 0,
+          "end": 91,
+          "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum."
+        }
+      },
+      {
+        "source_id": "32359-115",
+        "span": {
+          "start": 92,
+          "end": 186,
+          "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        }
+      },
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 504,
+          "end": 613,
+          "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+        }
+      }
+    ],
+    "effect_on_paper": "Do not treat the initial standing difference, caused by missing context, as an independent disagreement on equal evidence."
+  },
+  {
+    "finding_id": "R4-14",
+    "title": "Status definition and recognition threshold",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "N04"
+    ],
+    "reviewer_unit_ids": [
+      "B06",
+      "B07"
+    ],
+    "decision": "Retain local recognition of the embedded status meaning and attach the competing future-removal definition explicitly. The fresh reading focuses on the outer recommendation about how to interpret the term; its stricter endorsement threshold remains a defensible alternative.",
+    "evidence": [
+      {
+        "source_id": "32406-178",
+        "span": {
+          "start": 44,
+          "end": 120,
+          "quote": "\"deprecated\" as meaning just \"the devs recommend you don't use this feature\""
+        }
+      },
+      {
+        "source_id": "32406-180",
+        "span": {
+          "start": 0,
+          "end": 194,
+          "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+        }
+      },
+      {
+        "source_id": "32406-071",
+        "span": {
+          "start": 222,
+          "end": 317,
+          "quote": "Deprecation isn't a value judgment but a statement that it will be removed in a future version."
+        }
+      }
+    ],
+    "effect_on_paper": "The paper can analyze contested meanings without treating a proposed definition as project consensus."
+  },
+  {
+    "finding_id": "R4-15",
+    "title": "Translation freeze and compatible workarounds",
+    "category": "defensible_alternative",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "U32"
+    ],
+    "reviewer_unit_ids": [
+      "C010_freeze"
+    ],
+    "decision": "Retain text_only standing for the exact categorical prohibition. A later workaround can qualify its application or comply with its intended constraint; the source does not settle that choice. Literal nominal-action and pragmatic-action parses preserve the prohibition.",
+    "evidence": [
+      {
+        "source_id": "33224-010",
+        "span": {
+          "start": 625,
+          "end": 726,
+          "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+        }
+      },
+      {
+        "source_id": "33224-021",
+        "span": {
+          "start": 0,
+          "end": 571,
+          "quote": "> If this doc change is desired by contributors, and the 9 acks suggested that it is, then...\r\n\r\n... it can be accepted as is, but left untranslated until the version v31.0.\r\n\r\nThis is acceptable because:\r\n1. We never promised, nor have we ever delivered, 100% translations for every language.\r\n2. It's still easy for the user to translate the warning message themself.\r\n\r\nI still hesitant about introducing last-minute changes to the translation pipeline / framework. We can revisit all related suggestions, such as dropping locations and ids, right after branching off."
+        }
+      }
+    ],
+    "effect_on_paper": "The release sequence remains usable; successful integration alone does not validate an absolute freeze rule or prove its violation."
+  },
+  {
+    "finding_id": "R4-16",
+    "title": "Fresh reviews omit two status definitions",
+    "category": "substantive_error",
+    "origin": "reviewer",
+    "baseline_unit_ids": [
+      "U26a"
+    ],
+    "reviewer_unit_ids": [
+      "A001",
+      "A002",
+      "B23"
+    ],
+    "decision": "Preserve the existing candidate defining discouragement as deprecation and U26a defining deprecation as non-recommendation. Editorial preferences and an embedded recommendation do not exhaust these separate status-defining propositions.",
+    "evidence": [
+      {
+        "source_id": "32714-014",
+        "span": {
+          "start": 141,
+          "end": 172,
+          "quote": "discouragement *is* deprecation"
+        }
+      },
+      {
+        "source_id": "32714-body",
+        "span": {
+          "start": 146,
+          "end": 218,
+          "quote": "deprecation obviously means that the options are not recommended for use"
+        }
+      }
+    ],
+    "effect_on_paper": "The fresh outputs are fallible comparison evidence and cannot replace the baseline automatically."
+  },
+  {
+    "finding_id": "R4-17",
+    "title": "Scope of the named moderation warning",
+    "category": "epistemic_coding_error",
+    "origin": "reviewer",
+    "baseline_unit_ids": [
+      "U17",
+      "U18"
+    ],
+    "reviewer_unit_ids": [
+      "B15",
+      "B18"
+    ],
+    "decision": "Retain case_specific scope for the named addressee and future comments in this thread. General policy supports the intervention but does not make the particular warning a general statement. The exact announced sanction remains text_only, with documented authorization context.",
+    "evidence": [
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 77,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+        }
+      },
+      {
+        "source_id": "32406-252",
+        "span": {
+          "start": 295,
+          "end": 400,
+          "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+        }
+      },
+      {
+        "source_id": "D_MOD",
+        "span": {
+          "start": 3734,
+          "end": 4026,
+          "quote": "If moderation of individual posts fails, moderators will use warnings, timeouts and bans at increasing rates based on prior patterns of behavior. Usually mildly uncivil behavior (such as being off-topic/disruptive or rudeness) will result in a warning or temporary ban (in the order of days)."
+        }
+      }
+    ],
+    "effect_on_paper": "Avoid generalizing a single warning into a universal automatic sanction."
+  },
+  {
+    "finding_id": "R4-18",
+    "title": "Qualified safety principle has advisory force",
+    "category": "defensible_alternative",
+    "origin": "reviewer",
+    "baseline_unit_ids": [],
+    "reviewer_unit_ids": [
+      "C33453_footguns"
+    ],
+    "decision": "Prefer recommendation for the acknowledged good principle in this qualified discussion; preserve the literal negative-imperative/prohibition alternative. The source immediately limits its applicability to the options at issue.",
+    "evidence": [
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1640,
+          "end": 1666,
+          "quote": "Don’t offer users footguns"
+        }
+      },
+      {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1639,
+          "end": 1833,
+          "quote": "“Don’t offer users footguns” is also a good principle, but with this option, there seems to be only small impacts that can quickly be remedied by changing the option value by Bitcoin Core users."
+        }
+      }
+    ],
+    "effect_on_paper": "A normative principle may be recognized and still argued not to control the current case."
+  },
+  {
+    "finding_id": "R4-19",
+    "title": "Review context parity repaired transparently",
+    "category": "process_finding",
+    "origin": "review_packet",
+    "baseline_unit_ids": [
+      "U02"
+    ],
+    "reviewer_unit_ids": [
+      "C115_merit"
+    ],
+    "decision": "The uniform evidence-coverage audit found one missing baseline evidence source in the focal packets: 32406-169. Preserve C's frozen first output and a separate source-only supplemented output. No baseline annotation or other reviewer conclusion was disclosed. The supplement changes merit standing but does not resolve the majority claim.",
+    "evidence": [
+      {
+        "source_id": "32406-169",
+        "span": {
+          "start": 504,
+          "end": 613,
+          "quote": "The technical content of those review comments is what matters, not how many are registered in what category."
+        }
+      }
+    ],
+    "effect_on_paper": "The final comparison uses supplemented C, while the first output remains auditable. Context selection is part of the method."
+  },
+  {
+    "finding_id": "R4-20",
+    "title": "Exact thread linkage supports reported implementation",
+    "category": "substantive_equivalence",
+    "origin": "both",
+    "baseline_unit_ids": [
+      "N01"
+    ],
+    "reviewer_unit_ids": [
+      "B14"
+    ],
+    "decision": "Original reply metadata identifies 32359-053 as a direct reply to 32359-038. Retain reported implementation of the comment suggestion and the separate closed-unmerged PR disposition. The report does not verify the exact resulting code.",
+    "evidence": [
+      {
+        "source_id": "32359-038",
+        "span": {
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        }
+      },
+      {
+        "source_id": "32359-053",
+        "span": {
+          "start": 0,
+          "end": 14,
+          "quote": "Added comment."
+        }
+      }
+    ],
+    "effect_on_paper": "Local technical uptake and repository integration remain distinct outcomes."
+  }
+]

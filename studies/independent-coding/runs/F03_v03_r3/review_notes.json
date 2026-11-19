@@ -1,0 +1,1742 @@
+{
+  "run_id": "F03_v03_r3",
+  "review_type": "one complete source-based self-review after first-complete freeze and mechanical repairs",
+  "review_rounds": 1,
+  "coverage": {
+    "all_entries_screened": 19,
+    "focal_entries_exhaustively_reviewed": 10,
+    "supplement_entries_context_screened": 9,
+    "units_reviewed": 23,
+    "statement_units_reviewed": 16,
+    "relations_reviewed": 13,
+    "outcome_claims_reviewed": 3,
+    "mechanism_claims_reviewed": 3
+  },
+  "checker_flag_resolutions": [
+    {
+      "checker_files": [
+        "checks.first.json"
+      ],
+      "flag_index": 0,
+      "unit_id": "F03-U07",
+      "kind": "outside_unit",
+      "status": "corrected",
+      "change_id": "M01",
+      "rationale": "The earlier red text occurrence belongs to the remove-emphasis evaluation, not the later get-red-text predicate. The evidence now anchors the occurrence within the non-replacable-case proposition. The inferred apply/Bdir roles remain appropriately inferred.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 232,
+            "end": 240,
+            "quote": "red text"
+          }
+        }
+      ]
+    },
+    {
+      "checker_files": [
+        "checks.first.json"
+      ],
+      "flag_index": 1,
+      "unit_id": "F03-U11",
+      "kind": "outside_unit",
+      "status": "corrected",
+      "change_ids": [
+        "M02",
+        "S03"
+      ],
+      "rationale": "The initial this was inside a repeated quotation, not the review predicate. Its evidence now uses this in this can be reviewed already. Self-review also recognizes the explicit patient role of the literal passive. Capability versus institutional permission remains unresolved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "checker_files": [
+        "checks.first.json",
+        "checks.mechanical.json",
+        "checks.json"
+      ],
+      "flag_indices": {
+        "checks.first.json": 2,
+        "checks.mechanical.json": 0,
+        "checks.json": 0
+      },
+      "unit_id": "F03-U04",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "status": "retained",
+      "rationale": "This is directly the object of the explicit verb expose in the source. The pragmatic addition is defer and the recommendation force; neither changes the object's existing role. The body resolves the referent to the checkbox. Explicit Bdir is retained as a defensible role assignment, with the nonexplicit negative timing force separately marked.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 27,
+            "end": 38,
+            "quote": "expose this"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        }
+      ]
+    }
+  ],
+  "unit_review": [
+    {
+      "unit_id": "F03-U01",
+      "status": "retained",
+      "finding": "Retained technical edit candidate and disputed timing/application only; no assertion that all checkbox design is rejected. Location, nSequence, and BIP125 RBF are preserved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U02",
+      "status": "corrected",
+      "finding": "Corrected the activation-condition role to inferred. The tentative negative preference is not elevated into an explicit merge instruction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U03",
+      "status": "retained",
+      "finding": "Retained the literal negative intention and personal strategy. The author is the explicit I, while an invitation to reviewers remains an alternative; no reviewer actor is invented.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U04",
+      "status": "retained",
+      "finding": "Retained pragmatic timing recommendation with explicit object this and complete until-capability qualifier. The modal can inside the condition is technical capability.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U05",
+      "status": "retained",
+      "finding": "Retained a coupled request to remove red emphasis and the bang in this window. Both display targets remain recoverable; separate coordinated children are a meaning-preserving alternative.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U06",
+      "status": "corrected",
+      "finding": "Corrected the reconstructed object to retain there, bounding the wording concern to this display occurrence. Revise and purpose remain inferred.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U07",
+      "status": "corrected",
+      "finding": "Corrected the red-text evidence occurrence mechanically. The non-replacable case is an inferred receiver of applying red text; should is anchored to the matching get predicate, and fee-update rationale is retained in the unit.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U08",
+      "status": "retained",
+      "finding": "Retained the complete adaptive-switch alternative with N replacements, future locktimes, multiplicative fees, and the time-indexed fee display. No XOR or implementation outcome is invented.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U09",
+      "status": "retained",
+      "finding": "Retained a repeated quotation, not another statement or endorsement. The original italic delimiters are absent in this occurrence, which does not imply a new proposition.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U10",
+      "status": "retained",
+      "finding": "Retained direct agreement as a context act and specific endorsement, without treating it as a recognized rule.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U11",
+      "status": "corrected",
+      "finding": "Retargeted the local patient anchor and corrected it to an explicit role in a literal passive. Can remains unresolved capability versus permission; already is retained.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U12",
+      "status": "retained",
+      "finding": "Retained exact repeated adaptive-switch text as a quotation endpoint, without independent endorsement.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U13",
+      "status": "retained",
+      "finding": "Retained tentative possible-solution endorsement, not a completed implementation or settled decision.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U14",
+      "status": "retained",
+      "finding": "Retained an attributable attempted method, including return to the sendcoins dialog. Its technical-report alternative remains explicit, and the complexity response now clarifies rather than challenges this report.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U15",
+      "status": "retained",
+      "finding": "Retained a literal question proposing just fee increases; should, maybe, and exclusive focus remain recoverable. No final narrowing of implementation scope is asserted.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U16",
+      "status": "retained",
+      "finding": "Retained explicit handle/you/object structure and technical-necessity alternative. The original transaction and original-confirms purpose are preserved; additional-output activation is inferred.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U17",
+      "status": "retained",
+      "finding": "Retained technical repeated-use computational burden as context. Must compute is not a sanction or separately imposed social obligation.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U18",
+      "status": "retained",
+      "finding": "Retained indirect replacement suggestion with two alternative words, not an obligation to use both. Original replacable and would-as-prediction are preserved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U19",
+      "status": "retained",
+      "finding": "Retained positive technical evaluation as a response, not a new adoption claim.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U20",
+      "status": "retained",
+      "finding": "Retained the option label, delay behavior, amend-within-timeout benefit, and possible abort before initially set. No correction to the source wording or inferred on/off behavior is supplied.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 177,
+            "end": 416,
+            "quote": "though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set)."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U21",
+      "status": "retained",
+      "finding": "Retained the incomplete spelling fragment, conditional fallback, and inferred vocative actor role. Jonas and Greg are not assigned unsupplied formal identities or powers.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U22",
+      "status": "retained",
+      "finding": "Retained a text-only rebase expectation with unresolved technical-diagnosis alternative. Actor is omitted; PR #7819 is the inferred action target. No rebase or sanction is inferred from closure.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "F03-U23",
+      "status": "retained",
+      "finding": "Retained the scoped closure/inclusion report as context. #8182 is the named successor, while supplied metadata establishes each object's separate unmerged closure.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        }
+      ]
+    }
+  ],
+  "screening_review": [
+    {
+      "source_id": "pr7819:body",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: proposed checkbox edit, tentative scope condition, and author strategy not to delay review. Ongoing GUI work, refactoring provenance, and unrendered image links are context.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 802,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF.\n\nThis PR does not include a way to actually replace a transaction with the GUI. So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk).\nBut I don't want to hold back review of this PR.\n\nIncludes two refactoring commits from https://github.com/bitcoin/bitcoin/pull/7159\n\n<img width=\"1056\" alt=\"bildschirmfoto 2016-04-05 um 16 49 20\" src=\"https://cloud.githubusercontent.com/assets/178464/14286488/7ea518be-fb4f-11e5-8b21-437261f23141.png\">\n\n<img width=\"546\" alt=\"bildschirmfoto 2016-04-05 um 17 14 09\" src=\"https://cloud.githubusercontent.com/assets/178464/14287110/da21d78e-fb51-11e5-9be1-bf91391fd8ab.png\">\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:0",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: hedged recommendation to defer exposure until replacement capability, with a literal technical-judgment alternative.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 89,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement...\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:1",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: coordinated removal of visual emphasis, indirect wording revision, alternative emphasis for the non-replacable case, and the qualified adaptive-fee-switch proposal.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 563,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it. Also \"replaceable\" there may have the user thinking that it's more replaceable than it is... arguably it should be the non-replacable case that should get red text (because you can't update fees later).\n\nI'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:2",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: review-now statement with unresolved capability/permission force. The repeated quotation and direct agreement are separately retained without creating extra prescriptions.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 237,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:3",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: reported development strategy for additional outputs and tentative fee-only focus. Repeated quotation and possible-solution assent are nonstatement records.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 485,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])\n\nYes. This might be a solution.\nI somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog).\nBut maybe we should just focus on increasing the fees?\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:4",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: technical necessity concerning a child transaction, retained with an unresolved institutional reading. Repeated-use computational blowup is technical context, not an institutional sanction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 295,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:5",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: alternative wording suggestion and delayed-send option with all conditional benefits retained. Interest in additional outputs is an evaluative response.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 417,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?   doing the add output thing would be pretty interesting... though it would be nice to have a [send immediately] option which delays sending it, thus avoids having to do the extra just in case transactions if you amend with in the timeout. (and could also let you abort before it was initially set).\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:6",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: indirect conditional spelling edit, preserving the incomplete quoted fragment and the alternative suggestion condition.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 127,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion.\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:7",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "candidate",
+      "finding": "Candidate: terse rebase expectation with technical-diagnosis alternative and no inferred authority.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 14,
+            "quote": "Needs rebase.\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:comments:8",
+      "scope": "exhaustive focal",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Context only: author reports closure and inclusion in successor #8182; no independently prescribed recurring governance arrangement is asserted.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 44,
+            "quote": "Closing in favor of #8182 (included there).\n"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:metadata",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: original PR state and file-change metadata provide bounded outcome evidence. This is not an exhaustive extraction claim or proof that metadata has no institutional relevance.",
+      "evidence": [
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 0,
+            "end": 1303,
+            "quote": "{\n  \"number\": 7819,\n  \"title\": \"[Qt] Simple opt-in-RBF checkbox\",\n  \"state\": \"closed\",\n  \"created_at\": \"2016-04-05T15:15:15+00:00\",\n  \"updated_at\": \"2021-09-08T11:40:59+00:00\",\n  \"closed_at\": \"2016-06-09T09:21:57+00:00\",\n  \"merged_at\": null,\n  \"author\": \"jonasschnelli\",\n  \"author_id\": 178464,\n  \"merged\": false,\n  \"merged_by\": null,\n  \"merged_by_id\": null,\n  \"labels\": [\n    \"GUI\"\n  ],\n  \"files\": [\n    {\n      \"filename\": \"src/qt/forms/sendcoinsdialog.ui\",\n      \"additions\": 10,\n      \"deletions\": 0,\n      \"changes\": 10,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/sendcoinsdialog.cpp\",\n      \"additions\": 9,\n      \"deletions\": 2,\n      \"changes\": 11,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/walletmodel.cpp\",\n      \"additions\": 2,\n      \"deletions\": 2,\n      \"changes\": 4,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/qt/walletmodel.h\",\n      \"additions\": 1,\n      \"deletions\": 1,\n      \"changes\": 2,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/wallet/wallet.cpp\",\n      \"additions\": 5,\n      \"deletions\": 5,\n      \"changes\": 10,\n      \"status\": \"modified\"\n    },\n    {\n      \"filename\": \"src/wallet/wallet.h\",\n      \"additions\": 6,\n      \"deletions\": 1,\n      \"changes\": 7,\n      \"status\": \"modified\"\n    }\n  ]\n}"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:supplement_metadata",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: archived #7819 metadata corroborates closure without merge. Its merge_commit_sha does not override merged=false or prove integration.",
+      "evidence": [
+        {
+          "source_id": "pr7819:supplement_metadata",
+          "span": {
+            "start": 0,
+            "end": 587,
+            "quote": "{\n  \"url\": \"https://github.com/bitcoin/bitcoin/pull/7819\",\n  \"number\": 7819,\n  \"title\": \"[Qt] Simple opt-in-RBF checkbox\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"base\": \"master\",\n  \"base_sha\": \"e30a5b0aaaa908643202b572a172144f0690d09b\",\n  \"head\": \"2016/04/qt_rbf_set\",\n  \"head_sha\": \"9c4baa44d6448b3432fe265f5c800af29a6cdaf1\",\n  \"head_repo_full_name\": \"jonasschnelli/bitcoin\",\n  \"merge_commit_sha\": \"edd10762305589a0050e125e38220912024f4b3d\",\n  \"created_at\": \"2016-04-05T15:15:15Z\",\n  \"updated_at\": \"2021-09-08T11:40:59Z\",\n  \"closed_at\": \"2016-06-09T09:21:57Z\",\n  \"merged_at\": null\n}"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr8182:supplement_metadata",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: #8182 is a distinct successor object, also closed without merge. No successor body, discussion, or patch is supplied for exhaustive proposition extraction.",
+      "evidence": [
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 0,
+            "end": 594,
+            "quote": "{\n  \"url\": \"https://github.com/bitcoin/bitcoin/pull/8182\",\n  \"number\": 8182,\n  \"title\": \"[Qt] Add simple opt-in-RBF support\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"base\": \"master\",\n  \"base_sha\": \"d7615af34e8e19920ed12bfdafb09e0e4b57c7c5\",\n  \"head\": \"2016/04/qt_rbf_set_new\",\n  \"head_sha\": \"ce2651580b4e40c3a3b26cd0cf82f960610e231a\",\n  \"head_repo_full_name\": \"jonasschnelli/bitcoin\",\n  \"merge_commit_sha\": \"1987a7a11a1a9513f2eca7a54c751178e2ef518c\",\n  \"created_at\": \"2016-06-09T09:17:34Z\",\n  \"updated_at\": \"2021-09-08T11:42:11Z\",\n  \"closed_at\": \"2016-12-06T10:15:00Z\",\n  \"merged_at\": null\n}"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:0",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Proposed checkbox text and tooltip, including higher-fee and unconfirmed-transaction qualifiers. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:0",
+          "span": {
+            "start": 0,
+            "end": 566,
+            "quote": "@@ -1256,6 +1256,16 @@\n        </property>\n       </widget>\n      </item>\n+     <item>\n+      <widget class=\"QCheckBox\" name=\"optInRBF\">\n+       <property name=\"text\">\n+        <string>Allow Replace-By-Fee</string>\n+       </property>\n+       <property name=\"toolTip\">\n+        <string>Signals that this transaction can be replaced with a transation paying higher fees (as long as the transaction is NOT confirmed).</string>\n+       </property>\n+      </widget>\n+     </item>\n      <item>\n       <spacer name=\"horizontalSpacer\">\n        <property name=\"orientation\">"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:1",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Call-site changes and confirmation text; the retained head still shows red styling, replacable, and an exclamation mark, without a trustworthy review-to-patch chronology. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 0,
+            "end": 1490,
+            "quote": "@@ -230,9 +230,9 @@ void SendCoinsDialog::on_sendButton_clicked()\n     WalletModelTransaction currentTransaction(recipients);\n     WalletModel::SendCoinsReturn prepareStatus;\n     if (model->getOptionsModel()->getCoinControlFeatures()) // coin control enabled\n-        prepareStatus = model->prepareTransaction(currentTransaction, CoinControlDialog::coinControl);\n+        prepareStatus = model->prepareTransaction(currentTransaction, CoinControlDialog::coinControl, ui->optInRBF->isChecked());\n     else\n-        prepareStatus = model->prepareTransaction(currentTransaction);\n+        prepareStatus = model->prepareTransaction(currentTransaction, NULL, ui->optInRBF->isChecked());\n \n     // process prepareStatus and on error generate message shown to user\n     processSendCoinsReturn(prepareStatus,\n@@ -311,6 +311,13 @@ void SendCoinsDialog::on_sendButton_clicked()\n     questionString.append(QString(\"<span style='font-size:10pt;font-weight:normal;'><br />(=%2)</span>\")\n         .arg(alternativeUnits.join(\" \" + tr(\"or\") + \"<br />\")));\n \n+    if (ui->optInRBF->isChecked())\n+    {\n+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));\n+        questionString.append(\"</span>\");\n+    }\n+\n     QMessageBox::StandardButton retval = QMessageBox::question(this, tr(\"Confirm send coins\"),\n         questionString.arg(formatted.join(\"<br />\")),\n         QMessageBox::Yes | QMessageBox::Cancel,"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:2",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Wallet-model forwarding of the opt-in flag into transaction creation. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:2",
+          "span": {
+            "start": 0,
+            "end": 1187,
+            "quote": "@@ -189,7 +189,7 @@ bool WalletModel::validateAddress(const QString &address)\n     return addressParsed.IsValid();\n }\n \n-WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransaction &transaction, const CCoinControl *coinControl)\n+WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransaction &transaction, const CCoinControl *coinControl, bool optInRBF)\n {\n     CAmount total = 0;\n     bool fSubtractFeeFromAmount = false;\n@@ -274,7 +274,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact\n \n         CWalletTx *newTx = transaction.getTransaction();\n         CReserveKey *keyChange = transaction.getPossibleKeyChange();\n-        bool fCreated = wallet->CreateTransaction(vecSend, *newTx, *keyChange, nFeeRequired, nChangePosRet, strFailReason, coinControl);\n+        bool fCreated = wallet->CreateTransaction(vecSend, *newTx, *keyChange, nFeeRequired, nChangePosRet, strFailReason, coinControl, optInRBF ? CREATE_TX_RBF_OPT_IN : CREATE_TX_DEFAULT);\n         transaction.setTransactionFee(nFeeRequired);\n         if (fSubtractFeeFromAmount && fCreated)\n             transaction.reassignAmounts(nChangePosRet);"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:3",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Wallet-model function signature and false default. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:3",
+          "span": {
+            "start": 0,
+            "end": 504,
+            "quote": "@@ -151,7 +151,7 @@ class WalletModel : public QObject\n     };\n \n     // prepare transaction for getting txfee before sending coins\n-    SendCoinsReturn prepareTransaction(WalletModelTransaction &transaction, const CCoinControl *coinControl = NULL);\n+    SendCoinsReturn prepareTransaction(WalletModelTransaction &transaction, const CCoinControl *coinControl = NULL, bool optInRBF = false);\n \n     // Send coins to a list of recipients\n     SendCoinsReturn sendCoins(WalletModelTransaction &transaction);"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:4",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Transaction flags, sequence computation, and signing-related changes. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:4",
+          "span": {
+            "start": 0,
+            "end": 2846,
+            "quote": "@@ -1951,7 +1951,7 @@ bool CWallet::FundTransaction(CMutableTransaction& tx, CAmount &nFeeRet, int& nC\n \n     CReserveKey reservekey(this);\n     CWalletTx wtx;\n-    if (!CreateTransaction(vecSend, wtx, reservekey, nFeeRet, nChangePosRet, strFailReason, &coinControl, false))\n+    if (!CreateTransaction(vecSend, wtx, reservekey, nFeeRet, nChangePosRet, strFailReason, &coinControl, CREATE_TX_DONT_SIGN))\n         return false;\n \n     if (nChangePosRet != -1)\n@@ -1968,7 +1968,7 @@ bool CWallet::FundTransaction(CMutableTransaction& tx, CAmount &nFeeRet, int& nC\n }\n \n bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, CAmount& nFeeRet,\n-                                int& nChangePosRet, std::string& strFailReason, const CCoinControl* coinControl, bool sign)\n+                                int& nChangePosRet, std::string& strFailReason, const CCoinControl* coinControl, unsigned int flags)\n {\n     CAmount nValue = 0;\n     unsigned int nSubtractFeeFromAmount = 0;\n@@ -2179,7 +2179,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt\n                 // nLockTime set above actually works.\n                 BOOST_FOREACH(const PAIRTYPE(const CWalletTx*,unsigned int)& coin, setCoins)\n                     txNew.vin.push_back(CTxIn(coin.first->GetHash(),coin.second,CScript(),\n-                                              std::numeric_limits<unsigned int>::max()-1));\n+                                              std::numeric_limits<unsigned int>::max() - ((flags & CREATE_TX_RBF_OPT_IN) ? 2 : 1) ));\n \n                 // Sign\n                 int nIn = 0;\n@@ -2189,7 +2189,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt\n                     bool signSuccess;\n                     const CScript& scriptPubKey = coin.first->vout[coin.second].scriptPubKey;\n                     CScript& scriptSigRes = txNew.vin[nIn].scriptSig;\n-                    if (sign)\n+                    if (!(flags & CREATE_TX_DONT_SIGN))\n                         signSuccess = ProduceSignature(TransactionSignatureCreator(this, &txNewConst, nIn, SIGHASH_ALL), scriptPubKey, scriptSigRes);\n                     else\n                         signSuccess = ProduceSignature(DummySignatureCreator(this), scriptPubKey, scriptSigRes);\n@@ -2205,7 +2205,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt\n                 unsigned int nBytes = ::GetSerializeSize(txNew, SER_NETWORK, PROTOCOL_VERSION);\n \n                 // Remove scriptSigs if we used dummy signatures for fee calculation\n-                if (!sign) {\n+                if (flags & CREATE_TX_DONT_SIGN) {\n                     BOOST_FOREACH (CTxIn& vin, txNew.vin)\n                         vin.scriptSig = CScript();\n                 }"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "pr7819:patch:5",
+      "scope": "supplement context screen",
+      "status": "retained",
+      "disposition": "context_only",
+      "finding": "Supplement screened as context: Flag enum and transaction-creation signature; these technical definitions are not automatically institutional constitutions. The selection design does not require exhaustive extraction from supplemental patches.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:5",
+          "span": {
+            "start": 0,
+            "end": 1068,
+            "quote": "@@ -533,6 +533,11 @@ class CAccountingEntry\n     std::vector<char> _ssExtra;\n };\n \n+enum CreateTransactionFlags {\n+    CREATE_TX_DEFAULT     = 0,\n+    CREATE_TX_DONT_SIGN   = (1U << 0),\n+    CREATE_TX_RBF_OPT_IN  = (1U << 1)\n+};\n \n /** \n  * A CWallet is an extension of a keystore, which also maintains a set of transactions and balances,\n@@ -746,7 +751,7 @@ class CWallet : public CCryptoKeyStore, public CValidationInterface\n      * selected by SelectCoins(); Also create the change output, when needed\n      */\n     bool CreateTransaction(const std::vector<CRecipient>& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, CAmount& nFeeRet, int& nChangePosRet,\n-                           std::string& strFailReason, const CCoinControl *coinControl = NULL, bool sign = true);\n+                           std::string& strFailReason, const CCoinControl *coinControl = NULL, unsigned int flags = CREATE_TX_DEFAULT);\n     bool CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey);\n \n     bool AddAccountingEntry(const CAccountingEntry&, CWalletDB & pwalletdb);"
+          }
+        }
+      ]
+    }
+  ],
+  "relation_review": [
+    {
+      "relation_index": 0,
+      "from_unit_id": "F03-U04",
+      "to_unit_id": "F03-U01",
+      "type": "challenges",
+      "status": "retained",
+      "finding": "Challenges the timing of exposing the proposed feature without actual replacement capability; it does not challenge every possible checkbox implementation.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 1,
+      "from_unit_id": "F03-U09",
+      "to_unit_id": "F03-U04",
+      "type": "quotes",
+      "status": "retained",
+      "finding": "Attributed block quote repeats the earlier concern; omission of italic delimiters does not change its referent.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 2,
+      "from_unit_id": "F03-U04",
+      "to_unit_id": "F03-U10",
+      "type": "uptake",
+      "status": "retained",
+      "finding": "The request-like concern receives direct agreement after its quotation. Agreement is an endorsement, not expectation recognition.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 3,
+      "from_unit_id": "F03-U11",
+      "to_unit_id": "F03-U03",
+      "type": "clarifies",
+      "status": "retained",
+      "finding": "Clarifies the author's earlier intention not to delay review by distinguishing reviewability from completion of the companion GUI.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 4,
+      "from_unit_id": "F03-U12",
+      "to_unit_id": "F03-U08",
+      "type": "quotes",
+      "status": "retained",
+      "finding": "The adaptive-switch proposition is repeated as a block quote.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 5,
+      "from_unit_id": "F03-U08",
+      "to_unit_id": "F03-U13",
+      "type": "uptake",
+      "status": "retained",
+      "finding": "The exactly quoted proposal receives tentative endorsement as a possible solution, not a verified design decision.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 6,
+      "from_unit_id": "F03-U15",
+      "to_unit_id": "F03-U08",
+      "type": "clarifies",
+      "status": "retained",
+      "finding": "The response narrows the discussed direction toward fee increases while retaining question form; it does not prove that the alternative was adopted.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 7,
+      "from_unit_id": "F03-U16",
+      "to_unit_id": "F03-U14",
+      "type": "clarifies",
+      "status": "corrected",
+      "finding": "Specifies technical requirements of the reported additional-output approach. It does not contradict that the author tried it, nor expressly reject the proposal; complexity is not by itself institutional dispute.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 8,
+      "from_unit_id": "F03-U17",
+      "to_unit_id": "F03-U16",
+      "type": "clarifies",
+      "status": "retained",
+      "finding": "The coordinated continuation adds the repeated-use computational complication to the child-transaction requirement.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 9,
+      "from_unit_id": "F03-U14",
+      "to_unit_id": "F03-U19",
+      "type": "uptake",
+      "status": "retained",
+      "finding": "The later add-output evaluation corresponds to the author's attempted approach, but remains a favorable technical response.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 10,
+      "from_unit_id": "F03-U18",
+      "to_unit_id": "F03-U06",
+      "type": "clarifies",
+      "status": "retained",
+      "finding": "The same contributor later offers concrete wording alternatives for the earlier misleading-label concern; causation and edit history remain unobserved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 11,
+      "from_unit_id": "F03-U21",
+      "to_unit_id": "F03-U18",
+      "type": "clarifies",
+      "status": "retained",
+      "finding": "The spelling fallback is expressly conditional on not taking Greg's suggestion; matching wording content supports reference to the alternatives in comment 5, without assuming a formal actor identity.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        }
+      ]
+    },
+    {
+      "relation_index": 12,
+      "from_unit_id": "F03-U22",
+      "to_unit_id": "F03-U23",
+      "type": "temporal",
+      "status": "retained",
+      "finding": "The supplied comment timestamps place the rebase request before the closure report on 2016-06-09. This is ordering only; closure is not evidence of rebase compliance or punishment.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        }
+      ]
+    }
+  ],
+  "recognition_and_disposition_review": [
+    {
+      "units": [
+        "F03-U01"
+      ],
+      "status": "retained",
+      "finding": "The readiness challenge concerns immediate stand-alone exposure. Closure remains broader-proposal status; reported inclusion in #8182 remains an author implementation report, not verified repository integration. Distinct objects are preserved.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 149,
+            "end": 164,
+            "quote": "\"merged\": false"
+          }
+        }
+      ]
+    },
+    {
+      "units": [
+        "F03-U04",
+        "F03-U08"
+      ],
+      "status": "retained",
+      "finding": "Quoted-then-agreed responses support this-proposition endorsement, not expectation recognition or locally_supported standing. No accepted disposition is inferred from technical assent.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        }
+      ]
+    },
+    {
+      "units": [
+        "F03-U14",
+        "F03-U18"
+      ],
+      "status": "retained",
+      "finding": "Response and favorable-evaluation links remain context-inferred because threading or identity authentication is incomplete; neither event verifies implementation.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 119,
+            "end": 176,
+            "quote": "doing the add output thing would be pretty interesting..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ]
+    },
+    {
+      "units": [
+        "F03-U23"
+      ],
+      "status": "retained",
+      "finding": "The closure report is a context act. Its metadata disposition is broader_proposal recorded_closed_unmerged, without rejection or sanction.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 179,
+            "end": 219,
+            "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 223,
+            "end": 240,
+            "quote": "\"merged_at\": null"
+          }
+        }
+      ]
+    }
+  ],
+  "authority_application_levels_review": {
+    "status": "retained",
+    "finding": "No statement is promoted to rule_candidate, constitutive_specification, locally_supported, or repeatedly_supported. No authority, authorization, application-of-rule, or enforcement relation is inferred. All visible contribution actions and focal edit/review activities are operational; there is no evidence of collective-choice procedural revision, constitutional power allocation, or epistemic authority. Technical software properties are not institutions merely because they constrain implementation.",
+    "evidence": [
+      {
+        "source_id": "pr7819:body",
+        "span": {
+          "start": 0,
+          "end": 131,
+          "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:1",
+        "span": {
+          "start": 281,
+          "end": 562,
+          "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+        }
+      },
+      {
+        "source_id": "pr7819:comments:2",
+        "span": {
+          "start": 161,
+          "end": 190,
+          "quote": "this can be reviewed already."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:4",
+        "span": {
+          "start": 4,
+          "end": 179,
+          "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:7",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "Needs rebase."
+        }
+      },
+      {
+        "source_id": "pr7819:comments:8",
+        "span": {
+          "start": 0,
+          "end": 43,
+          "quote": "Closing in favor of #8182 (included there)."
+        }
+      }
+    ]
+  },
+  "outcome_and_mechanism_review": [
+    {
+      "target": "episode_summary.observed_outcomes[0]",
+      "status": "retained",
+      "claim": "The author reports closing #7819 in favor of #8182 and says the contribution is included there. The #7819 metadata records closure on June 9, 2016 with merged=false and no merge timestamp. This establishes closure without recorded integration, not rejection of every proposed edit.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 179,
+            "end": 219,
+            "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 223,
+            "end": 240,
+            "quote": "\"merged_at\": null"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        }
+      ]
+    },
+    {
+      "target": "episode_summary.observed_outcomes[1]",
+      "status": "retained",
+      "claim": "The separately supplied successor record #8182 is also closed without merge, with a December 6, 2016 closure timestamp. A merge_commit_sha string in the archived metadata is not evidence that this successor was merged.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 61,
+            "end": 75,
+            "quote": "\"number\": 8182"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 536,
+            "end": 571,
+            "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 149,
+            "end": 164,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 575,
+            "end": 592,
+            "quote": "\"merged_at\": null"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 390,
+            "end": 452,
+            "quote": "\"merge_commit_sha\": \"1987a7a11a1a9513f2eca7a54c751178e2ef518c\""
+          }
+        }
+      ]
+    },
+    {
+      "target": "episode_summary.observed_outcomes[2]",
+      "status": "retained",
+      "claim": "The retained #7819 head patch contains red confirmation styling and the message \"This transaction is replacable (optin-RBF)!\". It therefore does not demonstrate implementation of the requested visual de-emphasis or the proposed replacement spellings; the snapshot supplies no causal edit chronology.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:patch:1",
+          "span": {
+            "start": 1085,
+            "end": 1238,
+            "quote": "+        questionString.append(\"<hr /><span style='color:#aa0000;'>\");\n+        questionString.append(tr(\"This transaction is replacable (optin-RBF)!\"));"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:5",
+          "span": {
+            "start": 0,
+            "end": 116,
+            "quote": "Instead of the word \"replacable\" perhaps the word \"updatable\" or \"amendable\" would better express what the it'll do?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:6",
+          "span": {
+            "start": 0,
+            "end": 126,
+            "quote": "Hate to be that guy Jonas, but I believe \"replaceab\"... is the more accepted spelling, if you don't go with Greg's suggestion."
+          }
+        }
+      ]
+    },
+    {
+      "target": "episode_summary.mechanisms[0]",
+      "status": "retained",
+      "claim": "The author states an intention not to delay review while the GUI replacement workflow is unfinished. A reviewer questions exposure before replacement is possible; the author quotes that concern, agrees, and says the existing contribution can already be reviewed. This supports a communicative distinction between reviewing an incomplete contribution and exposing its feature; it does not demonstrate authority or actual review completion.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "target": "episode_summary.mechanisms[1]",
+      "status": "retained",
+      "claim": "The adaptive-fee-switch suggestion receives an attributed quotation and a tentative possible-solution response. The author reports trying additional outputs and asks whether to focus only on increasing fees. A subsequent comment explains child-transaction handling and repeated-use version growth for additional outputs. This is a source-supported exchange of design alternatives and reasons, without a demonstrated final design or causal implementation effect.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 281,
+            "end": 562,
+            "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 0,
+            "end": 283,
+            "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 285,
+            "end": 315,
+            "quote": "Yes. This might be a solution."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 4,
+            "end": 179,
+            "quote": "workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 180,
+            "end": 294,
+            "quote": "and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute."
+          }
+        }
+      ]
+    },
+    {
+      "target": "episode_summary.mechanisms[2]",
+      "status": "corrected",
+      "claim": "The author reports replacing this contribution with #8182, where it is said to be included. Metadata confirms #7819 closed without merge and separately records #8182 closed without merge. The report supports relocation of the proposal as the stated reason for closure; it does not verify code transfer, integration, or a response to the earlier rebase request.",
+      "finding": "Reviewed every material clause against the cited supplied text and its object/revision context. The claim retains the distinction between technical discussion, author report, recorded PR status, and unverified implementation; no sequence is treated as causal identification.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 43,
+            "quote": "Closing in favor of #8182 (included there)."
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 179,
+            "end": 219,
+            "quote": "\"closed_at\": \"2016-06-09T09:21:57+00:00\""
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 223,
+            "end": 240,
+            "quote": "\"merged_at\": null"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 61,
+            "end": 75,
+            "quote": "\"number\": 8182"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 536,
+            "end": 571,
+            "quote": "\"closed_at\": \"2016-12-06T10:15:00Z\""
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 149,
+            "end": 164,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 575,
+            "end": 592,
+            "quote": "\"merged_at\": null"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ]
+    }
+  ],
+  "retained_limitations": [
+    "No complete edit history, reliable reply threading, or original comment IDs beyond corpus array positions.",
+    "Image links are not rendered; visual claims rely only on supplied prose and the retained #7819 patch.",
+    "No patches, full discussion, or verified incorporation details for #8182; #7159 is only referenced, without outcome evidence.",
+    "No evidence of recognized rule-making authority, enforcement, sanctions, or expectation recognition sufficient for locally_supported standing.",
+    "No supplied verification of a rebase, removal of display emphasis, chosen replacement wording, delayed-send option, adaptive-fee switch, or completed replacement GUI.",
+    "No evidence of repository integration or Bitcoin network adoption, nor of constitutional or epistemic governance activity."
+  ],
+  "unresolved_judgments": [
+    {
+      "units": [
+        "F03-U01",
+        "F03-U02",
+        "F03-U05",
+        "F03-U06",
+        "F03-U07",
+        "F03-U08",
+        "F03-U18",
+        "F03-U20",
+        "F03-U21"
+      ],
+      "status": "unresolved",
+      "finding": "Several technical proposals are plausible contribution-governance candidates but lack evidence selecting a rule, norm, or strategy beyond one-off design advice. Their literal technical alternatives are retained."
+    },
+    {
+      "units": [
+        "F03-U11",
+        "F03-U16"
+      ],
+      "status": "unresolved",
+      "finding": "Reviewability can and technical need do not establish permission or obligation; the force remains unresolved."
+    },
+    {
+      "units": [
+        "F03-U22"
+      ],
+      "status": "unresolved",
+      "finding": "Rebase request versus technical diagnosis remains unresolved, with a text-only norm-candidate interpretation rather than an authoritative requirement."
+    }
+  ],
+  "review_conclusion": "The checker verifies structure and exact text identity, not semantic truth. All checker flags are resolved as corrected or retained with source reasons. Source self-review corrected five items; institutional ambiguities and source limits remain explicit."
+}

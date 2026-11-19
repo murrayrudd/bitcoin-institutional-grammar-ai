@@ -1,0 +1,53 @@
+{
+  "selected_at_utc": "2026-11-07T18:39:02.783264+00:00",
+  "corpus_sha256": "b289aa40737d619dea8a673290fae636dbe1a65ccf49331223ab548acb23f7c9",
+  "corpus_records": 25508,
+  "exclusion_count": 226,
+  "inventory_sha256": "a0c6c0bf2140dc99c9edc04e616f7202bd97eb3c33a4d2c21a26112b71469d1e",
+  "eligible_counts": {
+    "procedure_title": 284,
+    "merged": 9404,
+    "closed_unmerged": 5022
+  },
+  "selected": [
+    {
+      "episode_id": "F01",
+      "stratum": "procedure_title",
+      "number": 26586,
+      "title": "test: previous releases: add v24.0.1",
+      "canonical_identifier": "bitcoin/bitcoin#26586",
+      "rank": "0043931da816ed46997f687898a9dd59779fc614cd9c40d033967356008ffe2b",
+      "source_text_characters": 6486,
+      "line_number": 7143,
+      "byte_offset": 113186725,
+      "byte_length": 9526,
+      "line_sha256": "38118781799b95c239e845fb52a3376dd6455497ab3a7d4c8d4b0d483c200042"
+    },
+    {
+      "episode_id": "F02",
+      "stratum": "merged",
+      "number": 14441,
+      "title": "[wallet] Backport(0.17): Restore ability to list incoming transactions by label",
+      "canonical_identifier": "bitcoin/bitcoin#14441",
+      "rank": "00083e28768a91d8c4eed0cb91570f6469a3486f03706d4f204834e679312f36",
+      "source_text_characters": 1970,
+      "line_number": 15487,
+      "byte_offset": 209687395,
+      "byte_length": 4869,
+      "line_sha256": "9e474a20b45b5879fe18bdc8c008af2af1980aeb84aa6cd97b69b2dbb5dcd94c"
+    },
+    {
+      "episode_id": "F03",
+      "stratum": "closed_unmerged",
+      "number": 7819,
+      "title": "[Qt] Simple opt-in-RBF checkbox",
+      "canonical_identifier": "bitcoin/bitcoin#7819",
+      "rank": "0001a48f0e47be65b4f34d0b4c7850386839388b4adbbcfae0a5b5409c12d349",
+      "source_text_characters": 3073,
+      "line_number": 20180,
+      "byte_offset": 246267600,
+      "byte_length": 5168,
+      "line_sha256": "c090188c2adef82259f95ee894e893c314215a12038a50980aacae0931a8f351"
+    }
+  ]
+}

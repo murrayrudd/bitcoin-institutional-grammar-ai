@@ -1,0 +1,112 @@
+{
+  "number": 8771,
+  "title": "CONTRIBUTING: Mention not to open several pulls",
+  "body": "",
+  "state": "closed",
+  "created_at": "2016-09-21T09:31:42+00:00",
+  "updated_at": "2021-09-08T11:22:07+00:00",
+  "closed_at": "2016-09-25T11:10:29+00:00",
+  "merged_at": "2016-09-25T11:10:29+00:00",
+  "author": "luke-jr",
+  "author_id": 1095675,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Docs"
+  ],
+  "milestone": null,
+  "merged_by": "laanwj",
+  "merged_by_id": 126646,
+  "comments": [
+    {
+      "body": "Seems reasonable, though the minor \"Fix 0.13 release notes attribution mistake\" commit seems unrelated. \n",
+      "author": "gmaxwell",
+      "created_at": "2016-09-22T18:38:48+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "luke-jr",
+      "submitted_at": "2016-09-21T09:32:31+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "laanwj",
+      "submitted_at": "2016-09-21T09:34:22+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "Addressed feedback\n",
+      "author": "maflcko",
+      "submitted_at": "2016-09-21T09:46:48+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "ACK\n",
+      "author": "luke-jr",
+      "submitted_at": "2016-09-21T10:03:22+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "laanwj",
+      "submitted_at": "2016-09-21T12:07:28+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK\n",
+      "author": "jonasschnelli",
+      "submitted_at": "2016-09-21T12:57:32+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "Not sure this is something we want to encourage...\n",
+      "author": "luke-jr",
+      "created_at": "2016-09-21T09:32:00+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "\"same change\"?\n",
+      "author": "luke-jr",
+      "created_at": "2016-09-21T09:32:18+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "Well, not in general, but we want to encourage it for people that don't know how to use git. I'd prefer people to learn how to do it themselves, of course, but personally tutoring everyone how to use git (especially those that use the web interface :( ) is a lot of work.\n",
+      "author": "laanwj",
+      "created_at": "2016-09-21T09:34:14+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    },
+    {
+      "body": "should this be \"several pull requests\"?\n",
+      "author": "laanwj",
+      "created_at": "2016-09-21T12:07:28+00:00",
+      "path": "CONTRIBUTING.md",
+      "line": null
+    }
+  ],
+  "files": [
+    {
+      "filename": "CONTRIBUTING.md",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 4,
+  "total_comments": 1,
+  "total_reviews": 6,
+  "total_files_changed": 1,
+  "total_additions": 9,
+  "total_deletions": 0
+}

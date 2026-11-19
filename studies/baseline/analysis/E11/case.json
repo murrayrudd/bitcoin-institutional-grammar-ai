@@ -1,0 +1,109 @@
+{
+  "episode_id": "E11",
+  "pr_number": 23798,
+  "label": "Endorsement and signer registration",
+  "mechanism": "authority_allocation",
+  "initiation": "A volunteer receives wallet-role endorsements through linked meeting and PR discussion.",
+  "outcome": "The key is added to the merged trusted list; the recorded process preserves opportunities for comment.",
+  "alternative_explanation": "The technical marker can accompany recognition without itself observing the full appointment procedure or access grant.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Filling an existing role is the conservative reading. Collective-choice selection is an alternative; no changed rule-making powers are established.",
+  "claim_ids": [
+    "E11-C1",
+    "E11-C2",
+    "E11-C3",
+    "E11-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E11:comments:2",
+      "span": {
+        "start": 0,
+        "end": 44,
+        "quote": "ACK on having achow101 as wallet maintainer."
+      }
+    },
+    {
+      "source_id": "E11:comments:4",
+      "span": {
+        "start": 0,
+        "end": 39,
+        "quote": "ACK on achow101 being wallet maintainer"
+      }
+    },
+    {
+      "source_id": "E11:reviews:1",
+      "span": {
+        "start": 107,
+        "end": 185,
+        "quote": "achow101 is a very logical replacement in the role, now I no longer have time."
+      }
+    },
+    {
+      "source_id": "E11:merge_diff",
+      "span": {
+        "start": 183,
+        "end": 224,
+        "quote": "+152812300785C96444D3334D17565732E08E5E41"
+      }
+    },
+    {
+      "source_id": "E11:doc_keys_merged",
+      "span": {
+        "start": 287,
+        "end": 327,
+        "quote": "152812300785C96444D3334D17565732E08E5E41"
+      }
+    },
+    {
+      "source_id": "E11:merge_message",
+      "span": {
+        "start": 0,
+        "end": 27,
+        "quote": "Merge bitcoin/bitcoin#23798"
+      }
+    },
+    {
+      "source_id": "E11:irc_decision",
+      "span": {
+        "start": 0,
+        "end": 85,
+        "quote": "it's not an actual decision in the meeting just an oppertunity to bring up objections"
+      }
+    },
+    {
+      "source_id": "E11:irc_wait",
+      "span": {
+        "start": 0,
+        "end": 24,
+        "quote": "open for a week at least"
+      }
+    },
+    {
+      "source_id": "E11:outcome",
+      "span": {
+        "start": 0,
+        "end": 183,
+        "quote": "{\"closed_at\": \"2021-12-20T06:58:55+00:00\", \"created_at\": \"2021-12-16T19:53:51+00:00\", \"merged_at\": \"2021-12-20T06:58:55+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"fanquake\"}"
+      }
+    },
+    {
+      "source_id": "E11:doc_keys_merged",
+      "span": {
+        "start": 287,
+        "end": 327,
+        "quote": "152812300785C96444D3334D17565732E08E5E41"
+      }
+    },
+    {
+      "source_id": "E11:body",
+      "span": {
+        "start": 0,
+        "end": 42,
+        "quote": "For maintaining the wallet and psbt things"
+      }
+    }
+  ]
+}

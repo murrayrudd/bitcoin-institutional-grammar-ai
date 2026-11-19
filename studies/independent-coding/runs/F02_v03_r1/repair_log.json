@@ -1,0 +1,102 @@
+{
+  "run_id": "F02_v03_r1",
+  "mechanical_repairs": [],
+  "source_review_passes": 1,
+  "changes": [
+    {
+      "change_id": "SR-01",
+      "phase": "single_source_self_review",
+      "affected_unit_ids": [
+        "F02-S02"
+      ],
+      "fields": [
+        "components[Bdir,p]",
+        "institution.evidence"
+      ],
+      "category": "local_semantic_overstatement",
+      "meaning_changes": true,
+      "institutional_interpretation_changes": false,
+      "before": {
+        "symbol": "Bdir,p",
+        "text": "the paragraph about both behaviors in the same release",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 93,
+              "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release."
+            }
+          }
+        ],
+        "inference_note": "The preceding sentence, outside the minimal edit-proposition span, resolves it as this paragraph and supplies the reason for replacing it. Both behaviors in the same release describes the paragraph's subject; it is not an activation condition for making the edit.",
+        "occurrence_role": "context_reference"
+      },
+      "after": {
+        "symbol": "Bdir,p",
+        "text": "This paragraph",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr14441:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 14,
+              "quote": "This paragraph"
+            }
+          }
+        ],
+        "inference_note": "The demonstrative phrase in the preceding sentence, outside the minimal edit-proposition span, resolves it as the paragraph being criticized. The statement about both behaviors being present in the same release is the reviewer's reason for the criticism; the absent original paragraph is not asserted to contain any particular wording. That rationale is retained separately as institutional evidence and is not an activation condition on the edit.",
+        "occurrence_role": "context_reference"
+      },
+      "reason": "The first-complete paraphrase described the paragraph as about both behaviors in the same release. The source supplies that coexistence as a reason for criticism, without reproducing the old paragraph. The final representation narrows the inferred antecedent to This paragraph and retains the full reason separately. Actor, action, object identity, tentative force, complete replacement wording, standing, and governance level remain unchanged.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        }
+      ],
+      "added_evidence": {
+        "source_id": "pr14441:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 93,
+          "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release."
+        }
+      }
+    },
+    {
+      "change_id": "SR-02",
+      "phase": "single_source_self_review",
+      "affected_unit_ids": [
+        "F02-C07"
+      ],
+      "fields": [
+        "speech_act"
+      ],
+      "category": "speech_act_convention",
+      "meaning_changes": false,
+      "institutional_interpretation_changes": false,
+      "before": "reported_action",
+      "after": "asserted",
+      "reason": "Both are good changes is a declarative assessment. It endorses unnamed technical changes but does not itself report an edit. Its context role, unresolved target, nondeontic force, and lack of expectation recognition are retained.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:4",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Both are good changes. Thanks!"
+          }
+        }
+      ]
+    }
+  ],
+  "first_complete_sha256": "ca8e66364cb707ea88eeb06345addad478a9672bfff7e7e942cb60f705c6031d",
+  "final_sha256": "c2a5d7583f5f937a83d7c501374ec66aa44bc8b9e8b1a4b873494f801a334215"
+}

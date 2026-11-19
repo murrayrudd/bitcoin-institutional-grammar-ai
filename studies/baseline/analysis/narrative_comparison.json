@@ -1,0 +1,54 @@
+{
+  "design": "Four same-input, same-analyst reconstructions after source inspection. Both forms retain the same material evidence. This is not a blind benchmark and cannot estimate IG superiority.",
+  "comparisons": [
+    {
+      "episode_id": "E04",
+      "narrative": "The guide expects replies to review comments and permits closure for inactive outstanding feedback. In PR 26399, maflcko explicitly attributes closure to inadequate preparation and ignored feedback. The author disputes the technical assessment while agreeing to continue in the issue. This supports an attributable procedural application, with technical disagreement still a competing explanation.",
+      "structured": [
+        "Provision: reply before merge; reasoned disagreement remains allowed.",
+        "Trigger: nonresponse and poor preparation alleged by maflcko.",
+        "Action and consequence: maflcko reports closure; record is unmerged.",
+        "Inference limit: allegations and sole causation are not independently established."
+      ],
+      "shared_conclusion": "An enforcement claim can be reconstructed because the participant expressly links provision, alleged trigger and closure.",
+      "format_difference": "The structured account makes missing adjudication and the competing explanation easy to query; the narrative retains the same information."
+    },
+    {
+      "episode_id": "E07",
+      "narrative": "A participant quotes a bot table that classifies vicjuma as Concept ACK. Another participant explains the need to identify the reviewed hash, and vicjuma gives thanks. The saved review already contains the final hash despite a creation time earlier than that exchange, and the final merge credits the review. Without edit history, the exact correction sequence and cause remain unresolved.",
+      "structured": [
+        "Earlier state: participant quotation, not a timestamped direct bot snapshot.",
+        "Instructional rationale: a hash identifies the review target.",
+        "Final state: saved hash and top-commit merge credit.",
+        "Unknown transition: edit and refresh times, and causal effect of reminder."
+      ],
+      "shared_conclusion": "Final attribution is supported; the intervening edit chronology is not.",
+      "format_difference": "A temporal field forces the missing edit history to be explicit. Careful narrative can preserve the same limitation."
+    },
+    {
+      "episode_id": "E08",
+      "narrative": "After PR 11743 merges, promag objects that feedback and the number of ACKs were insufficient. maflcko replies that relatively simple test changes can be merged quickly and gives a sufficiency threshold. A later reviewer proposes a follow-up explanation, which maflcko welcomes. The exchange records a contested, scoped justification; it does not establish a universal mandatory threshold or verified completion of the follow-up.",
+      "structured": [
+        "Scope: relatively simple test PRs.",
+        "Logical content: two untested ACKs OR one tested ACK deemed sufficient by the speaker.",
+        "Timing: explanation follows merge.",
+        "Standing: locally contested, not demonstrated universal requirement."
+      ],
+      "shared_conclusion": "Scope, logical OR, temporal ordering and contested standing must survive interpretation.",
+      "format_difference": "The structured account standardizes comparison of these fields. It does not discover facts unavailable to the narrative."
+    },
+    {
+      "episode_id": "E11",
+      "narrative": "The PR includes explicit wallet-role endorsements, key identity checks and a replacement rationale. Its merged tree adds the nominated key to the verification list. Linked meeting evidence treats endorsement as an opportunity for objections rather than a completed decision. The record supports local role recognition and a technical marker while leaving access-grant timing unobserved.",
+      "structured": [
+        "Recognition: explicit wallet-role endorsements, separated from key checks.",
+        "Implementation: merged trusted-key entry.",
+        "Process: linked meeting evidence qualifies decision finality.",
+        "Scope: no observed GitHub access-grant time or network authority."
+      ],
+      "shared_conclusion": "Social recognition and technical registration are connected but distinct observables.",
+      "format_difference": "Separate fields reduce category conflation and make the remaining gap visible. No comparative accuracy gain is measured."
+    }
+  ],
+  "result": "No substantive advantage is demonstrated over a careful narrative. Structured IG-informed records offer explicit scope, force, recognition, consequence and uncertainty fields for auditing and comparison; empirical gains require separate evaluation."
+}

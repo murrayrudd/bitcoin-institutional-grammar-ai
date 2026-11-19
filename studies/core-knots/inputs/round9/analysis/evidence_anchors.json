@@ -1,0 +1,780 @@
+[
+  {
+    "evidence_id": "E01",
+    "source_id": "32359-242",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2872995148",
+    "author": "glozow",
+    "source_timestamp": "2025-05-12T15:19:06+00:00",
+    "span": {
+      "start": 25,
+      "end": 156,
+      "quote": "there seems to be consensus around leaving the config options in place. That approach is implemented in #32406, so closing this PR."
+    },
+    "role": "Attributed closure explanation; metadata independently records unmerged closure."
+  },
+  {
+    "evidence_id": "E02",
+    "source_id": "32381-body",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32381",
+    "author": "darosior",
+    "source_timestamp": "2025-04-29T20:21:59Z",
+    "span": {
+      "start": 514,
+      "end": 641,
+      "quote": "This is an alternative to #32359 with the smallest change that addresses the concern i raised on the mailing list thread above."
+    },
+    "role": "Proposer describes a narrower alternative."
+  },
+  {
+    "evidence_id": "E03",
+    "source_id": "32381-014",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2842373160",
+    "author": "ajtowns",
+    "source_timestamp": "2025-04-30T15:26:19+00:00",
+    "span": {
+      "start": 24,
+      "end": 111,
+      "quote": "there's no point having a limit that's trivially avoided by just having many OP_RETURNs"
+    },
+    "role": "Technical objection to narrow proposal, not independently tested."
+  },
+  {
+    "evidence_id": "E04",
+    "source_id": "32381-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2843023281",
+    "author": "darosior",
+    "source_timestamp": "2025-04-30T19:12:08+00:00",
+    "span": {
+      "start": 297,
+      "end": 375,
+      "quote": "Seeing that it is not, i don't think there is any use in keeping this PR open."
+    },
+    "role": "Proposer judges intended contributor agreement absent."
+  },
+  {
+    "evidence_id": "E05",
+    "source_id": "32359-053",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495",
+    "author": "petertodd",
+    "source_timestamp": "2025-04-28T20:15:52+00:00",
+    "span": {
+      "start": 0,
+      "end": 14,
+      "quote": "Added comment."
+    },
+    "role": "Reported local uptake, not merge."
+  },
+  {
+    "evidence_id": "E06",
+    "source_id": "32359-059",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064504791",
+    "author": "petertodd",
+    "source_timestamp": "2025-04-28T20:24:53+00:00",
+    "span": {
+      "start": 0,
+      "end": 53,
+      "quote": "I included this patch and @darosior's patch verbatim."
+    },
+    "role": "Reported implementation response in an unsuccessful PR."
+  },
+  {
+    "evidence_id": "E07",
+    "source_id": "32406-149",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2877008733",
+    "author": "Sjors",
+    "source_timestamp": "2025-05-13T15:37:51+00:00",
+    "span": {
+      "start": 1259,
+      "end": 1370,
+      "quote": "at this point this PR has had more code review and some subsequent improvements, so I'd rather not switch back."
+    },
+    "role": "Review investment as stated reason to retain proposal path."
+  },
+  {
+    "evidence_id": "E08",
+    "source_id": "32406-264",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+    "author": "glozow",
+    "source_timestamp": "2025-06-09T12:12:39+00:00",
+    "span": {
+      "start": 99,
+      "end": 133,
+      "quote": "I believe this is ready for merge."
+    },
+    "role": "Readiness judgment; outcome separately in metadata."
+  },
+  {
+    "evidence_id": "E09",
+    "source_id": "32406-264",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+    "author": "glozow",
+    "source_timestamp": "2025-06-09T12:12:39+00:00",
+    "span": {
+      "start": 2975,
+      "end": 3155,
+      "quote": "Some developers still believe the option should be removed, but there is consensus for waiting at least 1 release like we did for `-mempoolfullrbf`. No timeline is set for removal."
+    },
+    "role": "Merger account of bounded agreement and unresolved removal timing."
+  },
+  {
+    "evidence_id": "E10",
+    "source_id": "32406-264",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+    "author": "glozow",
+    "source_timestamp": "2025-06-09T12:12:39+00:00",
+    "span": {
+      "start": 3564,
+      "end": 3733,
+      "quote": "It seems that not all frequent contributors agree with this philosophy, but I think the conversation can be deferred until there is a proposal for removal of the option."
+    },
+    "role": "Explicit deferral of disputed development philosophy."
+  },
+  {
+    "evidence_id": "E11",
+    "source_id": "32406-265",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2957181542",
+    "author": "juanitoddd",
+    "source_timestamp": "2025-06-09T22:29:22+00:00",
+    "span": {
+      "start": 0,
+      "end": 83,
+      "quote": "There was no clear consensus on this, and therefore should have been never merged !"
+    },
+    "role": "Postmerge challenge, not evidence of premerge influence."
+  },
+  {
+    "evidence_id": "E12",
+    "source_id": "32714-body",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714",
+    "author": "achow101",
+    "source_timestamp": "2025-06-10T04:41:08Z",
+    "span": {
+      "start": 858,
+      "end": 950,
+      "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+    },
+    "role": "June proposed warning principle, U25."
+  },
+  {
+    "evidence_id": "E13",
+    "source_id": "32714-009",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2958563890",
+    "author": "hodlinator",
+    "source_timestamp": "2025-06-10T10:25:32+00:00",
+    "span": {
+      "start": 538,
+      "end": 604,
+      "quote": "Enough releases having passed without a push for complete removal."
+    },
+    "role": "One stated condition for reconsideration, not an adopted threshold."
+  },
+  {
+    "evidence_id": "E14",
+    "source_id": "32714-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2960239724",
+    "author": "instagibbs",
+    "source_timestamp": "2025-06-10T18:30:48+00:00",
+    "span": {
+      "start": 14,
+      "end": 131,
+      "quote": "seems needless churn to me to backtrack on something a number of original reviewers(and author himself) disagree with"
+    },
+    "role": "Objection to immediate reconsideration."
+  },
+  {
+    "evidence_id": "E15",
+    "source_id": "33224-010",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3218109881",
+    "author": "hebasto",
+    "source_timestamp": "2025-08-24T13:36:19+00:00",
+    "span": {
+      "start": 635,
+      "end": 726,
+      "quote": "there must not be any translation source updates after the final translation string freeze."
+    },
+    "role": "Asserted prohibition; exact absolute force remains text_only in Round 4."
+  },
+  {
+    "evidence_id": "E16",
+    "source_id": "33224-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3234820665",
+    "author": "achow101",
+    "source_timestamp": "2025-08-28T20:18:10+00:00",
+    "span": {
+      "start": 433,
+      "end": 522,
+      "quote": "This resulted in 122 (~10% of strings) being marked untranslated again in both languages."
+    },
+    "role": "Participant experiment report; not reproduced here."
+  },
+  {
+    "evidence_id": "E17",
+    "source_id": "33224-021",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3241930685",
+    "author": "hebasto",
+    "source_timestamp": "2025-09-01T10:59:17+00:00",
+    "span": {
+      "start": 101,
+      "end": 173,
+      "quote": "it can be accepted as is, but left untranslated until the version v31.0."
+    },
+    "role": "Proposed acceptance route respecting a release constraint."
+  },
+  {
+    "evidence_id": "E18",
+    "source_id": "33453-body",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-22T10:40:53Z",
+    "span": {
+      "start": 677,
+      "end": 719,
+      "quote": "This echo’s Ava Chow’s comment from #32714"
+    },
+    "role": "Explicit attribution connecting June and September arguments."
+  },
+  {
+    "evidence_id": "E19",
+    "source_id": "33453-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319149396",
+    "author": "darosior",
+    "source_timestamp": "2025-09-22T13:46:55+00:00",
+    "span": {
+      "start": 324,
+      "end": 545,
+      "quote": "certain users care strongly about using those options. In these conditions, i do not see the project removing the option anytime soon. Therefore i think it's technically incorrect (and confusing) to mark it as deprecated."
+    },
+    "role": "Support for warning change despite expressed preference for eventual option removal."
+  },
+  {
+    "evidence_id": "E20",
+    "source_id": "33453-037",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321265268",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-22T20:02:36+00:00",
+    "span": {
+      "start": 22,
+      "end": 100,
+      "quote": "This specific PR seeks clarity in the datacarrier options' future availability"
+    },
+    "role": "Proposer bounds the decision object."
+  },
+  {
+    "evidence_id": "E21",
+    "source_id": "33453-039",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321521194",
+    "author": "glozow",
+    "source_timestamp": "2025-09-22T21:17:23+00:00",
+    "span": {
+      "start": 142,
+      "end": 269,
+      "quote": "let's try to avoid rehashing the motivations around the policy change itself or re-litigating what the default value should be."
+    },
+    "role": "Reinforcement of bounded scope."
+  },
+  {
+    "evidence_id": "E22",
+    "source_id": "33453-048",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3323114350",
+    "author": "luke-jr",
+    "source_timestamp": "2025-09-23T09:22:27+00:00",
+    "span": {
+      "start": 0,
+      "end": 48,
+      "quote": "The entire change (#32406) needs to be reverted."
+    },
+    "role": "Contrary request for broader reversal."
+  },
+  {
+    "evidence_id": "E23",
+    "source_id": "33453-076",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3338979025",
+    "author": "glozow",
+    "source_timestamp": "2025-09-26T14:31:02+00:00",
+    "span": {
+      "start": 233,
+      "end": 340,
+      "quote": "Your call whether you want to change your PR, leave it as is, open a new one, etc. Not everyone will agree."
+    },
+    "role": "Discretion over proposal form; not authority to merge own PR."
+  },
+  {
+    "evidence_id": "E24",
+    "source_id": "33453-018",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319439146",
+    "author": "instagibbs",
+    "source_timestamp": "2025-09-22T14:34:39+00:00",
+    "span": {
+      "start": 0,
+      "end": 100,
+      "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs)"
+    },
+    "role": "Attribution of backport decision authority, U39."
+  },
+  {
+    "evidence_id": "E25",
+    "source_id": "33453-069",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327584051",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-24T10:10:00+00:00",
+    "span": {
+      "start": 2611,
+      "end": 2660,
+      "quote": "I defer to you and the other maintainers on this."
+    },
+    "role": "Local recognition of release decision authority."
+  },
+  {
+    "evidence_id": "E26",
+    "source_id": "33453-066",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325790255",
+    "author": "fanquake",
+    "source_timestamp": "2025-09-23T22:45:43+00:00",
+    "span": {
+      "start": 181,
+      "end": 222,
+      "quote": "there's going to be an rc3 in either case"
+    },
+    "role": "Release opportunity stated before master merge."
+  },
+  {
+    "evidence_id": "E27",
+    "source_id": "33453-065",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325610461",
+    "author": "darosior",
+    "source_timestamp": "2025-09-23T21:26:57+00:00",
+    "span": {
+      "start": 262,
+      "end": 341,
+      "quote": "i don't think a small documentation change is worth holding up the release for."
+    },
+    "role": "Support for substance does not imply willingness to delay release."
+  },
+  {
+    "evidence_id": "E28",
+    "source_id": "33453-067",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327325279",
+    "author": "hMsats",
+    "source_timestamp": "2025-09-24T09:04:29+00:00",
+    "span": {
+      "start": 412,
+      "end": 489,
+      "quote": "I also believe this documentation change is worth holding up the release for."
+    },
+    "role": "Opposing release priority."
+  },
+  {
+    "evidence_id": "E29",
+    "source_id": "33453-086",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3361148614",
+    "author": "fanquake",
+    "source_timestamp": "2025-10-02T13:05:16+00:00",
+    "span": {
+      "start": 0,
+      "end": 29,
+      "quote": "Backported to 30.x in #33473."
+    },
+    "role": "October 2 report; supporting metadata records October 6 merge."
+  },
+  {
+    "evidence_id": "E30",
+    "source_id": "D_CONTRIB",
+    "url": "https://github.com/bitcoin/bitcoin/blob/f3bbc746647d1fd23bf5cfe357e32f38c5f6319c/CONTRIBUTING.md",
+    "author": "Repository documentation",
+    "source_timestamp": "2025-06-09",
+    "span": {
+      "start": 13905,
+      "end": 13997,
+      "quote": "Whether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers."
+    },
+    "role": "Dated documentary authority arrangement, D01."
+  },
+  {
+    "evidence_id": "E31",
+    "source_id": "D_CONTRIB",
+    "url": "https://github.com/bitcoin/bitcoin/blob/f3bbc746647d1fd23bf5cfe357e32f38c5f6319c/CONTRIBUTING.md",
+    "author": "Repository documentation",
+    "source_timestamp": "2025-06-09",
+    "span": {
+      "start": 15292,
+      "end": 15381,
+      "quote": "Anyone may participate in peer review which is expressed by comments in the pull\nrequest."
+    },
+    "role": "Dated participation provision, D02."
+  },
+  {
+    "evidence_id": "E32",
+    "source_id": "D_CONTRIB",
+    "url": "https://github.com/bitcoin/bitcoin/blob/f3bbc746647d1fd23bf5cfe357e32f38c5f6319c/CONTRIBUTING.md",
+    "author": "Repository documentation",
+    "source_timestamp": "2025-06-09",
+    "span": {
+      "start": 17365,
+      "end": 17506,
+      "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit."
+    },
+    "role": "Documented weighting; not one-person-one-vote, D03."
+  },
+  {
+    "evidence_id": "E33",
+    "source_id": "D_MOD",
+    "url": "https://github.com/bitcoin-core/meta/blob/3527bf7818d53bffa6c496be7f8d30dc8e1fa198/MODERATION-GUIDELINES.md",
+    "author": "Repository documentation",
+    "source_timestamp": "2024-08-14",
+    "span": {
+      "start": 1467,
+      "end": 1592,
+      "quote": "Comments about moderation decisions or moderation policy are off-topic in Bitcoin Core software projects and will be deleted."
+    },
+    "role": "Documented venue boundary, not observed deletion."
+  },
+  {
+    "evidence_id": "E34",
+    "source_id": "32359-043",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#pullrequestreview-2799422333",
+    "author": "darosior",
+    "source_timestamp": "2025-04-28T15:00:10+00:00",
+    "span": {
+      "start": 3286,
+      "end": 3365,
+      "quote": "Edited on request of a moderator to remove unnecessarily inflammatory comments."
+    },
+    "role": "Participant report of self-moderation."
+  },
+  {
+    "evidence_id": "E35",
+    "source_id": "32406-252",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2952908266",
+    "author": "willcl-ark",
+    "source_timestamp": "2025-06-07T19:17:12+00:00",
+    "span": {
+      "start": 295,
+      "end": 400,
+      "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+    },
+    "role": "Announced consequence; not observed ban."
+  },
+  {
+    "evidence_id": "E36",
+    "source_id": "32406-295",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2966094663",
+    "author": "pinheadmz",
+    "source_timestamp": "2025-06-12T10:40:15+00:00",
+    "span": {
+      "start": 1052,
+      "end": 1126,
+      "quote": "There's no need to lock it as long as users are still discussing the issue"
+    },
+    "role": "Postmerge preference for continued discussion limits a suppression account."
+  },
+  {
+    "evidence_id": "E37",
+    "source_id": "32406-228",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939708994",
+    "author": "maluquices",
+    "source_timestamp": "2025-06-04T11:43:16+00:00",
+    "span": {
+      "start": 390,
+      "end": 454,
+      "quote": "require transparent decision-making that respects diverse input."
+    },
+    "role": "Contested application of a legitimacy principle, N16."
+  },
+  {
+    "evidence_id": "E38",
+    "source_id": "32406-229",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939767822",
+    "author": "pinheadmz",
+    "source_timestamp": "2025-06-04T12:01:17+00:00",
+    "span": {
+      "start": 88,
+      "end": 186,
+      "quote": "Every single word has been open, as well as years of historical merit of the author and reviewers."
+    },
+    "role": "Reply challenging application of the transparency criticism."
+  },
+  {
+    "evidence_id": "E39",
+    "source_id": "33453-012",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-22T12:42:23+00:00",
+    "span": {
+      "start": 789,
+      "end": 880,
+      "quote": "I think we can actually make clear recommendations for when to use the datacarrier options:"
+    },
+    "role": "Technical/use-case counterevidence to a pure norm-persistence explanation; new Round 5 contextual anchor."
+  },
+  {
+    "evidence_id": "E40",
+    "source_id": "33453-012",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-22T12:42:23+00:00",
+    "span": {
+      "start": 2224,
+      "end": 2282,
+      "quote": "I don't think the effect there is particularly significant"
+    },
+    "role": "Participant revises earlier assessment of block relay costs; estimate not independently validated."
+  },
+  {
+    "evidence_id": "E41",
+    "source_id": "33453-047",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3322973150",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-23T08:39:45+00:00",
+    "span": {
+      "start": 110,
+      "end": 202,
+      "quote": "It is still tested, and there are still contributors who are willing to keep it operational."
+    },
+    "role": "Counterclaim to unmaintained status; not a maintenance audit."
+  },
+  {
+    "evidence_id": "E42",
+    "source_id": "33453-body",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-22T10:40:53Z",
+    "span": {
+      "start": 263,
+      "end": 359,
+      "quote": "This statement is based on public postings from many Bitcoin Core users and not a formal survey."
+    },
+    "role": "Explicit limit on demand evidence."
+  },
+  {
+    "evidence_id": "E43",
+    "source_id": "33453-028",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3320079835",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-22T16:35:27+00:00",
+    "span": {
+      "start": 174,
+      "end": 281,
+      "quote": "Some miners want to use Bitcoin Core for block template building but dont want to include large op_returns."
+    },
+    "role": "Use-case answer; no representative demand estimate."
+  },
+  {
+    "evidence_id": "E44",
+    "source_id": "33453-030",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3320173852",
+    "author": "Kruwed",
+    "source_timestamp": "2025-09-22T16:53:21+00:00",
+    "span": {
+      "start": 215,
+      "end": 314,
+      "quote": "Why should Bitcoin Core support a config option to perform targeted censorship of large OP_RETURNs?"
+    },
+    "role": "Reply contests justification after an answer was supplied."
+  },
+  {
+    "evidence_id": "E45",
+    "source_id": "33453-019",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319601018",
+    "author": "ajtowns",
+    "source_timestamp": "2025-09-22T15:03:15+00:00",
+    "span": {
+      "start": 92,
+      "end": 177,
+      "quote": "it can be merged as-is into both branches, without any additional backporting needed."
+    },
+    "role": "Claimed low integration burden, not independent branch reproduction."
+  },
+  {
+    "evidence_id": "E46",
+    "source_id": "33453-038",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321385143",
+    "author": "Ademan",
+    "source_timestamp": "2025-09-22T20:29:41+00:00",
+    "span": {
+      "start": 17,
+      "end": 93,
+      "quote": "I'd strongly caution against backporting this unless there's clear precedent"
+    },
+    "role": "Conditional opposition to release targeting."
+  },
+  {
+    "evidence_id": "E47",
+    "source_id": "33453-049",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3323154136",
+    "author": "ryanofsky",
+    "source_timestamp": "2025-09-23T09:34:41+00:00",
+    "span": {
+      "start": 1173,
+      "end": 1258,
+      "quote": "acknowledging genuine differences of opinion, accepting some small technical overhead"
+    },
+    "role": "Reviewer frames accommodation as worth its cost; not measured welfare."
+  },
+  {
+    "evidence_id": "E48",
+    "source_id": "33453-057",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3324276876",
+    "author": "moonsettler",
+    "source_timestamp": "2025-09-23T14:28:30+00:00",
+    "span": {
+      "start": 376,
+      "end": 501,
+      "quote": "I see no value in making the maintenance of such software harder and harder over time, when the alternative has no real cost."
+    },
+    "role": "Claim about maintaining client alternatives, not observed maintenance costs."
+  },
+  {
+    "evidence_id": "E49",
+    "source_id": "33453-001",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318166185",
+    "author": "bitschmidty",
+    "source_timestamp": "2025-09-22T10:41:41+00:00",
+    "span": {
+      "start": 596,
+      "end": 710,
+      "quote": "any review feedback here (positive or critical) will not impact their standing, funding, or employment with Brink."
+    },
+    "role": "Funding assurance, not proof of financial independence."
+  },
+  {
+    "evidence_id": "E50",
+    "source_id": "32406-132",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086911846",
+    "author": "instagibbs",
+    "source_timestamp": "2025-05-13T14:02:15+00:00",
+    "span": {
+      "start": 35,
+      "end": 80,
+      "quote": "leaving as-is to not increase scope of review"
+    },
+    "role": "Reasoned nonadoption of a requested edit."
+  },
+  {
+    "evidence_id": "N901",
+    "source_id": "32359-242",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2872995148",
+    "author": "glozow",
+    "source_timestamp": "2025-05-12T15:19:06+00:00",
+    "updated_at": "2025-05-12T15:19:06+00:00",
+    "span": {
+      "start": 157,
+      "end": 258,
+      "quote": "(Also: please do not jump to conclusions about whether this means the other PR will be merged/closed)"
+    },
+    "role": "Closure did not predetermine the replacement proposal’s disposition.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N902",
+    "source_id": "32381-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2843023281",
+    "author": "darosior",
+    "source_timestamp": "2025-04-30T19:12:08+00:00",
+    "updated_at": "2025-04-30T19:12:08+00:00",
+    "span": {
+      "start": 0,
+      "end": 96,
+      "quote": "My intention with this PR was to have a first step that is consensual among regular contributors"
+    },
+    "role": "The proposer identifies the intended constituency for this narrower step.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N903",
+    "source_id": "32406-264",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+    "author": "glozow",
+    "source_timestamp": "2025-06-09T12:12:39+00:00",
+    "updated_at": "",
+    "span": {
+      "start": 3159,
+      "end": 3296,
+      "quote": "The options are deprecated in this PR, meaning they remain usable without any extra steps, but are discouraged through a warning message."
+    },
+    "role": "The merger distinguishes current availability from discouragement.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N904",
+    "source_id": "32714-011",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2959520626",
+    "author": "ajtowns",
+    "source_timestamp": "2025-06-10T14:39:48+00:00",
+    "updated_at": "2025-06-10T14:39:48+00:00",
+    "span": {
+      "start": 674,
+      "end": 764,
+      "quote": "If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion."
+    },
+    "role": "The reviewer prefers no deprecation over discouragement while rejecting the proposed intermediate wording.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N905",
+    "source_id": "33453-015",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319149396",
+    "author": "darosior",
+    "source_timestamp": "2025-09-22T13:46:55+00:00",
+    "updated_at": "2025-09-22T13:46:55+00:00",
+    "span": {
+      "start": 150,
+      "end": 309,
+      "quote": "On this basis, the `-datacarrier` and `-datacarriersize` options controlling a long obsolete relay policy limit are in my opinion prime candidates for removal."
+    },
+    "role": "Poinsot maintains an option-removal preference in the same comment supporting undeprecation.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N906",
+    "source_id": "33453-049",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3323154136",
+    "author": "ryanofsky",
+    "source_timestamp": "2025-09-23T09:34:41+00:00",
+    "updated_at": "2025-09-23T09:34:41+00:00",
+    "span": {
+      "start": 1542,
+      "end": 1744,
+      "quote": "But having the option at least gives people who favor restrictive relay policy a chance to positively advocate for their views, explain and demonstrate them, and convince other people of their benefits."
+    },
+    "role": "Reviewer’s proposed benefit of retained choice; no observed persuasion outcome.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N907",
+    "source_id": "33453-062",
+    "url": "https://github.com/bitcoin/bitcoin/pull/33453#pullrequestreview-3259349531",
+    "author": "glozow",
+    "source_timestamp": "2025-09-23T19:45:33+00:00",
+    "updated_at": "",
+    "span": {
+      "start": 759,
+      "end": 992,
+      "quote": "This PR does not pave a path towards changing the default again, commit the project to maintaining any particular configuration, or *by itself* give users a clearer understanding of the node’s datacarrier policies and what to expect."
+    },
+    "role": "Maintainer explicitly limits the substantive and communicative consequences of the proposal.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  },
+  {
+    "evidence_id": "N908",
+    "source_id": "32714-009",
+    "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2958563890",
+    "author": "hodlinator",
+    "source_timestamp": "2025-06-10T10:25:32+00:00",
+    "updated_at": "2025-06-10T10:25:32+00:00",
+    "span": {
+      "start": 474,
+      "end": 534,
+      "quote": "New/better arguments for using them with non-default values."
+    },
+    "role": "One stated condition for reconsideration; not a collectively adopted decision threshold.",
+    "added_in_round": 9,
+    "new_ig2_parse": false
+  }
+]

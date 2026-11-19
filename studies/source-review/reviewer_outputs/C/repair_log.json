@@ -1,0 +1,131 @@
+{
+  "initial_output": "annotation.initial.json",
+  "initial_checks": "checks.initial.json",
+  "repairs": [
+    {
+      "unit_id": "C115_forum",
+      "field": "components.F.evidence",
+      "kind": "mechanical_occurrence_repair",
+      "before": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 16,
+            "end": 18,
+            "quote": "is"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 19,
+            "end": 21,
+            "quote": "is"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C115_no_repost",
+      "field": "components.A.evidence",
+      "kind": "mechanical_occurrence_repair",
+      "before": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 215,
+            "end": 218,
+            "quote": "you"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32359-115",
+          "span": {
+            "start": 267,
+            "end": 270,
+            "quote": "you"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "field": "components.A.evidence",
+      "kind": "mechanical_occurrence_repair",
+      "before": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 72,
+            "end": 74,
+            "quote": "we"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 245,
+            "end": 247,
+            "quote": "we"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "field": "components.D.evidence",
+      "kind": "mechanical_occurrence_repair",
+      "before": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 75,
+            "end": 81,
+            "quote": "should"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "32359-227",
+          "span": {
+            "start": 248,
+            "end": 254,
+            "quote": "should"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "C227_remove_efforts",
+      "kind": "semantic_occurrence_review",
+      "explanation": "The exact same we and should strings originally anchored the first quoted camp. Re-anchored to the second camp governing capitulate and remove. This corrects attribution/scope evidence without changing the preserved actor text or proposed actions."
+    },
+    {
+      "unit_id": "C227_majority",
+      "kind": "source_review_refinement",
+      "field": "institution.dispute_present",
+      "before": true,
+      "after": false,
+      "reason": "The earlier forum claim supplies potential contrary context, not an explicit challenge to the later majority counterclaim. The unresolved relation and uncertainty remain."
+    },
+    {
+      "unit_id": "C33453_footguns",
+      "kind": "evidence_completion",
+      "reason": "Added exact evidence for the author calling the quoted maxim a good principle."
+    },
+    {
+      "unit_id": "C213_defaults",
+      "kind": "evidence_completion",
+      "reason": "Recorded the focal author's attributable alternative as a response, without upgrading institutional standing."
+    }
+  ],
+  "codebook_or_checker_modified": false,
+  "final_source_review": "Every focal source was reread in full alongside the complete extracted units and component anchors before finalization. Semantic alternatives remain explicit; checker pass is not semantic certification."
+}

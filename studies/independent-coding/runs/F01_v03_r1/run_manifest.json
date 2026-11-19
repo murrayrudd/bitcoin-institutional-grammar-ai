@@ -1,0 +1,50 @@
+{
+  "run_id": "F01_v03_r1",
+  "episode_id": "F01",
+  "packet_sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+  "final_counts": {
+    "entries": 42,
+    "focal_entries": 23,
+    "supplemental_entries": 19,
+    "units": 58,
+    "unit_roles": {
+      "context": 16,
+      "statement": 31,
+      "quotation": 9,
+      "container": 2
+    },
+    "relations": 33,
+    "outcomes": 3,
+    "mechanisms": 4,
+    "repair_records": 34
+  },
+  "checker_status": "pass",
+  "final_checker_errors": 0,
+  "final_checker_review_flags": 11,
+  "all_checker_flags_have_review_resolutions": true,
+  "hashes": {
+    "INSTRUCTIONS.txt": "45d51086ac25848f1b63c15ac2fc6af394b0b822e08dcfca105365aa86654985",
+    "protocol/codebook.txt": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+    "protocol/annotation_schema.json": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2",
+    "packet.json": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+    "tools/check_annotation.py": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775",
+    "annotation.first_complete.json": "550d96d511a207e13798c18206b854250ea46fd8a67692ec7a5aae62582160c6",
+    "first_complete_freeze.json": "6dbf690ad230434b24a3a59c34fa66d7cefeef6a9fae12320ab6786db5563e04",
+    "annotation.after_mechanical.json": "685b6c32f4c2b6e1d0141234d542ffd3cf6bd2d18f82ec859f796e69682c8c93",
+    "annotation.json": "b4c1cee151c807bc47f56ba3e97e0f3827d2efded34aa21b6ad98a1bb0880e67",
+    "annotation.final.json": "b4c1cee151c807bc47f56ba3e97e0f3827d2efded34aa21b6ad98a1bb0880e67",
+    "checks.first.json": "9276ffc264683a9a6259ad315aafacf8bcdda95d298dffb56f12ab696186ff2d",
+    "checks.after_mechanical.json": "2ffb9b7ce1cdde40745e128648aa37625bdb15aa94d68223cf86945ef319d68a",
+    "checks.review_draft.json": "8f1fadd1fb2d7d38fb3be4e0d270bfc9ca51bebe694b6733972530d99d8ddfd6",
+    "checks.json": "879cb04a6e93b5a45ac38e8bfba3afa648f5eaaa0db6a49beac4bcce651f21d0",
+    "repair_log.json": "fbb290bfd4e6e656d971a1579f2508cde8ced4fc2887912e9f61d69d1c6ee64f",
+    "review_notes.json": "7d45d0d9897e0baef0f358eb58b71db044de06f204f85f0bc4040da8efc13757",
+    "access_record.json": "ad4d08c5b0268b5681920be2fea3d3cd3869b9c38adaa163c50b7d4871ca0393",
+    "execution_log.json": "9112e9a63e71b33676b19025dfa0aebc740e543a1acd5021a507a5f7873cd68a",
+    "build_annotation.py": "0d8b5ac2534c1baf8bacc61be1fde69d716ee94ed234f7ec5e0ecfdd3bf4f316",
+    "repair_mechanical.py": "24c33db02ff67300db9c12ca594535e4014b1336615fe63a1a73697a5006733c",
+    "source_self_review.py": "7c2a83ac751d062e0dddf2fa0010f4df2fd213c5529844832c15699f42c4ab11",
+    "finish_review.py": "4da0b0dc05617cf6a31b810dcc3c68443d5ca9b8c63fe9cd2a18e336ae77e1fd",
+    "write_audit_records.py": "2405d431946c52752412b17e6a3b6f3d776b12b7f5e94e2ecb08685b008133b8"
+  }
+}

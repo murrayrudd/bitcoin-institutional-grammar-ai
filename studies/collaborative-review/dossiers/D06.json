@@ -1,0 +1,373 @@
+{
+  "topic_id": "D06",
+  "title": "Focal analytical layer and governance level",
+  "question": "Separate operational performance from proposing a recurring selection arrangement. Determine whether one level follows from a stated focal proposition, or two legitimate layers should remain explicitly linked. Do not infer constitutional or network authority.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q045",
+      "title": "The conditional developer-choice sentence receives a constitutive allocation parse in R01/R03/R04/R17 and a pragmatic regulative choose parse with undetermined type in R09/R10.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve conditional test-selection allocation and the technical-flexibility alternative. Do not elevate it into constitutional authority, a permission to merge, or an adopted procedure. Alternative decompositions are acceptable when allocation and condition survive.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 152,
+            "end": 232,
+            "quote": "In that case it's up to the developer which previous releases they want to test."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 233,
+            "end": 318,
+            "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Assigned guides, constitutive versus regulative candidates, technical configurability limits, preservation of alternative E/F/P allocations, and separate target/observed governance levels."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C16",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py from hardcoded versions to iterating over whatever is available under releases/v*.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The choice concerns whatever is locally available, not a fixed list of all known releases.",
+                "The fetch script would still fetch all binaries by default."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "operational",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [
+                "operational"
+              ],
+              "level_rationale": "The focal edit changes operational version selection; the discussion deliberates a recurring developer-choice arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+            },
+            {
+              "unit_id": "C17",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 152,
+                "end": 232,
+                "quote": "In that case it's up to the developer which previous releases they want to test."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Conditional on the proposed availability-based loop, the developer would choose which previous releases to test.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The allocation depends specifically on the availability-based loop.",
+                "The fetch script would still fetch all binaries by default."
+              ],
+              "grammar": "constitutive",
+              "statement_target_level": "operational",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [
+                "operational"
+              ],
+              "level_rationale": "The proposed discretion concerns ordinary testing choices, not power to make collective-choice decisions. The observed discussion deliberates a recurring testing arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S16",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py to loop over locally available releases/v* versions instead of hardcoding version numbers.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "The proposed loop is executed by feature_backwards_compatibility.py, resolved from it and the preceding filename.",
+                "The default of test/get_previous_releases.py would still fetch all binaries.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "collective_choice",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [
+                "operational"
+              ],
+              "observed_level_alternatives": [
+                "operational"
+              ],
+              "level_rationale": "The focal action is Sjors proposes changing feature_backwards_compatibility.py to loop over locally available releases/v* versions instead of hardcoding version numbers. It concerns a recurring arrangement for compatibility testing; the visible discussion deliberates over that arrangement."
+            },
+            {
+              "unit_id": "S17",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 152,
+                "end": 232,
+                "quote": "In that case it's up to the developer which previous releases they want to test."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Under the proposed available-version loop, the developer would choose which previous releases to test.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "The condition refers specifically to replacing hardcoded numbers with a loop over locally available releases/v*.",
+                "The fetch-script default remains all binaries, separating selection of test inputs from the default download behavior.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "constitutive",
+              "statement_target_level": "collective_choice",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [],
+              "observed_level_alternatives": [],
+              "level_rationale": "The focal action is Under the proposed available-version loop, the developer would choose which previous releases to test. It concerns a recurring arrangement for compatibility testing; the visible discussion deliberates over that arrangement."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U15",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py from hardcoded version numbers to looping over whatever is available under releases/v*.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The replacement is specifically to loop over whatever is available under releases/v*, instead of hardcoding version numbers.",
+                "The default fetch script would still fetch all binaries; this proposal changes test selection rather than that default."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "operational",
+              "observed_action_level": "operational",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [
+                "collective_choice"
+              ],
+              "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+            },
+            {
+              "unit_id": "U16",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 152,
+                "end": 232,
+                "quote": "In that case it's up to the developer which previous releases they want to test."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Under the proposed available-directory loop, developers would choose which previous releases to test.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "That case is the alternative directory-loop design in U15, and downloading all binaries remains the default."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "operational",
+              "observed_action_level": "operational",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [
+                "collective_choice"
+              ],
+              "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q051",
+      "title": "Operational versus collective-choice focal layer",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "An operational instruction and a proposal to select a recurring testing arrangement occupy different analytical layers. Retain the layer and uncertainty about adoption; the label difference alone does not reverse the historical account.",
+      "resolution": "Preserve the layer stated in each rationale. Compare the operational inclusion expectation and the proposal to choose that recurring standard separately; none of these labels alone establishes adoption, authorization, constitutional authority, or network governance.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides separate statement target from observed action and classify governed activity rather than a modal word; operational conduct and deliberation over a recurring arrangement are distinct analytical layers, with justified alternatives retained."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C05",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 171,
+                "end": 216,
+                "quote": "So I think we should add every major release."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes adding every major release to backwards compatibility tests.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Purpose includes avoiding accidental wallet-upgrade, consensus and p2p breakage."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "operational",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [
+                "operational"
+              ],
+              "level_rationale": "The focal add instruction governs operational inclusion. The observed exchange deliberates a recurring coverage arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S10",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 171,
+                "end": 216,
+                "quote": "So I think we should add every major release."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors recommends adding every major release to the backwards compatibility tests.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "The stated aim is avoiding accidental breakage between versions, including wallet upgrades, consensus and p2p bugs.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "collective_choice",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [],
+              "observed_level_alternatives": [],
+              "level_rationale": "The focal action is Sjors recommends adding every major release to the backwards compatibility tests. It concerns a recurring arrangement for compatibility testing; the visible discussion deliberates over that arrangement."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U09",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 171,
+                "end": 216,
+                "quote": "So I think we should add every major release."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes that contributors should add every major release to backwards compatibility tests.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The bounded purpose is preventing accidental cross-version breakage including wallet upgrades, consensus and p2p bugs; no claim is made that this particular test covers all those cases."
+              ],
+              "grammar": "regulative",
+              "statement_target_level": "operational",
+              "observed_action_level": "collective_choice",
+              "target_level_alternatives": [
+                "collective_choice"
+              ],
+              "observed_level_alternatives": [],
+              "level_rationale": "The focal instruction governs operational release additions. The visible discussion deliberates over a recurring version-selection expectation, so observed action is collective choice; it does not establish adoption."
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:10",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`. In that case it's up to the developer which previous releases they want to test. The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+    },
+    {
+      "source_id": "pr26586:comments:4",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "@luke-jr one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions, including wallet upgrades, consensus and p2p bugs. So I think we should add every major release.\r\n\r\nApart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download). On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "purpose": "Development interpretations and contrasts, not a gold standard or holdout.",
+  "cases": [
+    {
+      "case_id": "C01",
+      "title": "Identity of the referenced proposal",
+      "audit_findings": [
+        "SA14",
+        "SA16"
+      ],
+      "source_ids": [
+        "32381-body",
+        "M32359"
+      ],
+      "focal_evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 764,
+          "end": 821,
+          "quote": "I still believe we should do #32359, as i signaled there."
+        }
+      },
+      "preferred_decision": "Attach M32359 to the recommendation concerning PR 32359.",
+      "defensible_alternatives": "Retain PR 32381 closure separately as episode context.",
+      "prohibited_inference": "Use M32381 as the recommended proposal outcome merely because both PRs closed unmerged.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C02",
+      "title": "Recognition through attributed application",
+      "audit_findings": [
+        "SA07"
+      ],
+      "source_ids": [
+        "32714-body",
+        "33453-body"
+      ],
+      "focal_evidence": {
+        "source_id": "32714-body",
+        "span": {
+          "start": 858,
+          "end": 950,
+          "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+        }
+      },
+      "preferred_decision": "Interpersonal recognition is supported by attribution, quotation, and application of the expectation.",
+      "defensible_alternatives": "The degree of general acceptance remains unknown.",
+      "prohibited_inference": "Require a binding rule before recognizing local support, or backdate the retained wording to PR creation.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C03",
+      "title": "Challenge to application",
+      "audit_findings": [
+        "SA25"
+      ],
+      "source_ids": [
+        "33224-010",
+        "33224-015"
+      ],
+      "focal_evidence": {
+        "source_id": "33224-010",
+        "span": {
+          "start": 625,
+          "end": 726,
+          "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+        }
+      },
+      "preferred_decision": "Record the application challenge separately from documentary support and recognition.",
+      "defensible_alternatives": "Keep norm_candidate versus technical necessity provisional.",
+      "prohibited_inference": "Infer a formal waiver, actual translation processing, or rejection of the purpose of a freeze.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C04",
+      "title": "General guidance and a particular warning",
+      "audit_findings": [
+        "SA01",
+        "SA15"
+      ],
+      "source_ids": [
+        "32406-252",
+        "D_MOD"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 14,
+          "end": 43,
+          "quote": "please keep comments on topic"
+        }
+      },
+      "preferred_decision": "Retain broader documentary support and an attributable enforcement-claim candidate; application remains none.",
+      "defensible_alternatives": "Norm candidate remains defensible if attributed authority is insufficient.",
+      "prohibited_inference": "Convert generic moderation guidance or the warning into proof of an executed ban.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C05",
+      "title": "Dated support and bounded recognition",
+      "audit_findings": [
+        "SA02"
+      ],
+      "source_ids": [
+        "32359-115",
+        "32406-169",
+        "D_CONTRIB"
+      ],
+      "focal_evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 92,
+          "end": 186,
+          "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        }
+      },
+      "preferred_decision": "Keep later-only documentary support distinct from recognition of the broader technical-content-over-count principle. Exact-proposition recognition remains unestablished for the clause about repeated postings.",
+      "defensible_alternatives": "Constitutive representation can preserve the same content.",
+      "prohibited_inference": "Backdate June documentation or silently broaden the focal claim to all meritocratic governance.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C06",
+      "title": "Higher governance levels and missing jurisdiction",
+      "audit_findings": [
+        "SA03",
+        "SA04",
+        "SA05"
+      ],
+      "source_ids": [
+        "32359-227"
+      ],
+      "focal_evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 386,
+          "end": 423,
+          "quote": "Only the majority decides the winner."
+        }
+      },
+      "preferred_decision": "Use unknown for the target level and preserve the quoted premise and exclusive majority claim.",
+      "defensible_alternatives": "Constitutional and epistemic readings remain explicit alternatives.",
+      "prohibited_inference": "Infer a majority voting institution, a common decision object with every merit claim, or an observed constitutional change.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C07",
+      "title": "Status recognition and ordinary assent",
+      "audit_findings": [
+        "SA07"
+      ],
+      "source_ids": [
+        "32406-178",
+        "32406-180"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 0,
+          "end": 121,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\"."
+        }
+      },
+      "preferred_decision": "Retain unresolved recognition rather than treating bare assent as an automatic expectation-recognition event.",
+      "defensible_alternatives": "Ordinary endorsement with no recognition support; bounded status-recognition reading with explicit rationale.",
+      "prohibited_inference": "Treat agreement with a definition as proof of binding authority or a fixed removal timetable.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C08",
+      "title": "Explicit local recognition",
+      "audit_findings": [
+        "SA20",
+        "SA24"
+      ],
+      "source_ids": [
+        "32406-149",
+        "32406-151"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        }
+      },
+      "preferred_decision": "Retain interpersonal recognition with both the quoted expectation and the nonblocking-nits response.",
+      "defensible_alternatives": "Permission versus advisory recommendation may remain bounded.",
+      "prohibited_inference": "Use the broad re-ACK alone as support for recognition of this particular expectation.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C09a",
+      "title": "Literal question and repeated quotation",
+      "audit_findings": [
+        "SA11"
+      ],
+      "source_ids": [
+        "32406-164"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-164",
+        "span": {
+          "start": 0,
+          "end": 66,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+        }
+      },
+      "preferred_decision": "Retain question speech act and distinguish repeated occurrence from an independent institutional statement.",
+      "defensible_alternatives": "",
+      "prohibited_inference": "Label the quoted question as an assertion or count it as independent endorsement.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C09b",
+      "title": "Literal question and repeated quotation",
+      "audit_findings": [
+        "SA11"
+      ],
+      "source_ids": [
+        "32406-165"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-165",
+        "span": {
+          "start": 2,
+          "end": 68,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+        }
+      },
+      "preferred_decision": "Retain question speech act and distinguish repeated occurrence from an independent institutional statement.",
+      "defensible_alternatives": "",
+      "prohibited_inference": "Label the quoted question as an assertion or count it as independent endorsement.",
+      "status": "Coordinator-authored calibration interpretation; not an independent reference annotation."
+    },
+    {
+      "case_id": "C10",
+      "title": "Partial documentary coverage",
+      "audit_findings": [
+        "SA01"
+      ],
+      "source_ids": [
+        "32359-115"
+      ],
+      "focal_evidence": {
+        "source_id": "32359-115",
+        "span": {
+          "start": 300,
+          "end": 419,
+          "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+        }
+      },
+      "preferred_decision": "Distinguish the repetition limb from unsubstantiated ACK/NACK labels; the general guideline permits constructive reframing and some repetition.",
+      "defensible_alternatives": "Retain source-supported alternatives and identify their effect on the institutional conclusion.",
+      "prohibited_inference": "Do not use the case as evidence of fresh-model performance.",
+      "status": "Source interpretation exercise; not a full annotation fixture."
+    },
+    {
+      "case_id": "C11",
+      "title": "Tentative qualification attachment",
+      "audit_findings": [
+        "SA12"
+      ],
+      "source_ids": [
+        "32381-012"
+      ],
+      "focal_evidence": {
+        "source_id": "32381-012",
+        "span": {
+          "start": 6,
+          "end": 199,
+          "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?"
+        }
+      },
+      "preferred_decision": "Attach the tentative 150-byte refinement, buffer, and purpose to the relevant recommendation, whether through a component, linked unit, or explicit scope note. Keep the question tentative.",
+      "defensible_alternatives": "Retain source-supported alternatives and identify their effect on the institutional conclusion.",
+      "prohibited_inference": "Do not use the case as evidence of fresh-model performance.",
+      "status": "Source interpretation exercise; not a full annotation fixture."
+    },
+    {
+      "case_id": "C12",
+      "title": "Conditional future recommendation",
+      "audit_findings": [
+        "SA22"
+      ],
+      "source_ids": [
+        "33453-body"
+      ],
+      "focal_evidence": {
+        "source_id": "33453-body",
+        "span": {
+          "start": 1206,
+          "end": 1327,
+          "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+        }
+      },
+      "preferred_decision": "Preserve future possibility, preferably, and the information purpose. Do not turn these into an adopted removal schedule.",
+      "defensible_alternatives": "Retain source-supported alternatives and identify their effect on the institutional conclusion.",
+      "prohibited_inference": "Do not use the case as evidence of fresh-model performance.",
+      "status": "Source interpretation exercise; not a full annotation fixture."
+    },
+    {
+      "case_id": "C13",
+      "title": "Value and application dispute",
+      "audit_findings": [
+        "SA26"
+      ],
+      "source_ids": [
+        "32406-228"
+      ],
+      "focal_evidence": {
+        "source_id": "32406-228",
+        "span": {
+          "start": 311,
+          "end": 454,
+          "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input."
+        }
+      },
+      "preferred_decision": "Keep the transparency expectation, possible epistemic or collective-choice target, and observed discussion act separate. A response about application does not necessarily reject transparency.",
+      "defensible_alternatives": "Retain source-supported alternatives and identify their effect on the institutional conclusion.",
+      "prohibited_inference": "Do not use the case as evidence of fresh-model performance.",
+      "status": "Source interpretation exercise; not a full annotation fixture."
+    }
+  ]
+}

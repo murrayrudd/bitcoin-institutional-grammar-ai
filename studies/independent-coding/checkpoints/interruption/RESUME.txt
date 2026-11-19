@@ -1,0 +1,24 @@
+IG2 CODING EVALUATION — RECOVERY AND RESUMPTION
+
+The eighteen independent coding runs and masked alignment are complete and frozen. Do not repeat them. The source-review phase stopped when both agents returned weekly usage-limit errors. This archive is a recovery package, not a completed validation report.
+
+AUTHORITATIVE STATE
+Read analysis/interruption_checkpoint.json and analysis/recovery_integrity.json first. protocol/protocol.json remains the unchanged pre-execution design from the specification release; its historical status does not describe current progress. The current execution and freeze receipts are under analysis/.
+
+INDEPENDENT REVIEW A
+Use only reviews/source_review_a/ for the resumed independent reviewer. F02_review.json and F03_review.json are complete case checkpoints with first-complete copies. review_progress.json records the F01 source reads, completed R01/R03 annotations, and pending issues. Complete the remaining four F01 annotations and cross-annotation checks, then assemble review.json and full coverage/access records. Preserve the first complete review before any correction.
+
+INDEPENDENT REVIEW B
+Use only reviews/source_review_b/ for the resumed independent reviewer. review_work.json contains twelve working findings and source-comparison notes for all cases. Its coverage list is empty: do not treat it as a completed review. Complete remaining qualification/rationale checks and document actual coverage, then freeze review.json and access records.
+
+ISOLATION
+Resume the existing review contexts if available. Otherwise use fresh contexts with no parent conversation and only their own review directory. Do not provide this recovery report, aggregate agreement/alpha, the mask key, the other review, or coordinator interpretations to either reviewer. Keep assigned guides and packets unchanged. Record any session/configuration discontinuity. The current study uses inherited primary configuration without model or reasoning overrides; unknown provider telemetry remains null.
+
+AFTER BOTH REVIEWS FINISH
+Use tools/check_review.py to check each coverage ledger and source offsets. Freeze independent reviews before reconciliation. Reconcile all findings against the source, distinguish errors from conventions and alternatives, and retain unresolved diagnoses. Then complete the primary source-error comparison and final readiness assessment. Existing agreement scores remain pre-reconciliation; do not overwrite original coding or retroactively change the test criteria.
+
+EXISTING ANALYSIS
+analysis/overlap_metrics.json and analysis/supplementary_alpha.json contain completed descriptive comparisons. Alpha was added during execution following the author's question about human intercoder reliability; it is supplementary, not a new pass/fail threshold. tools/verify_alpha.py reproduces a published numerical example. The metadata diagnostics change only copies and expose source identities already present; they are not original-run passes or semantic validation.
+
+REPRODUCIBILITY
+Use a working copy for scripts that regenerate derived analysis. Python 3 and jsonschema support the checkers; python-docx supports the report. analysis/environment.json records installed versions. tools/prepare.py, tools/assemble.py, and per-run construction scripts retain their original execution-path assumptions and are archival builders, not portable one-command setup tools. Do not rerun evaluate.py mask over the completed review workspace. Selected raw corpus lines are included; provenance/corpus_receipt.json identifies the external parent corpus and hashes.

@@ -1,0 +1,444 @@
+{
+  "topic_id": "D02",
+  "title": "Same actor repetition and partial support",
+  "question": "Does later repetition support the entire conditional proposition or only its method? For a same-actor method restatement, determine the recognition profile under the existing codebook; keep interpersonal recognition separate.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "P03",
+      "title": "Partial method repetition targeted at the complete conditional proposition",
+      "category": "primary_error",
+      "coordinator_assessment": "The later open-and-rebase suggestion does not reproduce the dependent-PR stopping condition. The same-actor-restatement event therefore overstates full-proposition correspondence. R04 itself notes the different timing qualification; this supports narrowing the event, not any claim of interpersonal recognition.",
+      "resolution": "Retain a same-actor response about the broader open-PR method. Do not claim repetition of the full until-another-PR-needs-it condition.",
+      "qualification": "Reviewer A emphasizes criterion ambiguity; reviewer B treats the target scope as an execution error. The coordinator counts only the unsupported full-proposition restatement, leaving the profile convention in Q041.",
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 302,
+            "end": 375,
+            "quote": "But we can also keep this PR open until there's another PR that needs it."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 158,
+            "end": 239,
+            "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 106-112: preserve recognition target and material scope; same-actor maintained commitment is not interpersonal recognition; ordinary assent alone gives none.",
+        "guide_1 requires preserving material conditions and distinguishes this_proposition from broader_principle; recognition of a shared general principle does not endorse every clause of a particular formulation."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S13",
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes keeping this PR open until another PR needs it.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "This is an alternative to immediate integration; specific tests may be added later and an already available release makes that easier."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "this_proposition",
+                  "basis": "context_inferred",
+                  "rationale": "Sjors repeats the open-PR method later. Same-actor commitment is not independent recognition.",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [
+            "relations[32]"
+          ],
+          "relations": [
+            {
+              "index": 32,
+              "from_unit_id": "S13",
+              "to_unit_id": "S22",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "The same actor restates an open-PR method later with a different timing qualification; no independent endorsement follows from repetition.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:6",
+                  "span": {
+                    "start": 306,
+                    "end": 375,
+                    "quote": "we can also keep this PR open until there's another PR that needs it."
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:15",
+                  "span": {
+                    "start": 180,
+                    "end": 239,
+                    "quote": "we could just leave the PR open and occasionally rebase it."
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q013",
+      "title": "R13, R15 and R16 retain a same-actor restatement of the author's review-now strategy as maintained commitment, but summarize recognition as none.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Prefer same_actor_only to expose the already recorded maintained-commitment evidence, while stating that no expectation or interpersonal recognition is established. Clarify prospectively whether the same-actor category requires an expectation-recognition event; do not reclassify this as interpersonal support.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Recognition: distinguish maintained personal commitment from interpersonal recognition; same-actor events alone give same_actor_only, ordinary assent alone gives none."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F03_v04_r1",
+          "units": [
+            {
+              "unit_id": "U03",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 330,
+                "end": 378,
+                "quote": "But I don't want to hold back review of this PR."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "jonasschnelli expresses the intention not to delay review of PR #7819 while the larger replacement workflow remains in progress.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The separate GUI replacement workflow is reported as work in progress and a bigger chunk; review is being separated from that work."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "this_proposition",
+                  "basis": "context_inferred",
+                  "rationale": "The same author restates the possibility of current review while working on the replacement GUI. This is maintained personal commitment, not independent recognition of an expectation.",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r3",
+          "units": [
+            {
+              "unit_id": "F03-U04",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 330,
+                "end": 378,
+                "quote": "But I don't want to hold back review of this PR."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author intends not to hold back review of #7819 while the GUI replacement work remains separate.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The negative is an intention not to delay review; it does not authorize integration of the standalone checkbox.",
+                "The replacement GUI is larger ongoing work, and the author is unsure about proceeding without it."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "this_proposition",
+                  "rationale": "The same author’s comment expresses a corresponding distinction between replacement development and present review. It demonstrates consistency of personal intent, not interpersonal expectation recognition or a verified order of textual restatement.",
+                  "basis": "context_inferred",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r2",
+          "units": [
+            {
+              "unit_id": "F03-U03",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 330,
+                "end": 378,
+                "quote": "But I don't want to hold back review of this PR."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author expresses a personal strategy not to hold back review of this PR while the larger replacement workflow remains under development.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The distinction concerns review now, not integration or user exposure before a GUI workflow.",
+                "Replacement workflow is a larger ongoing task."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "this_proposition",
+                  "basis": "context_inferred",
+                  "rationale": "The same attributed author reiterates review now despite unfinished replacement work; this shows maintained commitment, not interpersonal recognition.",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/7819",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q041",
+      "title": "Same-actor profile convention for partial method repetition",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Whether same_actor_only summarizes any maintained personal method or only an expectation-related event remains unclear. This profile ambiguity is distinct from P03’s overly narrow full-proposition restatement target.",
+      "resolution": "Record the same-actor method response explicitly, retain the none/same_actor_only profile alternative as needed, and do not infer interpersonal support.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 302,
+            "end": 375,
+            "quote": "But we can also keep this PR open until there's another PR that needs it."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 158,
+            "end": 239,
+            "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 106-112: preserve recognition target and material scope; same-actor maintained commitment is not interpersonal recognition; ordinary assent alone gives none."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C11",
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers keeping this PR open until another PR needs its release addition.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The dependent PR is unidentified; no disposition is assigned to it.",
+                "Rationale: specific tests may come later, with less effort when release support is present.",
+                "Prior stacking, reduced rebase effort and repeated CI are attributed reports."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "broader_principle",
+                  "rationale": "Same actor repeats the method without its dependent-PR trigger; not interpersonal recognition.",
+                  "basis": "context_inferred",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S13",
+              "source_id": "pr26586:comments:6",
+              "span": {
+                "start": 302,
+                "end": 375,
+                "quote": "But we can also keep this PR open until there's another PR that needs it."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes keeping this PR open until another PR needs it.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "This is an alternative to immediate integration; specific tests may be added later and an already available release makes that easier."
+              ],
+              "recognition": [
+                {
+                  "kind": "response",
+                  "target": "this_proposition",
+                  "basis": "context_inferred",
+                  "rationale": "Sjors repeats the open-PR method later. Same-actor commitment is not independent recognition.",
+                  "mode": "same_actor_restatement",
+                  "speaker_relation": "same_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [
+            "relations[32]"
+          ],
+          "relations": [
+            {
+              "index": 32,
+              "from_unit_id": "S13",
+              "to_unit_id": "S22",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "The same actor restates an open-PR method later with a different timing qualification; no independent endorsement follows from repetition.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:6",
+                  "span": {
+                    "start": 306,
+                    "end": 375,
+                    "quote": "we can also keep this PR open until there's another PR that needs it."
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:15",
+                  "span": {
+                    "start": 180,
+                    "end": 239,
+                    "quote": "we could just leave the PR open and occasionally rebase it."
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:15",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master. That said, there's no pressing reason to merge this. As we've done before, we could just leave the PR open and occasionally rebase it.\r\n\r\n\r\n> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here\r\n\r\nThis can also be a reason to not rush merging new releases. This PR itself is where most of the thorough checking happens, at every rebase.\r\n\r\n> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree. In any case we can always prune versions in a followup."
+    },
+    {
+      "source_id": "pr26586:comments:6",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> It is likely so general that it can't catch any issues.\r\n\r\nProbably not, but it's a low cost check.\r\n\r\n> doesn't test watch-only miniscript support\r\n\r\nI've noticed over the past few years that people would add specific tests later on. It's slightly easier to do that if the release is already there. But we can also keep this PR open until there's another PR that needs it. We've previously piled several major releases this way. Back then it was more work to rebase than it is now. Every time it's rebased, the CI runs the checks again, so it's useful even in an unmerged state."
+    },
+    {
+      "source_id": "pr7819:body",
+      "kind": "body",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF.\n\nThis PR does not include a way to actually replace a transaction with the GUI. So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk).\nBut I don't want to hold back review of this PR.\n\nIncludes two refactoring commits from https://github.com/bitcoin/bitcoin/pull/7159\n\n<img width=\"1056\" alt=\"bildschirmfoto 2016-04-05 um 16 49 20\" src=\"https://cloud.githubusercontent.com/assets/178464/14286488/7ea518be-fb4f-11e5-8b21-437261f23141.png\">\n\n<img width=\"546\" alt=\"bildschirmfoto 2016-04-05 um 17 14 09\" src=\"https://cloud.githubusercontent.com/assets/178464/14287110/da21d78e-fb51-11e5-9be1-bf91391fd8ab.png\">\n"
+    },
+    {
+      "source_id": "pr7819:comments:2",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+    }
+  ]
+}

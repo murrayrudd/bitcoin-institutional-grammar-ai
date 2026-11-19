@@ -1,0 +1,130 @@
+[
+  {
+    "claim_id": "E11-C1",
+    "episode_id": "E11",
+    "claim": "Several participants explicitly endorse achow101 for wallet maintenance, and an existing role holder identifies him as a replacement.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E11:comments:2",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK on having achow101 as wallet maintainer."
+        }
+      },
+      {
+        "source_id": "E11:comments:4",
+        "span": {
+          "start": 0,
+          "end": 39,
+          "quote": "ACK on achow101 being wallet maintainer"
+        }
+      },
+      {
+        "source_id": "E11:reviews:1",
+        "span": {
+          "start": 107,
+          "end": 185,
+          "quote": "achow101 is a very logical replacement in the role, now I no longer have time."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "These are role endorsements; bare key checks elsewhere should not be pooled as identical endorsements."
+  },
+  {
+    "claim_id": "E11-C2",
+    "episode_id": "E11",
+    "claim": "The merged repository adds the nominated key to the trusted-key list.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E11:merge_diff",
+        "span": {
+          "start": 183,
+          "end": 224,
+          "quote": "+152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:doc_keys_merged",
+        "span": {
+          "start": 287,
+          "end": 327,
+          "quote": "152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:merge_message",
+        "span": {
+          "start": 0,
+          "end": 27,
+          "quote": "Merge bitcoin/bitcoin#23798"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "The technical signer list is observable; repository permission assignment and its time are not."
+  },
+  {
+    "claim_id": "E11-C3",
+    "episode_id": "E11",
+    "claim": "The meeting left a decision open for comments; its suggested week of PR exposure exceeds the observed 3.46-day open-to-merge interval.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E11:irc_decision",
+        "span": {
+          "start": 0,
+          "end": 85,
+          "quote": "it's not an actual decision in the meeting just an oppertunity to bring up objections"
+        }
+      },
+      {
+        "source_id": "E11:irc_wait",
+        "span": {
+          "start": 0,
+          "end": 24,
+          "quote": "open for a week at least"
+        }
+      },
+      {
+        "source_id": "E11:outcome",
+        "span": {
+          "start": 0,
+          "end": 183,
+          "quote": "{\"closed_at\": \"2021-12-20T06:58:55+00:00\", \"created_at\": \"2021-12-16T19:53:51+00:00\", \"merged_at\": \"2021-12-20T06:58:55+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"fanquake\"}"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "The waiting period was an expressed expectation with assent, not an established binding minimum. PR duration is not the length of the entire selection process."
+  },
+  {
+    "claim_id": "E11-C4",
+    "episode_id": "E11",
+    "claim": "The key-list change proves the exact time of GitHub access assignment or confers authority over Bitcoin network adoption.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E11:doc_keys_merged",
+        "span": {
+          "start": 287,
+          "end": 327,
+          "quote": "152812300785C96444D3334D17565732E08E5E41"
+        }
+      },
+      {
+        "source_id": "E11:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "For maintaining the wallet and psbt things"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "A repository verification artifact and bounded role endorsement do not observe either broader claim."
+  }
+]

@@ -1,0 +1,1248 @@
+{
+  "run_id": "F03_v03_r2",
+  "first_complete_sha256": "1edf4053a8fd2d6c6e24e229a681d286a71ef80a6be8094e4c928525572ebe6d",
+  "final_sha256": "e37bec0af2fd684df3639cdd67eb3470b2ae4a4f34f01ba7f295cba469da4639",
+  "mechanical_repairs": [],
+  "source_self_review_passes": 1,
+  "changes": [
+    {
+      "repair_id": "R01",
+      "phase": "source_self_review",
+      "path": "/units/5/components",
+      "category": "substantive_qualification",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": [
+        {
+          "symbol": "I",
+          "text": "omit",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 0,
+                "end": 76,
+                "quote": "I don't think the confirmation window deserves red text and the bang for it."
+              }
+            }
+          ],
+          "inference_note": "The shared negative deserves judgment outside this short child supplies the inferred edit action.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "red text",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 55,
+                "quote": "red text"
+              }
+            }
+          ],
+          "inference_note": "The feature evaluated as undeserved is recast as the target of omission; source words alone do not make that transformed role explicit.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the confirmation window for this transaction",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 14,
+                "end": 37,
+                "quote": "the confirmation window"
+              }
+            }
+          ],
+          "inference_note": "The enclosing sentence identifies the location of both proposed presentation changes. No new unit span is enlarged to include it.",
+          "occurrence_role": "shared_scope"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "omit",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 0,
+                "end": 76,
+                "quote": "I don't think the confirmation window deserves red text and the bang for it."
+              }
+            }
+          ],
+          "inference_note": "The shared negative deserves judgment outside this short child supplies the inferred edit action.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "red text",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 47,
+                "end": 55,
+                "quote": "red text"
+              }
+            }
+          ],
+          "inference_note": "The feature evaluated as undeserved is recast as the target of omission; source words alone do not make that transformed role explicit.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the confirmation window",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 14,
+                "end": 37,
+                "quote": "the confirmation window"
+              }
+            }
+          ],
+          "inference_note": "The enclosing sentence supplies the shared location. The replaceable-case scope is inferred separately from the surrounding label discussion and contrasting non-replacable-case recommendation.",
+          "occurrence_role": "shared_scope"
+        },
+        {
+          "symbol": "Cac",
+          "text": "for the currently discussed replaceable-case confirmation",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 82,
+                "end": 101,
+                "quote": "\"replaceable\" there"
+              }
+            },
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 192,
+                "end": 215,
+                "quote": "the non-replacable case"
+              }
+            }
+          ],
+          "inference_note": "The current confirmation is discussed using replaceable, followed by a contrasting suggestion to put red text on the non-replacable case. This limits the omission request to the current replaceable-case presentation, rather than all confirmation windows. Both anchors are outside this child and refer to the same enclosing review comment.",
+          "occurrence_role": "context_reference"
+        }
+      ],
+      "rationale": "The first complete parse did not explicitly restrict omission to the currently discussed replaceable case. Add that inferred scope and remove the unsupported extra words for this transaction from the location component.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R02",
+      "phase": "source_self_review",
+      "path": "/units/6/components",
+      "category": "substantive_qualification",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": [
+        {
+          "symbol": "I",
+          "text": "omit",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 0,
+                "end": 76,
+                "quote": "I don't think the confirmation window deserves red text and the bang for it."
+              }
+            }
+          ],
+          "inference_note": "The enclosing negative deserves assessment supplies the inferred removal request for this second object.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the bang for it",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 60,
+                "end": 75,
+                "quote": "the bang for it"
+              }
+            }
+          ],
+          "inference_note": "The evaluated punctuation feature is recast as the target of omission; bang is kept as supplied rather than silently replacing its source wording.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the confirmation window for this transaction",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 14,
+                "end": 37,
+                "quote": "the confirmation window"
+              }
+            }
+          ],
+          "inference_note": "The location is shared with the red-text assessment in the enclosing parent sentence.",
+          "occurrence_role": "shared_scope"
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "omit",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 0,
+                "end": 76,
+                "quote": "I don't think the confirmation window deserves red text and the bang for it."
+              }
+            }
+          ],
+          "inference_note": "The enclosing negative deserves assessment supplies the inferred removal request for this second object.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the bang for it",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 60,
+                "end": 75,
+                "quote": "the bang for it"
+              }
+            }
+          ],
+          "inference_note": "The evaluated punctuation feature is recast as the target of omission; bang is kept as supplied rather than silently replacing its source wording.",
+          "occurrence_role": "semantic_inference"
+        },
+        {
+          "symbol": "Cex",
+          "text": "in the confirmation window",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 14,
+                "end": 37,
+                "quote": "the confirmation window"
+              }
+            }
+          ],
+          "inference_note": "The enclosing sentence supplies the shared location. The replaceable-case scope is inferred separately from the surrounding label discussion and contrasting non-replacable-case recommendation.",
+          "occurrence_role": "shared_scope"
+        },
+        {
+          "symbol": "Cac",
+          "text": "for the currently discussed replaceable-case confirmation",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 82,
+                "end": 101,
+                "quote": "\"replaceable\" there"
+              }
+            },
+            {
+              "source_id": "pr7819:comments:1",
+              "span": {
+                "start": 192,
+                "end": 215,
+                "quote": "the non-replacable case"
+              }
+            }
+          ],
+          "inference_note": "The current confirmation is discussed using replaceable, followed by a contrasting suggestion to put red text on the non-replacable case. This limits the omission request to the current replaceable-case presentation, rather than all confirmation windows. Both anchors are outside this child and refer to the same enclosing review comment.",
+          "occurrence_role": "context_reference"
+        }
+      ],
+      "rationale": "The first complete parse did not explicitly restrict omission to the currently discussed replaceable case. Add that inferred scope and remove the unsupported extra words for this transaction from the location component.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 0,
+            "end": 76,
+            "quote": "I don't think the confirmation window deserves red text and the bang for it."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 77,
+            "end": 169,
+            "quote": "Also \"replaceable\" there may have the user thinking that it's more replaceable than it is..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:1",
+          "span": {
+            "start": 170,
+            "end": 279,
+            "quote": "arguably it should be the non-replacable case that should get red text (because you can't update fees later)."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R03",
+      "phase": "source_self_review",
+      "path": "/units/3/institution/recognition/1",
+      "category": "epistemic_labeling",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "kind": "response",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "rationale": "Following the exact quoted concern, the author distinguishes current review from completion of the replacement GUI. The correspondence is explicit, but it does not promise that exposure will be deferred.",
+        "basis": "explicit"
+      },
+      "after": {
+        "kind": "response",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "rationale": "The quoted exposure concern and explicit agreement are followed by a contrast between ongoing GUI work and review already being possible. The later review assertion plausibly responds to the concern, but that rhetorical connection is inferred; the quote itself directly establishes only its own target, and no promise of deferral follows.",
+        "basis": "context_inferred"
+      },
+      "rationale": "Limit explicit evidence to the quotation and agreement; the review-now extension is a contextually inferred response.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R04",
+      "phase": "source_self_review",
+      "path": "/relations/5",
+      "category": "epistemic_labeling",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "from_unit_id": "U04",
+        "to_unit_id": "U14",
+        "type": "uptake",
+        "basis": "explicit",
+        "rationale": "The quoted reservation is followed by a contrast separating work in progress from review already being possible. This is response uptake, not implementation of a deferral condition.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "U04",
+        "to_unit_id": "U14",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "The review-now assertion follows a quoted exposure concern and agreement, plausibly distinguishing review from exposure. This rhetorical response link is contextual; exact quotation does not make every following clause an explicit response to the same proposition, nor show implementation of a deferral condition.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "rationale": "Align uptake with the limited evidence supporting the response target.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R05",
+      "phase": "source_self_review",
+      "path": "/units/16/institution",
+      "category": "interpretive_consistency",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "An attributable author describes an attempted development approach: enabling additional outputs through editing in the sendcoins dialog. As an explicit personal method it is retained as a strategy candidate, without evidence of success or obligation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 316,
+                  "end": 429,
+                  "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+                }
+              },
+              {
+                "source_id": "pr7819:comments:4",
+                "span": {
+                  "start": 0,
+                  "end": 295,
+                  "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+                }
+              }
+            ],
+            "rationale": "The reply discusses the same additional-output workflow and its complexity. Textual correspondence supports a contextual response target, not reliable reply threading or recognition of an obligation.",
+            "basis": "context_inferred"
+          },
+          {
+            "kind": "endorsement",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 316,
+                  "end": 429,
+                  "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+                }
+              },
+              {
+                "source_id": "pr7819:comments:5",
+                "span": {
+                  "start": 119,
+                  "end": 176,
+                  "quote": "doing the add output thing would be pretty interesting..."
+                }
+              }
+            ],
+            "rationale": "The later comment calls the add-output idea interesting; this is qualified interest in the same design rather than a commitment to implement it.",
+            "basis": "context_inferred"
+          }
+        ],
+        "authority_evidence": []
+      },
+      "after": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": true,
+        "rationale": "An attributable author describes an attempted development approach: enabling additional outputs through editing in the sendcoins dialog. As an explicit personal method it is retained as a strategy candidate, without evidence of success or obligation. The author's next fee-only question tentatively challenges continued application or scope of this method, rather than disputing that the attempt occurred. Text-only standing remains appropriate; this flag records self-questioning of scope, not established interpersonal conflict or a rejected strategy.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "response",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 316,
+                  "end": 429,
+                  "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+                }
+              },
+              {
+                "source_id": "pr7819:comments:4",
+                "span": {
+                  "start": 0,
+                  "end": 295,
+                  "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+                }
+              }
+            ],
+            "rationale": "The reply discusses the same additional-output workflow and its complexity. Textual correspondence supports a contextual response target, not reliable reply threading or recognition of an obligation.",
+            "basis": "context_inferred"
+          },
+          {
+            "kind": "endorsement",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr7819:comments:3",
+                "span": {
+                  "start": 316,
+                  "end": 429,
+                  "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+                }
+              },
+              {
+                "source_id": "pr7819:comments:5",
+                "span": {
+                  "start": 119,
+                  "end": 176,
+                  "quote": "doing the add output thing would be pretty interesting..."
+                }
+              }
+            ],
+            "rationale": "The later comment calls the add-output idea interesting; this is qualified interest in the same design rather than a commitment to implement it.",
+            "basis": "context_inferred"
+          }
+        ],
+        "authority_evidence": []
+      },
+      "rationale": "Make the bounded application challenge visible in the institution fields as well as the already retained challenges relation; do not upgrade it to a settled dispute or withdrawal.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R06",
+      "phase": "source_self_review",
+      "path": "/relations/9",
+      "category": "qualification",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "from_unit_id": "U18",
+        "to_unit_id": "U17",
+        "type": "challenges",
+        "basis": "context_inferred",
+        "rationale": "The fee-only focus question tentatively challenges whether the additional-output scope should be pursued now. It is not evidence that the earlier attempt was withdrawn.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "U18",
+        "to_unit_id": "U17",
+        "type": "challenges",
+        "basis": "context_inferred",
+        "rationale": "The fee-only question tentatively challenges continuation or scope of the additional-output method, not the historical truth of the reported attempt. This is the author's self-questioning, not evidence of interpersonal conflict, withdrawal, or a settled decision.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 316,
+              "end": 429,
+              "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 430,
+              "end": 484,
+              "quote": "But maybe we should just focus on increasing the fees?"
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "rationale": "Specify which aspect of the reported strategy the challenge targets.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R07",
+      "phase": "source_self_review",
+      "path": "/relations/1",
+      "category": "temporal_qualification",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "from_unit_id": "U04",
+        "to_unit_id": "U02",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "Both occurrences question proceeding before replacement exists; the reply names wallet capability, whereas the body names a GUI workflow. This correspondence does not erase the difference in scope.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 212,
+              "end": 329,
+              "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "U04",
+        "to_unit_id": "U02",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "Both retained occurrences question proceeding before replacement exists; the comment names wallet capability, whereas the body names a GUI workflow. This contextual clarification preserves the difference in scope and does not establish when the retained body wording was composed.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 212,
+              "end": 329,
+              "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "rationale": "Remove reply wording that could imply a verified relationship to an earlier version of the body.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R08",
+      "phase": "source_self_review",
+      "path": "/relations/6",
+      "category": "temporal_qualification",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "from_unit_id": "U14",
+        "to_unit_id": "U03",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The later can-be-reviewed-now assertion clarifies the author's earlier desire not to hold back review. It does not authorize integration.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "U14",
+        "to_unit_id": "U03",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The review-now assertion makes more explicit the retained body's desire not to hold back review. This is a semantic clarification across the supplied occurrences; body edit history is unavailable, so the direction does not assert which wording was composed first or authorize integration.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 114,
+              "end": 156,
+              "quote": "I'm working on the replacement GUI process"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 161,
+              "end": 190,
+              "quote": "this can be reviewed already."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "rationale": "Remove later-versus-earlier composition claims about retained body wording.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 156,
+            "quote": "I'm working on the replacement GUI process"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 161,
+            "end": 190,
+            "quote": "this can be reviewed already."
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R09",
+      "phase": "source_self_review",
+      "path": "/episode_summary/mechanisms/0",
+      "category": "temporal_qualification",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "category": "review_coordination",
+        "claim": "The body questions inclusion without a replacement GUI workflow while expressing a desire not to delay review. A commenter then questions exposure before wallet replacement is possible; the author quotes and agrees with that concern, reports GUI work in progress, and says this can already be reviewed, citing a difficult 0.13 timeline. The supported sequence distinguishes review timing from readiness to expose the feature; it shows no adopted gating rule or completed review.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 212,
+              "end": 329,
+              "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+            }
+          },
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 237,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+            }
+          }
+        ],
+        "unit_ids": [
+          "U02",
+          "U03",
+          "U04",
+          "U11",
+          "U12",
+          "U13",
+          "U14"
+        ],
+        "alternative_explanation": "The exchange may coordinate ordinary technical work by expressing feasibility and shared caution, without any institutional permission or requirement being recognized. The timeline may motivate continued review but does not identify a causal effect on integration.",
+        "status": "supported_sequence"
+      },
+      "after": {
+        "category": "review_coordination",
+        "claim": "The retained body questions inclusion without a replacement GUI workflow while expressing a desire not to delay review. In the supplied discussion, a commenter questions exposure before wallet replacement is possible; the author quotes and agrees with that concern, reports GUI work in progress, and says this can already be reviewed, citing a difficult 0.13 timeline. The specifically corresponding comment exchange distinguishes review timing from readiness to expose the feature; it shows no adopted gating rule or completed review. The retained body wording has no verified composition date within this exchange.",
+        "evidence": [
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 212,
+              "end": 329,
+              "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+            }
+          },
+          {
+            "source_id": "pr7819:body",
+            "span": {
+              "start": 330,
+              "end": 378,
+              "quote": "But I don't want to hold back review of this PR."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:0",
+            "span": {
+              "start": 0,
+              "end": 88,
+              "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+            }
+          },
+          {
+            "source_id": "pr7819:comments:2",
+            "span": {
+              "start": 0,
+              "end": 237,
+              "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+            }
+          }
+        ],
+        "unit_ids": [
+          "U02",
+          "U03",
+          "U04",
+          "U11",
+          "U12",
+          "U13",
+          "U14"
+        ],
+        "alternative_explanation": "The exchange may coordinate ordinary technical work by expressing feasibility and shared caution, without any institutional permission or requirement being recognized. The timeline may motivate continued review but does not identify a causal effect on integration.",
+        "status": "supported_sequence"
+      },
+      "rationale": "Support the sequence through exact comment quotation and response, without assuming the retained body wording predates those comments.",
+      "evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 212,
+            "end": 329,
+            "quote": "So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk)."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 330,
+            "end": 378,
+            "quote": "But I don't want to hold back review of this PR."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 237,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+          }
+        }
+      ]
+    },
+    {
+      "repair_id": "R10",
+      "phase": "source_self_review",
+      "path": "/episode_summary/mechanisms/1",
+      "category": "qualification",
+      "meaning_changed": false,
+      "institutional_conclusion_changed": false,
+      "before": {
+        "category": "reason_giving",
+        "claim": "An adaptive-fee design is proposed with future-locktime replacements, multiplicatively higher fees, and a changing fee display. The author quotes it, calls it a possible solution, reports attempting additional outputs through the sendcoins dialog, and asks whether to focus only on fee increases. The subsequent reply explains child-transaction handling and conditional growth in computed versions. This supplies specific technical reasons relevant to scope deliberation, but no resolved design selection or verified implementation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 0,
+              "end": 485,
+              "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])\n\nYes. This might be a solution.\nI somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog).\nBut maybe we should just focus on increasing the fees?\n"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 0,
+              "end": 295,
+              "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+            }
+          }
+        ],
+        "unit_ids": [
+          "U10",
+          "U15",
+          "U16",
+          "U17",
+          "U18",
+          "U19",
+          "U20"
+        ],
+        "alternative_explanation": "These may be exploratory engineering alternatives rather than governance expectations. The complexity explanation need not have changed the author's preferred scope, and subsequent implementation is not supplied.",
+        "status": "supported_sequence"
+      },
+      "after": {
+        "category": "reason_giving",
+        "claim": "An adaptive-fee design is proposed with future-locktime replacements, multiplicatively higher fees, and a changing fee display. The author quotes it, calls it a possible solution, reports attempting additional outputs through the sendcoins dialog, and asks whether to focus only on fee increases. A later comment addressing the same additional-output workflow explains child-transaction handling and conditional growth in computed versions. This supplies specific technical reasons relevant to scope deliberation, but no resolved design selection or verified implementation.",
+        "evidence": [
+          {
+            "source_id": "pr7819:comments:1",
+            "span": {
+              "start": 281,
+              "end": 562,
+              "quote": "I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:3",
+            "span": {
+              "start": 0,
+              "end": 485,
+              "quote": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])\n\nYes. This might be a solution.\nI somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog).\nBut maybe we should just focus on increasing the fees?\n"
+            }
+          },
+          {
+            "source_id": "pr7819:comments:4",
+            "span": {
+              "start": 0,
+              "end": 295,
+              "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+            }
+          }
+        ],
+        "unit_ids": [
+          "U10",
+          "U15",
+          "U16",
+          "U17",
+          "U18",
+          "U19",
+          "U20"
+        ],
+        "alternative_explanation": "These may be exploratory engineering alternatives rather than governance expectations. The complexity explanation need not have changed the author's preferred scope, and subsequent implementation is not supplied.",
+        "status": "supported_sequence"
+      },
+      "rationale": "The technical correspondence supports a response interpretation, but no reliable reply thread is supplied.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:4",
+          "span": {
+            "start": 0,
+            "end": 295,
+            "quote": "Ah. workflow for additional outputs is more complex because you need to handle also making a child transaction of the original transaction for use in case the original confirms... and if you do this multiple times there is a bit of exponential blowup in the number of versions you must compute.\n"
+          }
+        }
+      ]
+    }
+  ],
+  "note": "All changes occurred after the first-complete freeze and initial mechanical pass. Each listed before/after value identifies the complete modified field; frozen inputs and the first-complete file were not modified."
+}

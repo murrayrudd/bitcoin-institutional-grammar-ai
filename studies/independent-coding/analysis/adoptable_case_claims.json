@@ -1,0 +1,280 @@
+{
+  "status": "bounded coordinator conclusions after reconciliation",
+  "original_annotations_changed": false,
+  "not_a_consensus_annotation": true,
+  "claims": [
+    {
+      "id": "F01-C1",
+      "episode_id": "F01",
+      "claim": "Participants advanced different release-selection approaches: add every major release, select the latest release for each missing feature, or retain at least recent non-EOL releases for the wallet tests.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        }
+      ],
+      "limits": "These are attributed proposals/criteria. The record does not establish that one became an authorized, generally adopted retention policy."
+    },
+    {
+      "id": "F01-C2",
+      "episode_id": "F01",
+      "claim": "The supplied patch adds v24.0.1 while retaining listed earlier versions, and the metadata records integration of PR #26586.",
+      "evidence": [
+        {
+          "source_id": "pr26586:patch:0",
+          "span": {
+            "start": 0,
+            "end": 1207,
+            "quote": "@@ -33,11 +33,12 @@ def add_options(self, parser):\n \n     def set_test_params(self):\n         self.setup_clean_chain = True\n-        self.num_nodes = 10\n+        self.num_nodes = 11\n         # Add new version after each release:\n         self.extra_args = [\n             [\"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # Pre-release: use to mine blocks. noban for immediate tx relay\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # Pre-release: use to receive coins, swap wallets, etc\n+            [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v24.0.1\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v23.0\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v22.0\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v0.21.0\n@@ -57,6 +58,7 @@ def setup_nodes(self):\n         self.add_nodes(self.num_nodes, extra_args=self.extra_args, versions=[\n             None,\n             None,\n+            240001,\n             230000,\n             220000,\n             210000,"
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 153,
+            "end": 167,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 571,
+            "end": 606,
+            "quote": "\"merged_at\": \"2023-02-16T14:04:28Z\""
+          }
+        }
+      ],
+      "limits": "This bounded integration result does not establish adoption of any one proposed general retention policy, future cleanup, or network adoption."
+    },
+    {
+      "id": "F01-C3",
+      "episode_id": "F01",
+      "claim": "Participants located broader cleanup and later pruning outside the immediate contribution; the supplied statements do not identify the proposed future PRs.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "limits": "Keep the discussion episode distinct from the unidentified follow-up objects. The current PR merge provides no disposition for that future work."
+    },
+    {
+      "id": "F02-C1",
+      "episode_id": "F02",
+      "claim": "The review contains four bounded edit suggestions. The author reports updating the contribution and specifically reports removal of the extra star check.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 38,
+            "quote": "Should be `listtransactions` with `s`."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 531,
+            "quote": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:2",
+          "span": {
+            "start": 0,
+            "end": 115,
+            "quote": "I don't see how the new check for \"*\" here changes anything. Maybe drop for clarity (unless I'm missing something)."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:3",
+          "span": {
+            "start": 0,
+            "end": 414,
+            "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+          }
+        },
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ],
+      "limits": "An author report is distinct from observed execution. The isolated fixed and Both replies do not identify every individual target."
+    },
+    {
+      "id": "F02-C2",
+      "episode_id": "F02",
+      "claim": "The supplied release-note artifact contains the requested plural identifier and setting-dependent transaction descriptions; the PR metadata records integration.",
+      "evidence": [
+        {
+          "source_id": "pr14441:patch:0",
+          "span": {
+            "start": 0,
+            "end": 1034,
+            "quote": "@@ -71,7 +71,23 @@ Notable changes\n 0.17.x change log\n =================\n \n-...\n+`listtransactions` label support\n+--------------------------------\n+\n+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0\n+and renamed to `dummy` has been un-deprecated and renamed again to `label`.\n+\n+When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying\n+a label/account/dummy argument will return both outgoing and incoming\n+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return\n+incoming transactions (because it used to be possible to create transactions\n+spending from specific accounts, but this is no longer possible with labels).\n+\n+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string \"\"\n+to list transactions that don't have any label. Without\n+`-deprecatedrpc=accounts`, passing the empty string is an error because returning\n+only non-labeled transactions is not generally useful behavior and can cause\n+confusion.\n \n Credits\n ======="
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 196,
+            "end": 210,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr14441:supplement_metadata",
+          "span": {
+            "start": 622,
+            "end": 657,
+            "quote": "\"merged_at\": \"2018-11-10T11:46:02Z\""
+          }
+        }
+      ],
+      "limits": "The final spelling does not recover the missing earlier typo or prove the history of that correction. Technical edit acceptance does not establish institutional expectation recognition or authority."
+    },
+    {
+      "id": "F03-C1",
+      "episode_id": "F03",
+      "claim": "The discussion distinguishes reviewing the checkbox proposal from exposing it before a GUI replacement workflow exists. The author agrees with the exposure concern while stating that review can proceed.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 89,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement...\n"
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 237,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+          }
+        }
+      ],
+      "limits": "This establishes the expressed distinction and response. It does not establish a binding release rule, the chronology of retained body wording, or implementation of the missing workflow."
+    },
+    {
+      "id": "F03-C2",
+      "episode_id": "F03",
+      "claim": "The author reports closing #7819 in favor of #8182 and including it there. The supplied metadata records both contributions as closed without merge.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:8",
+          "span": {
+            "start": 0,
+            "end": 44,
+            "quote": "Closing in favor of #8182 (included there).\n"
+          }
+        },
+        {
+          "source_id": "pr7819:metadata",
+          "span": {
+            "start": 296,
+            "end": 311,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 149,
+            "end": 164,
+            "quote": "\"merged\": false"
+          }
+        },
+        {
+          "source_id": "pr8182:supplement_metadata",
+          "span": {
+            "start": 575,
+            "end": 592,
+            "quote": "\"merged_at\": null"
+          }
+        }
+      ],
+      "limits": "No supplied successor patch verifies which features or review suggestions carried over. A non-null merge_commit_sha is not proof of merge when merged is false."
+    },
+    {
+      "id": "F03-C3",
+      "episode_id": "F03",
+      "claim": "The author raises fee-only scope as an alternative after reporting an attempt to add outputs; the record supplies no adopted fee-only decision.",
+      "evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "limits": "Prospective self-questioning does not contradict the historical work report or demonstrate withdrawal, rejection, or an interpersonal value conflict."
+    }
+  ],
+  "limits": "These conclusions cover only the supplied sources and episode outcomes; no inference of actor motive, general legitimacy, causality, or Bitcoin network adoption."
+}

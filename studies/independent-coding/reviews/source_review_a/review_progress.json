@@ -1,0 +1,52 @@
+{
+  "status": "complete_and_frozen",
+  "completed_cases": [
+    "F01",
+    "F02",
+    "F03"
+  ],
+  "remaining_cases": [],
+  "coverage_totals": {
+    "annotations": 18,
+    "retained_units": 587,
+    "relations": 327,
+    "distinct_packet_entries": 83
+  },
+  "findings": 50,
+  "diagnosis_counts": {
+    "defensible_alternative": 22,
+    "criterion_ambiguity": 9,
+    "execution_failure": 18,
+    "unresolved": 1
+  },
+  "effect_counts": {
+    "coverage_or_scope": 9,
+    "convention_only": 17,
+    "evidence_basis": 24
+  },
+  "case_totals": {
+    "F01": {
+      "annotations": 6,
+      "retained_units": 351,
+      "relations": 199,
+      "packet_entries": 42
+    },
+    "F02": {
+      "annotations": 6,
+      "retained_units": 81,
+      "relations": 41,
+      "packet_entries": 22
+    },
+    "F03": {
+      "annotations": 6,
+      "retained_units": 155,
+      "relations": 87,
+      "packet_entries": 19
+    }
+  },
+  "validation_errors": [],
+  "prior_incremental_state": "review_progress.pre_freeze.json",
+  "current_review": "review.json",
+  "first_complete_review": "review.first_complete.json",
+  "completed_at_utc": "2026-11-07T20:25:38.731753+00:00"
+}

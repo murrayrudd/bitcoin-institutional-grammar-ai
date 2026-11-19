@@ -1,0 +1,393 @@
+{
+  "status": "pass",
+  "screened_entries": 98,
+  "units": 102,
+  "statement_units": 71,
+  "exact_anchor_references": 612,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "B-178-patch",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1802,
+          "end": 1866,
+          "quote": "even if it does get removed from core, if users actually want it"
+        }
+      },
+      "note": "The earlier conditional clause scopes both patching and using a derivative."
+    },
+    {
+      "unit_id": "B-178-derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1895,
+          "end": 1899,
+          "quote": "they"
+        }
+      },
+      "note": "The coordinated second action shares the explicit subject they (users) of the first action."
+    },
+    {
+      "unit_id": "B-178-derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1900,
+          "end": 1903,
+          "quote": "can"
+        }
+      },
+      "note": "Can scopes both alternatives as capability, not demonstrated authorization."
+    },
+    {
+      "unit_id": "B-178-derivative",
+      "source_id": "32406-178",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-178",
+        "span": {
+          "start": 1802,
+          "end": 1866,
+          "quote": "even if it does get removed from core, if users actually want it"
+        }
+      },
+      "note": "The conditional removal and user demand clauses scope both alternatives."
+    },
+    {
+      "unit_id": "B-148-assert",
+      "source_id": "32406-148",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-148",
+        "span": {
+          "start": 192,
+          "end": 252,
+          "quote": "Unless this is already tested in some other way I'm missing?"
+        }
+      },
+      "note": "The later exception qualifies the asserted need for this proposed test; it is outside the minimal edit span."
+    },
+    {
+      "unit_id": "B-227-remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 245,
+          "end": 247,
+          "quote": "we"
+        }
+      },
+      "note": "The second action shares the quoted subject we in the second camp clause."
+    },
+    {
+      "unit_id": "B-227-remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 248,
+          "end": 254,
+          "quote": "should"
+        }
+      },
+      "note": "The second action shares should with capitulate; quoted camp attribution remains necessary."
+    },
+    {
+      "unit_id": "B-227-remove",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 192,
+          "end": 238,
+          "quote": "the absence of a technically perfect solutions"
+        }
+      },
+      "note": "The second camp premise is shared across both attributed actions. Its interpretation as an activating condition rather than a reason is inferred."
+    },
+    {
+      "unit_id": "B-227-majority",
+      "source_id": "32359-227",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32359-227",
+        "span": {
+          "start": 342,
+          "end": 385,
+          "quote": "It's a debate that no one wins by argument."
+        }
+      },
+      "note": "The immediately preceding assertion supplies the excluded route to winning; treating it as a method constraint on this allocation is inferred."
+    },
+    {
+      "unit_id": "B-149-convince",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 775,
+          "end": 925,
+          "quote": "We do have e.g. `CLIENT_NAME \"Bitcoin Core\"` that's easy to override, and a CI flag `SKIP_BRANCH_PUSH` which replaced a hardcoded gui repository name."
+        }
+      },
+      "note": "The previous sentence identifies those as accommodations; this outside-unit evidence supplies the material referent."
+    },
+    {
+      "unit_id": "B-149-externalpref",
+      "source_id": "32406-149",
+      "kind": "outside_unit",
+      "symbol": "A,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-149",
+        "span": {
+          "start": 1134,
+          "end": 1143,
+          "quote": "@gmaxwell"
+        }
+      },
+      "note": "The explicit attribution immediately before the quote identifies its I; no institutional office is inferred."
+    },
+    {
+      "unit_id": "B-000-ignore",
+      "source_id": "33224-000",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "33224-000",
+        "span": {
+          "start": 1470,
+          "end": 1543,
+          "quote": "If your review is incorrectly listed, please react with \ud83d\udc4e to this comment"
+        }
+      },
+      "note": "The action in the preceding conjunct supplies the trigger for the predicted bot behavior."
+    },
+    {
+      "unit_id": "B-213-nospam",
+      "source_id": "32359-213",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-213",
+        "span": {
+          "start": 246,
+          "end": 247,
+          "quote": "I"
+        }
+      },
+      "note": "The coordinated have action shares the I in As a node runner I should be allowed to configure; the I inside what I consider spam is a different predicate occurrence."
+    },
+    {
+      "unit_id": "B-213-nospam",
+      "source_id": "32359-213",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32359-213",
+        "span": {
+          "start": 248,
+          "end": 268,
+          "quote": "should be allowed to"
+        }
+      },
+      "note": "The permission claim scopes both configuring and avoiding the described content."
+    },
+    {
+      "unit_id": "B-32381-lift",
+      "source_id": "32381-body",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32381-body",
+        "span": {
+          "start": 253,
+          "end": 321,
+          "quote": "the restriction on the number of `OP_RETURN` outputs per transaction"
+        }
+      },
+      "note": "The prior sentence supplies the precise restriction referred to by this restriction; the unit is not enlarged to contain it."
+    },
+    {
+      "unit_id": "B-018-call",
+      "source_id": "33453-018",
+      "kind": "outside_unit",
+      "symbol": "E,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33453-017",
+        "span": {
+          "start": 2,
+          "end": 62,
+          "quote": "are you considering this as something to backport (30 et al)"
+        }
+      },
+      "note": "The quoted question in the immediate preceding response resolves the decision that is called a maintainer responsibility."
+    },
+    {
+      "unit_id": "B-252-ban",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 0,
+          "end": 13,
+          "quote": "@1440000bytes"
+        }
+      },
+      "note": "The opening address supplies the threatened recipient; the role under ban is inferred, not the grammatical subject of the consequence sentence."
+    },
+    {
+      "unit_id": "B-252-not-here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "I",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 416,
+          "end": 422,
+          "quote": "debate"
+        }
+      },
+      "note": "The negative coordinated clause shares debate with the previous conditional routing instruction."
+    },
+    {
+      "unit_id": "B-252-not-here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 423,
+          "end": 435,
+          "quote": "this comment"
+        }
+      },
+      "note": "The negative clause shares the stated moderation-comment target, not all criticism."
+    },
+    {
+      "unit_id": "B-252-not-here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 401,
+          "end": 435,
+          "quote": "If you want to debate this comment"
+        }
+      },
+      "note": "The condition scopes both venue instructions."
+    },
+    {
+      "unit_id": "B-252-not-here",
+      "source_id": "32406-252",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "32406-252",
+        "span": {
+          "start": 404,
+          "end": 407,
+          "quote": "you"
+        }
+      },
+      "note": "The coordinated negative venue clause shares you from the debate-comment conditional; this is not an inferred formal role."
+    },
+    {
+      "unit_id": "B-010-reviewed",
+      "source_id": "33224-010",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "33224-010",
+        "span": {
+          "start": 216,
+          "end": 290,
+          "quote": "Not every translation team uses this feature, but those who do rely on it."
+        }
+      },
+      "note": "The following sentence limits actual use and reliance. This is contextual qualification, not a universal workflow rule."
+    },
+    {
+      "unit_id": "B-115-spam",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "This argument remains the explicitly expressed actor or target of the stated action; pragmatic coding concerns the requested force or reconstructed action, not an invented referent."
+    },
+    {
+      "unit_id": "B-178-advice",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The expressed object of setting is preserved; surrounding discussion and 32406-body identify the datacarriersize option, without importing other settings."
+    },
+    {
+      "unit_id": "B-148-docnorm",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The object of adding remains the target in the reconstructed advice; the qualification is retained in full."
+    },
+    {
+      "unit_id": "B-012-noargs",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Args remains the object of adding in the negative recommendation."
+    },
+    {
+      "unit_id": "B-014-prefer",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The explicit preferred wording remains the target in the inferred use-wording action."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

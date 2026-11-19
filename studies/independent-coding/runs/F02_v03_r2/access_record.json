@@ -1,0 +1,203 @@
+{
+  "run_id": "F02_v03_r2",
+  "episode_id": "F02",
+  "recorded_at_utc": "2026-11-07T19:09:58.166925+00:00",
+  "allowed_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2",
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/INSTRUCTIONS.txt",
+      "relative_path": "INSTRUCTIONS.txt",
+      "role": "frozen_input",
+      "access": [
+        "read"
+      ],
+      "sha256": "841207bc9097f1932eb074569c3335bbf64c45f5e3c38ec53540e471696540e7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/protocol/codebook.txt",
+      "relative_path": "protocol/codebook.txt",
+      "role": "frozen_input",
+      "access": [
+        "read"
+      ],
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/protocol/annotation_schema.json",
+      "relative_path": "protocol/annotation_schema.json",
+      "role": "frozen_input",
+      "access": [
+        "read"
+      ],
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/packet.json",
+      "relative_path": "packet.json",
+      "role": "frozen_input",
+      "access": [
+        "read"
+      ],
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/tools/check_annotation.py",
+      "relative_path": "tools/check_annotation.py",
+      "role": "frozen_input",
+      "access": [
+        "read",
+        "execute"
+      ],
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/build_annotation.py",
+      "relative_path": "build_annotation.py",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read",
+        "execute"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/annotation.json",
+      "relative_path": "annotation.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/annotation.first_complete.json",
+      "relative_path": "annotation.first_complete.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/checks.first.json",
+      "relative_path": "checks.first.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/finalize_annotation.py",
+      "relative_path": "finalize_annotation.py",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read",
+        "execute"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/annotation.final.json",
+      "relative_path": "annotation.final.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/checks.json",
+      "relative_path": "checks.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/repair_log.json",
+      "relative_path": "repair_log.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/review_notes.json",
+      "relative_path": "review_notes.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/access_record.json",
+      "relative_path": "access_record.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v03_r2/run_manifest.json",
+      "relative_path": "run_manifest.json",
+      "role": "run_output",
+      "access": [
+        "write",
+        "read"
+      ]
+    }
+  ],
+  "research_sources": [
+    "packet.json only"
+  ],
+  "optional_calibration_files_accessed": [],
+  "external_research_sources_accessed": [],
+  "other_run_files_accessed": [],
+  "parent_directory_files_accessed": [],
+  "web_or_library_access": false,
+  "subagents_spawned": false,
+  "frozen_inputs_modified": false,
+  "configuration": {
+    "configuration_mode": "inherited_primary_configuration",
+    "description": "Inherited primary configuration with no model or reasoning override. Historical model names in the protocol were not used to infer this run's model identity.",
+    "model_override": null,
+    "exact_model_identifier": null,
+    "reasoning_effort": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling_parameters": null,
+    "token_use": null,
+    "cost": null,
+    "unknown_fields_note": "These runtime/provider values were not exposed to the coder and are left null."
+  },
+  "runtime": {
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python_version": "3.12.14",
+    "platform": "linux",
+    "ordinary_library_modules": [
+      "json",
+      "copy",
+      "hashlib",
+      "pathlib",
+      "datetime",
+      "platform",
+      "subprocess",
+      "sys",
+      "re",
+      "jsonschema"
+    ],
+    "library_access_note": "Only ordinary Python runtime and checker dependency loads occurred outside the assigned research directory; no outside research document was read."
+  },
+  "workflow": [
+    "Read run instructions, complete codebook, complete schema, complete packet, and checker source.",
+    "Created complete annotation and exclusive first-complete snapshot before checker feedback.",
+    "Ran first checker and preserved checks.first.json unchanged; no mechanical repairs were required.",
+    "Conducted one complete source self-review, including every focal entry, all supplements as context, every unit/component, all events/relations, and every outcome/mechanism.",
+    "Logged two source-review changes, saved final JSON, reran checker, and resolved every review flag with source evidence."
+  ]
+}

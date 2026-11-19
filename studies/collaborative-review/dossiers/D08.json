@@ -1,0 +1,494 @@
+{
+  "topic_id": "D08",
+  "title": "Response relations and their direction",
+  "question": "Correct the reversed uptake relation. Decide whether inferred requests in contextual questions or concerns justify uptake, or whether clarifies is preferable; do not infer causal adoption.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "P04",
+      "title": "Uptake relation reverses the proposal-response direction",
+      "category": "primary_error",
+      "coordinator_assessment": "The stored uptake direction reverses initiating proposal and response under the assigned relation definition. The prose preserves their scope correspondence, so this changes evidence linkage rather than the broad institutional conclusion.",
+      "resolution": "For uptake, reverse endpoints to R10 U30 -> U33 and retain contextual basis. Alternatively use clarifies U33 -> U30 with a bounded rationale.",
+      "qualification": "Reviewer A calls this convention-only; reviewer B calls it evidence-basis. The coordinator uses evidence-basis because a consumer of the directed relation receives the wrong initiating/response order. Sensitivity counts also show the convention-only treatment.",
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt line 143: uptake points initiating request or proposal to its attributable response.",
+        "guide_1, Relations: uptake points from the initiating request or proposal to its attributable response or reported implementation; clarifies runs from clarifying to clarified content."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U30",
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 62,
+                "end": 105,
+                "quote": "so someone could do that in a separate pull"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko suggests that someone perform the corresponding cleanup in a separate pull request.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Cleanup refers to other versions in this file under U29; it is explicitly outside the immediate task."
+              ]
+            },
+            {
+              "unit_id": "U33",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 788,
+                "end": 836,
+                "quote": "but I think that's outside of scope for this PR."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack says general release-list cleanup should be outside this PR's scope.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The exclusion concerns cleaning up the releases list in general, which the author endorses separately; it does not reject cleanup itself."
+              ]
+            }
+          ],
+          "relation_refs": [
+            "relations[24]"
+          ],
+          "relations": [
+            {
+              "index": 24,
+              "from_unit_id": "U33",
+              "to_unit_id": "U30",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "The author's scope boundary is consistent with the suggested separate pull for cleanup; no direct thread or causal link is asserted.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:review_comments:2",
+                  "span": {
+                    "start": 788,
+                    "end": 836,
+                    "quote": "but I think that's outside of scope for this PR."
+                  }
+                },
+                {
+                  "source_id": "pr26586:review_comments:1",
+                  "span": {
+                    "start": 62,
+                    "end": 105,
+                    "quote": "so someone could do that in a separate pull"
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q042",
+      "title": "R03/R04/R09/R10 use uptake from the cost-growth question to the pruning option, although the question is retained as context; R01/R17 use a clarifying-response treatment.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Explain the implicit invitation if retaining uptake; otherwise use context-inferred clarifies from the pruning response to the concern. No implemented pruning, obligatory response, or direct causation follows.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:7",
+          "span": {
+            "start": 46,
+            "end": 171,
+            "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 181,
+            "end": 231,
+            "quote": "We can remove intermediate releases at some point."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 0,
+            "end": 231,
+            "quote": "> > Probably not, but it's a low cost check.\r\n> \r\n> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?\r\n\r\nWe can remove intermediate releases at some point."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, bare questions/contextual invitations and uptake/clarifies conventions."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C12",
+              "source_id": "pr26586:comments:7",
+              "span": {
+                "start": 46,
+                "end": 171,
+                "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": []
+            },
+            {
+              "unit_id": "C13",
+              "source_id": "pr26586:comments:8",
+              "span": {
+                "start": 181,
+                "end": 231,
+                "quote": "We can remove intermediate releases at some point."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers removing intermediate releases at an unspecified later point.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "No dates, criteria or particular versions are identified."
+              ]
+            }
+          ],
+          "relation_refs": [
+            "relations[11]"
+          ],
+          "relations": [
+            {
+              "index": 11,
+              "from_unit_id": "C12",
+              "to_unit_id": "C13",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "Directly quoted cost concern receives a pruning option; no actual removal shown.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:7",
+                  "span": {
+                    "start": 0,
+                    "end": 171,
+                    "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:8",
+                  "span": {
+                    "start": 181,
+                    "end": 231,
+                    "quote": "We can remove intermediate releases at some point."
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "C07",
+              "source_id": "pr26586:comments:7",
+              "span": {
+                "start": 46,
+                "end": 171,
+                "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": []
+            },
+            {
+              "unit_id": "S14",
+              "source_id": "pr26586:comments:8",
+              "span": {
+                "start": 181,
+                "end": 231,
+                "quote": "We can remove intermediate releases at some point."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes eventual removal of intermediate releases.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ]
+            }
+          ],
+          "relation_refs": [
+            "relations[8]"
+          ],
+          "relations": [
+            {
+              "index": 8,
+              "from_unit_id": "C07",
+              "to_unit_id": "S14",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "The reply proposes removal as a response to the quoted cost concern; no removal is observed.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:8",
+                  "span": {
+                    "start": 181,
+                    "end": 231,
+                    "quote": "We can remove intermediate releases at some point."
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:8",
+                  "span": {
+                    "start": 52,
+                    "end": 177,
+                    "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "C05",
+              "source_id": "pr26586:comments:7",
+              "span": {
+                "start": 46,
+                "end": 171,
+                "quote": "Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": []
+            },
+            {
+              "unit_id": "U13",
+              "source_id": "pr26586:comments:8",
+              "span": {
+                "start": 181,
+                "end": 231,
+                "quote": "We can remove intermediate releases at some point."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers removing intermediate releases at some future point.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": []
+            }
+          ],
+          "relation_refs": [
+            "relations[18]"
+          ],
+          "relations": [
+            {
+              "index": 18,
+              "from_unit_id": "C05",
+              "to_unit_id": "U13",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "Sjors responds to a quoted cost concern with a possible future pruning measure; no implementation is demonstrated.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:8",
+                  "span": {
+                    "start": 50,
+                    "end": 177,
+                    "quote": "> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:8",
+                  "span": {
+                    "start": 181,
+                    "end": 231,
+                    "quote": "We can remove intermediate releases at some point."
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q043",
+      "title": "R03 relations[1] and R09 relations[1] treat Sounds good to hold off as uptake of the earlier concern about withdrawing a buggy release.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the implicit-invitation alternative if using uptake. A temporal relation with a separate pause proposal is also defensible. Do not treat withdrawal or a formal hold as observed.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:1",
+          "span": {
+            "start": 0,
+            "end": 142,
+            "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Sounds good to hold off a bit."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, context versus pragmatic invitation and uptake versus temporal conventions; temporal ordering alone implies no causation."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C01",
+              "source_id": "pr26586:comments:1",
+              "span": {
+                "start": 0,
+                "end": 142,
+                "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": []
+            },
+            {
+              "unit_id": "C02",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 0,
+                "end": 30,
+                "quote": "Sounds good to hold off a bit."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors supports holding off on the current contribution for a short unspecified period.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The prior message speculates about a wiped release and wallet bug rather than ordering a delay."
+              ]
+            }
+          ],
+          "relation_refs": [
+            "relations[1]"
+          ],
+          "relations": [
+            {
+              "index": 1,
+              "from_unit_id": "C01",
+              "to_unit_id": "C02",
+              "type": "uptake",
+              "basis": "context_inferred",
+              "rationale": "Delay assent follows release-risk speculation; reliable reply threading is absent.",
+              "evidence": [
+                {
+                  "source_id": "pr26586:comments:1",
+                  "span": {
+                    "start": 0,
+                    "end": 142,
+                    "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+                  }
+                },
+                {
+                  "source_id": "pr26586:comments:2",
+                  "span": {
+                    "start": 0,
+                    "end": 30,
+                    "quote": "Sounds good to hold off a bit."
+                  }
+                }
+              ],
+              "logic_scope": "not_applicable"
+            }
+          ],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:1",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+    },
+    {
+      "source_id": "pr26586:comments:2",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Sounds good to hold off a bit. Meanwhile it needs a rebase after #26589.\r\n\r\nI like how small this commit could be now that `test/get_previous_releases.py -b` automatically fetches all available versions."
+    },
+    {
+      "source_id": "pr26586:comments:7",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+    },
+    {
+      "source_id": "pr26586:comments:8",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> > Probably not, but it's a low cost check.\r\n> \r\n> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?\r\n\r\nWe can remove intermediate releases at some point."
+    },
+    {
+      "source_id": "pr26586:review_comments:1",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+    },
+    {
+      "source_id": "pr26586:review_comments:2",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)\r\n\r\nFor these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another? I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases.\r\n\r\nACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+    }
+  ]
+}

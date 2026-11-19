@@ -1,0 +1,2312 @@
+{
+  "audit_id": "independent_source_audit_v01",
+  "study_episode_id": "CoreKnots_R12_shared",
+  "reviewed_source_ids": [
+    "32359-115",
+    "33453-068",
+    "32406-178",
+    "32406-148",
+    "32406-165",
+    "32359-227",
+    "32406-149",
+    "32359-066",
+    "32714-body",
+    "33224-000",
+    "32381-012",
+    "32359-213",
+    "32381-body",
+    "32359-038",
+    "33453-018",
+    "33224-018",
+    "32714-014",
+    "32406-228",
+    "32406-252",
+    "33453-004",
+    "32381-018",
+    "33224-010",
+    "32714-013",
+    "33453-body"
+  ],
+  "scope_and_method": {
+    "focal_scope": "All 24 focal sources; supporting entries used only to test interpretation, attribution, relations, documentation, and recorded/reported outcomes.",
+    "review_layers": [
+      "entry screening and omissions",
+      "unit boundaries and components",
+      "force, institutional type and standing",
+      "recognition and disposition targets",
+      "all relations and their rationale/evidence",
+      "all episode outcomes and mechanism claims",
+      "shared interpretations as well as disagreements"
+    ],
+    "source_status": "Frozen supplied texts are evidence of utterances/reports. Technical claims, user statistics, future plans, and reported conduct are not independently verified.",
+    "category_note": "meaning_changing denotes loss/change of supported meaning; evidence_basis includes provenance, target, explicit/inferred role, and evidence-array problems even when the final conclusion is true; convention_only leaves meaning intact; remaining categories preserve alternatives or differences without error attribution.",
+    "counting_note": "Findings are grouped review judgments, not an accuracy rate. Multiple affected fields in a finding are not independent events. Affected units can include comparison alternatives; the issue text identifies which annotation, if any, requires amendment.",
+    "independence": "No prior baseline, agreement scores, prior project interpretations, other auditor conclusions, web sources, Library, or other chats were consulted. No additional agents were used.",
+    "structural_status": "The assigning message states that all three final annotations are frozen and pass the structural checker. This audit did not treat that as semantic certification and did not inspect agreement metrics."
+  },
+  "findings": [
+    {
+      "finding_id": "SA01",
+      "source_ids": [
+        "32359-115",
+        "D_MOD"
+      ],
+      "affected_units": {
+        "A": [
+          "A115_repeat",
+          "A115_spam"
+        ],
+        "B": [],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "A assigns documented standing to the specific denial of a need to repost an already-made point and to the combined unsubstantiated-or-repeat ACK/NACK discouragement. Its documentary span is only Comments should contribute new information. That is a related norm, not documentation of the complete conditional no-obligation proposition or of every unsubstantiated review label.",
+      "resolution_or_alternatives": "Retain the focal no_obligation/recommendation readings. Use text_only for the exact reassurance, or explicitly identify documented standing as applying only to the broader new-information norm. For the spam unit, document the repetition limb separately and leave the unsupported-review-label limb qualified. The full guideline expressly allows some repetition and constructive reframing; it is not an absolute nonrepetition rule.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-115",
+          "start": 212,
+          "end": 299,
+          "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+        },
+        {
+          "source_id": "32359-115",
+          "start": 300,
+          "end": 419,
+          "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+        },
+        {
+          "source_id": "D_MOD",
+          "start": 1092,
+          "end": 1464,
+          "quote": "Comments should contribute new information. A certain amount of repetition is critical for learning, dissemination of ideas, and understanding in communication, but it can be taken too far when the same information is repeated in the same context. Moderators may remove comments that do not either contribute new information or constructively reframe existing information."
+        }
+      ],
+      "consequence": "An evidentiary-strength correction; the source does express the reassurance and discouragement. Do not recode no_obligation as prohibition."
+    },
+    {
+      "finding_id": "SA02",
+      "source_ids": [
+        "32359-115",
+        "32406-169",
+        "D_CONTRIB"
+      ],
+      "affected_units": {
+        "A": [
+          "A115_forum",
+          "A115_merit"
+        ],
+        "B": [
+          "B-115-remit",
+          "B-115-merit"
+        ],
+        "C": [
+          "C115_arena",
+          "C115_weight"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "The coders differ on norm versus rule candidate, case-specific versus general scope, and text-only versus repeated support. These differences are not all substantive errors: the later bot explanation independently restates content-over-count reasoning, and supplied documentation attributes discretionary merit weighting to maintainers.",
+      "resolution_or_alternatives": "A repeated-support reading is defensible for a generalized content-over-count arrangement across the linked PRs. It is not literal recognition of every detail of this particular PR reminder. C appropriately separates the later authorization evidence from April historical standing; B conservatively retains the exact local claim as a norm. Preserve the June 9 date of D_CONTRIB and the difference between may weigh based on merit and the stronger focal assertion are weighted by merit.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-115",
+          "start": 0,
+          "end": 186,
+          "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum. Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        },
+        {
+          "source_id": "32406-169",
+          "start": 335,
+          "end": 613,
+          "quote": "The goal is *not* to have everyone \"register\" their \"vote\". It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment. The technical content of those review comments is what matters, not how many are registered in what category."
+        },
+        {
+          "source_id": "D_CONTRIB",
+          "start": 17365,
+          "end": 17711,
+          "quote": "Project maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit. Reviewers that\nhave demonstrated a deeper commitment and understanding of the project over time\nor who have clear domain expertise may naturally have more weight, as one would\nexpect in all walks of life."
+        }
+      ],
+      "consequence": "No single primary type/standing label is imposed by majority vote. Downstream synthesis must identify whether it is comparing the local utterance or the generalized review arrangement."
+    },
+    {
+      "finding_id": "SA03",
+      "source_ids": [
+        "32359-227",
+        "32359-115"
+      ],
+      "affected_units": {
+        "A": [
+          "A227_majority",
+          "A115_merit"
+        ],
+        "B": [],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "A links majority decides the winner to merit-weighted reviews with challenges and marks A115_merit disputed. The source does not identify the majority, the winner, a review/merge decision, or an addressed response to the earlier reminder. Winning a public debate and weighting repository reviews can describe different activities.",
+      "resolution_or_alternatives": "Retain a thematic contrast as an explicitly unresolved analytical comparison, or omit the challenges relation and the resulting dispute flag unless a common decision object is established. The context_inferred basis and caveat about no addressed reply do not establish that the two propositions actually govern the same decision.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-227",
+          "start": 342,
+          "end": 423,
+          "quote": "It's a debate that no one wins by argument. Only the majority decides the winner."
+        },
+        {
+          "source_id": "32359-115",
+          "start": 92,
+          "end": 186,
+          "quote": "Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        }
+      ],
+      "consequence": "This relation can overstate observed contestation of the review-weighting arrangement. It does not demonstrate a majority-voting institution.",
+      "affected_annotations": {
+        "A": [
+          "relations: A227_majority -> A115_merit (challenges)",
+          "A115_merit.institution.dispute_present"
+        ]
+      }
+    },
+    {
+      "finding_id": "SA04",
+      "source_ids": [
+        "32359-227"
+      ],
+      "affected_units": {
+        "A": [
+          "A227_majority"
+        ],
+        "B": [
+          "B-227-majority"
+        ],
+        "C": [
+          "C227_majority"
+        ]
+      },
+      "category": "unresolved",
+      "issue": "A selects constitutional and C epistemic for majority-decides, while B leaves the target level unknown. The sentence establishes exclusivity in a debate-winning claim but does not establish legitimate authority, an electorate, or a repository decision procedure.",
+      "resolution_or_alternatives": "Unknown is the least assumptive primary target level. Constitutional allocation and an epistemic legitimacy reading may remain bounded alternatives, as both A and C already acknowledge; they cannot be reported as observed higher-level governance from this sentence alone. A regulative decides parse and a constitutive allocation parse both retain the asserted exclusivity if their institutional reading remains provisional.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-227",
+          "start": 342,
+          "end": 423,
+          "quote": "It's a debate that no one wins by argument. Only the majority decides the winner."
+        }
+      ],
+      "consequence": "Preserve the unresolved institutional status instead of turning the A/C primary labels into evidence that constitutional or epistemic arrangements were enacted."
+    },
+    {
+      "finding_id": "SA05",
+      "source_ids": [
+        "32359-227"
+      ],
+      "affected_units": {
+        "A": [
+          "A227_camps",
+          "A227_capitulate"
+        ],
+        "B": [
+          "B-227-capitulate",
+          "B-227-remove"
+        ],
+        "C": [
+          "C227_capitulate",
+          "C227_remove"
+        ]
+      },
+      "category": "coverage_difference",
+      "issue": "A retains the absence-of-a-technically-perfect-solution premise only in the encompassing context record, while B/C attach it to the attributed capitulate/remove actions. B treats it as a possible activation condition; C as the quoted rationale. A also couples the two actions while B/C split them.",
+      "resolution_or_alternatives": "Keep the hostile/camp attribution and both actions recoverable. If A actions are compared independently of A227_camps, attach the quoted premise or an explicit scope link. Treat Cac versus reason/Cex as unresolved because means expresses an attributed argument, not an explicit if clause. No coder should treat this as a verified advocate calling for capitulation.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-227",
+          "start": 174,
+          "end": 329,
+          "quote": "those who believe the absence of a technically perfect solutions means we should capitulate to spammers, and remove all efforts to slow down / reduce spam."
+        }
+      ],
+      "consequence": "The full A record retains the premise, so this is a representation/coverage issue rather than established loss of the source from the annotation."
+    },
+    {
+      "finding_id": "SA06",
+      "source_ids": [
+        "33453-068",
+        "33453-067"
+      ],
+      "affected_units": {
+        "A": [
+          "A068_reasonable"
+        ],
+        "B": [
+          "B-068-usecase",
+          "B-068-why"
+        ],
+        "C": [
+          "C453_usecase",
+          "C453_why"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "A codes a combined negative recommendation, B a negative classification plus a possible request for justification, and C a classification plus rhetorical context. The shared source does not settle whether the question expects an answer or whether reasonable use case is an institutional category.",
+      "resolution_or_alternatives": "All three readings are defensible if they retain the negative evaluation, the quoted opponent, and the limited challenge to emotional expression as a reason for feature support. C constitutive_specification remains a candidate, not an adopted admissibility test; B undetermined is equally defensible. Do not treat the embedded should cater as the author recommending that Core cater to emotional outbursts.",
+      "evidence_spans": [
+        {
+          "source_id": "33453-068",
+          "start": 190,
+          "end": 317,
+          "quote": "\"Expressing disgust\" is not a reasonable use case. Why do you think that Bitcoin Core should cater towards emotional outbursts?"
+        },
+        {
+          "source_id": "33453-067",
+          "start": 226,
+          "end": 411,
+          "quote": "However, I strongly oppose removing these options which so many people find useful to express their disgust for non-financial data in the block chain and therefore refuse to relay them."
+        }
+      ],
+      "consequence": "Different unit counts and grammar labels here do not by themselves identify error or an established rule of feature admissibility."
+    },
+    {
+      "finding_id": "SA07",
+      "source_ids": [
+        "32406-178",
+        "32406-180",
+        "32714-body",
+        "32714-011",
+        "33453-body"
+      ],
+      "affected_units": {
+        "A": [
+          "A178_definition",
+          "A714_no_warning"
+        ],
+        "B": [
+          "B-178-definition",
+          "B-32714-definition",
+          "B-32714-nowarning"
+        ],
+        "C": [
+          "C178_definition",
+          "C714_definition",
+          "C714_warning"
+        ]
+      },
+      "category": "unresolved",
+      "issue": "B treats exact-quote agreement with the deprecation definition and later reuse of no-plan/no-warning reasoning as expectation recognition. A/C often retain endorsement and text-only standing. Ordinary assent must not automatically establish an expectation, but the codebook also permits recognition of an arrangement and does not require a binding obligation.",
+      "resolution_or_alternatives": "For 32406-180, endorsement of the quoted definition is certain; expectation recognition is defensible only on the explicitly retained institutional-status reading of deprecation. Agreement with a semantic explanation remains an alternative. The Given quotation in 32714-011 and the explicit invocation/application in 33453-body are stronger evidence that the authors use the meaning or warning expectation as a premise, not merely comply with an edit. Retain the recognized proposition and its nonbinding character; neither local support nor textual reuse proves a project-wide commitment or no removal plan.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-178",
+          "start": 0,
+          "end": 121,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\"."
+        },
+        {
+          "source_id": "32406-180",
+          "start": 0,
+          "end": 194,
+          "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+        },
+        {
+          "source_id": "32714-011",
+          "start": 176,
+          "end": 369,
+          "quote": "Given \"deprecation obviously means that the options are not recommended for use\" I think that trying to differentiate \"not recommended for use\" and \"deprecated\" will only lead to more confusion"
+        },
+        {
+          "source_id": "32714-body",
+          "start": 858,
+          "end": 950,
+          "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+        },
+        {
+          "source_id": "33453-body",
+          "start": 677,
+          "end": 1015,
+          "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._” In months since that comment, partially due to increased feedback from Bitcoin Core users wanting to keep this option, there is even less likelihood of a near term plan to remove these options."
+        }
+      ],
+      "consequence": "This is a material interpretation boundary, not an automatic false-positive recognition finding. Standing comparisons require the same institutional-versus-semantic reading."
+    },
+    {
+      "finding_id": "SA08",
+      "source_ids": [
+        "32406-178",
+        "32406-071"
+      ],
+      "affected_units": {
+        "A": [],
+        "B": [
+          "B-178-mark"
+        ],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "B-178-mark sets dispute_present true and says the sentence acknowledges disagreement, citing only even if there are a few developers who strongly disagree. Even if preserves a concessive possibility and by itself need not establish that an actual challenge occurred.",
+      "resolution_or_alternatives": "Either leave actual dispute unresolved/false for this evidentiary basis, or add the supplied earlier challenge to marking the toggle deprecated in 32406-071 and explain its attribution and scope. The latter source supplies a quoted criticism, not an identified roster of dissenting developers. Keep the focal recommendation valid even in the presence of dissent.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-178",
+          "start": 1197,
+          "end": 1307,
+          "quote": "so I think marking it as \"deprecated\" is reasonable, even if there are a few developers who strongly disagree."
+        },
+        {
+          "source_id": "32406-071",
+          "start": 0,
+          "end": 220,
+          "quote": "> I believe this \"DEPRECATED\" definition is up for debate. Marking a toggle that has worked for my mempool policy and will work for my mempool policy in the future as \"DEPRECATED\" is FALSE & MISLEADING. It still works.\r\n"
+        }
+      ],
+      "consequence": "The current flag is under-supported by its own evidence array; the broader packet can support a narrower repair. This is not proof that the episode lacked disagreement."
+    },
+    {
+      "finding_id": "SA09",
+      "source_ids": [
+        "32381-012",
+        "32406-148",
+        "32406-149"
+      ],
+      "affected_units": {
+        "A": [
+          "A012_knob"
+        ],
+        "B": [
+          "B-148-nodoc",
+          "B-149-stay"
+        ],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "Three local component anchors select the right pronoun from the wrong predicate occurrence. A012_knob A=we uses the if-clause we at 9:11 rather than the main recommendation subject at 68:70. B-148-nodoc Bdir=it uses the tested-clause occurrence 256:258 rather than the documented-clause occurrence 280:282. B-149-stay A=I uses So do I at 1239:1240 rather than the later I in I'd at 1343:1344.",
+      "resolution_or_alternatives": "Use the focal-predicate occurrences, or explicitly declare a contextual/shared-role inference if intentionally using another occurrence. The same referent does not make the cited occurrence an explicit local argument of the chosen action. For B-149-stay also anchor the complete contracted would-rather-not expression if its D text retains would; the existing 1347:1357 quote supplies only rather not.",
+      "evidence_spans": [
+        {
+          "source_id": "32381-012",
+          "start": 6,
+          "end": 102,
+          "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it"
+        },
+        {
+          "source_id": "32406-148",
+          "start": 253,
+          "end": 323,
+          "quote": "If it shouldn't be tested, it probably shouldn't be documented either?"
+        },
+        {
+          "source_id": "32406-149",
+          "start": 1233,
+          "end": 1370,
+          "quote": "So do I conceptually, but at this point this PR has had more code review and some subsequent improvements, so I'd rather not switch back."
+        }
+      ],
+      "consequence": "These are epistemic anchoring errors with no demonstrated change in actor/object identity. They should be separated from institutional interpretation errors."
+    },
+    {
+      "finding_id": "SA10",
+      "source_ids": [
+        "32406-149",
+        "32406-252",
+        "33224-010",
+        "33453-body",
+        "32406-178"
+      ],
+      "affected_units": {
+        "A": [
+          "A149_convince",
+          "A252_ban",
+          "A010_freeze",
+          "A453_schedule"
+        ],
+        "B": [],
+        "C": [
+          "C178_tradeoff"
+        ]
+      },
+      "category": "evidence_basis",
+      "issue": "Several components claim an explicit role after a role-changing reconstruction. A149_convince makes those the direct object of include although it is the subject of require in the source. A252_ban presents the consequence noun ban as an explicit sanction action. A010_freeze makes the nominal modifier translation source an explicit Bdir. A453_schedule labels the subject phrase Deprecating the option in the future an explicit activation condition for inferred provide. C178_tradeoff labels the depends-on trade-off complement an explicit execution constraint of reconstructed assess.",
+      "resolution_or_alternatives": "Retain the supported meanings, but use context_inferred plus semantic_inference for the transformed roles and explain the transformation. A literal nominal representation can be retained as a documented alternative only if it does not silently assign the nominal modifier/complement a new IG role. For A149_convince either code the inferred inclusion/justification request with its mapped roles or preserve the literal require-some-convincing proposition. For the translation-source compound, a genuinely literal nominal-action analysis is a bounded alternative; the target role still requires an explicit rationale rather than assuming that every source word is an overt verb argument.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-149",
+          "start": 926,
+          "end": 1011,
+          "quote": "But those require some convincing to include, as I've experienced myself with #29274."
+        },
+        {
+          "source_id": "32406-252",
+          "start": 295,
+          "end": 400,
+          "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban."
+        },
+        {
+          "source_id": "33224-010",
+          "start": 635,
+          "end": 726,
+          "quote": "there must not be any translation source updates after the final translation string freeze."
+        },
+        {
+          "source_id": "33453-body",
+          "start": 1206,
+          "end": 1327,
+          "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+        },
+        {
+          "source_id": "32406-178",
+          "start": 1311,
+          "end": 1628,
+          "quote": "Whether (or when) the option should also be removed rather than just deprecated depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects."
+        }
+      ],
+      "consequence": "Epistemic role-label corrections, not evidence that the advice, warning, freeze expectation, transparency claim, or schedule preference is absent."
+    },
+    {
+      "finding_id": "SA11",
+      "source_ids": [
+        "32406-165",
+        "32406-164",
+        "32359-115",
+        "32406-149",
+        "32714-014"
+      ],
+      "affected_units": {
+        "A": [
+          "A165_quote"
+        ],
+        "B": [
+          "B-165-quote",
+          "B-115-spam",
+          "B-014-prefer"
+        ],
+        "C": [
+          "C165_q",
+          "C149_followups"
+        ]
+      },
+      "category": "convention_only",
+      "issue": "The repeated bot question is labeled asserted by A/B and other by C, although it remains a literal question in the supplied occurrence. Some reconstructed recommendations also use proposed where the codebook preserves the surface declarative act: B-115-spam and B-014-prefer; C149_followups likewise presents a declarative can-be-left statement.",
+      "resolution_or_alternatives": "Keep speech_act=question for the repeated bot question and asserted for the listed declarative occurrences. Use parse_mode, deontic_force, and the alternative interpretation to express pragmatic recommendation. The repeated quotation remains nonstatement and is not an independent endorsement.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-164",
+          "start": 0,
+          "end": 67,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot "
+        },
+        {
+          "source_id": "32406-165",
+          "start": 2,
+          "end": 68,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot"
+        },
+        {
+          "source_id": "32359-115",
+          "start": 300,
+          "end": 419,
+          "quote": "There is no reason to leave unsubstantiated or repeat acks/nacks other than to spam the people subscribed to this repo."
+        },
+        {
+          "source_id": "32714-014",
+          "start": 0,
+          "end": 131,
+          "quote": "I do prefer \"are not recommended to be used\" more than \"have been marked as deprecated\" as it explains it more clearly to the user."
+        },
+        {
+          "source_id": "32406-149",
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        }
+      ],
+      "consequence": "This includes a shared A/B/C convention deviation for the bot question. The coding of repair as a report and navigation as a separate request remains supported."
+    },
+    {
+      "finding_id": "SA12",
+      "source_ids": [
+        "32381-012"
+      ],
+      "affected_units": {
+        "A": [
+          "A012_knob"
+        ],
+        "B": [
+          "B-012-knob",
+          "B-012-150"
+        ],
+        "C": [
+          "C012_knob"
+        ]
+      },
+      "category": "coverage_difference",
+      "issue": "A includes the tentative 150-byte-or-beyond question inside the knob unit; B extracts it and links it with clarifies; C excludes it from the unit/components but cites it in institutional evidence and explicitly identifies it as object refinement in screening.",
+      "resolution_or_alternatives": "Do not describe C as having failed to read or wholly omitted the number. For a component-level normalized comparison, add the tentative threshold as a qualifier or linked contextual refinement in C. A/B boundaries are substantively equivalent if the if-clause, buffer, and tentative character of the numeric suggestion remain in scope.",
+      "evidence_spans": [
+        {
+          "source_id": "32381-012",
+          "start": 6,
+          "end": 199,
+          "quote": "If we're twiddling a knob to upset the least amount of people we probably should just twiddle it to the value we're considering (plus some buffer). Anything that results in 150 bytes or beyond?"
+        }
+      ],
+      "consequence": "Representation differs in where a material numeric refinement is stored; no hard 150-byte requirement or collective voting rule is established."
+    },
+    {
+      "finding_id": "SA13",
+      "source_ids": [
+        "32406-148",
+        "32406-149",
+        "32406-228",
+        "32714-body"
+      ],
+      "affected_units": {
+        "A": [
+          "A148_assert",
+          "A149_remit",
+          "A228_transparency",
+          "A714_wording"
+        ],
+        "B": [
+          "B-148-docnorm",
+          "B-149-effort",
+          "B-228-nondismiss"
+        ],
+        "C": [
+          "C149_change_default",
+          "C149_revert",
+          "C714_warn_discussion"
+        ]
+      },
+      "category": "coverage_difference",
+      "issue": "B extracts an additional docstring/testing norm and a nondismissal expectation; C extracts two conditional fork-maintenance methods and an exploratory invitation to discuss initialization warnings. Other coders retain these passages as reasons or technical context.",
+      "resolution_or_alternatives": "These additions are plausible candidate extraction, not automatically superior coverage. The docstring and nondismissal readings infer advice from criticism; the fork clauses articulate methods but can remain technical effort descriptions; could be bikeshed is exploratory and need not request action. Retain the stated alternatives and do not count any of these as separately recognized obligations.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-148",
+          "start": 104,
+          "end": 252,
+          "quote": "Adding a docstring that is not actually enforced in tests is confusing and fragile imo. Unless this is already tested in some other way I'm missing?"
+        },
+        {
+          "source_id": "32406-149",
+          "start": 364,
+          "end": 537,
+          "quote": "It really shouldn't be. After this PR it's a matter of changing the default. After we actually drop the deprecated option, it would be a matter of reverting that one commit."
+        },
+        {
+          "source_id": "32406-228",
+          "start": 184,
+          "end": 310,
+          "quote": "When a change pushes away a substantial portion of the user base, dismissing it as \"just fork it\" ignores a practical reality."
+        },
+        {
+          "source_id": "32714-body",
+          "start": 772,
+          "end": 857,
+          "quote": "One thing that could be bikeshed is whether to warn on init if these options are set."
+        }
+      ],
+      "consequence": "Differences affect inventory size and boundary choices. They do not establish omitted institutional rules in the leaner outputs."
+    },
+    {
+      "finding_id": "SA14",
+      "source_ids": [
+        "32381-body",
+        "M32381",
+        "M32359"
+      ],
+      "affected_units": {
+        "A": [
+          "A381_32359"
+        ],
+        "B": [
+          "B-32381-32359"
+        ],
+        "C": [
+          "C381_do32359"
+        ]
+      },
+      "category": "evidence_basis",
+      "issue": "A/C attach the closure of the containing PR #32381 as broader_proposal disposition to the distinct recommendation we should do #32359. B attaches #32359 metadata. A/C explicitly describe the containing PR, so their recorded status is true, but the event target conflates two identifiable proposals.",
+      "resolution_or_alternatives": "Use M32359 for disposition of the recommendation's referenced proposal, or retain #32381 closure only as separate episode context with its identity explicit. Do not let the generic broader_proposal target imply that the status of #32381 is evidence about the fate of #32359. Both happened to close unmerged, which conceals the scope problem.",
+      "evidence_spans": [
+        {
+          "source_id": "32381-body",
+          "start": 764,
+          "end": 821,
+          "quote": "I still believe we should do #32359, as i signaled there."
+        },
+        {
+          "source_id": "M32381",
+          "start": 0,
+          "end": 126,
+          "quote": "{\n  \"number\": 32381,\n  \"title\": \"policy: allow more than one OP_RETURN outputs per tx\",\n  \"state\": \"closed\",\n  \"merged\": false"
+        },
+        {
+          "source_id": "M32359",
+          "start": 0,
+          "end": 132,
+          "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false"
+        }
+      ],
+      "consequence": "A provenance/target correction is necessary even though the two final status labels coincide."
+    },
+    {
+      "finding_id": "SA15",
+      "source_ids": [
+        "32381-body",
+        "32381-013",
+        "D_MOD"
+      ],
+      "affected_units": {
+        "A": [
+          "A381_channel",
+          "A381_block"
+        ],
+        "B": [
+          "B-32381-channel",
+          "B-013-block"
+        ],
+        "C": [
+          "C381_mail",
+          "C381_block"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "All coders retain a rule candidate for channel routing; A uses recommendation and locally_supported, B/C obligation and text_only. The author repeats the routing expectation and reports a block in the same communication, while the exact triggering conduct and authority credentials remain unverified.",
+      "resolution_or_alternatives": "An attributable enforcement claim satisfies the codebook's rule-candidate threshold without proving authorized or executed repository enforcement. A norm-level alternative and uncertainty over advisory versus binding force remain defensible. Same-author reapplication can establish maintained expectation but is not independent consensus; local support must be described in those narrow terms. No O link proving channel violation caused a block is warranted.",
+      "evidence_spans": [
+        {
+          "source_id": "32381-body",
+          "start": 0,
+          "end": 238,
+          "quote": "Please keep conceptual discussions on the corresponding [mailing list thread](https://gnusha.org/pi/bitcoindev/rhfyCHr4RfaEalbfGejVdolYCVWIyf84PT2062DQbs5-eU8BPYty5sGyvI3hKeRZQtVC7rn_ugjUWFnWCymz9e9Chbn7FjWJePllFhZRKYk=@protonmail.com\r\n)."
+        },
+        {
+          "source_id": "32381-013",
+          "start": 0,
+          "end": 309,
+          "quote": "@jesterhodl conceptual discussions should go on the mailing list. If you do take it there please understand the topic before sharing your strong opinion, this has nothing to do with Taproot witnesses. I just blocked you, which should prevent you from commenting further on this PR and wasting everyone's time."
+        },
+        {
+          "source_id": "D_MOD",
+          "start": 2897,
+          "end": 3018,
+          "quote": "Moderators may lock controversial conversations or limit it to prior contributors or members of the Bitcoin organization."
+        }
+      ],
+      "consequence": "The shared rule-candidate interpretation is source-grounded as a candidate claim. It must not become a claim of a verified ban or collective approval."
+    },
+    {
+      "finding_id": "SA16",
+      "source_ids": [
+        "M32359",
+        "M32381",
+        "M32714",
+        "32359-038",
+        "32381-body",
+        "32714-body"
+      ],
+      "affected_units": {
+        "A": [
+          "A038_comment",
+          "A381_lift",
+          "A381_32359",
+          "A714_wording",
+          "A714_delay",
+          "A714_no_warning"
+        ],
+        "B": [],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "Several A recorded_closed_unmerged disposition arrays cite only merged:false. That proves nonmerger, not closure. The full supplied metadata does establish closed, so the problem is the completeness of the selected evidence span rather than a false outcome.",
+      "resolution_or_alternatives": "Add the state:closed span or use the contiguous state/merged pair. In A episode_summary.mechanisms[0], the same false-only span supports the unmerged limb but should also include closed for the broader-PR closure clause. Keep closure distinct from rejection and withdrawal.",
+      "evidence_spans": [
+        {
+          "source_id": "M32359",
+          "start": 96,
+          "end": 132,
+          "quote": "\"state\": \"closed\",\n  \"merged\": false"
+        },
+        {
+          "source_id": "M32381",
+          "start": 90,
+          "end": 126,
+          "quote": "\"state\": \"closed\",\n  \"merged\": false"
+        },
+        {
+          "source_id": "M32714",
+          "start": 115,
+          "end": 151,
+          "quote": "\"state\": \"closed\",\n  \"merged\": false"
+        }
+      ],
+      "consequence": "Narrow evidence-array repair. This finding is not an allegation that the three PRs remained open.",
+      "affected_annotations": {
+        "A": [
+          "listed units.disposition_events (recorded_closed_unmerged)",
+          "episode_summary.mechanisms[0]"
+        ]
+      }
+    },
+    {
+      "finding_id": "SA17",
+      "source_ids": [
+        "32359-038",
+        "33453-004"
+      ],
+      "affected_units": {
+        "A": [
+          "A038_comment"
+        ],
+        "B": [],
+        "C": [
+          "C453_window"
+        ]
+      },
+      "category": "convention_only",
+      "issue": "A038_comment uses I=add source comment alongside the full comment as Bdir. C453_window puts defer reconsideration of deprecation entirely in I without separating the event target.",
+      "resolution_or_alternatives": "Prefer I=add with the supplied comment as Bdir, and I=defer with Bdir=reconsideration of deprecation plus the inferred temporal qualifier. Keep the proposed wording and the conditional nature of the Concept ACK intact.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-038",
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        },
+        {
+          "source_id": "33453-004",
+          "start": 0,
+          "end": 66,
+          "quote": "Concept Ack assuming a long window before revaluation to deprecate"
+        }
+      ],
+      "consequence": "Action/object separation improves comparability; the annotated meanings are otherwise recoverable."
+    },
+    {
+      "finding_id": "SA18",
+      "source_ids": [
+        "32359-213"
+      ],
+      "affected_units": {
+        "A": [
+          "A213_configure",
+          "A213_defaults",
+          "A213_keep_defaults",
+          "A213_allow_increase",
+          "A213_high"
+        ],
+        "B": [
+          "B-213-why",
+          "B-213-configure",
+          "B-213-nospam",
+          "B-213-default",
+          "B-213-increase",
+          "B-213-high"
+        ],
+        "C": [
+          "C213_configure",
+          "C213_defaults",
+          "C213_increase",
+          "C213_high"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "The mempool-control claim is coupled in A/C and split in B; the default-setting alternatives have different container and AND/OR structures; allow is parsed as an enabling action or as the permission governing increase.",
+      "resolution_or_alternatives": "These can preserve the same interpretation if the subjective what I consider spam outcome, unchanged-default plus voluntary-increase bundle, high-default/downward-control alternative, and external quotation attribution all survive. B's extra why-question is an optional pragmatic request-for-justification candidate. A claimed permission is not evidence of institutional authorization, and an AND of freedoms does not compel both actions.",
+      "evidence_spans": [
+        {
+          "source_id": "32359-213",
+          "start": 156,
+          "end": 339,
+          "quote": "but why is the ability to configure it being removed all together? \n> \n> As a node runner I should be allowed to configure my mempool and not have it filled with what I consider spam."
+        },
+        {
+          "source_id": "32359-213",
+          "start": 394,
+          "end": 607,
+          "quote": "A conservative approach would be to let the defaults be as it is and allow it to be increased for those who chose to increase it. \n\nOr setting a default high limit, so that a node runner can set to a lowest value."
+        }
+      ],
+      "consequence": "No unique segmentation is required by the source. Focal editorial/design advice and an embedded claimed user permission must be compared at the same layer."
+    },
+    {
+      "finding_id": "SA19",
+      "source_ids": [
+        "33224-018"
+      ],
+      "affected_units": {
+        "A": [
+          "A018_locations"
+        ],
+        "B": [
+          "B-33224-018-add"
+        ],
+        "C": [
+          "C224_locations",
+          "C224_locations_response"
+        ]
+      },
+      "category": "evidence_basis",
+      "issue": "C records a challenges relation and explains that the reply disputes the line-number premise, but leaves dispute_present false on C224_locations. The codebook permits a dispute flag for a challenged premise or application and does not require definitive rejection of the edit.",
+      "resolution_or_alternatives": "Set dispute_present true for the premise challenge, with text_only standing retained if desired, or change the relation to neutral response and explain why no premise is contested. A disputed standing and B text_only plus dispute flag are both defensible ways to preserve this limited contestation. Do not infer that the flag was rejected or implemented.",
+      "evidence_spans": [
+        {
+          "source_id": "33224-018",
+          "start": 127,
+          "end": 217,
+          "quote": "Would it be better to add `-locations none` to the LCONVERT invocation in translate.cmake?"
+        },
+        {
+          "source_id": "33224-018",
+          "start": 221,
+          "end": 505,
+          "quote": "I don't think line numbers is the problem. The actual source location of the string can change and the ids in the `.xlf` won't change. It's the sort order in the `.ts` file that `lupdate` generates that seems to cause the id change. It's unclear to me why the sort order would change."
+        }
+      ],
+      "consequence": "An internal evidence/flag inconsistency can distort dispute comparisons even though the narrative correctly retains the technical disagreement."
+    },
+    {
+      "finding_id": "SA20",
+      "source_ids": [
+        "32406-149",
+        "32406-151"
+      ],
+      "affected_units": {
+        "A": [
+          "A149_followups",
+          "A151_repeat",
+          "A151_nits"
+        ],
+        "B": [],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "A episode_summary.mechanisms[1] specifically says the deferral suggestion is quoted, but its evidence array includes the original suggestion and the Agreed/nonblocking reply without the repeated quotation. The quote exists and A separately codes it; it is absent only from the mechanism evidence array.",
+      "resolution_or_alternatives": "Add 32406-151[172:323] to that mechanism's evidence array. The exact quotation plus nonblocking-nits statement supports the local expectation-recognition claim; the broad re-ACK alone would not.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-149",
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        },
+        {
+          "source_id": "32406-151",
+          "start": 172,
+          "end": 323,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        },
+        {
+          "source_id": "32406-151",
+          "start": 327,
+          "end": 406,
+          "quote": "Agreed. Leaving nits here just for reference but they shouldn't block progress."
+        }
+      ],
+      "consequence": "A reproducibility repair for a true summary clause; no change to the supported sequence or recognized local prioritization expectation.",
+      "affected_annotations": {
+        "A": [
+          "episode_summary.mechanisms[1].evidence"
+        ]
+      }
+    },
+    {
+      "finding_id": "SA21",
+      "source_ids": [
+        "33453-body",
+        "X33453",
+        "M33453"
+      ],
+      "affected_units": {
+        "A": [
+          "A453_remove"
+        ],
+        "B": [
+          "B-33453-remove"
+        ],
+        "C": [
+          "C453_undeprecate"
+        ]
+      },
+      "category": "evidence_basis",
+      "issue": "A's this_proposition recorded-status recognition claims the patch identifies removal of deprecation labels and warning, but its evidence array cites only the warning deletion. Its proposition-specific disposition additionally cites the datacarrier label replacement but not the datacarriersize label replacement. The full patch, used by B and in the A episode summary, supports both.",
+      "resolution_or_alternatives": "For A's particular two-option claim, include both label-replacement spans and the warning deletion with merge metadata. B's complete-patch inference is supported. C's broader-proposal target is conservative and also defensible. None of these records establishes acceptance of the body's principles or future removal schedule.",
+      "evidence_spans": [
+        {
+          "source_id": "33453-body",
+          "start": 0,
+          "end": 187,
+          "quote": "Removes the deprecation for the `datacarrier` and `datacarriersize` options by reverting commit 0b4048c73385166144d0b3e76beb9a2ac4cc1eca from https://github.com/bitcoin/bitcoin/pull/32406"
+        },
+        {
+          "source_id": "X33453",
+          "start": 992,
+          "end": 1378,
+          "quote": "-    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n+    argsman.AddArg(\"-datacarrier\", strprintf(\"Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);"
+        },
+        {
+          "source_id": "X33453",
+          "start": 1419,
+          "end": 1655,
+          "quote": "-                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n+                   strprintf(\"Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \""
+        },
+        {
+          "source_id": "X33453",
+          "start": 2162,
+          "end": 2323,
+          "quote": "-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));"
+        },
+        {
+          "source_id": "M33453",
+          "start": 109,
+          "end": 144,
+          "quote": "\"state\": \"closed\",\n  \"merged\": true"
+        }
+      ],
+      "consequence": "This is an evidence-array completeness issue. The source-grounded integration conclusion is supported when the missing patch spans are included."
+    },
+    {
+      "finding_id": "SA22",
+      "source_ids": [
+        "33453-body",
+        "33453-004"
+      ],
+      "affected_units": {
+        "A": [
+          "A453_schedule",
+          "A004_window"
+        ],
+        "B": [
+          "B-33453-future",
+          "B-004-window"
+        ],
+        "C": [
+          "C453_future",
+          "C453_schedule",
+          "C453_window"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "A extracts the future schedule preference; B retains it within the hypothetical future-deprecation proposition; C separates future possibility and the advisory schedule. All retain a distinct long-window condition on the earlier Concept ACK.",
+      "resolution_or_alternatives": "The schedule alternatives are equivalent if preferably, future deprecation, and the user-information purpose remain recoverable. The conditional ACK is a speaker's assumption or candidate expectation, not a project-approved delay. Keep possible future deprecation nondeontic unless a separate advisory component is being represented.",
+      "evidence_spans": [
+        {
+          "source_id": "33453-body",
+          "start": 1206,
+          "end": 1327,
+          "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+        },
+        {
+          "source_id": "33453-004",
+          "start": 0,
+          "end": 66,
+          "quote": "Concept Ack assuming a long window before revaluation to deprecate"
+        }
+      ],
+      "consequence": "Neither the merged PR nor repeated use of this language establishes a binding removal date or waiting period."
+    },
+    {
+      "finding_id": "SA23",
+      "source_ids": [
+        "32714-013",
+        "32714-011",
+        "33453-068",
+        "33453-067"
+      ],
+      "affected_units": {
+        "A": [
+          "A711_choice",
+          "A711_a",
+          "A711_b",
+          "A711_c",
+          "A711_a_recommend",
+          "A711_a_mark",
+          "A711_b_notmark",
+          "A711_b_user",
+          "A067_retain"
+        ],
+        "B": [
+          "B-011-options",
+          "B-067-original"
+        ],
+        "C": [
+          "C711_choice",
+          "C453_disgust_original"
+        ]
+      },
+      "category": "coverage_difference",
+      "issue": "A decomposes supporting originals into several statement/container records, whereas B/C use context endpoints. The focal 32714-013 occurrence remains a repeated quotation plus conditional ACK and agreement in all three.",
+      "resolution_or_alternatives": "The extra A detail is useful for preserving the alternative bundles and negative hybrid recommendation, but it is supporting-context expansion, not additional focal independent evidence. Exclude supporting statements and containers from any naive focal-unit-count comparison. The review's agreement with the framework does not choose both branches or establish their adoption.",
+      "evidence_spans": [
+        {
+          "source_id": "32714-013",
+          "start": 0,
+          "end": 453,
+          "quote": "Concept ACK, modulo the following\r\n\r\n> I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\nAgree with @ajtowns."
+        },
+        {
+          "source_id": "32714-011",
+          "start": 374,
+          "end": 764,
+          "quote": "I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion."
+        },
+        {
+          "source_id": "33453-067",
+          "start": 226,
+          "end": 411,
+          "quote": "However, I strongly oppose removing these options which so many people find useful to express their disgust for non-financial data in the block chain and therefore refuse to relay them."
+        }
+      ],
+      "consequence": "Context inventory size and split depth must not be interpreted as better extraction or multiple endorsements."
+    },
+    {
+      "finding_id": "SA24",
+      "source_ids": [
+        "32406-149",
+        "32406-151",
+        "32406-165",
+        "32406-178",
+        "32406-180",
+        "32714-013"
+      ],
+      "affected_units": {
+        "A": [
+          "A149_followups",
+          "A151_nits",
+          "A164_question",
+          "A165_fixed",
+          "A178_definition",
+          "A180_agree",
+          "A711_choice",
+          "A713_agree"
+        ],
+        "B": [],
+        "C": []
+      },
+      "category": "evidence_basis",
+      "issue": "A labels several uptake relations context_inferred even where its evidence/rationale supplies an exact quotation followed by direct acknowledgment: the nonblocking-nits response, the bot known-issue response, the deprecation-definition agreement, and the quoted-alternatives agreement.",
+      "resolution_or_alternatives": "Under the codebook convention, the response/acknowledgment relation itself can be explicit for these exact-quote cases. Keep the scope of what the response establishes separate: exact response correspondence does not make institutional recognition, all-proposition endorsement, implementation, or causal effect explicit. Metadata-linked Added comment remains a defensible explicit/context-inferred boundary depending on whether the event or the semantic target mapping is foregrounded.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-151",
+          "start": 172,
+          "end": 406,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading.\r\n\r\nAgreed. Leaving nits here just for reference but they shouldn't block progress."
+        },
+        {
+          "source_id": "32406-165",
+          "start": 0,
+          "end": 157,
+          "quote": "> Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot\r\n\r\nThis is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+        },
+        {
+          "source_id": "32406-180",
+          "start": 0,
+          "end": 194,
+          "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+        },
+        {
+          "source_id": "32714-013",
+          "start": 39,
+          "end": 453,
+          "quote": "I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\nAgree with @ajtowns."
+        }
+      ],
+      "consequence": "This conservatively understates relation evidence rather than inflating institutional authority. It should not be counted as a changed governance conclusion.",
+      "affected_annotations": {
+        "A": [
+          "A149_followups -> A151_nits uptake.basis",
+          "A164_question -> A165_fixed uptake.basis",
+          "A178_definition -> A180_agree uptake.basis",
+          "A711_choice -> A713_agree uptake.basis"
+        ]
+      }
+    },
+    {
+      "finding_id": "SA25",
+      "source_ids": [
+        "33224-010",
+        "33224-015",
+        "D_TRANSLATION"
+      ],
+      "affected_units": {
+        "A": [
+          "A010_freeze"
+        ],
+        "B": [
+          "B-010-reviewed",
+          "B-010-freeze"
+        ],
+        "C": [
+          "C224_freeze"
+        ]
+      },
+      "category": "unresolved",
+      "issue": "B treats the Reviewed lock as a constitutive workflow candidate while A/C keep it technical. This is not automatically a technical-definition error: the source describes a named workflow status relied on by some teams, but the lock itself is software behavior. The separate final-freeze prohibition is unanimously retained as a norm candidate without exact authorization.",
+      "resolution_or_alternatives": "Preserve both workflow-status and technical-context readings for Reviewed, including the limit that not every team uses it. The categorical must-not-update claim is distinct from the documentation's ordinary-PR scheduling guidance and from a participant recognizing why a freeze exists. The workaround challenges categorical application; it does not prove a formal waiver or authorize every post-freeze edit.",
+      "evidence_spans": [
+        {
+          "source_id": "33224-010",
+          "start": 88,
+          "end": 290,
+          "quote": "The translation workflow on Transifex includes marking translated strings as \"Reviewed\", which locks them from further changes. Not every translation team uses this feature, but those who do rely on it."
+        },
+        {
+          "source_id": "33224-010",
+          "start": 625,
+          "end": 726,
+          "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+        },
+        {
+          "source_id": "33224-015",
+          "start": 903,
+          "end": 1028,
+          "quote": "I think this issue is why we institute a translation strings freeze.\r\n\r\nHowever, I think there is a workaround to this issue."
+        },
+        {
+          "source_id": "33224-015",
+          "start": 1722,
+          "end": 1882,
+          "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+        },
+        {
+          "source_id": "D_TRANSLATION",
+          "start": 2134,
+          "end": 2430,
+          "quote": "For general PRs, you shouldn’t include any updates to the translation source files. They will be updated periodically, primarily around pre-releases, allowing time for any new phrases to be translated before public releases. This is also important in avoiding translation related merge conflicts."
+        }
+      ],
+      "consequence": "No majority label resolves whether the tool status is institutional. Shared restraint about exact freeze authority is source-supported."
+    },
+    {
+      "finding_id": "SA26",
+      "source_ids": [
+        "32406-228",
+        "32406-229"
+      ],
+      "affected_units": {
+        "A": [
+          "A228_transparency"
+        ],
+        "B": [
+          "B-228-transparency"
+        ],
+        "C": [
+          "C228_transparency"
+        ]
+      },
+      "category": "defensible_alternative",
+      "issue": "The transparency claim is coded collective-choice by A and epistemic by B/C, with different observed-action levels. The source invokes open-source principles and diverse input, but it does not specify a new procedure, authority holder, or adopted arrangement.",
+      "resolution_or_alternatives": "An epistemic target is defensible as a claim about legitimate decision foundations; a collective-choice target is defensible if the focal proposition is recurring decision procedure. Operational observed action is the least committal description of the visible argument; deliberative higher-level action is an interpretation, not evidence of an implemented revision. Preserve the reply's challenge to application of open-source language and do not report it as rejection of transparency itself. A's literal decision-making plus its source modifiers can also be a defensible nominal-action parse; B/C instead reconstruct make decisions and mark its mapped modifiers inferred. That difference alone is not an established evidence-role error.",
+      "evidence_spans": [
+        {
+          "source_id": "32406-228",
+          "start": 311,
+          "end": 662,
+          "quote": "Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input. When \"reasonable\" is defined by the few and dissenters are told to fork off, it stifles meaningful community participation. I like to think most contributors in this repo agree on this fundamental principle."
+        },
+        {
+          "source_id": "32406-229",
+          "start": 0,
+          "end": 187,
+          "quote": "@maluquices  all I'm trying to say is, don't drag \"open source\" into this conversation. Every single word has been open, as well as years of historical merit of the author and reviewers. "
+        }
+      ],
+      "consequence": "This level disagreement remains bounded. The unverified trust/adoption claims and the author's belief about most contributors are not independent expectation recognition."
+    }
+  ],
+  "source_coverage": [
+    {
+      "source_id": "32359-115",
+      "assessment": "Four focal ideas are retained: review remit, merit rather than repeated counts, conditional no-need-to-repeat, and discouragement of unsubstantiated/repeated labels. Negation and anti-voting meaning survive. Documentary strength and the alleged majority challenge need the distinctions in SA01-SA03.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A115_forum",
+          "A115_merit",
+          "A115_repeat",
+          "A115_spam"
+        ],
+        "B": [
+          "B-115-remit",
+          "B-115-merit",
+          "B-115-repeat",
+          "B-115-spam"
+        ],
+        "C": [
+          "C115_arena",
+          "C115_weight",
+          "C115_no_again",
+          "C115_unsubstantiated"
+        ]
+      },
+      "related_findings": [
+        "SA01",
+        "SA02",
+        "SA03",
+        "SA11"
+      ]
+    },
+    {
+      "source_id": "33453-068",
+      "assessment": "Original retention rationale, repeated quotation, negative use-case evaluation, and rhetorical question were checked. Combined recommendation, classification, and optional justification-request readings remain plausible; none supplies an adopted exclusion rule.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A068_quote",
+          "A068_reasonable"
+        ],
+        "B": [
+          "B-068-quote",
+          "B-068-usecase",
+          "B-068-why"
+        ],
+        "C": [
+          "C453_qdisgust",
+          "C453_usecase",
+          "C453_why"
+        ]
+      },
+      "related_findings": [
+        "SA06",
+        "SA23"
+      ]
+    },
+    {
+      "source_id": "32406-178",
+      "assessment": "Checked the narrow status definition, gets navigation, recommendation attribution, below-default qualifier, deprecation despite possible dissent, three-part trade-off including perhaps, current retention rationale, and conditional patch/derivative alternatives. No guaranteed removal or authorized can-permission follows. B retains the current-demand/low-effort rationale in prose although not in components.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A178_definition",
+          "A178_see",
+          "A178_low",
+          "A178_mark",
+          "A178_tradeoff",
+          "A178_keep",
+          "A178_patch",
+          "A178_patch_back",
+          "A178_derivative"
+        ],
+        "B": [
+          "B-178-definition",
+          "B-178-see",
+          "B-178-advice",
+          "B-178-mark",
+          "B-178-tradeoff",
+          "B-178-retain",
+          "B-178-patch",
+          "B-178-derivative"
+        ],
+        "C": [
+          "C178_definition",
+          "C178_nonuse",
+          "C178_see_gets",
+          "C178_lower",
+          "C178_mark",
+          "C178_tradeoff",
+          "C178_retain",
+          "C178_patch",
+          "C178_derivative"
+        ]
+      },
+      "related_findings": [
+        "SA07",
+        "SA08",
+        "SA10",
+        "SA24"
+      ]
+    },
+    {
+      "source_id": "32406-148",
+      "assessment": "Illustrative assertion, exact identifier, unless-already-tested caveat, unenforced-docstring rationale, and conditional probably-should-not-document advice are present. B extra norm extraction is optional. Its final-clause pronoun anchor needs correction; C rationale should be read with the literal should-not-be-tested condition, not as a new blanket no-tests/no-docs rule.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A148_assert",
+          "A148_document"
+        ],
+        "B": [
+          "B-148-assert",
+          "B-148-docnorm",
+          "B-148-nodoc"
+        ],
+        "C": [
+          "C148_assert",
+          "C148_doc"
+        ]
+      },
+      "related_findings": [
+        "SA09",
+        "SA13"
+      ]
+    },
+    {
+      "source_id": "32406-165",
+      "assessment": "Separate navigation and the known-issue/fixed report are retained. Repeated question resolves to 32406-164. No report proves the exact repair or its timing. All three quotation speech-act labels need the question convention.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A165_quote",
+          "A165_see",
+          "A165_fixed"
+        ],
+        "B": [
+          "B-165-quote",
+          "B-165-see",
+          "B-165-fixed"
+        ],
+        "C": [
+          "C165_q",
+          "C165_known",
+          "C165_see",
+          "C165_fixed"
+        ]
+      },
+      "related_findings": [
+        "SA11",
+        "SA24"
+      ]
+    },
+    {
+      "source_id": "32359-227",
+      "assessment": "Externally quoted camp positions are not verified direct proposals or independent endorsements. The majority-only debate claim is retained but its electorate, winner and institutional domain remain unknown. Check the retained premise and avoid treating the A challenge link as observed contestation of merit weighting.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A227_camps",
+          "A227_majority",
+          "A227_proactive",
+          "A227_capitulate"
+        ],
+        "B": [
+          "B-227-filter",
+          "B-227-capitulate",
+          "B-227-remove",
+          "B-227-majority"
+        ],
+        "C": [
+          "C227_proactive",
+          "C227_capitulate",
+          "C227_remove",
+          "C227_majority"
+        ]
+      },
+      "related_findings": [
+        "SA03",
+        "SA04",
+        "SA05"
+      ]
+    },
+    {
+      "source_id": "32406-149",
+      "assessment": "Deferral of smaller changes has unusually direct support: exact quotation plus another reviewer saying nits should not block progress. Fork accommodation is limited, not prohibited; persuasion burden and practical preference not to switch remain qualified. C technical maintenance strategies and A/B contextual readings are defensible. Source actors, evaluator and implementer must stay distinct.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A149_ack",
+          "A149_followups",
+          "A149_quote_burden",
+          "A149_quote_catering",
+          "A149_remit",
+          "A149_convince",
+          "A149_external_preference",
+          "A149_stay"
+        ],
+        "B": [
+          "B-149-ack",
+          "B-149-followup",
+          "B-149-conditionquote",
+          "B-149-effort",
+          "B-149-cateringquote",
+          "B-149-remit",
+          "B-149-convince",
+          "B-149-externalpref",
+          "B-149-stay"
+        ],
+        "C": [
+          "C149_reack",
+          "C149_followups",
+          "C149_qmaintenance",
+          "C149_change_default",
+          "C149_revert",
+          "C149_qcater",
+          "C149_remit",
+          "C149_convincing",
+          "C149_external_preference",
+          "C149_no_switch"
+        ]
+      },
+      "related_findings": [
+        "SA09",
+        "SA10",
+        "SA11",
+        "SA13",
+        "SA20",
+        "SA24"
+      ]
+    },
+    {
+      "source_id": "32359-066",
+      "assessment": "All coders correctly isolate the two-URL navigation request from technical claims about obfuscated stored data. The external storage-risk quote is not an institutionally imposed duty; nothing here verifies the linked implementations or licenses.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A066_technical",
+          "A066_see"
+        ],
+        "B": [
+          "B-066-obfuscation",
+          "B-066-see"
+        ],
+        "C": [
+          "C066_see"
+        ]
+      },
+      "related_findings": []
+    },
+    {
+      "source_id": "32714-body",
+      "assessment": "Replacement wording, delayed-removal prudence and no-plan/no-warning expectation are retained. B/C separately retain a status definition; C adds embedded nonuse and an exploratory discussion candidate. These layers do not multiply adoption evidence. Closure is unmerged, with no supplied withdrawal or causal closure explanation.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A714_wording",
+          "A714_delay",
+          "A714_rationale",
+          "A714_no_warning"
+        ],
+        "B": [
+          "B-32714-replace",
+          "B-32714-definition",
+          "B-32714-delay",
+          "B-32714-nowarning"
+        ],
+        "C": [
+          "C714_replace",
+          "C714_nonuse",
+          "C714_definition",
+          "C714_delay",
+          "C714_warn_discussion",
+          "C714_warning"
+        ]
+      },
+      "related_findings": [
+        "SA07",
+        "SA13",
+        "SA16"
+      ]
+    },
+    {
+      "source_id": "33224-000",
+      "assessment": "Two distinct navigation requests, conditional corrective reaction, and announced next-update effect are retained. Purpose is not an invented activation condition. No user reaction, resulting bot state, voting entitlement or executed sanction is supplied. The referent of it remains uncertain.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A000_details",
+          "A000_guideline",
+          "A000_react",
+          "A000_ignore"
+        ],
+        "B": [
+          "B-000-details",
+          "B-000-guideline",
+          "B-000-react",
+          "B-000-ignore"
+        ],
+        "C": [
+          "C224_coverage",
+          "C224_guide",
+          "C224_react",
+          "C224_ignore"
+        ]
+      },
+      "related_findings": []
+    },
+    {
+      "source_id": "32381-012",
+      "assessment": "Conditional knob change, buffer, tentative 150-byte outcome and objection to additional node arguments are all recoverable across the complete annotations, although C stores the number outside the component structure. The ~0 opening is not a strikethrough event. No preferred setting has been adopted.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A012_knob",
+          "A012_args"
+        ],
+        "B": [
+          "B-012-knob",
+          "B-012-150",
+          "B-012-noargs"
+        ],
+        "C": [
+          "C012_knob",
+          "C012_no_args"
+        ]
+      },
+      "related_findings": [
+        "SA09",
+        "SA12"
+      ]
+    },
+    {
+      "source_id": "32359-213",
+      "assessment": "Unidentified external quotation, desired user control, subjective spam definition, unchanged/default-increase bundle and high-default/downward-control alternative were checked. Joint versus separate immunity/outcome parsing is defensible. Allow can describe proposed capability rather than an existing institutional right.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A213_configure",
+          "A213_defaults",
+          "A213_high",
+          "A213_keep_defaults",
+          "A213_allow_increase"
+        ],
+        "B": [
+          "B-213-why",
+          "B-213-configure",
+          "B-213-nospam",
+          "B-213-default",
+          "B-213-increase",
+          "B-213-high"
+        ],
+        "C": [
+          "C213_configure",
+          "C213_defaults",
+          "C213_increase",
+          "C213_high"
+        ]
+      },
+      "related_findings": [
+        "SA18"
+      ]
+    },
+    {
+      "source_id": "32381-body",
+      "assessment": "Mailing-list direction, exact output-count restriction with purpose, and separate preference for #32359 are retained. Later block is an attributable report with mixed possible triggers. Closure metadata attached to the distinct #32359 preference must name the appropriate proposal.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A381_channel",
+          "A381_lift",
+          "A381_32359"
+        ],
+        "B": [
+          "B-32381-channel",
+          "B-32381-lift",
+          "B-32381-32359"
+        ],
+        "C": [
+          "C381_mail",
+          "C381_lift",
+          "C381_do32359"
+        ]
+      },
+      "related_findings": [
+        "SA14",
+        "SA15",
+        "SA16"
+      ]
+    },
+    {
+      "source_id": "32359-038",
+      "assessment": "Fenced text is defensibly proposed source-comment wording, corroborated by an exact reply-id link to Added comment. Add one more byte is within that proposed comment. No source verifies byte-for-byte final test text; reported implementation and broader unmerged closure remain distinct.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A038_comment"
+        ],
+        "B": [
+          "B-038-comment"
+        ],
+        "C": [
+          "C038_comment"
+        ]
+      },
+      "related_findings": [
+        "SA16",
+        "SA17"
+      ]
+    },
+    {
+      "source_id": "33453-018",
+      "assessment": "Backport/release choice is resolved through 33453-014/017 and later deference through 33453-069. Maintainer responsibility is supported by dated contribution guidance; no named speaker is assigned an office. No-fuss is an attributable personal commitment, not an obligation or network authority.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A018_call",
+          "A018_no_fuss"
+        ],
+        "B": [
+          "B-018-call",
+          "B-018-forbear"
+        ],
+        "C": [
+          "C453_call",
+          "C453_no_fuss"
+        ]
+      },
+      "related_findings": []
+    },
+    {
+      "source_id": "33224-018",
+      "assessment": "Complete flag, destination invocation and exploratory question are preserved. The reply disputes line numbers and suggests sort order without knowing why it changes. It does not establish rejection, implementation, or a governance knowledge-authority arrangement; C dispute flag is inconsistent with its challenge relation.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A018_locations",
+          "A018_sort"
+        ],
+        "B": [
+          "B-33224-018-add",
+          "B-33224-018-reply"
+        ],
+        "C": [
+          "C224_locations",
+          "C224_locations_response"
+        ]
+      },
+      "related_findings": [
+        "SA19"
+      ]
+    },
+    {
+      "source_id": "32714-014",
+      "assessment": "Preferred wording, discouragement/deprecation equivalence, and separate criticism of after-a-warning phrasing are retained. The edited action and target roles are reconstructed where appropriate. No particular replacement for the final phrase or adoption of the entire PR is established.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A714_prefer",
+          "A714_equivalence",
+          "A714_after"
+        ],
+        "B": [
+          "B-014-prefer",
+          "B-014-definition",
+          "B-014-after"
+        ],
+        "C": [
+          "C714_prefer_words",
+          "C714_discouragement",
+          "C714_after_phrase"
+        ]
+      },
+      "related_findings": [
+        "SA11"
+      ]
+    },
+    {
+      "source_id": "32406-228",
+      "assessment": "Transparent decision-making and respect for diverse input remain an attributed norm. B optional nondismissal candidate is plausible. Trust/adoption statements and claimed contributor agreement are not independently verified. Higher-level targeting is interpretive and the reply disputes the open-source framing/application.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A228_transparency"
+        ],
+        "B": [
+          "B-228-nondismiss",
+          "B-228-transparency"
+        ],
+        "C": [
+          "C228_transparency"
+        ]
+      },
+      "related_findings": [
+        "SA13",
+        "SA26"
+      ]
+    },
+    {
+      "source_id": "32406-252",
+      "assessment": "Addressed topicality, local topic exclusions, optional meta venue, conditional future temporary ban, conditional routing plus not-here duty, and separate guidelines referral were checked. D_MOD supplies an attributable enforcement arrangement. No actual ban or credentialed moderator identity is established.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A252_topic",
+          "A252_scope",
+          "A252_meta",
+          "A252_ban",
+          "A252_debate",
+          "A252_not_here",
+          "A252_see"
+        ],
+        "B": [
+          "B-252-topic",
+          "B-252-definition",
+          "B-252-meta",
+          "B-252-ban",
+          "B-252-debate-meta",
+          "B-252-not-here",
+          "B-252-see"
+        ],
+        "C": [
+          "C252_topic",
+          "C252_definition",
+          "C252_meta",
+          "C252_ban",
+          "C252_debate_meta",
+          "C252_not_here",
+          "C252_see"
+        ]
+      },
+      "related_findings": [
+        "SA10"
+      ]
+    },
+    {
+      "source_id": "33453-004",
+      "assessment": "The long-window assumption is preserved as a condition of Concept ACK, not unconditional support or a project timetable. The remaining social-DoS and user-learning discussion is rationale/prediction; its effects are not observed. Merge does not adopt the condition.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A004_window"
+        ],
+        "B": [
+          "B-004-window"
+        ],
+        "C": [
+          "C453_window"
+        ]
+      },
+      "related_findings": [
+        "SA17",
+        "SA22"
+      ]
+    },
+    {
+      "source_id": "32381-018",
+      "assessment": "Context-only is supported: the addressed yes agrees with ajtowns on relative simplicity and predicts lack of embrace. It is not a new prescription, review authorization or observed failure. The linked 32381-017 proposal supplies the referent.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A018_agree"
+        ],
+        "B": [
+          "B-32381-018-reply"
+        ],
+        "C": [
+          "C381_minimal_ack"
+        ]
+      },
+      "related_findings": []
+    },
+    {
+      "source_id": "33224-010",
+      "assessment": "Reviewed lock and service-plan limitations are described, not independently verified. The categorical post-final-freeze prohibition is real text but exact rule authority is absent. Later experimentation recognizes the freeze rationale while offering a bounded workaround; no formal waiver is observed.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A010_quote",
+          "A010_freeze"
+        ],
+        "B": [
+          "B-010-quote",
+          "B-010-reviewed",
+          "B-010-freeze"
+        ],
+        "C": [
+          "C224_qalert",
+          "C224_freeze"
+        ]
+      },
+      "related_findings": [
+        "SA10",
+        "SA25"
+      ]
+    },
+    {
+      "source_id": "32714-013",
+      "assessment": "Repeated original was checked against 32714-011. Conditional Concept ACK and agreement are context acts. Neither quoted alternatives nor agreement proves selection of both alternatives, independent new endorsement of every clause, or adoption of a branch.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A713_quote",
+          "A713_ack",
+          "A713_agree"
+        ],
+        "B": [
+          "B-013-quote",
+          "B-013-ack",
+          "B-013-agree"
+        ],
+        "C": [
+          "C713_q",
+          "C713_ack",
+          "C713_agree"
+        ]
+      },
+      "related_findings": [
+        "SA23",
+        "SA24"
+      ]
+    },
+    {
+      "source_id": "33453-body",
+      "assessment": "Specific deprecation removal, non-survey user-demand rationale, repeated warning principle, hypothetical future deprecation with preferred schedule, claimed best practice, and qualified footguns maxim were checked. Matching patch plus metadata support removal in the repository; backport report and later batch merge are distinct from deployment or principle adoption.",
+      "units_reviewed_by_coder": {
+        "A": [
+          "A453_remove",
+          "A453_warning_quote",
+          "A453_schedule",
+          "A453_practice",
+          "A453_footguns"
+        ],
+        "B": [
+          "B-33453-remove",
+          "B-33453-ava",
+          "B-33453-future",
+          "B-33453-practice",
+          "B-33453-footguns"
+        ],
+        "C": [
+          "C453_undeprecate",
+          "C453_qwarning",
+          "C453_future",
+          "C453_best_practice",
+          "C453_footguns",
+          "C453_schedule"
+        ]
+      },
+      "related_findings": [
+        "SA07",
+        "SA10",
+        "SA21",
+        "SA22"
+      ]
+    }
+  ],
+  "unanimous_claims_checked": [
+    {
+      "check_id": "UC01",
+      "claim_checked": "The PR-review forum is not a per-username vote, and reviews are described as weighted by argument merit rather than repetition.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32359-115",
+          "start": 0,
+          "end": 186,
+          "quote": "Reminder that this is a pull request open for code review, not a per-username voting forum. Reviews are weighted by the merit of their arguments, not the number of times they are posted."
+        },
+        {
+          "source_id": "32406-169",
+          "start": 335,
+          "end": 613,
+          "quote": "The goal is *not* to have everyone \"register\" their \"vote\". It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment. The technical content of those review comments is what matters, not how many are registered in what category."
+        }
+      ],
+      "qualification_or_correction": "This supports the local content-over-count interpretation, not a quantified consensus algorithm or network governance authority. See SA02-SA04."
+    },
+    {
+      "check_id": "UC02",
+      "claim_checked": "The conditional repeat clause denies a need to repost; it does not lexically prohibit all repeat comments.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32359-115",
+          "start": 212,
+          "end": 299,
+          "quote": "if your point has already been made here or on #28130, you don't need to post it again."
+        }
+      ],
+      "qualification_or_correction": "The full don't need to negation is preserved in all three outputs. Documentary standing is a separate SA01 question."
+    },
+    {
+      "check_id": "UC03",
+      "claim_checked": "The bot-fix comment repeats a literal question and separately reports a known issue/fix.",
+      "assessment": "shared_convention_problem",
+      "evidence_spans": [
+        {
+          "source_id": "32406-164",
+          "start": 0,
+          "end": 67,
+          "quote": "Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot "
+        },
+        {
+          "source_id": "32406-165",
+          "start": 0,
+          "end": 157,
+          "quote": "> Did the NACK/ACK bot break? Doesn't seem to be updating? @DrahtBot\r\n\r\nThis is a known issue. See https://github.com/maflcko/DrahtBot/issues/51. edit: fixed"
+        }
+      ],
+      "qualification_or_correction": "Repair-report and navigation interpretations are supported, but all three repeated-question speech-act labels depart from the question convention; see SA11."
+    },
+    {
+      "check_id": "UC04",
+      "claim_checked": "The smaller-changes-to-followups expectation receives local recognition beyond a broad ACK.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32406-149",
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        },
+        {
+          "source_id": "32406-151",
+          "start": 172,
+          "end": 406,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading.\r\n\r\nAgreed. Leaving nits here just for reference but they shouldn't block progress."
+        }
+      ],
+      "qualification_or_correction": "The second reviewer explicitly says nits should not block progress. This supports locally_supported only for the bounded review expectation, not general permission to bypass review."
+    },
+    {
+      "check_id": "UC05",
+      "claim_checked": "The test request is qualified by the possibility that another test already covers the issue, and the documentation advice remains conditional.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32406-148",
+          "start": 0,
+          "end": 323,
+          "quote": "I just mean adding something like `assert_greater_than(len(b'\\xff' * 5_000), MAX_SCRIPT_ELEMENT_SIZE)`. Adding a docstring that is not actually enforced in tests is confusing and fragile imo. Unless this is already tested in some other way I'm missing? If it shouldn't be tested, it probably shouldn't be documented either?"
+        }
+      ],
+      "qualification_or_correction": "Something like and probably preserve tentativeness. Tests failing or missing are not institutional sanctions."
+    },
+    {
+      "check_id": "UC06",
+      "claim_checked": "The source-comment edit is reported implemented in a directly linked reply.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32359-038",
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        },
+        {
+          "source_id": "32359-053",
+          "start": 0,
+          "end": 14,
+          "quote": "Added comment."
+        },
+        {
+          "source_id": "T32359_038_053",
+          "start": 1080,
+          "end": 1108,
+          "quote": "\"in_reply_to_id\": 2063718969"
+        }
+      ],
+      "qualification_or_correction": "This is a report of adding a comment, not independent verification of exact wording."
+    },
+    {
+      "check_id": "UC07",
+      "claim_checked": "The deprecation passage does not guarantee an imminent removal date or verify majority developer agreement.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32406-178",
+          "start": 0,
+          "end": 121,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\"."
+        },
+        {
+          "source_id": "32406-178",
+          "start": 1061,
+          "end": 1307,
+          "quote": "I think the vast majority of developers contributing to core would recommend not setting this option to a lower value than the default, so I think marking it as \"deprecated\" is reasonable, even if there are a few developers who strongly disagree."
+        },
+        {
+          "source_id": "32406-178",
+          "start": 1802,
+          "end": 1965,
+          "quote": "even if it does get removed from core, if users actually want it, the code is open source so they can patch it back in or use a derivative that does that for them."
+        }
+      ],
+      "qualification_or_correction": "Can-patch/use-derivative alternatives are capability/method claims with conditions, not established institutional permission or mandatory migration."
+    },
+    {
+      "check_id": "UC08",
+      "claim_checked": "The replacement proposal retains non-recommendation while seeking to remove the deprecated wording; supplied status is closed unmerged.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32714-body",
+          "start": 0,
+          "end": 136,
+          "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use."
+        },
+        {
+          "source_id": "32714-007",
+          "start": 17,
+          "end": 106,
+          "quote": "It's fine to _add_ a non-recommendation text, but we should keep the deprecation warning."
+        },
+        {
+          "source_id": "M32714",
+          "start": 115,
+          "end": 151,
+          "quote": "\"state\": \"closed\",\n  \"merged\": false"
+        }
+      ],
+      "qualification_or_correction": "Opposition to the replacement is clear. Closure does not establish author withdrawal, rejection of every principle, or which objection caused closure."
+    },
+    {
+      "check_id": "UC09",
+      "claim_checked": "The review in 32714-013 quotes an existing alternative framework and agrees conditionally.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32714-013",
+          "start": 0,
+          "end": 453,
+          "quote": "Concept ACK, modulo the following\r\n\r\n> I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\nAgree with @ajtowns."
+        },
+        {
+          "source_id": "32714-011",
+          "start": 374,
+          "end": 764,
+          "quote": "I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion."
+        }
+      ],
+      "qualification_or_correction": "Not new independent institutional propositions; no evidence that both bundles or a particular branch were adopted."
+    },
+    {
+      "check_id": "UC10",
+      "claim_checked": "The bot table comment announces a conditional correction procedure and next-update effect.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "33224-000",
+          "start": 1470,
+          "end": 1590,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update."
+        }
+      ],
+      "qualification_or_correction": "An O link can describe this announced procedural consequence. There is no observed reaction or update, no executed sanction, and no independent reviewer endorsement from the table."
+    },
+    {
+      "check_id": "UC11",
+      "claim_checked": "The moderation comment announces a temporary ban for future off-topic conduct and routes debate elsewhere.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32406-252",
+          "start": 0,
+          "end": 77,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here."
+        },
+        {
+          "source_id": "32406-252",
+          "start": 295,
+          "end": 509,
+          "quote": "Failure to keep future comments focused on review of the proposed changes will result in a temporary ban. If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here."
+        },
+        {
+          "source_id": "D_MOD",
+          "start": 3734,
+          "end": 4176,
+          "quote": "If moderation of individual posts fails, moderators will use warnings, timeouts and bans at increasing rates based on prior patterns of behavior. Usually mildly uncivil behavior (such as being off-topic/disruptive or rudeness) will result in a warning or temporary ban (in the order of days). Longer term bans may result from repeated or frequent violations. Moderators will consult with maintainers before making any bans longer than 1 week."
+        }
+      ],
+      "qualification_or_correction": "All three properly distinguish an announced consequence from an imposed ban. The addressed user and unnamed enforcing actor are different roles."
+    },
+    {
+      "check_id": "UC12",
+      "claim_checked": "The source supports a categorical post-final-freeze prohibition but not an exact documented authority or a formal exception decision.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "33224-010",
+          "start": 625,
+          "end": 726,
+          "quote": "In short, there must not be any translation source updates after the final translation string freeze."
+        },
+        {
+          "source_id": "D_TRANSLATION",
+          "start": 2134,
+          "end": 2430,
+          "quote": "For general PRs, you shouldn’t include any updates to the translation source files. They will be updated periodically, primarily around pre-releases, allowing time for any new phrases to be translated before public releases. This is also important in avoiding translation related merge conflicts."
+        },
+        {
+          "source_id": "33224-015",
+          "start": 903,
+          "end": 1028,
+          "quote": "I think this issue is why we institute a translation strings freeze.\r\n\r\nHowever, I think there is a workaround to this issue."
+        },
+        {
+          "source_id": "33224-015",
+          "start": 1722,
+          "end": 1882,
+          "quote": "If this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+        }
+      ],
+      "qualification_or_correction": "Freeze-rationale recognition and a technical workaround do not validate the absolute no-update rule or establish a waiver."
+    },
+    {
+      "check_id": "UC13",
+      "claim_checked": "The backport/release decision is described as a maintainer responsibility and later receives explicit deference.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "33453-018",
+          "start": 0,
+          "end": 138,
+          "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs), I will not put up a fuss either way."
+        },
+        {
+          "source_id": "33453-017",
+          "start": 66,
+          "end": 204,
+          "quote": "That is preferred IMHO. But that is the judgment of you all and those responsible for the release process (assuming this PR gets support)."
+        },
+        {
+          "source_id": "33453-069",
+          "start": 2503,
+          "end": 2660,
+          "quote": "So the merge + backport + release notes changes need to happen very quickly for this to be incorporated.\r\n\r\nI defer to you and the other maintainers on this."
+        },
+        {
+          "source_id": "D_CONTRIB",
+          "start": 624,
+          "end": 774,
+          "quote": "As such, there are repository maintainers who are responsible for\nmerging pull requests, the [release cycle](/doc/release-process.md), and\nmoderation."
+        },
+        {
+          "source_id": "D_CONTRIB",
+          "start": 20776,
+          "end": 20932,
+          "quote": "Maintainers will do backports in batches and\nuse the proper `Needs backport (...)` labels\nwhen needed (the original author does not need to worry about it)."
+        }
+      ],
+      "qualification_or_correction": "This supports existing repository responsibility, not the office of every named contributor or power over network adoption."
+    },
+    {
+      "check_id": "UC14",
+      "claim_checked": "The eventual deprecation removal and warning edits are repository outcomes, not proof of network use or adoption of every rationale.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "X33224",
+          "start": 166,
+          "end": 480,
+          "quote": "-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));"
+        },
+        {
+          "source_id": "M33224",
+          "start": 93,
+          "end": 128,
+          "quote": "\"state\": \"closed\",\n  \"merged\": true"
+        },
+        {
+          "source_id": "X33453",
+          "start": 992,
+          "end": 1655,
+          "quote": "-    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n+    argsman.AddArg(\"-datacarrier\", strprintf(\"Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-datacarriersize\",\n-                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n+                   strprintf(\"Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \""
+        },
+        {
+          "source_id": "X33453",
+          "start": 2162,
+          "end": 2323,
+          "quote": "-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));"
+        },
+        {
+          "source_id": "M33453",
+          "start": 109,
+          "end": 144,
+          "quote": "\"state\": \"closed\",\n  \"merged\": true"
+        },
+        {
+          "source_id": "33453-086",
+          "start": 0,
+          "end": 29,
+          "quote": "Backported to 30.x in #33473."
+        },
+        {
+          "source_id": "M33473",
+          "start": 107,
+          "end": 115,
+          "quote": "* #33453"
+        },
+        {
+          "source_id": "M33473",
+          "start": 271,
+          "end": 285,
+          "quote": "\"base\": \"30.x\""
+        },
+        {
+          "source_id": "M33473",
+          "start": 347,
+          "end": 361,
+          "quote": "\"merged\": true"
+        }
+      ],
+      "qualification_or_correction": "The October 2 backport report precedes the October 6 merged-batch metadata. It must remain a report at that earlier point; neither establishes deployment."
+    },
+    {
+      "check_id": "UC15",
+      "claim_checked": "The long-window assumption and future removal-schedule preference are not adopted timetables.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "33453-004",
+          "start": 0,
+          "end": 66,
+          "quote": "Concept Ack assuming a long window before revaluation to deprecate"
+        },
+        {
+          "source_id": "33453-body",
+          "start": 1206,
+          "end": 1327,
+          "quote": "Deprecating the option in the future, preferably with a removal schedule to better inform users, would still be possible."
+        }
+      ],
+      "qualification_or_correction": "Conditional support, future possibility and an advisory schedule remain distinct."
+    },
+    {
+      "check_id": "UC16",
+      "claim_checked": "The transparent-decisions claim is an attributed expectation; adoption/trust statistics and agreement by most contributors are not independently verified.",
+      "assessment": "supported_with_stated_limits",
+      "evidence_spans": [
+        {
+          "source_id": "32406-228",
+          "start": 0,
+          "end": 662,
+          "quote": "@pinheadmz a \"technically\" accurate gotcha attempt that ignores the deeper issue. The adoption drop signals a real erosion of trust, not just a casual exercise of open-source freedom. When a change pushes away a substantial portion of the user base, dismissing it as \"just fork it\" ignores a practical reality. Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input. When \"reasonable\" is defined by the few and dissenters are told to fork off, it stifles meaningful community participation. I like to think most contributors in this repo agree on this fundamental principle."
+        },
+        {
+          "source_id": "32406-229",
+          "start": 0,
+          "end": 187,
+          "quote": "@maluquices  all I'm trying to say is, don't drag \"open source\" into this conversation. Every single word has been open, as well as years of historical merit of the author and reviewers. "
+        }
+      ],
+      "qualification_or_correction": "The response contests the framing/application; it does not establish a universal rejection of transparency."
+    }
+  ],
+  "relations_and_summaries_review": {
+    "relations": "All relations in each final output were reviewed against their endpoints, rationale, evidence, direction and claimed force. Most quotation links, conditional O links, and bounded uptake/challenge interpretations are supported. SA03 concerns an under-established cross-source challenge; SA19 a challenge/flag inconsistency; SA24 explicit versus inferred correspondence. Alternative AND/OR decomposition is preserved in SA18/SA23.",
+    "episode_claims": "All observed_outcomes and mechanisms in A, B and C were reviewed. The recorded closure/merge pattern and supplied patch sequence are supported. The summaries generally distinguish reported implementation, announced enforcement, repository integration and causal inference. SA16, SA20 and SA21 identify local evidence-array gaps; they do not invalidate the corresponding whole-packet conclusions.",
+    "causal_limits": "Supported_sequence is interpreted as a textually matched sequence, not causal identification. No summary was accepted as proof that a particular argument caused merger, a freeze waiver was formally authorized, or a warning caused a ban.",
+    "context_endpoints": "Supporting context endpoints, quotation originals, empty entries 32406-177/179, thread metadata, all seven PR status records, and all three supplied patch contexts were inspected. D_MOD and D_TRANSLATION were read in full; role/review/backport portions of D_CONTRIB and translation-related portions of D_RELEASE were inspected. No linked destination was opened."
+  },
+  "limitations": [
+    "This is one revisable source-grounded model audit, not a gold standard or independent human adjudication.",
+    "The bounded packet omits many originals, complete threads, edit histories, full patches, authority rosters, moderation logs, translation-state records, and complete removal-plan history.",
+    "The dates of supplied documentation identify revision context. In particular the June 9 contribution snapshot does not establish identical wording during April comments.",
+    "Meaning of deprecation, institutional status of a workflow lock, rhetorical questions, and the granularity of governance levels remain partly interpretive; alternatives are preserved rather than scored as errors.",
+    "The audit checks all final units, relations and summaries through compact views and targeted evidence expansion. It does not verify unseen software behavior, technical predictions, representative user preferences, or network adoption.",
+    "No coder file, input packet, codebook, checker, prior analysis or manuscript was altered. Proposed amendments remain in this ledger."
+  ],
+  "access_log": {
+    "inputs_read": [
+      {
+        "path": "protocol/source_audit_task.txt",
+        "operation": "read_only",
+        "sha256": "fa5eb816ae34313d8d9382acfa3588b071959eb6125d7ad3d23297b3ff737881",
+        "purpose": "Audit assignment"
+      },
+      {
+        "path": "common_input/packet.json",
+        "operation": "read_only",
+        "sha256": "ae9c70f3442ee008516d34ce80d05bc4c1e53acd095bea5c7eb64e527b77e7a7",
+        "purpose": "Exact focal sources and bounded context"
+      },
+      {
+        "path": "common_input/protocol/codebook.txt",
+        "operation": "read_only",
+        "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+        "purpose": "Frozen semantic conventions"
+      },
+      {
+        "path": "reviewers/A/annotation.json",
+        "operation": "read_only",
+        "sha256": "4a1876e03802def5a237d4296daf7d49a39aa83f1e2d7113aa8a8ba547e14233",
+        "purpose": "Frozen final coding output; inspected with compact per-source extracts, then relation and episode-summary passes"
+      },
+      {
+        "path": "reviewers/B/annotation.json",
+        "operation": "read_only",
+        "sha256": "d3d3b824883d678d977dabb59b397a5dc0755dd982312ab6cbcee110b14b2fa7",
+        "purpose": "Frozen final coding output; inspected with compact per-source extracts, then relation and episode-summary passes"
+      },
+      {
+        "path": "reviewers/C/annotation.json",
+        "operation": "read_only",
+        "sha256": "04148c760de18fea9cc1c1acd399e1b298e922fa7b6b129ad43994f59d43b1f0",
+        "purpose": "Frozen final coding output; inspected with compact per-source extracts, then relation and episode-summary passes"
+      }
+    ],
+    "prohibited_material_accessed": [],
+    "auxiliary_work": "Temporary view/generation scripts in /tmp were created for compact extraction and exact-anchor validation; they did not read any other study inputs.",
+    "output": "analysis/independent_source_audit.json"
+  }
+}

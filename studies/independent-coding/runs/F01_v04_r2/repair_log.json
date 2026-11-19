@@ -1,0 +1,2795 @@
+[
+  {
+    "change_id": "M01",
+    "phase": "mechanical_feedback",
+    "unit_id": "U08",
+    "fields": [
+      "institution.application_evidence",
+      "institution.recognition"
+    ],
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "type": "undetermined",
+      "dispute_present": false,
+      "rationale": "Sjors says this PR needs a rebase after #26589.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        }
+      ],
+      "recognition": [
+        {
+          "kind": "reported_implementation",
+          "target": "this_proposition",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 153,
+                "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+              }
+            }
+          ],
+          "rationale": "The author reports rebasing on master; the specific after-#26589 condition remains unverified. The target is correspondence to the requested rebase, not proof of its full timing.",
+          "mode": "other",
+          "speaker_relation": "different_actor",
+          "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:supplement_metadata",
+              "span": {
+                "start": 12,
+                "end": 57,
+                "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+              }
+            }
+          ]
+        }
+      ],
+      "authority_evidence": [],
+      "standing_profile": {
+        "documentary": "none",
+        "recognition": "none",
+        "application": "unresolved"
+      },
+      "documentary_support": [],
+      "application_evidence": [
+        {
+          "status": "reported",
+          "target": "unresolved",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 153,
+                "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+              }
+            }
+          ],
+          "rationale": "Rebase is reported, but supplied evidence does not verify that it followed the specified #26589 event."
+        }
+      ],
+      "challenges": [],
+      "type_alternatives": []
+    },
+    "after": {
+      "type": "undetermined",
+      "dispute_present": false,
+      "rationale": "Sjors says this PR needs a rebase after #26589.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        }
+      ],
+      "recognition": [
+        {
+          "kind": "reported_implementation",
+          "target": "unresolved",
+          "basis": "unresolved",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 153,
+                "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+              }
+            }
+          ],
+          "rationale": "The report corresponds to a rebase, but recognition of the complete after-#26589 request is unresolved; neither the identified triggering event nor full response linkage is verified.",
+          "mode": "other",
+          "speaker_relation": "different_actor",
+          "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:supplement_metadata",
+              "span": {
+                "start": 12,
+                "end": 57,
+                "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+              }
+            }
+          ]
+        }
+      ],
+      "authority_evidence": [],
+      "standing_profile": {
+        "documentary": "none",
+        "recognition": "none",
+        "application": "unresolved"
+      },
+      "documentary_support": [],
+      "application_evidence": [
+        {
+          "status": "unresolved",
+          "target": "this_proposition",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 153,
+                "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+              }
+            }
+          ],
+          "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+        }
+      ],
+      "challenges": [],
+      "type_alternatives": []
+    },
+    "rationale": "The first declared application profile was unresolved while its only record was reported with an unresolved target. The revised record explicitly states unresolved application of this proposition and preserves the same evidentiary limit. Recognition target is also bounded consistently.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:13",
+        "span": {
+          "start": 0,
+          "end": 153,
+          "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S01",
+    "phase": "source_self_review",
+    "unit_id": "U01",
+    "fields": [
+      "components"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "repeat the release-addition procedure",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 0,
+                "end": 35,
+                "quote": "The same procedure as every release"
+              }
+            }
+          ],
+          "inference_note": "The nominal assertion is reconstructed as repeating a method, not an explicit imperative.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "repeat",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 0,
+                "end": 35,
+                "quote": "The same procedure as every release"
+              }
+            }
+          ],
+          "inference_note": "Elliptical nominal description reconstructed as repetition of a method.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the release-addition procedure",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 0,
+                "end": 18,
+                "quote": "The same procedure"
+              }
+            }
+          ],
+          "inference_note": "The nominal procedure becomes object of reconstructed repeat; its release-addition meaning is supported by the cited predecessors and PR title.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        }
+      ]
+    },
+    "rationale": "Separate the reconstructed action from its object without changing the asserted method.",
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 35,
+          "quote": "The same procedure as every release"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S02",
+    "phase": "source_self_review",
+    "unit_id": "U02",
+    "fields": [
+      "proposition",
+      "alternative_interpretation"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "proposition": {
+        "summary": "Readers are referred to the v23.0 and v22.0 predecessor commits.",
+        "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+        "domain": "Bitcoin Core previous-release compatibility testing and associated PR review",
+        "time_scope": "Retained body at supplied snapshot; original creation timestamp does not date every sentence.",
+        "identity_evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 37,
+              "end": 142,
+              "quote": "see dba123167236a172d2d33861d58aa94a19729671 [v23.0] and d8b705f1caeb3b4a6790cb26e4e5584ca791d965 [v22.0]"
+            }
+          }
+        ],
+        "qualifiers": []
+      },
+      "alternative_interpretation": "A bibliographic pointer rather than a meaningful institutional prescription. Both targets are preserved as one navigation action."
+    },
+    "after": {
+      "proposition": {
+        "summary": "Readers are referred to the v23.0 and v22.0 predecessor commits.",
+        "decision_object_id": null,
+        "domain": "Navigation to the two identified predecessor commits; no single decision object applies.",
+        "time_scope": "Retained body at supplied snapshot; original creation timestamp does not date every sentence.",
+        "identity_evidence": [],
+        "qualifiers": []
+      },
+      "alternative_interpretation": "A bibliographic pointer rather than a meaningful institutional prescription. Both targets are preserved as one navigation action. The object ID is null because this navigation has two distinct commit targets, not the containing PR as its decision object."
+    },
+    "rationale": "The containing PR was not the actual target of the two-commit navigation. Preserve both complete commit IDs and leave the single decision-object field inapplicable.",
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 37,
+          "end": 142,
+          "quote": "see dba123167236a172d2d33861d58aa94a19729671 [v23.0] and d8b705f1caeb3b4a6790cb26e4e5584ca791d965 [v22.0]"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S03",
+    "phase": "source_self_review",
+    "unit_id": "U04",
+    "fields": [
+      "alternative_interpretation"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "alternative_interpretation": "Routine navigation; the link alone does not establish authority for any particular review requirement."
+    },
+    "after": {
+      "alternative_interpretation": "Routine navigation; the link alone does not establish authority for any particular review requirement. The null decision object is inapplicable to a decision proposal; the navigation target is the mutable master guideline, whose exact contemporaneous revision is unknown."
+    },
+    "rationale": "Explain the null object and distinguish the linked mutable guide from the supplied pinned copy.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 201,
+          "end": 335,
+          "quote": "See [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S04",
+    "phase": "source_self_review",
+    "unit_id": "U10",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "proposed"
+    },
+    "after": {
+      "speech_act": "asserted"
+    },
+    "rationale": "The literal sentence asserts a sufficiency rationale; the add recommendation remains a pragmatic interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 220,
+          "end": 330,
+          "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S05",
+    "phase": "source_self_review",
+    "unit_id": "U11",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "proposed"
+    },
+    "after": {
+      "speech_act": "asserted"
+    },
+    "rationale": "The literal utterance expresses preference; the inferred use recommendation remains distinct.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S06",
+    "phase": "source_self_review",
+    "unit_id": "U19",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "proposed"
+    },
+    "rationale": "This is a direct conditional suggestion to update the PR, so the project speech-act convention favors proposed.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:12",
+        "span": {
+          "start": 0,
+          "end": 77,
+          "quote": "Noting that if this is still going ahead, it should be updated to use 24.0.1."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S07",
+    "phase": "source_self_review",
+    "unit_id": "Q01",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 0,
+          "end": 57,
+          "quote": "> It is likely so general that it can't catch any issues."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S08",
+    "phase": "source_self_review",
+    "unit_id": "Q02",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 105,
+          "end": 149,
+          "quote": "> doesn't test watch-only miniscript support"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S09",
+    "phase": "source_self_review",
+    "unit_id": "Q03",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:7",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "> Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S10",
+    "phase": "source_self_review",
+    "unit_id": "Q04",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "> > Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S11",
+    "phase": "source_self_review",
+    "unit_id": "Q05",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "question"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 50,
+          "end": 177,
+          "quote": "> Not sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S12",
+    "phase": "source_self_review",
+    "unit_id": "Q06",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:9",
+        "span": {
+          "start": 0,
+          "end": 41,
+          "quote": ">Probably not, but it's a low cost check."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S13",
+    "phase": "source_self_review",
+    "unit_id": "Q07",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "technical_description"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 245,
+          "end": 366,
+          "quote": "> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S14",
+    "phase": "source_self_review",
+    "unit_id": "Q08",
+    "fields": [
+      "speech_act"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "speech_act": "asserted"
+    },
+    "after": {
+      "speech_act": "question"
+    },
+    "rationale": "Repeated occurrence retains the original technical claim or question function; quotation does not turn it into a new assertion or endorsement.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 513,
+          "end": 617,
+          "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet "
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S15",
+    "phase": "source_self_review",
+    "unit_id": "U11",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [],
+      "level_rationale": "The proposed method concerns operational testing. The visible comparison of general and specific test arrangements is deliberation over recurring testing choices."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S16",
+    "phase": "source_self_review",
+    "unit_id": "U13",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The governed act is operational compatibility-test or review practice. The visible exchange considers recurring selection, maintenance, or integration arrangements; observed action is collective choice, with ordinary operational discussion a bounded alternative."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 181,
+          "end": 231,
+          "quote": "We can remove intermediate releases at some point."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S17",
+    "phase": "source_self_review",
+    "unit_id": "U15",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The governed act is operational compatibility-test or review practice. The visible exchange considers recurring selection, maintenance, or integration arrangements; observed action is collective choice, with ordinary operational discussion a bounded alternative."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S18",
+    "phase": "source_self_review",
+    "unit_id": "U16",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The governed act is operational compatibility-test or review practice. The visible exchange considers recurring selection, maintenance, or integration arrangements; observed action is collective choice, with ordinary operational discussion a bounded alternative."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 152,
+          "end": 232,
+          "quote": "In that case it's up to the developer which previous releases they want to test."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S19",
+    "phase": "source_self_review",
+    "unit_id": "U17",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The governed act is operational compatibility-test or review practice. The visible exchange considers recurring selection, maintenance, or integration arrangements; observed action is collective choice, with ordinary operational discussion a bounded alternative."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 222,
+          "quote": "So maybe the EOL versions can be dropped"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S20",
+    "phase": "source_self_review",
+    "unit_id": "U18",
+    "fields": [
+      "observed_action_level",
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "meaning_changes": true,
+    "effect": "changed institutional meaning",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "observed_action_level": "collective_choice",
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The governed act is operational compatibility-test or review practice. The visible exchange considers recurring selection, maintenance, or integration arrangements; observed action is collective choice, with ordinary operational discussion a bounded alternative."
+    },
+    "after": {
+      "observed_action_level": "operational",
+      "observed_level_alternatives": [
+        "collective_choice"
+      ],
+      "level_rationale": "The visible act is an ordinary engineering/review suggestion about test design or possible maintenance. It may contribute to deliberation over a recurring testing arrangement, retained as a collective-choice alternative; technical configurability alone does not establish that higher-level institutional activity."
+    },
+    "rationale": "The initial primary observed level overread technical suggestions as established deliberation over an institutional arrangement. Retain the higher-level reading as an explicit alternative.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 223,
+          "end": 281,
+          "quote": "and the qa-assets repo hosts some regtest wallets instead?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S21",
+    "phase": "source_self_review",
+    "unit_id": "U22",
+    "fields": [
+      "components"
+    ],
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "rebase",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 229,
+                "end": 235,
+                "quote": "rebase"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 236,
+                "end": 238,
+                "quote": "it"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "occasionally",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 216,
+                "end": 228,
+                "quote": "occasionally"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "rebase",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 229,
+                "end": 235,
+                "quote": "rebase"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 236,
+                "end": 238,
+                "quote": "it"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "occasionally",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 216,
+                "end": 228,
+                "quote": "occasionally"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        },
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 180,
+                "end": 182,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "The explicit main-clause we governs both leave and rebase; it is outside this separately extracted child.",
+          "occurrence_role": "shared_scope",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 158,
+              "end": 239,
+              "quote": "As we've done before, we could just leave the PR open and occasionally rebase it."
+            }
+          }
+        }
+      ]
+    },
+    "rationale": "Recover the explicitly shared actor from the governing coordination instead of relying only on the linked-scope note.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 158,
+          "end": 211,
+          "quote": "As we've done before, we could just leave the PR open"
+        }
+      },
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 212,
+          "end": 239,
+          "quote": "and occasionally rebase it."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S22",
+    "phase": "source_self_review",
+    "unit_id": "U29",
+    "fields": [
+      "components"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "apply the same release-selection criterion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 24,
+                "quote": "The same goes"
+              }
+            }
+          ],
+          "inference_note": "The explicit ellipsis is resolved to the preceding criterion, not a newly stated rule.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "Unrelated: The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the other versions in this file",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 29,
+                "end": 60,
+                "quote": "the other versions in this file"
+              }
+            }
+          ],
+          "inference_note": "The prepositional scope becomes the target of inferred application.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "Unrelated: The same goes for the other versions in this file"
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "apply",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 24,
+                "quote": "The same goes"
+              }
+            }
+          ],
+          "inference_note": "Apply is reconstructed from the elliptical same-goes extension.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "Unrelated: The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the same release-selection criterion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 19,
+                "quote": "The same"
+              }
+            }
+          ],
+          "inference_note": "The inherited criterion, explicitly resolved through U25, becomes the object of reconstructed apply.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "Unrelated: The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bind",
+          "text": "the other versions in this file",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 29,
+                "end": 60,
+                "quote": "the other versions in this file"
+              }
+            }
+          ],
+          "inference_note": "The versions are the distinct targets to which the criterion is applied; this role is inferred under apply.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 0,
+              "end": 60,
+              "quote": "Unrelated: The same goes for the other versions in this file"
+            }
+          }
+        }
+      ]
+    },
+    "rationale": "Separate apply from the criterion object and retain the other versions as the distinct affected targets.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 60,
+          "quote": "Unrelated: The same goes for the other versions in this file"
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S23",
+    "phase": "source_self_review",
+    "unit_id": "U33",
+    "fields": [
+      "components"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "exclude from this PR",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 807,
+                "end": 835,
+                "quote": "outside of scope for this PR"
+              }
+            }
+          ],
+          "inference_note": "The scope assertion is reconstructed as conduct limiting the contribution; the negated inclusion is preserved.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 788,
+              "end": 836,
+              "quote": "but I think that's outside of scope for this PR."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "general release-list cleanup",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 800,
+                "end": 806,
+                "quote": "that's"
+              }
+            }
+          ],
+          "inference_note": "The literal subject that becomes the object of exclude; antecedent is the adjacent cleanup ACK.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 788,
+              "end": 836,
+              "quote": "but I think that's outside of scope for this PR."
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "components": [
+        {
+          "symbol": "I",
+          "text": "exclude",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 807,
+                "end": 835,
+                "quote": "outside of scope for this PR"
+              }
+            }
+          ],
+          "inference_note": "The scope assertion is reconstructed as conduct limiting the contribution; the negated inclusion is preserved.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 788,
+              "end": 836,
+              "quote": "but I think that's outside of scope for this PR."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "general release-list cleanup",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 800,
+                "end": 806,
+                "quote": "that's"
+              }
+            }
+          ],
+          "inference_note": "The literal subject that becomes the object of exclude; antecedent is the adjacent cleanup ACK.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 788,
+              "end": 836,
+              "quote": "but I think that's outside of scope for this PR."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "from this PR's scope",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 807,
+                "end": 835,
+                "quote": "outside of scope for this PR"
+              }
+            }
+          ],
+          "inference_note": "The exclusion boundary is reconstructed from the literal outside-scope predicate.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 788,
+              "end": 836,
+              "quote": "but I think that's outside of scope for this PR."
+            }
+          }
+        }
+      ]
+    },
+    "rationale": "Keep the exclude action separate from its stated PR-scope boundary.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 788,
+          "end": 836,
+          "quote": "but I think that's outside of scope for this PR."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S24",
+    "phase": "source_self_review",
+    "unit_id": "U25",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": true,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "institution": {
+        "type": "norm_candidate",
+        "dispute_present": true,
+        "rationale": "maflcko proposes adding only the latest release for each missing feature. The candidate reflects expected conduct or an asserted standard; no attributed authorization or enforcement claim meets the rule-candidate threshold.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:0",
+            "span": {
+              "start": 0,
+              "end": 79,
+              "quote": "I think it only makes sense to add the latest release for each missing feature."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "broader",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [
+          {
+            "coverage": "broader",
+            "claim_as_of": "2022-12-09",
+            "source_as_of": "2022-12-09",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "established",
+            "evidence": [
+              {
+                "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+                "span": {
+                  "start": 281,
+                  "end": 440,
+                  "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+                }
+              }
+            ],
+            "rationale": "A contemporaneous pinned commit describes a similar selection rationale in other compatibility tests. It documents the broader principle, not authority or exact application to wallet tests."
+          }
+        ],
+        "application_evidence": [],
+        "challenges": [
+          {
+            "aspect": "content",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:2",
+                "span": {
+                  "start": 284,
+                  "end": 490,
+                  "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+                }
+              },
+              {
+                "source_id": "pr26586:review_comments:2",
+                "span": {
+                  "start": 491,
+                  "end": 535,
+                  "quote": "I don't think 24.x is special to 23.x at all"
+                }
+              }
+            ],
+            "rationale": "The author responds to the quoted criterion by proposing retention of non-EOL majors even without specialness, contesting the requirement's application to this wallet test."
+          }
+        ],
+        "type_alternatives": [
+          "strategy_candidate"
+        ]
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "norm_candidate",
+        "dispute_present": true,
+        "rationale": "maflcko proposes adding only the latest release for each missing feature. The candidate reflects expected conduct or an asserted standard; no attributed authorization or enforcement claim meets the rule-candidate threshold.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:0",
+            "span": {
+              "start": 0,
+              "end": 79,
+              "quote": "I think it only makes sense to add the latest release for each missing feature."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "expectation_recognition",
+            "target": "this_proposition",
+            "basis": "context_inferred",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:1",
+                "span": {
+                  "start": 0,
+                  "end": 60,
+                  "quote": "Unrelated: The same goes for the other versions in this file"
+                }
+              },
+              {
+                "source_id": "pr26586:review_comments:0",
+                "span": {
+                  "start": 0,
+                  "end": 79,
+                  "quote": "I think it only makes sense to add the latest release for each missing feature."
+                }
+              }
+            ],
+            "rationale": "The same actor says the same criterion goes for the other versions in this file, explicitly extending the criterion as the relevant standard. This supports only maintained commitment within one episode.",
+            "mode": "same_actor_restatement",
+            "speaker_relation": "same_actor",
+            "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+            "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+            "identity_evidence": [
+              {
+                "source_id": "pr26586:supplement_metadata",
+                "span": {
+                  "start": 12,
+                  "end": 57,
+                  "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              }
+            ]
+          }
+        ],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "broader",
+          "recognition": "same_actor_only",
+          "application": "none"
+        },
+        "documentary_support": [
+          {
+            "coverage": "broader",
+            "claim_as_of": "2022-12-09",
+            "source_as_of": "2022-12-09",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "established",
+            "evidence": [
+              {
+                "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+                "span": {
+                  "start": 281,
+                  "end": 440,
+                  "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+                }
+              }
+            ],
+            "rationale": "A contemporaneous pinned commit describes a similar selection rationale in other compatibility tests. It documents the broader principle, not authority or exact application to wallet tests."
+          }
+        ],
+        "application_evidence": [],
+        "challenges": [
+          {
+            "aspect": "content",
+            "target": "this_proposition",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:2",
+                "span": {
+                  "start": 284,
+                  "end": 490,
+                  "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+                }
+              },
+              {
+                "source_id": "pr26586:review_comments:2",
+                "span": {
+                  "start": 491,
+                  "end": 535,
+                  "quote": "I don't think 24.x is special to 23.x at all"
+                }
+              }
+            ],
+            "rationale": "The author responds to the quoted criterion by proposing retention of non-EOL majors even without specialness, contesting the requirement's application to this wallet test."
+          }
+        ],
+        "type_alternatives": [
+          "strategy_candidate"
+        ]
+      }
+    },
+    "rationale": "The same-goes extension is a qualifying same-actor restatement of the criterion, missed in the first recognition inventory. It establishes no interpersonal or project-wide acceptance.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      },
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 60,
+          "quote": "Unrelated: The same goes for the other versions in this file"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S25",
+    "phase": "source_self_review",
+    "unit_id": "U09",
+    "fields": [
+      "components"
+    ],
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 182,
+                "end": 184,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 171,
+              "end": 216,
+              "quote": "So I think we should add every major release."
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 185,
+                "end": 191,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 171,
+              "end": 216,
+              "quote": "So I think we should add every major release."
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "add",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 192,
+                "end": 195,
+                "quote": "add"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 171,
+              "end": 216,
+              "quote": "So I think we should add every major release."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "every major release",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 196,
+                "end": 215,
+                "quote": "every major release"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 171,
+              "end": 216,
+              "quote": "So I think we should add every major release."
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "components": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 182,
+                "end": 184,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 215,
+              "quote": "we should add every major release"
+            }
+          }
+        },
+        {
+          "symbol": "D",
+          "text": "should",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 185,
+                "end": 191,
+                "quote": "should"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 215,
+              "quote": "we should add every major release"
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "add",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 192,
+                "end": 195,
+                "quote": "add"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 215,
+              "quote": "we should add every major release"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "every major release",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 196,
+                "end": 215,
+                "quote": "every major release"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 182,
+              "end": 215,
+              "quote": "we should add every major release"
+            }
+          }
+        }
+      ]
+    },
+    "rationale": "The governing clause for we/should/add/releases is the embedded action clause, not the speaker's I think predicate.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S26",
+    "phase": "source_self_review",
+    "unit_id": null,
+    "fields": [
+      "patch-based application/disposition evidence",
+      "episode_summary claim_parts and parent evidence"
+    ],
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution failure under an existing rule",
+    "before": "Numeric test-version anchors plus archive version names.",
+    "after": "Existing anchors plus the full retained test patch, including explicit v24.0.1 and v23.0 comment labels.",
+    "rationale": "Make every version-name claim inspectable from source labels as well as encoded integers; preserve exact edit/integration scope.",
+    "evidence": [
+      {
+        "source_id": "pr26586:patch:0",
+        "span": {
+          "start": 0,
+          "end": 1207,
+          "quote": "@@ -33,11 +33,12 @@ def add_options(self, parser):\n \n     def set_test_params(self):\n         self.setup_clean_chain = True\n-        self.num_nodes = 10\n+        self.num_nodes = 11\n         # Add new version after each release:\n         self.extra_args = [\n             [\"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # Pre-release: use to mine blocks. noban for immediate tx relay\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # Pre-release: use to receive coins, swap wallets, etc\n+            [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v24.0.1\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v23.0\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v22.0\n             [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v0.21.0\n@@ -57,6 +58,7 @@ def setup_nodes(self):\n         self.add_nodes(self.num_nodes, extra_args=self.extra_args, versions=[\n             None,\n             None,\n+            240001,\n             230000,\n             220000,\n             210000,"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S27",
+    "phase": "source_self_review",
+    "unit_id": "U01",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "The author presents the current previous-release addition as repetition of the procedure used for every release.",
+        "evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "unresolved",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [
+          {
+            "coverage": "partial",
+            "claim_as_of": null,
+            "source_as_of": "2022-05-06",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "unresolved",
+            "evidence": [
+              {
+                "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+                "span": {
+                  "start": 69,
+                  "end": 103,
+                  "quote": "test: previous releases: add v23.0"
+                }
+              },
+              {
+                "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:patch:2",
+                "span": {
+                  "start": 214,
+                  "end": 251,
+                  "quote": "# Add new version after each release:"
+                }
+              }
+            ],
+            "rationale": "The supplied predecessor addition and source comment support repeated additions in two examples, not the claim of every release or continued standing at the retained-body date."
+          },
+          {
+            "coverage": "partial",
+            "claim_as_of": null,
+            "source_as_of": "2021-12-16",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "unresolved",
+            "evidence": [
+              {
+                "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+                "span": {
+                  "start": 69,
+                  "end": 103,
+                  "quote": "test: previous releases: add v22.0"
+                }
+              },
+              {
+                "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:patch:2",
+                "span": {
+                  "start": 213,
+                  "end": 250,
+                  "quote": "# Add new version after each release:"
+                }
+              }
+            ],
+            "rationale": "The supplied predecessor addition and source comment support repeated additions in two examples, not the claim of every release or continued standing at the retained-body date."
+          }
+        ],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "The author presents the current previous-release addition as repetition of the procedure used for every release.",
+        "evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "unresolved",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [
+          {
+            "coverage": "partial",
+            "claim_as_of": null,
+            "source_as_of": "2022-05-06",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "unresolved",
+            "evidence": [
+              {
+                "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:metadata",
+                "span": {
+                  "start": 69,
+                  "end": 103,
+                  "quote": "test: previous releases: add v23.0"
+                }
+              },
+              {
+                "source_id": "commit:dba123167236a172d2d33861d58aa94a19729671:patch:2",
+                "span": {
+                  "start": 214,
+                  "end": 251,
+                  "quote": "# Add new version after each release:"
+                }
+              }
+            ],
+            "rationale": "The supplied predecessor addition and source comment support repeated additions in two examples, not the claim of every release or continued standing at the retained-body date."
+          },
+          {
+            "coverage": "partial",
+            "claim_as_of": null,
+            "source_as_of": "2021-12-16",
+            "date_basis": "pinned_revision",
+            "temporal_fit": "unresolved",
+            "evidence": [
+              {
+                "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:metadata",
+                "span": {
+                  "start": 69,
+                  "end": 103,
+                  "quote": "test: previous releases: add v22.0"
+                }
+              },
+              {
+                "source_id": "commit:d8b705f1caeb3b4a6790cb26e4e5584ca791d965:patch:2",
+                "span": {
+                  "start": 213,
+                  "end": 250,
+                  "quote": "# Add new version after each release:"
+                }
+              }
+            ],
+            "rationale": "The supplied predecessor addition and source comment support repeated additions in two examples, not the claim of every release or continued standing at the retained-body date."
+          }
+        ],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 0,
+          "end": 35,
+          "quote": "The same procedure as every release"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S28",
+    "phase": "source_self_review",
+    "unit_id": "U11",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko recommends specific compatibility tests, exemplified by those located with git grep -l skip_if_no_prev, in preference to the general test.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:5",
+            "span": {
+              "start": 231,
+              "end": 327,
+              "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko recommends specific compatibility tests, exemplified by those located with git grep -l skip_if_no_prev, in preference to the general test.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:5",
+            "span": {
+              "start": 231,
+              "end": 327,
+              "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S29",
+    "phase": "source_self_review",
+    "unit_id": "U12",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers keeping this PR open until another PR needs it as an alternative way to proceed.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:6",
+            "span": {
+              "start": 302,
+              "end": 375,
+              "quote": "But we can also keep this PR open until there's another PR that needs it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers keeping this PR open until another PR needs it as an alternative way to proceed.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:6",
+            "span": {
+              "start": 302,
+              "end": 375,
+              "quote": "But we can also keep this PR open until there's another PR that needs it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 302,
+          "end": 375,
+          "quote": "But we can also keep this PR open until there's another PR that needs it."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S30",
+    "phase": "source_self_review",
+    "unit_id": "U17",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko proposes possibly dropping EOL versions from these tests as part of a replacement using retained regtest wallets.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 182,
+              "end": 222,
+              "quote": "So maybe the EOL versions can be dropped"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko proposes possibly dropping EOL versions from these tests as part of a replacement using retained regtest wallets.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 182,
+              "end": 222,
+              "quote": "So maybe the EOL versions can be dropped"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 222,
+          "quote": "So maybe the EOL versions can be dropped"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S31",
+    "phase": "source_self_review",
+    "unit_id": "U18",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "As the paired alternative to EOL versions, maflcko proposes that the qa-assets repository host some regtest wallets.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 223,
+              "end": 281,
+              "quote": "and the qa-assets repo hosts some regtest wallets instead?"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "As the paired alternative to EOL versions, maflcko proposes that the qa-assets repository host some regtest wallets.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 223,
+              "end": 281,
+              "quote": "and the qa-assets repo hosts some regtest wallets instead?"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 223,
+          "end": 281,
+          "quote": "and the qa-assets repo hosts some regtest wallets instead?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S32",
+    "phase": "source_self_review",
+    "unit_id": "U21",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers leaving this PR open, citing prior practice and absence of a pressing reason to merge.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 158,
+              "end": 211,
+              "quote": "As we've done before, we could just leave the PR open"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers leaving this PR open, citing prior practice and absence of a pressing reason to merge.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 158,
+              "end": 211,
+              "quote": "As we've done before, we could just leave the PR open"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 158,
+          "end": 211,
+          "quote": "As we've done before, we could just leave the PR open"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S33",
+    "phase": "source_self_review",
+    "unit_id": "U22",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers occasionally rebasing the open PR as part of the same continuing method.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "Sjors offers occasionally rebasing the open PR as part of the same continuing method.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 212,
+              "end": 239,
+              "quote": "and occasionally rebase it."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 212,
+          "end": 239,
+          "quote": "and occasionally rebase it."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S34",
+    "phase": "source_self_review",
+    "unit_id": "U30",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko suggests that someone perform the corresponding cleanup in a separate pull request.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 62,
+              "end": 105,
+              "quote": "so someone could do that in a separate pull"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "maflcko suggests that someone perform the corresponding cleanup in a separate pull request.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 62,
+              "end": 105,
+              "quote": "so someone could do that in a separate pull"
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 62,
+          "end": 105,
+          "quote": "so someone could do that in a separate pull"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S35",
+    "phase": "source_self_review",
+    "unit_id": "U32",
+    "fields": [
+      "institution"
+    ],
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "criterion ambiguity",
+    "before": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "theStack prefers verifying the assumption, for example that wallets created on master can still open on both 23.x and 24.x, rather than potentially missing either case.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 541,
+              "end": 735,
+              "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": []
+      }
+    },
+    "after": {
+      "institution": {
+        "type": "strategy_candidate",
+        "dispute_present": false,
+        "rationale": "theStack prefers verifying the assumption, for example that wallets created on master can still open on both 23.x and 24.x, rather than potentially missing either case.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 541,
+              "end": 735,
+              "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+            }
+          }
+        ],
+        "recognition": [],
+        "authority_evidence": [],
+        "standing_profile": {
+          "documentary": "none",
+          "recognition": "none",
+          "application": "none"
+        },
+        "documentary_support": [],
+        "application_evidence": [],
+        "challenges": [],
+        "type_alternatives": [
+          "undetermined"
+        ]
+      }
+    },
+    "rationale": "Retain the bounded alternative that the articulated engineering/procedural method lacks sufficient institutional significance, without changing the preferred strategy classification.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S36",
+    "phase": "source_self_review",
+    "unit_id": "U30",
+    "fields": [
+      "proposition"
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution failure under an existing rule",
+    "before": {
+      "proposition": {
+        "summary": "maflcko suggests that someone perform the corresponding cleanup in a separate pull request.",
+        "decision_object_id": null,
+        "domain": "Bitcoin Core previous-release compatibility testing and associated PR review",
+        "time_scope": "Retained occurrence associated with 2022-12-09T08:29:34+00:00; complete edit history is unavailable.",
+        "identity_evidence": [],
+        "qualifiers": [
+          {
+            "description": "Cleanup refers to other versions in this file under U29; it is explicitly outside the immediate task.",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:1",
+                "span": {
+                  "start": 0,
+                  "end": 60,
+                  "quote": "Unrelated: The same goes for the other versions in this file"
+                }
+              }
+            ],
+            "attachment": "linked_unit",
+            "linked_unit_id": "U29",
+            "rationale": "Material qualification retained explicitly in the proposition scope."
+          }
+        ]
+      }
+    },
+    "after": {
+      "proposition": {
+        "summary": "maflcko suggests that someone perform the corresponding cleanup in a separate pull request.",
+        "decision_object_id": null,
+        "domain": "Proposed separate cleanup of other versions in the compatibility-test file; future pull request not identified.",
+        "time_scope": "Retained occurrence associated with 2022-12-09T08:29:34+00:00; complete edit history is unavailable.",
+        "identity_evidence": [],
+        "qualifiers": [
+          {
+            "description": "Cleanup refers to other versions in this file under U29; it is explicitly outside the immediate task.",
+            "evidence": [
+              {
+                "source_id": "pr26586:review_comments:1",
+                "span": {
+                  "start": 0,
+                  "end": 60,
+                  "quote": "Unrelated: The same goes for the other versions in this file"
+                }
+              }
+            ],
+            "attachment": "linked_unit",
+            "linked_unit_id": "U29",
+            "rationale": "Material qualification retained explicitly in the proposition scope."
+          }
+        ]
+      }
+    },
+    "rationale": "Clarify that null is an unknown future proposal identity, not the containing PR.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 62,
+          "end": 105,
+          "quote": "so someone could do that in a separate pull"
+        }
+      }
+    ]
+  }
+]

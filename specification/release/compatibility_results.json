@@ -1,0 +1,302 @@
+{
+  "release_version": "0.4.1",
+  "schema_version": "0.4",
+  "status": "pass",
+  "passed": 59,
+  "total": 59,
+  "scope": "Retained-case compatibility and mechanical safeguards; no fresh coding, transfer validation, or accuracy estimate.",
+  "reconciled_views": [
+    {
+      "path": "F01_v04_r1.json",
+      "sha256": "9b7494a86755c032e8ce1a6f569983c7dc345b652e7407692cf2264dedfd8d3f",
+      "status": "pass",
+      "anchors": 695
+    },
+    {
+      "path": "F01_v04_r2.json",
+      "sha256": "90ca728bfa0a7b35c1f91ae0a431e1d651a82ef11846e77177fcc8ee208fd689",
+      "status": "pass",
+      "anchors": 684
+    },
+    {
+      "path": "F01_v04_r3.json",
+      "sha256": "4de6231d4be6f4353b5f5b6da7d5fb10721e93ade454e3a68eb00685b66a8ed8",
+      "status": "pass",
+      "anchors": 661
+    },
+    {
+      "path": "F02_v04_r1.json",
+      "sha256": "16dda79bc26642d61417c3807fcfe72b9486f61b85bea2da601557eea2c59b2c",
+      "status": "pass",
+      "anchors": 232
+    },
+    {
+      "path": "F02_v04_r2.json",
+      "sha256": "1105baec7447b1fa1c0c61cd2d55e3cb305e755bd3a18bbd6c9ef972554f8b1d",
+      "status": "pass",
+      "anchors": 265
+    },
+    {
+      "path": "F02_v04_r3.json",
+      "sha256": "78ee7139f702bab5edcbb74f4279bc8cd46876f603522bf1b06a70049d85500d",
+      "status": "pass",
+      "anchors": 278
+    },
+    {
+      "path": "F03_v04_r1.json",
+      "sha256": "71cacaa0291628033f45857d0f8e61ce83afa6ca2d4bdf1ed83bbe6962f23e9f",
+      "status": "pass",
+      "anchors": 368
+    },
+    {
+      "path": "F03_v04_r2.json",
+      "sha256": "078ef2e745f959ea2b97f1a009cee6482e47524413aa416f0a2ce8c214579d22",
+      "status": "pass",
+      "anchors": 375
+    },
+    {
+      "path": "F03_v04_r3.json",
+      "sha256": "1027193ccdd1ff2a85d6ea49c1b279ce9db4ff247c8575c0006e3959af136284",
+      "status": "pass",
+      "anchors": 409
+    }
+  ],
+  "tests": [
+    {
+      "name": "projection empty",
+      "pass": true
+    },
+    {
+      "name": "projection generic same-actor response",
+      "pass": true
+    },
+    {
+      "name": "projection focal same-actor expectation",
+      "pass": true
+    },
+    {
+      "name": "projection broader expectation",
+      "pass": true
+    },
+    {
+      "name": "projection ordinary endorsement",
+      "pass": true
+    },
+    {
+      "name": "projection ambiguous focal recognition",
+      "pass": true
+    },
+    {
+      "name": "projection one qualifying actor",
+      "pass": true
+    },
+    {
+      "name": "projection duplicate episode",
+      "pass": true
+    },
+    {
+      "name": "projection two distinct episodes",
+      "pass": true
+    },
+    {
+      "name": "projection interpersonal precedence",
+      "pass": true
+    },
+    {
+      "name": "projection same-actor unresolved basis stays visible",
+      "pass": true
+    },
+    {
+      "name": "nonstatement projection",
+      "pass": true
+    },
+    {
+      "name": "checker byte-identical to evaluated v0.4",
+      "pass": true
+    },
+    {
+      "name": "schema constraints unchanged; descriptions only",
+      "pass": true
+    },
+    {
+      "name": "preserved historical baseline_v03/tools/check_annotation.py",
+      "pass": true
+    },
+    {
+      "name": "preserved historical baseline_v03/protocol/round12_coder_instructions.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved historical baseline_v03/protocol/codebook.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved historical baseline_v03/protocol/annotation_schema.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical calibration/packet.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical calibration/cases.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical calibration/annotation.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical sources/round12_source_reconciliation.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical sources/round12_packet.original.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical sources/round12_overlap_metrics.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical sources/round12_independent_source_audit.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical sources/round12_baseline_impact.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/source_review.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/release_verification.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/release_summary.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/regression_results.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/migration_guide.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/input_provenance.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/environment.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/change_ledger.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical development/calibration_check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical evaluation/protocol.json",
+      "pass": true
+    },
+    {
+      "name": "preserved historical evaluation/known_exposure_inventory.json",
+      "pass": true
+    },
+    {
+      "name": "adapter reproduces evaluated F01 metadata correction",
+      "pass": true
+    },
+    {
+      "name": "adapter idempotent F01",
+      "pass": true
+    },
+    {
+      "name": "source fields unchanged F01",
+      "pass": true
+    },
+    {
+      "name": "adapter reproduces evaluated F02 metadata correction",
+      "pass": true
+    },
+    {
+      "name": "adapter idempotent F02",
+      "pass": true
+    },
+    {
+      "name": "source fields unchanged F02",
+      "pass": true
+    },
+    {
+      "name": "adapter reproduces evaluated F03 metadata correction",
+      "pass": true
+    },
+    {
+      "name": "adapter idempotent F03",
+      "pass": true
+    },
+    {
+      "name": "source fields unchanged F03",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F01_v04_r1.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F01_v04_r2.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F01_v04_r3.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F02_v04_r1.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F02_v04_r2.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F02_v04_r3.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F03_v04_r1.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F03_v04_r2.json",
+      "pass": true
+    },
+    {
+      "name": "retained reconciled view F03_v04_r3.json",
+      "pass": true
+    },
+    {
+      "name": "conflicting aliases rejected",
+      "pass": true
+    },
+    {
+      "name": "commit identity mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "worked examples match retained reconciled views",
+      "pass": true
+    },
+    {
+      "name": "original calibration passes unchanged checker",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "claim_id": "E02-C1",
+    "episode_id": "E02",
+    "claim": "Merged guidance permits maintainers to close trivial PRs or refactoring PRs with no clear benefit immediately.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7352,
+          "end": 7526,
+          "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "May grants discretion; the text does not require closure or evidence an actual application in this PR."
+  },
+  {
+    "claim_id": "E02-C2",
+    "episode_id": "E02",
+    "claim": "Merged guidance advises new contributors against submitting refactoring PRs.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7109,
+          "end": 7185,
+          "quote": "Pull requests that refactor the code should not be made by new contributors."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Advisory should not is coded as recommendation; a stronger prohibition reading needs additional authority and usage evidence."
+  },
+  {
+    "claim_id": "E02-C3",
+    "episode_id": "E02",
+    "claim": "A reviewer separately proposed closure when a refactoring PR attracts no reviewer; that wording is absent from the supplied final guide.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E02:review_comments:2",
+        "span": {
+          "start": 18,
+          "end": 110,
+          "quote": "Any refactoring pull request may be closed when it doesn't attract anyone willing to review."
+        }
+      },
+      {
+        "source_id": "E02:doc_head",
+        "span": {
+          "start": 7352,
+          "end": 7481,
+          "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Absence was checked against the complete head file. A proposal in a merged thread is not automatically adopted."
+  },
+  {
+    "claim_id": "E02-C4",
+    "episode_id": "E02",
+    "claim": "This PR demonstrates enforcement of the newly stated closure permission against an author.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E02:body",
+        "span": {
+          "start": 276,
+          "end": 329,
+          "quote": "This PR would prepare for possible direct PR closing."
+        }
+      },
+      {
+        "source_id": "E02:outcome",
+        "span": {
+          "start": 128,
+          "end": 151,
+          "quote": "\"recorded_merged\": true"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "The observed event revises guidance; an enforcement episode would need a separately linked application."
+  }
+]

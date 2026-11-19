@@ -1,0 +1,117 @@
+{
+  "run_id": "R12_A",
+  "episode_id": "CoreKnots_R12_shared",
+  "counts": {
+    "screened_entries": 98,
+    "focal_entries": 24,
+    "focal_candidates": 22,
+    "focal_context_only": 2,
+    "units": 112,
+    "statement_units": 68,
+    "focal_statement_units": 62,
+    "relations": 37,
+    "mechanisms": 8,
+    "outcomes": 6,
+    "unit_roles": {
+      "statement": 68,
+      "context": 30,
+      "container": 5,
+      "quotation": 9
+    },
+    "statement_types": {
+      "constitutive_specification": 7,
+      "rule_candidate": 7,
+      "norm_candidate": 18,
+      "undetermined": 26,
+      "strategy_candidate": 10
+    },
+    "statement_confidence": {
+      "plausible": 66,
+      "unresolved": 2
+    },
+    "initial_checker_status": "fail",
+    "final_checker_status": "pass",
+    "exact_anchor_references": 669,
+    "repairs": 24,
+    "meaning_changing_repairs": 6,
+    "self_review_passes": 1
+  },
+  "files": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/TASK.txt",
+      "sha256": "57e5bc43afcb9c5e13098d0381523f16b8331db1e4cb729bca542fe4d6c9c7a2",
+      "bytes": 3606
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/protocol/codebook.txt",
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753",
+      "bytes": 27319
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/protocol/annotation_schema.json",
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2",
+      "bytes": 25717
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/packet.json",
+      "sha256": "ae9c70f3442ee008516d34ce80d05bc4c1e53acd095bea5c7eb64e527b77e7a7",
+      "bytes": 157025
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/tools/check_annotation.py",
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775",
+      "bytes": 9013
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/build_annotation.py",
+      "sha256": "be76dba4dd8da25dd44b21427c45ab154bd3a2c1dabd2e21c7d09268f5c0ee30",
+      "bytes": 104554
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/self_review.py",
+      "sha256": "d243d225fddb98635d9a8306d7a4fe5f33cd9b53c0ead1cdc8f900b470836c61",
+      "bytes": 21230
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/annotation.first_complete.json",
+      "sha256": "5261d837820eab360da1310b0e5e6fa6fc336128005f8bbaca41c057e247b711",
+      "bytes": 438683
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/checks.first_complete.json",
+      "sha256": "0f547c012edceef3ded363e054680222debe6ac4eeac1c189500a0485beeb7a1",
+      "bytes": 10875
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/annotation.json",
+      "sha256": "4a1876e03802def5a237d4296daf7d49a39aa83f1e2d7113aa8a8ba547e14233",
+      "bytes": 471947
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/annotation.final.json",
+      "sha256": "4a1876e03802def5a237d4296daf7d49a39aa83f1e2d7113aa8a8ba547e14233",
+      "bytes": 471947
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/checks.json",
+      "sha256": "baa76c0209cbb058f3867b93d32c4389c1bf87cbbf722459cf3cfe8967280a57",
+      "bytes": 11701
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/repair_log.json",
+      "sha256": "02cde4adf65c20fd2e0246f0028840c0f824304d91a7fe3c689d5920c91feca5",
+      "bytes": 407949
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/review_notes.json",
+      "sha256": "15416272d1a84cb071a7ae784c3c9dfa14577bf1d908f72b489dfef2217652ee",
+      "bytes": 38147
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/access_record.json",
+      "sha256": "08776a0ba9d30b46c67927a5d65c73676581ff57041bb383c1a19ba32074fa87",
+      "bytes": 5277
+    }
+  ],
+  "final_frozen": true
+}

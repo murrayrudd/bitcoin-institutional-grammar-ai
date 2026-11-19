@@ -1,0 +1,629 @@
+{
+  "topic_id": "D04",
+  "title": "Reported implementation and unmet verification conditions",
+  "question": "Determine the scope of aggregate update reports and rebasing on master. Preserve reports while avoiding verification of unmentioned individual replies, dependencies, or full conditional completion.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q006",
+      "title": "R14 maps the author's aggregate update report, corroborated by the reviewer's release-note-update report, to each release-note suggestion as context-inferred reported application.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep the qualification visible: reported incorporation of the set of changes can contextually include the edit, but cannot verify the exact formulation or resolve fixed/Both. Do not treat reported and observed as interchangeable, or upgrade ordinary assent to expectation recognition.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr14441:comments:0",
+          "span": {
+            "start": 0,
+            "end": 72,
+            "quote": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+          }
+        },
+        {
+          "source_id": "pr14441:reviews:4",
+          "span": {
+            "start": 0,
+            "end": 146,
+            "quote": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:4",
+          "span": {
+            "start": 0,
+            "end": 30,
+            "quote": "Both are good changes. Thanks!"
+          }
+        },
+        {
+          "source_id": "pr14441:review_comments:5",
+          "span": {
+            "start": 0,
+            "end": 5,
+            "quote": "fixed"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt, Recognition and Application: independently assess target, basis, and application; no new mandatory aggregate-report targeting convention is supplied in this guide."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F02_v04_r3",
+          "units": [
+            {
+              "unit_id": "F02-S01",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends correcting the release-note RPC spelling to `listtransactions`, including its final `s`; the expected editor is inferred as the contributor updating this PR, not an attributed authority.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The requested spelling is the complete identifier `listtransactions`, including the terminal `s`."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained added heading contains the complete requested RPC name with terminal s. The same head SHA is recorded as merged. This demonstrates the requested resulting spelling, not the missing intermediate typo or the cause of its correction."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "unresolved",
+                  "rationale": "A local edit is reported fixed without a uniquely recoverable target. This does not upgrade the focal application profile beyond the independently supported patch observation."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            },
+            {
+              "unit_id": "F02-S02",
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 94,
+                "end": 531,
+                "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky tentatively proposes changing the release-note paragraph to distinguish both outgoing and incoming transactions with `-deprecatedrpc=accounts` from only incoming transactions without that setting, retaining the explanation about spending from accounts versus labels.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "Tentative first-person recommendation: \"I'd maybe\" does not announce an actual undertaking or impose a duty.",
+                "The target is the preceding paragraph, criticized because both behaviors occur in the same release.",
+                "With `-deprecatedrpc=accounts`, the proposed description returns both outgoing and incoming transactions for a label/account/dummy argument.",
+                "Without `-deprecatedrpc=accounts`, the proposed description returns only incoming transactions; accounts once permitted specific-account spending, whereas labels do not."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained added paragraph distinguishes both transaction directions with the accounts setting from incoming-only results without it and retains the accounts-versus-labels explanation. Typography differs from the suggestion, but the substantive requested documentation is present at the recorded merged head."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            },
+            {
+              "unit_id": "F02-S04",
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends documenting the empty-string change in the release notes, tentatively offering wording that describes empty-string label queries for unlabeled transactions as possible with `-deprecatedrpc=accounts` and describes an error without it, with backward compatibility and usefulness/confusion explanations.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The proposed wording is tentative (\"I think it'd be good\" and \"Maybe\"), not a binding requirement.",
+                "Backward compatibility qualifies empty-string label behavior when `-deprecatedrpc=accounts` is set; the label `\"\"` lists unlabeled transactions.",
+                "Without `-deprecatedrpc=accounts`, empty-string input is an error; the offered rationale is that unlabeled-only results are not very useful and can confuse."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports incorporating the reviewer's changes; the reviewer describes code simplification and release-note updates. These general reports apply to the broader contribution without resolving every local reply antecedent."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained, integrated paragraph demonstrates the focal action of documenting the empty-string change: both setting-dependent behaviors and the usefulness/confusion rationale are present. The offered wording was tentative (Maybe), and this observed-action classification does not claim verbatim implementation, adoption of the omitted explicit backward-compatibility rationale, or institutional recognition of that rationale. The separate unresolved record preserves the limit on the complete wording."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The proposed paragraph explicitly invokes backward compatibility; the retained paragraph does not state that phrase. It is unresolved whether contributors adopted that rationale implicitly or intentionally omitted it. This record concerns the full suggested formulation, while the separately observed application concerns the document-the-change action. No exact implementation of every qualifier is asserted."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F02_v04_r2",
+          "units": [
+            {
+              "unit_id": "S02",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends using the RPC spelling listtransactions, including the final s, in the release notes.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The requested spelling includes the final s."
+              ],
+              "application": [
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The integrated release-notes artifact uses listtransactions, including the final s. This establishes the resulting spelling, not the exact earlier typo or a particular reply pairing. The patch is retained at the head revision that matches the recorded merged commit."
+                },
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports a PR update and the reviewer identifies release-notes updates since the previous review. These reports do not individually itemize this edit."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "unresolved",
+                  "rationale": "A repair is reported, but the precise repaired item is not recoverable from fixed alone."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            },
+            {
+              "unit_id": "S03",
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 94,
+                "end": 531,
+                "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky hypothetically proposes changing the release-notes paragraph to distinguish listtransactions behavior with and without -deprecatedrpc=accounts: both outgoing and incoming transactions with the setting, only incoming transactions without it, with the account-versus-label explanation.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "Both behaviors coexist in the same release, motivating the clarification.",
+                "With -deprecatedrpc=accounts, the label/account/dummy argument returns outgoing and incoming transactions; without it, only incoming transactions.",
+                "The proposed explanation contrasts past spending from specific accounts with the absence of this feature for labels.",
+                "The conditional I'd and maybe make the proposed replacement tentative; they do not commit the speaker to perform the edit."
+              ],
+              "application": [
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The integrated release-notes paragraph makes the requested two-setting distinction and preserves the account/label explanation. It is not a verbatim reproduction of the suggested Markdown. The patch is retained at the head revision that matches the recorded merged commit."
+                },
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports a PR update and the reviewer identifies release-notes updates since the previous review. These reports do not individually itemize this edit."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            },
+            {
+              "unit_id": "S05",
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends documenting the empty-string change: when -deprecatedrpc=accounts is set, an empty string selects unlabeled transactions for backward compatibility; without it, empty string is an error, with the stated usefulness and confusion rationale.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "Backward compatibility when -deprecatedrpc=accounts is set: empty string selects unlabeled transactions.",
+                "Without -deprecatedrpc=accounts, empty string is an error; the offered rationale is low usefulness and potential confusion.",
+                "Maybe marks the offered wording as tentative."
+              ],
+              "application": [
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The integrated release notes document the requested empty-string distinction and the usefulness/confusion rationale, with modest wording changes. The patch is retained at the head revision that matches the recorded merged commit. The final paragraph omits the explicit for backwards compatibility phrase from the proposed wording. Observed application is limited to the documented flag-dependent behavior and usefulness/confusion rationale, not verbatim adoption of every offered phrase."
+                },
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports a PR update and the reviewer identifies release-notes updates since the previous review. These reports do not individually itemize this edit."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "observed"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F02_v04_r1",
+          "units": [
+            {
+              "unit_id": "F02_S01",
+              "source_id": "pr14441:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 38,
+                "quote": "Should be `listtransactions` with `s`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends correcting the release-note RPC name in this PR to `listtransactions`, including the final `s`; the addressed editor is contextually inferred to be jnewbery.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "Use the complete identifier `listtransactions`, including its final s, not a shortened or singular identifier."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "this_proposition",
+                  "rationale": "The author's aggregate update report, corroborated by the reviewer's release-note update report, contextually includes this suggestion. Specific reply threading remains unavailable."
+                },
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The retained release-note artifact contains the requested complete identifier and its head is the recorded merge commit. However, the supplied review has no line number or pre-update paragraph, so the exact typo occurrence and correction operation cannot be independently matched. This is artifact consistency with the request, while exact observed application remains unresolved; the separate aggregate participant report is retained."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "reported"
+              }
+            },
+            {
+              "unit_id": "F02_S02",
+              "source_id": "pr14441:review_comments:1",
+              "span": {
+                "start": 94,
+                "end": 531,
+                "quote": "I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky tentatively recommends that the PR editor replace the release-note paragraph with wording explaining both behaviors in the same release: with `-deprecatedrpc=accounts`, a label/account/dummy argument returns outgoing and incoming transactions; without that setting it returns incoming transactions only, with the stated account-versus-label rationale.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The proposed edit is tentative: I'd maybe change it.",
+                "The criticism concerns a paragraph describing both behaviors present in the same release; this motivates wording, rather than making the edit conditional on a future release.",
+                "The exact drafted replacement preserves the setting-dependent return types and the explanation that spending from specific accounts used to be possible but is no longer possible with labels."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "this_proposition",
+                  "rationale": "The author's aggregate update report, corroborated by the reviewer's release-note update report, contextually includes this suggestion. Specific reply threading remains unavailable."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained release-note paragraph preserves the recommended setting distinction, return categories, and account-versus-label rationale, with minor formatting changes. The same retained head and merge commit identify integration into this PR's repository target. This verifies the resulting edit, not the reason for adoption or network deployment."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "both"
+              }
+            },
+            {
+              "unit_id": "F02_S04",
+              "source_id": "pr14441:review_comments:3",
+              "span": {
+                "start": 0,
+                "end": 414,
+                "quote": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "ryanofsky recommends documenting the empty-string change in this PR's release notes and offers tentative wording: for backward compatibility with `-deprecatedrpc=accounts`, an empty string label lists unlabeled transactions; without the setting it is an error, with limited usefulness and possible confusion offered as the rationale.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/14441"
+              },
+              "qualifier_descriptions": [
+                "The following paragraph is offered as tentative wording (Maybe), not an independently binding behavioral prescription.",
+                "The drafted content distinguishes enabled and disabled `-deprecatedrpc=accounts`, preserves backward compatibility and the empty-string label, and includes the attributed usefulness/confusion explanation.",
+                "The focal activity is documenting a technical change; possible to pass describes RPC behavior, not institutional permission."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "this_proposition",
+                  "rationale": "The author's aggregate update report, corroborated by the reviewer's release-note update report, contextually includes this suggestion. Specific reply threading remains unavailable."
+                },
+                {
+                  "status": "observed",
+                  "target": "this_proposition",
+                  "rationale": "The retained release-note paragraph supplies the requested documentation of empty-string behavior with and without the setting and the usefulness/confusion explanation. The proposed phrase for backwards compatibility is not reproduced, so this is observed implementation of the focal documentation request, not verbatim adoption of every offered phrase or an independently established compatibility rationale. Matching retained-head and merge-commit metadata supports repository integration; no causal or network-adoption claim follows."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "both"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q035",
+      "title": "The rebase report names master but not #26589.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Both reviewers preserve the reported rebase and the unverified #26589 condition. A report can correspond to the action without verifying the complete qualified request. The target convention is unresolved; an unqualified fulfillment claim is not adopted.",
+      "resolution": "Retain a reported rebase of this PR and unresolved fulfillment of after #26589 as separate claims. Prefer broader/unresolved target for the complete conditional proposition, or explicitly mark partial action correspondence. Do not turn the report into verified dependency satisfaction.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 17,
+            "quote": "Rebased on master"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 153,
+            "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:13",
+          "span": {
+            "start": 0,
+            "end": 40,
+            "quote": "Rebased on master and updated to v24.0.1"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Assigned guides, recognition/disposition scope and preservation of material conditions; guide_1.txt line 116 requires trigger/provision connection for observed application. guide_2.txt lines 80-84 distinguish reported action from verified implementation.",
+        "guide_2 requires material qualifications to survive, distinguishes reported implementation from verification, and requires event target scope. It does not specify a separate partial-implementation target or exactly how incomplete reported fulfillment maps to this_proposition."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C03",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors asks for this PR to be rebased after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "After #26589 qualifies timing without establishing that proposal was merged."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "Rebase reported, but #26589 relation absent."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S09",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The current PR is said to need a rebase after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Meanwhile keeps this maintenance request compatible with holding off on integration."
+              ],
+              "application": [
+                {
+                  "status": "reported",
+                  "target": "broader_proposal",
+                  "rationale": "The author reports a rebase on master. The report does not name #26589, so the specific after-#26589 dependency is not verified."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "unresolved",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U08",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors says this PR needs a rebase after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The rebase is proposed meanwhile, while the inclusion decision remains delayed."
+              ],
+              "application": [
+                {
+                  "status": "unresolved",
+                  "target": "this_proposition",
+                  "rationale": "The author reports a rebase on master, but application of the full after-#26589 proposition is unresolved because the specified preceding event is not supplied."
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "unresolved"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr14441:comments:0",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "Thanks for the review @ryanofsky! I've updated the PR with your changes."
+    },
+    {
+      "source_id": "pr14441:review_comments:0",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "Should be `listtransactions` with `s`."
+    },
+    {
+      "source_id": "pr14441:review_comments:1",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "This paragraph doesn't really make sense when both behaviors are present in the same release. I'd maybe change it to:\r\n\r\n> When bitcoin is configured with the `-deprecatedrpc=accounts` setting,\r\n> specifying a `label`/`account`/`dummy` argument will return both outgoing and\r\n> incoming transactions. Without the `-deprecatedrpc=accounts` setting, it will\r\n> only return incoming transactions (because it used to be possible to create\r\n> transactions spending from specific accounts, but this is no longer possible\r\n> with labels)."
+    },
+    {
+      "source_id": "pr14441:review_comments:3",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "I think it'd be good to document the empty string change. Maybe:\r\n\r\n> Also for backwards compatibility when `-deprecatedrpc=accounts` is set, it's\r\n> possible to pass an empty string label `\"\"` to list transactions that aren't\r\n> labeled. Without `-deprecatedrpc=accounts`, passing the empty string is an\r\n> error because returning only non-labeled transactions isn't actually very\r\n> useful, and can be confusing."
+    },
+    {
+      "source_id": "pr14441:review_comments:4",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "Both are good changes. Thanks!"
+    },
+    {
+      "source_id": "pr14441:review_comments:5",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "fixed"
+    },
+    {
+      "source_id": "pr14441:reviews:4",
+      "kind": "reviews",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/14441",
+      "text": "utACK 89306ab0df93bfdf5630910bc20b1eccb7379172. Only changes since last review were code simplification and release notes updates suggested above."
+    },
+    {
+      "source_id": "pr26586:comments:13",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+    },
+    {
+      "source_id": "pr26586:comments:2",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Sounds good to hold off a bit. Meanwhile it needs a rebase after #26589.\r\n\r\nI like how small this commit could be now that `test/get_previous_releases.py -b` automatically fetches all available versions."
+    }
+  ]
+}

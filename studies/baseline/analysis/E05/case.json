@@ -1,0 +1,69 @@
+{
+  "episode_id": "E05",
+  "pr_number": 17685,
+  "label": "Hash reminder and response",
+  "mechanism": "review_coordination",
+  "initiation": "A reviewer posts a bare ACK.",
+  "outcome": "A request to identify the reviewed version receives acknowledgment and a separate hash-specific ACK.",
+  "alternative_explanation": "The author may be accommodating a helpful request; universal recognition or enforcement is not measured.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "operational",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Review attribution under an existing documented convention.",
+  "claim_ids": [
+    "E05-C1",
+    "E05-C2",
+    "E05-C3",
+    "E05-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E05:doc_before",
+      "span": {
+        "start": 11762,
+        "end": 11926,
+        "quote": "starting with `ACK BRANCH_COMMIT`, where `BRANCH_COMMIT` is the top of the\ntopic branch. The review is followed by a description of how the reviewer did\nthe review."
+      }
+    },
+    {
+      "source_id": "E05:comments:1",
+      "span": {
+        "start": 30,
+        "end": 135,
+        "quote": "Don't forget to include the commit hash after your ACK to specify which version of the PR you are ACK:ing"
+      }
+    },
+    {
+      "source_id": "E05:comments:2",
+      "span": {
+        "start": 0,
+        "end": 48,
+        "quote": "@practicalswift got it. Thanks for the patience."
+      }
+    },
+    {
+      "source_id": "E05:comments:2",
+      "span": {
+        "start": 53,
+        "end": 97,
+        "quote": "ACK 6338c0203416a5f86e9422b6cd479da8af277f2f"
+      }
+    },
+    {
+      "source_id": "E05:body",
+      "span": {
+        "start": 404,
+        "end": 455,
+        "quote": "requires an initialized `secp256k1_context_verify`."
+      }
+    },
+    {
+      "source_id": "E05:body",
+      "span": {
+        "start": 459,
+        "end": 533,
+        "quote": "The fuzzing harness did not fulfil that pre-condition prior to this commit"
+      }
+    }
+  ]
+}

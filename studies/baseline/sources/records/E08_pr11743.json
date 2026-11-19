@@ -1,0 +1,98 @@
+{
+  "number": 11743,
+  "title": "qa: Add multiwallet prefix test",
+  "body": "Fixes https://github.com/bitcoin/bitcoin/pull/10849#discussion_r127847938",
+  "state": "closed",
+  "created_at": "2017-11-21T13:52:31+00:00",
+  "updated_at": "2021-09-08T12:04:38+00:00",
+  "closed_at": "2017-11-22T16:34:02+00:00",
+  "merged_at": "2017-11-22T16:34:02+00:00",
+  "author": "maflcko",
+  "author_id": 6399679,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Tests"
+  ],
+  "milestone": null,
+  "merged_by": "maflcko",
+  "merged_by_id": 6399679,
+  "comments": [
+    {
+      "body": "Tested ACK fa61c6f6a6fda3e68f3f84d27bcc996af861bcfd",
+      "author": "jnewbery",
+      "created_at": "2017-11-21T15:24:24+00:00"
+    },
+    {
+      "body": "Could rename `w3` to `w`? Why make the test slower?",
+      "author": "promag",
+      "created_at": "2017-11-21T15:41:16+00:00"
+    },
+    {
+      "body": "> Why make the test slower?\r\n\r\n?",
+      "author": "sipa",
+      "created_at": "2017-11-22T02:47:53+00:00"
+    },
+    {
+      "body": "Come on, I think I made a valid point, and if it wasn't clear at least give a chance to explain. Beside it only had one ACK. Test code should follow the same review rules as the other right?\r\n\r\nMy point is that renaming w3 to w would be enough, or am I wrong? It is slower in the sense that at least more RPC calls are (unnecessarily) made.",
+      "author": "promag",
+      "created_at": "2017-11-22T17:28:08+00:00"
+    },
+    {
+      "body": "Yes, you are right that renaming w3 to w achieves the goal in a different way. However, I don't think we should be counting the number of rpc calls, when optimizing the functional test suite for speed. Especially, since some calls like `getwalletinfo` or `getnewaddress` are trivial computationally wise.\r\n\r\nI'd understand your concern in case, let's say, we called `generate(100)` or added a new node to the topology (thus having to wait for startup, chain sync and shutdown).\r\n\r\nRe: Review on test pulls.\r\nIn the past there have been many test pulls sitting for months, not gaining any review (e.g. #11182, #10711, #10099). Instead, their author had to rebase every couple of weeks. To be fair those pulls were more involved than this one. And for rather simple pulls, such as this one, I try to merge quickly. Two utACK or one tested ACK should be sufficient. Again, your feedback was not ignored, but I didn't consider it critical to hold up the merge. If I changed the pull to address your feedback, review needed to be start all over again, equivalent to creating a new pull request. Personally, I don't think that would be worth it. Though, if you feel strongly about the feedback, you are very welcome to create a patch for it and submit it for review.",
+      "author": "maflcko",
+      "created_at": "2017-11-22T17:58:54+00:00"
+    },
+    {
+      "body": "@MarcoFalke really appreciate the reply.",
+      "author": "promag",
+      "created_at": "2017-11-22T18:31:36+00:00"
+    },
+    {
+      "body": "It tests that a RPC to wallet w doesn't hit wallet w1 for instance.",
+      "author": "promag",
+      "created_at": "2017-11-22T18:44:56+00:00"
+    },
+    {
+      "body": "@ryanofsky As I understand, the potential bug is that a call to \"w\" matches any of \"w1\", \"w2\", ... , because the one wallets' name is a prefix of another wallet. Alternatively, a call to wallet \"w3\" will instead call to \"w\", because or logic might only compare up to the length of the shortest wallet file name.\r\n\r\nOverall this should be testing our \"endpoint-to-wallet\" method.",
+      "author": "maflcko",
+      "created_at": "2017-11-22T18:46:15+00:00"
+    },
+    {
+      "body": "Oops, didn't realize this was already merged. Guess I will add the comment myself in #11687.",
+      "author": "ryanofsky",
+      "created_at": "2017-11-22T18:59:41+00:00"
+    },
+    {
+      "body": "@ryanofsky Jup, thanks for doing that. I should have done it in this pull.",
+      "author": "maflcko",
+      "created_at": "2017-11-22T19:07:12+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "I don't understand what this is testing. What exactly is a \"length extension bug\" in this context? Either of the changes discussed seems fine but I think should definitely be accompanied by a comment explaining precisely what bug (or type of bug) the \"w\" test case is intended to catch so coverage is not lost in the future.\r\n\r\nNote that #11687 also makes significant changes to this test and renames some of the wallets.",
+      "author": "ryanofsky",
+      "submitted_at": "2017-11-22T18:37:36+00:00"
+    }
+  ],
+  "review_comments": [],
+  "files": [
+    {
+      "filename": "test/functional/multiwallet.py",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 1,
+  "total_comments": 10,
+  "total_reviews": 1,
+  "total_files_changed": 1,
+  "total_additions": 8,
+  "total_deletions": 3
+}

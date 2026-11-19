@@ -1,0 +1,45 @@
+{
+  "run_id": "F01_v04_r3",
+  "completed_at_utc": "2026-11-07T19:07:23.288478+00:00",
+  "status": "complete_with_documented_checker_compatibility_limit",
+  "entries": 42,
+  "focal_entries": 23,
+  "units": 53,
+  "statement_units": 30,
+  "record_roles": {
+    "statement": 30,
+    "context": 15,
+    "quotation": 8
+  },
+  "relations": 34,
+  "outcomes": 4,
+  "mechanisms": 4,
+  "repair_log_entries": 26,
+  "checker_status": "fail",
+  "remaining_checker_errors": [
+    {
+      "code": "revision",
+      "unit_id": "R09",
+      "message": "Pinned revision claim lacks supplied revision identity"
+    }
+  ],
+  "final_review_flags_addressed": 184,
+  "first_complete_unchanged": true,
+  "original_inputs_unchanged": true,
+  "source_review_rounds": 1,
+  "files": {
+    "annotation.first_complete.json": "b152da76d19ffa83359d8fd534839aea62cc100d46a5c44042bd9ef41bad4172",
+    "annotation.json": "a183d5dcf47fdbb55b851edd4bc726c74ca134f042b920edd92c9033167580f5",
+    "annotation.final.json": "a183d5dcf47fdbb55b851edd4bc726c74ca134f042b920edd92c9033167580f5",
+    "checks.first.json": "5b84bc2aee1534d29a163575354f82bd3b58dd3ca862d1331e17d13ed2a640a3",
+    "checks.mechanical_01.json": "410bdb5a1a3dd4f94e0c360dcd7465c73ee498d7c668509483d4da9e5e56bb70",
+    "checks.final_attempt_01.json": "f45bec4d0f067ee258c90d5651a39ab59078563b1d83ff7b750cfab126cba67d",
+    "checks.source_review_01.json": "42c12057d5dfccac487985bfa3a397cc064860ce6053e12cd417dcc41a81ddbd",
+    "checks.json": "42c12057d5dfccac487985bfa3a397cc064860ce6053e12cd417dcc41a81ddbd",
+    "repair_log.json": "c252d593ee5028df1f6f553593052d83897cf4e9e165dab38de43a78bf850754",
+    "review_notes.json": "1fa4ee0df427f82f575dc719dbbe381bc215036d5516ec8f12eda1b5c5e85511",
+    "access_record.json": "b0d13c34cc3f8d2bd436c0b100e3784eb3b1be70e5c62f8c700b1147688eef67",
+    "input_integrity_check.json": "0154c04d5338156a8f643d96e83ee41e84d80226790b220391019b52df99fd48",
+    "first_complete_manifest.json": "548f1e61ed68216916bff45734fc87cecea4d70f1d878ed44b2a239d06681e0e"
+  }
+}

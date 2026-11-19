@@ -1,0 +1,160 @@
+{
+  "number": 23798,
+  "title": "contrib: add achow101 to trusted keys",
+  "body": "For maintaining the wallet and psbt things",
+  "state": "closed",
+  "created_at": "2021-12-16T19:53:51+00:00",
+  "updated_at": "2022-12-20T10:03:57+00:00",
+  "closed_at": "2021-12-20T06:58:55+00:00",
+  "merged_at": "2021-12-20T06:58:55+00:00",
+  "author": "achow101",
+  "author_id": 3782274,
+  "draft": false,
+  "mergeable": null,
+  "merged": true,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Scripts and tools"
+  ],
+  "milestone": null,
+  "merged_by": "fanquake",
+  "merged_by_id": 863730,
+  "comments": [
+    {
+      "body": "Concept/approach ACK",
+      "author": "jonatack",
+      "created_at": "2021-12-16T20:05:50+00:00"
+    },
+    {
+      "body": "Concept ACK. Matches the key I have:\r\n```\r\npub   rsa4096/0x17565732E08E5E41 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\n```",
+      "author": "laanwj",
+      "created_at": "2021-12-16T20:12:35+00:00"
+    },
+    {
+      "body": "ACK on having achow101 as wallet maintainer.",
+      "author": "0xB10C",
+      "created_at": "2021-12-16T20:25:19+00:00"
+    },
+    {
+      "body": "Concept ACK (but please don't remove BDB support any time soon :p)",
+      "author": "luke-jr",
+      "created_at": "2021-12-17T03:54:48+00:00"
+    },
+    {
+      "body": "ACK on achow101 being wallet maintainer",
+      "author": "S3RK",
+      "created_at": "2021-12-17T07:24:00+00:00"
+    },
+    {
+      "body": "ACK (but please remove BDB asap, thx)",
+      "author": "maflcko",
+      "created_at": "2021-12-17T07:48:40+00:00"
+    },
+    {
+      "body": "Concept ACK.\r\n\r\nKey matches key in contrib/builder-keys/keys.txt. I don't expect achow to treat BDB removal particularly differently to any other (wallet-related) PR...",
+      "author": "ajtowns",
+      "created_at": "2021-12-17T08:59:25+00:00"
+    },
+    {
+      "body": "concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "author": "glozow",
+      "created_at": "2021-12-17T11:12:39+00:00"
+    },
+    {
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\n(conditional on bringing BDB back as a first class citizen)\r\n\r\n(Joke. Congrats, well deserved)",
+      "author": "michaelfolkson",
+      "created_at": "2021-12-17T12:49:02+00:00"
+    },
+    {
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nCongratulations.",
+      "author": "kiminuo",
+      "created_at": "2021-12-17T15:03:04+00:00"
+    },
+    {
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "author": "jb55",
+      "created_at": "2021-12-17T23:25:54+00:00"
+    },
+    {
+      "body": "ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008",
+      "author": "gruve-p",
+      "created_at": "2021-12-19T15:38:27+00:00"
+    },
+    {
+      "body": "Congratulations @achow101  🎉 ",
+      "author": "meshcollider",
+      "created_at": "2021-12-20T07:09:59+00:00"
+    },
+    {
+      "body": "Posthumous ACK 33b511251acbd0ed802a8843361c7dc8d1512008. The key matches the one I have in my keyring.",
+      "author": "sipa",
+      "created_at": "2021-12-20T18:54:21+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "APPROVED",
+      "body": "ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nVerified the key with https://achow101.com/contact/",
+      "author": null,
+      "submitted_at": "2021-12-16T20:18:11+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nI've verified this key in person at previous coredevs, and achow101 is a very logical replacement in the role, now I no longer have time. Thanks for volunteering Andrew!",
+      "author": "meshcollider",
+      "submitted_at": "2021-12-16T22:35:42+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "Concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "author": "darosior",
+      "submitted_at": "2021-12-17T10:15:30+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nVerified the key with: https://achow101.com/contact/",
+      "author": "shaavan",
+      "submitted_at": "2021-12-17T10:38:46+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "ACK",
+      "author": "promag",
+      "submitted_at": "2021-12-17T15:47:40+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "author": "benthecarman",
+      "submitted_at": "2021-12-17T17:09:56+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\n```\r\n$ gpg --refresh-keys\r\n$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41\r\npub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\nuid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>\r\nuid           [ unknown] Andrew Chow <achow101@yahoo.com>\r\nuid           [ unknown] Andrew Chow <andrew@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-lists@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-github@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101@pm.me>\r\nuid           [ unknown] Andrew Chow <achow101@protonmail.com>\r\nsub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]\r\n\r\n```",
+      "author": "hebasto",
+      "submitted_at": "2021-12-17T18:42:31+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nAgree on having achow101 as wallet maintainer.\r\n\r\nVerified:\r\n```sh\r\n$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41\r\npub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\nuid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>\r\nuid           [ unknown] Andrew Chow <achow101-github@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-lists@achow101.com>\r\nuid           [ unknown] Andrew Chow <andrew@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101@yahoo.com>\r\nuid           [ unknown] Andrew Chow <achow101@pm.me>\r\nuid           [ unknown] Andrew Chow <achow101@protonmail.com>\r\nsub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]\r\n\r\n```",
+      "author": "Zero-1729",
+      "submitted_at": "2021-12-17T18:48:38+00:00"
+    }
+  ],
+  "review_comments": [],
+  "files": [
+    {
+      "filename": "contrib/verify-commits/trusted-keys",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "status": "modified"
+    }
+  ],
+  "time_to_merge_days": 3,
+  "total_comments": 14,
+  "total_reviews": 8,
+  "total_files_changed": 1,
+  "total_additions": 1,
+  "total_deletions": 0
+}

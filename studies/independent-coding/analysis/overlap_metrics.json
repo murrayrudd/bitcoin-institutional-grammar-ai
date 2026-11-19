@@ -1,0 +1,1002 @@
+{
+  "interpretation": "Descriptive agreement conditional on one-to-one semantic matches, before source reconciliation. Not accuracy. Repeated units and three episodes are not independent population observations.",
+  "masking": "Version/run identities and direct classification labels withheld from aligner; components and explicit proposition summaries can reveal conventions.",
+  "fields": [
+    "grammar",
+    "deontic_force",
+    "institutional_type",
+    "statement_target_level",
+    "observed_action_level",
+    "dispute_present"
+  ],
+  "cases": [
+    {
+      "episode_id": "F01",
+      "alignment_groups": 33,
+      "group_statuses": {
+        "one_to_one": 30,
+        "split_combined": 2,
+        "unmatched": 1
+      },
+      "conditions": [
+        {
+          "condition": "v03",
+          "runs": [
+            "F01_v03_r1",
+            "F01_v03_r2",
+            "F01_v03_r3"
+          ],
+          "focal_screening_unanimous": 22,
+          "focal_screening_denominator": 23,
+          "statement_counts": [
+            31,
+            31,
+            33
+          ],
+          "exact_span_triple_matches": 23,
+          "semantic_triple_matches": 28,
+          "semantic_group_ids": [
+            "F01-G002",
+            "F01-G003",
+            "F01-G004",
+            "F01-G005",
+            "F01-G006",
+            "F01-G007",
+            "F01-G008",
+            "F01-G009",
+            "F01-G010",
+            "F01-G011",
+            "F01-G012",
+            "F01-G013",
+            "F01-G014",
+            "F01-G015",
+            "F01-G016",
+            "F01-G018",
+            "F01-G019",
+            "F01-G020",
+            "F01-G023",
+            "F01-G024",
+            "F01-G025",
+            "F01-G026",
+            "F01-G027",
+            "F01-G028",
+            "F01-G030",
+            "F01-G031",
+            "F01-G032",
+            "F01-G033"
+          ],
+          "excluded_groups": [
+            {
+              "group_id": "F01-G001",
+              "status": "one_to_one",
+              "member_counts": {
+                "R17": 0,
+                "R01": 1,
+                "R09": 1
+              }
+            },
+            {
+              "group_id": "F01-G017",
+              "status": "unmatched",
+              "member_counts": {
+                "R17": 0,
+                "R01": 0,
+                "R09": 1
+              }
+            },
+            {
+              "group_id": "F01-G021",
+              "status": "one_to_one",
+              "member_counts": {
+                "R17": 1,
+                "R01": 0,
+                "R09": 1
+              }
+            },
+            {
+              "group_id": "F01-G022",
+              "status": "split_combined",
+              "member_counts": {
+                "R17": 2,
+                "R01": 2,
+                "R09": 2
+              }
+            }
+          ],
+          "field_unanimous": {
+            "grammar": 27,
+            "deontic_force": 23,
+            "institutional_type": 21,
+            "statement_target_level": 21,
+            "observed_action_level": 23,
+            "dispute_present": 28
+          },
+          "field_denominator": 28,
+          "all_six_fields_unanimous": 12,
+          "common_all_six_field_denominator": 27,
+          "common_all_six_field_unanimous": {
+            "grammar": 26,
+            "deontic_force": 22,
+            "institutional_type": 20,
+            "statement_target_level": 20,
+            "observed_action_level": 22,
+            "dispute_present": 27
+          }
+        },
+        {
+          "condition": "v04",
+          "runs": [
+            "F01_v04_r1",
+            "F01_v04_r2",
+            "F01_v04_r3"
+          ],
+          "focal_screening_unanimous": 22,
+          "focal_screening_denominator": 23,
+          "statement_counts": [
+            34,
+            33,
+            30
+          ],
+          "exact_span_triple_matches": 22,
+          "semantic_triple_matches": 28,
+          "semantic_group_ids": [
+            "F01-G001",
+            "F01-G003",
+            "F01-G004",
+            "F01-G005",
+            "F01-G006",
+            "F01-G007",
+            "F01-G008",
+            "F01-G009",
+            "F01-G010",
+            "F01-G011",
+            "F01-G012",
+            "F01-G013",
+            "F01-G014",
+            "F01-G015",
+            "F01-G016",
+            "F01-G018",
+            "F01-G019",
+            "F01-G020",
+            "F01-G023",
+            "F01-G024",
+            "F01-G025",
+            "F01-G026",
+            "F01-G027",
+            "F01-G028",
+            "F01-G030",
+            "F01-G031",
+            "F01-G032",
+            "F01-G033"
+          ],
+          "excluded_groups": [
+            {
+              "group_id": "F01-G002",
+              "status": "split_combined",
+              "member_counts": {
+                "R04": 2,
+                "R10": 1,
+                "R03": 1
+              }
+            },
+            {
+              "group_id": "F01-G021",
+              "status": "one_to_one",
+              "member_counts": {
+                "R04": 1,
+                "R10": 1,
+                "R03": 0
+              }
+            },
+            {
+              "group_id": "F01-G022",
+              "status": "split_combined",
+              "member_counts": {
+                "R04": 2,
+                "R10": 2,
+                "R03": 1
+              }
+            },
+            {
+              "group_id": "F01-G029",
+              "status": "one_to_one",
+              "member_counts": {
+                "R04": 1,
+                "R10": 1,
+                "R03": 0
+              }
+            }
+          ],
+          "field_unanimous": {
+            "grammar": 27,
+            "deontic_force": 24,
+            "institutional_type": 17,
+            "statement_target_level": 19,
+            "observed_action_level": 21,
+            "dispute_present": 25
+          },
+          "field_denominator": 28,
+          "all_six_fields_unanimous": 10,
+          "common_all_six_field_denominator": 27,
+          "common_all_six_field_unanimous": {
+            "grammar": 26,
+            "deontic_force": 24,
+            "institutional_type": 17,
+            "statement_target_level": 18,
+            "observed_action_level": 20,
+            "dispute_present": 25
+          }
+        }
+      ],
+      "common_all_six_group_ids": [
+        "F01-G003",
+        "F01-G004",
+        "F01-G005",
+        "F01-G006",
+        "F01-G007",
+        "F01-G008",
+        "F01-G009",
+        "F01-G010",
+        "F01-G011",
+        "F01-G012",
+        "F01-G013",
+        "F01-G014",
+        "F01-G015",
+        "F01-G016",
+        "F01-G018",
+        "F01-G019",
+        "F01-G020",
+        "F01-G023",
+        "F01-G024",
+        "F01-G025",
+        "F01-G026",
+        "F01-G027",
+        "F01-G028",
+        "F01-G030",
+        "F01-G031",
+        "F01-G032",
+        "F01-G033"
+      ]
+    },
+    {
+      "episode_id": "F02",
+      "alignment_groups": 5,
+      "group_statuses": {
+        "unmatched": 1,
+        "one_to_one": 4
+      },
+      "conditions": [
+        {
+          "condition": "v03",
+          "runs": [
+            "F02_v03_r1",
+            "F02_v03_r2",
+            "F02_v03_r3"
+          ],
+          "focal_screening_unanimous": 16,
+          "focal_screening_denominator": 16,
+          "statement_counts": [
+            4,
+            4,
+            4
+          ],
+          "exact_span_triple_matches": 4,
+          "semantic_triple_matches": 4,
+          "semantic_group_ids": [
+            "F02-G002",
+            "F02-G003",
+            "F02-G004",
+            "F02-G005"
+          ],
+          "excluded_groups": [],
+          "field_unanimous": {
+            "grammar": 4,
+            "deontic_force": 4,
+            "institutional_type": 4,
+            "statement_target_level": 4,
+            "observed_action_level": 4,
+            "dispute_present": 4
+          },
+          "field_denominator": 4,
+          "all_six_fields_unanimous": 4,
+          "common_all_six_field_denominator": 4,
+          "common_all_six_field_unanimous": {
+            "grammar": 4,
+            "deontic_force": 4,
+            "institutional_type": 4,
+            "statement_target_level": 4,
+            "observed_action_level": 4,
+            "dispute_present": 4
+          }
+        },
+        {
+          "condition": "v04",
+          "runs": [
+            "F02_v04_r1",
+            "F02_v04_r2",
+            "F02_v04_r3"
+          ],
+          "focal_screening_unanimous": 15,
+          "focal_screening_denominator": 16,
+          "statement_counts": [
+            4,
+            5,
+            4
+          ],
+          "exact_span_triple_matches": 4,
+          "semantic_triple_matches": 4,
+          "semantic_group_ids": [
+            "F02-G002",
+            "F02-G003",
+            "F02-G004",
+            "F02-G005"
+          ],
+          "excluded_groups": [
+            {
+              "group_id": "F02-G001",
+              "status": "unmatched",
+              "member_counts": {
+                "R14": 0,
+                "R08": 1,
+                "R06": 0
+              }
+            }
+          ],
+          "field_unanimous": {
+            "grammar": 4,
+            "deontic_force": 4,
+            "institutional_type": 4,
+            "statement_target_level": 4,
+            "observed_action_level": 4,
+            "dispute_present": 4
+          },
+          "field_denominator": 4,
+          "all_six_fields_unanimous": 4,
+          "common_all_six_field_denominator": 4,
+          "common_all_six_field_unanimous": {
+            "grammar": 4,
+            "deontic_force": 4,
+            "institutional_type": 4,
+            "statement_target_level": 4,
+            "observed_action_level": 4,
+            "dispute_present": 4
+          }
+        }
+      ],
+      "common_all_six_group_ids": [
+        "F02-G002",
+        "F02-G003",
+        "F02-G004",
+        "F02-G005"
+      ]
+    },
+    {
+      "episode_id": "F03",
+      "alignment_groups": 18,
+      "group_statuses": {
+        "one_to_one": 14,
+        "unmatched": 2,
+        "split_combined": 2
+      },
+      "conditions": [
+        {
+          "condition": "v03",
+          "runs": [
+            "F03_v03_r1",
+            "F03_v03_r2",
+            "F03_v03_r3"
+          ],
+          "focal_screening_unanimous": 10,
+          "focal_screening_denominator": 10,
+          "statement_counts": [
+            16,
+            16,
+            16
+          ],
+          "exact_span_triple_matches": 13,
+          "semantic_triple_matches": 14,
+          "semantic_group_ids": [
+            "F03-G002",
+            "F03-G004",
+            "F03-G005",
+            "F03-G007",
+            "F03-G008",
+            "F03-G009",
+            "F03-G011",
+            "F03-G012",
+            "F03-G013",
+            "F03-G014",
+            "F03-G015",
+            "F03-G016",
+            "F03-G017",
+            "F03-G018"
+          ],
+          "excluded_groups": [
+            {
+              "group_id": "F03-G001",
+              "status": "one_to_one",
+              "member_counts": {
+                "R02": 0,
+                "R18": 0,
+                "R07": 1
+              }
+            },
+            {
+              "group_id": "F03-G006",
+              "status": "split_combined",
+              "member_counts": {
+                "R02": 2,
+                "R18": 2,
+                "R07": 1
+              }
+            }
+          ],
+          "field_unanimous": {
+            "grammar": 14,
+            "deontic_force": 13,
+            "institutional_type": 13,
+            "statement_target_level": 14,
+            "observed_action_level": 14,
+            "dispute_present": 13
+          },
+          "field_denominator": 14,
+          "all_six_fields_unanimous": 12,
+          "common_all_six_field_denominator": 11,
+          "common_all_six_field_unanimous": {
+            "grammar": 11,
+            "deontic_force": 10,
+            "institutional_type": 10,
+            "statement_target_level": 11,
+            "observed_action_level": 11,
+            "dispute_present": 10
+          }
+        },
+        {
+          "condition": "v04",
+          "runs": [
+            "F03_v04_r1",
+            "F03_v04_r2",
+            "F03_v04_r3"
+          ],
+          "focal_screening_unanimous": 10,
+          "focal_screening_denominator": 10,
+          "statement_counts": [
+            15,
+            17,
+            17
+          ],
+          "exact_span_triple_matches": 10,
+          "semantic_triple_matches": 12,
+          "semantic_group_ids": [
+            "F03-G001",
+            "F03-G004",
+            "F03-G005",
+            "F03-G008",
+            "F03-G009",
+            "F03-G011",
+            "F03-G012",
+            "F03-G013",
+            "F03-G014",
+            "F03-G015",
+            "F03-G017",
+            "F03-G018"
+          ],
+          "excluded_groups": [
+            {
+              "group_id": "F03-G002",
+              "status": "one_to_one",
+              "member_counts": {
+                "R13": 0,
+                "R16": 1,
+                "R15": 1
+              }
+            },
+            {
+              "group_id": "F03-G003",
+              "status": "unmatched",
+              "member_counts": {
+                "R13": 0,
+                "R16": 0,
+                "R15": 1
+              }
+            },
+            {
+              "group_id": "F03-G006",
+              "status": "split_combined",
+              "member_counts": {
+                "R13": 2,
+                "R16": 2,
+                "R15": 1
+              }
+            },
+            {
+              "group_id": "F03-G010",
+              "status": "unmatched",
+              "member_counts": {
+                "R13": 0,
+                "R16": 0,
+                "R15": 1
+              }
+            },
+            {
+              "group_id": "F03-G016",
+              "status": "split_combined",
+              "member_counts": {
+                "R13": 1,
+                "R16": 2,
+                "R15": 1
+              }
+            }
+          ],
+          "field_unanimous": {
+            "grammar": 12,
+            "deontic_force": 10,
+            "institutional_type": 9,
+            "statement_target_level": 12,
+            "observed_action_level": 12,
+            "dispute_present": 11
+          },
+          "field_denominator": 12,
+          "all_six_fields_unanimous": 7,
+          "common_all_six_field_denominator": 11,
+          "common_all_six_field_unanimous": {
+            "grammar": 11,
+            "deontic_force": 10,
+            "institutional_type": 8,
+            "statement_target_level": 11,
+            "observed_action_level": 11,
+            "dispute_present": 11
+          }
+        }
+      ],
+      "common_all_six_group_ids": [
+        "F03-G004",
+        "F03-G005",
+        "F03-G008",
+        "F03-G009",
+        "F03-G011",
+        "F03-G012",
+        "F03-G013",
+        "F03-G014",
+        "F03-G015",
+        "F03-G017",
+        "F03-G018"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "F01_v03_r2",
+      "statement_units": 31,
+      "all_units": 63,
+      "first_units": 62,
+      "first_check_status": "fail",
+      "final_check_status": "pass",
+      "added_unit_ids": [
+        "wallet_support_reason"
+      ],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "explain24",
+        "host_regtest",
+        "need_rebase",
+        "remove23",
+        "b_method",
+        "developer_choice",
+        "occasionally_rebase"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v03_r1",
+      "statement_units": 16,
+      "all_units": 27,
+      "first_units": 27,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F03-U06",
+        "F03-U09",
+        "F03-U10"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F01_v04_r3",
+      "statement_units": 30,
+      "all_units": 53,
+      "first_units": 53,
+      "first_check_status": "fail",
+      "final_check_status": "fail",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "C17",
+        "C05",
+        "R09",
+        "C21",
+        "R05",
+        "C13",
+        "D01",
+        "R07",
+        "R06",
+        "C03",
+        "C06",
+        "B01",
+        "R01",
+        "C16",
+        "C11",
+        "C28",
+        "C09",
+        "C20"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F01_v04_r1",
+      "statement_units": 34,
+      "all_units": 60,
+      "first_units": 60,
+      "first_check_status": "fail",
+      "final_check_status": "fail",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "S10",
+        "S31",
+        "S25",
+        "S14",
+        "S19",
+        "S27",
+        "S33",
+        "S11",
+        "S22",
+        "S32",
+        "S05",
+        "S24",
+        "S28",
+        "S15",
+        "S34",
+        "S13",
+        "S04",
+        "S23",
+        "S18",
+        "S26",
+        "S12",
+        "S16",
+        "S02",
+        "S30",
+        "S07",
+        "S17"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v03_r3",
+      "statement_units": 4,
+      "all_units": 13,
+      "first_units": 13,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v04_r3",
+      "statement_units": 4,
+      "all_units": 12,
+      "first_units": 12,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F02-C06",
+        "F02-S04"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v03_r3",
+      "statement_units": 16,
+      "all_units": 23,
+      "first_units": 23,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F03-U07",
+        "F03-U11",
+        "F03-U02",
+        "F03-U06"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v04_r2",
+      "statement_units": 5,
+      "all_units": 15,
+      "first_units": 15,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "S03",
+        "S02",
+        "S05",
+        "S01",
+        "S04"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F01_v03_r3",
+      "statement_units": 33,
+      "all_units": 63,
+      "first_units": 61,
+      "first_check_status": "fail",
+      "final_check_status": "pass",
+      "added_unit_ids": [
+        "c04b",
+        "u33"
+      ],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "u09",
+        "u23",
+        "u10",
+        "q05",
+        "u29",
+        "u30",
+        "u24",
+        "u31",
+        "u06",
+        "q06",
+        "u16",
+        "q12",
+        "u01",
+        "u25",
+        "u26",
+        "q08",
+        "u13",
+        "q11",
+        "u08",
+        "u27",
+        "q02",
+        "q07",
+        "q09",
+        "q01",
+        "q03",
+        "q04",
+        "u07",
+        "q10",
+        "u15"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F01_v04_r2",
+      "statement_units": 33,
+      "all_units": 54,
+      "first_units": 54,
+      "first_check_status": "fail",
+      "final_check_status": "fail",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "Q05",
+        "U02",
+        "U15",
+        "U17",
+        "U29",
+        "Q04",
+        "Q02",
+        "Q07",
+        "U30",
+        "U01",
+        "Q03",
+        "U09",
+        "U10",
+        "U11",
+        "U16",
+        "Q06",
+        "U04",
+        "U22",
+        "U12",
+        "Q01",
+        "U13",
+        "U18",
+        "U08",
+        "U31",
+        "U25",
+        "Q08",
+        "U32",
+        "U21",
+        "U19",
+        "U33"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v03_r1",
+      "statement_units": 4,
+      "all_units": 13,
+      "first_units": 13,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F02-C07",
+        "F02-S02"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v03_r2",
+      "statement_units": 4,
+      "all_units": 15,
+      "first_units": 15,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "S02",
+        "S04"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v04_r1",
+      "statement_units": 15,
+      "all_units": 25,
+      "first_units": 25,
+      "first_check_status": "fail",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "U17",
+        "U09",
+        "U10",
+        "U16",
+        "U04",
+        "U22",
+        "U13",
+        "U18",
+        "U03"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F02_v04_r1",
+      "statement_units": 4,
+      "all_units": 13,
+      "first_units": 13,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F02_S03",
+        "F02_S02",
+        "F02_S01",
+        "F02_S04"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v04_r3",
+      "statement_units": 17,
+      "all_units": 26,
+      "first_units": 26,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F03-U08",
+        "F03-U15",
+        "F03-U19",
+        "F03-U25",
+        "F03-U01",
+        "F03-U17",
+        "F03-U02",
+        "F03-U04",
+        "F03-U21",
+        "F03-U20",
+        "F03-U06",
+        "F03-U09"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v04_r2",
+      "statement_units": 17,
+      "all_units": 28,
+      "first_units": 28,
+      "first_check_status": "fail",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "F03-U03",
+        "F03-U08",
+        "F03-U15",
+        "F03-U16",
+        "F03-U14",
+        "F03-U11",
+        "F03-U02",
+        "F03-U04",
+        "F03-U09",
+        "F03-U10",
+        "F03-U12"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F01_v03_r1",
+      "statement_units": 31,
+      "all_units": 58,
+      "first_units": 57,
+      "first_check_status": "fail",
+      "final_check_status": "pass",
+      "added_unit_ids": [
+        "C04c"
+      ],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "C02b",
+        "R02q",
+        "R02d",
+        "C10a",
+        "C04b",
+        "C11a",
+        "B03",
+        "C08q2",
+        "C13",
+        "R02b",
+        "C07q",
+        "D03",
+        "C03",
+        "C09b",
+        "C08q1",
+        "C15q1",
+        "C11b",
+        "C15q2",
+        "C05c",
+        "C09q",
+        "R00a",
+        "C06q1",
+        "C08a",
+        "C06q2",
+        "C04a"
+      ],
+      "first_final_identical": false
+    },
+    {
+      "run_id": "F03_v03_r2",
+      "statement_units": 16,
+      "all_units": 26,
+      "first_units": 26,
+      "first_check_status": "pass",
+      "final_check_status": "pass",
+      "added_unit_ids": [],
+      "removed_unit_ids": [],
+      "changed_existing_unit_ids": [
+        "U17",
+        "U06",
+        "U04",
+        "U07"
+      ],
+      "first_final_identical": false
+    }
+  ]
+}

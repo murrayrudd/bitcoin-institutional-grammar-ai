@@ -1,0 +1,179 @@
+{
+  "created_at_utc": "2026-11-07T19:45:44.792276+00:00",
+  "assigned_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment",
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/INSTRUCTIONS.txt",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/RUNTIME_NOTES.txt",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/output_format.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/dossier_index.json",
+      "access": "schema/administrative inventory read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/input_manifest.json",
+      "access": "integrity manifest read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F01_packet.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F01_dossier.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F02_packet.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F02_dossier.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F03_packet.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F03_dossier.json",
+      "access": "full substantive read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/annotations.json",
+      "access": "integrity hash only; contents not parsed or displayed"
+    }
+  ],
+  "execution_scope": {
+    "other_directories_inspected": false,
+    "other_review_outputs_inspected": false,
+    "condition_identities_sought_or_exposed": false,
+    "external_sources_used": false,
+    "browser_or_connector_access": false,
+    "delegation_or_new_model_calls": false,
+    "configuration": "Inherited configuration; no overrides or subagents.",
+    "runtime": "Python standard library and shell commands confined to the assigned working directory; no package installation."
+  },
+  "coverage": {
+    "case_order": [
+      "F02",
+      "F03",
+      "F01"
+    ],
+    "annotations": 18,
+    "statement_units": 314,
+    "packet_entries": 83,
+    "dossier_evidence_anchors_validated": 538,
+    "all_focal_units_assigned_exactly_once": true,
+    "components_alternatives_propositions_and_qualifiers_read": true,
+    "links_checked_for_alignment": true,
+    "classification_label_agreement_performed": false,
+    "source_correctness_audit_performed": false
+  },
+  "input_integrity": {
+    "F01_packet.json": {
+      "expected_sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+      "actual_sha256": "6f40f0f7409ceafa1f61a7be1433c82f1905edb4c278fe63399bbd96d011231d",
+      "unchanged": true
+    },
+    "INSTRUCTIONS.txt": {
+      "expected_sha256": "ca00f7aa34a4db0d4f64d46d1de5d602a398d2408276231a136d3c8c50a3318b",
+      "actual_sha256": "ca00f7aa34a4db0d4f64d46d1de5d602a398d2408276231a136d3c8c50a3318b",
+      "unchanged": true
+    },
+    "dossier_index.json": {
+      "expected_sha256": "ec0c8cfa4bc67665bfa527282987ceeb8dea4028450d4ea41127894e32f5367c",
+      "actual_sha256": "ec0c8cfa4bc67665bfa527282987ceeb8dea4028450d4ea41127894e32f5367c",
+      "unchanged": true
+    },
+    "F02_dossier.json": {
+      "expected_sha256": "aa7170c9ff9c45fb5ae04ea1ebdd0a67871993b0ad8f951a14df01ccaef9f728",
+      "actual_sha256": "aa7170c9ff9c45fb5ae04ea1ebdd0a67871993b0ad8f951a14df01ccaef9f728",
+      "unchanged": true
+    },
+    "F03_packet.json": {
+      "expected_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "actual_sha256": "422d49343dcb353e8a0f76bf74f0940cde6a73ddc1ae07d8d884a1059ddfd1c7",
+      "unchanged": true
+    },
+    "annotations.json": {
+      "expected_sha256": "9f90571e4ccfc540e49fda86768e3726629bb371d0d9a76a959e11e940f056a7",
+      "actual_sha256": "9f90571e4ccfc540e49fda86768e3726629bb371d0d9a76a959e11e940f056a7",
+      "unchanged": true
+    },
+    "RUNTIME_NOTES.txt": {
+      "expected_sha256": "61fd8ece2977aab2d6fcfdc31748457249e863af78b9b17b1a13228e488a98c4",
+      "actual_sha256": "61fd8ece2977aab2d6fcfdc31748457249e863af78b9b17b1a13228e488a98c4",
+      "unchanged": true
+    },
+    "F01_dossier.json": {
+      "expected_sha256": "16b369e12b44a37bf1ee73cbe388a2cab5d2bead017006aff02107f9cf698c40",
+      "actual_sha256": "16b369e12b44a37bf1ee73cbe388a2cab5d2bead017006aff02107f9cf698c40",
+      "unchanged": true
+    },
+    "output_format.json": {
+      "expected_sha256": "982fc3aa0147d6b5e12a1988daf04cccb3db761eed8762fd89568701a2aff2c5",
+      "actual_sha256": "982fc3aa0147d6b5e12a1988daf04cccb3db761eed8762fd89568701a2aff2c5",
+      "unchanged": true
+    },
+    "F03_dossier.json": {
+      "expected_sha256": "57aa370b5cdbfa345a2a5630ed6b9f5c9ba818dc75e21afe5417e12c7470ddbb",
+      "actual_sha256": "57aa370b5cdbfa345a2a5630ed6b9f5c9ba818dc75e21afe5417e12c7470ddbb",
+      "unchanged": true
+    },
+    "F02_packet.json": {
+      "expected_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+      "actual_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+      "unchanged": true
+    }
+  },
+  "masking_limits": "Components, parse modes, alternative interpretations, and proposition records can reveal representation conventions and sometimes name classification alternatives. This does not constitute full blinding. No condition/run key or comparison labels were sought.",
+  "read_limits": [
+    "An initial F02 display and two F03 displays were tool-truncated. Missing portions were re-read in bounded calls before case mapping was frozen.",
+    "dossier_index.json was used only for schema/inventory inspection; annotations.json was not substantively opened because the supplied case dossiers are lossless views of the masked annotations.",
+    "No attempt was made to infer condition identities from annotation conventions."
+  ],
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/alignment.json",
+      "sha256": "be766ca747361dda826bdd4d892d41e448091e67686ad4f1abb3d4f3d319fb07"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/alignment.first_complete.json",
+      "sha256": "be766ca747361dda826bdd4d892d41e448091e67686ad4f1abb3d4f3d319fb07"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F01_alignment.json",
+      "sha256": "7e96a8e33f8b7eca7acdf89b2ff0d91031d38a6b97257523df59487442b99fc6"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F01_alignment.first_complete.json",
+      "sha256": "7e96a8e33f8b7eca7acdf89b2ff0d91031d38a6b97257523df59487442b99fc6"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F02_alignment.json",
+      "sha256": "cc7b77d583bc06de54d9fb7e97661eee12c6ed1c8dc3e4ea43bafb5fa4234b09"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F02_alignment.first_complete.json",
+      "sha256": "cc7b77d583bc06de54d9fb7e97661eee12c6ed1c8dc3e4ea43bafb5fa4234b09"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F03_alignment.json",
+      "sha256": "4a480bdce631f927a7c78d2efde781ad028af5762872be264e42ae1fd254d76b"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/reviews/alignment/F03_alignment.first_complete.json",
+      "sha256": "4a480bdce631f927a7c78d2efde781ad028af5762872be264e42ae1fd254d76b"
+    }
+  ],
+  "first_complete_mapping_sha256": "f55ae8c63d3ff0e405ee381d180aef05571f4f039f44ac1548865de91417d03f",
+  "mapping_changes_after_freeze": []
+}

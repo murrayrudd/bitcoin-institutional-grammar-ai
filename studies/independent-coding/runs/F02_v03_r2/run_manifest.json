@@ -1,0 +1,101 @@
+{
+  "run_id": "F02_v03_r2",
+  "episode_id": "F02",
+  "packet_sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+  "counts": {
+    "screened_entries": 22,
+    "candidate_entries": 4,
+    "context_only_entries": 15,
+    "empty_entries": 3,
+    "units": 15,
+    "statement_units": 4,
+    "context_units": 11,
+    "container_units": 0,
+    "quotation_units": 0,
+    "relations": 7,
+    "observed_outcomes": 5,
+    "mechanisms": 2,
+    "exact_anchor_references": 112,
+    "checker_errors": 0,
+    "review_flags": 7
+  },
+  "final_check_status": "pass",
+  "artifacts": [
+    {
+      "path": "INSTRUCTIONS.txt",
+      "bytes": 2772,
+      "sha256": "841207bc9097f1932eb074569c3335bbf64c45f5e3c38ec53540e471696540e7"
+    },
+    {
+      "path": "protocol/codebook.txt",
+      "bytes": 27319,
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "protocol/annotation_schema.json",
+      "bytes": 25717,
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "packet.json",
+      "bytes": 28329,
+      "sha256": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c"
+    },
+    {
+      "path": "tools/check_annotation.py",
+      "bytes": 9013,
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    },
+    {
+      "path": "build_annotation.py",
+      "bytes": 31460,
+      "sha256": "11d55077d51e46563f94e1622f0da88ac8eb19f7594db6c12735703aee7291a8"
+    },
+    {
+      "path": "annotation.json",
+      "bytes": 91324,
+      "sha256": "c09b955852ec052c5860304a2778c3a6fbabcfdbdd58f18e617a3550d571b30b"
+    },
+    {
+      "path": "annotation.first_complete.json",
+      "bytes": 90653,
+      "sha256": "fe5becab92afa39f8dae9bc0c94999ae0f8521588cce76b736a47406665d2b2b"
+    },
+    {
+      "path": "checks.first.json",
+      "bytes": 4189,
+      "sha256": "30bdf87592746ed29ead42fde1fce45f0eec715e6386d4977ae9803f246e14a3"
+    },
+    {
+      "path": "finalize_annotation.py",
+      "bytes": 22912,
+      "sha256": "9c63c2a88770b614d60bfc59039d33ff8125f7ef461c0bd7f7bd83bc0bb63b20"
+    },
+    {
+      "path": "annotation.final.json",
+      "bytes": 91324,
+      "sha256": "c09b955852ec052c5860304a2778c3a6fbabcfdbdd58f18e617a3550d571b30b"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 4482,
+      "sha256": "c71d08a8d69d345b22d78d255966a21569e77ca1b00748f88dc679d6d5c86062"
+    },
+    {
+      "path": "repair_log.json",
+      "bytes": 4848,
+      "sha256": "b8e02ad17808bf30c960a0905d3fc9b93657e6fcb42e83c667e09ca4a021edec"
+    },
+    {
+      "path": "review_notes.json",
+      "bytes": 100418,
+      "sha256": "d68001cbf0659285039b97346194a76c163215997b3e55c227ff6c2ac47dbcfc"
+    },
+    {
+      "path": "access_record.json",
+      "bytes": 7193,
+      "sha256": "6682c01a26addc649c87bcb52374bf1b72822fa1e8f40f9cf2eb52053f03de31"
+    }
+  ],
+  "freeze_ready": true
+}

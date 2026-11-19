@@ -1,0 +1,27 @@
+{
+  "run_id": "F01_v04_r1",
+  "episode_id": "F01",
+  "status": "complete_with_documented_packet_checker_compatibility_limit",
+  "counts": {
+    "screened_entries": 42,
+    "exhaustive_focal_entries": 23,
+    "units": 60,
+    "statements": 34,
+    "context_units": 14,
+    "quotation_units": 12,
+    "relations": 34,
+    "outcomes": 3,
+    "mechanisms": 3
+  },
+  "final_annotation": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/annotation.final.json",
+  "first_complete": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/annotation.first_complete.json",
+  "final_check": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/checks.json",
+  "source_review": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/review_notes.json",
+  "repair_log": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/repair_log.json",
+  "access_record": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F01_v04_r1/access_record.json",
+  "unresolved_limits": [
+    "Three official-checker revision-key compatibility errors: the packet supplies revision/git_blob_sha while the checker expects revision_id/blob_sha. Frozen source and checker were preserved.",
+    "Interpretive uncertainty about technical obligation, bot pronoun reference, tentative expectation recognition, source timing, missing implementation history, and reasons for merger remains explicit."
+  ],
+  "coding_errors_remaining": 0
+}

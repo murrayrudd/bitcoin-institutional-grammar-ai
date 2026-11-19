@@ -1,0 +1,93 @@
+[E05:body] practicalswift 2019-12-06T18:44:09+00:00
+Fix bug in the descriptor parsing fuzzing harness (`descriptor_parse`) by making sure `secp256k1_context_verify` is properly initialized (via `ECCVerifyHandle`).
+
+Background:
+
+When fuzzing `Parse(…)` with `libFuzzer` I eventually reached the test case `combo(020000000000000000000000000000000000000000000000000000000000000000)`. That input triggers a call to `CPubKey::IsFullyValid()` which in turns requires an initialized `secp256k1_context_verify`.
+
+The fuzzing harness did not fulfil that pre-condition prior to this commit (sorry, my fault!) :)
+
+Before:
+
+```
+$ mkdir descriptors/
+$ echo -n 'combo(020000000000000000000000000000000000000000000000000000000000000000)' > descriptors/input
+$ UBSAN_OPTIONS="print_stacktrace=1:halt_on_error=1" src/test/fuzz/descriptor_parse -runs=1 descriptors/
+…
+pubkey.cpp:210:38: runtime error: null pointer passed as argument 1, which is declared to never be null
+secp256k1/include/secp256k1.h:305:3: note: nonnull attribute specified here
+    #0 0x561c032ccf25 in CPubKey::IsFullyValid() const src/pubkey.cpp:210:12
+    #1 0x561c022139c3 in (anonymous namespace)::ParsePubkeyInner(Span<char const> const&, bool, FlatSigningProvider&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) src/script/descriptor.cpp:674:24
+    #2 0x561c02207680 in (anonymous namespace)::ParsePubkey(Span<char const> const&, bool, FlatSigningProvider&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) src/script/descriptor.cpp:730:42
+    #3 0x561c0220080e in (anonymous namespace)::ParseScript(Span<char const>&, (anonymous namespace)::ParseScriptContext, FlatSigningProvider&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) src/script/descriptor.cpp:774:23
+    #4 0x561c021ffb07 in Parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, FlatSigningProvider&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool) src/script/descriptor.cpp:994:16
+    #5 0x561c0218d5d4 in test_one_input(std::vector<unsigned char, std::allocator<unsigned char> > const&) src/test/fuzz/descriptor_parse.cpp:20:9
+…
+$
+```
+
+After:
+
+```
+$ mkdir descriptors/
+$ echo -n 'combo(020000000000000000000000000000000000000000000000000000000000000000)' > descriptors/input
+$ UBSAN_OPTIONS="print_stacktrace=1:halt_on_error=1" src/test/fuzz/descriptor_parse -runs=1 descriptors/
+…
+Done 2 runs in 0 second(s)
+$
+```
+
+[E05:comments:0] paymog 2019-12-07T09:17:58+00:00
+ACK
+
+[E05:comments:1] practicalswift 2019-12-07T09:26:07+00:00
+@paymog Thanks for reviewing! Don't forget to include the commit hash after your ACK to specify which version of the PR you are ACK:ing :)
+
+Example:
+
+```
+ACK 123450203416a5f86e9422b6cd479da8af212345
+```
+
+[E05:comments:2] paymog 2019-12-08T09:14:49+00:00
+@practicalswift got it. Thanks for the patience. 
+
+ACK 6338c0203416a5f86e9422b6cd479da8af277f2f
+
+[E05:comments:3] maflcko 2019-12-08T18:11:36+00:00
+Added seed to repo https://github.com/bitcoin-core/qa-assets/commit/e4d36ec288eb279cfc94c1efad37d7f2e83a8f32
+
+[E05:comments:4] maflcko 2019-12-08T18:15:03+00:00
+Reproduced locally and on travis: https://travis-ci.org/MarcoFalke/bitcoin-core/jobs/622111801#L2555
+
+[E05:comments:5] maflcko 2019-12-08T18:16:56+00:00
+ACK 6338c0203416a5f86e9422b6cd479da8af277f2f 🕊
+
+<details><summary>Show signature and timestamp</summary>
+
+Signature:
+
+```
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+ACK 6338c0203416a5f86e9422b6cd479da8af277f2f 🕊
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE+rVPoUahrI9sLGYTzit1aX5ppUgFAlwqrYAACgkQzit1aX5p
+pUi/vgv/WLlNA/DRA2N21pxJ8sP3aWIaQvDSyUlsuDzCXK2tGV+BtdK5Tgeo1gyE
+fcuyjQ0ZXx/IhT+i+i2lojawyJUODgJZyfoqmp03VuWj4YQq5TR6FYJQZdfJ/YG6
+1EtxpLM9pwna2JpRTkr+C7o+d4AmdFi3CLPWP6/nlazieqV+FKT2K1qPB+gIl1s7
+RgIR4dn1lL+k8NQn/ma8mCDwueIk4MtsJRdKAw3ldGg9sYZVGUbOUPv9dn0uUe2D
+W11AQcZHuz6YoOHV/k0+5pR9nCvJ536tNtzIgJtWfRTsjoQ/wScD7GwM247LnnYY
+8bOxWy8klJcFbHNtyMIlUGaJRKJYfQ6jlIUHMYJqJ/znorQI3H+zH5irHmpt99VN
+5EQomOxHQteHrcOI4+XLgu5GY4AppUjytCHGoFOyH99VlYj2Zey8DE8Lts812Fk8
+XKV1AiPBGU2WY3hYPaS1W6renr8KiQtY/xXMM8KttbYiSfRNbZnr11RWvfq2Tj61
+ZYW9xcWz
+=n/YJ
+-----END PGP SIGNATURE-----
+```
+
+[Timestamp of file with hash `51bfacd787b0f6e2ea09de38dac6c9cb84ea0cfb076535f6fd318d6881cd01d7  -`](https://opentimestamps.org/info/?004f70656e54696d657374616d7073000050726f6f6600bf89e2e884e89294010851bfacd787b0f6e2ea09de38dac6c9cb84ea0cfb076535f6fd318d6881cd01d7f0109027bf6f35966126ec1172e5c69e063408fff010273e07b053a6bf0e4b002a49a8d5da0808f0200c6cc07911c62f31504d5a6cf361983831f849a19eef26103a6a3a7fbdec648508f1045ded3e03f008be039fcc34b186320083dfe30d2ef90c8e2c2b68747470733a2f2f626f622e6274632e63616c656e6461722e6f70656e74696d657374616d70732e6f7267fff010a81dbec92a9c147cdd8c3bb6973eabee08f1045ded3e02f008fec5feab44a59ad40083dfe30d2ef90c8e2e2d68747470733a2f2f616c6963652e6274632e63616c656e6461722e6f70656e74696d657374616d70732e6f7267f010be37f227b8c75f0b98b3b84c6076125d08f020d9fbba74e526b6bb2f7773302e15b6cfa2b2993ee3bf3ebd184732fa54c930f408f1045ded3e03f008503ae8e37359d1a90083dfe30d2ef90c8e292868747470733a2f2f66696e6e65792e63616c656e6461722e657465726e69747977616c6c2e636f6d)
+
+</details>

@@ -1,0 +1,50 @@
+{
+  "run_id": "F02_v04_r3",
+  "completed_at_utc": "2026-11-07T19:10:47.332247+00:00",
+  "stages": [
+    {
+      "stage": "input_reading",
+      "result": "All run instructions, codebook, schema, and packet read. Truncated combined outputs were recovered in bounded reads. An initial inventory script used sources instead of entries and stopped with KeyError; the actual entries were then read completely. No input was changed."
+    },
+    {
+      "stage": "first_complete",
+      "artifact": "annotation.first_complete.json",
+      "sha256": "bef94ad757cb5af44397b8910b182d447aaf28693e5472c16f11cc4e818d4f12",
+      "result": "Full 22-entry screening, 12-unit annotation preserved before checks and source self-review."
+    },
+    {
+      "stage": "first_checker",
+      "artifact": "checks.first.json",
+      "result": "pass",
+      "errors": 0,
+      "review_flags": 37
+    },
+    {
+      "stage": "mechanical_repair",
+      "result": "No first-check mechanical errors required repair."
+    },
+    {
+      "stage": "source_self_review",
+      "artifact": "review_notes.json",
+      "rounds": 1,
+      "result": "Completed source-based omission, qualifier, role, evidence, authority/recognition/application, disposition/identity, level, outcome, and mechanism review. Field-level changes preserved in repair_log.json."
+    },
+    {
+      "stage": "final_checker",
+      "artifact": "checks.json",
+      "result": "pass",
+      "errors": 0,
+      "review_flags": 38
+    },
+    {
+      "stage": "audit_bookkeeping",
+      "result": "Every first and final checker flag has retained, corrected, or unresolved status with cited source evidence. Original first-complete hash preserved; annotation.json equals annotation.final.json."
+    }
+  ],
+  "checks_preserved": [
+    "checks.first.json",
+    "checks.json"
+  ],
+  "all_checks_accounted_for": true,
+  "source_review_rounds": 1
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "type": "heading",
+    "text": "Mechanical checks and repair burden"
+  },
+  {
+    "type": "paragraph",
+    "text": "First-complete outputs passed their assigned mechanical checks in six of nine version 0.3 runs and four of nine version 0.4 runs. After checker feedback and one source-based self-review, the original final checks passed nine of nine and six of nine, respectively. The evidence archive retains every first output, checker result, repair log, and final output. Record changes measure workflow activity, not error severity, and the unequal schemas create different opportunities for change."
+  },
+  {
+    "type": "paragraph",
+    "text": "All three remaining failures concern version 0.4 in F01: nine revision-identity failures in total. The packet supplies revision and git_blob_sha fields while the checker expects revision_id and blob_sha; one additional commit identity appears in the serialized source metadata. A post-freeze diagnostic adds aliases and exposes that existing identity in copies, without changing source text or coding judgments. All eighteen outputs pass that diagnostic. The original workflow still records fifteen passes. This is a packet/checker integration defect, not evidence of semantic correctness or an institutional interpretation error."
+  }
+]

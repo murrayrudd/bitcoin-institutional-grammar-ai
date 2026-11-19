@@ -1,0 +1,100 @@
+{
+  "run_id": "F02_v04_r1",
+  "allowed_directory": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1",
+  "isolation": "Research reads and writes were confined to the assigned run directory. No parent directories, other runs, outside research, calibration answer files, web, Library, or additional agents were accessed.",
+  "inherited_primary_configuration": true,
+  "configuration_override": null,
+  "model_runtime": {
+    "model_role_description": "Inherited primary Codex configuration; no model or reasoning override requested or selected.",
+    "exact_model_identity": null,
+    "provider_snapshot": null,
+    "seed": null,
+    "sampling": null,
+    "token_use": null,
+    "cost": null,
+    "python_version": "3.12.14",
+    "python_implementation": "CPython",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "time_recorded_utc": "2026-11-07T19:06:50.586763+00:00"
+  },
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/INSTRUCTIONS.txt",
+      "access": "read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/protocol/codebook.txt",
+      "access": "read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/protocol/annotation_schema.json",
+      "access": "read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/packet.json",
+      "access": "read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/tools/check_annotation.py",
+      "access": "read_execute"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/build_annotation.py",
+      "access": "write_execute"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/annotation.json",
+      "access": "write_read_update"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/annotation.first_complete.json",
+      "access": "write_then_read; never modified"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/checks.first.json",
+      "access": "write_read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/finalize_review.py",
+      "access": "write_execute"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/annotation.final.json",
+      "access": "write_read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/repair_log.json",
+      "access": "write_read"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/review_notes.json",
+      "access": "write_read_update"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/access_record.json",
+      "access": "write_read_update"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/execution_log.json",
+      "access": "write_read_update"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/fresh_coding/Bitcoin_Core_IG2_Fresh_Coding_v01/runs/F02_v04_r1/checks.json",
+      "access": "write_read"
+    }
+  ],
+  "runtime_modules": "Ordinary Python standard library plus jsonschema imported by the supplied checker; these are execution dependencies, not research sources.",
+  "unknowns_policy": "Unavailable model/provider snapshot, seed, sampling, token use and cost remain null; no identity was inferred from codebook or packet content.",
+  "input_integrity_sha256": {
+    "INSTRUCTIONS.txt": "4b66b5c5ac16abddcfae3f99a78fe1a93bf0b6f23c4eab6a26072eec8c34c36a",
+    "protocol/codebook.txt": "6c7679852ebaa621c7dc6861c5a2400a5f0fbb9f8f987771b565e339e8650e7b",
+    "protocol/annotation_schema.json": "71f223a9bfb78960d5c10f3566d9f005a5bcbe3a38be09c77d70608ea75c2523",
+    "packet.json": "d088d1e8f89bad79af969df9c6e153ac6b02253ac5824832cd31089e42a8c31c",
+    "tools/check_annotation.py": "b0c31de8b8f69b1d174c830a3b0209ef42dc96bd67bffadd374538a5ffa356a5"
+  },
+  "output_integrity": {
+    "first_complete_sha256": "8e58d67da53d15490c5c54643965c4a7e57095cc74572921154abd9551405bc4",
+    "final_annotation_sha256": "a1bf604192d2157045c82edda907756a44a849c6981918f339fec44899b7f189",
+    "repair_log_replay_matches_final": true
+  }
+}

@@ -1,0 +1,1985 @@
+[
+  {
+    "chain_id": "L01",
+    "title": "Technical comment incorporated, containing PR unmerged",
+    "stages": [
+      {
+        "source_id": "32359-038",
+        "author": "Sjors",
+        "timestamp": "2025-04-28T13:56:26+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063718969",
+        "span": {
+          "start": 0,
+          "end": 149,
+          "quote": "```cpp\r\n// Until v30 OP_RETURN was limited to 83 bytes (80 bytes of data, +1 for\r\n// OP_RETURN, +2 for the pushdata opcodes). Add one more byte.\r\n```"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-053",
+        "author": "petertodd",
+        "timestamp": "2025-04-28T20:15:52+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064478495",
+        "span": {
+          "start": 0,
+          "end": 14,
+          "quote": "Added comment."
+        },
+        "role": "reported_implementation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-242",
+        "author": "glozow",
+        "timestamp": "2025-05-12T15:19:06+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2872995148",
+        "span": {
+          "start": 0,
+          "end": 258,
+          "quote": "Based on the discussion, there seems to be consensus around leaving the config options in place. That approach is implemented in #32406, so closing this PR. (Also: please do not jump to conclusions about whether this means the other PR will be merged/closed)"
+        },
+        "role": "closure_explanation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M32359",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359",
+        "span": {
+          "start": 0,
+          "end": 378,
+          "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A matching code-review change is reported, but the encompassing option-removal proposal closes unmerged in favor of the option-retaining alternative.",
+    "alternative_or_limit": "This is a counterexample to treating technical responsiveness as sufficient for integration. The record does not show that this comment edit affected the closure.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N01",
+      "N01r",
+      "U05",
+      "V32359"
+    ]
+  },
+  {
+    "chain_id": "L02",
+    "title": "Test placement suggestion accepted",
+    "stages": [
+      {
+        "source_id": "32359-036",
+        "author": "Sjors",
+        "timestamp": "2025-04-28T13:20:18+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063646275",
+        "span": {
+          "start": 0,
+          "end": 1302,
+          "quote": "I found myself confused why this restart is still needed. It's because the previous test used `-persistmempool=0` and we need to forget about the transaction it created.\r\n\r\n```diff\r\ndiff --git a/test/functional/mining_basic.py b/test/functional/mining_basic.py\r\nindex cbb1cf789e..85c0f38291 100755\r\n--- a/test/functional/mining_basic.py\r\n+++ b/test/functional/mining_basic.py\r\n@@ -186,6 +186,9 @@ class MiningTest(BitcoinTestFramework):\r\n             assert tx_below_min_feerate['txid'] not in block_template_txids\r\n             assert tx_below_min_feerate['txid'] not in block_txids\r\n\r\n+        # Restart node to clear mempool for the next test\r\n+        self.restart_node(0)\r\n+\r\n     def test_timewarp(self):\r\n         self.log.info(\"Test timewarp attack mitigation (BIP94)\")\r\n         node = self.nodes[0]\r\n@@ -279,11 +282,9 @@ class MiningTest(BitcoinTestFramework):\r\n     def test_block_max_weight(self):\r\n         self.log.info(\"Testing default and custom -blockmaxweight startup options.\")\r\n\r\n-        # Restart the node\r\n         LARGE_TXS_COUNT = 10\r\n         LARGE_VSIZE = int(((MAX_BLOCK_WEIGHT - DEFAULT_BLOCK_RESERVED_WEIGHT) / WITNESS_SCALE_FACTOR) / LARGE_TXS_COUNT)\r\n         HIGH_FEERATE = Decimal(\"0.0003\")\r\n-        self.restart_node(0)\r\n\r\n         # Ensure the mempool is empty\r\n```"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-055",
+        "author": "petertodd",
+        "timestamp": "2025-04-28T20:18:29+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064485063",
+        "span": {
+          "start": 0,
+          "end": 30,
+          "quote": "I've applied that patch as-is."
+        },
+        "role": "reported_implementation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M32359",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359",
+        "span": {
+          "start": 0,
+          "end": 378,
+          "quote": "{\n  \"number\": 32359,\n  \"title\": \"Remove arbitrary limits on OP_Return (datacarrier) outputs\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-27T20:52:44Z\",\n  \"closed_at\": \"2025-05-12T15:19:05Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"92b05c17b1478c657a4bb435a123a98709f17128\",\n  \"base_sha\": \"eba5f9c4b63fe46261fbb3e71b9a94832d105b23\",\n  \"actual_merge_sha\": null\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "Author reports applying the suggested patch as-is, yet PR remains an unmerged alternative.",
+    "alternative_or_limit": "Reported application is distinguished from independently comparing every intermediate commit.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L03",
+    "title": "New tests incorporated",
+    "stages": [
+      {
+        "source_id": "32359-037",
+        "author": "Sjors",
+        "timestamp": "2025-04-28T13:54:30+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2063714504",
+        "span": {
+          "start": 0,
+          "end": 1445,
+          "quote": "```diff\r\ndiff --git a/test/functional/mempool_accept.py b/test/functional/mempool_accept.py\r\nindex f4b21cd204..609d826a6f 100755\r\n--- a/test/functional/mempool_accept.py\r\n+++ b/test/functional/mempool_accept.py\r\n@@ -327,6 +327,26 @@ class MempoolAcceptanceTest(BitcoinTestFramework):\r\n             rawtxs=[tx.serialize().hex()],\r\n         )\r\n\r\n+        # OP_RETURN followed by non-push\r\n+        tx = tx_from_hex(raw_tx_reference)\r\n+        tx.vout[0].scriptPubKey = CScript([OP_RETURN, OP_HASH160])\r\n+        tx.vout = [tx.vout[0]] * 2\r\n+        self.check_mempool_result(\r\n+            result_expected=[{'txid': tx.rehash(), 'allowed': False, 'reject-reason': 'scriptpubkey'}],\r\n+            rawtxs=[tx.serialize().hex()],\r\n+        )\r\n+\r\n+        # Multiple OP_RETURN and more than 83 bytes are standard since v30\r\n+        tx = tx_from_hex(raw_tx_reference)\r\n+        tx.vout.append(CTxOut(0, CScript([OP_RETURN, b'\\xff'])))\r\n+        tx.vout.append(CTxOut(0, CScript([OP_RETURN, b'\\xff' * 90])))\r\n+\r\n+        self.check_mempool_result(\r\n+            result_expected=[{'txid': tx.rehash(), 'allowed': True, 'vsize': tx.get_vsize(), 'fees': {'base': Decimal('0.05')}}],\r\n+            rawtxs=[tx.serialize().hex()],\r\n+            maxfeerate=0\r\n+        )\r\n+\r\n         self.log.info('A timelocked transaction')\r\n         tx = tx_from_hex(raw_tx_reference)\r\n         tx.vin[0].nSequence -= 1  # Should be non-max, so locktime is not ignored\r\n```"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-043",
+        "author": "darosior",
+        "timestamp": "2025-04-28T15:00:10+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#pullrequestreview-2799422333",
+        "span": {
+          "start": 0,
+          "end": 3366,
+          "quote": "ACK cd7872ca543d31d20f419fd2203138b8301c2e68\r\n\r\nYou missed a mention of `-datacarriersize` which i think should be deleted. Although `IsStandard` is already checked for these outputs in the unit tests, i think it is worth having a functional test which exercises both cases as well as tests the bounds (here hitting the maximum standard transaction size). Here is a diff which adds those cases:\r\n<details>\r\n\r\n<summary>Click to see diff</summary>\r\n\r\n```diff\r\ndiff --git a/test/functional/mempool_accept.py b/test/functional/mempool_accept.py\r\nindex f4b21cd2044..b9ef6e993da 100755\r\n--- a/test/functional/mempool_accept.py\r\n+++ b/test/functional/mempool_accept.py\r\n@@ -9,6 +9,7 @@ from decimal import Decimal\r\n import math\r\n \r\n from test_framework.test_framework import BitcoinTestFramework\r\n+from test_framework.blocktools import MAX_STANDARD_TX_WEIGHT\r\n from test_framework.messages import (\r\n     MAX_BIP125_RBF_SEQUENCE,\r\n     COIN,\r\n@@ -327,6 +328,32 @@ class MempoolAcceptanceTest(BitcoinTestFramework):\r\n             rawtxs=[tx.serialize().hex()],\r\n         )\r\n \r\n+        self.log.info(\"A transaction with several OP_RETURN outputs.\")\r\n+        tx = tx_from_hex(raw_tx_reference)\r\n+        op_return_count = 42\r\n+        tx.vout[0].nValue = int(tx.vout[0].nValue / op_return_count)\r\n+        tx.vout[0].scriptPubKey = CScript([OP_RETURN, b'\\xff'])\r\n+        tx.vout = [tx.vout[0]] * op_return_count\r\n+        self.check_mempool_result(\r\n+            result_expected=[{\"txid\": tx.rehash(), \"allowed\": True, \"vsize\": tx.get_vsize(), \"fees\": {\"base\": Decimal(\"0.05000026\")}}],\r\n+            rawtxs=[tx.serialize().hex()],\r\n+        )\r\n+\r\n+        self.log.info(\"A transaction with an OP_RETUN output that bumps into the max standardness tx size.\")\r\n+        tx = tx_from_hex(raw_tx_reference)\r\n+        tx.vout[0].scriptPubKey = CScript([OP_RETURN])\r\n+        data_len = int(MAX_STANDARD_TX_WEIGHT / 4) - tx.get_vsize() - 5 - 4  # -5 for PUSHDATA4 and -4 for script size\r\n+        tx.vout[0].scriptPubKey = CScript([OP_RETURN, b\"\\xff\" * (data_len)])\r\n+        self.check_mempool_result(\r\n+            result_expected=[{\"txid\": tx.rehash(), \"allowed\": True, \"vsize\": tx.get_vsize(), \"fees\": {\"base\": Decimal(\"0.1\") - Decimal(\"0.05\")}}],\r\n+            rawtxs=[tx.serialize().hex()],\r\n+        )\r\n+        tx.vout[0].scriptPubKey = CScript([OP_RETURN, b\"\\xff\" * (data_len + 1)])\r\n+        self.check_mempool_result(\r\n+            result_expected=[{\"txid\": tx.rehash(), \"allowed\": False, \"reject-reason\": \"tx-size\"}],\r\n+            rawtxs=[tx.serialize().hex()],\r\n+        )\r\n+\r\n         self.log.info('A timelocked transaction')\r\n         tx = tx_from_hex(raw_tx_reference)\r\n         tx.vin[0].nSequence -= 1  # Should be non-max, so locktime is not ignored\r\n```\r\n</details>\r\n\r\nI am in favor of removing the option. Although i am sympathetic to the argument of letting more control to the user over what gets into their mempool, i do not see any valid reason why a user would want to set `-datacarriersize`. For obvious reasons, we should not keep options we do not expect to be set. This argument is also brought up in this thread by a vocal aggressive minority of non-contributors to and non-users of the software, who i do not think are representative of the Bitcoin Core users.\r\n\r\n*Edited on request of a moderator to remove unnecessarily inflammatory comments.*"
+        },
+        "role": "further_suggestion",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-059",
+        "author": "petertodd",
+        "timestamp": "2025-04-28T20:24:53+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#discussion_r2064504791",
+        "span": {
+          "start": 0,
+          "end": 53,
+          "quote": "I included this patch and @darosior's patch verbatim."
+        },
+        "role": "reported_implementation",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "Author identifies both proposed patches as included verbatim.",
+    "alternative_or_limit": "This verifies an attributable report, not the executed test results.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L04",
+    "title": "Moderation referral receives commitment",
+    "stages": [
+      {
+        "source_id": "32359-042",
+        "author": "pinheadmz",
+        "timestamp": "2025-04-28T14:56:44+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2835535199",
+        "span": {
+          "start": 0,
+          "end": 522,
+          "quote": "@wizkid057 your comment borders on off-topic, but I'm not going to hide it because at this point in the PR thread it is new information. This will be last comment allowed with this information though -- meaning all future comments talking about the end of decentralized money as we know it will be considered redundant brigadeing. Everyone else who agrees with you can 👍 your comment instead of rewriting it in their own words. I also encourage you to take longer arguments like this to the mailing list instead of github."
+        },
+        "role": "moderation_referral",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-045",
+        "author": "wizkid057",
+        "timestamp": "2025-04-28T15:28:14+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2835638919",
+        "span": {
+          "start": 2817,
+          "end": 2838,
+          "quote": "I will do so, thanks."
+        },
+        "role": "commitment",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A participant explicitly commits to following a quoted mailing-list referral.",
+    "alternative_or_limit": "No mailing-list posting is verified in this GitHub-only round. Nearby praise for retaining the comment does not imply agreement with every moderation rule.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N08"
+    ]
+  },
+  {
+    "chain_id": "L05",
+    "title": "Self-moderation reported",
+    "stages": [
+      {
+        "source_id": "D_MOD",
+        "author": "Repository documentation",
+        "timestamp": "2024-08-14",
+        "url": "https://github.com/bitcoin-core/meta/blob/3527bf7818d53bffa6c496be7f8d30dc8e1fa198/MODERATION-GUIDELINES.md",
+        "span": {
+          "start": 3020,
+          "end": 3301,
+          "quote": "Moderators may reach out to contributors to ask them to self-moderate. In requesting self-moderation from contributors, moderators may ask for specific actions like editing or deleting the post in question, so as to avoid public shaming directed at the author or other escalations."
+        },
+        "role": "dated_procedure",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-043",
+        "author": "darosior",
+        "timestamp": "2025-04-28T15:00:10+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#pullrequestreview-2799422333",
+        "span": {
+          "start": 3286,
+          "end": 3365,
+          "quote": "Edited on request of a moderator to remove unnecessarily inflammatory comments."
+        },
+        "role": "reported_action",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The contributor reports an edit requested by a moderator, matching an authorized practice in the historical guide.",
+    "alternative_or_limit": "Moderator identity, removed wording and edit timing are not recovered. This is not an independently observed sanction.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "D07",
+      "N06"
+    ]
+  },
+  {
+    "chain_id": "L06",
+    "title": "Restriction proposal faces participation objection",
+    "stages": [
+      {
+        "source_id": "32359-031",
+        "author": "Sjors",
+        "timestamp": "2025-04-28T09:58:31+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2834678435",
+        "span": {
+          "start": 0,
+          "end": 1973,
+          "quote": "Concept ACK\r\n\r\nModeration suggestion: close to non-contributors.\r\n\r\nIt's a bit draconian, but it's hard to review code in a pull request that's being brigaded, which unfortunately often happens when `OP_RETURN` or full RBF is involved. At the same time this isn't a technically difficult PR that needs thousands of eyes on it. Even if a non-contributor finds a bug and can't report it here, there's plenty of time to fix it in a followup.\r\n\r\nThe conceptual discusion should be continued on the mailinglist, but even there it's counter productive to say things without first reading earlier discussions.\r\n\r\nI would also suggest that people who really want to continue filtering `OP_RETURN` transactions, release a simple fork of Bitcoin Core. Such a patch is relatively straight-forward to maintain and thanks to deterministic guix builds, easy for anyone to audit.\r\n\r\n@polespinasa wrote:\r\n\r\n> The code is already there\r\n\r\nRemoving code reduces long term maintenance cost. Not all code is equal; for code that enforces standardness it's critical there are no bugs in it, so it requires a lot more review / attention / maintenance than other areas.\r\n\r\nOn the one hand it's only a small part of standardness code, hasn't changed in a long time and afaik doesn't cause technical headache in other areas of the code. Reducing code complexity is certainly not the main reason for this PR, but it's a nice extra.\r\n\r\nOn the other hand, any time this code is touched there's a risk of of drama, which _is_ a huge resource drain (and therefore comes with opportunity cost).\r\n\r\n---\r\n\r\n> The _form_ of datacarrier outputs remains standardized: a single OP_Return followed by zero or more data pushes; non-data opcodes remain non-standard.\r\n\r\nProbably worth keeping `mempool_datacarrier.py` around to at least test this aspect. Alternatively, you could replace the check you dropped from `mempool_accept.py` with one that looks for `scriptpubkey`.\r\n\r\nI'll continue code review in a bit."
+        },
+        "role": "restriction_proposal",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-033",
+        "author": "1ma",
+        "timestamp": "2025-04-28T10:30:22+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2834776509",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "@Sjors are you not interested in the feedback of the end users of the software?"
+        },
+        "role": "challenge",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-034",
+        "author": "Sjors",
+        "timestamp": "2025-04-28T10:41:50+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2834825682",
+        "span": {
+          "start": 0,
+          "end": 517,
+          "quote": "> @Sjors are you not interested in the feedback of the end users of the software?\r\n\r\nYes, but brigading is generally done by a very small group of users that don't represent the whole ecosystem. And we already know the reasons some people insist on keeping limits on `OP_RETURN`. That's why I suggested releasing a forked version of the software for those people (and I would recommend against running it, but it's your decision).\r\n\r\nSo the net result of these comments are distraction with no new useful information."
+        },
+        "role": "response",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-041",
+        "author": "wizkid057",
+        "timestamp": "2025-04-28T14:35:54+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2835467933",
+        "span": {
+          "start": 0,
+          "end": 2949,
+          "quote": "> Moderation suggestion: close to non-contributors.\r\n\r\nThis is far more than a small technical change, so the broader community should not be shut out of the discussion or shuffled off to the mailing list.  This is a fundamental change to the nature of what the Bitcoin network itself is in its entirety.\r\n\r\n- Merging this PR means Bitcoin is no longer a decentralized currency.\r\n- Merging this PR means Bitcoin is no longer money.\r\n- Merging this PR means Bitcoin is no longer a store of value.\r\n- Merging this PR means Bitcoin is no longer what users, node runners, etc signed up for and adopted.\r\n- Merging this PR means Bitcoin is no longer Bitcoin.\r\n\r\nThat may sound like hyperbole, but it really isn't.  If this PR is merged, Bitcoin as we know it changes forever in the most fundamental way imaginable: The reference implementation explicitly turning the Bitcoin network into an arbitrary data storage system, instead of evolving it as a decentralized currency.\r\n\r\nIt's one thing to not act in the face of an attack. It takes discipline and dare I say courage to act in the face of a heavy attack on a system. So while I wholeheartedly disagree with the refusal to merge bug fixes like #28408, I can partly understand the developers' inaction and fear.\r\n\r\nThis PR on the other hand, is not only a direct attack on the nature of Bitcoin itself, its merge would undermine that same nature in the worst possible way. This type of change should be treated with no less scrutiny than a hard fork, because that's essentially what this is: A fork away from being a decentralized currency towards being decentralized nothingness.\r\n\r\nI don't think the gravity of such a change can be understated. This PR might as well be titled, \"Quickest way to kill the Bitcoin project.\"\r\n\r\nAnyway, since this is going to get merged anyway despite wide community objections, allow me to make a prediction:\r\n\r\n- This PR get's merged.\r\n- Centralized mining pools continue to adopt Bitcoin Core changes like this.\r\n- After some relatively short period of time, there are an incredibly small number of > 83 byte OP_RETURNs mined.\r\n- Headline: See? It wasn't so bad! No abuse of oversized OP_RETURNs.\r\n\r\nWhy? Because the people cramming arbitrary data into the blockchain already have an effectively sanctioned method of doing so that will cost them 4x less in fees, and 4x the arbitrary data size. As someone attacking the network with spam, why would I pay 4x the cost to store my garbage with this PR via OP_RETURN when my current method is ALREADY \"standard\" through Bitcoin Core's stated intention to do nothing about it, AND when done non-standard can give me 4x the data? No-brainer for them.\r\n\r\nSo while this PR is an attack on Bitcoin itself and I hate everything about it (and so should you), it's also completely pointless from a technical and incentives perspective unless combined with something like #28408 to make OP_RETURN the \"proper\" way to store data."
+        },
+        "role": "further_challenge",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "Participants disagree over whose participation is appropriate and whether a GitHub contributor label represents relevant experience.",
+    "alternative_or_limit": "The restriction request is not itself evidence of implementation; network constituency cannot be inferred from commenter handles.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L07",
+    "title": "Reduced proposal closes without agreement",
+    "stages": [
+      {
+        "source_id": "32381-014",
+        "author": "ajtowns",
+        "timestamp": "2025-04-30T15:26:19+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2842373160",
+        "span": {
+          "start": 0,
+          "end": 10425,
+          "quote": "Approach NACK for me -- there's no point having a limit that's trivially avoided by just having many OP_RETURNs, and forcing people to waste blockspace by encoding redundant nValue and `OP_RETURN OP_PUSH` instructions when they would have been happy with the same data in a single output doesn't seem desirable either.\r\n\r\nIMO it would make sense to:\r\n * raise the default limit to a value that avoids people creating unprunable burn addresses,\r\n * remove the (unconfigurable) limit on number of OP_RETURNs in a transaction\r\n * apply the existing limit across all OP_RETURNs in a transaction\r\n\r\nI think a patch like this would achieve that (ignoring the functional tests):\r\n\r\n<details>\r\n  <summary>patch</summary>\r\n\r\n```diff\r\ndiff --git a/src/policy/policy.h b/src/policy/policy.h\r\nindex 2151ec13dd0..0b302aa31a3 100644\r\n--- a/src/policy/policy.h\r\n+++ b/src/policy/policy.h\r\n@@ -73,10 +73,10 @@ static constexpr unsigned int DEFAULT_DESCENDANT_SIZE_LIMIT_KVB{101};\r\n /** Default for -datacarrier */\r\n static const bool DEFAULT_ACCEPT_DATACARRIER = true;\r\n /**\r\n- * Default setting for -datacarriersize. 80 bytes of data, +1 for OP_RETURN,\r\n+ * Default setting for -datacarriersize. 160 bytes of data, +1 for OP_RETURN,\r\n  * +2 for the pushdata opcodes.\r\n  */\r\n-static const unsigned int MAX_OP_RETURN_RELAY = 83;\r\n+static const unsigned int MAX_OP_RETURN_RELAY = 163;\r\n /**\r\n  * An extra transaction can be added to a package, as long as it only has one\r\n  * ancestor and is no larger than this. Not really any reason to make this\r\n@@ -136,7 +136,7 @@ CAmount GetDustThreshold(const CTxOut& txout, const CFeeRate& dustRelayFee);\r\n\r\n bool IsDust(const CTxOut& txout, const CFeeRate& dustRelayFee);\r\n\r\n-bool IsStandard(const CScript& scriptPubKey, const std::optional<unsigned>& max_datacarrier_bytes, TxoutType& whichType);\r\n+bool IsStandard(const CScript& scriptPubKey, TxoutType& whichType);\r\n\r\n /** Get the vout index numbers of all dust outputs */\r\n std::vector<uint32_t> GetDust(const CTransaction& tx, CFeeRate dust_relay_rate);\r\ndiff --git a/src/policy/policy.cpp b/src/policy/policy.cpp\r\nindex 32a31ea653c..fdc2fdb9cdf 100644\r\n--- a/src/policy/policy.cpp\r\n+++ b/src/policy/policy.cpp\r\n@@ -76,7 +76,7 @@ std::vector<uint32_t> GetDust(const CTransaction& tx, CFeeRate dust_relay_rate)\r\n     return dust_outputs;\r\n }\r\n\r\n-bool IsStandard(const CScript& scriptPubKey, const std::optional<unsigned>& max_datacarrier_bytes, TxoutType& whichType)\r\n+bool IsStandard(const CScript& scriptPubKey, TxoutType& whichType)\r\n {\r\n     std::vector<std::vector<unsigned char> > vSolutions;\r\n     whichType = Solver(scriptPubKey, vSolutions);\r\n@@ -91,10 +91,6 @@ bool IsStandard(const CScript& scriptPubKey, const std::optional<unsigned>& max_\r\n             return false;\r\n         if (m < 1 || m > n)\r\n             return false;\r\n-    } else if (whichType == TxoutType::NULL_DATA) {\r\n-        if (!max_datacarrier_bytes || scriptPubKey.size() > *max_datacarrier_bytes) {\r\n-            return false;\r\n-        }\r\n     }\r\n\r\n     return true;\r\n@@ -137,17 +133,22 @@ bool IsStandardTx(const CTransaction& tx, const std::optional<unsigned>& max_dat\r\n         }\r\n     }\r\n\r\n-    unsigned int nDataOut = 0;\r\n+    unsigned int datacarrier_bytes_left = max_datacarrier_bytes.value_or(0);\r\n     TxoutType whichType;\r\n     for (const CTxOut& txout : tx.vout) {\r\n-        if (!::IsStandard(txout.scriptPubKey, max_datacarrier_bytes, whichType)) {\r\n+        if (!::IsStandard(txout.scriptPubKey, whichType)) {\r\n             reason = \"scriptpubkey\";\r\n             return false;\r\n         }\r\n\r\n-        if (whichType == TxoutType::NULL_DATA)\r\n-            nDataOut++;\r\n-        else if ((whichType == TxoutType::MULTISIG) && (!permit_bare_multisig)) {\r\n+        if (whichType == TxoutType::NULL_DATA) {\r\n+            unsigned int size = txout.scriptPubKey.size();\r\n+            if (size > datacarrier_bytes_left) {\r\n+                reason = \"datacarrier\";\r\n+                return false;\r\n+            }\r\n+            datacarrier_bytes_left -= size;\r\n+        } else if ((whichType == TxoutType::MULTISIG) && (!permit_bare_multisig)) {\r\n             reason = \"bare-multisig\";\r\n             return false;\r\n         }\r\n@@ -159,12 +160,6 @@ bool IsStandardTx(const CTransaction& tx, const std::optional<unsigned>& max_dat\r\n         return false;\r\n     }\r\n\r\n-    // only one OP_RETURN txout is permitted\r\n-    if (nDataOut > 1) {\r\n-        reason = \"multi-op-return\";\r\n-        return false;\r\n-    }\r\n-\r\n     return true;\r\n }\r\n\r\ndiff --git a/src/test/fuzz/key.cpp b/src/test/fuzz/key.cpp\r\nindex c7ff2f3a28e..50001a1d820 100644\r\n--- a/src/test/fuzz/key.cpp\r\n+++ b/src/test/fuzz/key.cpp\r\n@@ -151,12 +151,12 @@ FUZZ_TARGET(key, .init = initialize_key)\r\n         assert(fillable_signing_provider_pub.HaveKey(pubkey.GetID()));\r\n\r\n         TxoutType which_type_tx_pubkey;\r\n-        const bool is_standard_tx_pubkey = IsStandard(tx_pubkey_script, std::nullopt, which_type_tx_pubkey);\r\n+        const bool is_standard_tx_pubkey = IsStandard(tx_pubkey_script, which_type_tx_pubkey);\r\n         assert(is_standard_tx_pubkey);\r\n         assert(which_type_tx_pubkey == TxoutType::PUBKEY);\r\n\r\n         TxoutType which_type_tx_multisig;\r\n-        const bool is_standard_tx_multisig = IsStandard(tx_multisig_script, std::nullopt, which_type_tx_multisig);\r\n+        const bool is_standard_tx_multisig = IsStandard(tx_multisig_script, which_type_tx_multisig);\r\n         assert(is_standard_tx_multisig);\r\n         assert(which_type_tx_multisig == TxoutType::MULTISIG);\r\n\r\ndiff --git a/src/test/fuzz/script.cpp b/src/test/fuzz/script.cpp\r\nindex 07a49e039fb..9aa50559cbd 100644\r\n--- a/src/test/fuzz/script.cpp\r\n+++ b/src/test/fuzz/script.cpp\r\n@@ -53,7 +53,7 @@ FUZZ_TARGET(script, .init = initialize_script)\r\n     }\r\n\r\n     TxoutType which_type;\r\n-    bool is_standard_ret = IsStandard(script, std::nullopt, which_type);\r\n+    bool is_standard_ret = IsStandard(script, which_type);\r\n     if (!is_standard_ret) {\r\n         assert(which_type == TxoutType::NONSTANDARD ||\r\n                which_type == TxoutType::NULL_DATA ||\r\ndiff --git a/src/test/multisig_tests.cpp b/src/test/multisig_tests.cpp\r\nindex 29a73d03d25..b996f3cc061 100644\r\n--- a/src/test/multisig_tests.cpp\r\n+++ b/src/test/multisig_tests.cpp\r\n@@ -144,7 +144,7 @@ BOOST_AUTO_TEST_CASE(multisig_IsStandard)\r\n\r\n     const auto is_standard{[](const CScript& spk) {\r\n         TxoutType type;\r\n-        bool res{::IsStandard(spk, std::nullopt, type)};\r\n+        bool res{::IsStandard(spk, type)};\r\n         if (res) {\r\n             BOOST_CHECK_EQUAL(type, TxoutType::MULTISIG);\r\n         }\r\ndiff --git a/src/test/transaction_tests.cpp b/src/test/transaction_tests.cpp\r\nindex 1375672a418..ba4b6a69b4b 100644\r\n--- a/src/test/transaction_tests.cpp\r\n+++ b/src/test/transaction_tests.cpp\r\n@@ -859,14 +859,14 @@ BOOST_AUTO_TEST_CASE(test_IsStandard)\r\n     CheckIsNotStandard(t, \"scriptpubkey\");\r\n\r\n     // MAX_OP_RETURN_RELAY-byte TxoutType::NULL_DATA (standard)\r\n-    t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n+    t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n     BOOST_CHECK_EQUAL(MAX_OP_RETURN_RELAY, t.vout[0].scriptPubKey.size());\r\n     CheckIsStandard(t);\r\n\r\n     // MAX_OP_RETURN_RELAY+1-byte TxoutType::NULL_DATA (non-standard)\r\n-    t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3800\"_hex;\r\n+    t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3800\"_hex;\r\n     BOOST_CHECK_EQUAL(MAX_OP_RETURN_RELAY + 1, t.vout[0].scriptPubKey.size());\r\n-    CheckIsNotStandard(t, \"scriptpubkey\");\r\n+    CheckIsNotStandard(t, \"datacarrier\");\r\n\r\n     // Data payload can be encoded in any way...\r\n     t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"\"_hex;\r\n@@ -888,21 +888,25 @@ BOOST_AUTO_TEST_CASE(test_IsStandard)\r\n     t.vout[0].scriptPubKey = CScript() << OP_RETURN;\r\n     CheckIsStandard(t);\r\n\r\n-    // Only one TxoutType::NULL_DATA permitted in all cases\r\n+    // Multiple TxoutType::NULL_DATA now permitted\r\n     t.vout.resize(2);\r\n     t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n     t.vout[0].nValue = 0;\r\n     t.vout[1].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n     t.vout[1].nValue = 0;\r\n-    CheckIsNotStandard(t, \"multi-op-return\");\r\n+    CheckIsStandard(t);\r\n\r\n     t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n     t.vout[1].scriptPubKey = CScript() << OP_RETURN;\r\n-    CheckIsNotStandard(t, \"multi-op-return\");\r\n+    CheckIsStandard(t);\r\n\r\n     t.vout[0].scriptPubKey = CScript() << OP_RETURN;\r\n     t.vout[1].scriptPubKey = CScript() << OP_RETURN;\r\n-    CheckIsNotStandard(t, \"multi-op-return\");\r\n+    CheckIsStandard(t);\r\n+\r\n+    t.vout[0].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n+    t.vout[1].scriptPubKey = CScript() << OP_RETURN << \"04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef3804678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38\"_hex;\r\n+    CheckIsNotStandard(t, \"datacarrier\");\r\n\r\n     // Check large scriptSig (non-standard if size is >1650 bytes)\r\n     t.vout.resize(1);\r\n```\r\n\r\n</details>"
+        },
+        "role": "technical_objection",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32381-015",
+        "author": "darosior",
+        "timestamp": "2025-04-30T19:12:08+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2843023281",
+        "span": {
+          "start": 0,
+          "end": 490,
+          "quote": "My intention with this PR was to have a first step that is consensual among regular contributors, seeing some expressed doubts with https://github.com/bitcoin/bitcoin/pull/32359 (i counted @danielabrozzoni @polespinasa and @andrewtoth but i may have missed some in the middle of all the spam).\r\n\r\nSeeing that it is not, i don't think there is any use in keeping this PR open. We should address the concerns of those contributors and do https://github.com/bitcoin/bitcoin/pull/32359 instead."
+        },
+        "role": "closure_explanation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M32381",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32381",
+        "span": {
+          "start": 0,
+          "end": 372,
+          "quote": "{\n  \"number\": 32381,\n  \"title\": \"policy: allow more than one OP_RETURN outputs per tx\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-04-29T20:21:59Z\",\n  \"closed_at\": \"2025-04-30T19:12:08Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"5fd80bd662fd47e0df2dfd951eb445e8a50ccebc\",\n  \"base_sha\": \"51d76634fb57fc7a3382fa26389e6c7f863bea76\",\n  \"actual_merge_sha\": null\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The proposer reports insufficient agreement among regular contributors and closes the smaller alternative.",
+    "alternative_or_limit": "A smaller patch does not necessarily resolve the disputed decision criteria. Closure does not reject every technical suggestion.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U08",
+      "U09a",
+      "U09b",
+      "V32381"
+    ]
+  },
+  {
+    "chain_id": "L08",
+    "title": "Personal block reported",
+    "stages": [
+      {
+        "source_id": "32381-013",
+        "author": "darosior",
+        "timestamp": "2025-04-30T14:45:40+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32381#issuecomment-2842235910",
+        "span": {
+          "start": 0,
+          "end": 309,
+          "quote": "@jesterhodl conceptual discussions should go on the mailing list. If you do take it there please understand the topic before sharing your strong opinion, this has nothing to do with Taproot witnesses. I just blocked you, which should prevent you from commenting further on this PR and wasting everyone's time."
+        },
+        "role": "reported_block",
+        "interpretation": ""
+      }
+    ],
+    "status": "reported_only",
+    "conclusion": "The author explicitly reports blocking the named user to prevent further comments on that PR.",
+    "alternative_or_limit": "Personal blocking, repository moderation and organization-wide banning have different scopes; the platform action is not independently retrieved.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N07"
+    ]
+  },
+  {
+    "chain_id": "L09",
+    "title": "Requested evidence beyond rationale",
+    "stages": [
+      {
+        "source_id": "32359-135",
+        "author": "BrazyDevelopment",
+        "timestamp": "2025-04-29T21:27:04+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2840289771",
+        "span": {
+          "start": 1277,
+          "end": 1431,
+          "quote": "We should also prioritise simulations or testnet experiments to quantify the impact on mempool dynamics and node performance under adversarial conditions."
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-139",
+        "author": "jlopp",
+        "timestamp": "2025-04-30T00:01:45+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2840489884",
+        "span": {
+          "start": 0,
+          "end": 919,
+          "quote": "> Bitcoin's mempool and network already face challenges from known attack vectors like flood and loot attacks, replacement cycling, and irreversible fee attacks, which exploit transaction propagation and fee mechanics to burden nodes or disrupt confirmation reliability.\r\n> \r\n> By removing OP_RETURN limits, we risk introducing new vectors for abuse, such as flooding the network with large, unspendable data outputs, without clear mitigations. These could amplify mempool bloat, increase node resource demands, and potentially incentivise malicious actors to exploit unspendable outputs in ways that compound existing issues, like driving up fees or delaying legitimate transactions.\r\n\r\nThis is so incredibly vague that it reads like an LLM output. @BrazyDevelopment  nothing in your comment actually specifies a novel attack vector. Nodes already have resource management logic that mitigates the issues you outlined."
+        },
+        "role": "technical_challenge",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-177",
+        "author": "BrazyDevelopment",
+        "timestamp": "2025-04-30T14:35:06+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2842197226",
+        "span": {
+          "start": 1615,
+          "end": 1678,
+          "quote": "We should run some testnet attacks to see how bad it could get."
+        },
+        "role": "renewed_request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32359-179",
+        "author": "jlopp",
+        "timestamp": "2025-04-30T14:40:17+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32359#issuecomment-2842211803",
+        "span": {
+          "start": 0,
+          "end": 922,
+          "quote": "> This clogs things up, delays real transactions, and jacks up fees as users compete.\r\n\r\nThis is literally how the market for block space operates. You haven't described anything different.\r\n\r\n> Massive OP_RETURN data could push smaller nodes to their memory or bandwidth limits, making it harder for them to kick out junk transactions and keep things running smoothly.\r\n\r\nWhat, specifically, would make mempool eviction \"harder?\" The lowest fee rate paying transactions get automatically evicted regardless of what data they contain.\r\n\r\n> Then there’s replacement cycling with RBF. Attackers could chain big OP_RETURN transactions, swapping them out repeatedly to gum up the mempool with low-value junk. \r\n\r\nOnce again, you describe how Bitcoin already works. This is why RBF replacement requires each new replacement package to pay a higher fee rate that what it's replacing, thus imposing an economic cost for doing so."
+        },
+        "role": "technical_response",
+        "interpretation": ""
+      }
+    ],
+    "status": "no_matching_implementation",
+    "conclusion": "The request for simulations or testnet attack experiments receives technical criticism, but no matching report of those requested experiments was located in the screened corpus.",
+    "alternative_or_limit": "Other tests in the PR address implementation behavior; they are not automatically the requested adversarial simulations.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L10",
+    "title": "Commit combination request implemented",
+    "stages": [
+      {
+        "source_id": "32406-098",
+        "author": "ajtowns",
+        "timestamp": "2025-05-12T07:39:12+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2084024874",
+        "span": {
+          "start": 0,
+          "end": 67,
+          "quote": "I'd suggest combining this commit with the \"Init: warn if set\" one."
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-142",
+        "author": "instagibbs",
+        "timestamp": "2025-05-13T14:13:25+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086936293",
+        "span": {
+          "start": 0,
+          "end": 91,
+          "quote": "combined commits, still leaning towards a long deprecation cycle to not mislead longer term"
+        },
+        "role": "reported_implementation",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The author reports combining commits while retaining a long deprecation preference.",
+    "alternative_or_limit": "Technical implementation is not shared-norm recognition.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U11",
+      "U12"
+    ]
+  },
+  {
+    "chain_id": "L11",
+    "title": "Author rejects some review suggestions",
+    "stages": [
+      {
+        "source_id": "32406-124",
+        "author": "stickies-v",
+        "timestamp": "2025-05-13T10:37:26+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086497989",
+        "span": {
+          "start": 0,
+          "end": 187,
+          "quote": "nit: no strong view, and not important, but my preference would be to just remove the `std::optional` altogether. Simplifies fn signature and defines what zero means in a single location."
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-132",
+        "author": "instagibbs",
+        "timestamp": "2025-05-13T14:02:15+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086911846",
+        "span": {
+          "start": 0,
+          "end": 80,
+          "quote": "that's not the same behavior IIUC\r\nleaving as-is to not increase scope of review"
+        },
+        "role": "reasoned_nonadoption",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-126",
+        "author": "stickies-v",
+        "timestamp": "2025-05-13T11:05:13+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086553680",
+        "span": {
+          "start": 0,
+          "end": 119,
+          "quote": "nit: I think it's strange to let one test handle another test's pre's, would just keep this in `test_block_max_weight`?"
+        },
+        "role": "other_request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-136",
+        "author": "instagibbs",
+        "timestamp": "2025-05-13T14:12:15+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2086933574",
+        "span": {
+          "start": 0,
+          "end": 148,
+          "quote": "style difference I guess? we assert the invariant we expect and I like subtests cleaning up their state in general for mempool stuff. Keeping as is."
+        },
+        "role": "reasoned_nonadoption",
+        "interpretation": ""
+      },
+      {
+        "source_id": "D_CONTRIB",
+        "author": "Repository documentation",
+        "timestamp": "2025-06-09",
+        "url": "https://github.com/bitcoin/bitcoin/blob/f3bbc746647d1fd23bf5cfe357e32f38c5f6319c/CONTRIBUTING.md",
+        "span": {
+          "start": 9029,
+          "end": 9227,
+          "quote": "You are expected to reply to any review comments before your pull request is\nmerged. You may update the code or reject the feedback if you do not agree with\nit, but you should express so in a reply."
+        },
+        "role": "dated_procedure",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "Responses explain why two suggestions are not taken; the documented expectation is to respond, with permission to reject feedback.",
+    "alternative_or_limit": "An unanswered-request metric would misclassify these exchanges; responsive review need not produce the requested edit.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "D05",
+      "D06"
+    ]
+  },
+  {
+    "chain_id": "L12",
+    "title": "Minor changes expressly made nonblocking",
+    "stages": [
+      {
+        "source_id": "32406-149",
+        "author": "Sjors",
+        "timestamp": "2025-05-13T15:37:51+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2877008733",
+        "span": {
+          "start": 51,
+          "end": 202,
+          "quote": "Smaller code code changes can be left to followups, as it's tedious to keep track of actual code review comments in this PR due to continued brigading."
+        },
+        "role": "proposed_convention",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-151",
+        "author": "stickies-v",
+        "timestamp": "2025-05-13T16:00:23+00:00",
+        "url": "",
+        "span": {
+          "start": 327,
+          "end": 406,
+          "quote": "Agreed. Leaving nits here just for reference but they shouldn't block progress."
+        },
+        "role": "expectation_recognition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A second reviewer explicitly recognizes that minor changes should not block progress in this PR.",
+    "alternative_or_limit": "The attributed brigading is a participant characterization; it is not a verified coordination finding.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N02",
+      "N02r"
+    ]
+  },
+  {
+    "chain_id": "L13",
+    "title": "Competing deprecation definitions",
+    "stages": [
+      {
+        "source_id": "32406-071",
+        "author": "instagibbs",
+        "timestamp": "2025-05-07T13:16:30+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2858558881",
+        "span": {
+          "start": 0,
+          "end": 317,
+          "quote": "> I believe this \"DEPRECATED\" definition is up for debate. Marking a toggle that has worked for my mempool policy and will work for my mempool policy in the future as \"DEPRECATED\" is FALSE & MISLEADING. It still works.\r\n\r\nDeprecation isn't a value judgment but a statement that it will be removed in a future version."
+        },
+        "role": "definition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-078",
+        "author": "ajtowns",
+        "timestamp": "2025-05-08T04:59:55+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2861778194",
+        "span": {
+          "start": 0,
+          "end": 201,
+          "quote": "> Deprecation isn't a value judgment but a statement that it will be removed in a future version.\r\n\r\nDeprecation doesn't even always mean it will actually be removed in a future version; see #32423 eg."
+        },
+        "role": "counterexample",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-170",
+        "author": "instagibbs",
+        "timestamp": "2025-05-14T13:06:58+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2088901333",
+        "span": {
+          "start": 0,
+          "end": 227,
+          "quote": "Directionally I want them marked for removal, even if it sits around for a few years. This can re-litigated with new information perhaps, but I don't find it \"honest\" to not mark it as such unless the project changes direction."
+        },
+        "role": "qualified_removal_position",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-178",
+        "author": "ajtowns",
+        "timestamp": "2025-05-15T03:10:55+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2090119662",
+        "span": {
+          "start": 0,
+          "end": 1965,
+          "quote": "Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nDespite recommending against using it, a feature might be left in the software ~forever, eg because it's needed for backwards compatability (see [`gets()`](https://en.cppreference.com/w/c/io/gets) in C, deprecated in 1999, removed from the standard in 2011, but still usable with current compilers and included in [glibc](https://www.man7.org/linux/man-pages/man3/gets.3.html)), or it might be removed in the next release, because everybody is willing and able to stop using it.\r\n\r\nHere, the reason to recommend not using it is because it will likely harm the efficiency of block reconstruction, slowing down block relay, and also make you use more bandwidth (requesting the tx then rejecting it, then receiving the tx again when it's included in a block), for very little benefit -- it won't stop spam from getting into blocks, and likely won't stop spam from getting into your mempool given other encoding methods are more efficient. I think the vast majority of developers contributing to core would recommend not setting this option to a lower value than the default, so I think marking it as \"deprecated\" is reasonable, even if there are a few developers who strongly disagree.\r\n\r\nWhether (or when) the option should also be removed rather than just deprecated depends on the trade-off between how many users continue to appreciate the feature, and how much effort it is to continue to support the code, and, perhaps, whether the presence of the feature is resulting in any harmful network effects. Given currently lots of people seem to want it, and maintaining it is very low effort, leaving the option in seems obviously sensible to me. YMMV, of course. And of course, even if it does get removed from core, if users actually want it, the code is open source so they can patch it back in or use a derivative that does that for them."
+        },
+        "role": "alternative_definition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-180",
+        "author": "polespinasa",
+        "timestamp": "2025-05-15T09:58:41+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#discussion_r2090794255",
+        "span": {
+          "start": 0,
+          "end": 194,
+          "quote": "> Personally, I think it's better to think of \"deprecated\" as meaning just \"the devs recommend you don't use this feature\".\r\n\r\nAgree on all you said, that's what I tried to argue in few words :)"
+        },
+        "role": "explicit_recognition",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "A local endorsement supports the recommendation-against-use interpretation, while other statements retain future removal as the direction.",
+    "alternative_or_limit": "Local recognition does not create an authoritative general definition.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N03",
+      "N03r",
+      "N04",
+      "N04r"
+    ]
+  },
+  {
+    "chain_id": "L14",
+    "title": "Unsupported negative reviews asked for links",
+    "stages": [
+      {
+        "source_id": "32406-104",
+        "author": "instagibbs",
+        "timestamp": "2025-05-12T14:28:17+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2872802091",
+        "span": {
+          "start": 0,
+          "end": 131,
+          "quote": "@1ma @iicuriosity I could not find your comment with justification in the other PR. Please edit and add a link to your concept NACK"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "D_CONTRIB",
+        "author": "Repository documentation",
+        "timestamp": "2025-06-09",
+        "url": "https://github.com/bitcoin/bitcoin/blob/f3bbc746647d1fd23bf5cfe357e32f38c5f6319c/CONTRIBUTING.md",
+        "span": {
+          "start": 16539,
+          "end": 16667,
+          "quote": "A `NACK` needs to include a rationale why the change is not worthwhile.\nNACKs without accompanying reasoning may be disregarded."
+        },
+        "role": "dated_procedure",
+        "interpretation": ""
+      }
+    ],
+    "status": "request_only",
+    "conclusion": "The proposer requests links to the rationale behind two NACKs, corresponding to the documented rationale expectation.",
+    "alternative_or_limit": "No exact edited-comment history is available to verify compliance. A bot category is not a vote.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "D04",
+      "D04c"
+    ]
+  },
+  {
+    "chain_id": "L15",
+    "title": "Bot correction and interpretation",
+    "stages": [
+      {
+        "source_id": "32406-169",
+        "author": "maflcko",
+        "timestamp": "2025-05-14T09:38:03+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2879517285",
+        "span": {
+          "start": 335,
+          "end": 613,
+          "quote": "The goal is *not* to have everyone \"register\" their \"vote\". It is simply a best-effort overview to have a clickable link to every reviewer's most recent review comment. The technical content of those review comments is what matters, not how many are registered in what category."
+        },
+        "role": "purpose_definition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-242",
+        "author": "BitcoinMechanic",
+        "timestamp": "2025-06-06T19:30:39+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2950473321",
+        "span": {
+          "start": 0,
+          "end": 252,
+          "quote": "I'd really appreciate it if @DrahtBot was manually updated to reflect my Concept NACK - currently it says I approve and I'd rather not go down in history as having been in favour of this terrible idea.\r\n\r\nupdate: I see it has been fixed now - thank you"
+        },
+        "role": "request_and_report",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-243",
+        "author": "achow101",
+        "timestamp": "2025-06-06T19:36:43+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2950505766",
+        "span": {
+          "start": 0,
+          "end": 278,
+          "quote": "> I'd really appreciate it if @DrahtBot was manually updated to reflect my Concept NACK\r\n\r\nYou can fix it yourself, as it clearly states in the comment:\r\n\r\n> If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update."
+        },
+        "role": "procedure_invocation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-244",
+        "author": "murchandamus",
+        "timestamp": "2025-06-06T20:16:08+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2950697976",
+        "span": {
+          "start": 0,
+          "end": 544,
+          "quote": "@BitcoinMechanic: I’m not sure what you expect DrahtBot to do, but it just parses comments and links to the last comment per user that contains a relevant string. So, when you make comments like this, what do you think should happen?\r\n\r\n![image](https://github.com/user-attachments/assets/771398ac-bb91-4e30-affc-341cdb86fcbc)\r\n![image](https://github.com/user-attachments/assets/3b40fb28-34c4-425f-959c-0a5e2dcebbe4)\r\n\r\nYou fixed it yourself, congrats:\r\n![image](https://github.com/user-attachments/assets/4c14057b-7d46-4f19-a54e-4e2e92261fad)"
+        },
+        "role": "attributed_correction",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A mistaken classification is disputed and reported corrected; a contributor explicitly invokes the bot correction procedure.",
+    "alternative_or_limit": "The images in the response were not inspected. The reported correction and bot indexing purpose do not establish a numerical decision rule.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L16",
+    "title": "Moderation guide invoked and consequence announced",
+    "stages": [
+      {
+        "source_id": "D_MOD",
+        "author": "Repository documentation",
+        "timestamp": "2024-08-14",
+        "url": "https://github.com/bitcoin-core/meta/blob/3527bf7818d53bffa6c496be7f8d30dc8e1fa198/MODERATION-GUIDELINES.md",
+        "span": {
+          "start": 523,
+          "end": 549,
+          "quote": "Comments will be on-topic."
+        },
+        "role": "dated_provision",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-112",
+        "author": "willcl-ark",
+        "timestamp": "2025-05-12T19:08:55+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2873707039",
+        "span": {
+          "start": 0,
+          "end": 1045,
+          "quote": "Reminder that this project's current [moderation guidelines](https://github.com/bitcoin-core/meta/blob/main/MODERATION-GUIDELINES.md) describe what we expect of contributors to this repository.\r\n\r\nTo keep it productive, especially on threads like these please:\r\n\r\n- Stay on-topic: discuss the patch, not Bitcoin in general.\r\n- Critique ideas, not motives.\r\n- Contribute new signal: avoid repeating arguments already made earlier (these will start being marked as duplicate, to make the thread easier to navigate).\r\n\r\nNote that this repository is _not_ a general bitcoin discussion board. It's one step removed from general discussions as contributors here discuss changes _via commenting on new revisions of the source code_. For protocol-wide chat use the mailing list, Delving Bitcoin, Reddit, X, etc. There are now many conversations taking place on this very topic :)\r\n\r\nIf you think your comment has been moderated incorrectly, edit your comment (or not) and raise your concern in [bitcoin-core/meta](https://github.com/bitcoin-core/meta/)."
+        },
+        "role": "procedure_statement",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-252",
+        "author": "willcl-ark",
+        "timestamp": "2025-06-07T19:17:12+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2952908266",
+        "span": {
+          "start": 0,
+          "end": 651,
+          "quote": "@1440000bytes please keep comments on topic, there are many subscribers here.\r\n\r\nComments about maintainers, other specific individuals, \"drama\" etc. are not on topic here in this thread. You can take that over to [bitcoin-core/meta](https://github.com/bitcoin-core/meta/), if you so desire.\r\n\r\nFailure to keep future comments focused on review of the proposed changes will result in a temporary ban. If you want to debate this comment please also do so on https://github.com/bitcoin-core/meta/, and not here. See the [moderation guidelines](https://github.com/bitcoin-core/meta/blob/main/MODERATION-GUIDELINES.md) for more information on this policy."
+        },
+        "role": "specific_warning",
+        "interpretation": ""
+      }
+    ],
+    "status": "documented_and_announced",
+    "conclusion": "Topic and novelty expectations have a historical documentary basis and specific warnings in the thread.",
+    "alternative_or_limit": "A stated future ban is not evidence of its execution. No individual permissions audit is available.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U14",
+      "U15a",
+      "U15b",
+      "U16b",
+      "U17",
+      "U18",
+      "U19"
+    ]
+  },
+  {
+    "chain_id": "L17",
+    "title": "Consensus constituency explicitly contested",
+    "stages": [
+      {
+        "source_id": "32406-225",
+        "author": "petertodd",
+        "timestamp": "2025-06-04T10:22:36+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939461753",
+        "span": {
+          "start": 697,
+          "end": 1054,
+          "quote": "Controversy needs to be weighed against the reasonableness of that controversy, and where the controversy is coming from. Here, we have good consensus among reasonable devs that actively contribute to Bitcoin Core that this change is a good idea. Secondly, the people who still disagree with this change are welcome to run an alternative fork such as Knots."
+        },
+        "role": "criterion_and_claim",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-226",
+        "author": "maluquices",
+        "timestamp": "2025-06-04T11:03:02+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939590089",
+        "span": {
+          "start": 0,
+          "end": 1136,
+          "quote": "> Pretty much every change to Bitcoin Core is controversial in the sense that there's someone out there who doesn't want the change to happen, or wants it to happen in a different way.\r\n\r\nStatement that's \"technically\" true but leaves out critical context. This PR is the reason Core dropped from 97% to below 90% adoption. It's not trivial disagreement, far from it.\r\n\r\n> Controversy needs to be weighed against the reasonableness of that controversy, and where the controversy is coming from. Here, we have good consensus among reasonable devs that actively contribute to Bitcoin Core that this change is a good idea. Secondly, the people who still disagree with this change are welcome to run an alternative fork such as Knots.\r\n\r\nTranslation: there's an established pecking order in here and only a few get to define what \"reasonable\" means. In this instance, reasonable means follow the experts, and if you don't like it, run something else.\r\n\r\nAt the risk of stating the obvious, any \"trust the experts\" approach necessarily implies centralized decision-making and flies directly in the face of open-source development principles."
+        },
+        "role": "challenge",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-227",
+        "author": "pinheadmz",
+        "timestamp": "2025-06-04T11:21:37+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939644399",
+        "span": {
+          "start": 0,
+          "end": 510,
+          "quote": "> dropped from 97% to below 90% adoption\r\n\r\n> flies directly in the face of open-source development principles.\r\n\r\n\r\n@maluquices this is a contradiction. Open source means anyone can fork the code, change it, release it, and use it. Bitcoin Core has been discussed, reviewed and maintained by hundreds of experts for over a decade and turned an idea into a two trillion dollar asset. Everyone is free to use Bitcoin Core, or to use software reviewed and maintained by any other group of people of any size.\r\n\r\n"
+        },
+        "role": "fork_freedom_response",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-228",
+        "author": "maluquices",
+        "timestamp": "2025-06-04T11:43:16+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2939708994",
+        "span": {
+          "start": 0,
+          "end": 662,
+          "quote": "@pinheadmz a \"technically\" accurate gotcha attempt that ignores the deeper issue. The adoption drop signals a real erosion of trust, not just a casual exercise of open-source freedom. When a change pushes away a substantial portion of the user base, dismissing it as \"just fork it\" ignores a practical reality. Open-source principles are a little more evolved than \"the code is public\" and require transparent decision-making that respects diverse input. When \"reasonable\" is defined by the few and dissenters are told to fork off, it stifles meaningful community participation. I like to think most contributors in this repo agree on this fundamental principle."
+        },
+        "role": "legitimacy_counterclaim",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "The dispute concerns whose judgments count and whether fork freedom satisfies obligations of open participation.",
+    "alternative_or_limit": "This is evidence of competing legitimacy claims, not an observed transfer of decision authority or a measured node-adoption effect.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N15",
+      "N15r",
+      "N16"
+    ]
+  },
+  {
+    "chain_id": "L18",
+    "title": "Readiness judgment with deferred option removal",
+    "stages": [
+      {
+        "source_id": "32406-264",
+        "author": "glozow",
+        "timestamp": "2025-06-09T12:12:39+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+        "span": {
+          "start": 0,
+          "end": 133,
+          "quote": "After weighing the technical arguments for/against this change and considering the objections [0], I believe this is ready for merge."
+        },
+        "role": "readiness_judgment",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-264",
+        "author": "glozow",
+        "timestamp": "2025-06-09T12:12:39+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+        "span": {
+          "start": 2975,
+          "end": 3155,
+          "quote": "Some developers still believe the option should be removed, but there is consensus for waiting at least 1 release like we did for `-mempoolfullrbf`. No timeline is set for removal."
+        },
+        "role": "bounded_agreement",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-264",
+        "author": "glozow",
+        "timestamp": "2025-06-09T12:12:39+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2955614286",
+        "span": {
+          "start": 3564,
+          "end": 3733,
+          "quote": "It seems that not all frequent contributors agree with this philosophy, but I think the conversation can be deferred until there is a proposal for removal of the option."
+        },
+        "role": "deferred_issue",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M32406",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406",
+        "span": {
+          "start": 0,
+          "end": 411,
+          "quote": "{\n  \"number\": 32406,\n  \"title\": \"policy: uncap datacarrier by default\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-05-02T15:41:22Z\",\n  \"closed_at\": \"2025-06-09T12:25:45Z\",\n  \"merged_at\": \"2025-06-09T12:25:45Z\",\n  \"head_sha\": \"a189d636184b1c28fa4a325b56c1fab8f44527b1\",\n  \"base_sha\": \"4b1d48a6866b24f0ed027334c6de642fc848d083\",\n  \"actual_merge_sha\": \"f3bbc746647d1fd23bf5cfe357e32f38c5f6319c\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A reasoned merge judgment separates changing the default from eventual removal and acknowledges disagreement on the broader option philosophy.",
+    "alternative_or_limit": "The merger assessment of adequately addressed objections is evidence of that judgment, not proof opponents accepted it.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N09",
+      "U20a",
+      "U20b",
+      "U21e",
+      "V32406"
+    ]
+  },
+  {
+    "chain_id": "L19",
+    "title": "Merge does not settle legitimacy objections",
+    "stages": [
+      {
+        "source_id": "M32406",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406",
+        "span": {
+          "start": 0,
+          "end": 411,
+          "quote": "{\n  \"number\": 32406,\n  \"title\": \"policy: uncap datacarrier by default\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-05-02T15:41:22Z\",\n  \"closed_at\": \"2025-06-09T12:25:45Z\",\n  \"merged_at\": \"2025-06-09T12:25:45Z\",\n  \"head_sha\": \"a189d636184b1c28fa4a325b56c1fab8f44527b1\",\n  \"base_sha\": \"4b1d48a6866b24f0ed027334c6de642fc848d083\",\n  \"actual_merge_sha\": \"f3bbc746647d1fd23bf5cfe357e32f38c5f6319c\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-265",
+        "author": "juanitoddd",
+        "timestamp": "2025-06-09T22:29:22+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2957181542",
+        "span": {
+          "start": 0,
+          "end": 199,
+          "quote": "There was no clear consensus on this, and therefore should have been never merged ! This action will set in motion a movement against this project. Well done, you just destroy your reputation ! Bravo"
+        },
+        "role": "postmerge_objection",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-270",
+        "author": "BitcoinMechanic",
+        "timestamp": "2025-06-10T18:00:49+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2960169750",
+        "span": {
+          "start": 0,
+          "end": 1010,
+          "quote": "> I don't think people understand that this is _by default_. You can still just set your own limits in your config. If you disagree, you can just change it on your nodes.\r\n> \r\n> This was technically the correct thing to do, even if all the bots on X said otherwise. This whole thing should've been a big nothingburger. Most of you all commenting on the issue aren't understanding the effect of the changes at all. Mob behaviour towards devs should not be tolerated.\r\n\r\nIt's on Core to have sane defaults for obvious reasons. Saying \"you can change it!\" or \"it's open source, go run something else!\" is a lame excuse that immediately sounds a loud alarm that the maintainers of this project don't understand the responsibility they have.\r\n\r\nAlso - referring to those who disagree with you as \"twitter bots\" or - as @glozow continually does (even in formal statements) that we're just using LLMs is not just frustrating and disrespectful to those who disagree with you, but makes you all look like elitist snobs."
+        },
+        "role": "responsibility_claim",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-271",
+        "author": "bigshiny90",
+        "timestamp": "2025-06-10T19:17:09+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2960344612",
+        "span": {
+          "start": 0,
+          "end": 1030,
+          "quote": "> > I don't think people understand that this is _by default_. You can still just set your own limits in your config. If you disagree, you can just change it on your nodes.\r\n> > This was technically the correct thing to do, even if all the bots on X said otherwise. This whole thing should've been a big nothingburger. Most of you all commenting on the issue aren't understanding the effect of the changes at all. Mob behaviour towards devs should not be tolerated.\r\n> \r\n> It's on Core to have sane defaults for obvious reasons. Saying \"you can change it!\" or \"it's open source, go run something else!\" is a lame excuse that immediately sounds a loud alarm that the maintainers of this project don't understand the responsibility they have.\r\n> \r\n> Also - referring to those who disagree with you as \"twitter bots\" or - as @glozow continually does (even in formal statements) that we're just using LLMs is not just frustrating and disrespectful to those who disagree with you, but makes you all look like elitist snobs.\r\n\r\nSo true "
+        },
+        "role": "endorsement",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "Integration is followed by continued denial of consensus and claims that Core remains responsible for sound defaults.",
+    "alternative_or_limit": "Subsequent objections cannot be used as premerge causes; later comments do not reverse the recorded merge.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L20",
+    "title": "Postmerge accusation withdrawn",
+    "stages": [
+      {
+        "source_id": "32406-291",
+        "author": "gmaxwell",
+        "timestamp": "2025-06-12T02:29:28+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2964820100",
+        "span": {
+          "start": 515,
+          "end": 588,
+          "quote": "if it's an accusation you made in error it would be polite to withdraw it"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-297",
+        "author": "BitcoinMechanic",
+        "timestamp": "2025-06-13T19:29:03+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2971424740",
+        "span": {
+          "start": 0,
+          "end": 301,
+          "quote": ">While it's no great sin to suffer an misunderstanding, the \"lie\" accusation is both unprofessional and abusive and so if it's an accusation you made in error it would be polite to withdraw it.\r\n\r\nHappy to withdraw this by the way as I wasn't aware of the double-usage of the term \"pruned\" in Bitcoin."
+        },
+        "role": "withdrawal",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A direct civility request receives explicit withdrawal based on a terminology misunderstanding.",
+    "alternative_or_limit": "This is a localized repair after integration. It does not demonstrate a dispute-wide change of position.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "N05",
+      "N05r"
+    ]
+  },
+  {
+    "chain_id": "L21",
+    "title": "Postmerge discussion remains open by stated preference",
+    "stages": [
+      {
+        "source_id": "32406-294",
+        "author": "wizkid057",
+        "timestamp": "2025-06-12T06:15:46+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2965253018",
+        "span": {
+          "start": 2528,
+          "end": 2578,
+          "quote": "Still confused as to why this thread isn't locked."
+        },
+        "role": "locking_query",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32406-295",
+        "author": "pinheadmz",
+        "timestamp": "2025-06-12T10:40:15+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2966094663",
+        "span": {
+          "start": 905,
+          "end": 1253,
+          "quote": "Anyone is free to mute the thread, I imagine contributors that were only participating for code review and not conceptual discussion have done so. There's no need to lock it as long as users are still discussing the issue -- clearly there needs to be more places where, for lack of better categories, \"users\" and \"developers\" can directly interact."
+        },
+        "role": "response",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The response favors continued user–developer interaction and voluntary muting instead of locking.",
+    "alternative_or_limit": "The author statement is not itself a repository-wide moderation policy or proof about every deleted comment.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L22",
+    "title": "June wording alternative fails to integrate",
+    "stages": [
+      {
+        "source_id": "32714-body",
+        "author": "achow101",
+        "timestamp": "2025-06-10T04:41:08Z",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714",
+        "span": {
+          "start": 0,
+          "end": 950,
+          "quote": "Instead of marking `-datacarrier` and `-datacarriersize` options as deprecated, only say that these options are not recommended for use.\r\n\r\nWhile deprecation obviously means that the options are not recommended for use, many users seem to believe that it also means that the options will be imminently removed. My understanding is that there is currently no plan to remove these options in the near future, and I don't think it would be wise to open a PR to remove the options for a few more years. While deprecation certainly does not give a timeline for removal, and the current text is still technically correct, I think that it would be clearer to users to remove the word \"deprecated\" from the documentation of this option while preserving the non-recommendation.\r\n\r\nOne thing that could be bikeshed is whether to warn on init if these options are set. IMO we should not have removal warnings if there is no current plan to actually remove them."
+        },
+        "role": "proposal",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32714-007",
+        "author": "Sjors",
+        "timestamp": "2025-06-10T07:33:06+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2957986589",
+        "span": {
+          "start": 0,
+          "end": 714,
+          "quote": "Concept NACK.\r\n\r\nIt's fine to _add_ a non-recommendation text, but we should keep the deprecation warning. If by the time we would normally drop a depreceated feature (v31 or v32) there's still a strong risk of brigading, then that's perhaps a _political_ argument for delaying it further, but it's still deprecated.\r\n\r\nI don't think the comparison with #29240 is correct here. There the deprecation itself was a mistake, because there were good technical reasons for users to keep using username and password. That's simply not the case here, as evidenced by the need to add non-recommendation text.\r\n\r\nRemoving the deprecation warning now also means having to repeat the drama when bringing the deprecation back."
+        },
+        "role": "opposing_warning_preference",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32714-009",
+        "author": "hodlinator",
+        "timestamp": "2025-06-10T10:25:32+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2958563890",
+        "span": {
+          "start": 0,
+          "end": 604,
+          "quote": "Concept NACK *for v30*\r\n\r\nNoting that this PR is opened on the day after 32406 is merged.\r\n\r\nKeeping the settings as deprecated for now means the delta to full removal is smaller, while removing the deprecation increases that delta. I think enough boats have been burned already, let's not re-build them only to burn them again. People implying maliciousness behind the first PR will not suddenly have their confidence restored by this one.\r\n\r\nWhat would change my mind:\r\n* New/better arguments for using them with non-default values.\r\n* Enough releases having passed without a push for complete removal."
+        },
+        "role": "conditional_objection",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M32714",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714",
+        "span": {
+          "start": 0,
+          "end": 397,
+          "quote": "{\n  \"number\": 32714,\n  \"title\": \"init, doc: Replace datacarrier(size) deprecation with non-recommendation text\",\n  \"state\": \"closed\",\n  \"merged\": false,\n  \"created_at\": \"2025-06-10T04:41:08Z\",\n  \"closed_at\": \"2025-06-10T18:37:57Z\",\n  \"merged_at\": null,\n  \"head_sha\": \"4f06bf3451c7800ccc54853b354285fb159ef382\",\n  \"base_sha\": \"dff208bd5a14d6c3384a0f55cfefb14c29789c57\",\n  \"actual_merge_sha\": null\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "closed_unmerged",
+    "conclusion": "The immediate replacement of deprecation with nonrecommendation does not merge in June.",
+    "alternative_or_limit": "Later reuse of its rationale does not retrospectively make this PR an adopted proposal.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U24",
+      "U25",
+      "U28a",
+      "U28b",
+      "V32714"
+    ]
+  },
+  {
+    "chain_id": "L23",
+    "title": "Evidence-conditioned reconsideration recognized",
+    "stages": [
+      {
+        "source_id": "32714-011",
+        "author": "ajtowns",
+        "timestamp": "2025-06-10T14:39:48+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2959520626",
+        "span": {
+          "start": 0,
+          "end": 2823,
+          "quote": "> While deprecation obviously means that the options are not recommended for use, many users seem to believe that it also means that the options will be imminently removed.\r\n\r\nGiven \"deprecation obviously means that the options are not recommended for use\" I think that trying to differentiate \"not recommended for use\" and \"deprecated\" will only lead to more confusion, so I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\n> My understanding is that there is currently no plan to remove these options in the near future, and I don't think it would be wise to open a PR to remove the options for a few more years.\r\n\r\n> Both `-datacarrier` and `-datacarriersize` options have been marked as deprecated and are expected to be removed in a future release. (#32406)`\r\n\r\n> `        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));`\r\n\r\nI think various contributors would like to remove the options in the near future, and both marking the option as deprecated and having explicit warnings about the feature being removed on startup and in the release notes lends support to those opinions. I also think it's hard to justify keeping around an option that we recommend nobody use for a long period of time.\r\n\r\nPersonally, I think it would make more sense to take the following approach:\r\n\r\n * decide what we think the default behaviour should be (ie, relay/mine txs with an arbitrary number of OP_RETURN outputs, of arbitrary length)\r\n * determine if enough users seem interested in alternative behaviours to justify providing/maintaining a runtime configuration option (sure seems like there are)\r\n * observe if that configuration option is useful in practice on the network (ie, some level of hashpower actually changes from the default behaviour -- not observable at the moment because the new default behaviour isn't even available in released software)\r\n   * if 99.9% of hashpower (or some other number) seems satisfied with the default behaviour, remove the option, possibly with a deprecation period\r\n   * on the other hand, if a majority of hashpower (or plurality?) is using some different behaviour to our default, even after a release with the new default has been out for some time, seriously consider changing our defaults to match that behaviour\r\n\r\nTaking that approach would mean not deprecating the option until after a release with the new default has been out for some time."
+        },
+        "role": "proposed_decision_criteria",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32714-013",
+        "author": "jonatack",
+        "timestamp": "2025-06-10T16:38:48+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714#pullrequestreview-2914319980",
+        "span": {
+          "start": 0,
+          "end": 453,
+          "quote": "Concept ACK, modulo the following\r\n\r\n> I think we should either (a) recommend the option not be used and mark it deprecated; or (b) not mark it deprecated, and leave it up to the user to decide whether to use the option, without making any particular recommendation; and not try (c) some other option to split the non-existent difference. If it were just up to me, I'd choose (b) over (a), but it's not a terribly strong opinion.\r\n\r\nAgree with @ajtowns."
+        },
+        "role": "quoted_agreement",
+        "interpretation": ""
+      },
+      {
+        "source_id": "32714-015",
+        "author": "instagibbs",
+        "timestamp": "2025-06-10T18:30:48+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714#issuecomment-2960239724",
+        "span": {
+          "start": 0,
+          "end": 287,
+          "quote": "concept NACK, seems needless churn to me to backtrack on something a number of original reviewers(and author himself) disagree with\r\n\r\nAs per @ajtowns if miners end up over-riding the value a lot, we can rethink deprecation. I don't think removing deprecation now makes anything clearer."
+        },
+        "role": "scoped_recognition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "Participants explicitly recognize possible reconsideration if miners override the default substantially.",
+    "alternative_or_limit": "The stated thresholds and time window remain unsettled; no quantitative trigger is coded as an adopted rule.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U29",
+      "U30"
+    ]
+  },
+  {
+    "chain_id": "L24",
+    "title": "Translation constraint tested",
+    "stages": [
+      {
+        "source_id": "33224-008",
+        "author": "fanquake",
+        "timestamp": "2025-08-22T11:40:59+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3214071991",
+        "span": {
+          "start": 0,
+          "end": 82,
+          "quote": "cc @hebasto; given this would change translations after translation string freeze."
+        },
+        "role": "freeze_flag",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33224-010",
+        "author": "hebasto",
+        "timestamp": "2025-08-24T13:36:19+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3218109881",
+        "span": {
+          "start": 0,
+          "end": 726,
+          "quote": "> cc @hebasto; given this would change translations after translation string freeze.\r\n\r\nThe translation workflow on Transifex includes marking translated strings as \"Reviewed\", which locks them from further changes. Not every translation team uses this feature, but those who do rely on it. Unfortunately, the \"opensource\" plan used by the [Bitcoin organization](https://explore.transifex.com/bitcoin/) on Transifex has very limited functionality, and it is not guaranteed that updating the translation source file (as in https://github.com/bitcoin/bitcoin/pull/33193) won’t reset the \"Reviewed\" status for other strings.\r\n\r\nIn short, there must not be any translation source updates after the final translation string freeze."
+        },
+        "role": "constraint",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33224-015",
+        "author": "achow101",
+        "timestamp": "2025-08-28T20:18:10+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3234820665",
+        "span": {
+          "start": 0,
+          "end": 1882,
+          "quote": "I've done some experimenting with a test project on transifex to see what the actual effects this change would cause, and a potential workaround.\r\n\r\nIn this test project, I copied over a couple fully translated languages to observe how the translated strings change when the source is updated. After rebasing this PR branch and doing `cmake --build build --target translate`, I uploaded the resulting modified `bitcoin_en.xlf` file. This resulted in 122 (~10% of strings) being marked untranslated again in both languages. We can assume that that behavior will appear across all languages, so that means ~10% of all translated strings would need to be retranslated. That's the crux of the problem. Now, Transifex does provide suggestions based on previous translations so those translations can be filled in with the click of a button. But that means someone needs to do that for every single language. I think this issue is why we institute a translation strings freeze.\r\n\r\nHowever, I think there is a workaround to this issue. Ultimately the reason transifex thinks 121 additional strings need to be translated is because the `.xlf` files contain an id for each string which is based upon the position of a string in the `bitcoin_en.ts` file which is automatically generated from the source code using `lupdate`. But if we instead modify `bitcoin_en.ts` directly as well, `lupdate` will not change the string order so the generated `bitcoin_en.xlf` file will contain just the changed string (and some other autogenerated context changes that don't seem to make a difference), which can be uploaded to Transifex. The result is that only this single string needs to be translated and no other strings will be affected.\r\n\r\nIf this doc change is desired by contributors, and the 9 acks suggested that it is, then I think this workaround of modifying `bitcoin_en.ts` would be suitable."
+        },
+        "role": "reported_experiment_and_workaround",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33224-019",
+        "author": "l0rinc",
+        "timestamp": "2025-08-29T22:17:20+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3238412102",
+        "span": {
+          "start": 0,
+          "end": 381,
+          "quote": "I have checked the problem against the actual Core translations on Transifex and I could reproduce the massive invalidations and https://github.com/bitcoin/bitcoin/pull/33270#issuecomment-3238407406 does fix it successfully so that translators only need to check the modified entries:\r\n<img src=\"https://github.com/user-attachments/assets/a90798da-fab9-4732-bc4a-075711e10558\" />\r\n"
+        },
+        "role": "further_test_report",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The constraint receives a technical rationale and reported testing, with alternative workarounds proposed.",
+    "alternative_or_limit": "Transifex behavior was not independently reproduced. Recognition of a freeze rationale does not by itself establish the exact force of every final-freeze prohibition.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U32",
+      "N10"
+    ]
+  },
+  {
+    "chain_id": "L25",
+    "title": "English-only route accepted",
+    "stages": [
+      {
+        "source_id": "33224-012",
+        "author": "l0rinc",
+        "timestamp": "2025-08-24T14:42:40+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3218160937",
+        "span": {
+          "start": 0,
+          "end": 170,
+          "quote": "@hebasto, how can we help with finding a solution?\r\nI personally would be okay with only fixing the English version, if updating the rest is indeed an unsolvable problem."
+        },
+        "role": "conditional_offer",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33224-021",
+        "author": "hebasto",
+        "timestamp": "2025-09-01T10:59:17+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3241930685",
+        "span": {
+          "start": 0,
+          "end": 571,
+          "quote": "> If this doc change is desired by contributors, and the 9 acks suggested that it is, then...\r\n\r\n... it can be accepted as is, but left untranslated until the version v31.0.\r\n\r\nThis is acceptable because:\r\n1. We never promised, nor have we ever delivered, 100% translations for every language.\r\n2. It's still easy for the user to translate the warning message themself.\r\n\r\nI still hesitant about introducing last-minute changes to the translation pipeline / framework. We can revisit all related suggestions, such as dropping locations and ids, right after branching off."
+        },
+        "role": "bounded_acceptance",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33224-024",
+        "author": "achow101",
+        "timestamp": "2025-09-02T22:41:50+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224#issuecomment-3247030103",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK 2885bd0e1c4fc863a7f28ff0fd353f5cffb03442"
+        },
+        "role": "commit_specific_ack",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33224",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224",
+        "span": {
+          "start": 0,
+          "end": 430,
+          "quote": "{\n  \"number\": 33224,\n  \"title\": \"doc: unify `datacarriersize` warning with release notes\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-08-20T03:45:42Z\",\n  \"closed_at\": \"2025-09-02T22:48:55Z\",\n  \"merged_at\": \"2025-09-02T22:48:54Z\",\n  \"head_sha\": \"2885bd0e1c4fc863a7f28ff0fd353f5cffb03442\",\n  \"base_sha\": \"f5f853d952542ebd45339a270a98362696877657\",\n  \"actual_merge_sha\": \"46369583f3a99d2b403349790f8b26dbc28de132\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "X33224",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33224/files",
+        "span": {
+          "start": 0,
+          "end": 631,
+          "quote": "@@ -904,7 +904,7 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n     }\n \n     if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.\"));\n+        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n     }\n \n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config."
+        },
+        "role": "patch_context",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A route leaves the wording untranslated until v31.0, defers workflow changes, and accompanies the merged warning revision.",
+    "alternative_or_limit": "The record does not show the alternative translation workaround was adopted or that the freeze was repealed.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U33",
+      "U34",
+      "U35",
+      "V33224"
+    ]
+  },
+  {
+    "chain_id": "L26",
+    "title": "June warning rationale reused in September",
+    "stages": [
+      {
+        "source_id": "32714-body",
+        "author": "achow101",
+        "timestamp": "2025-06-10T04:41:08Z",
+        "url": "https://github.com/bitcoin/bitcoin/pull/32714",
+        "span": {
+          "start": 858,
+          "end": 950,
+          "quote": "IMO we should not have removal warnings if there is no current plan to actually remove them."
+        },
+        "role": "prior_expectation",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-body",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-22T10:40:53Z",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+        "span": {
+          "start": 677,
+          "end": 1205,
+          "quote": "This echo’s Ava Chow’s comment from #32714 that “_IMO we should not have removal warnings if there is no current plan to actually remove them._” In months since that comment, partially due to increased feedback from Bitcoin Core users wanting to keep this option, there is even less likelihood of a near term plan to remove these options. That leaves Bitcoin Core users in an unclear situation: the option could be removed in the next version or perhaps never. Removing the deprecation gives clarity for their planning purposes."
+        },
+        "role": "attributed_reuse",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33453",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+        "span": {
+          "start": 0,
+          "end": 446,
+          "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A statement from the failed June proposal becomes an explicit reason in the later undeprecation proposal.",
+    "alternative_or_limit": "Quotation in a supportive proposal is meaningful reuse but not a second independently originated proposition or a uniquely identified cause.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U25",
+      "U45",
+      "V33453"
+    ]
+  },
+  {
+    "chain_id": "L27",
+    "title": "Funding independence assurance",
+    "stages": [
+      {
+        "source_id": "33453-001",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-22T10:41:41+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318166185",
+        "span": {
+          "start": 0,
+          "end": 858,
+          "quote": "I open this PR with the goal of having the deprecation removed for the upcoming v30 release, in order to minimize any additional confusion around this option.\r\n\r\nI ask that any Bitcoin Core users that want to indicate support or opposition to this PR without providing technical feedback use the 👍 or 👎 reactions rather than an ACK/NACK in hopes of keeping this PR easy and expeditious to review.\r\n\r\n_Disclaimer: I am the executive director of Brink, an organization that funds some Bitcoin Core developers, some of which may review this PR. I have emailed them separately letting them know that any review feedback here (positive or critical) will not impact their standing, funding, or employment with Brink. Independent review and open discussion are critical for Bitcoin Core, and Ive encouraged them to engage as they would with any other contributor._ "
+        },
+        "role": "commitment",
+        "interpretation": ""
+      }
+    ],
+    "status": "statement_only",
+    "conclusion": "A funding representative explicitly assures reviewers that positions will not affect funding or employment.",
+    "alternative_or_limit": "The corpus records the assurance, not an audit of donor influence, employment decisions or actual independence.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L28",
+    "title": "Use-case request receives contested answer",
+    "stages": [
+      {
+        "source_id": "33453-025",
+        "author": "Kruwed",
+        "timestamp": "2025-09-22T16:08:07+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319944425",
+        "span": {
+          "start": 0,
+          "end": 579,
+          "quote": ">**Many current Bitcoin Core users want to continue using this option**\r\nThis statement is based on public postings from many Bitcoin Core users and not a formal survey. AJ Towns’ observation from [#32406](https://github.com/bitcoin/bitcoin/pull/32406/commits/0b4048c73385166144d0b3e76beb9a2ac4cc1eca#r2084024874) that “for now there seem to be a bunch of users who like the option” has only become more apparent in the months since.\r\n\r\nPopularity is not a sufficient reason alone, can you provide any of the underlying reasons why these users want to continue using this option?"
+        },
+        "role": "request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-028",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-22T16:35:27+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3320079835",
+        "span": {
+          "start": 0,
+          "end": 357,
+          "quote": "> Popularity is not a sufficient reason alone, can you provide any of the underlying reasons why these users want to continue using this option?\r\n\r\nSure, from what Ive seen: Some miners want to use Bitcoin Core for block template building but dont want to include large op_returns. Relay nodes/node runners do not want to relay unconfirmed large op_returns."
+        },
+        "role": "answer",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-030",
+        "author": "Kruwed",
+        "timestamp": "2025-09-22T16:53:21+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3320173852",
+        "span": {
+          "start": 0,
+          "end": 314,
+          "quote": ">Sure, from what Ive seen: Some miners want to use Bitcoin Core for block template building but don't want to include large op_returns. Relay nodes/node runners do not want to relay unconfirmed large op_returns.\r\n\r\nWhy should Bitcoin Core support a config option to perform targeted censorship of large OP_RETURNs?"
+        },
+        "role": "challenge",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-044",
+        "author": "Kruwed",
+        "timestamp": "2025-09-23T07:41:02+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3322791530",
+        "span": {
+          "start": 0,
+          "end": 874,
+          "quote": ">This specific PR seeks clarity in the datacarrier options' future availability, in favor of removing the deprecation, as the deprecation designation definition is unclear, potentially incorrect (if the definition is will be removed), and causes uncertainty for Bitcoin Core users around timing.\r\n\r\nWhy shouldn't the datacarrier options be removed? My earlier question remains unaddressed:\r\n\r\n>>Why should Bitcoin Core support a config option to perform targeted censorship of large OP_RETURNs?\r\n\r\n@Sjors made a concise point on how deprecation/removal are tied together: https://github.com/bitcoin/bitcoin/pull/32406#issuecomment-2851233257\r\n\r\n>It briefly retains it, typically deprecation is followed by removal one release later. So if you're opposed to direct removal, then everyone will understand that you're also opposed to deprecation, so there's nothing new to say."
+        },
+        "role": "renewed_challenge",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "Specific uses are supplied but their legitimacy remains disputed. An answer is not equivalent to satisfying the requester.",
+    "alternative_or_limit": "No representative demand measure or agreed definition of a legitimate use emerges from this exchange.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L29",
+    "title": "Release-note request corrected",
+    "stages": [
+      {
+        "source_id": "33453-009",
+        "author": "0xB10C",
+        "timestamp": "2025-09-22T11:34:20+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318432100",
+        "span": {
+          "start": 0,
+          "end": 649,
+          "quote": "~fwiw: If/when this is merged, the [draft release notes](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/v30.0-Release-Notes-Draft#policy) should be updated. They mention: `Both -datacarrier and -datacarriersize options have been marked as deprecated and are expected to be removed in a future release.`~ \r\n\r\nedit: Nvm, this PR is against master. While the [tweet](https://x.com/bitschmidty/status/1970076766254313819) mentions \"The tactical goal is to get the change into the forthcoming Bitcoin Core v30 release.\" - this isn't relevant until back-ported. As pointed out in https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319149396"
+        },
+        "role": "initial_request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-015",
+        "author": "darosior",
+        "timestamp": "2025-09-22T13:46:55+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319149396",
+        "span": {
+          "start": 0,
+          "end": 833,
+          "quote": "I think Bitcoin Core should strive to limit its extensive and growing number of startup options. Optionality for the sake of it is counterproductive. On this basis, the `-datacarrier` and `-datacarriersize` options controlling a long obsolete relay policy limit are in my opinion prime candidates for removal.\r\n\r\nThat said, certain users care strongly about using those options. In these conditions, i do not see the project removing the option anytime soon. Therefore i think it's technically incorrect (and confusing) to mark it as deprecated. utACK 451ba9ada41f687c0e4bb34d5925374a68a8f8a3 on removing the deprecation.\r\n\r\n> fwiw: If/when this is merged, the [draft release notes](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/v30.0-Release-Notes-Draft#policy) should be updated.\r\n\r\nWell, only if it gets backported to 30.0?"
+        },
+        "role": "scope_correction",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-016",
+        "author": "0xB10C",
+        "timestamp": "2025-09-22T14:04:02+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319240689",
+        "span": {
+          "start": 0,
+          "end": 266,
+          "quote": "> > fwiw: If/when this is merged, the [draft release notes](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/v30.0-Release-Notes-Draft#policy) should be updated.\r\n> \r\n> Well, only if it gets backported to 30.0?\r\n\r\nCorrect, I've edited my comment to reflect that."
+        },
+        "role": "acknowledged_revision",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "A reviewer acknowledges that release-note changes apply only if the change is backported and reports editing the comment.",
+    "alternative_or_limit": "The snapshot cannot recover every prior edit state.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L30",
+    "title": "Backport authority expressly recognized",
+    "stages": [
+      {
+        "source_id": "33453-014",
+        "author": "instagibbs",
+        "timestamp": "2025-09-22T13:45:22+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319141087",
+        "span": {
+          "start": 0,
+          "end": 530,
+          "quote": "@bitschmidty to be clear are you considering this as something to backport (30 et al), or just for following releases from master.\r\n\r\nAssuming this is merged no one who will bother setting this argument in 30.0 will be unable to find relevant drama and the resolution of the PR in the affirmative.\r\n\r\n~)concept NACK on backport,~ truly ambivalent on undeprecating because I can see how it's confusing to honestly curious users to not have a timeline to do so (and maybe bad project hygiene), but also it's just not very important."
+        },
+        "role": "scope_question",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-018",
+        "author": "instagibbs",
+        "timestamp": "2025-09-22T14:34:39+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3319439146",
+        "span": {
+          "start": 0,
+          "end": 138,
+          "quote": "Ultimately that's a maintainer's call (burden of backporting, badgering for review, and cutting RCs), I will not put up a fuss either way."
+        },
+        "role": "role_attribution",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-069",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-24T10:10:00+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327584051",
+        "span": {
+          "start": 2611,
+          "end": 2660,
+          "quote": "I defer to you and the other maintainers on this."
+        },
+        "role": "expectation_recognition",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-066",
+        "author": "fanquake",
+        "timestamp": "2025-09-23T22:45:43+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325790255",
+        "span": {
+          "start": 0,
+          "end": 329,
+          "quote": "> AFAIK there is already a PR for rc2 (see https://github.com/bitcoin/bitcoin/pull/33424, https://github.com/bitcoin/bitcoin/issues/32275)\r\n\r\nGiven it's been 2 weeks since rc1, and there's going to be an rc3 in either case, I'm going to tag an rc2 shortly, and when it's decided what to do here, it could be incorported into rc3."
+        },
+        "role": "release_timing",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33453",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+        "span": {
+          "start": 0,
+          "end": 446,
+          "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+        },
+        "role": "master_merge",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-086",
+        "author": "fanquake",
+        "timestamp": "2025-10-02T13:05:16+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3361148614",
+        "span": {
+          "start": 0,
+          "end": 29,
+          "quote": "Backported to 30.x in #33473."
+        },
+        "role": "backport_report",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33473",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33473",
+        "span": {
+          "start": 0,
+          "end": 547,
+          "quote": "{\n  \"number\": 33473,\n  \"title\": \"[30.x] Backports & rc3\",\n  \"body\": \"Backports:\\r\\n* #33434\\r\\n* #33446\\r\\n* #33453\\r\\n* #33475\\r\\n* #33482\\r\\n* #33484\\r\\n* #33504\\r\\n\\r\\nIncludes changes for `v30.0rc3`:\\r\\n* Version bump\\r\\n* Regen manpages\\r\\n* Regen exmaple .conf\",\n  \"base\": \"30.x\",\n  \"head_sha\": \"4e869a67aa7415f9c756bf6463e3437ae0a3ec44\",\n  \"merged\": true,\n  \"merge_commit_sha\": \"d5e0077bef4cc4484242bb9a88a4840bc803c091\",\n  \"created_at\": \"2025-09-24T14:11:42Z\",\n  \"closed_at\": \"2025-10-06T09:37:33Z\",\n  \"merged_at\": \"2025-10-06T09:37:33Z\"\n}"
+        },
+        "role": "backport_merge",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "The proposer recognizes maintainer release jurisdiction; September 30 master integration and October 6 backport integration are separate.",
+    "alternative_or_limit": "The October 2 report does not date the later merge. Release distribution and user installation are not established here.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U38",
+      "U39",
+      "N11",
+      "N12",
+      "N13",
+      "V33453"
+    ]
+  },
+  {
+    "chain_id": "L31",
+    "title": "Narrower alternative offered but current PR proceeds",
+    "stages": [
+      {
+        "source_id": "33453-031",
+        "author": "polespinasa",
+        "timestamp": "2025-09-22T16:55:04+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#discussion_r2369422871",
+        "span": {
+          "start": 0,
+          "end": 235,
+          "quote": "Maybe just remove the `\"expected to be removed in a future version\"` sentence.\r\n```c++\r\n        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and the use of it is discouraged.\"));\r\n```"
+        },
+        "role": "alternate_wording",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-062",
+        "author": "glozow",
+        "timestamp": "2025-09-23T19:45:33+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#pullrequestreview-3259349531",
+        "span": {
+          "start": 0,
+          "end": 1375,
+          "quote": "This is the 3rd PR since #32406's merge discussing what the config options' docs should say. Given how much collective effort this has required, I think we should be realistic about what this PR achieves.\r\n\r\nI believe this PR tries to align the documentation with what users can expect. Usage of these options can cause the node to reject transactions that are likely to be mined, so the docs should discourage their use (to me, that means deprecated). However, it seems that removal in the near future is (1) unlikely and (2) has a few technical objections like https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164. I cannot predict the future, but I would guess it is more accurate to remove the sentence saying to expect their removal.\r\n\r\nThis PR does not pave a path towards changing the default again, commit the project to maintaining any particular configuration, or *by itself* give users a clearer understanding of the node’s datacarrier policies and what to expect. We still have lots of communication to do.\r\n\r\nFwiw I don’t think it makes sense to target this for v31 and not v30. ~AFAIK there is already a PR for rc2 (see #33424, #32275) and I personally don't think it's worth holding up the release for this PR. So the merge + backport + release notes changes need to happen very quickly for this to be incorporated.~ (EDIT: this can go in rc3)"
+        },
+        "role": "scope_and_preference",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-069",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-24T10:10:00+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327584051",
+        "span": {
+          "start": 0,
+          "end": 2844,
+          "quote": "> This is the 3rd PR since #32406's merge discussing what the config options' docs should say.\r\n\r\nThank you to all who have reviewed and provided thoughtful feedback on this PR. \r\n\r\n> I believe this PR tries to align the documentation with what users can expect. Usage of these options can cause the node to reject transactions that are likely to be mined, so the docs should discourage their use (to me, that means deprecated). However, it seems that removal in the near future is (1) unlikely and (2) has a few technical objections like [#33453 (comment)](https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164). I cannot predict the future, but I would guess it is more accurate to remove the sentence saying to expect their removal.\r\n\r\nIIUC, there seems to be support for removing the \"expected to be removed in a future version\" sentence, and leaving the options as deprecated. The sentence removal addresses ambiguity around availability of the option in the near and medium term, and the deprecated status of the option indicates only discouragement of using the options. This reflects the reality of the situation IMHO. Tangibly, that would mean closing this PR and a new one to  change the sentence as outlined by @polespinasa in https://github.com/bitcoin/bitcoin/pull/33453/files#r2369422871 ? I am happy to do that, although someone else may be able to do it more expeditiously. Let me know @glozow. \r\n\r\nGiven the widespread interest in the option by Bitcoin Core users, Id suggest any future work around this option, including any plans around its removal, include a clear timeline. I believe thats already customary in the project, but wanted to reiterate.\r\n\r\n> This PR does not pave a path towards changing the default again, commit the project to maintaining any particular configuration, or _by itself_ give users a clearer understanding of the node’s datacarrier policies and what to expect. We still have lots of communication to do.\r\n\r\nAgreed on communication and that is downstream from any related changes here. Happy to help on this. I think the \"deprecated but not currently scheduled for removal\" will be a near term confusion for Bitcoin Core users, should the suggestion you made above be accepted. But again, mostly separate work from this repository.\r\n\r\n> Fwiw I don’t think it makes sense to target this for v31 and not v30. AFAIK there is already a PR for rc2 (see #33424, #32275) and I personally don't think it's worth holding up the release for this PR. So the merge + backport + release notes changes need to happen very quickly for this to be incorporated.\r\n\r\nI defer to you and the other maintainers on this. I think merging a PR with some version of the wording suggestion above to the codebase, regardless of whether it is released in v30 or v31 \"should\" have the desired clarification.\r\n\r\n"
+        },
+        "role": "offer_to_replace",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-070",
+        "author": "theDavidCoen",
+        "timestamp": "2025-09-24T11:06:51+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327813332",
+        "span": {
+          "start": 0,
+          "end": 3645,
+          "quote": "> > This is the 3rd PR since #32406's merge discussing what the config options' docs should say.\r\n> \r\n> Thank you to all who have reviewed and provided thoughtful feedback on this PR.\r\n> \r\n> > I believe this PR tries to align the documentation with what users can expect. Usage of these options can cause the node to reject transactions that are likely to be mined, so the docs should discourage their use (to me, that means deprecated). However, it seems that removal in the near future is (1) unlikely and (2) has a few technical objections like [#33453 (comment)](https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164). I cannot predict the future, but I would guess it is more accurate to remove the sentence saying to expect their removal.\r\n> \r\n> IIUC, there seems to be support for removing the \"expected to be removed in a future version\" sentence, and leaving the options as deprecated. The sentence removal addresses ambiguity around availability of the option in the near and medium term, and the deprecated status of the option indicates only discouragement of using the options. This reflects the reality of the situation IMHO. Tangibly, that would mean closing this PR and a new one to change the sentence as outlined by @polespinasa in https://github.com/bitcoin/bitcoin/pull/33453/files#r2369422871 ? I am happy to do that, although someone else may be able to do it more expeditiously. Let me know @glozow.\r\n> \r\n> Given the widespread interest in the option by Bitcoin Core users, Id suggest any future work around this option, including any plans around its removal, include a clear timeline. I believe thats already customary in the project, but wanted to reiterate.\r\n> \r\n> > This PR does not pave a path towards changing the default again, commit the project to maintaining any particular configuration, or _by itself_ give users a clearer understanding of the node’s datacarrier policies and what to expect. We still have lots of communication to do.\r\n> \r\n> Agreed on communication and that is downstream from any related changes here. Happy to help on this. I think the \"deprecated but not currently scheduled for removal\" will be a near term confusion for Bitcoin Core users, should the suggestion you made above be accepted. But again, mostly separate work from this repository.\r\n> \r\n> > Fwiw I don’t think it makes sense to target this for v31 and not v30. AFAIK there is already a PR for rc2 (see #33424, #32275) and I personally don't think it's worth holding up the release for this PR. So the merge + backport + release notes changes need to happen very quickly for this to be incorporated.\r\n> \r\n> I defer to you and the other maintainers on this. I think merging a PR with some version of the wording suggestion above to the codebase, regardless of whether it is released in v30 or v31 \"should\" have the desired clarification.\r\n\r\n\"deprecated but not currently scheduled for removal\" makes no sense to me from a user point of view..\r\nAlso, suggesting that the use is discouraged but without providing clear communication is wrong imo, considering also that, as @ajtowns suggested here https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164 , with compact blocks the effects of setting datacarriersize or disabling datacarrier might not be particularly significant.\r\nhttps://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3318779164\r\n\r\nWhy don't you simply merge the PR as it is, so we can have it in v30?\r\nWhen / if there will be a plan to actually deprecate those options with clear communication from the proponents, we could simply change the description again to match the plan."
+        },
+        "role": "preference_for_current",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-071",
+        "author": "ryanofsky",
+        "timestamp": "2025-09-24T11:13:53+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327870842",
+        "span": {
+          "start": 0,
+          "end": 524,
+          "quote": "> Tangibly, that would mean closing this PR\r\n\r\nFWIW, I like the current PR more than these other ideas. I see these options as basically the same as other options. Not particularly dangerous, not particularly interesting, likely to be kept if used and there are contributors willing to maintain them, and likely to be removed if not used or they impose significant costs. I think having a warning which draws special attention to these options just amps up partisans on both sides and does not help the project move forward."
+        },
+        "role": "preference_for_current",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-076",
+        "author": "glozow",
+        "timestamp": "2025-09-26T14:31:02+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3338979025",
+        "span": {
+          "start": 0,
+          "end": 340,
+          "quote": "> Tangibly, that would mean closing this PR and a new one to change the sentence\r\n> Let me know @glozow.\r\n\r\nIt looks like you have conceptual support from folks to change the string, but strong preferences for one of two approaches. Your call whether you want to change your PR, leave it as is, open a new one, etc. Not everyone will agree."
+        },
+        "role": "proposer_discretion",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33453",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+        "span": {
+          "start": 0,
+          "end": 446,
+          "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "supported_sequence",
+    "conclusion": "Review entertains a narrower warning edit; the author offers replacement; a later comment leaves the choice to the proposer and the existing proposal merges.",
+    "alternative_or_limit": "The alternative was considered, not formally voted down. None of these permissions is sole-cause evidence for integration.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": [
+      "U41a",
+      "U41b",
+      "U41c",
+      "V33453"
+    ]
+  },
+  {
+    "chain_id": "L32",
+    "title": "Full reversal demands remain outside merged scope",
+    "stages": [
+      {
+        "source_id": "33453-036",
+        "author": "BitcoinMechanic",
+        "timestamp": "2025-09-22T19:50:08+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321194786",
+        "span": {
+          "start": 0,
+          "end": 663,
+          "quote": "Slating configurability for removal is one of three issues with https://github.com/bitcoin/bitcoin/pull/32406 which this fixes and is strictly an improvement.\r\n\r\nThe other two issues - datacarriersize no longer working correctly and the setting of it to a malicious default - both remain.\r\n\r\nIn that context, all this specific PR serves to do is help manufacture consent for an unjustified change in attitude towards arbitrary data by making the most mild concession possible to those against it, while still achieving the overall goal: giant OP_RETURNs that pose an enormous risk to Bitcoin.\r\n\r\n32406 needs to be reverted entirely for Core to regain credibility."
+        },
+        "role": "full_reversal_request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-037",
+        "author": "bitschmidty",
+        "timestamp": "2025-09-22T20:02:36+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321265268",
+        "span": {
+          "start": 0,
+          "end": 316,
+          "quote": "> this specific PR\r\n\r\nThis specific PR seeks clarity in the datacarrier options' future availability, in favor of removing the deprecation, as the deprecation designation definition is unclear, potentially incorrect (if the definition is will be removed), and causes uncertainty for Bitcoin Core users around timing."
+        },
+        "role": "scope_response",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-039",
+        "author": "glozow",
+        "timestamp": "2025-09-22T21:17:23+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3321521194",
+        "span": {
+          "start": 0,
+          "end": 389,
+          "quote": "> This specific PR seeks clarity in the datacarrier options' future availability\r\n\r\n+1. I think the comments so far are largely on topic, but let's try to avoid rehashing the motivations around the policy change itself or re-litigating what the default value should be. Reminder that delving bitcoin, mailing list posts, and a meta topic on the bitcoin-core discussions page exist. Thanks!"
+        },
+        "role": "scope_endorsement",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-048",
+        "author": "luke-jr",
+        "timestamp": "2025-09-23T09:22:27+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3323114350",
+        "span": {
+          "start": 0,
+          "end": 175,
+          "quote": "The entire change (#32406) needs to be reverted. Un-deprecating it doesn't make any sense as long as it's being sabotaged with new bugs. The default change is the big problem."
+        },
+        "role": "renewed_full_reversal_request",
+        "interpretation": ""
+      },
+      {
+        "source_id": "X33453",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453/files",
+        "span": {
+          "start": 0,
+          "end": 2665,
+          "quote": "@@ -658,9 +658,9 @@ void SetupServerArgs(ArgsManager& argsman, bool can_listen_ipc)\n     argsman.AddArg(\"-dustrelayfee=<amt>\", strprintf(\"Fee rate (in %s/kvB) used to define dust, the value of an output such that it will cost more than its value in fees at this fee rate to spend it. (default: %s)\", CURRENCY_UNIT, FormatMoney(DUST_RELAY_TX_FEE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-acceptstalefeeestimates\", strprintf(\"Read fee estimates even if they are stale (%sdefault: %u) fee estimates are considered stale if they are %s hours old\", \"regtest only; \", DEFAULT_ACCEPT_STALE_FEE_ESTIMATES, Ticks<std::chrono::hours>(MAX_FILE_AGE)), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::DEBUG_TEST);\n     argsman.AddArg(\"-bytespersigop\", strprintf(\"Equivalent bytes per sigop in transactions for relay and mining (default: %u)\", DEFAULT_BYTES_PER_SIGOP), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n-    argsman.AddArg(\"-datacarrier\", strprintf(\"(DEPRECATED) Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n+    argsman.AddArg(\"-datacarrier\", strprintf(\"Relay and mine data carrier transactions (default: %u)\", DEFAULT_ACCEPT_DATACARRIER), ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n     argsman.AddArg(\"-datacarriersize\",\n-                   strprintf(\"(DEPRECATED) Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n+                   strprintf(\"Relay and mine transactions whose data-carrying raw scriptPubKeys in aggregate \"\n                              \"are of this size or less, allowing multiple outputs (default: %u)\",\n                              MAX_OP_RETURN_RELAY),\n                    ArgsManager::ALLOW_ANY, OptionsCategory::NODE_RELAY);\n@@ -903,10 +903,6 @@ bool AppInitParameterInteraction(const ArgsManager& args)\n         InitWarning(_(\"Option '-checkpoints' is set but checkpoints were removed. This option has no effect.\"));\n     }\n \n-    if (args.IsArgSet(\"-datacarriersize\") || args.IsArgSet(\"-datacarrier\")) {\n-        InitWarning(_(\"Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated and are expected to be removed in a future version.\"));\n-    }\n-\n     // We no longer limit the orphanage based on number of transactions but keep the option to warn users who still have it in their config.\n     if (args.IsArgSet(\"-maxorphantx\")) {\n         InitWarning(_(\"Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.\"));"
+        },
+        "role": "patch_context",
+        "interpretation": ""
+      },
+      {
+        "source_id": "M33453",
+        "author": null,
+        "timestamp": null,
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453",
+        "span": {
+          "start": 0,
+          "end": 446,
+          "quote": "{\n  \"number\": 33453,\n  \"title\": \"docs: Undeprecate datacarrier and datacarriersize configuration options\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"created_at\": \"2025-09-22T10:40:53Z\",\n  \"closed_at\": \"2025-09-30T22:23:33Z\",\n  \"merged_at\": \"2025-09-30T22:23:33Z\",\n  \"head_sha\": \"451ba9ada41f687c0e4bb34d5925374a68a8f8a3\",\n  \"base_sha\": \"953544d0286ba35dd1b07fe1921c573cba4703cf\",\n  \"actual_merge_sha\": \"cc4a2cc6bdc40af7a17c0eea1000109e02f3fe80\"\n}"
+        },
+        "role": "recorded_disposition",
+        "interpretation": ""
+      }
+    ],
+    "status": "bounded_nonadoption",
+    "conclusion": "The merged change removes deprecation without reverting the raised default or multiple-output behavior. Full-reversal demands are not implemented in this PR.",
+    "alternative_or_limit": "This is a verified scope difference, not proof those wider demands were permanently rejected.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L33",
+    "title": "Deprecated as unmaintained disputed",
+    "stages": [
+      {
+        "source_id": "33453-045",
+        "author": "Sjors",
+        "timestamp": "2025-09-23T08:26:38+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3322927882",
+        "span": {
+          "start": 0,
+          "end": 651,
+          "quote": "Concept meh, I think removing the deprecation warning sets the wrong expectation.\r\n\r\nThose who fully want to embrace filtering should be looking for alternative software, rather than demand that Bitcoin Core implements it for them.\r\n\r\nThe current code is deprecated in the sense of being unmaintained, even if it's not going to be removed anytime soon. Pull requests that try to expand or \"improve\" their functionality have consistently been closed.\r\n\r\nSo perhaps the following can be softened, from:\r\n\r\n> marked as deprecated and are expected to be removed in a future version.\r\n\r\nTo:\r\n\r\n> marked as deprecated and may be removed in a future version."
+        },
+        "role": "definition_claim",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-047",
+        "author": "ajtowns",
+        "timestamp": "2025-09-23T08:39:45+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3322973150",
+        "span": {
+          "start": 0,
+          "end": 202,
+          "quote": "> The current code is deprecated in the sense of being unmaintained\r\n\r\nWhy do you believe it is unmaintained? It is still tested, and there are still contributors who are willing to keep it operational."
+        },
+        "role": "challenge",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "A deprecation-as-unmaintained interpretation meets a specific counterclaim about tests and willing maintainers.",
+    "alternative_or_limit": "The counterclaim is attributed; the analysis does not audit all tests or future maintenance commitments.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  },
+  {
+    "chain_id": "L34",
+    "title": "Release delay objection and timing alternative",
+    "stages": [
+      {
+        "source_id": "33453-065",
+        "author": "darosior",
+        "timestamp": "2025-09-23T21:26:57+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325610461",
+        "span": {
+          "start": 0,
+          "end": 341,
+          "quote": "> AFAIK there is already a PR for rc2 (see #33424, #32275) and I personally don't think it's worth holding up the release for this PR.\r\n\r\n+1. I ACK'd the change because i believe it is technically correct to say we won't be removing the option anytime soon, but i don't think a small documentation change is worth holding up the release for."
+        },
+        "role": "do_not_delay_preference",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-066",
+        "author": "fanquake",
+        "timestamp": "2025-09-23T22:45:43+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3325790255",
+        "span": {
+          "start": 0,
+          "end": 329,
+          "quote": "> AFAIK there is already a PR for rc2 (see https://github.com/bitcoin/bitcoin/pull/33424, https://github.com/bitcoin/bitcoin/issues/32275)\r\n\r\nGiven it's been 2 weeks since rc1, and there's going to be an rc3 in either case, I'm going to tag an rc2 shortly, and when it's decided what to do here, it could be incorported into rc3."
+        },
+        "role": "release_plan",
+        "interpretation": ""
+      },
+      {
+        "source_id": "33453-067",
+        "author": "hMsats",
+        "timestamp": "2025-09-24T09:04:29+00:00",
+        "url": "https://github.com/bitcoin/bitcoin/pull/33453#issuecomment-3327325279",
+        "span": {
+          "start": 0,
+          "end": 504,
+          "quote": "I've used `-datacarrier` and `-datacarriersize` in the past but have removed them based on all the recent discussions (especially Gregory Maxwell on Reddit) and am in favor of the recent default settings in Bitcoin Core 30.0. However, I strongly oppose removing these options which so many people find useful to express their disgust for non-financial data in the block chain and therefore refuse to relay them. I also believe this documentation change is worth holding up the release for.\r\n\r\nConcept ACK"
+        },
+        "role": "delay_preference",
+        "interpretation": ""
+      }
+    ],
+    "status": "contested",
+    "conclusion": "Participants differ on holding the release, while the release coordinator identifies an already anticipated rc3 opportunity.",
+    "alternative_or_limit": "The existence of a timing opportunity is not evidence that one side won a general release-policy dispute.",
+    "link_basis": "Attributable textual correspondence; chronology alone is insufficient.",
+    "unit_ids": []
+  }
+]

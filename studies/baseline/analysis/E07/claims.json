@@ -1,0 +1,122 @@
+[
+  {
+    "claim_id": "E07-C1",
+    "episode_id": "E07",
+    "claim": "A participant reports incorrect review classification and quotes an earlier table with vicjuma under Concept ACK.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E07:comments:3",
+        "span": {
+          "start": 18,
+          "end": 81,
+          "quote": "I think the @DrahtBot hasn't properly counted @vicjuma's ACK..."
+        }
+      },
+      {
+        "source_id": "E07:comments:3",
+        "span": {
+          "start": 248,
+          "end": 275,
+          "quote": "| Concept ACK   | [vicjuma]"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "This is a reported earlier state preserved by quotation, not an independently timestamped bot snapshot."
+  },
+  {
+    "claim_id": "E07-C2",
+    "episode_id": "E07",
+    "claim": "The stored review already contains the final hash, while a later comment explains the missing-hash problem.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E07:reviews:3",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK 9f0543d69a1357371017c8289d9addc457b6f132"
+        }
+      },
+      {
+        "source_id": "E07:comments:4",
+        "span": {
+          "start": 196,
+          "end": 262,
+          "quote": "(Without a hash, no one can know what the comment is referring to)"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Review creation time precedes the reminder, but creation time is not edit time. The final stored text cannot resolve the update sequence."
+  },
+  {
+    "claim_id": "E07-C3",
+    "episode_id": "E07",
+    "claim": "The recorded merge credits vicjuma and pablomartin4btc for the top commit.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1588,
+          "end": 1608,
+          "quote": "ACKs for top commit:"
+        }
+      },
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1679,
+          "end": 1687,
+          "quote": "vicjuma:"
+        }
+      },
+      {
+        "source_id": "E07:merge_message",
+        "span": {
+          "start": 1611,
+          "end": 1627,
+          "quote": "pablomartin4btc:"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "This verifies final recorded attribution, not the exact earlier reclassification path."
+  },
+  {
+    "claim_id": "E07-C4",
+    "episode_id": "E07",
+    "claim": "The reminder demonstrably caused an observed hash edit and bot update at their displayed creation times.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E07:comments:4",
+        "span": {
+          "start": 196,
+          "end": 262,
+          "quote": "(Without a hash, no one can know what the comment is referring to)"
+        }
+      },
+      {
+        "source_id": "E07:reviews:3",
+        "span": {
+          "start": 0,
+          "end": 44,
+          "quote": "ACK 9f0543d69a1357371017c8289d9addc457b6f132"
+        }
+      },
+      {
+        "source_id": "E07:comments:0",
+        "span": {
+          "start": 701,
+          "end": 786,
+          "quote": "[vicjuma](https://github.com/bitcoin/bitcoin/pull/36127#pullrequestreview-5078624594)"
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Edit history is absent. Preserve a plausible correction mechanism without assigning a fabricated time or causal effect."
+  }
+]

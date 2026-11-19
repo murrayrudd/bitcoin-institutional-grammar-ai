@@ -1,0 +1,1477 @@
+[
+  {
+    "change_id": "M01",
+    "stage": "mechanical_repair",
+    "unit_id": "D01",
+    "fields": [
+      "proposition.decision_object_id",
+      "proposition.identity_evidence",
+      "proposition.qualifiers"
+    ],
+    "before": {
+      "summary": "The bot directs readers to the contributing guideline for review-process information.",
+      "decision_object_id": "https://github.com/bitcoin/bitcoin/blob/1ea02791f3d81c7716d9ea455971203f74d7a107/CONTRIBUTING.md",
+      "domain": "Bitcoin Core compatibility-test contribution and review",
+      "time_scope": "Supplied occurrence at 2022-11-27T22:59:51+00:00; no continuing authority inferred.",
+      "identity_evidence": [],
+      "qualifiers": [
+        {
+          "description": "The source link is mutable master; the supplied dated base revision is not proof of what that link said at creation.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:0",
+              "span": {
+                "start": 221,
+                "end": 295,
+                "quote": "https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves this material limitation on the focal interpretation."
+        }
+      ]
+    },
+    "after": {
+      "summary": "The bot directs readers to the contributing guideline for review-process information.",
+      "decision_object_id": null,
+      "domain": "Bitcoin Core compatibility-test contribution and review",
+      "time_scope": "Supplied occurrence at 2022-11-27T22:59:51+00:00; no continuing authority inferred.",
+      "identity_evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 221,
+            "end": 295,
+            "quote": "https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review"
+          }
+        }
+      ],
+      "qualifiers": [
+        {
+          "description": "The requested guide has a mutable master URL. Its original revision is unresolved; the supplied pinned base-revision guide is contextual evidence, not the proven exact navigation target.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:0",
+              "span": {
+                "start": 221,
+                "end": 295,
+                "quote": "https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves this material limitation on the focal interpretation."
+        }
+      ]
+    },
+    "meaning_changes": true,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution_failure",
+    "reason": "Checker found unsupported identity. Original link names mutable master, while the assigned canonical ID names a specific revision. Clear the exact object rather than invent a revision identity.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 221,
+          "end": 295,
+          "quote": "https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "M02",
+    "stage": "mechanical_repair",
+    "unit_id": "C03",
+    "fields": [
+      "components.Bdir.evidence",
+      "components.Bdir.inference_note"
+    ],
+    "before": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 27,
+            "end": 29,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "Literal subject becomes the target of inferred rebase, not an explicit object.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 31,
+          "end": 72,
+          "quote": "Meanwhile it needs a rebase after #26589."
+        }
+      }
+    },
+    "after": {
+      "symbol": "Bdir",
+      "text": "this PR",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 41,
+            "end": 43,
+            "quote": "it"
+          }
+        }
+      ],
+      "inference_note": "The literal subject it in it needs a rebase becomes the target of reconstructed rebase. The prior occurrence inside bit is unrelated and is not evidence.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 31,
+          "end": 72,
+          "quote": "Meanwhile it needs a rebase after #26589."
+        }
+      }
+    },
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution_failure",
+    "reason": "Substring search hit it inside bit in the prior sentence. Replace with the complete local subject pronoun in the relevant predicate.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:2",
+        "span": {
+          "start": 41,
+          "end": 43,
+          "quote": "it"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S01",
+    "stage": "source_self_review",
+    "unit_id": "C11",
+    "fields": [
+      "components.until.symbol",
+      "components.until.inference_note"
+    ],
+    "before": {
+      "symbol": "Cac",
+      "text": "until there's another PR that needs it",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 336,
+            "end": 374,
+            "quote": "until there's another PR that needs it"
+          }
+        }
+      ],
+      "inference_note": "",
+      "occurrence_role": "local",
+      "governing_span": {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 302,
+          "end": 375,
+          "quote": "But we can also keep this PR open until there's another PR that needs it."
+        }
+      }
+    },
+    "after": {
+      "symbol": "Cex",
+      "text": "until there's another PR that needs it",
+      "basis": "explicit",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:6",
+          "span": {
+            "start": 336,
+            "end": 374,
+            "quote": "until there's another PR that needs it"
+          }
+        }
+      ],
+      "inference_note": "Until bounds how long the PR remains open; it is a duration/end condition on execution, not the start trigger.",
+      "occurrence_role": "local",
+      "governing_span": {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 302,
+          "end": 375,
+          "quote": "But we can also keep this PR open until there's another PR that needs it."
+        }
+      }
+    },
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Keep open until another PR needs it concerns duration, not activation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:6",
+        "span": {
+          "start": 336,
+          "end": 374,
+          "quote": "until there's another PR that needs it"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S02",
+    "stage": "source_self_review",
+    "unit_id": "R05",
+    "fields": [
+      "components.I.text",
+      "components.I.inference_note"
+    ],
+    "before": {
+      "symbol": "I",
+      "text": "apply the same selection cleanup",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 79,
+            "end": 86,
+            "quote": "do that"
+          }
+        }
+      ],
+      "inference_note": "Do that expands using the preceding criterion; no particular patch is reconstructed.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 105,
+          "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+        }
+      }
+    },
+    "after": {
+      "symbol": "I",
+      "text": "apply",
+      "basis": "context_inferred",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 79,
+            "end": 86,
+            "quote": "do that"
+          }
+        }
+      ],
+      "inference_note": "Apply is reconstructed from do. That remains the action object; its inherited selection-cleanup referent is preserved in Bdir and scope notes.",
+      "occurrence_role": "semantic_inference",
+      "governing_span": {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 0,
+          "end": 105,
+          "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+        }
+      }
+    },
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Separate the reconstructed action from its object to avoid duplicating cleanup in I and Bdir.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:1",
+        "span": {
+          "start": 79,
+          "end": 86,
+          "quote": "do that"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S03",
+    "stage": "source_self_review",
+    "unit_id": "R07",
+    "fields": [
+      "proposition.summary"
+    ],
+    "before": "theStack prefers verifying that wallets created on master still open on both 23.x and 24.x rather than potentially omit either case.",
+    "after": "theStack prefers verifying the assumption that 24.x is not special relative to 23.x, for example by checking that wallets created on master can still open on both versions, rather than potentially omitting either case.",
+    "meaning_changes": true,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "The source calls wallet opening an example of testing the assumption, not the whole assumption.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S04",
+    "stage": "source_self_review",
+    "unit_id": "R07",
+    "fields": [
+      "level_evidence.target_activity"
+    ],
+    "before": "theStack prefers verifying that wallets created on master still open on both 23.x and 24.x rather than potentially omit either case.",
+    "after": "theStack prefers verifying the assumption that 24.x is not special relative to 23.x, for example by checking that wallets created on master can still open on both versions, rather than potentially omitting either case.",
+    "meaning_changes": true,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "Carry the corrected example qualification into the governed-activity description.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S05",
+    "stage": "source_self_review",
+    "unit_id": "R09",
+    "fields": [
+      "components"
+    ],
+    "before": [
+      {
+        "symbol": "I",
+        "text": "exclude from this PR",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 807,
+              "end": 835,
+              "quote": "outside of scope for this PR"
+            }
+          }
+        ],
+        "inference_note": "Keep-out action reconstructed from declarative scope judgment.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        }
+      },
+      {
+        "symbol": "Bdir",
+        "text": "general cleanup of the releases list",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 800,
+              "end": 806,
+              "quote": "that's"
+            }
+          }
+        ],
+        "inference_note": "Literal subject becomes inferred target under exclusion; preceding ACK resolves the referent.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        }
+      }
+    ],
+    "after": [
+      {
+        "symbol": "I",
+        "text": "exclude",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 807,
+              "end": 835,
+              "quote": "outside of scope for this PR"
+            }
+          }
+        ],
+        "inference_note": "Exclude is reconstructed from the declarative outside-of-scope judgment. The PR boundary is recorded separately as Cex.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        }
+      },
+      {
+        "symbol": "Bdir",
+        "text": "general cleanup of the releases list",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 800,
+              "end": 806,
+              "quote": "that's"
+            }
+          }
+        ],
+        "inference_note": "Literal subject becomes inferred target under exclusion; preceding ACK resolves the referent.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        }
+      },
+      {
+        "symbol": "Cex",
+        "text": "from this PR",
+        "basis": "context_inferred",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 807,
+              "end": 835,
+              "quote": "outside of scope for this PR"
+            }
+          }
+        ],
+        "inference_note": "The exclusion boundary follows from the literal scope-for-this-PR phrase; from is reconstructed under exclude.",
+        "occurrence_role": "semantic_inference",
+        "governing_span": {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 788,
+            "end": 836,
+            "quote": "but I think that's outside of scope for this PR."
+          }
+        }
+      }
+    ],
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Separate exclude from the PR boundary while preserving the inferred scope judgment.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 807,
+          "end": 835,
+          "quote": "outside of scope for this PR"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S06",
+    "stage": "source_self_review",
+    "unit_id": "B01",
+    "fields": [
+      "institution.application_evidence.0.target",
+      "institution.application_evidence.0.rationale",
+      "institution.standing_profile.application"
+    ],
+    "before": {
+      "record": {
+        "status": "observed",
+        "target": "this_proposition",
+        "evidence": [
+          {
+            "source_id": "pr26586:patch:0",
+            "span": {
+              "start": 542,
+              "end": 648,
+              "quote": "+            [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v24.0.1"
+            }
+          },
+          {
+            "source_id": "pr26586:patch:0",
+            "span": {
+              "start": 1124,
+              "end": 1144,
+              "quote": "+            240001,"
+            }
+          },
+          {
+            "source_id": "pr26586:patch:1",
+            "span": {
+              "start": 451,
+              "end": 597,
+              "quote": "+    \"0b48b9e69b30037b41a1e6b78fb7cbcc48c7ad627908c99686e81f3802454609\": {\"tag\": \"v24.0.1\", \"tarball\": \"bitcoin-24.0.1-aarch64-linux-gnu.tar.gz\"},"
+            }
+          },
+          {
+            "source_id": "pr26586:metadata",
+            "span": {
+              "start": 319,
+              "end": 333,
+              "quote": "\"merged\": true"
+            }
+          },
+          {
+            "source_id": "pr26586:metadata",
+            "span": {
+              "start": 229,
+              "end": 269,
+              "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+            }
+          }
+        ],
+        "rationale": "Retained addition proposal matches the patch and integration; no recurring norm or network adoption is inferred."
+      },
+      "profile": "observed"
+    },
+    "after": {
+      "record": {
+        "status": "observed",
+        "target": "broader_proposal",
+        "evidence": [
+          {
+            "source_id": "pr26586:patch:0",
+            "span": {
+              "start": 542,
+              "end": 648,
+              "quote": "+            [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v24.0.1"
+            }
+          },
+          {
+            "source_id": "pr26586:patch:0",
+            "span": {
+              "start": 1124,
+              "end": 1144,
+              "quote": "+            240001,"
+            }
+          },
+          {
+            "source_id": "pr26586:patch:1",
+            "span": {
+              "start": 451,
+              "end": 597,
+              "quote": "+    \"0b48b9e69b30037b41a1e6b78fb7cbcc48c7ad627908c99686e81f3802454609\": {\"tag\": \"v24.0.1\", \"tarball\": \"bitcoin-24.0.1-aarch64-linux-gnu.tar.gz\"},"
+            }
+          },
+          {
+            "source_id": "pr26586:metadata",
+            "span": {
+              "start": 319,
+              "end": 333,
+              "quote": "\"merged\": true"
+            }
+          },
+          {
+            "source_id": "pr26586:metadata",
+            "span": {
+              "start": 229,
+              "end": 269,
+              "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+            }
+          }
+        ],
+        "rationale": "The artifact and merge demonstrate the concrete v24.0.1 contribution. They do not establish the full elliptical same-procedure-and-simplification claim or every material qualification."
+      },
+      "profile": "none"
+    },
+    "meaning_changes": true,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution_failure",
+    "reason": "Narrow observed application to the concrete broader proposal; the full body-method proposition exceeds the patch evidence.",
+    "evidence": [
+      {
+        "source_id": "pr26586:patch:0",
+        "span": {
+          "start": 542,
+          "end": 648,
+          "quote": "+            [\"-nowallet\", \"-walletrbf=1\", \"-addresstype=bech32\", \"-whitelist=noban@127.0.0.1\"], # v24.0.1"
+        }
+      },
+      {
+        "source_id": "pr26586:patch:0",
+        "span": {
+          "start": 1124,
+          "end": 1144,
+          "quote": "+            240001,"
+        }
+      },
+      {
+        "source_id": "pr26586:patch:1",
+        "span": {
+          "start": 451,
+          "end": 597,
+          "quote": "+    \"0b48b9e69b30037b41a1e6b78fb7cbcc48c7ad627908c99686e81f3802454609\": {\"tag\": \"v24.0.1\", \"tarball\": \"bitcoin-24.0.1-aarch64-linux-gnu.tar.gz\"},"
+        }
+      },
+      {
+        "source_id": "pr26586:metadata",
+        "span": {
+          "start": 319,
+          "end": 333,
+          "quote": "\"merged\": true"
+        }
+      },
+      {
+        "source_id": "pr26586:metadata",
+        "span": {
+          "start": 229,
+          "end": 269,
+          "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S07",
+    "stage": "source_self_review",
+    "unit_id": "R06",
+    "fields": [
+      "institution.recognition.0.target",
+      "institution.recognition.0.rationale"
+    ],
+    "before": {
+      "kind": "endorsement",
+      "target": "this_proposition",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 513,
+            "end": 637,
+            "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+          }
+        }
+      ],
+      "rationale": "Quoted qualified agreement endorses the proposed floor; ordinary assent alone does not establish governing-standard recognition.",
+      "basis": "explicit",
+      "mode": "ordinary_assent",
+      "speaker_relation": "different_actor",
+      "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "identity_evidence": [
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 4,
+            "end": 58,
+            "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+          }
+        }
+      ]
+    },
+    "after": {
+      "kind": "endorsement",
+      "target": "broader_principle",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 513,
+            "end": 637,
+            "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+          }
+        }
+      ],
+      "rationale": "Sjors quotes and tentatively agrees with the recent-non-EOL retention floor. The quote omits the full wallet-specific and no-substitution formulation; endorsement of every material clause is not established. This remains ordinary assent, with a possible expectation-recognition alternative.",
+      "basis": "explicit",
+      "mode": "ordinary_assent",
+      "speaker_relation": "different_actor",
+      "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "identity_evidence": [
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 4,
+            "end": 58,
+            "quote": "\"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\""
+          }
+        }
+      ]
+    },
+    "meaning_changes": true,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution_failure",
+    "reason": "Limit qualified assent to the quoted core retention principle rather than all clauses of the original formulation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 513,
+          "end": 637,
+          "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S08",
+    "stage": "source_self_review",
+    "unit_id": "C17",
+    "fields": [
+      "relations.C16_C17"
+    ],
+    "before": {
+      "from_unit_id": "C16",
+      "to_unit_id": "C17",
+      "type": "uptake",
+      "basis": "context_inferred",
+      "rationale": "Same speaker supplies a conditional consequence, not another actor accepting or implementing the design.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 318,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`. In that case it's up to the developer which previous releases they want to test. The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "after": {
+      "from_unit_id": "C17",
+      "to_unit_id": "C16",
+      "type": "clarifies",
+      "basis": "explicit",
+      "rationale": "In that case explicitly clarifies the developer-choice implication of the proposed loop; it is not a response or implementation event.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 318,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`. In that case it's up to the developer which previous releases they want to test. The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "logic_scope": "not_applicable"
+    },
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Use clarification for a conditional explanation, not uptake for an unimplemented design consequence.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 318,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`. In that case it's up to the developer which previous releases they want to test. The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S09",
+    "stage": "source_self_review",
+    "unit_id": "C05",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The focal add instruction governs operational inclusion. The observed exchange deliberates a recurring coverage arrangement."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The focal add instruction governs operational inclusion. The observed exchange deliberates a recurring coverage arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 171,
+          "end": 216,
+          "quote": "So I think we should add every major release."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S10",
+    "stage": "source_self_review",
+    "unit_id": "C09",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The use instruction concerns operational test design; the observed preference deliberates recurring coverage arrangements."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The use instruction concerns operational test design; the observed preference deliberates recurring coverage arrangements. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S11",
+    "stage": "source_self_review",
+    "unit_id": "C13",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "Removal is operational maintenance; the reply deliberates recurring retention/removal."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "Removal is operational maintenance; the reply deliberates recurring retention/removal. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:8",
+        "span": {
+          "start": 181,
+          "end": 231,
+          "quote": "We can remove intermediate releases at some point."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S12",
+    "stage": "source_self_review",
+    "unit_id": "C16",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The focal edit changes operational version selection; the discussion deliberates a recurring developer-choice arrangement."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The focal edit changes operational version selection; the discussion deliberates a recurring developer-choice arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 0,
+          "end": 151,
+          "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S13",
+    "stage": "source_self_review",
+    "unit_id": "C17",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The proposed discretion concerns ordinary testing choices, not power to make collective-choice decisions. The observed discussion deliberates a recurring testing arrangement."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The proposed discretion concerns ordinary testing choices, not power to make collective-choice decisions. The observed discussion deliberates a recurring testing arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:10",
+        "span": {
+          "start": 152,
+          "end": 232,
+          "quote": "In that case it's up to the developer which previous releases they want to test."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S14",
+    "stage": "source_self_review",
+    "unit_id": "C20",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "Version removal is operational maintenance; the question deliberates recurring test coverage."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "Version removal is operational maintenance; the question deliberates recurring test coverage. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 182,
+          "end": 222,
+          "quote": "So maybe the EOL versions can be dropped"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S15",
+    "stage": "source_self_review",
+    "unit_id": "C21",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "Hosting fixtures is operational testing infrastructure; the question deliberates recurring coverage."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "Hosting fixtures is operational testing infrastructure; the question deliberates recurring coverage. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:11",
+        "span": {
+          "start": 227,
+          "end": 281,
+          "quote": "the qa-assets repo hosts some regtest wallets instead?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S16",
+    "stage": "source_self_review",
+    "unit_id": "R01",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The literal add criterion governs operational selection; the visible review deliberates a recurring selection arrangement."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The literal add criterion governs operational selection; the visible review deliberates a recurring selection arrangement. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 0,
+          "end": 79,
+          "quote": "I think it only makes sense to add the latest release for each missing feature."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S17",
+    "stage": "source_self_review",
+    "unit_id": "R06",
+    "fields": [
+      "observed_level_alternatives",
+      "level_rationale"
+    ],
+    "before": {
+      "observed_level_alternatives": [],
+      "level_rationale": "The literal keep instruction governs operational retention. The observed exchange deliberates a recurring wallet-version retention standard."
+    },
+    "after": {
+      "observed_level_alternatives": [
+        "operational"
+      ],
+      "level_rationale": "The literal keep instruction governs operational retention. The observed exchange deliberates a recurring wallet-version retention standard. Operational technical review remains an alternative if this exchange is read as engineering design rather than deliberation over an institutional testing arrangement."
+    },
+    "meaning_changes": false,
+    "effect": "unresolved",
+    "diagnosis": "defensible_alternative",
+    "reason": "Do not let a preferred collective-choice reading erase the independent ordinary-review interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 284,
+          "end": 490,
+          "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S18",
+    "stage": "source_self_review",
+    "unit_id": "R01",
+    "fields": [
+      "proposition.qualifiers"
+    ],
+    "before": [
+      {
+        "description": "Only latest per missing feature constrains inclusion, unlike every major release.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:0",
+            "span": {
+              "start": 11,
+              "end": 78,
+              "quote": "only makes sense to add the latest release for each missing feature"
+            }
+          }
+        ],
+        "attachment": "scope_note",
+        "linked_unit_id": null,
+        "rationale": "Preserves this material limitation on the focal interpretation."
+      }
+    ],
+    "after": [
+      {
+        "description": "Only latest per missing feature constrains inclusion, unlike every major release.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:0",
+            "span": {
+              "start": 11,
+              "end": 78,
+              "quote": "only makes sense to add the latest release for each missing feature"
+            }
+          }
+        ],
+        "attachment": "scope_note",
+        "linked_unit_id": null,
+        "rationale": "Preserves this material limitation on the focal interpretation."
+      },
+      {
+        "description": "The cited commit describes last-release-without-feature selection and supplies txindex/mempool examples; those examples do not establish a mandatory wallet-version exclusion rule. The echoed ACK is not independent recognition of this proposition.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:0",
+            "span": {
+              "start": 176,
+              "end": 225,
+              "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+            }
+          },
+          {
+            "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+            "span": {
+              "start": 281,
+              "end": 440,
+              "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+            }
+          },
+          {
+            "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:0",
+            "span": {
+              "start": 536,
+              "end": 612,
+              "quote": "+                220000,  # Last release with migration code (0.17.x - 22.x)"
+            }
+          },
+          {
+            "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:1",
+            "span": {
+              "start": 624,
+              "end": 689,
+              "quote": "+            200100,  # Last release with previous mempool format"
+            }
+          }
+        ],
+        "attachment": "scope_note",
+        "linked_unit_id": null,
+        "rationale": "Retains the source of the analogy while distinguishing its technical examples from authority for this wallet-testing criterion."
+      }
+    ],
+    "meaning_changes": false,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "Record the bounded contextual support of the referenced commit, without authority, policy-adoption or repeated-recognition inflation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 176,
+          "end": 225,
+          "quote": "see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+        }
+      },
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+        "span": {
+          "start": 281,
+          "end": 440,
+          "quote": "In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release."
+        }
+      },
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:0",
+        "span": {
+          "start": 536,
+          "end": 612,
+          "quote": "+                220000,  # Last release with migration code (0.17.x - 22.x)"
+        }
+      },
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:1",
+        "span": {
+          "start": 624,
+          "end": 689,
+          "quote": "+            200100,  # Last release with previous mempool format"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S19",
+    "stage": "source_self_review",
+    "unit_id": null,
+    "fields": [
+      "entry_screening.commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata.reason"
+    ],
+    "before": "Supplementary referenced commit metadata/patch screened for context and correspondence, not exhaustive extraction. Institutional wording, if present, is not claimed absent; no missing PR outcome is reconstructed.",
+    "after": "Supplementary last-release compatibility-test commit screened as context. Its message is an attributed rationale and its patches show txindex/mempool version replacements; neither establishes the exact wallet-retention standard, required authority, or a new independent endorsement. Not an exhaustive extraction target.",
+    "meaning_changes": false,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "Make the positive contextual relevance of the supplemental commit explicit.",
+    "evidence": [
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:metadata",
+        "span": {
+          "start": 0,
+          "end": 781,
+          "quote": "{\n  \"sha\": \"16624e6ff3af4429e571f7a606bbbcac336e067a\",\n  \"message\": \"Merge bitcoin/bitcoin#26660: test: Use last release in compatibility tests\\n\\nfabb24cbef6ccccf5e82ac52ca2aafd47c34455a test: Use last release in compatibility tests (MarcoFalke)\\n\\nPull request description:\\n\\n  In compatibility tests it makes sense to always use the last release without the new feature, as it is likely more in use than any even older previous release.\\n\\nACKs for top commit:\\n  Sjors:\\n    utACK fabb24c\\n\\nTree-SHA512: beb854f4d28ba313282e1e0303abb0e09377828b138bde5a3e209337210b6b4c24855ab90a68f8789387001e4ca33b15cc37dbc9b7809929f4e7d1b69833a527\",\n  \"created_at\": \"2022-12-09T08:25:52Z\",\n  \"html_url\": \"https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a\"\n}"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S20",
+    "stage": "source_self_review",
+    "unit_id": null,
+    "fields": [
+      "entry_screening.commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:0.reason"
+    ],
+    "before": "Supplementary referenced commit metadata/patch screened for context and correspondence, not exhaustive extraction. Institutional wording, if present, is not claimed absent; no missing PR outcome is reconstructed.",
+    "after": "Supplementary last-release compatibility-test commit screened as context. Its message is an attributed rationale and its patches show txindex/mempool version replacements; neither establishes the exact wallet-retention standard, required authority, or a new independent endorsement. Not an exhaustive extraction target.",
+    "meaning_changes": false,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "Make the positive contextual relevance of the supplemental commit explicit.",
+    "evidence": [
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:0",
+        "span": {
+          "start": 0,
+          "end": 815,
+          "quote": "@@ -14,7 +14,7 @@\n from test_framework.wallet import MiniWallet\n \n \n-class MempoolCompatibilityTest(BitcoinTestFramework):\n+class TxindexCompatibilityTest(BitcoinTestFramework):\n     def set_test_params(self):\n         self.num_nodes = 3\n         self.extra_args = [\n@@ -33,7 +33,7 @@ def setup_network(self):\n             versions=[\n                 160300,  # Last release with legacy txindex\n                 None,  # For MiniWallet, without migration code\n-                200100,  # Any release with migration code (0.17.x - 22.x)\n+                220000,  # Last release with migration code (0.17.x - 22.x)\n             ],\n         )\n         self.start_nodes()\n@@ -89,4 +89,4 @@ def run_test(self):\n \n \n if __name__ == \"__main__\":\n-    MempoolCompatibilityTest().main()\n+    TxindexCompatibilityTest().main()"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S21",
+    "stage": "source_self_review",
+    "unit_id": null,
+    "fields": [
+      "entry_screening.commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:1.reason"
+    ],
+    "before": "Supplementary referenced commit metadata/patch screened for context and correspondence, not exhaustive extraction. Institutional wording, if present, is not claimed absent; no missing PR outcome is reconstructed.",
+    "after": "Supplementary last-release compatibility-test commit screened as context. Its message is an attributed rationale and its patches show txindex/mempool version replacements; neither establishes the exact wallet-retention standard, required authority, or a new independent endorsement. Not an exhaustive extraction target.",
+    "meaning_changes": false,
+    "effect": "coverage or scope loss",
+    "diagnosis": "execution_failure",
+    "reason": "Make the positive contextual relevance of the supplemental commit explicit.",
+    "evidence": [
+      {
+        "source_id": "commit:16624e6ff3af4429e571f7a606bbbcac336e067a:patch:1",
+        "span": {
+          "start": 0,
+          "end": 1181,
+          "quote": "@@ -7,7 +7,7 @@\n NOTE: The test is designed to prevent cases when compatibility is broken accidentally.\n In case we need to break mempool compatibility we can continue to use the test by just bumping the version number.\n \n-The previous release v0.19.1 is required by this test, see test/README.md.\n+Previous releases are required by this test, see test/README.md.\n \"\"\"\n \n import os\n@@ -29,7 +29,7 @@ def skip_test_if_missing_module(self):\n \n     def setup_network(self):\n         self.add_nodes(self.num_nodes, versions=[\n-            190100,  # oldest version with getmempoolinfo.loaded (used to avoid intermittent issues)\n+            200100,  # Last release with previous mempool format\n             None,\n         ])\n         self.start_nodes()\n@@ -38,6 +38,7 @@ def run_test(self):\n         self.log.info(\"Test that mempool.dat is compatible between versions\")\n \n         old_node, new_node = self.nodes\n+        assert \"unbroadcastcount\" not in old_node.getmempoolinfo()\n         new_wallet = MiniWallet(new_node, mode=MiniWalletMode.RAW_P2PK)\n         self.generate(new_wallet, 1, sync_fun=self.no_op)\n         self.generate(new_node, COINBASE_MATURITY, sync_fun=self.no_op)"
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S22",
+    "stage": "source_self_review",
+    "unit_id": "C28",
+    "fields": [
+      "speech_act",
+      "parse_mode",
+      "components.I.basis",
+      "components.I.occurrence_role",
+      "components.I.inference_note"
+    ],
+    "before": {
+      "speech_act": "proposed",
+      "parse_mode": "pragmatic",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "not rush merging",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 399,
+                "end": 415,
+                "quote": "not rush merging"
+              }
+            }
+          ],
+          "inference_note": "The negative action is explicit within an argument for it; its proposed force is reconstructed.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 370,
+              "end": 429,
+              "quote": "This can also be a reason to not rush merging new releases."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "new releases",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 416,
+                "end": 428,
+                "quote": "new releases"
+              }
+            }
+          ],
+          "inference_note": "New releases remains the object of the explicitly mentioned merging action; only its recommendation force is indirect.",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 370,
+              "end": 429,
+              "quote": "This can also be a reason to not rush merging new releases."
+            }
+          }
+        }
+      ]
+    },
+    "after": {
+      "speech_act": "asserted",
+      "parse_mode": "literal",
+      "components": [
+        {
+          "symbol": "I",
+          "text": "not rush merging",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 399,
+                "end": 415,
+                "quote": "not rush merging"
+              }
+            }
+          ],
+          "inference_note": "The action not rush merging is directly supplied. Only the recommendation force is inferred from the stated reason; that does not make the action role inferred.",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 370,
+              "end": 429,
+              "quote": "This can also be a reason to not rush merging new releases."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "new releases",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 416,
+                "end": 428,
+                "quote": "new releases"
+              }
+            }
+          ],
+          "inference_note": "New releases remains the object of the explicitly mentioned merging action; only its recommendation force is indirect.",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 370,
+              "end": 429,
+              "quote": "This can also be a reason to not rush merging new releases."
+            }
+          }
+        }
+      ]
+    },
+    "meaning_changes": false,
+    "effect": "evidence-basis error",
+    "diagnosis": "execution_failure",
+    "reason": "The source explicitly states the negative action within a declarative reason claim. Do not confuse inferred force with inferred action.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 370,
+          "end": 429,
+          "quote": "This can also be a reason to not rush merging new releases."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S23",
+    "stage": "source_self_review",
+    "unit_id": "C06",
+    "fields": [
+      "speech_act"
+    ],
+    "before": "proposed",
+    "after": "asserted",
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Preserve the original declarative claim of justification or preference while retaining its possible directive interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 220,
+          "end": 330,
+          "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+        }
+      }
+    ]
+  },
+  {
+    "change_id": "S24",
+    "stage": "source_self_review",
+    "unit_id": "C09",
+    "fields": [
+      "speech_act"
+    ],
+    "before": "proposed",
+    "after": "asserted",
+    "meaning_changes": false,
+    "effect": "convention deviation",
+    "diagnosis": "execution_failure",
+    "reason": "Preserve the original declarative claim of justification or preference while retaining its possible directive interpretation.",
+    "evidence": [
+      {
+        "source_id": "pr26586:comments:5",
+        "span": {
+          "start": 231,
+          "end": 327,
+          "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+        }
+      }
+    ]
+  }
+]

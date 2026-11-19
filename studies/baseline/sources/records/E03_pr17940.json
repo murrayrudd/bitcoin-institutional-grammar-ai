@@ -1,0 +1,153 @@
+{
+  "number": 17940,
+  "title": "doc: Rebasing, when and when not to do it",
+  "body": "",
+  "state": "closed",
+  "created_at": "2020-01-16T14:21:15+00:00",
+  "updated_at": "2022-02-15T10:35:57+00:00",
+  "closed_at": "2020-09-12T18:29:21+00:00",
+  "merged_at": null,
+  "author": "luke-jr",
+  "author_id": 1095675,
+  "draft": false,
+  "mergeable": null,
+  "merged": false,
+  "mergeable_state": "unknown",
+  "labels": [
+    "Docs"
+  ],
+  "milestone": null,
+  "merged_by": null,
+  "merged_by_id": null,
+  "comments": [
+    {
+      "body": "Concept ACK.\r\nMaybe it's worth pointing it out that drahtbot will give a warning if a rebase is required.",
+      "author": "cvengler",
+      "created_at": "2020-01-16T14:24:59+00:00"
+    },
+    {
+      "body": "Concept ACK. \r\n\r\n~~Do we need to make clear that this guidance doesn't apply to squashing commits (which also uses the `git rebase` command)?~~\r\n\r\n``` The `git rebase` command may still be useful for fixups or reorganization *within* your branch; that's usually ok to do.``` covers this.\r\n\r\nPerhaps should be stronger. Squashing commits isn't \"usually ok to do\", it is encouraged?\r\n\r\nSo replace \"that's usually ok to do\" with \"see the [contributing doc](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#squashing-commits) for guidance on this\"?",
+      "author": "michaelfolkson",
+      "created_at": "2020-01-16T14:35:37+00:00"
+    },
+    {
+      "body": "ACK eb293e5b1d2b87ec82eebea8cbf5dd783dfb54fd",
+      "author": "Sjors",
+      "created_at": "2020-01-16T14:40:56+00:00"
+    },
+    {
+      "body": "@emilengler BTW I don't agree with your suggestion because @DrahtBot is not part of the project and integrates with GitHub.",
+      "author": "promag",
+      "created_at": "2020-01-17T01:23:21+00:00"
+    },
+    {
+      "body": "@luke-jr Are you still working on this?",
+      "author": "maflcko",
+      "created_at": "2020-03-19T18:35:51+00:00"
+    },
+    {
+      "body": "Also, there has been a related pull in the meantime: #18283",
+      "author": "maflcko",
+      "created_at": "2020-03-19T18:36:20+00:00"
+    },
+    {
+      "body": "I am satisfied with the current PR as-is.",
+      "author": "luke-jr",
+      "created_at": "2020-03-19T18:51:22+00:00"
+    },
+    {
+      "body": "> I am satisfied with the current PR as-is.\r\n\r\nOk, removed the \"Waiting for author\" label, but it still would be nice if you replied to the feedback to say why it doesn't apply.",
+      "author": "maflcko",
+      "created_at": "2020-03-20T14:13:57+00:00"
+    },
+    {
+      "body": "I don't think this is optimal as there are couple of review nits that could improve it. But this has been open a while and author doesn't want to address nits so ACKing. Willing to review a follow up PR that picks up the nits.\r\n\r\nACK eb293e5b1d2b87ec82eebea8cbf5dd783dfb54fd\r\n\r\n[edit: also happy to open a PR myself addressing the nits if this is merged]",
+      "author": "michaelfolkson",
+      "created_at": "2020-08-13T14:40:07+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "state": "COMMENTED",
+      "body": "Concept ACK\r\n\r\n",
+      "author": "fjahr",
+      "submitted_at": "2020-01-16T16:08:38+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "promag",
+      "submitted_at": "2020-01-16T16:27:59+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "maflcko",
+      "submitted_at": "2020-01-16T20:25:43+00:00"
+    },
+    {
+      "state": "APPROVED",
+      "body": "ACK eb293e5",
+      "author": "RiccardoMasutti",
+      "submitted_at": "2020-08-13T14:14:49+00:00"
+    },
+    {
+      "state": "COMMENTED",
+      "body": "",
+      "author": "jnewbery",
+      "submitted_at": "2020-08-13T14:36:09+00:00"
+    }
+  ],
+  "review_comments": [
+    {
+      "body": "nit: could mention `git help rebase` to learn more about rebase.",
+      "author": "fjahr",
+      "created_at": "2020-01-16T16:01:54+00:00",
+      "path": "doc/developer-notes.md",
+      "line": 856
+    },
+    {
+      "body": "indentation",
+      "author": "fjahr",
+      "created_at": "2020-01-16T16:04:21+00:00",
+      "path": "doc/developer-notes.md",
+      "line": 39
+    },
+    {
+      "body": "nit \"that's usually common or even necessary in order to have fully working commits\" or similar.",
+      "author": "promag",
+      "created_at": "2020-01-16T16:27:48+00:00",
+      "path": "doc/developer-notes.md",
+      "line": 855
+    },
+    {
+      "body": "It is no more disruptive than any other force push. `git range-diff` can handle rebases easily",
+      "author": "maflcko",
+      "created_at": "2020-01-16T20:25:42+00:00",
+      "path": "doc/developer-notes.md",
+      "line": 853
+    },
+    {
+      "body": "\"rebuilding\" here is ambiguous. I think you mean \"apply the commits in your branch to the master branch\", but it could also be interpreted as meaning \"compiling and linking\"",
+      "author": "jnewbery",
+      "created_at": "2020-08-13T14:36:09+00:00",
+      "path": "doc/developer-notes.md",
+      "line": 845
+    }
+  ],
+  "files": [
+    {
+      "filename": "doc/developer-notes.md",
+      "additions": 22,
+      "deletions": 3,
+      "changes": 25,
+      "status": "modified"
+    }
+  ],
+  "time_to_close_days": 240,
+  "total_comments": 9,
+  "total_reviews": 5,
+  "total_files_changed": 1,
+  "total_additions": 22,
+  "total_deletions": 3
+}

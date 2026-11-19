@@ -1,0 +1,28 @@
+{
+  "run_id": "F02_v03_r3",
+  "first_complete_preserved": true,
+  "mechanical_repairs": [],
+  "changes": [
+    {
+      "change_id": "R01",
+      "stage": "single_source_self_review",
+      "path": "/episode_summary/observed_outcomes/1/claim",
+      "before": "The author specifically reports removing the check for \"*\" after agreeing that behavior would be identical with or without it. The packet does not reconstruct the exact intermediate patch reviewed.",
+      "after": "The author agrees that behavior would be identical with or without the check for \"*\" and reports removing it. The packet does not establish the timing of the edit relative to the author's agreement or reconstruct the exact intermediate patch reviewed.",
+      "meaning_changed": true,
+      "institutional_conclusion_changed": false,
+      "classification": "substantive_evidence_scope_correction",
+      "reason": "The initial after agreeing wording could assert a temporal ordering of private agreement and the edit. One response supplies agreement and a past-tense removal report but does not establish that ordering. The correction preserves the supported report while removing the excess chronology.",
+      "evidence": [
+        {
+          "source_id": "pr14441:review_comments:6",
+          "span": {
+            "start": 0,
+            "end": 123,
+            "quote": "No, you're right. It's better without. The behaviour would be identical with or without the check for \"*\". I've removed it."
+          }
+        }
+      ]
+    }
+  ]
+}

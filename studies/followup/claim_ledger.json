@@ -1,0 +1,127 @@
+{
+  "status": "bounded source-based follow-up",
+  "selection": "Retrospective purposive selection of directly connected proposal and release records; no fresh coding or reliability test",
+  "main_case_window_unchanged": true,
+  "retrieved_on": "2026-11-07",
+  "claims": [
+    {
+      "id": "L01",
+      "claim": "The BIP proposes temporary consensus restrictions tied to a stated monetary purpose.",
+      "kind": "attributed proposal and purpose",
+      "evidence": [
+        {
+          "source_id": "L_BIP110",
+          "field": null,
+          "start": 329,
+          "end": 544,
+          "quote": "Temporarily limit the size of data fields at the consensus level, in order to correct distorted incentives caused by standardizing support for arbitrary data, and to refocus priorities on improving Bitcoin as money."
+        }
+      ],
+      "boundary": "This is the proposal author’s rationale, not a finding that the asserted harms or a collective mandate have been independently established."
+    },
+    {
+      "id": "L02",
+      "claim": "The BIP changelog reports closure on August 9, 2026 following a chain split and stalled mining.",
+      "kind": "retrospective status and event report",
+      "evidence": [
+        {
+          "source_id": "L_BIP110",
+          "field": null,
+          "start": 31017,
+          "end": 31038,
+          "quote": "1.0.1''' (2026-08-09)"
+        },
+        {
+          "source_id": "L_BIP110",
+          "field": null,
+          "start": 31043,
+          "end": 31102,
+          "quote": "Mark as Closed, following a chain split with stalled mining"
+        }
+      ],
+      "boundary": "The project record reports the event. No independent node execution or complete chain-history validation was performed."
+    },
+    {
+      "id": "L03",
+      "claim": "Luke Dashjr opened Knots PR 359 on August 15, 2026 proposing a new proof-of-work hard fork.",
+      "kind": "platform metadata and proposal",
+      "evidence": [
+        {
+          "source_id": "L_PR359",
+          "field": "title",
+          "start": 0,
+          "end": 45,
+          "quote": "Hardfork: New BLAKE2b proof-of-work algorithm"
+        },
+        {
+          "source_id": "L_PR359",
+          "field": "created_at",
+          "start": 0,
+          "end": 20,
+          "quote": "2026-08-15T00:58:36Z"
+        }
+      ],
+      "metadata_checks": {
+        "user.login": "luke-jr",
+        "merged": false,
+        "state": "closed"
+      },
+      "boundary": "The current proposal body can have later edits. Its closed-unmerged platform status alone does not establish whether the implementation appears in a release."
+    },
+    {
+      "id": "L04",
+      "claim": "Knots published v29.4.1.knots20260508 on September 2, 2026, with release notes identifying a backward-incompatible change and BLAKE2b proof of work.",
+      "kind": "publication metadata and release implementation claim",
+      "evidence": [
+        {
+          "source_id": "L_RELEASE",
+          "field": "published_at",
+          "start": 0,
+          "end": 20,
+          "quote": "2026-09-02T19:02:34Z"
+        },
+        {
+          "source_id": "L_RELEASE",
+          "field": "body",
+          "start": 2309,
+          "end": 2421,
+          "quote": "Mitigating this attack unfortunately requires a backward-incompatible protocol change, included in this release."
+        },
+        {
+          "source_id": "L_RELEASE",
+          "field": "body",
+          "start": 2934,
+          "end": 2965,
+          "quote": "BLAKE2b proof-of-work algorithm"
+        }
+      ],
+      "boundary": "Publication and what the release declares are observed. This follow-up does not audit the binary, run the implementation, quantify adoption, or infer a release date from the date-like tag."
+    },
+    {
+      "id": "L05",
+      "claim": "The release narrative makes an explicit claim about attack, continuity, and the competing history’s identity.",
+      "kind": "attributed identity and legitimacy claim",
+      "evidence": [
+        {
+          "source_id": "L_RELEASE",
+          "field": "body",
+          "start": 2059,
+          "end": 2210,
+          "quote": "On August 8th, most former miners abandoned Bitcoin en masse and together with other bad actors have been falsely promoting a new altcoin as \"Bitcoin\"."
+        }
+      ],
+      "boundary": "The analysis attributes this characterization to the release narrative and does not endorse its allegations, assign private motives, or decide which history deserves an identity."
+    },
+    {
+      "id": "L06",
+      "claim": "The retained October 17, 2025 panel passages distinguish policy remedies and perceived feasibility of consensus remedies.",
+      "kind": "contextual transcript interpretation",
+      "evidence_ids": [
+        "PE28",
+        "PE29",
+        "PE30"
+      ],
+      "boundary": "PE28 and PE29 have unresolved speaker attribution; PE30 is contextually attributed, not audio verified. No individual reversal, event outcome, or causal influence on earlier PRs is inferred."
+    }
+  ]
+}

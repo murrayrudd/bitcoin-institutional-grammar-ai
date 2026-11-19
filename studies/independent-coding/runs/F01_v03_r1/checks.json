@@ -1,0 +1,166 @@
+{
+  "status": "pass",
+  "screened_entries": 42,
+  "units": 58,
+  "statement_units": 31,
+  "exact_anchor_references": 343,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "D03",
+      "source_id": "pr26586:comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:0",
+        "span": {
+          "start": 568,
+          "end": 641,
+          "quote": "If your review is incorrectly listed, please react with 👎 to this comment"
+        }
+      },
+      "note": "The preceding conditional instruction supplies the trigger for the announced bot response; this compound condition is reconstructed from the linked clause."
+    },
+    {
+      "unit_id": "C04a",
+      "source_id": "pr26586:comments:4",
+      "kind": "outside_unit",
+      "symbol": "Cex",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 24,
+          "end": 57,
+          "quote": "the backwards compatibility tests"
+        }
+      },
+      "note": "The preceding rationale identifies the testing domain for the addition expectation."
+    },
+    {
+      "unit_id": "C15c",
+      "source_id": "pr26586:comments:15",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:comments:15",
+        "span": {
+          "start": 180,
+          "end": 182,
+          "quote": "we"
+        }
+      },
+      "note": "The coordinated clause shares the explicit subject we in we could just leave the PR open."
+    },
+    {
+      "unit_id": "R00c",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 108,
+          "end": 111,
+          "quote": "you"
+        }
+      },
+      "note": "The coordinated explanation alternative shares the subject you."
+    },
+    {
+      "unit_id": "R00c",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "D",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 124,
+          "end": 131,
+          "quote": "need to"
+        }
+      },
+      "note": "The need operator governs both alternatives; future will alone is not deontic."
+    },
+    {
+      "unit_id": "R00c",
+      "source_id": "pr26586:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "Cac",
+      "occurrence_role": "shared_scope",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 83,
+          "end": 106,
+          "quote": "if you want to add 24.x"
+        }
+      },
+      "note": "The activation condition scopes both alternatives in the same conditional review demand."
+    },
+    {
+      "unit_id": "R01",
+      "source_id": "pr26586:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 35,
+          "end": 78,
+          "quote": "the latest release for each missing feature"
+        }
+      },
+      "note": "Same and that refer back to the immediately preceding inline review criterion; thread reconstruction remains incomplete."
+    },
+    {
+      "unit_id": "R02d",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "token_fragment",
+      "symbol": "Bdir",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 800,
+          "end": 804,
+          "quote": "that"
+        }
+      },
+      "exception": "That is the pronominal subject before the contracted copula in that's; the anchor is the grammatical pronoun, not an arbitrary substring."
+    },
+    {
+      "unit_id": "R02d",
+      "source_id": "pr26586:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir,p",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 746,
+          "end": 786,
+          "quote": "cleaning up the releases list in general"
+        }
+      },
+      "note": "The preceding ACK resolves that; it does not independently endorse this scope boundary."
+    },
+    {
+      "unit_id": "C10a",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "A",
+      "note": "The explicit causative actor we remains the actor of reconstructed replacement; it is not identified as a maintainer group."
+    },
+    {
+      "unit_id": "C11b",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Some regtest wallets is the explicit direct object of hosts and retains its patient/target role under reconstructed store. Unlike the repo, it is not transformed from subject to destination."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

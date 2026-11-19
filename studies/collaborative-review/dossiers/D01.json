@@ -1,0 +1,622 @@
+{
+  "topic_id": "D01",
+  "title": "Assent scope and decision object identity",
+  "question": "Distinguish ordinary tentative assent to a recurring criterion from recognition as a governing expectation. Separate the general criterion, the containing discussion, and unidentified future work. Give exact preferred fields and retain justified alternatives.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "P01",
+      "title": "Unidentified pruning follow-up assigned the containing PR ID",
+      "category": "primary_error",
+      "coordinator_assessment": "The follow-up pruning option explicitly concerns unidentified later work. The current discussion identifier cannot identify that future contribution, even though the prose correctly disclaims implementation.",
+      "resolution": "Use a null decision_object_id for the unidentified follow-up. Preserve #26586 solely as the discussion episode and do not transfer its merge outcome.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 105,
+            "quote": "The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 10,
+            "quote": "Unrelated:"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 87,
+            "end": 105,
+            "quote": "in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19 and 50: identify the actual decision object; use null for unresolved or inapplicable objects, never a guessed containing-PR ID.",
+        "guide_1, Focal proposition and event identity: identify the specific decision object when established, leave null when unresolved/inapplicable, and do not substitute the containing discussion’s identifier for a different proposal."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C30",
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 638,
+                "end": 693,
+                "quote": "In any case we can always prune versions in a followup."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers pruning versions in a later follow-up contribution.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Follow-up is unidentified and not promised; always marks continuing availability."
+              ],
+              "recognition": [],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U24",
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 638,
+                "end": 693,
+                "quote": "In any case we can always prune versions in a followup."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors offers pruning versions in a follow-up as an option alongside the present inclusion decision.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Always expresses continued availability of the suggested option; no follow-up object or implementation is identified."
+              ],
+              "recognition": [],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "P02",
+      "title": "Separate cleanup proposal assigned the containing PR ID",
+      "category": "primary_error",
+      "coordinator_assessment": "Applying the selection criterion to other versions in a separate pull is a second, differently qualified proposition. R03 assigns #26586 to it and its general-cleanup endorsement. The source expressly separates that work from the current PR.",
+      "resolution": "Leave the separate cleanup object unidentified. Preserve general-cleanup assent without treating the episode identifier as a known future proposal.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 105,
+            "quote": "The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 10,
+            "quote": "Unrelated:"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 87,
+            "end": 105,
+            "quote": "in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 0,
+            "end": 105,
+            "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 739,
+            "end": 836,
+            "quote": "ACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19 and 50: identify the actual decision object; use null for unresolved or inapplicable objects, never a guessed containing-PR ID.",
+        "guide_1, Focal proposition and event identity: identify the specific decision object when established, leave null when unresolved/inapplicable, and do not substitute the containing discussion’s identifier for a different proposal."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "R05",
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 105,
+                "quote": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko suggests someone apply the same selection cleanup to other versions in this file in a separate pull request.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Other versions in this file is the bounded domain; unrelated separates it from this PR.",
+                "Same refers to latest-release-per-missing-feature selection."
+              ],
+              "recognition": [
+                {
+                  "kind": "endorsement",
+                  "target": "broader_principle",
+                  "rationale": "ACK supports general cleanup, not every specific selection criterion or an implemented follow-up.",
+                  "basis": "context_inferred",
+                  "mode": "ordinary_assent",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q034",
+      "title": "For the recurring non-EOL minimum, R04 S32 explicitly treats the general criterion as having no canonical decision object, yet assigns #26586 to its this_proposition recognition event.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep episode identity separate from criterion identity. Clarify in a later specification when a general criterion has an inapplicable object ID and can still receive semantically identified recognition. If the event requires a specific unknown proposal ID, use null and unresolved target. Do not infer an unidentified numbered proposal or adoption.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 515,
+            "end": 616,
+            "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 621,
+            "end": 637,
+            "quote": "I tend to agree."
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 12,
+            "end": 57,
+            "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt lines 19, 50 and 106-112: proposition/event object identity and episode independence are distinct; unknown required objects entail unresolved target."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "R06",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack recommends always retaining at least recent major releases before EOL as a minimum for these wallet backwards compatibility tests, rather than replacing one with another.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Limited to these wallet backwards compatibility tests.",
+                "At least, recent, major, not yet EOL and no substitution are retained as the minimum.",
+                "The author concedes no special difference between 24.x and 23.x but wants compatibility verified on both."
+              ],
+              "recognition": [
+                {
+                  "kind": "endorsement",
+                  "target": "broader_principle",
+                  "rationale": "Sjors quotes and tentatively agrees with the recent-non-EOL retention floor. The quote omits the full wallet-specific and no-substitution formulation; endorsement of every material clause is not established. This remains ordinary assent, with a possible expectation-recognition alternative.",
+                  "basis": "explicit",
+                  "mode": "ordinary_assent",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S32",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack recommends retaining at least all recent non-EOL major releases as a minimum for these wallet backwards compatibility tests, rather than substituting one for another.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "This is a minimum for recent non-EOL major releases, not a demand to retain every historical release.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "recognition": [
+                {
+                  "kind": "expectation_recognition",
+                  "target": "this_proposition",
+                  "basis": "unresolved",
+                  "rationale": "Sjors identifies the proposed recurring minimum through a quote and tentatively agrees. This may recognize the expectation, but ordinary technical assent cannot be ruled out.",
+                  "mode": "unresolved",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "unresolved",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U31",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack proposes always retaining at least recent major releases that have not reached EOL as a minimum in these wallet backwards compatibility tests, rather than replacing one with another.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The minimum applies always, is a bare minimum, and rejects sacrificing one such release for another.",
+                "The author expressly says 24.x need not be special relative to 23.x; the proposed benefit is verifying both versions rather than assuming equivalence."
+              ],
+              "recognition": [
+                {
+                  "kind": "endorsement",
+                  "target": "this_proposition",
+                  "basis": "explicit",
+                  "rationale": "Sjors tentatively agrees with the quoted technical retention proposal. Agreement alone does not establish recognition as an institutional standard.",
+                  "mode": "ordinary_assent",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q037",
+      "title": "The three guide_2 annotations R01/R09/R17 infer local expectation recognition from Sjors quoting the recurring non-EOL minimum and saying I tend to agree.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain both bounded readings: tentative recognition of the core recurring minimum, or ordinary technical assent. Keep complete-proposition scope qualified and avoid binding, general, repeated or causal adoption claims. A future criterion should define what contextual evidence makes agreement treat an arrangement as a standard.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 515,
+            "end": 616,
+            "quote": "wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 621,
+            "end": 637,
+            "quote": "I tend to agree."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 513,
+            "end": 637,
+            "quote": "> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_2.txt lines 78-84: locally_supported requires expectation/arrangement recognition of this_proposition; guide_1.txt lines 106-112: quoting and assent alone are not sufficient, and broader-principle recognition does not endorse every clause.",
+        "guide_2 permits locally_supported only for attributable recognition of an expectation or arrangement, not mere technical assent. guide_1 further requires treatment as a reason, standard, status, or governing consideration and distinguishes broader-principle from full-proposition recognition. Neither guide resolves this specific qualified-assent threshold by a mandatory linguistic cue."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "R06",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack recommends always retaining at least recent major releases before EOL as a minimum for these wallet backwards compatibility tests, rather than replacing one with another.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Limited to these wallet backwards compatibility tests.",
+                "At least, recent, major, not yet EOL and no substitution are retained as the minimum.",
+                "The author concedes no special difference between 24.x and 23.x but wants compatibility verified on both."
+              ],
+              "recognition": [
+                {
+                  "kind": "endorsement",
+                  "target": "broader_principle",
+                  "rationale": "Sjors quotes and tentatively agrees with the recent-non-EOL retention floor. The quote omits the full wallet-specific and no-substitution formulation; endorsement of every material clause is not established. This remains ordinary assent, with a possible expectation-recognition alternative.",
+                  "basis": "explicit",
+                  "mode": "ordinary_assent",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S32",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack recommends retaining at least all recent non-EOL major releases as a minimum for these wallet backwards compatibility tests, rather than substituting one for another.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "This is a minimum for recent non-EOL major releases, not a demand to retain every historical release.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "recognition": [
+                {
+                  "kind": "expectation_recognition",
+                  "target": "this_proposition",
+                  "basis": "unresolved",
+                  "rationale": "Sjors identifies the proposed recurring minimum through a quote and tentatively agrees. This may recognize the expectation, but ordinary technical assent cannot be ruled out.",
+                  "mode": "unresolved",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "unresolved",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U31",
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "theStack proposes always retaining at least recent major releases that have not reached EOL as a minimum in these wallet backwards compatibility tests, rather than replacing one with another.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The minimum applies always, is a bare minimum, and rejects sacrificing one such release for another.",
+                "The author expressly says 24.x need not be special relative to 23.x; the proposed benefit is verifying both versions rather than assuming equivalence."
+              ],
+              "recognition": [
+                {
+                  "kind": "endorsement",
+                  "target": "this_proposition",
+                  "basis": "explicit",
+                  "rationale": "Sjors tentatively agrees with the quoted technical retention proposal. Agreement alone does not establish recognition as an institutional standard.",
+                  "mode": "ordinary_assent",
+                  "speaker_relation": "different_actor",
+                  "independence_key": "https://github.com/bitcoin/bitcoin/pull/26586",
+                  "object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+                }
+              ],
+              "standing_profile": {
+                "documentary": "none",
+                "recognition": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:15",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master. That said, there's no pressing reason to merge this. As we've done before, we could just leave the PR open and occasionally rebase it.\r\n\r\n\r\n> apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here\r\n\r\nThis can also be a reason to not rush merging new releases. This PR itself is where most of the thorough checking happens, at every rebase.\r\n\r\n> wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet \r\n\r\nI tend to agree. In any case we can always prune versions in a followup."
+    },
+    {
+      "source_id": "pr26586:review_comments:1",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Unrelated: The same goes for the other versions in this file, so someone could do that in a separate pull"
+    },
+    {
+      "source_id": "pr26586:review_comments:2",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)\r\n\r\nFor these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another? I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases.\r\n\r\nACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+    },
+    {
+      "source_id": "pr26586:supplement_metadata",
+      "kind": "record_metadata",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "{\n  \"url\": \"https://github.com/bitcoin/bitcoin/pull/26586\",\n  \"number\": 26586,\n  \"title\": \"test: previous releases: add v24.0.1\",\n  \"state\": \"closed\",\n  \"merged\": true,\n  \"base\": \"master\",\n  \"base_sha\": \"1ea02791f3d81c7716d9ea455971203f74d7a107\",\n  \"head\": \"add_prevreleases_v24\",\n  \"head_sha\": \"741908afc1f9ed2040c18667c75665b300c5dfe7\",\n  \"head_repo_full_name\": \"theStack/bitcoin\",\n  \"merge_commit_sha\": \"3a68e194f5e9ad291535d05bace7668cd53232e8\",\n  \"created_at\": \"2022-11-27T22:59:49Z\",\n  \"updated_at\": \"2024-02-16T12:32:53Z\",\n  \"closed_at\": \"2023-02-16T14:04:28Z\",\n  \"merged_at\": \"2023-02-16T14:04:28Z\"\n}"
+    }
+  ]
+}

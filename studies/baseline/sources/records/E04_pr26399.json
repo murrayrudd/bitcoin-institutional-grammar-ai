@@ -1,0 +1,69 @@
+{
+  "number": 26399,
+  "title": "Fix #24049: signed integer overflow in `SeenLocal`",
+  "body": "This commit makes the behavior defined (unsigned integer overflow as if: \r\n`it->second.nscore = static_cast<int>(static_cast<unsigned> (it->second.nscore) + 1U);`)\r\nSee: Issue #24049; Discussion on [stackoverflow](https://stackoverflow.com/q/74102221/9282847).",
+  "state": "closed",
+  "created_at": "2022-10-27T02:09:30+00:00",
+  "updated_at": "2023-11-20T12:19:11+00:00",
+  "closed_at": "2022-11-18T14:33:41+00:00",
+  "merged_at": null,
+  "author": "ViralTaco",
+  "author_id": 7462994,
+  "draft": false,
+  "mergeable": null,
+  "merged": false,
+  "mergeable_state": "unknown",
+  "labels": [],
+  "milestone": null,
+  "merged_by": null,
+  "merged_by_id": null,
+  "comments": [
+    {
+      "body": "@ViralTaco \r\n\r\nDid you see a discussion in #24090? Especially, https://github.com/bitcoin/bitcoin/pull/24090#issuecomment-1046959948 and https://github.com/bitcoin/bitcoin/pull/24090#issuecomment-1064206706?",
+      "author": "hebasto",
+      "created_at": "2022-10-27T08:19:41+00:00"
+    },
+    {
+      "body": "<!--e57a25ab6845829454e8d69fc972939a-->\n\nThe following sections might be updated with supplementary metadata relevant to reviewers and maintainers.\n\n<!--021abf342d371248e50ceaed478a90ca-->\n### Reviews\nSee [the guideline](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review) for information on the review process.\nA summary of reviews will appear here.\n<!--174a7506f384e20aa4161008e828411d-->\n### Conflicts\nReviewers, this pull request conflicts with the following ones:\n\n* [#25390](https://github.com/bitcoin/bitcoin/pull/25390) (sync: introduce a thread-safe generic container and use it to remove a bunch of \"GlobalMutex\"es by vasild)\n\nIf you consider this pull request important, please also help to review the conflicting pull requests. Ideally, start with the one that should be merged first.\n",
+      "author": "DrahtBot",
+      "created_at": "2022-10-27T14:09:15+00:00"
+    },
+    {
+      "body": "Doesn't appear to actually fix the issue though?",
+      "author": "luke-jr",
+      "created_at": "2022-10-27T17:32:57+00:00"
+    },
+    {
+      "body": "Looking at the previous comments, this doesn't seem to be a fix. Let's continue discussion in the issue for now.",
+      "author": "maflcko",
+      "created_at": "2022-11-18T14:33:41+00:00"
+    },
+    {
+      "body": "> Looking at the previous comments, this doesn't seem to be a fix. Let's continue discussion in the issue for now.\r\n\r\nIt doesn't \"seem[sic]\" to fix the issue?  \r\nWhat issue? The code before this patch has undefined behavior.\r\nIt can do anything, but it doesn't have to. It could do nothing.\r\n\r\nThe first sentence in your comment only makes sense in a vacuum. The standard is a thing. I agree with the second part. Let's.",
+      "author": "ViralTaco",
+      "created_at": "2022-11-20T19:20:38+00:00"
+    },
+    {
+      "body": "The burden to prepare, explain and motivate a change for reviewers is on the author. You created a one-line patch in 4 commits, ignored previous discussions, ignored two review comments, with no apparent progress in about a month. I closed this for now, because it can't be merged according to the guidelines. At a minimum for this simple one line change, you'll have to create at most one commit, with an explanation, and you'll have to reply to review comments. All of this is explained in https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md",
+      "author": "maflcko",
+      "created_at": "2022-11-20T19:42:27+00:00"
+    }
+  ],
+  "reviews": [],
+  "review_comments": [],
+  "files": [
+    {
+      "filename": "src/net.cpp",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "status": "modified"
+    }
+  ],
+  "time_to_close_days": 22,
+  "total_comments": 6,
+  "total_reviews": 0,
+  "total_files_changed": 1,
+  "total_additions": 1,
+  "total_deletions": 1
+}

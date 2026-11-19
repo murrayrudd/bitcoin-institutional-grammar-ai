@@ -1,0 +1,21 @@
+from pathlib import Path
+import json,hashlib
+F=Path(__file__).resolve().parent
+sources={}
+for i,key in [(0,'L_BIP110'),(1,'L_RELEASE'),(2,'L_PR359')]:
+ r=json.loads((F/f'sources/github_{i}.json').read_text())['response'];sources[key]=r['content'] if i==0 else json.loads(r['content'])
+def anchor(key,quote,field=None):
+ text=sources[key] if field is None else sources[key][field]
+ start=text.index(quote)
+ return {'source_id':key,'field':field,'start':start,'end':start+len(quote),'quote':quote}
+claims=[
+{'id':'L01','claim':'The BIP proposes temporary consensus restrictions tied to a stated monetary purpose.','kind':'attributed proposal and purpose','evidence':[anchor('L_BIP110','Temporarily limit the size of data fields at the consensus level, in order to correct distorted incentives caused by standardizing support for arbitrary data, and to refocus priorities on improving Bitcoin as money.')],'boundary':'This is the proposal author’s rationale, not a finding that the asserted harms or a collective mandate have been independently established.'},
+{'id':'L02','claim':'The BIP changelog reports closure on August 9, 2026 following a chain split and stalled mining.','kind':'retrospective status and event report','evidence':[anchor('L_BIP110',"1.0.1''' (2026-08-09)"),anchor('L_BIP110','Mark as Closed, following a chain split with stalled mining')],'boundary':'The project record reports the event. No independent node execution or complete chain-history validation was performed.'},
+{'id':'L03','claim':'Luke Dashjr opened Knots PR 359 on August 15, 2026 proposing a new proof-of-work hard fork.','kind':'platform metadata and proposal','evidence':[anchor('L_PR359','Hardfork: New BLAKE2b proof-of-work algorithm','title'),anchor('L_PR359','2026-08-15T00:58:36Z','created_at')],'metadata_checks':{'user.login':'luke-jr','merged':False,'state':'closed'},'boundary':'The current proposal body can have later edits. Its closed-unmerged platform status alone does not establish whether the implementation appears in a release.'},
+{'id':'L04','claim':'Knots published v29.4.1.knots20260508 on September 2, 2026, with release notes identifying a backward-incompatible change and BLAKE2b proof of work.','kind':'publication metadata and release implementation claim','evidence':[anchor('L_RELEASE','2026-09-02T19:02:34Z','published_at'),anchor('L_RELEASE','Mitigating this attack unfortunately requires a backward-incompatible protocol change, included in this release.','body'),anchor('L_RELEASE','BLAKE2b proof-of-work algorithm','body')],'boundary':'Publication and what the release declares are observed. This follow-up does not audit the binary, run the implementation, quantify adoption, or infer a release date from the date-like tag.'},
+{'id':'L05','claim':'The release narrative makes an explicit claim about attack, continuity, and the competing history’s identity.','kind':'attributed identity and legitimacy claim','evidence':[anchor('L_RELEASE','On August 8th, most former miners abandoned Bitcoin en masse and together with other bad actors have been falsely promoting a new altcoin as "Bitcoin".','body')],'boundary':'The analysis attributes this characterization to the release narrative and does not endorse its allegations, assign private motives, or decide which history deserves an identity.'}
+]
+panel=json.loads((F/'sources/panel_passages.json').read_text())
+claims.append({'id':'L06','claim':'The retained October 17, 2025 panel passages distinguish policy remedies and perceived feasibility of consensus remedies.','kind':'contextual transcript interpretation','evidence_ids':[p['evidence_id'] for p in panel],'boundary':'PE28 and PE29 have unresolved speaker attribution; PE30 is contextually attributed, not audio verified. No individual reversal, event outcome, or causal influence on earlier PRs is inferred.'})
+(F/'claim_ledger.json').write_text(json.dumps({'status':'bounded source-based follow-up','selection':'Retrospective purposive selection of directly connected proposal and release records; no fresh coding or reliability test','main_case_window_unchanged':True,'retrieved_on':'2026-11-07','claims':claims},ensure_ascii=False,indent=2)+'\n')
+print({'claims':len(claims),'exact_anchors':sum(len(c.get('evidence',[])) for c in claims)})

@@ -1,0 +1,95 @@
+{
+  "reviewer": "A",
+  "restricted_root": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A",
+  "prohibited_material_encountered": false,
+  "external_retrievals": [],
+  "files_accessed": [
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/TASK.txt",
+      "purpose": "Assigned instructions",
+      "access": "read",
+      "sha256": "57e5bc43afcb9c5e13098d0381523f16b8331db1e4cb729bca542fe4d6c9c7a2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/protocol/codebook.txt",
+      "purpose": "Frozen research/coding input",
+      "access": "read",
+      "sha256": "47312bfabe360f4fe24a05458508025719c2ff1532436c6595fd7c80a4017753"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/protocol/annotation_schema.json",
+      "purpose": "Frozen research/coding input",
+      "access": "read",
+      "sha256": "8f518c0673146a2ac5bc4df94f1e4f7c044edf70011ea9c471a4178d95003bc2"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/packet.json",
+      "purpose": "Frozen research/coding input",
+      "access": "read",
+      "sha256": "ae9c70f3442ee008516d34ce80d05bc4c1e53acd095bea5c7eb64e527b77e7a7"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/tools/check_annotation.py",
+      "purpose": "Frozen research/coding input",
+      "access": "read/execute",
+      "sha256": "33c33132317ba2eaa90a6b7c784fc3f47355b0b824b1c22f5b91c943b119b775"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/build_annotation.py",
+      "purpose": "Self-authored output-construction helper",
+      "access": "read/execute",
+      "sha256": "be76dba4dd8da25dd44b21427c45ab154bd3a2c1dabd2e21c7d09268f5c0ee30"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/annotation.first_complete.json",
+      "purpose": "Preserved/self-authored annotation, first checker feedback, or single self-review helper",
+      "access": "read",
+      "sha256": "5261d837820eab360da1310b0e5e6fa6fc336128005f8bbaca41c057e247b711"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/annotation.json",
+      "purpose": "Preserved/self-authored annotation, first checker feedback, or single self-review helper",
+      "access": "read",
+      "sha256": "5261d837820eab360da1310b0e5e6fa6fc336128005f8bbaca41c057e247b711"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/checks.first_complete.json",
+      "purpose": "Preserved/self-authored annotation, first checker feedback, or single self-review helper",
+      "access": "read",
+      "sha256": "0f547c012edceef3ded363e054680222debe6ac4eeac1c189500a0485beeb7a1"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/review_notes.json",
+      "purpose": "Preserved/self-authored annotation, first checker feedback, or single self-review helper",
+      "access": "read",
+      "sha256": "803a878d90c8da30bb2947f62c2ca22cab4f2be503908a6a9aa5a651f87343f4"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/self_review.py",
+      "purpose": "Preserved/self-authored annotation, first checker feedback, or single self-review helper",
+      "access": "read/execute",
+      "sha256": "d243d225fddb98635d9a8306d7a4fe5f33cd9b53c0ead1cdc8f900b470836c61"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/checks.json",
+      "purpose": "Final validation/freeze record; no new research evidence",
+      "access": "read",
+      "sha256": "baa76c0209cbb058f3867b93d32c4389c1bf87cbbf722459cf3cfe8967280a57"
+    },
+    {
+      "path": "/workspace/scratch/2020b62d57db/overlap_validation/Core_Knots_Round12_Overlap_Validation_Evidence_v01/reviewers/A/repair_log.json",
+      "purpose": "Final validation/freeze record; no new research evidence",
+      "access": "read",
+      "sha256": "02cde4adf65c20fd2e0246f0028840c0f824304d91a7fe3c689d5920c91feca5"
+    }
+  ],
+  "finalization_reads": [
+    "annotation.json",
+    "annotation.first_complete.json",
+    "packet.json",
+    "checks.json",
+    "repair_log.json",
+    "review_notes.json"
+  ],
+  "statement": "All research inputs and outputs accessed are within this reviewer directory. Standard Python libraries and the supplied checker were used; no outside research or other reviewer content was accessed. The record lists supplied inputs and self-generated outputs separately by purpose."
+}

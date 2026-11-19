@@ -1,0 +1,85 @@
+{
+  "episode_id": "E02",
+  "pr_number": 11276,
+  "label": "Discretionary closure guidance",
+  "mechanism": "procedural_revision",
+  "initiation": "Review workload motivates a proposed change to the contribution guide.",
+  "outcome": "Two specific provisions enter the guide; an additional no-review suggestion does not appear in the final text.",
+  "alternative_explanation": "Workload rationale is asserted, and no actual closure under the new permission is observed here.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "collective_choice",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Revision of recurring review arrangements, with operational conduct as the embedded target.",
+  "claim_ids": [
+    "E02-C1",
+    "E02-C2",
+    "E02-C3",
+    "E02-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E02:doc_head",
+      "span": {
+        "start": 7352,
+        "end": 7526,
+        "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing."
+      }
+    },
+    {
+      "source_id": "E02:outcome",
+      "span": {
+        "start": 128,
+        "end": 151,
+        "quote": "\"recorded_merged\": true"
+      }
+    },
+    {
+      "source_id": "E02:doc_head",
+      "span": {
+        "start": 7109,
+        "end": 7185,
+        "quote": "Pull requests that refactor the code should not be made by new contributors."
+      }
+    },
+    {
+      "source_id": "E02:outcome",
+      "span": {
+        "start": 128,
+        "end": 151,
+        "quote": "\"recorded_merged\": true"
+      }
+    },
+    {
+      "source_id": "E02:review_comments:2",
+      "span": {
+        "start": 18,
+        "end": 110,
+        "quote": "Any refactoring pull request may be closed when it doesn't attract anyone willing to review."
+      }
+    },
+    {
+      "source_id": "E02:doc_head",
+      "span": {
+        "start": 7352,
+        "end": 7481,
+        "quote": "Trivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers"
+      }
+    },
+    {
+      "source_id": "E02:body",
+      "span": {
+        "start": 276,
+        "end": 329,
+        "quote": "This PR would prepare for possible direct PR closing."
+      }
+    },
+    {
+      "source_id": "E02:outcome",
+      "span": {
+        "start": 128,
+        "end": 151,
+        "quote": "\"recorded_merged\": true"
+      }
+    }
+  ]
+}

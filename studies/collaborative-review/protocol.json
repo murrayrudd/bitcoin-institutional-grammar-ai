@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-11-07T21:01:02.290216+00:00",
+  "stage": "post_evaluation_collaborative_reconciliation",
+  "authorization": "User requests the coding adjustment and collaborative discussions aimed at resolving interpretations.",
+  "panel_design": "Three fresh reviewing agents, not the original coders. Same inherited model configuration. Independent initial positions, then one peer-response round. This is deliberative adjudication, not an independent recoding reliability test.",
+  "codebook": "inputs/specifications/v04/protocol/codebook.txt",
+  "schema": "inputs/specifications/v04/protocol/annotation_schema.json",
+  "fixed_constraints": [
+    "No new coding criteria or codebook edits",
+    "No new sources",
+    "No full recoding",
+    "Original annotations and independent agreement remain unchanged",
+    "No majority vote substitutes for source support",
+    "Unresolved alternatives may remain",
+    "No manuscript edits or fork extension"
+  ],
+  "construction": "Nine v0.4 corrected annotation views retain their distinct unitizations. An authoritative case and decision overlay records resolved conclusions and alternatives. These views are not nine independent confirmations of the final conclusions. No arbitrary single coder is designated the truth.",
+  "rounds": [
+    {
+      "round": 1,
+      "task": "Read fixed codebook and ten focused dossiers. Record independent preferred interpretation, strongest alternative, exact recommended changes, and source anchors."
+    },
+    {
+      "round": 2,
+      "task": "Read all three frozen initial submissions. Respond explicitly to peers, explaining retained or revised positions. One response per topic; further discussion only for a newly discovered consequential contradiction."
+    }
+  ],
+  "stop_rule": "Every material issue receives an applied correction, agreed interpretation, agreed uncertainty, or explicitly retained disagreement. Unanimity is not required.",
+  "original_package_sha256": "a170138fce0a2931ce83406548811268b61b8269b4f47a378e3114a125b2812c"
+}

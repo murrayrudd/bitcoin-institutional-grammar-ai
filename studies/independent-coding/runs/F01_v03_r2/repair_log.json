@@ -1,0 +1,985 @@
+{
+  "run_id": "F01_v03_r2",
+  "changes": [
+    {
+      "change_id": "M01",
+      "stage": "mechanical",
+      "unit_id": "need_rebase",
+      "field": "components.Bdir.evidence",
+      "before": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 27,
+            "end": 29,
+            "quote": "it"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 41,
+            "end": 43,
+            "quote": "it"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "Replace incidental it inside bit with the actual subject it in the rebase clause. The intended referent and inferred role do not change."
+    },
+    {
+      "change_id": "M02",
+      "stage": "mechanical",
+      "unit_id": "developer_choice",
+      "field": "components.Cac.occurrence_role",
+      "before": "local",
+      "after": "context_reference",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "The lexical role is supplied locally, but the evidence also resolves an antecedent outside the unit; context_reference accurately declares that evidence scope."
+    },
+    {
+      "change_id": "M03",
+      "stage": "mechanical",
+      "unit_id": "host_regtest",
+      "field": "components.Cex.occurrence_role",
+      "before": "local",
+      "after": "context_reference",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "The lexical role is supplied locally, but the evidence also resolves an antecedent outside the unit; context_reference accurately declares that evidence scope."
+    },
+    {
+      "change_id": "M04",
+      "stage": "mechanical",
+      "unit_id": "occasionally_rebase",
+      "field": "components.Bdir.occurrence_role",
+      "before": "local",
+      "after": "context_reference",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "The lexical role is supplied locally, but the evidence also resolves an antecedent outside the unit; context_reference accurately declares that evidence scope."
+    },
+    {
+      "change_id": "S01",
+      "stage": "self_review",
+      "affected": "occasionally_rebase.A",
+      "field": "evidence",
+      "before": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 161,
+            "end": 163,
+            "quote": "we"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 180,
+            "end": 182,
+            "quote": "we"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "The shared subject is we could leave/rebase, not the earlier we in the historical as-we-have-done clause."
+    },
+    {
+      "change_id": "S02",
+      "stage": "self_review",
+      "affected": "remove23.A",
+      "field": "evidence",
+      "before": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "Use the subject of the operative need-to predicate rather than the subject of want in the activation condition."
+    },
+    {
+      "change_id": "S03",
+      "stage": "self_review",
+      "affected": "remove23",
+      "field": "speech_act",
+      "before": "proposed",
+      "after": "asserted",
+      "meaning_changes": false,
+      "epistemic_correction": false,
+      "reason": "Future need expresses a declarative conditional requirement. The normative force and alternatives are unchanged."
+    },
+    {
+      "change_id": "S04",
+      "stage": "self_review",
+      "affected": "explain24.A",
+      "field": "evidence",
+      "before": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "Use the subject of the operative need-to predicate rather than the subject of want in the activation condition."
+    },
+    {
+      "change_id": "S05",
+      "stage": "self_review",
+      "affected": "explain24",
+      "field": "speech_act",
+      "before": "proposed",
+      "after": "asserted",
+      "meaning_changes": false,
+      "epistemic_correction": false,
+      "reason": "Future need expresses a declarative conditional requirement. The normative force and alternatives are unchanged."
+    },
+    {
+      "change_id": "S06",
+      "stage": "self_review",
+      "affected": "b_method.Cac",
+      "field": "basis",
+      "before": "explicit",
+      "after": "context_inferred",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "The comparison supplies recurrence; treating it as activation of reconstructed repeat is an inferred grammatical role."
+    },
+    {
+      "change_id": "S07",
+      "stage": "self_review",
+      "affected": "b_method.Cac",
+      "field": "occurrence_role",
+      "before": "local",
+      "after": "semantic_inference",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "Declare the inferred activation role explicitly."
+    },
+    {
+      "change_id": "S08",
+      "stage": "self_review",
+      "affected": "b_method.Cac",
+      "field": "inference_note",
+      "before": "Recurring activation is stated in the comparison.",
+      "after": "The phrase compares the present procedure with every release; recurrence as the activation of reconstructed repeat is inferred, not a literal conditional clause.",
+      "meaning_changes": false,
+      "epistemic_correction": true,
+      "reason": "Explain the transformed comparison role."
+    },
+    {
+      "change_id": "S09",
+      "stage": "self_review",
+      "affected": "b_method.Bdir",
+      "field": "text",
+      "before": "procedure for adding a previous release",
+      "after": "current simplified procedure for adding a previous release",
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "The remainder of the same sentence explicitly relaxes a former tag-list-editing step; retain that qualification."
+    },
+    {
+      "change_id": "S10",
+      "stage": "self_review",
+      "affected": "b_method.Bdir",
+      "field": "evidence",
+      "before": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 18,
+            "quote": "The same procedure"
+          }
+        },
+        {
+          "source_id": "pr26586:metadata",
+          "span": {
+            "start": 23,
+            "end": 70,
+            "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 0,
+            "end": 18,
+            "quote": "The same procedure"
+          }
+        },
+        {
+          "source_id": "pr26586:metadata",
+          "span": {
+            "start": 23,
+            "end": 70,
+            "quote": "\"title\": \"test: previous releases: add v24.0.1\""
+          }
+        },
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 145,
+            "end": 170,
+            "quote": "only a little simpler now"
+          }
+        }
+      ],
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Anchor the current-procedure qualification rather than relying only on the title."
+    },
+    {
+      "change_id": "S11",
+      "stage": "self_review",
+      "affected": "b_method.Bdir",
+      "field": "inference_note",
+      "before": "The nominal phrase becomes the target of reconstructed repeat. The PR title and referenced commits identify the procedure.",
+      "after": "The nominal phrase becomes the target of reconstructed repeat. The PR title identifies release addition, while only a little simpler now and the separately linked negative-need clause qualify the current procedure. No unchanged copying of all historical steps is inferred.",
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Preserve present versus historical method identity and the eliminated editing step."
+    },
+    {
+      "change_id": "S12",
+      "stage": "self_review",
+      "affected": "b_method",
+      "field": "institution",
+      "before": {
+        "type": "strategy_candidate",
+        "standing": "text_only",
+        "dispute_present": false,
+        "rationale": "The author presents this addition as an instance of a recurrent release-addition method, not an authorized requirement. Supplied historical additions corroborate instances, not recognition of an obligation.",
+        "evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "endorsement",
+            "target": "broader_proposal",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:15",
+                "span": {
+                  "start": 0,
+                  "end": 104,
+                  "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master."
+                }
+              }
+            ],
+            "rationale": "Tested ACK concerns the identified head of this contribution, not a general obligation to add every release.",
+            "basis": "explicit"
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "evidence": [
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 229,
+                  "end": 269,
+                  "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 319,
+                  "end": 333,
+                  "quote": "\"merged\": true"
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 337,
+                  "end": 359,
+                  "quote": "\"merged_by\": \"maflcko\""
+                }
+              }
+            ],
+            "rationale": "Corpus metadata records this contribution as merged by the named account; it does not identify any actor’s institutional status.",
+            "basis": "explicit"
+          }
+        ],
+        "authority_evidence": []
+      },
+      "after": {
+        "type": "strategy_candidate",
+        "standing": "disputed",
+        "dispute_present": true,
+        "rationale": "The author presents this addition as an instance of a recurrent release-addition method, with a newly simplified tag-fetching step. The conceptual NACK challenges applying that method to v24 in this case; it does not prove rejection of every earlier instance or an authorized veto. The historical patches support examples rather than a binding obligation.",
+        "evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:3",
+            "span": {
+              "start": 0,
+              "end": 126,
+              "quote": "Concept NACK. Besides the bug, I'm not sure there's anything notably different between v23 and v24 to warrant adding v24 here."
+            }
+          },
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 282,
+              "end": 364,
+              "quote": "we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+            }
+          }
+        ],
+        "recognition": [
+          {
+            "kind": "endorsement",
+            "target": "broader_proposal",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:15",
+                "span": {
+                  "start": 0,
+                  "end": 104,
+                  "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master."
+                }
+              }
+            ],
+            "rationale": "Tested ACK concerns the identified head of this contribution, not a general obligation to add every release.",
+            "basis": "explicit"
+          },
+          {
+            "kind": "recorded_status",
+            "target": "broader_proposal",
+            "evidence": [
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 229,
+                  "end": 269,
+                  "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 319,
+                  "end": 333,
+                  "quote": "\"merged\": true"
+                }
+              },
+              {
+                "source_id": "pr26586:metadata",
+                "span": {
+                  "start": 337,
+                  "end": 359,
+                  "quote": "\"merged_by\": \"maflcko\""
+                }
+              }
+            ],
+            "rationale": "Corpus metadata records this contribution as merged by the named account; it does not identify any actor’s institutional status.",
+            "basis": "explicit"
+          }
+        ],
+        "authority_evidence": []
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "The existing challenge relation requires recording the evidenced dispute over application of this recurring method."
+    },
+    {
+      "change_id": "S13",
+      "stage": "self_review",
+      "affected": "wallet_support_reason",
+      "field": "new context unit",
+      "before": null,
+      "after": {
+        "unit_id": "wallet_support_reason",
+        "source_id": "pr26586:comments:4",
+        "span": {
+          "start": 331,
+          "end": 460,
+          "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+        },
+        "parent_unit_id": null,
+        "grammar": "not_institutional",
+        "speech_act": "asserted",
+        "scope": "case_specific",
+        "components": [],
+        "institution": {
+          "type": "not_applicable",
+          "standing": "not_applicable",
+          "dispute_present": false,
+          "rationale": "Contextual wallet-feature rationale for the addition. The next comment challenges its relevance to the specific test, not the existence of the feature.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 331,
+                "end": 460,
+                "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+              }
+            }
+          ],
+          "recognition": [],
+          "authority_evidence": []
+        },
+        "statement_target_level": "not_applicable",
+        "observed_action_level": "operational",
+        "level_rationale": "Visible contribution review is operational; this context record has no statement target.",
+        "complexity_flags": [
+          "none"
+        ],
+        "alternative_interpretation": "This is a technical reason advanced for inclusion, not a separate instruction or proof that the current test exercises miniscript.",
+        "confidence": "plausible",
+        "uncertainty_reason": "The participant reports the support change and remembered downgrade problem; neither is independently tested in this packet.",
+        "record_role": "context",
+        "parse_mode": "literal",
+        "deontic_force": "nondeontic",
+        "level_alternatives": [],
+        "presentation": {
+          "quotation": "none",
+          "markup": "plain",
+          "rationale": "Plain supplied occurrence; no edit-history or later formatting state inferred."
+        },
+        "disposition_events": []
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Create the actual challenged rationale as a distinct relation endpoint instead of attributing a wallet-test correction to the separate #25717 justification."
+    },
+    {
+      "change_id": "S14",
+      "stage": "self_review",
+      "affected": "relation:no_miniscript_test",
+      "field": "3",
+      "before": {
+        "from_unit_id": "no_miniscript_test",
+        "to_unit_id": "add_v24",
+        "type": "challenges",
+        "basis": "context_inferred",
+        "rationale": "The technical correction challenges the cited wallet rationale for this addition; it does not prove the whole proposal was rejected.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:5",
+            "span": {
+              "start": 0,
+              "end": 104,
+              "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 331,
+              "end": 460,
+              "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "no_miniscript_test",
+        "to_unit_id": "wallet_support_reason",
+        "type": "challenges",
+        "basis": "context_inferred",
+        "rationale": "The correction that this test does not exercise watch-only miniscript challenges the relevance of the preceding wallet-feature rationale. It does not contradict #25717 as a separate justification or deny that the feature exists.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:5",
+            "span": {
+              "start": 0,
+              "end": 104,
+              "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:4",
+            "span": {
+              "start": 331,
+              "end": 460,
+              "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Narrow the target of the technical challenge to its supported rationale."
+    },
+    {
+      "change_id": "S15",
+      "stage": "self_review",
+      "affected": "relation:need_rebase",
+      "field": "17",
+      "before": {
+        "from_unit_id": "need_rebase",
+        "to_unit_id": "rebase_update_report",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "Specific textual correspondence supports an action report after the request. It does not establish why the author made the change.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:2",
+            "span": {
+              "start": 31,
+              "end": 72,
+              "quote": "Meanwhile it needs a rebase after #26589."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "need_rebase",
+        "to_unit_id": "rebase_update_report",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "The report specifically names rebasing on master, corresponding to the earlier rebase request. No supplied outcome for #26589 verifies the request’s after-#26589 qualification; this is partial, contextual uptake rather than proof that the full requirement was met.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:2",
+            "span": {
+              "start": 31,
+              "end": 72,
+              "quote": "Meanwhile it needs a rebase after #26589."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:13",
+            "span": {
+              "start": 0,
+              "end": 153,
+              "quote": "Rebased on master and updated to v24.0.1 (note that as I'm writing this, the archives on https://bitcoincore.org/bin/ are not available yet for v24.0.1)."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Preserve the unresolved dependency qualification in the uptake claim."
+    },
+    {
+      "change_id": "S16",
+      "stage": "self_review",
+      "affected": "relation:explain24->verify_assumption",
+      "field": "28",
+      "before": {
+        "from_unit_id": "verify_assumption",
+        "to_unit_id": "explain24",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "The reply states no special distinction and gives a reason for testing both versions; it is a response to the justification request, not demonstrated acceptance of that requirement.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 82,
+              "end": 176,
+              "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+            }
+          },
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 491,
+              "end": 735,
+              "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "explain24",
+        "to_unit_id": "verify_assumption",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "The reply states no special distinction and gives a reason for testing both versions; it is a response to the justification request, not demonstrated acceptance of that requirement.",
+        "evidence": [
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 82,
+              "end": 176,
+              "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+            }
+          },
+          {
+            "source_id": "pr26586:review_comments:2",
+            "span": {
+              "start": 491,
+              "end": 735,
+              "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Uptake must point from the initiating request to its attributable response."
+    },
+    {
+      "change_id": "S17",
+      "stage": "self_review",
+      "affected": "relation:release_concern",
+      "field": "33",
+      "before": {
+        "from_unit_id": "release_concern",
+        "to_unit_id": "hold_off",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "Although the first act is a concern, the subsequent favorable delay remark responds to it. There is no explicit prior injunction to wait.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:1",
+            "span": {
+              "start": 0,
+              "end": 142,
+              "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:2",
+            "span": {
+              "start": 0,
+              "end": 30,
+              "quote": "Sounds good to hold off a bit."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "release_concern",
+        "to_unit_id": "hold_off",
+        "type": "temporal",
+        "basis": "context_inferred",
+        "rationale": "Supplied source-entry timestamps order these recorded acts (2022-11-28T08:12:21+00:00 before 2022-11-28T13:32:40+00:00). The initiating context is not coded as a request/proposal; this relation asserts only order, not a response obligation or causation.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:1",
+            "span": {
+              "start": 0,
+              "end": 142,
+              "quote": "I wonder if the release will get wiped, given that there is a bug in the wallet, which will be fixed in a follow-up release on the 24.x branch"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:2",
+            "span": {
+              "start": 0,
+              "end": 30,
+              "quote": "Sounds good to hold off a bit."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Avoid representing an unspecified concern or context-only ping as an institutional initiating request."
+    },
+    {
+      "change_id": "S18",
+      "stage": "self_review",
+      "affected": "relation:status_ping",
+      "field": "34",
+      "before": {
+        "from_unit_id": "status_ping",
+        "to_unit_id": "tested_ack",
+        "type": "uptake",
+        "basis": "context_inferred",
+        "rationale": "The addressed participant subsequently supplies a tested ACK; without reliable threading the response link is contextually inferred, not proof the ping caused review.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:14",
+            "span": {
+              "start": 0,
+              "end": 33,
+              "quote": "Not sure what to do here. @Sjors?"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 0,
+              "end": 104,
+              "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "after": {
+        "from_unit_id": "status_ping",
+        "to_unit_id": "tested_ack",
+        "type": "temporal",
+        "basis": "context_inferred",
+        "rationale": "Supplied source-entry timestamps order these recorded acts (2023-02-16T10:49:49+00:00 before 2023-02-16T12:48:12+00:00). The initiating context is not coded as a request/proposal; this relation asserts only order, not a response obligation or causation.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:14",
+            "span": {
+              "start": 0,
+              "end": 33,
+              "quote": "Not sure what to do here. @Sjors?"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:15",
+            "span": {
+              "start": 0,
+              "end": 104,
+              "quote": "tACK 741908afc1f9ed2040c18667c75665b300c5dfe7\r\n\r\nI checked that it still works on top of current master."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Avoid representing an unspecified concern or context-only ping as an institutional initiating request."
+    },
+    {
+      "change_id": "S19",
+      "stage": "self_review",
+      "affected": "relation:b_notags->b_method",
+      "field": "new clarifies relation",
+      "before": null,
+      "after": {
+        "from_unit_id": "b_notags",
+        "to_unit_id": "b_method",
+        "type": "clarifies",
+        "basis": "context_inferred",
+        "rationale": "The same body explains that automatic fetching makes the current recurring procedure simpler by removing the need to extend tag lists. This limits the reconstructed repeat action to the current procedure.",
+        "evidence": [
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 0,
+              "end": 35,
+              "quote": "The same procedure as every release"
+            }
+          },
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 145,
+              "end": 275,
+              "quote": "only a little simpler now: thanks to #25650, the previous release fetch script defaults to downloading/building the necessary tags"
+            }
+          },
+          {
+            "source_id": "pr26586:body",
+            "span": {
+              "start": 282,
+              "end": 364,
+              "quote": "we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+            }
+          }
+        ],
+        "logic_scope": "not_applicable"
+      },
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Link the simplified-step qualification to the reconstructed recurring procedure rather than leaving their scope unconnected."
+    },
+    {
+      "change_id": "S20",
+      "stage": "self_review",
+      "affected": "need_rebase.recognition",
+      "field": "recognition",
+      "before": [
+        {
+          "kind": "reported_implementation",
+          "target": "this_proposition",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 17,
+                "quote": "Rebased on master"
+              }
+            }
+          ],
+          "rationale": "The author names the corresponding rebase or version-update action. Exact matching is contextual; the update report is not proof of every feedback item.",
+          "basis": "context_inferred"
+        }
+      ],
+      "after": [
+        {
+          "kind": "reported_implementation",
+          "target": "broader_proposal",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 17,
+                "quote": "Rebased on master"
+              }
+            }
+          ],
+          "rationale": "The author reports rebasing this PR on master, but does not identify #26589 or verify fulfillment of the request’s dependency condition. The report is scoped to maintenance of the broader contribution, not verified implementation of the full qualified proposition.",
+          "basis": "context_inferred"
+        }
+      ],
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Broaden report scope because a material dependency condition remains unverified."
+    },
+    {
+      "change_id": "S21",
+      "stage": "self_review",
+      "affected": "need_rebase.disposition",
+      "field": "disposition_events",
+      "before": [
+        {
+          "kind": "reported_implemented",
+          "target": "this_proposition",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 17,
+                "quote": "Rebased on master"
+              }
+            }
+          ],
+          "rationale": "The report specifically identifies this action; its successful testing and causal attribution are not implied."
+        }
+      ],
+      "after": [
+        {
+          "kind": "reported_implemented",
+          "target": "broader_proposal",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:13",
+              "span": {
+                "start": 0,
+                "end": 17,
+                "quote": "Rebased on master"
+              }
+            }
+          ],
+          "rationale": "Rebasing is reported for the PR. The report does not verify that the specified after-#26589 dependency was met, so the full conditional requirement is not marked implemented."
+        }
+      ],
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Keep action report separate from fulfillment of the entire qualified request."
+    },
+    {
+      "change_id": "S22",
+      "stage": "self_review",
+      "affected": "mechanism:reason_giving",
+      "field": "claim",
+      "before": "A conceptual objection to adding v24 prompted arguments for including every major release and a particular justification for v24. Review then contrasted a latest-per-missing-feature criterion with a minimum recent-non-EOL wallet-testing baseline. The author offered verification of both versions as a reason, and Sjors later tentatively agreed with the quoted baseline. This is a supported argumentative sequence, not proof that any criterion caused integration.",
+      "after": "A conceptual objection to adding v24 is followed by an addressed argument for including every major release and a particular justification for v24. Review then contrasted a latest-per-missing-feature criterion with a minimum recent-non-EOL wallet-testing baseline. The author offered verification of both versions as a reason, and Sjors later tentatively agreed with the quoted baseline. This is a supported argumentative sequence, not proof that any criterion caused integration.",
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Replace prompted with a source-supported addressed sequence, without asserting causal identification."
+    },
+    {
+      "change_id": "S23",
+      "stage": "self_review",
+      "affected": "mechanism:review_coordination",
+      "field": "claim",
+      "before": "The conditional request to update the contribution to 24.0.1 corresponds to the author’s subsequent explicit update report. A separate earlier rebase request also corresponds to the rebase report. The source supports a request/report sequence but does not verify successful downloads or causal dependence on either comment.",
+      "after": "The conditional request to update the contribution to 24.0.1 corresponds to the author’s subsequent explicit update report. A separate earlier rebase request also corresponds to the report of rebasing on master, but the packet does not verify its after-#26589 qualification. The source supports an action/request-report sequence without verifying successful downloads or causal dependence on either comment.",
+      "meaning_changes": true,
+      "epistemic_correction": false,
+      "reason": "Preserve the requested dependency and limit the apparent implementation claim."
+    },
+    {
+      "change_id": "S24",
+      "stage": "self_review",
+      "affected": "screening:comments:4",
+      "field": "unit_ids",
+      "before": [
+        "every_major",
+        "add_v24"
+      ],
+      "after": [
+        "every_major",
+        "add_v24",
+        "wallet_support_reason"
+      ],
+      "meaning_changes": false,
+      "epistemic_correction": false,
+      "reason": "Register the new contextual rationale endpoint. The candidate disposition is unchanged."
+    }
+  ],
+  "self_review_passes": 1,
+  "notes": "Mechanical corrections and one complete source-based review are separately recorded. Original packet, codebook, schema, checker, and first-complete annotation are unchanged."
+}

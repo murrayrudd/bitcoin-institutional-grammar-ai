@@ -1,0 +1,381 @@
+{
+  "episode_id": "E11",
+  "pr_number": 23798,
+  "url": "https://github.com/bitcoin/bitcoin/pull/23798",
+  "title": "contrib: add achow101 to trusted keys",
+  "created_at": "2021-12-16T19:53:51+00:00",
+  "closed_at": "2021-12-20T06:58:55+00:00",
+  "merged_at": "2021-12-20T06:58:55+00:00",
+  "recorded_merged": true,
+  "recorded_merger": "fanquake",
+  "entries": [
+    {
+      "source_id": "E11:body",
+      "kind": "body",
+      "author": "achow101",
+      "timestamp": "2021-12-16T19:53:51+00:00",
+      "text": "For maintaining the wallet and psbt things",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:0",
+      "kind": "comments",
+      "author": "jonatack",
+      "timestamp": "2021-12-16T20:05:50+00:00",
+      "path": null,
+      "text": "Concept/approach ACK",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:1",
+      "kind": "comments",
+      "author": "laanwj",
+      "timestamp": "2021-12-16T20:12:35+00:00",
+      "path": null,
+      "text": "Concept ACK. Matches the key I have:\r\n```\r\npub   rsa4096/0x17565732E08E5E41 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\n```",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:2",
+      "kind": "comments",
+      "author": "0xB10C",
+      "timestamp": "2021-12-16T20:25:19+00:00",
+      "path": null,
+      "text": "ACK on having achow101 as wallet maintainer.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:3",
+      "kind": "comments",
+      "author": "luke-jr",
+      "timestamp": "2021-12-17T03:54:48+00:00",
+      "path": null,
+      "text": "Concept ACK (but please don't remove BDB support any time soon :p)",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:4",
+      "kind": "comments",
+      "author": "S3RK",
+      "timestamp": "2021-12-17T07:24:00+00:00",
+      "path": null,
+      "text": "ACK on achow101 being wallet maintainer",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:5",
+      "kind": "comments",
+      "author": "maflcko",
+      "timestamp": "2021-12-17T07:48:40+00:00",
+      "path": null,
+      "text": "ACK (but please remove BDB asap, thx)",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:6",
+      "kind": "comments",
+      "author": "ajtowns",
+      "timestamp": "2021-12-17T08:59:25+00:00",
+      "path": null,
+      "text": "Concept ACK.\r\n\r\nKey matches key in contrib/builder-keys/keys.txt. I don't expect achow to treat BDB removal particularly differently to any other (wallet-related) PR...",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:7",
+      "kind": "comments",
+      "author": "glozow",
+      "timestamp": "2021-12-17T11:12:39+00:00",
+      "path": null,
+      "text": "concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:8",
+      "kind": "comments",
+      "author": "michaelfolkson",
+      "timestamp": "2021-12-17T12:49:02+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\n(conditional on bringing BDB back as a first class citizen)\r\n\r\n(Joke. Congrats, well deserved)",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:9",
+      "kind": "comments",
+      "author": "kiminuo",
+      "timestamp": "2021-12-17T15:03:04+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nCongratulations.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:10",
+      "kind": "comments",
+      "author": "jb55",
+      "timestamp": "2021-12-17T23:25:54+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:11",
+      "kind": "comments",
+      "author": "gruve-p",
+      "timestamp": "2021-12-19T15:38:27+00:00",
+      "path": null,
+      "text": "ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:12",
+      "kind": "comments",
+      "author": "meshcollider",
+      "timestamp": "2021-12-20T07:09:59+00:00",
+      "path": null,
+      "text": "Congratulations @achow101  🎉 ",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:comments:13",
+      "kind": "comments",
+      "author": "sipa",
+      "timestamp": "2021-12-20T18:54:21+00:00",
+      "path": null,
+      "text": "Posthumous ACK 33b511251acbd0ed802a8843361c7dc8d1512008. The key matches the one I have in my keyring.",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:0",
+      "kind": "reviews",
+      "author": null,
+      "timestamp": "2021-12-16T20:18:11+00:00",
+      "path": null,
+      "text": "ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nVerified the key with https://achow101.com/contact/",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:1",
+      "kind": "reviews",
+      "author": "meshcollider",
+      "timestamp": "2021-12-16T22:35:42+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nI've verified this key in person at previous coredevs, and achow101 is a very logical replacement in the role, now I no longer have time. Thanks for volunteering Andrew!",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:2",
+      "kind": "reviews",
+      "author": "darosior",
+      "timestamp": "2021-12-17T10:15:30+00:00",
+      "path": null,
+      "text": "Concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:3",
+      "kind": "reviews",
+      "author": "shaavan",
+      "timestamp": "2021-12-17T10:38:46+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nVerified the key with: https://achow101.com/contact/",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:4",
+      "kind": "reviews",
+      "author": "promag",
+      "timestamp": "2021-12-17T15:47:40+00:00",
+      "path": null,
+      "text": "ACK",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:5",
+      "kind": "reviews",
+      "author": "benthecarman",
+      "timestamp": "2021-12-17T17:09:56+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:6",
+      "kind": "reviews",
+      "author": "hebasto",
+      "timestamp": "2021-12-17T18:42:31+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\n```\r\n$ gpg --refresh-keys\r\n$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41\r\npub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\nuid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>\r\nuid           [ unknown] Andrew Chow <achow101@yahoo.com>\r\nuid           [ unknown] Andrew Chow <andrew@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-lists@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-github@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101@pm.me>\r\nuid           [ unknown] Andrew Chow <achow101@protonmail.com>\r\nsub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]\r\n\r\n```",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:reviews:7",
+      "kind": "reviews",
+      "author": "Zero-1729",
+      "timestamp": "2021-12-17T18:48:38+00:00",
+      "path": null,
+      "text": "ACK 33b511251acbd0ed802a8843361c7dc8d1512008\r\n\r\nAgree on having achow101 as wallet maintainer.\r\n\r\nVerified:\r\n```sh\r\n$ gpg --list-keys 152812300785C96444D3334D17565732E08E5E41\r\npub   rsa4096 2015-03-05 [SC] [expires: 2022-03-05]\r\n      152812300785C96444D3334D17565732E08E5E41\r\nuid           [ unknown] Andrew Chow (Official New Key) <achow101@gmail.com>\r\nuid           [ unknown] Andrew Chow <achow101-github@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101-lists@achow101.com>\r\nuid           [ unknown] Andrew Chow <andrew@achow101.com>\r\nuid           [ unknown] Andrew Chow <achow101@yahoo.com>\r\nuid           [ unknown] Andrew Chow <achow101@pm.me>\r\nuid           [ unknown] Andrew Chow <achow101@protonmail.com>\r\nsub   rsa4096 2015-03-05 [E] [expires: 2022-03-05]\r\n\r\n```",
+      "layer": "T",
+      "source_type": "frozen_corpus",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    }
+  ],
+  "supplemental_entries": [
+    {
+      "source_id": "E11:outcome",
+      "text": "{\"closed_at\": \"2021-12-20T06:58:55+00:00\", \"created_at\": \"2021-12-16T19:53:51+00:00\", \"merged_at\": \"2021-12-20T06:58:55+00:00\", \"recorded_merged\": true, \"recorded_merger\": \"fanquake\"}",
+      "layer": "T",
+      "source_type": "frozen_metadata",
+      "url": "https://github.com/bitcoin/bitcoin/pull/23798"
+    },
+    {
+      "source_id": "E11:doc_before",
+      "text": "Contributing to Bitcoin Core\n============================\n\nThe Bitcoin Core project operates an open contributor model where anyone is\nwelcome to contribute towards development in the form of peer review, testing\nand patches. This document explains the practical process and guidelines for\ncontributing.\n\nFirst, in terms of structure, there is no particular concept of \"Bitcoin Core\ndevelopers\" in the sense of privileged people. Open source often naturally\nrevolves around a meritocracy where contributors earn trust from the developer\ncommunity over time. Nevertheless, some hierarchy is necessary for practical\npurposes. As such, there are repository \"maintainers\" who are responsible for\nmerging pull requests, as well as a \"lead maintainer\" who is responsible for the\nrelease cycle as well as overall merging, moderation and appointment of\nmaintainers.\n\nGetting Started\n---------------\n\nNew contributors are very welcome and needed.\n\nReviewing and testing is highly valued and the most effective way you can contribute\nas a new contributor. It also will teach you much more about the code and\nprocess than opening pull requests. Please refer to the [peer review](#peer-review)\nsection below.\n\nBefore you start contributing, familiarize yourself with the Bitcoin Core build\nsystem and tests. Refer to the documentation in the repository on how to build\nBitcoin Core and how to run the unit tests, functional tests, and fuzz tests.\n\nThere are many open issues of varying difficulty waiting to be fixed.\nIf you're looking for somewhere to start contributing, check out the\n[good first issue](https://github.com/bitcoin/bitcoin/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)\nlist or changes that are\n[up for grabs](https://github.com/bitcoin/bitcoin/issues?utf8=%E2%9C%93&q=label%3A%22Up+for+grabs%22).\nSome of them might no longer be applicable. So if you are interested, but\nunsure, you might want to leave a comment on the issue first.\n\nYou may also participate in the weekly\n[Bitcoin Core PR Review Club](https://bitcoincore.reviews/) meeting.\n\n### Good First Issue Label\n\nThe purpose of the `good first issue` label is to highlight which issues are\nsuitable for a new contributor without a deep understanding of the codebase.\n\nHowever, good first issues can be solved by anyone. If they remain unsolved\nfor a longer time, a frequent contributor might address them.\n\nYou do not need to request permission to start working on an issue. However,\nyou are encouraged to leave a comment if you are planning to work on it. This\nwill help other contributors monitor which issues are actively being addressed\nand is also an effective way to request assistance if and when you need it.\n\nCommunication Channels\n----------------------\n\nMost communication about Bitcoin Core development happens on IRC, in the\n`#bitcoin-core-dev` channel on Libera Chat. The easiest way to participate on IRC is\nwith the web client, [web.libera.chat](https://web.libera.chat/#bitcoin-core-dev). Chat\nhistory logs can be found\non [https://www.erisian.com.au/bitcoin-core-dev/](https://www.erisian.com.au/bitcoin-core-dev/)\nand [https://gnusha.org/bitcoin-core-dev/](https://gnusha.org/bitcoin-core-dev/).\n\nDiscussion about codebase improvements happens in GitHub issues and pull\nrequests.\n\nThe developer\n[mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)\nshould be used to discuss complicated or controversial consensus or P2P protocol changes before working on\na patch set.\n\n\nContributor Workflow\n--------------------\n\nThe codebase is maintained using the \"contributor workflow\" where everyone\nwithout exception contributes patch proposals using \"pull requests\" (PRs). This\nfacilitates social contribution, easy testing and peer review.\n\nTo contribute a patch, the workflow is as follows:\n\n  1. Fork repository ([only for the first time](https://docs.github.com/en/get-started/quickstart/fork-a-repo))\n  1. Create topic branch\n  1. Commit patches\n\nFor GUI-related issues or pull requests, the https://github.com/bitcoin-core/gui repository should be used.\nFor all other issues and pull requests, the https://github.com/bitcoin/bitcoin node repository should be used.\n\nThe master branch for all monotree repositories is identical.\n\nAs a rule of thumb, everything that only modifies `src/qt` is a GUI-only pull\nrequest. However:\n\n* For global refactoring or other transversal changes the node repository\n  should be used.\n* For GUI-related build system changes, the node repository should be used\n  because the change needs review by the build systems reviewers.\n* Changes in `src/interfaces` need to go to the node repository because they\n  might affect other components like the wallet.\n\nFor large GUI changes that include build system and interface changes, it is\nrecommended to first open a pull request against the GUI repository. When there\nis agreement to proceed with the changes, a pull request with the build system\nand interfaces changes can be submitted to the node repository.\n\nThe project coding conventions in the [developer notes](doc/developer-notes.md)\nmust be followed.\n\n### Committing Patches\n\nIn general, [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)\nand diffs should be easy to read. For this reason, do not mix any formatting\nfixes or code moves with actual code changes.\n\nMake sure each individual commit is hygienic: that it builds successfully on its\nown without warnings, errors, regressions, or test failures.\n\nCommit messages should be verbose by default consisting of a short subject line\n(50 chars max), a blank line and detailed explanatory text as separate\nparagraph(s), unless the title alone is self-explanatory (like \"Correct typo\nin init.cpp\") in which case a single title line is sufficient. Commit messages should be\nhelpful to people reading your code in the future, so explain the reasoning for\nyour decisions. Further explanation [here](https://chris.beams.io/posts/git-commit/).\n\nIf a particular commit references another issue, please add the reference. For\nexample: `refs #1234` or `fixes #4321`. Using the `fixes` or `closes` keywords\nwill cause the corresponding issue to be closed when the pull request is merged.\n\nCommit messages should never contain any `@` mentions (usernames prefixed with \"@\").\n\nPlease refer to the [Git manual](https://git-scm.com/doc) for more information\nabout Git.\n\n  - Push changes to your fork\n  - Create pull request\n\n### Creating the Pull Request\n\nThe title of the pull request should be prefixed by the component or area that\nthe pull request affects. Valid areas as:\n\n  - `consensus` for changes to consensus critical code\n  - `doc` for changes to the documentation\n  - `qt` or `gui` for changes to bitcoin-qt\n  - `log` for changes to log messages\n  - `mining` for changes to the mining code\n  - `net` or `p2p` for changes to the peer-to-peer network code\n  - `refactor` for structural changes that do not change behavior\n  - `rpc`, `rest` or `zmq` for changes to the RPC, REST or ZMQ APIs\n  - `script` for changes to the scripts and tools\n  - `test`, `qa` or `ci` for changes to the unit tests, QA tests or CI code\n  - `util` or `lib` for changes to the utils or libraries\n  - `wallet` for changes to the wallet code\n  - `build` for changes to the GNU Autotools or reproducible builds\n\nExamples:\n\n    consensus: Add new opcode for BIP-XXXX OP_CHECKAWESOMESIG\n    net: Automatically create onion service, listen on Tor\n    qt: Add feed bump button\n    log: Fix typo in log message\n\nThe body of the pull request should contain sufficient description of *what* the\npatch does, and even more importantly, *why*, with justification and reasoning.\nYou should include references to any discussions (for example, other issues or\nmailing list discussions).\n\nThe description for a new pull request should not contain any `@` mentions. The\nPR description will be included in the commit message when the PR is merged and\nany users mentioned in the description will be annoyingly notified each time a\nfork of Bitcoin Core copies the merge. Instead, make any username mentions in a\nsubsequent comment to the PR.\n\n### Translation changes\n\nNote that translations should not be submitted as pull requests. Please see\n[Translation Process](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md)\nfor more information on helping with translations.\n\n### Work in Progress Changes and Requests for Comments\n\nIf a pull request is not to be considered for merging (yet), please\nprefix the title with [WIP] or use [Tasks Lists](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#task-lists)\nin the body of the pull request to indicate tasks are pending.\n\n### Address Feedback\n\nAt this stage, one should expect comments and review from other contributors. You\ncan add more commits to your pull request by committing them locally and pushing\nto your fork until you have satisfied all feedback.\n\nNote: Code review is a burdensome but important part of the development process, and as such, certain types of pull requests are rejected. In general, if the **improvements** do not warrant the **review effort** required, the PR has a high chance of being rejected. It is up to the PR author to convince the reviewers that the changes warrant the review effort, and if reviewers are \"Concept NACK'ing\" the PR, the author may need to present arguments and/or do research backing their suggested changes.\n\n### Squashing Commits\n\nIf your pull request contains fixup commits (commits that change the same line of code repeatedly) or too fine-grained\ncommits, you may be asked to [squash](https://git-scm.com/docs/git-rebase#_interactive_mode) your commits\nbefore it will be reviewed. The basic squashing workflow is shown below.\n\n    git checkout your_branch_name\n    git rebase -i HEAD~n\n    # n is normally the number of commits in the pull request.\n    # Set commits (except the one in the first line) from 'pick' to 'squash', save and quit.\n    # On the next screen, edit/refine commit messages.\n    # Save and quit.\n    git push -f # (force push to GitHub)\n\nPlease update the resulting commit message, if needed. It should read as a\ncoherent message. In most cases, this means not just listing the interim\ncommits.\n\nIf you have problems with squashing or other git workflows, you can enable\n\"Allow edits from maintainers\" in the right-hand sidebar of the GitHub web\ninterface and ask for help in the pull request.\n\nPlease refrain from creating several pull requests for the same change.\nUse the pull request that is already open (or was created earlier) to amend\nchanges. This preserves the discussion and review that happened earlier for\nthe respective change set.\n\nThe length of time required for peer review is unpredictable and will vary from\npull request to pull request.\n\n### Rebasing Changes\n\nWhen a pull request conflicts with the target branch, you may be asked to rebase it on top of the current target branch.\nThe `git rebase` command will take care of rebuilding your commits on top of the new base.\n\nThis project aims to have a clean git history, where code changes are only made in non-merge commits. This simplifies\nauditability because merge commits can be assumed to not contain arbitrary code changes. Merge commits should be signed,\nand the resulting git tree hash must be deterministic and reproducible. The script in\n[/contrib/verify-commits](/contrib/verify-commits) checks that.\n\nAfter a rebase, reviewers are encouraged to sign off on the force push. This should be relatively straightforward with\nthe `git range-diff` tool explained in the [productivity\nnotes](/doc/productivity.md#diff-the-diffs-with-git-range-diff). To avoid needless review churn, maintainers will\ngenerally merge pull requests that received the most review attention first.\n\nPull Request Philosophy\n-----------------------\n\nPatchsets should always be focused. For example, a pull request could add a\nfeature, fix a bug, or refactor code; but not a mixture. Please also avoid super\npull requests which attempt to do too much, are overly large, or overly complex\nas this makes review difficult.\n\n\n### Features\n\nWhen adding a new feature, thought must be given to the long term technical debt\nand maintenance that feature may require after inclusion. Before proposing a new\nfeature that will require maintenance, please consider if you are willing to\nmaintain it (including bug fixing). If features get orphaned with no maintainer\nin the future, they may be removed by the Repository Maintainer.\n\n\n### Refactoring\n\nRefactoring is a necessary part of any software project's evolution. The\nfollowing guidelines cover refactoring pull requests for the project.\n\nThere are three categories of refactoring: code-only moves, code style fixes, and\ncode refactoring. In general, refactoring pull requests should not mix these\nthree kinds of activities in order to make refactoring pull requests easy to\nreview and uncontroversial. In all cases, refactoring PRs must not change the\nbehaviour of code within the pull request (bugs must be preserved as is).\n\nProject maintainers aim for a quick turnaround on refactoring pull requests, so\nwhere possible keep them short, uncomplex and easy to verify.\n\nPull requests that refactor the code should not be made by new contributors. It\nrequires a certain level of experience to know where the code belongs to and to\nunderstand the full ramification (including rebase effort of open pull requests).\n\nTrivial pull requests or pull requests that refactor the code with no clear\nbenefits may be immediately closed by the maintainers to reduce unnecessary\nworkload on reviewing.\n\n\n\"Decision Making\" Process\n-------------------------\n\nThe following applies to code changes to the Bitcoin Core project (and related\nprojects such as libsecp256k1), and is not to be confused with overall Bitcoin\nNetwork Protocol consensus changes.\n\nWhether a pull request is merged into Bitcoin Core rests with the project merge\nmaintainers and ultimately the project lead.\n\nMaintainers will take into consideration if a patch is in line with the general\nprinciples of the project; meets the minimum standards for inclusion; and will\njudge the general consensus of contributors.\n\nIn general, all pull requests must:\n\n  - Have a clear use case, fix a demonstrable bug or serve the greater good of\n    the project (for example refactoring for modularisation);\n  - Be well peer-reviewed;\n  - Have unit tests, functional tests, and fuzz tests, where appropriate;\n  - Follow code style guidelines ([C++](doc/developer-notes.md), [functional tests](test/functional/README.md));\n  - Not break the existing test suite;\n  - Where bugs are fixed, where possible, there should be unit tests\n    demonstrating the bug and also proving the fix. This helps prevent regression.\n  - Change relevant comments and documentation when behaviour of code changes.\n\nPatches that change Bitcoin consensus rules are considerably more involved than\nnormal because they affect the entire ecosystem and so must be preceded by\nextensive mailing list discussions and have a numbered BIP. While each case will\nbe different, one should be prepared to expend more time and effort than for\nother kinds of patches because of increased peer review and consensus building\nrequirements.\n\n\n### Peer Review\n\nAnyone may participate in peer review which is expressed by comments in the pull\nrequest. Typically reviewers will review the code for obvious errors, as well as\ntest out the patch set and opine on the technical merits of the patch. Project\nmaintainers take into account the peer review when determining if there is\nconsensus to merge a pull request (remember that discussions may have been\nspread out over GitHub, mailing list and IRC discussions).\n\n#### Conceptual Review\n\nA review can be a conceptual review, where the reviewer leaves a comment\n * `Concept (N)ACK`, meaning \"I do (not) agree with the general goal of this pull\n   request\",\n * `Approach (N)ACK`, meaning `Concept ACK`, but \"I do (not) agree with the\n   approach of this change\".\n\nA `NACK` needs to include a rationale why the change is not worthwhile.\nNACKs without accompanying reasoning may be disregarded.\n\n#### Code Review\n\nAfter conceptual agreement on the change, code review can be provided. A review\nbegins with `ACK BRANCH_COMMIT`, where `BRANCH_COMMIT` is the top of the PR\nbranch, followed by a description of how the reviewer did the review. The\nfollowing language is used within pull request comments:\n\n  - \"I have tested the code\", involving change-specific manual testing in\n    addition to running the unit, functional, or fuzz tests, and in case it is\n    not obvious how the manual testing was done, it should be described;\n  - \"I have not tested the code, but I have reviewed it and it looks\n    OK, I agree it can be merged\";\n  - A \"nit\" refers to a trivial, often non-blocking issue.\n\nProject maintainers reserve the right to weigh the opinions of peer reviewers\nusing common sense judgement and may also weigh based on merit. Reviewers that\nhave demonstrated a deeper commitment and understanding of the project over time\nor who have clear domain expertise may naturally have more weight, as one would\nexpect in all walks of life.\n\nWhere a patch set affects consensus-critical code, the bar will be much\nhigher in terms of discussion and peer review requirements, keeping in mind that\nmistakes could be very costly to the wider community. This includes refactoring\nof consensus-critical code.\n\nWhere a patch set proposes to change the Bitcoin consensus, it must have been\ndiscussed extensively on the mailing list and IRC, be accompanied by a widely\ndiscussed BIP and have a generally widely perceived technical consensus of being\na worthwhile change based on the judgement of the maintainers.\n\n### Finding Reviewers\n\nAs most reviewers are themselves developers with their own projects, the review\nprocess can be quite lengthy, and some amount of patience is required. If you find\nthat you've been waiting for a pull request to be given attention for several\nmonths, there may be a number of reasons for this, some of which you can do something\nabout:\n\n  - It may be because of a feature freeze due to an upcoming release. During this time,\n    only bug fixes are taken into consideration. If your pull request is a new feature,\n    it will not be prioritized until after the release. Wait for the release.\n  - It may be because the changes you are suggesting do not appeal to people. Rather than\n    nits and critique, which require effort and means they care enough to spend time on your\n    contribution, thundering silence is a good sign of widespread (mild) dislike of a given change\n    (because people don't assume *others* won't actually like the proposal). Don't take\n    that personally, though! Instead, take another critical look at what you are suggesting\n    and see if it: changes too much, is too broad, doesn't adhere to the\n    [developer notes](doc/developer-notes.md), is dangerous or insecure, is messily written, etc.\n    Identify and address any of the issues you find. Then ask e.g. on IRC if someone could give\n    their opinion on the concept itself.\n  - It may be because your code is too complex for all but a few people, and those people\n    may not have realized your pull request even exists. A great way to find people who\n    are qualified and care about the code you are touching is the\n    [Git Blame feature](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/tracking-changes-in-a-file). Simply\n    look up who last modified the code you are changing and see if you can find\n    them and give them a nudge. Don't be incessant about the nudging, though.\n  - Finally, if all else fails, ask on IRC or elsewhere for someone to give your pull request\n    a look. If you think you've been waiting for an unreasonably long time (say,\n    more than a month) for no particular reason (a few lines changed, etc.),\n    this is totally fine. Try to return the favor when someone else is asking\n    for feedback on their code, and the universe balances out.\n  - Remember that the best thing you can do while waiting is give review to others!\n\n\nBackporting\n-----------\n\nSecurity and bug fixes can be backported from `master` to release\nbranches.\nIf the backport is non-trivial, it may be appropriate to open an\nadditional PR to backport the change, but only after the original PR\nhas been merged.\nOtherwise, backports will be done in batches and\nthe maintainers will use the proper `Needs backport (...)` labels\nwhen needed (the original author does not need to worry about it).\n\nA backport should contain the following metadata in the commit body:\n\n```\nGithub-Pull: #<PR number>\nRebased-From: <commit hash of the original commit>\n```\n\nHave a look at [an example backport PR](\nhttps://github.com/bitcoin/bitcoin/pull/16189).\n\nAlso see the [backport.py script](\nhttps://github.com/bitcoin-core/bitcoin-maintainer-tools#backport).\n\nRelease Policy\n--------------\n\nThe project leader is the release manager for each Bitcoin Core release.\n\nCopyright\n---------\n\nBy contributing to this repository, you agree to license your work under the\nMIT license unless specified otherwise in `contrib/debian/copyright` or at\nthe top of the file itself. Any work contributed where you are not the original\nauthor must contain its license header with the original author(s) and source.\n",
+      "layer": "D",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/8c0bd871fcf6c5ff5851ccb18a7bc7554a0484b0/CONTRIBUTING.md",
+      "git_blob_sha": "59f662ad341f4ab49c030bfb74f6bdf8d93dd2e8",
+      "raw_file": "sources/supplements/doc_23798_before.json"
+    },
+    {
+      "source_id": "E11:doc_keys_base_sha",
+      "text": "71A3B16735405025D447E8F274810B012346C9A6\n133EAC179436F14A5CF1B794860FEB804E669320\n32EE5C4C3FA15CCADB46ABE529D4BCB6416F53EC\nB8B3F1C0E58C15DB6A81D30C3648A882F4316B9B\nCA03882CB1FC067B5D3ACFE4D300116E1C875A3D\nE777299FC265DD04793070EB944D35F9AC3DB76A\nD1DBF2C4B96F2DEBF4C16654410108112E7EA81F\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/8c0bd871fcf6c5ff5851ccb18a7bc7554a0484b0/contrib/verify-commits/trusted-keys",
+      "git_blob_sha": "c14f90b04b716326df73bf7eba513d4623db2f69",
+      "raw_file": "sources/supplements/doc_23798_keys_base_sha.json"
+    },
+    {
+      "source_id": "E11:doc_keys_head_sha",
+      "text": "71A3B16735405025D447E8F274810B012346C9A6\n133EAC179436F14A5CF1B794860FEB804E669320\n32EE5C4C3FA15CCADB46ABE529D4BCB6416F53EC\nB8B3F1C0E58C15DB6A81D30C3648A882F4316B9B\nCA03882CB1FC067B5D3ACFE4D300116E1C875A3D\nE777299FC265DD04793070EB944D35F9AC3DB76A\nD1DBF2C4B96F2DEBF4C16654410108112E7EA81F\n152812300785C96444D3334D17565732E08E5E41\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/33b511251acbd0ed802a8843361c7dc8d1512008/contrib/verify-commits/trusted-keys",
+      "git_blob_sha": "e83bfd7345374ce9970f02fd4c8ecf52000c2402",
+      "raw_file": "sources/supplements/doc_23798_keys_head_sha.json"
+    },
+    {
+      "source_id": "E11:doc_keys_merged",
+      "text": "71A3B16735405025D447E8F274810B012346C9A6\n133EAC179436F14A5CF1B794860FEB804E669320\n32EE5C4C3FA15CCADB46ABE529D4BCB6416F53EC\nB8B3F1C0E58C15DB6A81D30C3648A882F4316B9B\nCA03882CB1FC067B5D3ACFE4D300116E1C875A3D\nE777299FC265DD04793070EB944D35F9AC3DB76A\nD1DBF2C4B96F2DEBF4C16654410108112E7EA81F\n152812300785C96444D3334D17565732E08E5E41\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/8eeb4e997b06b0384b4386a2cfafa665bda58cb5/contrib/verify-commits/trusted-keys",
+      "git_blob_sha": "e83bfd7345374ce9970f02fd4c8ecf52000c2402",
+      "raw_file": "sources/supplements/doc_23798_keys_merged.json"
+    },
+    {
+      "source_id": "E11:doc_verify_gpg",
+      "text": "#!/bin/sh\n# Copyright (c) 2014-2019 The Bitcoin Core developers\n# Distributed under the MIT software license, see the accompanying\n# file COPYING or http://www.opensource.org/licenses/mit-license.php.\n\nexport LC_ALL=C\nINPUT=$(cat /dev/stdin)\nVALID=false\nREVSIG=false\nIFS='\n'\nif [ \"$BITCOIN_VERIFY_COMMITS_ALLOW_SHA1\" = 1 ]; then\n\tGPG_RES=\"$(printf '%s\\n' \"$INPUT\" | gpg --trust-model always \"$@\" 2>/dev/null)\"\nelse\n\t# Note how we've disabled SHA1 with the --weak-digest option, disabling\n\t# signatures - including selfsigs - that use SHA1. While you might think that\n\t# collision attacks shouldn't be an issue as they'd be an attack on yourself,\n\t# in fact because what's being signed is a commit object that's\n\t# semi-deterministically generated by untrusted input (the pull-req) in theory\n\t# an attacker could construct a pull-req that results in a commit object that\n\t# they've created a collision for. Not the most likely attack, but preventing\n\t# it is pretty easy so we do so as a \"belt-and-suspenders\" measure.\n\tGPG_RES=\"\"\n\tfor LINE in $(gpg --version); do\n\t\tcase \"$LINE\" in\n\t\t\t\"gpg (GnuPG) 1.4.1\"*|\"gpg (GnuPG) 2.0.\"*)\n\t\t\t\techo \"Please upgrade to at least gpg 2.1.10 to check for weak signatures\" > /dev/stderr\n\t\t\t\tGPG_RES=\"$(printf '%s\\n' \"$INPUT\" | gpg --trust-model always \"$@\" 2>/dev/null)\"\n\t\t\t\t;;\n\t\t\t# We assume if you're running 2.1+, you're probably running 2.1.10+\n\t\t\t# gpg will fail otherwise\n\t\t\t# We assume if you're running 1.X, it is either 1.4.1X or 1.4.20+\n\t\t\t# gpg will fail otherwise\n\t\tesac\n\tdone\n\t[ \"$GPG_RES\" = \"\" ] && GPG_RES=\"$(printf '%s\\n' \"$INPUT\" | gpg --trust-model always --weak-digest sha1 \"$@\" 2>/dev/null)\"\nfi\nfor LINE in $GPG_RES; do\n\tcase \"$LINE\" in\n\t\"[GNUPG:] VALIDSIG \"*)\n\t\twhile read KEY; do\n\t\t\t[ \"${LINE#?GNUPG:? VALIDSIG * * * * * * * * * }\" = \"$KEY\" ] && VALID=true\n\t\tdone < ./contrib/verify-commits/trusted-keys\n\t\t;;\n\t\"[GNUPG:] REVKEYSIG \"*)\n\t\t[ \"$BITCOIN_VERIFY_COMMITS_ALLOW_REVSIG\" != 1 ] && exit 1\n\t\tREVSIG=true\n\t\tGOODREVSIG=\"[GNUPG:] GOODSIG ${LINE#* * *}\"\n\t\t;;\n\t\"[GNUPG:] EXPKEYSIG \"*)\n\t\t[ \"$BITCOIN_VERIFY_COMMITS_ALLOW_REVSIG\" != 1 ] && exit 1\n\t\tREVSIG=true\n\t\tGOODREVSIG=\"[GNUPG:] GOODSIG ${LINE#* * *}\"\n\t\t;;\n\tesac\ndone\nif ! $VALID; then\n\texit 1\nfi\nif $VALID && $REVSIG; then\n\tprintf '%s\\n' \"$INPUT\" | gpg --trust-model always \"$@\" 2>/dev/null | grep \"^\\[GNUPG:\\] \\(NEWSIG\\|SIG_ID\\|VALIDSIG\\)\"\n\techo \"$GOODREVSIG\"\nelse\n\tprintf '%s\\n' \"$INPUT\" | gpg --trust-model always \"$@\" 2>/dev/null\nfi\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/33b511251acbd0ed802a8843361c7dc8d1512008/contrib/verify-commits/gpg.sh",
+      "git_blob_sha": "db5bfce208ef18e72d8643f83e773723ccd39116",
+      "raw_file": "sources/supplements/doc_23798_verify_gpg.json"
+    },
+    {
+      "source_id": "E11:doc_verify_readme",
+      "text": "Tooling for verification of PGP signed commits\n----------------------------------------------\n\nThis is an incomplete work in progress, but currently includes a pre-push hook\nscript (`pre-push-hook.sh`) for maintainers to ensure that their own commits\nare PGP signed (nearly always merge commits), as well as a Python 3 script to verify\ncommits against a trusted keys list.\n\n\nUsing verify-commits.py safely\n------------------------------\n\nRemember that you can't use an untrusted script to verify itself. This means\nthat checking out code, then running `verify-commits.py` against `HEAD` is\n_not_ safe, because the version of `verify-commits.py` that you just ran could\nbe backdoored. Instead, you need to use a trusted version of verify-commits\nprior to checkout to make sure you're checking out only code signed by trusted\nkeys:\n\n ```sh\n git fetch origin && \\\n ./contrib/verify-commits/verify-commits.py origin/master && \\\n git checkout origin/master\n ```\n\nNote that the above isn't a good UI/UX yet, and needs significant improvements\nto make it more convenient and reduce the chance of errors; pull-reqs\nimproving this process would be much appreciated.\n\nConfiguration files\n-------------------\n\n* `trusted-git-root`: This file should contain a single git commit hash which is the first unsigned git commit (hence it is the \"root of trust\").\n* `trusted-sha512-root-commit`: This file should contain a single git commit hash which is the first commit without a SHA512 root commitment.\n* `trusted-keys`: This file should contain a \\n-delimited list of all PGP fingerprints of authorized commit signers (primary, not subkeys).\n* `allow-revsig-commits`: This file should contain a \\n-delimited list of git commit hashes. See next section for more info.\n\nImport trusted keys\n-------------------\nIn order to check the commit signatures, you must add the trusted PGP keys to your machine. [GnuPG](https://gnupg.org/) may be used to import the trusted keys by running the following command:\n\n```sh\ngpg --keyserver hkps://keys.openpgp.org --recv-keys $(<contrib/verify-commits/trusted-keys)\n```\n\nKey expiry/revocation\n---------------------\n\nWhen a key (or subkey) which has signed old commits expires or is revoked,\nverify-commits will start failing to verify all commits which were signed by\nsaid key. In order to avoid bumping the root-of-trust `trusted-git-root`\nfile, individual commits which were signed by such a key can be added to the\n`allow-revsig-commits` file. That way, the PGP signatures are still verified\nbut no new commits can be signed by any expired/revoked key. To easily build a\nlist of commits which need to be added, verify-commits.py can be edited to test\neach commit with BITCOIN_VERIFY_COMMITS_ALLOW_REVSIG set to both 1 and 0, and\nthose which need it set to 1 printed.\n",
+      "layer": "I",
+      "source_type": "commit_pinned_file",
+      "url": "https://github.com/bitcoin/bitcoin/blob/33b511251acbd0ed802a8843361c7dc8d1512008/contrib/verify-commits/README.md",
+      "git_blob_sha": "b8b15280bae2ff08f187cc660e22c680f0f9e4eb",
+      "raw_file": "sources/supplements/doc_23798_verify_readme.json"
+    },
+    {
+      "source_id": "E11:merge_message",
+      "text": "Merge bitcoin/bitcoin#23798: contrib: add achow101 to trusted keys\n\n33b511251acbd0ed802a8843361c7dc8d1512008 contrib: add achow101 to trusted keys (Andrew Chow)\n\nPull request description:\n\n  For maintaining the wallet and psbt things\n\nACKs for top commit:\n  glozow:\n    concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  michaelfolkson:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  kiminuo:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  jb55:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  gruve-p:\n    ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008\n  prayank23:\n    ACK https://github.com/bitcoin/bitcoin/pull/23798/commits/33b511251acbd0ed802a8843361c7dc8d1512008\n  meshcollider:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  darosior:\n    Concept ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  shaavan:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  benthecarman:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  hebasto:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n  Zero-1729:\n    ACK 33b511251acbd0ed802a8843361c7dc8d1512008\n\nTree-SHA512: 2e242b5f763a3d9fab00413760973a41a41c78f327f4a8f7bed788d6dd9f31043a644ff5f612ff033f8a3c7b4e9936737475fec67536935257053a9f6a3fb9bb",
+      "layer": "I",
+      "source_type": "git_commit",
+      "url": "https://github.com/bitcoin/bitcoin/commit/8eeb4e997b06b0384b4386a2cfafa665bda58cb5",
+      "commit_sha": "8eeb4e997b06b0384b4386a2cfafa665bda58cb5"
+    },
+    {
+      "source_id": "E11:merge_diff",
+      "text": "@@ -5,3 +5,4 @@ B8B3F1C0E58C15DB6A81D30C3648A882F4316B9B\n CA03882CB1FC067B5D3ACFE4D300116E1C875A3D\n E777299FC265DD04793070EB944D35F9AC3DB76A\n D1DBF2C4B96F2DEBF4C16654410108112E7EA81F\n+152812300785C96444D3334D17565732E08E5E41",
+      "layer": "I",
+      "source_type": "git_patch",
+      "url": "https://github.com/bitcoin/bitcoin/commit/8eeb4e997b06b0384b4386a2cfafa665bda58cb5",
+      "commit_sha": "8eeb4e997b06b0384b4386a2cfafa665bda58cb5"
+    },
+    {
+      "source_id": "E11:irc_decision",
+      "text": "it's not an actual decision in the meeting just an oppertunity to bring up objections",
+      "layer": "I",
+      "source_type": "external_primary_excerpt",
+      "url": "https://www.erisian.com.au/bitcoin-core-dev/log-2021-12-16.html",
+      "author": "laanwj",
+      "timestamp": "2021-12-16T19:07:56",
+      "retrieved_date": "2026-10-31"
+    },
+    {
+      "source_id": "E11:irc_wait",
+      "text": "open for a week at least",
+      "layer": "I",
+      "source_type": "external_primary_excerpt",
+      "url": "https://www.erisian.com.au/bitcoin-core-dev/log-2021-12-16.html",
+      "author": "MarcoFalke",
+      "timestamp": "2021-12-16T19:08:26",
+      "retrieved_date": "2026-10-31",
+      "qualification": "Fragment inside an expressed expectation, followed by a question about longer holiday timing; laanwj replied affirmatively at 19:08:50."
+    },
+    {
+      "source_id": "E11:irc_context",
+      "text": "At the December 16 meeting, achow101 volunteered for wallet maintenance. Several participants endorsed him. Discussion retained an opportunity for absent participants to comment through a subsequent PR. laanwj explicitly characterized the meeting as an opportunity for objections rather than the final decision. MarcoFalke expressed an expectation of at least a week of PR exposure, possibly longer during holidays; laanwj agreed. achow101 said he would open the PR after the meeting. The log later records its opening.",
+      "layer": "I",
+      "source_type": "analyst_source_summary",
+      "url": "https://www.erisian.com.au/bitcoin-core-dev/log-2021-12-16.html",
+      "source_locators": "2021-12-16 19:02 to 19:09; PR opening at 19:54",
+      "retrieved_date": "2026-10-31",
+      "warning": "Paraphrase, not a verbatim transcript. Treat as an index to the linked primary log, not independent evidence."
+    }
+  ],
+  "limits": [
+    "Public corpus may omit patch histories, comment edits, thread links, and off-platform activity.",
+    "No model accuracy, superiority, cost or scalability estimates.",
+    "Recorded merges do not establish recognition of each provision or network adoption.",
+    "Source sufficiency remains revisable; richer evidence is not a gold standard."
+  ]
+}

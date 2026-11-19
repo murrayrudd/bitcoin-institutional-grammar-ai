@@ -1,0 +1,3573 @@
+{
+  "run_id": "F01_v04_r1",
+  "changes": [
+    {
+      "change_id": "M01",
+      "stage": "checker_repair",
+      "unit_id": "S02",
+      "path": [
+        "components",
+        0,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 37,
+          "end": 142,
+          "quote": "see dba123167236a172d2d33861d58aa94a19729671 [v23.0] and d8b705f1caeb3b4a6790cb26e4e5584ca791d965 [v22.0]"
+        }
+      },
+      "after": {
+        "source_id": "pr26586:body",
+        "span": {
+          "start": 37,
+          "end": 89,
+          "quote": "see dba123167236a172d2d33861d58aa94a19729671 [v23.0]"
+        }
+      },
+      "reason": "The local see clause must fit inside the first referral unit. The second referral carries shared scope separately.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M02",
+      "stage": "checker_repair",
+      "unit_id": "S11",
+      "path": [
+        "components",
+        1,
+        "inference_note"
+      ],
+      "before": "",
+      "after": "The source explicitly supplies this object under the stated adding/merging action; the pragmatic interpretation changes recommendation force, not this predicate role.",
+      "reason": "Explain why the explicit object role survives the pragmatic reading.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M03",
+      "stage": "checker_repair",
+      "unit_id": "S24",
+      "path": [
+        "components",
+        1,
+        "inference_note"
+      ],
+      "before": "",
+      "after": "The source explicitly supplies this object under the stated adding/merging action; the pragmatic interpretation changes recommendation force, not this predicate role.",
+      "reason": "Explain why the explicit object role survives the pragmatic reading.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M04",
+      "stage": "checker_repair",
+      "unit_id": "S13",
+      "path": [
+        "institution",
+        "standing_profile",
+        "recognition"
+      ],
+      "before": "same_actor_only",
+      "after": "none",
+      "reason": "A response event that repeats a personal strategy is not an expectation-recognition event. Same-actor restatement remains visible in the event record.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "M05",
+      "stage": "checker_repair",
+      "unit_id": "S22",
+      "path": [
+        "components",
+        0,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 161,
+            "end": 163,
+            "quote": "we"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 180,
+            "end": 182,
+            "quote": "we"
+          }
+        }
+      ],
+      "reason": "The subject of leave is the main-clause we, not we in the earlier as-we-have-done predicate.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M06",
+      "stage": "checker_repair",
+      "unit_id": "S27",
+      "path": [
+        "components",
+        0,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      },
+      "reason": "Local components must be governed by the remove branch itself; the explain branch retains its shared-scope citation.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M07",
+      "stage": "checker_repair",
+      "unit_id": "S27",
+      "path": [
+        "components",
+        1,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      },
+      "reason": "Local components must be governed by the remove branch itself; the explain branch retains its shared-scope citation.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M08",
+      "stage": "checker_repair",
+      "unit_id": "S27",
+      "path": [
+        "components",
+        4,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 174,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:0",
+        "span": {
+          "start": 80,
+          "end": 143,
+          "quote": "So if you want to add 24.x, you will either need to remove 23.x"
+        }
+      },
+      "reason": "Local components must be governed by the remove branch itself; the explain branch retains its shared-scope citation.",
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R01",
+      "stage": "source_self_review",
+      "unit_id": "S23",
+      "path": [
+        "components",
+        0,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 161,
+            "end": 163,
+            "quote": "we"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 180,
+            "end": 182,
+            "quote": "we"
+          }
+        }
+      ],
+      "reason": "The shared actor comes from we could leave, not from the separate As we have done before predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 180,
+            "end": 239,
+            "quote": "we could just leave the PR open and occasionally rebase it."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R02",
+      "stage": "source_self_review",
+      "unit_id": "S27",
+      "path": [
+        "components",
+        0,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "reason": "The subject governing remove/explain is the second you, not the subject of want in the activation condition.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 174,
+            "quote": "you will either need to remove 23.x or explain why 24.x is special"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R03",
+      "stage": "source_self_review",
+      "unit_id": "S28",
+      "path": [
+        "components",
+        0,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 86,
+            "end": 89,
+            "quote": "you"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 111,
+            "quote": "you"
+          }
+        }
+      ],
+      "reason": "The subject governing remove/explain is the second you, not the subject of want in the activation condition.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 108,
+            "end": 174,
+            "quote": "you will either need to remove 23.x or explain why 24.x is special"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R04",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "components",
+        2,
+        "text"
+      ],
+      "before": "it (the incorrectly listed review)",
+      "after": "it (the referent is unresolved between the listed review and this comment)",
+      "reason": "The local object role is explicit, but the supplied prose does not settle the antecedent.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 688,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R05",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "components",
+        2,
+        "inference_note"
+      ],
+      "before": "",
+      "after": "It is the explicit direct object of ignore. The antecedent could be the incorrectly listed review or this comment; the packet does not independently resolve it.",
+      "reason": "Separate explicit predicate role from uncertain reference.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 659,
+            "end": 668,
+            "quote": "ignore it"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R06",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "proposition",
+        "summary"
+      ],
+      "before": "The bot states that it will ignore an incorrectly listed review on the next update after the requested 👎 reaction.",
+      "after": "The bot says that it will ignore \"it\" on the next update after the requested 👎 reaction; the ignored object may be the incorrectly listed review or the comment.",
+      "reason": "Retain both plausible antecedents in the focal proposition.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 568,
+            "end": 688,
+            "quote": "If your review is incorrectly listed, please react with 👎 to this comment and the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "diagnosis": "unresolved",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R07",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "complexity_flags"
+      ],
+      "before": [
+        "none"
+      ],
+      "after": [
+        "unresolved_reference"
+      ],
+      "reason": "Expose the unsettled object reference.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 659,
+            "end": 668,
+            "quote": "ignore it"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R08",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "confidence"
+      ],
+      "before": "plausible",
+      "after": "unresolved",
+      "reason": "The consequence is announced, but the target object remains ambiguous.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 659,
+            "end": 668,
+            "quote": "ignore it"
+          }
+        }
+      ],
+      "diagnosis": "unresolved",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R09",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "uncertainty_reason"
+      ],
+      "before": "",
+      "after": "The antecedent of it is not uniquely identified; no use of the reaction or later bot correction is observed.",
+      "reason": "State the limit on downstream consequence claims.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 659,
+            "end": 687,
+            "quote": "ignore it on the next update"
+          }
+        }
+      ],
+      "diagnosis": "unresolved",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R10",
+      "stage": "source_self_review",
+      "unit_id": "S10",
+      "path": [
+        "institution",
+        "challenges",
+        1,
+        "target"
+      ],
+      "before": "this_proposition",
+      "after": "broader_principle",
+      "reason": "The cost denial challenges continued use of the general compatibility test, not a cost premise stated in the add-every-major-release proposition itself.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 45,
+            "end": 63,
+            "quote": "It's not low cost."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R11",
+      "stage": "source_self_review",
+      "unit_id": "S10",
+      "path": [
+        "institution",
+        "challenges",
+        1,
+        "rationale"
+      ],
+      "before": "The cost premise for continuing to add releases is challenged; the critic rejects a stated reason rather than proving a sanction.",
+      "after": "The cost denial concerns the broader low-cost justification for keeping a general compatibility test. The exact add-every-major-release proposition gives accidental-breakage prevention as its reason, so this challenge is not treated as a direct dispute of that stated premise.",
+      "reason": "Keep the broader challenge visible without conflating its target.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 9,
+            "end": 118,
+            "quote": "one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 45,
+            "end": 63,
+            "quote": "It's not low cost."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R12",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "components"
+      ],
+      "before": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 82,
+                "end": 84,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "have it loop over",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 91,
+                "end": 108,
+                "quote": "have it loop over"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "whatever is available under `releases/v*`",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 109,
+                "end": 150,
+                "quote": "whatever is available under `releases/v*`"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py`",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 81,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py`"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        }
+      ],
+      "after": [
+        {
+          "symbol": "A",
+          "text": "we",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 82,
+                "end": 84,
+                "quote": "we"
+              }
+            }
+          ],
+          "inference_note": "We remains the explicit actor of have in the source; this same configuring actor is retained under the reconstructed configure action.",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "I",
+          "text": "configure",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 91,
+                "end": 108,
+                "quote": "have it loop over"
+              }
+            }
+          ],
+          "inference_note": "Configure is reconstructed from having the test script loop over available versions; it does not embed a program object inside I.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "it (feature_backwards_compatibility.py)",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 74,
+                "end": 76,
+                "quote": "it"
+              }
+            }
+          ],
+          "inference_note": "It is the explicit target of have in the same clause and remains the target of configure. Its antecedent is the filename in the preceding phrase.",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "to loop over whatever is available under `releases/v*`",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 99,
+                "end": 150,
+                "quote": "loop over whatever is available under `releases/v*`"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        },
+        {
+          "symbol": "Cex",
+          "text": "Instead of hardcoding the version numbers",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 41,
+                "quote": "Instead of hardcoding the version numbers"
+              }
+            }
+          ],
+          "inference_note": "",
+          "occurrence_role": "local",
+          "governing_span": {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          }
+        }
+      ],
+      "reason": "Keep the configuration action separate from the script being configured and the loop behavior required of it.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 82,
+            "end": 150,
+            "quote": "we could have it loop over whatever is available under `releases/v*`"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R13",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "parse_mode"
+      ],
+      "before": "literal",
+      "after": "pragmatic",
+      "reason": "Configure is an inferred action that faithfully represents the articulated have-it-loop method.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 82,
+            "end": 108,
+            "quote": "we could have it loop over"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R14",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "complexity_flags"
+      ],
+      "before": [
+        "none"
+      ],
+      "after": [
+        "nested_component"
+      ],
+      "reason": "The program configuration governs a nested loop behavior.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 82,
+            "end": 150,
+            "quote": "we could have it loop over whatever is available under `releases/v*`"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R15",
+      "stage": "source_self_review",
+      "unit_id": "S25",
+      "path": [
+        "proposition",
+        "decision_object_id"
+      ],
+      "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "after": null,
+      "reason": "This proposal concerns an unidentified future cleanup contribution, not the containing PR as its decision object.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R16",
+      "stage": "source_self_review",
+      "unit_id": "S25",
+      "path": [
+        "proposition",
+        "identity_evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 12,
+            "end": 57,
+            "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+          }
+        }
+      ],
+      "after": [],
+      "reason": "No canonical identity for the future follow-up or separate pull is supplied.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R17",
+      "stage": "source_self_review",
+      "unit_id": "S25",
+      "path": [
+        "disposition_events"
+      ],
+      "before": [
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:metadata",
+              "span": {
+                "start": 319,
+                "end": 333,
+                "quote": "\"merged\": true"
+              }
+            },
+            {
+              "source_id": "pr26586:metadata",
+              "span": {
+                "start": 229,
+                "end": 269,
+                "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+              }
+            }
+          ],
+          "rationale": "The identified PR was recorded merged. This records the broader contribution only; it does not by itself show adoption or rejection of this proposition.",
+          "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:supplement_metadata",
+              "span": {
+                "start": 12,
+                "end": 57,
+                "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+              }
+            }
+          ]
+        }
+      ],
+      "after": [],
+      "reason": "The current PR merge cannot establish the disposition of an unidentified future cleanup proposal.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R18",
+      "stage": "source_self_review",
+      "unit_id": "S25",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "Always marks continuing availability of the option; In any case separates pruning from the tentative assent to keeping recent non-EOL releases.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 621,
+                "end": 693,
+                "quote": "I tend to agree. In any case we can always prune versions in a followup."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "Always marks continuing availability of the option; In any case separates pruning from the tentative assent to keeping recent non-EOL releases.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 621,
+                "end": 693,
+                "quote": "I tend to agree. In any case we can always prune versions in a followup."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The follow-up contribution has no supplied canonical object ID or outcome record.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 638,
+                "end": 693,
+                "quote": "In any case we can always prune versions in a followup."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Null denotes unresolved proposal identity, not a claim that the containing PR was unmerged."
+        }
+      ],
+      "reason": "Make the identity limit explicit and available to alignment.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R19",
+      "stage": "source_self_review",
+      "unit_id": "S31",
+      "path": [
+        "proposition",
+        "decision_object_id"
+      ],
+      "before": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "after": null,
+      "reason": "This proposal concerns an unidentified future cleanup contribution, not the containing PR as its decision object.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R20",
+      "stage": "source_self_review",
+      "unit_id": "S31",
+      "path": [
+        "proposition",
+        "identity_evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 12,
+            "end": 57,
+            "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+          }
+        }
+      ],
+      "after": [],
+      "reason": "No canonical identity for the future follow-up or separate pull is supplied.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R21",
+      "stage": "source_self_review",
+      "unit_id": "S31",
+      "path": [
+        "disposition_events"
+      ],
+      "before": [
+        {
+          "kind": "recorded_merged",
+          "target": "broader_proposal",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "pr26586:metadata",
+              "span": {
+                "start": 319,
+                "end": 333,
+                "quote": "\"merged\": true"
+              }
+            },
+            {
+              "source_id": "pr26586:metadata",
+              "span": {
+                "start": 229,
+                "end": 269,
+                "quote": "\"merged_at\": \"2023-02-16T14:04:28+00:00\""
+              }
+            }
+          ],
+          "rationale": "The identified PR was recorded merged. This records the broader contribution only; it does not by itself show adoption or rejection of this proposition.",
+          "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+          "identity_evidence": [
+            {
+              "source_id": "pr26586:supplement_metadata",
+              "span": {
+                "start": 12,
+                "end": 57,
+                "quote": "https://github.com/bitcoin/bitcoin/pull/26586"
+              }
+            }
+          ]
+        }
+      ],
+      "after": [],
+      "reason": "The current PR merge cannot establish the disposition of an unidentified future cleanup proposal.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "changed_institutional_meaning",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R22",
+      "stage": "source_self_review",
+      "unit_id": "S31",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The task concerns the other versions in this file under the previously stated criterion, and is explicitly labeled Unrelated.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 60,
+                "quote": "Unrelated: The same goes for the other versions in this file"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S30",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "The task concerns the other versions in this file under the previously stated criterion, and is explicitly labeled Unrelated.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 60,
+                "quote": "Unrelated: The same goes for the other versions in this file"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S30",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The follow-up contribution has no supplied canonical object ID or outcome record.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 62,
+                "end": 105,
+                "quote": "so someone could do that in a separate pull"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Null denotes unresolved proposal identity, not a claim that the containing PR was unmerged."
+        }
+      ],
+      "reason": "Make the identity limit explicit and available to alignment.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 62,
+            "end": 105,
+            "quote": "so someone could do that in a separate pull"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R23",
+      "stage": "source_self_review",
+      "unit_id": "S30",
+      "path": [
+        "components"
+      ],
+      "before": [
+        {
+          "symbol": "I",
+          "text": "apply the same release-selection criterion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 24,
+                "quote": "The same goes"
+              }
+            }
+          ],
+          "inference_note": "The elliptical same goes is reconstructed as extending the previously stated criterion.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 11,
+              "end": 60,
+              "quote": "The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the other versions in this file",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 29,
+                "end": 60,
+                "quote": "the other versions in this file"
+              }
+            }
+          ],
+          "inference_note": "The prepositional phrase supplies the target of the reconstructed apply action.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 11,
+              "end": 60,
+              "quote": "The same goes for the other versions in this file"
+            }
+          }
+        }
+      ],
+      "after": [
+        {
+          "symbol": "I",
+          "text": "apply",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 24,
+                "quote": "The same goes"
+              }
+            }
+          ],
+          "inference_note": "Apply is reconstructed from the elliptical extension same goes.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 11,
+              "end": 60,
+              "quote": "The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bdir",
+          "text": "the previously stated latest-release-per-missing-feature criterion",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 19,
+                "quote": "The same"
+              }
+            }
+          ],
+          "inference_note": "The demonstrative same supplies the criterion being applied, with the criterion resolved to S26.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 11,
+              "end": 60,
+              "quote": "The same goes for the other versions in this file"
+            }
+          }
+        },
+        {
+          "symbol": "Bind",
+          "text": "the other versions in this file",
+          "basis": "context_inferred",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 29,
+                "end": 60,
+                "quote": "the other versions in this file"
+              }
+            }
+          ],
+          "inference_note": "The other versions are the distinct target to which the criterion is applied; this destination role is inferred from the elliptical phrase.",
+          "occurrence_role": "semantic_inference",
+          "governing_span": {
+            "source_id": "pr26586:review_comments:1",
+            "span": {
+              "start": 11,
+              "end": 60,
+              "quote": "The same goes for the other versions in this file"
+            }
+          }
+        }
+      ],
+      "reason": "Separate applying from the criterion and the versions to which it applies. The source interpretation remains the same.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 60,
+            "quote": "The same goes for the other versions in this file"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 35,
+            "end": 78,
+            "quote": "the latest release for each missing feature"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R24",
+      "stage": "source_self_review",
+      "unit_id": "S33",
+      "path": [
+        "components",
+        0,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "reason": "Anchor the roles to verify, rather than the separate preceding I do not think predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 541,
+            "end": 735,
+            "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R25",
+      "stage": "source_self_review",
+      "unit_id": "S33",
+      "path": [
+        "components",
+        1,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "reason": "Anchor the roles to verify, rather than the separate preceding I do not think predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 541,
+            "end": 735,
+            "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R26",
+      "stage": "source_self_review",
+      "unit_id": "S33",
+      "path": [
+        "components",
+        2,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "reason": "Anchor the roles to verify, rather than the separate preceding I do not think predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 541,
+            "end": 735,
+            "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R27",
+      "stage": "source_self_review",
+      "unit_id": "S33",
+      "path": [
+        "components",
+        3,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "reason": "Anchor the roles to verify, rather than the separate preceding I do not think predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 541,
+            "end": 735,
+            "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R28",
+      "stage": "source_self_review",
+      "unit_id": "S33",
+      "path": [
+        "components",
+        4,
+        "governing_span"
+      ],
+      "before": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 491,
+          "end": 735,
+          "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "after": {
+        "source_id": "pr26586:review_comments:2",
+        "span": {
+          "start": 541,
+          "end": 735,
+          "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+        }
+      },
+      "reason": "Anchor the roles to verify, rather than the separate preceding I do not think predicate.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 541,
+            "end": 735,
+            "quote": "I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R29",
+      "stage": "source_self_review",
+      "unit_id": "S34",
+      "path": [
+        "institution",
+        "recognition",
+        0,
+        "mode"
+      ],
+      "before": "expectation_application",
+      "after": "unresolved",
+      "reason": "Can prune in a follow-up does not unambiguously treat the scope boundary as an expectation.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R30",
+      "stage": "source_self_review",
+      "unit_id": "S34",
+      "path": [
+        "institution",
+        "recognition",
+        0,
+        "basis"
+      ],
+      "before": "context_inferred",
+      "after": "unresolved",
+      "reason": "The alternative of ordinary technical assent or convenient sequencing remains live.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 638,
+            "end": 693,
+            "quote": "In any case we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R31",
+      "stage": "source_self_review",
+      "unit_id": "S34",
+      "path": [
+        "institution",
+        "recognition",
+        0,
+        "rationale"
+      ],
+      "before": "Sjors treats a follow-up as a way to separate pruning from the current PR. This supports the local scope boundary while leaving broader cleanup criteria unresolved.",
+      "after": "Sjors proposes follow-up pruning, which is consistent with the author's local scope boundary. It may recognize that boundary as an expectation, but may instead express ordinary agreement with convenient sequencing; the packet does not settle this distinction.",
+      "reason": "Avoid turning consistency into established interpersonal recognition of an expectation.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 800,
+            "end": 836,
+            "quote": "that's outside of scope for this PR."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 650,
+            "end": 693,
+            "quote": "we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R32",
+      "stage": "source_self_review",
+      "unit_id": "S34",
+      "path": [
+        "institution",
+        "standing_profile",
+        "recognition"
+      ],
+      "before": "interpersonal",
+      "after": "unresolved",
+      "reason": "The recognition profile follows the retained ambiguity.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 650,
+            "end": 693,
+            "quote": "we can always prune versions in a followup."
+          }
+        }
+      ],
+      "diagnosis": "criterion_ambiguity",
+      "effect": "evidence_basis_error",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R33",
+      "stage": "source_self_review",
+      "unit_id": "S12",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 231,
+            "end": 327,
+            "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R34",
+      "stage": "source_self_review",
+      "unit_id": "S12",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 231,
+            "end": 327,
+            "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R35",
+      "stage": "source_self_review",
+      "unit_id": "S14",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 181,
+            "end": 231,
+            "quote": "We can remove intermediate releases at some point."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R36",
+      "stage": "source_self_review",
+      "unit_id": "S14",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 181,
+            "end": 231,
+            "quote": "We can remove intermediate releases at some point."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R37",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R38",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R39",
+      "stage": "source_self_review",
+      "unit_id": "S18",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 222,
+            "quote": "So maybe the EOL versions can be dropped"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R40",
+      "stage": "source_self_review",
+      "unit_id": "S18",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 222,
+            "quote": "So maybe the EOL versions can be dropped"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R41",
+      "stage": "source_self_review",
+      "unit_id": "S19",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 227,
+            "end": 281,
+            "quote": "the qa-assets repo hosts some regtest wallets instead?"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R42",
+      "stage": "source_self_review",
+      "unit_id": "S19",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 227,
+            "end": 281,
+            "quote": "the qa-assets repo hosts some regtest wallets instead?"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R43",
+      "stage": "source_self_review",
+      "unit_id": "S30",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "Recurring test-design arrangement is the preferred target; a bounded reading treats it as ordinary test maintenance.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 60,
+            "quote": "The same goes for the other versions in this file"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R44",
+      "stage": "source_self_review",
+      "unit_id": "S30",
+      "path": [
+        "observed_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "operational"
+      ],
+      "reason": "The observed deliberation can also be read as ordinary engineering discussion without a decision on a recurring arrangement.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 60,
+            "quote": "The same goes for the other versions in this file"
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R45",
+      "stage": "source_self_review",
+      "unit_id": "S24",
+      "path": [
+        "target_level_alternatives"
+      ],
+      "before": [],
+      "after": [
+        "collective_choice"
+      ],
+      "reason": "General advice against rushing release additions could be read as a proposed recurring integration policy, but the focal act supplies no specified new timing procedure.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      ],
+      "diagnosis": "defensible_alternative_representation",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R46",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "level_evidence",
+        "target_activity"
+      ],
+      "before": "The bot states that it will ignore an incorrectly listed review on the next update after the requested 👎 reaction.",
+      "after": "The bot says that it will ignore \"it\" on the next update after the requested 👎 reaction; the ignored object may be the incorrectly listed review or the comment.",
+      "reason": "Keep level evidence aligned with the final bounded proposition.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 646,
+            "end": 688,
+            "quote": "the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R47",
+      "stage": "source_self_review",
+      "unit_id": "S07",
+      "path": [
+        "level_rationale"
+      ],
+      "before": "The focal action is The bot states that it will ignore an incorrectly listed review on the next update after the requested 👎 reaction. It concerns ordinary contribution, review, testing, or maintenance within this episode.",
+      "after": "The focal statement announces a bot-list update after a reaction. Its observed act is operational procedural guidance; the ignored object remains unresolved.",
+      "reason": "Keep the level rationale from retaining the earlier forced antecedent.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 646,
+            "end": 688,
+            "quote": "the bot will ignore it on the next update."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": true
+    },
+    {
+      "change_id": "R48",
+      "stage": "source_self_review",
+      "unit_id": null,
+      "path": [
+        "episode_summary",
+        "observed_outcomes",
+        0,
+        "claim"
+      ],
+      "before": "PR #26586 was recorded merged on February 16, 2023; this establishes repository integration of the contribution, not acceptance of every policy rationale.",
+      "after": "PR #26586 was recorded merged on February 16, 2023.",
+      "reason": "Keep the observed outcome wholly factual; limits on policy adoption remain explicit in missing evidence and event rationale.",
+      "evidence": [
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 153,
+            "end": 167,
+            "quote": "\"merged\": true"
+          }
+        },
+        {
+          "source_id": "pr26586:supplement_metadata",
+          "span": {
+            "start": 571,
+            "end": 606,
+            "quote": "\"merged_at\": \"2023-02-16T14:04:28Z\""
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R49",
+      "stage": "source_self_review",
+      "unit_id": null,
+      "path": [
+        "episode_summary",
+        "mechanisms",
+        2
+      ],
+      "before": {
+        "claim": "Cost and test-value concerns accompanied proposals to wait, prune versions, use locally available releases, or replace EOL-version testing with stored wallets; the packet records alternatives rather than their implementation.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:7",
+            "span": {
+              "start": 0,
+              "end": 171,
+              "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:9",
+            "span": {
+              "start": 45,
+              "end": 149,
+              "quote": "It's not low cost. To run the test at all, you have to keep a built copy of every single release listed."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:6",
+            "span": {
+              "start": 302,
+              "end": 375,
+              "quote": "But we can also keep this PR open until there's another PR that needs it."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:8",
+            "span": {
+              "start": 181,
+              "end": 231,
+              "quote": "We can remove intermediate releases at some point."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 182,
+              "end": 281,
+              "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+            }
+          }
+        ],
+        "claim_parts": [
+          {
+            "text": "The low-cost claim is questioned for an append-only matrix and explicitly denied based on a built-copy prerequisite.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:7",
+                "span": {
+                  "start": 0,
+                  "end": 171,
+                  "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+                }
+              },
+              {
+                "source_id": "pr26586:comments:9",
+                "span": {
+                  "start": 45,
+                  "end": 149,
+                  "quote": "It's not low cost. To run the test at all, you have to keep a built copy of every single release listed."
+                }
+              }
+            ]
+          },
+          {
+            "text": "The proposed alternatives include retaining the PR open, removing intermediate releases, and looping over local releases.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 302,
+                  "end": 375,
+                  "quote": "But we can also keep this PR open until there's another PR that needs it."
+                }
+              },
+              {
+                "source_id": "pr26586:comments:8",
+                "span": {
+                  "start": 181,
+                  "end": 231,
+                  "quote": "We can remove intermediate releases at some point."
+                }
+              },
+              {
+                "source_id": "pr26586:comments:10",
+                "span": {
+                  "start": 0,
+                  "end": 151,
+                  "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+                }
+              }
+            ]
+          },
+          {
+            "text": "Another alternative pairs dropping EOL versions with storing regtest wallets.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:11",
+                "span": {
+                  "start": 182,
+                  "end": 281,
+                  "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+                }
+              }
+            ]
+          }
+        ],
+        "category": "reason_giving",
+        "unit_ids": [
+          "C05",
+          "C07",
+          "C08",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S18",
+          "S19"
+        ],
+        "alternative_explanation": "These may be parallel engineering ideas rather than a single coordinated revision process. The packet has no implementation records for these alternatives.",
+        "status": "consistent_with"
+      },
+      "after": {
+        "claim": "Participants raised cost and test-value concerns and proposed waiting, pruning versions, using locally available releases, or replacing EOL-version testing with stored wallets.",
+        "evidence": [
+          {
+            "source_id": "pr26586:comments:7",
+            "span": {
+              "start": 0,
+              "end": 171,
+              "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:9",
+            "span": {
+              "start": 45,
+              "end": 149,
+              "quote": "It's not low cost. To run the test at all, you have to keep a built copy of every single release listed."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:6",
+            "span": {
+              "start": 302,
+              "end": 375,
+              "quote": "But we can also keep this PR open until there's another PR that needs it."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:8",
+            "span": {
+              "start": 181,
+              "end": 231,
+              "quote": "We can remove intermediate releases at some point."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:10",
+            "span": {
+              "start": 0,
+              "end": 151,
+              "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 182,
+              "end": 281,
+              "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+            }
+          },
+          {
+            "source_id": "pr26586:comments:5",
+            "span": {
+              "start": 175,
+              "end": 230,
+              "quote": "It is likely so general that it can't catch any issues."
+            }
+          },
+          {
+            "source_id": "pr26586:comments:11",
+            "span": {
+              "start": 285,
+              "end": 460,
+              "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+            }
+          }
+        ],
+        "claim_parts": [
+          {
+            "text": "The low-cost claim is questioned for an append-only matrix and explicitly denied based on a built-copy prerequisite.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:7",
+                "span": {
+                  "start": 0,
+                  "end": 171,
+                  "quote": "> Probably not, but it's a low cost check.\r\n\r\nNot sure if it will stay low cost forever, if the matrix is append-only with no plan to remove some or all previous releases?"
+                }
+              },
+              {
+                "source_id": "pr26586:comments:9",
+                "span": {
+                  "start": 45,
+                  "end": 149,
+                  "quote": "It's not low cost. To run the test at all, you have to keep a built copy of every single release listed."
+                }
+              }
+            ]
+          },
+          {
+            "text": "Test-value concerns included the limited efficacy of a general test and doubt about investigation of intermittent failures, except obvious recurring smoke-test issues.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:5",
+                "span": {
+                  "start": 175,
+                  "end": 230,
+                  "quote": "It is likely so general that it can't catch any issues."
+                }
+              },
+              {
+                "source_id": "pr26586:comments:11",
+                "span": {
+                  "start": 285,
+                  "end": 460,
+                  "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+                }
+              }
+            ]
+          },
+          {
+            "text": "The proposed alternatives include retaining the PR open, removing intermediate releases, and looping over local releases.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:6",
+                "span": {
+                  "start": 302,
+                  "end": 375,
+                  "quote": "But we can also keep this PR open until there's another PR that needs it."
+                }
+              },
+              {
+                "source_id": "pr26586:comments:8",
+                "span": {
+                  "start": 181,
+                  "end": 231,
+                  "quote": "We can remove intermediate releases at some point."
+                }
+              },
+              {
+                "source_id": "pr26586:comments:10",
+                "span": {
+                  "start": 0,
+                  "end": 151,
+                  "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+                }
+              }
+            ]
+          },
+          {
+            "text": "Another alternative pairs dropping EOL versions with storing regtest wallets.",
+            "evidence": [
+              {
+                "source_id": "pr26586:comments:11",
+                "span": {
+                  "start": 182,
+                  "end": 281,
+                  "quote": "So maybe the EOL versions can be dropped and the qa-assets repo hosts some regtest wallets instead?"
+                }
+              }
+            ]
+          }
+        ],
+        "category": "reason_giving",
+        "unit_ids": [
+          "C05",
+          "C07",
+          "C08",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S18",
+          "S19",
+          "C04",
+          "C09"
+        ],
+        "alternative_explanation": "These may be parallel engineering ideas rather than a single coordinated revision process. The packet has no implementation records for these alternatives.",
+        "status": "consistent_with"
+      },
+      "reason": "Cite the test-value concerns explicitly and leave lack of implementation evidence as a limitation rather than an observed negative outcome.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 175,
+            "end": 230,
+            "quote": "It is likely so general that it can't catch any issues."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 285,
+            "end": 460,
+            "quote": "In any case the test fails intermittently (#24400), so apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R50",
+      "stage": "source_self_review",
+      "unit_id": "S04",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The stated basis is #25650 and the fetch script default of downloading/building the necessary tags.",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 172,
+                "end": 275,
+                "quote": "thanks to #25650, the previous release fetch script defaults to downloading/building the necessary tags"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "The stated basis is #25650 and the fetch script default of downloading/building the necessary tags.",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 172,
+                "end": 275,
+                "quote": "thanks to #25650, the previous release fetch script defaults to downloading/building the necessary tags"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:body",
+              "span": {
+                "start": 282,
+                "end": 364,
+                "quote": "we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:body",
+          "span": {
+            "start": 282,
+            "end": 364,
+            "quote": "we don't need to extend the tag list in the CI scripts and test/README.md anymore."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R51",
+      "stage": "source_self_review",
+      "unit_id": "S10",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The stated aim is avoiding accidental breakage between versions, including wallet upgrades, consensus and p2p bugs.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 9,
+                "end": 170,
+                "quote": "one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions, including wallet upgrades, consensus and p2p bugs."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "The stated aim is avoiding accidental breakage between versions, including wallet upgrades, consensus and p2p bugs.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 9,
+                "end": 170,
+                "quote": "one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions, including wallet upgrades, consensus and p2p bugs."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 171,
+                "end": 216,
+                "quote": "So I think we should add every major release."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 171,
+            "end": 216,
+            "quote": "So I think we should add every major release."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R52",
+      "stage": "source_self_review",
+      "unit_id": "S12",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [],
+      "after": [
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 231,
+                "end": 327,
+                "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 231,
+            "end": 327,
+            "quote": "I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R53",
+      "stage": "source_self_review",
+      "unit_id": "S14",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [],
+      "after": [
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:8",
+              "span": {
+                "start": 181,
+                "end": 231,
+                "quote": "We can remove intermediate releases at some point."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:8",
+          "span": {
+            "start": 181,
+            "end": 231,
+            "quote": "We can remove intermediate releases at some point."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R54",
+      "stage": "source_self_review",
+      "unit_id": "S15",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "luke-jr explicitly rejects guix static binaries as a good alternative.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 150,
+                "end": 207,
+                "quote": "(And no, guix static binaries aren't a good alternative.)"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "luke-jr explicitly rejects guix static binaries as a good alternative.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 150,
+                "end": 207,
+                "quote": "(And no, guix static binaries aren't a good alternative.)"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 64,
+                "end": 149,
+                "quote": "To run the test at all, you have to keep a built copy of every single release listed."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 64,
+            "end": 149,
+            "quote": "To run the test at all, you have to keep a built copy of every single release listed."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R55",
+      "stage": "source_self_review",
+      "unit_id": "S16",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The proposed loop is executed by feature_backwards_compatibility.py, resolved from it and the preceding filename.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 45,
+                "end": 103,
+                "quote": "`feature_backwards_compatibility.py` we could have it loop"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The default of test/get_previous_releases.py would still fetch all binaries.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 233,
+                "end": 318,
+                "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "The proposed loop is executed by feature_backwards_compatibility.py, resolved from it and the preceding filename.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 45,
+                "end": 103,
+                "quote": "`feature_backwards_compatibility.py` we could have it loop"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The default of test/get_previous_releases.py would still fetch all binaries.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 233,
+                "end": 318,
+                "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R56",
+      "stage": "source_self_review",
+      "unit_id": "S17",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "The condition refers specifically to replacing hardcoded numbers with a loop over locally available releases/v*.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S16",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The fetch-script default remains all binaries, separating selection of test inputs from the default download behavior.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 233,
+                "end": 318,
+                "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "The condition refers specifically to replacing hardcoded numbers with a loop over locally available releases/v*.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S16",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "The fetch-script default remains all binaries, separating selection of test inputs from the default download behavior.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 233,
+                "end": 318,
+                "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 152,
+                "end": 232,
+                "quote": "In that case it's up to the developer which previous releases they want to test."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 152,
+            "end": 232,
+            "quote": "In that case it's up to the developer which previous releases they want to test."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R57",
+      "stage": "source_self_review",
+      "unit_id": "S18",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "This is paired with storing regtest wallets in qa-assets instead and prioritizes loading old wallets with modern versions over opening modern wallets with EOL versions.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 0,
+                "end": 181,
+                "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+              }
+            },
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 227,
+                "end": 281,
+                "quote": "the qa-assets repo hosts some regtest wallets instead?"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S19",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "This is paired with storing regtest wallets in qa-assets instead and prioritizes loading old wallets with modern versions over opening modern wallets with EOL versions.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 0,
+                "end": 181,
+                "quote": "I don't think it is too important that a modern wallet can be opened with an ancient EOL version. It seems more important to be able to load an ancient wallet with a modern version."
+              }
+            },
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 227,
+                "end": 281,
+                "quote": "the qa-assets repo hosts some regtest wallets instead?"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S19",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 182,
+            "end": 222,
+            "quote": "So maybe the EOL versions can be dropped"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R58",
+      "stage": "source_self_review",
+      "unit_id": "S19",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "Instead refers to replacing EOL-version testing, with priority given to loading ancient wallets in a modern version.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              }
+            },
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 98,
+                "end": 181,
+                "quote": "It seems more important to be able to load an ancient wallet with a modern version."
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S18",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "Instead refers to replacing EOL-version testing, with priority given to loading ancient wallets in a modern version.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 182,
+                "end": 222,
+                "quote": "So maybe the EOL versions can be dropped"
+              }
+            },
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 98,
+                "end": 181,
+                "quote": "It seems more important to be able to load an ancient wallet with a modern version."
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S18",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:11",
+              "span": {
+                "start": 227,
+                "end": 281,
+                "quote": "the qa-assets repo hosts some regtest wallets instead?"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:11",
+          "span": {
+            "start": 227,
+            "end": 281,
+            "quote": "the qa-assets repo hosts some regtest wallets instead?"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R59",
+      "stage": "source_self_review",
+      "unit_id": "S24",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "This refers to the quoted claim that, apart from obvious smoke-test issues on every run, failures receive little investigation.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 247,
+                "end": 366,
+                "quote": "apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "Q07",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "This refers to the quoted claim that, apart from obvious smoke-test issues on every run, failures receive little investigation.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 247,
+                "end": 366,
+                "quote": "apart from obvious smoke test issues that happen on every iteration, I don't think anyone even looks into failures here"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "Q07",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:comments:15",
+              "span": {
+                "start": 370,
+                "end": 429,
+                "quote": "This can also be a reason to not rush merging new releases."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:15",
+          "span": {
+            "start": 370,
+            "end": 429,
+            "quote": "This can also be a reason to not rush merging new releases."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R60",
+      "stage": "source_self_review",
+      "unit_id": "S26",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "I think preserves the personal stance; the stated domain is this compatibility-testing review, not all Bitcoin release governance.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 7,
+                "quote": "I think"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "I think preserves the personal stance; the stated domain is this compatibility-testing review, not all Bitcoin release governance.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 7,
+                "quote": "I think"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 0,
+            "end": 79,
+            "quote": "I think it only makes sense to add the latest release for each missing feature."
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R61",
+      "stage": "source_self_review",
+      "unit_id": "S30",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "Same is resolved to adding only the latest release for each missing feature; the source marks this as unrelated to the current addition.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            },
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 10,
+                "quote": "Unrelated:"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S26",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "Same is resolved to adding only the latest release for each missing feature; the source marks this as unrelated to the current addition.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 0,
+                "end": 79,
+                "quote": "I think it only makes sense to add the latest release for each missing feature."
+              }
+            },
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 0,
+                "end": 10,
+                "quote": "Unrelated:"
+              }
+            }
+          ],
+          "attachment": "linked_unit",
+          "linked_unit_id": "S26",
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:1",
+              "span": {
+                "start": 11,
+                "end": 60,
+                "quote": "The same goes for the other versions in this file"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:1",
+          "span": {
+            "start": 11,
+            "end": 60,
+            "quote": "The same goes for the other versions in this file"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R62",
+      "stage": "source_self_review",
+      "unit_id": "S32",
+      "path": [
+        "proposition",
+        "qualifiers"
+      ],
+      "before": [
+        {
+          "description": "This is a minimum for recent non-EOL major releases, not a demand to retain every historical release.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 370,
+                "end": 449,
+                "quote": "at least the recent major releases that haven't reached EOL yet as bare minimum"
+              }
+            }
+          ],
+          "attachment": "component",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        }
+      ],
+      "after": [
+        {
+          "description": "This is a minimum for recent non-EOL major releases, not a demand to retain every historical release.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 370,
+                "end": 449,
+                "quote": "at least the recent major releases that haven't reached EOL yet as bare minimum"
+              }
+            }
+          ],
+          "attachment": "component",
+          "linked_unit_id": null,
+          "rationale": "Preserves a material condition or scope qualification of the focal proposition."
+        },
+        {
+          "description": "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion.",
+          "evidence": [
+            {
+              "source_id": "pr26586:review_comments:2",
+              "span": {
+                "start": 284,
+                "end": 490,
+                "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+              }
+            }
+          ],
+          "attachment": "scope_note",
+          "linked_unit_id": null,
+          "rationale": "The containing PR identifies the discussion episode but is not silently substituted for a general proposition's decision object."
+        }
+      ],
+      "reason": "Explain null decision-object identity without inventing a new proposal identifier.",
+      "evidence": [
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 284,
+            "end": 490,
+            "quote": "For these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another?"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "convention_deviation",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "R63",
+      "stage": "source_self_review",
+      "unit_id": "S05",
+      "path": [
+        "uncertainty_reason"
+      ],
+      "before": "",
+      "after": "The navigational target is mutable master; no exact target revision at the bot occurrence is recoverable. Decision_object_id is therefore null rather than the supplemental pinned revision.",
+      "reason": "Keep the navigation object identity distinct from documentary comparison material.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:0",
+          "span": {
+            "start": 221,
+            "end": 295,
+            "quote": "https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#code-review"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "coverage_or_scope_loss",
+      "meaning_changed": false
+    },
+    {
+      "change_id": "M09",
+      "stage": "post_self_review_checker_repair",
+      "unit_id": "S16",
+      "path": [
+        "components",
+        2,
+        "evidence"
+      ],
+      "before": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 74,
+            "end": 76,
+            "quote": "it"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 96,
+            "end": 98,
+            "quote": "it"
+          }
+        }
+      ],
+      "reason": "The replacement parse accidentally anchored it inside compatibility. Re-anchor the complete local pronoun after have; no token exception is used.",
+      "evidence": [
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 91,
+            "end": 108,
+            "quote": "have it loop over"
+          }
+        }
+      ],
+      "diagnosis": "execution_failure_under_existing_rule",
+      "effect": "evidence_basis_error",
+      "meaning_changed": false
+    }
+  ]
+}

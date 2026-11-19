@@ -1,0 +1,61 @@
+{
+  "episode_id": "E01",
+  "pr_number": 8771,
+  "label": "Duplicate contribution guidance",
+  "mechanism": "procedural_revision",
+  "initiation": "Proposed guidance addresses duplicated discussion and assistance with Git workflows.",
+  "outcome": "The merged text retains the same-change qualifier and the optional assistance route.",
+  "alternative_explanation": "A general contribution barrier is an overreading; the help option may reduce barriers.",
+  "mechanism_status": "supported_sequence",
+  "observed_action_level": "collective_choice",
+  "embedded_statement_target_level": "operational",
+  "level_rationale": "Guidance is amended; the embedded instruction governs contribution practice.",
+  "claim_ids": [
+    "E01-C1",
+    "E01-C2",
+    "E01-C3",
+    "E01-C4"
+  ],
+  "evidence": [
+    {
+      "source_id": "E01:doc_head",
+      "span": {
+        "start": 4193,
+        "end": 4264,
+        "quote": "Please refrain from creating several pull requests for the same change."
+      }
+    },
+    {
+      "source_id": "E01:outcome",
+      "span": {
+        "start": 128,
+        "end": 151,
+        "quote": "\"recorded_merged\": true"
+      }
+    },
+    {
+      "source_id": "E01:doc_head",
+      "span": {
+        "start": 3997,
+        "end": 4191,
+        "quote": "If you have problems with squashing (or other workflows with `git`), you can\nalternatively enable \"Allow edits from maintainers\" in the right GitHub\nsidebar and ask for help in the pull request."
+      }
+    },
+    {
+      "source_id": "E01:review_comments:2",
+      "span": {
+        "start": 0,
+        "end": 92,
+        "quote": "Well, not in general, but we want to encourage it for people that don't know how to use git."
+      }
+    },
+    {
+      "source_id": "E01:doc_head",
+      "span": {
+        "start": 4244,
+        "end": 4264,
+        "quote": "for the same change."
+      }
+    }
+  ]
+}

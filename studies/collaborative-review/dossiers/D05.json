@@ -1,0 +1,278 @@
+{
+  "topic_id": "D05",
+  "title": "Technical necessity and social expectation",
+  "question": "Apply v0.4 to Needs rebase and needs a rebase after #26589. Technical necessity alone cannot establish obligation, but a proposed norm need not already be shared. Decide whether a preferred type is justified or alternatives must remain.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q015",
+      "title": "Needs rebase receives norm_candidate in R07, R18 and R16, and undetermined in R02, R13 and R15.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain norm-versus-undetermined as a genuine source/criterion boundary. Do not require repetition or project-wide adoption to permit norm_candidate, and do not treat the bare need as proof of an authorized merge gate.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:7",
+          "span": {
+            "start": 0,
+            "end": 13,
+            "quote": "Needs rebase."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Force and institutional classification: norm_candidate requires socially expected conduct or accountability, but need not already be shared; technical necessity does not itself establish institutional obligation."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F03_v04_r1",
+          "units": [
+            {
+              "unit_id": "U24",
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 0,
+                "end": 13,
+                "quote": "Needs rebase."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "laanwj requests a rebase of the current PR #7819.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A case-specific technical design or review proposal is institutionally relevant to contribution activity, but supplies neither a governing authorization nor a recurring social expectation or committed method.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r3",
+          "units": [
+            {
+              "unit_id": "F03-U25",
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 0,
+                "end": 13,
+                "quote": "Needs rebase."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The reviewer implicitly requests rebasing #7819.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The actor is omitted and is not reconstructed from the reviewer’s alias; the claimed need may be technical."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "The terse review comment plausibly requests a maintenance action on the current contribution. A local expectation reading is possible, but one-off technical necessity does not by itself select an institutional type.",
+                "type_alternatives": [
+                  "norm_candidate"
+                ]
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r2",
+          "units": [
+            {
+              "unit_id": "F03-U17",
+              "source_id": "pr7819:comments:7",
+              "span": {
+                "start": 0,
+                "end": 13,
+                "quote": "Needs rebase."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "laanwj requests or expects a rebase of the current PR.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "No actor, deadline, threat, merge condition, or authority attribution is supplied."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "norm_candidate",
+                "rationale": "The elliptical maintenance demand expresses expected contribution work in this case. No supplied authority or enforcement basis establishes a rule candidate, and no response demonstrates that a rebase occurred.",
+                "type_alternatives": [
+                  "undetermined"
+                ]
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q036",
+      "title": "For it needs a rebase, R01/R09 keep needs as an inferred D under the reconstructed rebase action; R17 retains an explicit D, while the guide_1 annotations omit D and keep force uncertain.",
+      "category": "criterion_ambiguity",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the technical-necessity alternative and do not infer obligation or authority. A later criterion should specify how nominal needs constructions transfer lexical necessity into D under a pragmatic action and how an unspecified after-event is classified; no retrospective mandatory label is imposed.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 31,
+            "end": 72,
+            "quote": "Meanwhile it needs a rebase after #26589."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 44,
+            "end": 49,
+            "quote": "needs"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:2",
+          "span": {
+            "start": 59,
+            "end": 71,
+            "quote": "after #26589"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, role-specific explicit/inferred basis, technical necessity versus deontic force, and Cac/Cex definitions."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C03",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors asks for this PR to be rebased after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "After #26589 qualifies timing without establishing that proposal was merged."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A plausible testing/review prescription with no specific institutional authorization or attributed enforcement basis.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S09",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The current PR is said to need a rebase after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Meanwhile keeps this maintenance request compatible with holding off on integration."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "recommendation",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "A maintenance request inferred from a technical need; no authority for a mandatory review rule is supplied.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U08",
+              "source_id": "pr26586:comments:2",
+              "span": {
+                "start": 31,
+                "end": 72,
+                "quote": "Meanwhile it needs a rebase after #26589."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors says this PR needs a rebase after #26589.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The rebase is proposed meanwhile, while the inclusion decision remains delayed."
+              ],
+              "grammar": "regulative",
+              "deontic_force": "unresolved",
+              "institution": {
+                "type": "undetermined",
+                "rationale": "Sjors says this PR needs a rebase after #26589.",
+                "type_alternatives": []
+              }
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:2",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Sounds good to hold off a bit. Meanwhile it needs a rebase after #26589.\r\n\r\nI like how small this commit could be now that `test/get_previous_releases.py -b` automatically fetches all available versions."
+    },
+    {
+      "source_id": "pr7819:comments:7",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "Needs rebase.\n"
+    }
+  ]
+}

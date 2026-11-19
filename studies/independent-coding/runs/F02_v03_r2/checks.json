@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "screened_entries": 22,
+  "units": 15,
+  "statement_units": 4,
+  "exact_anchor_references": 112,
+  "errors": [],
+  "review_flags": [
+    {
+      "unit_id": "S01",
+      "source_id": "pr14441:review_comments:0",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "The review proposes an edit for the person updating this PR. The addressee is not named in the suggestion. jnewbery's later update report supports identifying the PR updater as a likely performer, but neither an occupational role nor a duty is inferred."
+    },
+    {
+      "unit_id": "S02",
+      "source_id": "pr14441:review_comments:1",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "The explicit I in I'd maybe belongs to ryanofsky's hypothetical phrasing; it is not an explicit name for the actor in the selected recommendation-to-the-contributor parse. The pragmatic actor is the person updating this PR. jnewbery's later attribution of the update to ryanofsky's changes supports that addressee only as a contextual inference. No occupational status, actual commitment by ryanofsky to perform the edit, or duty to comply is inferred. The literal reviewer-as-hypothetical-actor alternative remains in alternative_interpretation."
+    },
+    {
+      "unit_id": "S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "The review proposes an edit for the person updating this PR. The addressee is not named in the suggestion. jnewbery's later update report supports identifying the PR updater as a likely performer, but neither an occupational role nor a duty is inferred."
+    },
+    {
+      "unit_id": "S03",
+      "source_id": "pr14441:review_comments:2",
+      "kind": "outside_unit",
+      "symbol": "Bdir",
+      "occurrence_role": "context_reference",
+      "evidence": {
+        "source_id": "pr14441:review_comments:2",
+        "span": {
+          "start": 16,
+          "end": 42,
+          "quote": "the new check for \"*\" here"
+        }
+      },
+      "note": "Drop omits its object. The preceding sentence supplies the new check for \"*\" here as the antecedent; its role as the object of drop is inferred, although the words are explicit in the rationale. The source path is src/wallet/rpcwallet.cpp."
+    },
+    {
+      "unit_id": "S04",
+      "source_id": "pr14441:review_comments:3",
+      "kind": "outside_unit",
+      "symbol": "A",
+      "occurrence_role": "semantic_inference",
+      "evidence": {
+        "source_id": "pr14441:comments:0",
+        "span": {
+          "start": 34,
+          "end": 72,
+          "quote": "I've updated the PR with your changes."
+        }
+      },
+      "note": "The review proposes an edit for the person updating this PR. The addressee is not named in the suggestion. jnewbery's later update report supports identifying the PR updater as a likely performer, but neither an occupational role nor a duty is inferred."
+    },
+    {
+      "unit_id": "S02",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "Even in the pragmatic recommendation parse, it remains the explicit object of change. This paragraph in the preceding rationale resolves its referent; it is not transformed from a subject into an object."
+    },
+    {
+      "unit_id": "S04",
+      "kind": "pragmatic_explicit_argument",
+      "symbol": "Bdir",
+      "note": "The empty string change remains the explicit object of document in the pragmatic recommendation. The quoted draft explains what the change concerns; this object role is not reconstructed from a subject or predicate complement."
+    }
+  ],
+  "semantic_validity": "Requires source review; not certified by this checker"
+}

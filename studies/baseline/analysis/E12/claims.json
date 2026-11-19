@@ -1,0 +1,122 @@
+[
+  {
+    "claim_id": "E12-C1",
+    "episode_id": "E12",
+    "claim": "The key holder proposes removal, and the merged change removes that key from the trusted list.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E12:merge_diff",
+        "span": {
+          "start": 7555,
+          "end": 7596,
+          "quote": "-71A3B16735405025D447E8F274810B012346C9A6"
+        }
+      },
+      {
+        "source_id": "E12:merge_message",
+        "span": {
+          "start": 29,
+          "end": 60,
+          "quote": "Remove laanwj from trusted-keys"
+        }
+      },
+      {
+        "source_id": "E12:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "allow-revsig-commits list generated using:"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "The frozen body author is laanwj. Removal from this list does not identify the timing of every other privilege change."
+  },
+  {
+    "claim_id": "E12-C2",
+    "episode_id": "E12",
+    "claim": "Reviewers debate whether the proposed historical exceptions work, with later testing acknowledging a problem under disabled clean-merge checking.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E12:comments:2",
+        "span": {
+          "start": 0,
+          "end": 86,
+          "quote": "I don't think adding your merged commits to allow-revsig-commits actually allows them."
+        }
+      },
+      {
+        "source_id": "E12:comments:5",
+        "span": {
+          "start": 283,
+          "end": 402,
+          "quote": "But trying with `--clean-merge 0` makes sense. And then indeed it seems to ignore the hashes in `allow-revsig-commits`."
+        }
+      },
+      {
+        "source_id": "E12:comments:7",
+        "span": {
+          "start": 84,
+          "end": 171,
+          "quote": "any bug fixes or behaviour changes of the script are better handled in a separate pull."
+        }
+      }
+    ],
+    "assessment_available_at": "T",
+    "limits_and_alternatives": "Testing reports and agreement on intent do not show the full verification program is correct. The separate gate experiment tests a narrower mechanism."
+  },
+  {
+    "claim_id": "E12-C3",
+    "episode_id": "E12",
+    "claim": "The original verification wrapper requires a matching trusted primary fingerprint for its valid-signature gate.",
+    "assessment": "supported",
+    "evidence": [
+      {
+        "source_id": "E12:doc_verify_gpg",
+        "span": {
+          "start": 1813,
+          "end": 1857,
+          "quote": "done < ./contrib/verify-commits/trusted-keys"
+        }
+      },
+      {
+        "source_id": "E12:doc_verify_gpg",
+        "span": {
+          "start": 2174,
+          "end": 2202,
+          "quote": "if ! $VALID; then\n\texit 1\nfi"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Twelve controlled executions with simulated GPG status confirm this gate only; no cryptographic or full-history verification is claimed."
+  },
+  {
+    "claim_id": "E12-C4",
+    "episode_id": "E12",
+    "claim": "Removal establishes involuntary expulsion or a decision about ultimate governance legitimacy.",
+    "assessment": "unresolved",
+    "evidence": [
+      {
+        "source_id": "E12:body",
+        "span": {
+          "start": 0,
+          "end": 42,
+          "quote": "allow-revsig-commits list generated using:"
+        }
+      },
+      {
+        "source_id": "E12:merge_message",
+        "span": {
+          "start": 29,
+          "end": 60,
+          "quote": "Remove laanwj from trusted-keys"
+        }
+      }
+    ],
+    "assessment_available_at": "I",
+    "limits_and_alternatives": "Self-initiation in the observed record and technical trust-list editing are insufficient for either conclusion."
+  }
+]

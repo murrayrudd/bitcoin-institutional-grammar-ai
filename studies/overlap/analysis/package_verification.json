@@ -1,0 +1,367 @@
+{
+  "checked_at_utc": "2026-11-07T17:46:50.484586+00:00",
+  "status": "pass",
+  "unchanged_file_checks": 89,
+  "analytical_evidence_anchors": 211,
+  "focal_source_count": 24,
+  "alignment_coverage": "all focal statements assigned",
+  "limitations": "Mechanical integrity only; source reconciliation remains revisable AI judgment.",
+  "checks": [
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/reviewer_prompt_template.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/overlap_protocol.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/prior_sample.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/prior_selection_pools.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/prior_context_supplements.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "common_input/packet.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "prior_inputs/corrected_baseline.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "prior_inputs/adjudication_ledger.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "prior_inputs/baseline_all_source_registry.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "common_input/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "common_input/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "common_input/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/A/packet.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/A/TASK.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/C/packet.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/C/TASK.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/B/packet.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/B/TASK.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/A/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/A/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/A/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/C/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/C/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/C/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/B/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/B/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "reviewers/B/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "tools/freeze_and_verify.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "tools/prepare_alignment.py"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/alignment_task.txt"
+    },
+    {
+      "kind": "unchanged_file",
+      "file": "protocol/source_audit_task.txt"
+    },
+    {
+      "kind": "unchanged_comparison_script",
+      "file": "tools/compare_annotations.py"
+    },
+    {
+      "kind": "unchanged_prior_archive",
+      "file": "prior_inputs/archives/Core_Knots_Round11_Comparative_Model_Evidence_v01.zip"
+    },
+    {
+      "kind": "unchanged_prior_archive",
+      "file": "prior_inputs/archives/Core_Knots_Round4_Source_Review_Evidence_v01.zip"
+    },
+    {
+      "kind": "prior_copy_matches_archive",
+      "file": "prior_inputs/round11/inherited_units_used.json"
+    },
+    {
+      "kind": "prior_copy_matches_archive",
+      "file": "prior_inputs/round11/institution_action_links.json"
+    },
+    {
+      "kind": "prior_copy_matches_archive",
+      "file": "prior_inputs/round11/claim_ledger.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/TASK.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/access_record.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/annotation.final.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/annotation.first_complete.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/annotation.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/build_annotation.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/checks.first_complete.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/checks.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/manifest.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/packet.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/repair_log.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/review_notes.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/self_review.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/A/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/FROZEN_MANIFEST.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/TASK.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/access_record.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/annotation.final.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/annotation.first_complete.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/annotation.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/build_annotation.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/checks.first.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/checks.first.stderr.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/checks.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/final_summary.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/packet.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/repair_log.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/review_notes.first_complete.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/review_notes.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/self_review.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/B/tools/check_annotation.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/TASK.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/access_record.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/annotation.first_complete.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/annotation.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/build_annotation.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/checks.after_self_review.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/checks.first.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/checks.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/finalize.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/freeze_manifest.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/packet.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/protocol/annotation_schema.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/protocol/codebook.txt"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/repair_log.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/review_notes.json"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/self_review.py"
+    },
+    {
+      "kind": "unchanged_coder_file",
+      "file": "reviewers/C/tools/check_annotation.py"
+    }
+  ]
+}

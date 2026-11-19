@@ -1,0 +1,983 @@
+{
+  "topic_id": "D07",
+  "title": "Targets of challenge",
+  "question": "For each group identify the focal object and whether the challenge concerns that proposition, its premise, a broader proposal, or future alternatives to a past work report. Retain bounded alternative targets where evidence does not settle them.",
+  "prior_adjudications_are_proposals_not_binding_truth": true,
+  "groups": [
+    {
+      "group_id": "Q019",
+      "title": "R07 and R15 attach the exposure objection to the offered checkbox proposition as a dispute; R13 and R16 classify it as a broader-proposal premise challenge and leave the focal dispute flag false.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep the layer distinction visible rather than scoring the Boolean in isolation. None of these analyses supports treating assent to exposure concerns as a rejection of review or proof that the checkbox did not exist.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 0,
+            "end": 131,
+            "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+          }
+        },
+        {
+          "source_id": "pr7819:body",
+          "span": {
+            "start": 133,
+            "end": 211,
+            "quote": "This PR does not include a way to actually replace a transaction with the GUI."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:0",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 0,
+            "end": 88,
+            "quote": "> Not sure it makes sense to expose this until the wallet actually can do replacement..."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 90,
+            "end": 113,
+            "quote": "Right. I totally agree."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:2",
+          "span": {
+            "start": 114,
+            "end": 190,
+            "quote": "I'm working on the replacement GUI process but this can be reviewed already."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, Candidate boundaries/dispute and guide_1 challenge scope: compare the same focal proposition and object; a challenge to a proposal premise need not deny an artifact description."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F03_v04_r1",
+          "units": [
+            {
+              "unit_id": "U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "jonasschnelli offers PR #7819 adding an opt-in BIP125 RBF-signaling checkbox to the Send-Coins-Pannel next to Add Recipient; the PR lacks a GUI transaction-replacement workflow.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "No GUI mechanism for actually replacing a transaction is included.",
+                "Whether to proceed without a GUI replacement workflow is explicitly uncertain; that larger workflow is reported as in progress.",
+                "Two refactoring commits are attributed to #7159; that source PR is not the decision object of this checkbox proposal."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "broader_proposal",
+                  "rationale": "The concern questions exposing the current feature before replacement exists. It does not dispute the literal claim that the contribution adds a checkbox, so it is retained as a broader-proposal readiness challenge."
+                }
+              ],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "U04",
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 0,
+                "end": 88,
+                "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "luke-jr tentatively recommends withholding exposure of the checkbox feature until the wallet actually can do replacement.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "Tentative negative evaluation, not an explicit categorical prohibition.",
+                "The condition is wallet replacement capability; the word can denotes technical capability."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r3",
+          "units": [
+            {
+              "unit_id": "F03-U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The submitted #7819 patch adds a checkbox next to Add Recipient in the Send-Coins-Pannel to set nSequence for BIP125 RBF signaling; it does not supply a GUI transaction-replacement workflow.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The checkbox is beside Add Recipient and signals BIP125 RBF by setting nSequence.",
+                "The offered PR does not provide a way to replace a transaction through the GUI."
+              ],
+              "challenges": [
+                {
+                  "aspect": "content",
+                  "target": "this_proposition",
+                  "rationale": "The reviewer questions exposing this checkbox before replacement capability. The challenge concerns sequencing of the offered feature, not whether the patch technically contains a checkbox."
+                }
+              ],
+              "dispute_present": true
+            },
+            {
+              "unit_id": "F03-U05",
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 0,
+                "end": 88,
+                "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The reviewer tentatively recommends not exposing the checkbox in #7819 until the wallet can actually perform replacement.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The objection is hedged by Not sure; can denotes wallet capability, not institutional permission.",
+                "The stated condition is replacement capability; it does not say review must wait."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r2",
+          "units": [
+            {
+              "unit_id": "F03-U01",
+              "source_id": "pr7819:body",
+              "span": {
+                "start": 0,
+                "end": 131,
+                "quote": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author offers adding a checkbox next to Add Recipient in the Send-Coins-Pannel to set nSequence for BIP125 RBF signaling.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The feature only signals opt-in-RBF; the PR does not supply a GUI method to replace a transaction.",
+                "The retained body is associated with PR creation but may contain later edits; no sentence-level historical dating is claimed."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "broader_proposal",
+                  "rationale": "The concern challenges exposing the checkbox without replacement capability, a premise or timing of the broader offered feature rather than every implementation detail."
+                }
+              ],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "F03-U04",
+              "source_id": "pr7819:comments:0",
+              "span": {
+                "start": 0,
+                "end": 88,
+                "quote": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement..."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "luke-jr questions exposing this feature before the wallet can actually perform replacement, plausibly recommending deferral until that capability exists.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/7819"
+              },
+              "qualifier_descriptions": [
+                "The literal stance is uncertain (Not sure), not an asserted binding prerequisite."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q038",
+      "title": "The explanation branch is marked disputed in R03/R04/R10 and not disputed in R01/R09/R17.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Preserve the premise-challenge interpretation alongside the response interpretation. A Boolean dispute projection cannot adjudicate this substantive distinction; no reviewer acceptance is supplied.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 80,
+            "end": 174,
+            "quote": "So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:0",
+          "span": {
+            "start": 147,
+            "end": 174,
+            "quote": "explain why 24.x is special"
+          }
+        },
+        {
+          "source_id": "pr26586:review_comments:2",
+          "span": {
+            "start": 491,
+            "end": 735,
+            "quote": "I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, proposition/premise/application challenge scope and recognition: identify the common object; a response is not proof of satisfied or accepted obligation."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "R03",
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 147,
+                "end": 174,
+                "quote": "explain why 24.x is special"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "If adding 24.x, the contributor can satisfy maflcko's proposed requirement by explaining why 24.x is special instead of removing 23.x.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Explanation is alternative to removing 23.x."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "this_proposition",
+                  "rationale": "The author disputes specialness as necessary justification, preferring verification of assumed similarity."
+                }
+              ],
+              "dispute_present": true
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S28",
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 147,
+                "end": 174,
+                "quote": "explain why 24.x is special"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "If adding 24.x, the contributor is expected to explain why 24.x is special as one of two alternatives.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Remove 23.x or explain why 24.x is special are alternatives, not cumulative duties."
+              ],
+              "challenges": [
+                {
+                  "aspect": "content",
+                  "target": "this_proposition",
+                  "rationale": "The author argues for keeping both recent non-EOL releases without needing a special difference, contesting application of the remove-or-explain criterion to this wallet test."
+                }
+              ],
+              "dispute_present": true
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U27",
+              "source_id": "pr26586:review_comments:0",
+              "span": {
+                "start": 144,
+                "end": 174,
+                "quote": "or explain why 24.x is special"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "maflcko offers explaining why 24.x is special as the alternative to removing 23.x when adding 24.x.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "This is one of two alternative routes; either remove 23.x or explain why 24.x is special. Exclusive choice is not established."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "this_proposition",
+                  "rationale": "The author responds to the quoted criterion by proposing retention of non-EOL majors even without specialness, contesting the requirement's application to this wallet test."
+                }
+              ],
+              "dispute_present": true
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q039",
+      "title": "R03/R04/R10 attach the miniscript reason to the qualified v24 addition and mark its premise disputed.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Retain the technical premise challenge at its represented layer. Do not infer an NACK of all v24 inclusion reasons from the miniscript objection, or treat the Boolean difference alone as an error.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 220,
+            "end": 330,
+            "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:4",
+          "span": {
+            "start": 331,
+            "end": 460,
+            "quote": "On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:5",
+          "span": {
+            "start": 0,
+            "end": 104,
+            "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides, segmentation and material qualifiers; challenge concerns the focal proposition or its premise, with correctly scoped endpoints."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C06",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 220,
+                "end": 330,
+                "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors argues for adding v24.0 or whichever replacement becomes widely downloadable, citing #25717 as sufficient reason.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Wide download availability conditions the specific version; #25717 contents are absent.",
+                "Wallet-miniscript rationale is attributed and qualified by last time checked."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "this_proposition",
+                  "rationale": "Targets the specific miniscript rationale, not the contents of unseen #25717."
+                }
+              ],
+              "dispute_present": true
+            },
+            {
+              "unit_id": "C07",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 0,
+                "end": 104,
+                "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": [],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S11",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 220,
+                "end": 330,
+                "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors recommends adding v24.0, or the version that becomes widely downloadable, citing #25717 as sufficient justification.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "#25717 is cited as sufficient reason; its contents are not supplied.",
+                "The next sentence reports watch-only miniscript support and previously observed downgrade problems."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "this_proposition",
+                  "rationale": "The stated miniscript reason is challenged because the existing general test does not test that support. This does not establish rejection of adding v24."
+                }
+              ],
+              "dispute_present": true
+            },
+            {
+              "unit_id": "C03",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 0,
+                "end": 104,
+                "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support."
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": [],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U10",
+              "source_id": "pr26586:comments:4",
+              "span": {
+                "start": 220,
+                "end": 330,
+                "quote": "Apart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors advances #25717 as sufficient reason to add v24.0, or whichever version becomes widely downloadable, to the current tests.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "#25717 is the cited reason, not the object whose integration is claimed; the wallet miniscript example is attributed and qualified by last time I checked."
+              ],
+              "challenges": [
+                {
+                  "aspect": "premise",
+                  "target": "this_proposition",
+                  "rationale": "The NACK questions what differs in v24; maflcko specifically says this test does not cover the cited miniscript support. These are challenges to the proposed addition's reasons, not proven rejection."
+                }
+              ],
+              "dispute_present": true
+            },
+            {
+              "unit_id": "C03",
+              "source_id": "pr26586:comments:5",
+              "span": {
+                "start": 0,
+                "end": 230,
+                "quote": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues."
+              },
+              "record_role": "context",
+              "proposition": {},
+              "qualifier_descriptions": [],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q040",
+      "title": "R03 C15 treats the proposed directory-loop workaround as challenging application of the all-built-copies prerequisite.",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "Accepted within the bounded scope of the independent finding after comparison with the supplied source and assigned guide; no stronger institutional conclusion follows.",
+      "resolution": "Keep current-implementation necessity separate from a proposed future workaround. Neither reading establishes obligation, implemented relief, or falsification of the present technical claim.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr26586:comments:9",
+          "span": {
+            "start": 64,
+            "end": 207,
+            "quote": "To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 0,
+            "end": 151,
+            "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+          }
+        },
+        {
+          "source_id": "pr26586:comments:10",
+          "span": {
+            "start": 233,
+            "end": 318,
+            "quote": "The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+          }
+        }
+      ],
+      "applicable_rules": [
+        "guide_1.txt line 118 permits a workaround to challenge application while accepting purpose; both guides require identified content/application rather than unrelated opposing themes."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F01_v04_r3",
+          "units": [
+            {
+              "unit_id": "C15",
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 64,
+                "end": 149,
+                "quote": "To run the test at all, you have to keep a built copy of every single release listed."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "luke-jr says running the test requires the tester to keep a built copy of every listed release.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "Necessity applies to every listed release and to running this test at all.",
+                "The speaker rejects guix static binaries as an adequate alternative; that technical judgment is not independently validated."
+              ],
+              "challenges": [
+                {
+                  "aspect": "application",
+                  "target": "this_proposition",
+                  "rationale": "Prospective workaround changes the practical fixed-list requirement without demonstrating that the current requirement is false."
+                }
+              ],
+              "dispute_present": true
+            },
+            {
+              "unit_id": "C16",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py from hardcoded versions to iterating over whatever is available under releases/v*.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The choice concerns whatever is locally available, not a fixed list of all known releases.",
+                "The fetch script would still fetch all binaries by default."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r1",
+          "units": [
+            {
+              "unit_id": "S15",
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 64,
+                "end": 149,
+                "quote": "To run the test at all, you have to keep a built copy of every single release listed."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Running the test requires the tester to keep a built copy of every listed release, according to luke-jr.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "luke-jr explicitly rejects guix static binaries as a good alternative.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "S16",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py to loop over locally available releases/v* versions instead of hardcoding version numbers.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "The proposed loop is executed by feature_backwards_compatibility.py, resolved from it and the preceding filename.",
+                "The default of test/get_previous_releases.py would still fetch all binaries.",
+                "No unique canonical proposal ID exists for this general testing criterion or method; the domain is bounded to the compatibility-testing discussion."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F01_v04_r2",
+          "units": [
+            {
+              "unit_id": "U14",
+              "source_id": "pr26586:comments:9",
+              "span": {
+                "start": 64,
+                "end": 207,
+                "quote": "To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "luke-jr says running the test requires keeping a built copy of every listed release, and rejects guix static binaries as a good substitute.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The rejection of guix static binaries is the speaker's qualified alternative assessment, not independently verified."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "U15",
+              "source_id": "pr26586:comments:10",
+              "span": {
+                "start": 0,
+                "end": 151,
+                "quote": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "Sjors proposes changing feature_backwards_compatibility.py from hardcoded version numbers to looping over whatever is available under releases/v*.",
+                "decision_object_id": "https://github.com/bitcoin/bitcoin/pull/26586"
+              },
+              "qualifier_descriptions": [
+                "The replacement is specifically to loop over whatever is available under releases/v*, instead of hardcoding version numbers.",
+                "The default fetch script would still fetch all binaries; this proposal changes test selection rather than that default."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    },
+    {
+      "group_id": "Q052",
+      "title": "Prospective self-questioning versus dispute of a historical work report",
+      "category": "defensible_alternative",
+      "coordinator_assessment": "The fee-only question can challenge continuation of a design without contradicting the past attempt. Preserve that prospective alternative and the uncontested historical report, without inferring withdrawal or adoption.",
+      "resolution": "Keep the historical attempt uncontested. Retain prospective self-questioning as a bounded alternative challenge to continuation or scope, without counting it as interpersonal disagreement, rejection, withdrawal, or an adopted fee-only decision. The Boolean should not be treated as a complete measure of dispute meaning.",
+      "qualification": null,
+      "source_evidence": [
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 316,
+            "end": 429,
+            "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+          }
+        },
+        {
+          "source_id": "pr7819:comments:3",
+          "span": {
+            "start": 430,
+            "end": 484,
+            "quote": "But maybe we should just focus on increasing the fees?"
+          }
+        }
+      ],
+      "applicable_rules": [
+        "Both guides require any dispute to target the same proposition or its application/premise and preserve uncertainty. A historical work report and the prospective continuation of its method are distinguishable focal meanings; opposing themes alone do not establish interpersonal conflict."
+      ],
+      "affected_v04": [
+        {
+          "run_id": "F03_v04_r1",
+          "units": [
+            {
+              "unit_id": "U16",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 316,
+                "end": 429,
+                "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "jonasschnelli reports trying a replacement-workflow approach that allows additional outputs by editing the transaction back in the sendcoins dialog.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "The approach was being tried; somehow, also, and was trying do not establish a completed edit or firm commitment.",
+                "The method concerns the contemplated replacement workflow, not a demonstrated change already included in #7819."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "U17",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 430,
+                "end": 484,
+                "quote": "But maybe we should just focus on increasing the fees?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "jonasschnelli tentatively asks whether the replacement-workflow effort should focus only on increasing fees.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Maybe and question form preserve tentativeness."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r3",
+          "units": [
+            {
+              "unit_id": "F03-U17",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 316,
+                "end": 429,
+                "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author reports having tried to allow additional outputs by editing the transaction back in the sendcoins dialog.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Somehow was also trying describes an exploratory earlier attempt, with transaction editing in the sendcoins dialog as its method."
+              ],
+              "challenges": [
+                {
+                  "aspect": "content",
+                  "target": "broader_proposal",
+                  "rationale": "The same author’s fee-only question raises a tentative alternative for the broader replacement-workflow scope. It does not contradict the focal report of having tried additional outputs. The workflow’s canonical proposal identity and any adopted scope decision remain unresolved."
+                }
+              ],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "F03-U18",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 430,
+                "end": 484,
+                "quote": "But maybe we should just focus on increasing the fees?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author tentatively proposes limiting the immediate replacement-workflow focus to increasing fees.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Maybe and the question form preserve a tentative suggestion; just restricts the proposed focus to fee increases."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        },
+        {
+          "run_id": "F03_v04_r2",
+          "units": [
+            {
+              "unit_id": "F03-U10",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 316,
+                "end": 429,
+                "quote": "I somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog)."
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author reports an attempted development approach allowing additional outputs by editing the transaction back in the sendcoins dialog.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "This was an attempt (somehow was also trying), not proof of a completed feature.",
+                "The discussion occurs in #7819, whose body expressly lacks GUI replacement. No supplied source identifies a separate implementation proposal for this particular workflow or feature; null denotes unresolved decision-object identity, not lack of a known discussion venue."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            },
+            {
+              "unit_id": "F03-U11",
+              "source_id": "pr7819:comments:3",
+              "span": {
+                "start": 430,
+                "end": 484,
+                "quote": "But maybe we should just focus on increasing the fees?"
+              },
+              "record_role": "statement",
+              "proposition": {
+                "summary": "The author tentatively asks whether the group should focus only on increasing fees rather than the broader additional-output workflow.",
+                "decision_object_id": null
+              },
+              "qualifier_descriptions": [
+                "Maybe makes the narrowing tentative.",
+                "The alternative scope is the preceding attempted additional-output workflow.",
+                "The discussion occurs in #7819, whose body expressly lacks GUI replacement. No supplied source identifies a separate implementation proposal for this particular workflow or feature; null denotes unresolved decision-object identity, not lack of a known discussion venue."
+              ],
+              "challenges": [],
+              "dispute_present": false
+            }
+          ],
+          "relation_refs": [],
+          "relations": [],
+          "summary_paths": []
+        }
+      ]
+    }
+  ],
+  "source_context": [
+    {
+      "source_id": "pr26586:comments:10",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Instead of hardcoding the version numbers in `feature_backwards_compatibility.py` we could have it loop over whatever is available under `releases/v*`. In that case it's up to the developer which previous releases they want to test. The default of `test/get_previous_releases.py` would still to fetch all the binaries."
+    },
+    {
+      "source_id": "pr26586:comments:4",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "@luke-jr one reason for the backwards compatibility tests is to ensure there's no accidental breakage between versions, including wallet upgrades, consensus and p2p bugs. So I think we should add every major release.\r\n\r\nApart from that, #25717 alone should justify adding v24.0 (or whatever ends up widely available for download). On the wallet side this version added watch-only miniscript support (which last time I checked caused problems when downgrading)."
+    },
+    {
+      "source_id": "pr26586:comments:5",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "Though, `test/functional/feature_backwards_compatibility.py` doesn't test watch-only miniscript support. I don't mind, but I am not too much a fan of a \"general\" compat test. It is likely so general that it can't catch any issues. I much more prefer specific tests, like the ones you can find with `git grep -l skip_if_no_prev`"
+    },
+    {
+      "source_id": "pr26586:comments:9",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": ">Probably not, but it's a low cost check.\r\n\r\nIt's not low cost. To run the test at all, you have to keep a built copy of every single release listed. (And no, guix static binaries aren't a good alternative.)"
+    },
+    {
+      "source_id": "pr26586:review_comments:0",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also 16624e6ff3af4429e571f7a606bbbcac336e067a"
+    },
+    {
+      "source_id": "pr26586:review_comments:2",
+      "kind": "review_comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/26586",
+      "text": "> I think it only makes sense to add the latest release for each missing feature. So if you want to add 24.x, you will either need to remove 23.x or explain why 24.x is special, see also [16624e6](https://github.com/bitcoin/bitcoin/commit/16624e6ff3af4429e571f7a606bbbcac336e067a)\r\n\r\nFor these wallet backwards compatibility tests, wouldn't it make sense to always keep at least the recent major releases that haven't reached EOL yet as bare minimum rather than sacrificing one for another? I don't think 24.x is special to 23.x at all, but I'd rather verify this assumption (in this case e.g., that wallets created on master can still be opened on both of these versions) rather than potentially miss out on either one of those cases.\r\n\r\nACK on cleaning up the releases list in general, but I think that's outside of scope for this PR."
+    },
+    {
+      "source_id": "pr7819:body",
+      "kind": "body",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "Adds a checkbox to the Send-Coins-Pannel (next to \"Add Recipient\") that allows to set the according nSequence to signal BIP125 RBF.\n\nThis PR does not include a way to actually replace a transaction with the GUI. So not sure if we want this without a GUI based replacement workflow (which I'm working on but it is a bigger chunk).\nBut I don't want to hold back review of this PR.\n\nIncludes two refactoring commits from https://github.com/bitcoin/bitcoin/pull/7159\n\n<img width=\"1056\" alt=\"bildschirmfoto 2016-04-05 um 16 49 20\" src=\"https://cloud.githubusercontent.com/assets/178464/14286488/7ea518be-fb4f-11e5-8b21-437261f23141.png\">\n\n<img width=\"546\" alt=\"bildschirmfoto 2016-04-05 um 17 14 09\" src=\"https://cloud.githubusercontent.com/assets/178464/14287110/da21d78e-fb51-11e5-9be1-bf91391fd8ab.png\">\n"
+    },
+    {
+      "source_id": "pr7819:comments:0",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "Not sure it makes sense to expose this until the wallet actually _can_ do replacement...\n"
+    },
+    {
+      "source_id": "pr7819:comments:2",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "> Not sure it makes sense to expose this until the wallet actually can do replacement...\n\nRight. I totally agree.\nI'm working on the replacement GUI process but this can be reviewed already. The timeline to get this into 0.13 is tough. \n"
+    },
+    {
+      "source_id": "pr7819:comments:3",
+      "kind": "comments",
+      "object_id": "https://github.com/bitcoin/bitcoin/pull/7819",
+      "text": "> I'm wondering if we should even have a \"replaceable switch\" and not, instead, have an \"adaptive fee switch\" (that does the compute N replacements, with locktimes in the future, and multiplicatively higher fees-- and the fee line changes to [x btc, or y,z,q,r after 3,4,5,6 blocks])\n\nYes. This might be a solution.\nI somehow was also trying to allow adding additional outputs (edit the transaction back in the sendcoins dialog).\nBut maybe we should just focus on increasing the fees?\n"
+    }
+  ]
+}
